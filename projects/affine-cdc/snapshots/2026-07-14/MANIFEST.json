@@ -1,0 +1,269 @@
+{
+  "schema": "working-mathematics-snapshot/v1",
+  "project": "affine-cdc",
+  "date": "2026-07-14",
+  "description": "Hash commitment to the original theorem notes, research logs, verification scripts and current outputs before public reorganization.",
+  "file_count": 50,
+  "files": [
+    {
+      "path": "affine-cdc-architecture-freeze-2026-07-14.md",
+      "size_bytes": 8629,
+      "sha256": "ceeb0cf2e026d658af373cd147271e813df96ffcb9fb34b971fe1e9777018fe3"
+    },
+    {
+      "path": "affine-cdc-archive-index-2026-07-14.md",
+      "size_bytes": 9585,
+      "sha256": "f4f3d43126123eec4fce3f035b3fe6e84a26053fdfb183fe22bc5df718f6fdba"
+    },
+    {
+      "path": "affine-cdc-code-filtered-petrial-polynomial-2026-07-14.md",
+      "size_bytes": 11450,
+      "sha256": "9fe401c505308ba8e69351adf177b512d7af1a72baf7b0869a8a0463f357f9d3"
+    },
+    {
+      "path": "affine-cdc-fano-basis-packing-determinant-2026-07-14.md",
+      "size_bytes": 5556,
+      "sha256": "8692416ef5d9d78aab52166c88489ee994baf31aa98de28cbffcd414dadfbdd3"
+    },
+    {
+      "path": "affine-cdc-flow-sheaf-index-duality-2026-07-14.md",
+      "size_bytes": 10351,
+      "sha256": "883d6e9282fda40a4418061216229c848196cf593488e4f3994f0fdd7be31aa7"
+    },
+    {
+      "path": "affine-cdc-flow-tensor-complex-2026-07-14.md",
+      "size_bytes": 8518,
+      "sha256": "fca92f0783f12f5ffb7d74fb746228c60fc28be9177440ac0348141e6d556ffc"
+    },
+    {
+      "path": "affine-cdc-gauge-embedding-correspondence-2026-07-14.md",
+      "size_bytes": 11382,
+      "sha256": "9a327c9ab7c98e75e92d767ce9eb03bba3eef78c4b37db6b790b12748a3478f2"
+    },
+    {
+      "path": "affine-cdc-higher-rank-obstruction-note-2026-07-14.md",
+      "size_bytes": 8597,
+      "sha256": "09f07b6f8801330479b06b31fbca81726960a72ef687786df088783198f4c1dd"
+    },
+    {
+      "path": "affine-cdc-master-handoff-corrected-2026-07-14.md",
+      "size_bytes": 12913,
+      "sha256": "80eb494471e7ece0105e4fd4fa62b0431e56e958ea6ef35e4819b1aa346a1e41"
+    },
+    {
+      "path": "affine-cdc-master-navigation-2026-07-14.md",
+      "size_bytes": 15190,
+      "sha256": "ebf7794d94252e37dcb5d027fda1c04d510b97722fabd829311482cf0ae36b36"
+    },
+    {
+      "path": "affine-cdc-mathematics-mining-archive-2026-07-14.md",
+      "size_bytes": 18799,
+      "sha256": "e350e03d99f87970350138e87551b8d1a1a6df9e4bd45d5d2349c1b7ec3d2a99"
+    },
+    {
+      "path": "affine-cdc-mining-01.md",
+      "size_bytes": 18495,
+      "sha256": "df20b883b9761d789cb4c75a37b154c51975bc82301ac952aa5aed2fe4af5df3"
+    },
+    {
+      "path": "affine-cdc-opus-handoff-2026-07-14.md",
+      "size_bytes": 16026,
+      "sha256": "0438659739ef9a76c6049632cb6a9bf2233c38b562f0a2450e37a76165551a05"
+    },
+    {
+      "path": "affine-cdc-opus-task-corrected-2026-07-14.md",
+      "size_bytes": 6417,
+      "sha256": "d63d2310d04283ef7d1df9180278c1fbf12e2cc0b062fe4a65eca5cedaf6eb65"
+    },
+    {
+      "path": "affine-cdc-partial-petrial-surface-census-2026-07-14.md",
+      "size_bytes": 10402,
+      "sha256": "74e366436cfbf3ce60da385b6ffc9c7dcfd6011c251a0b0f17cf3f18fa394748"
+    },
+    {
+      "path": "affine-cdc-rank4-K33-counterexample.md",
+      "size_bytes": 10715,
+      "sha256": "5e7b52e3da6c2eb2337ce5b5cce753cb8411c0b86ca2810f45aadcd9d147e04c"
+    },
+    {
+      "path": "affine-cdc-research-log-2026-07-14.md",
+      "size_bytes": 19253,
+      "sha256": "310fd137e75de3675a84cf9b3dad937de516f14c9b6fc95de918ae05c1b2ecdc"
+    },
+    {
+      "path": "affine-cdc-syndrome-transition-universal-invariant-2026-07-14.md",
+      "size_bytes": 14272,
+      "sha256": "b809e109c4f660c72831f2760188f36542ab671654ffac14025bd9859c43ced1"
+    },
+    {
+      "path": "affine-cdc-three-edge-cut-factorization-2026-07-14.md",
+      "size_bytes": 10667,
+      "sha256": "798f9044a45c5b17aec615a4598b059f8245d3b95141a9ea0b061e6e50ec9281"
+    },
+    {
+      "path": "affine-cdc-transition-matroid-code-slice-2026-07-14.md",
+      "size_bytes": 10351,
+      "sha256": "1e328a4f9ecb6a0b39eb5e6ed493a82581ca377dc41f16484193a13408acb6f8"
+    },
+    {
+      "path": "affine-cdc-two-edge-cut-factorization-2026-07-14.md",
+      "size_bytes": 11387,
+      "sha256": "b7211230aa6a3eed86465b15b99d20476e2a7ee229b9a64d8a58dcdeeea2589b"
+    },
+    {
+      "path": "affine_cdc_code_filtered_petrial.csv",
+      "size_bytes": 3325,
+      "sha256": "125b9c92492d3508f194e81689d7d7dc5e44220baf2884b1cc1bcc2a2d60960b"
+    },
+    {
+      "path": "affine_cdc_code_filtered_petrial.json",
+      "size_bytes": 16135,
+      "sha256": "99edb4cc4a25bf17df478c8e25b4172ed6f4562f69036e472a0a9e0d43c2fa35"
+    },
+    {
+      "path": "affine_cdc_code_filtered_petrial.py",
+      "size_bytes": 12192,
+      "sha256": "ed9d1dfcb3335841bde74ae667eb1758d4b89b86a1b8711fe53997de012476fe"
+    },
+    {
+      "path": "affine_cdc_delta_matroid_slice_check.py",
+      "size_bytes": 12858,
+      "sha256": "d4c3ce6025afd331a6ab9e3d5f906deab20c467ab3783302207ade7af12d13d2"
+    },
+    {
+      "path": "affine_cdc_delta_matroid_slice_report.json",
+      "size_bytes": 11229,
+      "sha256": "98c10d3246df2ddd870f991635f5ee6a46dd1cd066cf55de4a989b86f197f978"
+    },
+    {
+      "path": "affine_cdc_fano_basis_packing.csv",
+      "size_bytes": 2672,
+      "sha256": "e23c57a9cd6166df33daa992a6b9ee97eb70ec22050a7f76d75238f83687f25d"
+    },
+    {
+      "path": "affine_cdc_fano_basis_packing.json",
+      "size_bytes": 52972,
+      "sha256": "837c0079c3c538cf41cc531c70fe0c64759e68817a41e9d01874294517dd1248"
+    },
+    {
+      "path": "affine_cdc_fano_basis_packing.py",
+      "size_bytes": 7498,
+      "sha256": "3d313a2868046c7083b5a9d49f17e96a903d225983e2e04493ce5162bd9b49d2"
+    },
+    {
+      "path": "affine_cdc_flow_sheaf_index.csv",
+      "size_bytes": 1432,
+      "sha256": "e793368b6aa515a556fae4c92bbec35d4226059073931352137eb869afc1aa1f"
+    },
+    {
+      "path": "affine_cdc_flow_sheaf_index.json",
+      "size_bytes": 13198,
+      "sha256": "9e3da1dd71b81f02037da3e10140a78c5438d32632963003d279546f402096d1"
+    },
+    {
+      "path": "affine_cdc_flow_sheaf_index.py",
+      "size_bytes": 9146,
+      "sha256": "9352494960e013046db7f91be7b1e75b667187df9b399d32ca684e0cfa45a790"
+    },
+    {
+      "path": "affine_cdc_flow_tensor_complex.csv",
+      "size_bytes": 1178,
+      "sha256": "4b10d9312036dcdb9f76f09f4aa9db65c0536e7a87939c315e7119d87f99e7f1"
+    },
+    {
+      "path": "affine_cdc_flow_tensor_complex.json",
+      "size_bytes": 11649,
+      "sha256": "5130c3e139b3d8a69033317e7f6cc86ea0dfdcd2bf02577df540c3cb021b02ed"
+    },
+    {
+      "path": "affine_cdc_flow_tensor_complex.py",
+      "size_bytes": 6510,
+      "sha256": "0e2863e3f59fa83202feb65c8bd58ce70a21f6a29a7615b7ee1da7c3ae67fcd5"
+    },
+    {
+      "path": "affine_cdc_higher_rank_obstruction.py",
+      "size_bytes": 11631,
+      "sha256": "4f331f6adf25c12449fa8f8d0711ea2e18c3e0a8b16f37358b40bf5e5f14fb10"
+    },
+    {
+      "path": "affine_cdc_higher_rank_obstruction_report.json",
+      "size_bytes": 12068,
+      "sha256": "0871fc38fe4180909d206ecfc179fa5a0a21bfae3731a18006d77e2dd6673eda"
+    },
+    {
+      "path": "affine_cdc_hodge_verification.py",
+      "size_bytes": 13187,
+      "sha256": "9f55f1772b2eb802b6a0fc7ddfe2e0c661976e77069484273c70daea23a1ca88"
+    },
+    {
+      "path": "affine_cdc_hodge_verification_report.txt",
+      "size_bytes": 651,
+      "sha256": "55f6a079772d8b36294110db77a113db7246dd0a7bd7eb5592549d0aaf20b4ac"
+    },
+    {
+      "path": "affine_cdc_moduli_counts.csv",
+      "size_bytes": 602,
+      "sha256": "f269c7df838e3689c9a1801f88a609f332a0666b9a33d27a59d86626ac5b1541"
+    },
+    {
+      "path": "affine_cdc_moduli_counts.json",
+      "size_bytes": 3180,
+      "sha256": "751eb88306ddb6d2f75fd9f4235d067ff2d60a15dc121b3e4e0a3c42e2840397"
+    },
+    {
+      "path": "affine_cdc_moduli_enumeration.py",
+      "size_bytes": 11172,
+      "sha256": "dc4fcc63c562d4657804f789037c5a439e995d42465b57167e0683392f287238"
+    },
+    {
+      "path": "affine_cdc_orientation_exact_sequence_census.csv",
+      "size_bytes": 2498,
+      "sha256": "5cf84af52cf6c17741a4d188a2f31800f9e5cca1f999a24639c4bd82484fe783"
+    },
+    {
+      "path": "affine_cdc_orientation_exact_sequence_census.json",
+      "size_bytes": 22548,
+      "sha256": "27d7d402e376eb52ea02e189bfe813af89f74094ad33a5db83ec3fe67576dfdb"
+    },
+    {
+      "path": "affine_cdc_orientation_exact_sequence_census.py",
+      "size_bytes": 15010,
+      "sha256": "830d8a647080424997a1fcb1e1649ae651ba0e2861ec3ce99e90845984f67986"
+    },
+    {
+      "path": "affine_cdc_surface_census.csv",
+      "size_bytes": 4583,
+      "sha256": "099c9fdd1cf5389fc454804207995cbf68c15614d4407da3fd8e68753ab1f1e2"
+    },
+    {
+      "path": "affine_cdc_surface_census.json",
+      "size_bytes": 43257,
+      "sha256": "12ca960b3bd40b75fa3f0d4e4d7731a14a0acdfc0f115a233483c6c72bfd17ca"
+    },
+    {
+      "path": "affine_cdc_surface_census.py",
+      "size_bytes": 15008,
+      "sha256": "74d2a3cb8ccbdb4eeea2a3557c781ac407f39dd5587680e42cc2d8e404496fc1"
+    },
+    {
+      "path": "affine_cdc_three_edge_sum_verification.json",
+      "size_bytes": 1644,
+      "sha256": "9d17098e9aeac36c6d57a7eb9aa7470919d20b5bcc20eecb21ef6006a07760f4"
+    },
+    {
+      "path": "affine_cdc_three_edge_sum_verification.py",
+      "size_bytes": 17859,
+      "sha256": "b320a821c4f12cbb53e0911c6bc47a398d7b5acfc0cc5846584f2ea75e3d57ec"
+    },
+    {
+      "path": "affine_cdc_two_edge_sum_verification.json",
+      "size_bytes": 2025,
+      "sha256": "f3f1a8f8ff582154e7faec282d984925ffca3ca93ce7ac0cfd3ff7e6cf8a96a9"
+    },
+    {
+      "path": "affine_cdc_two_edge_sum_verification.py",
+      "size_bytes": 18295,
+      "sha256": "89f348680464a80189067ee2726991990f58b8e03b0f199aa729f41a693cf2b1"
+    }
+  ]
+}
