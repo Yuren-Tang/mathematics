@@ -7,6 +7,12 @@ formalization links, corrections and connections while they develop. Material
 may be incomplete, incorrect, superseded, split, merged or moved. Presence here
 is not a claim of peer review or final correctness.
 
+## Current projects
+
+- [AffineCDC](projects/affine-cdc/README.md) — affine Fano compatibility,
+  quotient sheaves, tensor complexes, moduli codes and cycle-double-cover
+  formalization.
+
 ## Minimal organization
 
 - `projects/` — material that already belongs to a natural project.
