@@ -1,0 +1,74 @@
+name: Timestamp public mathematics
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "projects/**"
+      - "unfiled/**"
+      - ".github/workflows/timestamp-mathematics.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: timestamp-mathematics-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  timestamp:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out full history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install OpenTimestamps client
+        run: python -m pip install --disable-pip-version-check "opentimestamps-client==0.7.2"
+
+      - name: Prepare commit attestation
+        shell: bash
+        run: |
+          set -euo pipefail
+          printf '%s\n' "${GITHUB_SHA}" > /tmp/commit-sha.txt
+          ots stamp /tmp/commit-sha.txt
+
+      - name: Prepare attestations branch
+        shell: bash
+        run: |
+          set -euo pipefail
+          git fetch origin attestations:refs/remotes/origin/attestations || true
+          if git show-ref --verify --quiet refs/remotes/origin/attestations; then
+            git worktree add -B attestations /tmp/attestations origin/attestations
+          else
+            git worktree add --detach /tmp/attestations "${GITHUB_SHA}"
+            cd /tmp/attestations
+            git switch --orphan attestations
+            git rm -rf . >/dev/null 2>&1 || true
+          fi
+
+      - name: Store proof
+        shell: bash
+        run: |
+          set -euo pipefail
+          short="${GITHUB_SHA:0:2}"
+          target="/tmp/attestations/commits/${short}/${GITHUB_SHA}"
+          mkdir -p "${target}"
+          cp /tmp/commit-sha.txt "${target}/commit-sha.txt"
+          cp /tmp/commit-sha.txt.ots "${target}/commit-sha.txt.ots"
+          cd /tmp/attestations
+          git config user.name "mathematics-timestamp-bot"
+          git config user.email "mathematics-timestamp-bot@users.noreply.github.com"
+          git add commits
+          if git diff --cached --quiet; then
+            echo "Proof already recorded."
+            exit 0
+          fi
+          git commit -m "timestamp: ${GITHUB_SHA}"
+          git push origin HEAD:attestations
