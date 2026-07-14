@@ -177,8 +177,8 @@ Thus the previous low-weight classification sharpens to:
 
 ### Constraint-matroid consequence
 
-The flow constraint matroid is an **even binary matroid**: every circuit has
-even size. Equivalently, its cycle code $\mathcal B_f$ is even.
+The flow constraint matroid has only even circuits. Equivalently, its cycle
+code $\mathcal B_f$ is even.
 
 ### Coding-theoretic formulation
 
@@ -194,7 +194,7 @@ $$
 \mathbf 1_E\in\mathcal C(G)*\mathcal F_f.
 $$
 
-The harmonic proof above therefore yields the nontrivial Schur-code identity
+The harmonic proof above therefore yields the Schur-code identity
 
 $$
 \boxed{
@@ -222,3 +222,77 @@ flow-tensor/code-flag framework that is not merely a dimension restatement.
 It converts the Fano rank bound into a parity law for every gauge dependency,
 and it rules out an infinite family of possible flow--tension quotients at
 once.
+
+## 7. Sharpness in rank four
+
+The bound $\dim\Gamma\le3$ is sharp.
+
+Let $G=K_6$ and let $\Gamma=\mathbf F_2^4$ with basis
+$e_1,e_2,e_3,e_4$. Assign the six vertex potentials
+
+$$
+0,\quad e_1,\quad e_2,\quad e_3,\quad e_4,\quad
+e_1+e_2+e_3+e_4.
+$$
+
+They are pairwise distinct and sum to zero. Label every edge $uv$ by
+
+$$
+g_{uv}=p_u+p_v.
+$$
+
+The labelling is an exact tension and is nowhere zero. At every vertex $v$,
+
+$$
+\sum_{u\ne v}g_{uv}
+=
+\sum_{u\ne v}(p_u+p_v)
+=
+\sum_u p_u
+=0,
+$$
+
+so it is also a flow.
+
+Thus the all-one word belongs to the gauge code, but its weight is
+
+$$
+|E(K_6)|=15.
+$$
+
+Therefore odd gauge words occur in rank four:
+
+$$
+\boxed{
+\dim\Gamma\le3
+\text{ is the exact general range of the parity theorem.}
+}
+$$
+
+## 8. Third-order orthogonality of graph bicycles
+
+The scalar statement behind the proof is the following.
+
+Let
+
+$$
+\mathsf{Bic}(Q)
+=
+\mathcal C(Q)\cap\mathcal C(Q)^\perp
+$$
+
+be the binary bicycle space of a graph. For all $x,y,z\in\mathsf{Bic}(Q)$,
+
+$$
+\sum_e x_e=0,
+\qquad
+\sum_e x_ey_e=0,
+\qquad
+\sum_e x_ey_ez_e=0.
+$$
+
+The first two identities are ordinary cycle--cut orthogonality. The third is
+the cubic discrete integration-by-parts identity proved above.
+
+The gauge-code parity theorem is obtained by applying the degree-at-most-three
+nonzero-indicator polynomial to a vector-valued bicycle.
