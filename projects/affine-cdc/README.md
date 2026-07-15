@@ -9,6 +9,15 @@ binary flows on cubic graphs and its role in the Cycle Double Cover problem.
 > the outer graph reduction and decomposed into a cycle double cover only at the
 > end.
 
+The natural public theorem is:
+
+> Every finite bridgeless multigraph has a cycle double cover.
+
+Loops are allowed. A circuit is a nonempty inclusion-minimal cut-even edge set,
+so a singleton loop is a circuit. The natural finiteness condition is finiteness
+of the active edge set. Finite ambient carrier types describe the current Lean
+checkpoint only.
+
 The active tree is organized by mathematical dependency. Discovery order and
 superseded formulations remain available in Git history and dated snapshots.
 
@@ -28,8 +37,8 @@ superseded formulations remain available in Git history and dated snapshots.
 
 4. [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md)  
    The natural graph-level output of the affine construction, cut-evenness as
-   the collapse invariant, projection through graph surgery, and final circuit
-   decomposition.
+   the collapse invariant, projection through graph surgery, final circuit
+   decomposition, and loop reinsertion.
 
 5. [`rank-hierarchy/transgression-and-dual-fano-residue.md`](rank-hierarchy/transgression-and-dual-fano-residue.md)  
    Why rank three is the unique balanced quadratic point, the all-rank support
@@ -125,15 +134,18 @@ intersection theorem forces $[\kappa]=0$.
 The affine incidence pair is the complete centre of the compatibility question,
 but it is not the whole unconditional CDC proof. The full spine is:
 
-- a finite loopless bridgeless multigraph;
+- a multigraph $G$ with finite active edge set and no bridges;
+- deletion of all loops, giving a loopless bridgeless core $G_0$;
 - an independently constructed cubic expansion carrying the required
   rank-three binary flow;
 - affine incidence compatibility on the cubic graph;
-- a graph-level even double cover;
-- cut-even transport through collapse;
-- an even double cover of the original graph;
+- a graph-level multiset even double cover;
+- the vertex-even/cut-even bridge on the loopless expansion;
+- pure cut-even transport through collapse;
+- an even double cover of $G_0$;
 - one final decomposition into circuits;
-- the literal cycle double cover of the original graph.
+- two singleton circuit occurrences for every removed loop;
+- a cycle double cover of the original multigraph $G$.
 
 A cycle double cover of the already cubic flow graph is an immediate corollary
 of the even-cover construction, not a necessary intermediate node.
@@ -152,9 +164,10 @@ of the even-cover construction, not a necessary intermediate node.
 
 - compatible family to indexed even supports;
 - graph-level multiset even double cover;
-- vertex-even/cut-even bridge under the current loopless convention;
+- vertex-even/cut-even bridge on loopless graphs;
 - pure cut-parity transport through graph collapse;
-- finite circuit decomposition at the end.
+- finite circuit decomposition once, after collapse;
+- singleton-loop reinsertion.
 
 ### Rank hierarchy
 
@@ -187,5 +200,6 @@ centres of the existence proof.
 The historical title “flow tensor datum as the master object” is obsolete. The
 affine incidence-pair complex is the compatibility centre; the tensor complex
 is its canonical chain-level reduction. The public companion formalization's
-`Statement.lean` remains a separate protected audit layer and is not modified by
-this mathematical reorganization.
+current `Statement.lean` is still loopless and ambient-finite and remains
+unchanged. It is an implementation checkpoint awaiting the separately approved
+Path A migration packet; it is not the final natural mathematical statement.
