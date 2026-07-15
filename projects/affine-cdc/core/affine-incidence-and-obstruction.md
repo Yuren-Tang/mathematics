@@ -9,8 +9,8 @@ been formalized in this form.
 
 ## 1. Source data and the compatibility image
 
-Let $G=(V,E)$ be a finite connected cubic graph, let $\Gamma$ be a finite-dimensional
-vector space over $\mathbf F_2$, and let
+Let $G=(V,E)$ be a finite cubic graph, not necessarily connected, let $\Gamma$
+be a finite-dimensional vector space over $\mathbf F_2$, and let
 
 $$
 f:E\longrightarrow \Gamma
@@ -31,9 +31,9 @@ Q_e:=\Gamma/\langle f(e)\rangle.
 $$
 
 The full source datum $(G,\Gamma,f)$ retains vertices, edges, incidences, darts,
-and the local combinatorial meaning needed later for cycle-double-cover
-extraction. The compatibility question factors through a smaller affine linear
-object constructed below.
+and the local combinatorial meaning needed later for the graph-level multiset
+even-double-cover construction. The compatibility question factors through a
+smaller affine linear object constructed below.
 
 ## 2. The incidence space
 
@@ -431,8 +431,8 @@ The compatibility image does **not** by itself retain:
 - the original vertex, edge, and dart sets as combinatorial objects;
 - the interpretation of a point of $\kappa+L_{\mathrm{vert}}$ as a local even
   family;
-- the dart pairing and orbit construction that turns a compatible family into
-  cycles;
+- the dart pairing and indexed-support construction that turns a compatible
+  family into an even double cover;
 - embedding, rotation-system, or surface data.
 
 Accordingly, the honest output chain is
@@ -450,9 +450,10 @@ followed by a second construction using the retained source data:
 $$
 (G,\Gamma,f,\text{compatible family})
 \longmapsto
-\text{cycle double cover}.
+\text{graph-level multiset even double cover}.
 $$
 
-The affine incidence-pair complex is therefore the complete centre of the
-**compatibility problem**, but not a replacement for the full graph-theoretic
-source object.
+Circuit decomposition is a later generic graph-theoretic step, performed once
+after collapse in the full theorem. The affine incidence-pair complex is
+therefore the complete centre of the **compatibility problem**, but not a
+replacement for the full graph-theoretic source object.
