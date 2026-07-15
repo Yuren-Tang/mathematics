@@ -3,7 +3,7 @@
 **Last structural rewrite:** 2026-07-15  
 **Status:** evolving theorem-level synthesis. The original coordinate-free
 compatibility chain and conditional cubic CDC extraction are Lean-verified in
-`Yuren-Tang/affine-cdc`. The Fano support-boundary compression below is a
+`Yuren-Tang/affine-cdc`. The quadratic-Lagrangian compression below is a
 paper-proof draft awaiting an independent proof audit and a later Lean
 refactor.
 
@@ -21,16 +21,20 @@ The project now separates into four layers.
 ### A. Paper-1 core: affine Fano compatibility
 
 \[
-\text{quotient sheaf}
+\text{local Fano quadratic package}
 \longrightarrow
-\text{Fano cohomological duality}
-\longrightarrow
-\text{support-boundary identity}
+\text{vertex characteristic torsor}
+\cap
+\text{edge-diagonal Lagrangian}
 \longrightarrow
 \text{compatibility}
 \longrightarrow
 \text{CDC extraction}.
 \]
+
+The quotient-sheaf obstruction, global Fano duality and support-boundary
+identity are equivalent linear and combinatorial projections of this
+quadratic-Lagrangian intersection.
 
 This is the present logical and expository core.
 
@@ -66,7 +70,7 @@ framework.
 
 # Part I. The Paper-1 core
 
-## 1. Quotient sheaf and affine obstruction
+## 1. Quotient sheaf and affine gluing
 
 Let \(G\) be a finite cubic graph and let
 
@@ -83,12 +87,18 @@ sum to zero and are the three nonzero points of a plane
 W_v\le \Gamma.
 \]
 
-Define the quotient-sheaf cochain spaces
+For an edge \(e=uv\), put
+
+\[
+Q_e=\Gamma/\langle f(e)\rangle.
+\]
+
+The quotient-sheaf cochain spaces are
 
 \[
 C_f^0=\Gamma^{V(G)},
 \qquad
-C_f^1=\bigoplus_{e=uv}\Gamma/\langle f(e)\rangle,
+C_f^1=\bigoplus_{e\in E(G)}Q_e,
 \]
 
 with coboundary
@@ -111,234 +121,314 @@ The local affine classification supplies an intrinsic right-hand side
 c_f\in C_f^1.
 \]
 
-Its class
+Its class \([c_f]\in H_f^1\) is the affine compatibility obstruction. The
+original formulation proves compatibility by showing \([c_f]=0\).
+
+The quadratic formulation below encodes the same equation as an affine
+Lagrangian-intersection problem.
+
+## 2. The local Fano quadratic package
+
+Every binary plane \(Q_e\) carries the canonical anisotropic quadratic form
 
 \[
-[c_f]\in H_f^1
+q_e(x)=\mathbf 1_{x\ne0}.
 \]
 
-is the complete affine compatibility obstruction. The gluing problem is
-solvable exactly when \([c_f]=0\).
-
-The solution set, when nonempty, is a torsor under \(H_f^0\). After quotienting
-by constant vertex potentials,
-
-\[
-\mathcal B_f:=H_f^0/\Gamma
-\]
-
-is the homogeneous gauge or moduli code.
-
-## 2. Local Fano duality
-
-Let
+Its polar form is the unique nonzero alternating form on \(Q_e\). If
 
 \[
 \omega\in\Lambda^3\Gamma^*
 \]
 
-be the unique nonzero volume form. For a plane \(W\le\Gamma\), define
+is the unique nonzero volume form, then
 
 \[
-\operatorname{DualConfig}(W)
-=
-\left\{
-(\eta_h)_{h\in W\setminus\{0\}}:
-\eta_h\in\operatorname{Ann}(h),\ 
-\sum_h\eta_h=0
-\right\}.
+B_e([x],[y])=\omega(f(e),x,y).
 \]
+
+At a vertex \(v\), put
+
+\[
+\mathbb E_v=\bigoplus_{e\ni v}Q_e,
+\qquad
+q_v=\sum_{e\ni v}q_e.
+\]
+
+Define
+
+\[
+\Delta_v:\Gamma\to\mathbb E_v,
+\qquad
+\Delta_v(x)=([x]_e)_{e\ni v}.
+\]
+
+Its image
+
+\[
+L_v:=\operatorname{im}\Delta_v
+\]
+
+is a Lagrangian subspace for the polar form of \(q_v\). The three incident flow
+values sum to zero, so the quadratic restriction loses its quadratic part:
+
+\[
+q_v(\Delta_vx)=\ell_{W_v}(x),
+\]
+
+where \(\ell_{W_v}\) is the unique nonzero functional with kernel \(W_v\).
+
+For a Lagrangian \(L\) in a quadratic space \((E,q)\), define
+
+\[
+\operatorname{Char}_q(L)
+=
+\{\kappa\in E:B(z,\kappa)=q(z)\ \forall z\in L\}.
+\]
+
+This is an affine torsor under \(L\). In the Fano package,
+
+\[
+\boxed{
+\text{local affine-family space at }v
+=
+\operatorname{Char}_{q_v}(L_v).
+}
+\]
+
+The homogeneous Lagrangian \(L_v\) is also the space of legal dual
+configurations at \(v\). The old cross-bit is simply \(q_v|_{L_v}\), and the
+old support-parity branching identity is the statement that this quadratic
+restriction is the parity of the nonzero incidence components.
+
+## 3. The global incidence space and its two Lagrangians
+
+Let
+
+\[
+I(G)=\{(v,e):v\in e\}
+\]
+
+be the incidence set, and define
+
+\[
+\mathbb E_f
+=
+\bigoplus_{(v,e)\in I(G)}Q_e,
+\qquad
+q_f
+=
+\sum_{(v,e)\in I(G)}q_e.
+\]
+
+This is a nondegenerate quadratic space. The vertex Lagrangian is
+
+\[
+L_{\mathrm{vert}}=\bigoplus_vL_v.
+\]
+
+Its characteristic torsor is the product of all local affine-family spaces:
+
+\[
+\operatorname{Char}_{q_f}(L_{\mathrm{vert}})
+=
+\bigoplus_v\operatorname{Char}_{q_v}(L_v).
+\]
+
+For an edge \(e=uv\), define the diagonal
+
+\[
+D_e=\{(x,x):x\in Q_e\}
+\le Q_e^{(u)}\oplus Q_e^{(v)}.
+\]
+
+Put
+
+\[
+L_{\mathrm{edge}}=\bigoplus_eD_e.
+\]
+
+Each \(D_e\) is Lagrangian and totally singular, since
+
+\[
+q_e(x)+q_e(x)=0.
+\]
+
+Thus \(L_{\mathrm{edge}}\) is a totally singular Lagrangian. Membership in it
+means exactly that the two endpoint labels on every edge agree. Hence
+
+\[
+\boxed{
+\text{compatible global affine families}
+=
+\operatorname{Char}_{q_f}(L_{\mathrm{vert}})
+\cap L_{\mathrm{edge}}.
+}
+\]
+
+## 4. The affine Lagrangian-intersection theorem
+
+Let \((E,q)\) be any finite-dimensional nondegenerate quadratic space over
+\(\mathbf F_2\), and let \(L,M\le E\) be Lagrangians.
 
 Then
 
 \[
 \boxed{
-\mathcal H_W:\Gamma\overset\sim\longrightarrow
-\operatorname{DualConfig}(W),
-\qquad
-(\mathcal H_W(a))_h(x)=\omega(a,h,x)
+\operatorname{Char}_q(L)\cap M\ne\varnothing
+\iff
+q|_{L\cap M}=0.
 }
 \]
 
-is an isomorphism.
+When nonempty, the intersection is a torsor under \(L\cap M\).
 
-This is the local mechanism previously encoded by legal dual configurations,
-the cross-pairing bit and the codimension-one branching analysis.
-
-## 3. Global Fano cohomological duality
-
-An equilibrium stress is a family
+Indeed, for \(\kappa\in\operatorname{Char}_q(L)\), the condition
+\(q|_{L\cap M}=0\) says
 
 \[
-\psi_e\in\operatorname{Ann}(f(e))
+B(z,\kappa)=0
+\qquad(z\in L\cap M),
 \]
 
-whose incident sum is zero at every vertex. The stress space is canonically
+so
 
 \[
-\operatorname{Stress}(f)\cong(H_f^1)^*.
+\kappa\in(L\cap M)^\perp=L+M.
 \]
 
-For \(k\in H_f^0\), define
+Writing \(\kappa=\ell+m\) with \(\ell\in L\), \(m\in M\), one gets
 
 \[
-(\mathcal H_f k)_e([x])
-=
-\omega(k_u,f(e),x),
-\qquad e=uv.
+m=\kappa+\ell\in\operatorname{Char}_q(L)\cap M.
 \]
 
-This is independent of the endpoint because
+In particular, the characteristic torsor of any Lagrangian meets every totally
+singular Lagrangian.
+
+## 5. Compatibility and the full solution torsor
+
+Apply the theorem to
 
 \[
-k_u+k_v\in\langle f(e)\rangle.
+L=L_{\mathrm{vert}},
+\qquad
+M=L_{\mathrm{edge}}.
 \]
 
-It is an equilibrium stress because the three incident flow values sum to
-zero. Conversely, a stress gives at every vertex a unique \(k_v\) by local
-Fano duality; equality of the two endpoint descriptions on an edge forces
-
-\[
-k_u+k_v\in\langle f(e)\rangle.
-\]
-
-Thus the local inverses glue automatically, giving the constructive global
-isomorphism
+Since \(L_{\mathrm{edge}}\) is totally singular,
 
 \[
 \boxed{
-\mathcal H_f:H_f^0\overset\sim\longrightarrow
-\operatorname{Stress}(f)
-\cong(H_f^1)^*.
+\operatorname{Char}_{q_f}(L_{\mathrm{vert}})
+\cap L_{\mathrm{edge}}\ne\varnothing.
 }
 \]
 
-Equivalently, there is a perfect pairing
+This is the Fano compatibility theorem: one may choose a local affine family at
+every vertex so that the two endpoint labels agree along every edge.
+
+Moreover, the compatible-family space is a torsor under
 
 \[
-\langle-,-\rangle_f:
-H_f^0\times H_f^1\to\mathbf F_2.
+L_{\mathrm{vert}}\cap L_{\mathrm{edge}}.
 \]
 
-## 4. The transverse-edge chain
-
-For a global section \(k=(k_v)\in H_f^0\), define
+An element of \(L_{\mathrm{vert}}\) has a unique form
 
 \[
-s(k)\in\mathbf F_2^{E(G)}
+z_{v,e}=[k_v]_e.
 \]
 
-by
+The edge-diagonal condition is
 
 \[
-s(k)_e=1
-\iff
-k_u\notin\langle f(e)\rangle,
-\qquad e=uv.
+[k_u]_e=[k_v]_e,
 \]
 
-This is well defined, since the section condition implies
+or equivalently
 
 \[
-k_u\in\langle f(e)\rangle
-\iff
-k_v\in\langle f(e)\rangle.
+k_u+k_v\in\langle f(e)\rangle.
 \]
-
-At a vertex \(v\), define the outside-plane bit
-
-\[
-b(k)_v=1
-\iff
-k_v\notin W_v.
-\]
-
-The three incident flow lines are exactly the three one-dimensional subspaces
-of \(W_v\). Hence:
-
-| position of \(k_v\) | degree of \(s(k)\) at \(v\) | \(b(k)_v\) |
-|---|---:|---:|
-| \(k_v=0\) | \(0\) | \(0\) |
-| \(k_v\in W_v\setminus\{0\}\) | \(2\) | \(0\) |
-| \(k_v\notin W_v\) | \(3\) | \(1\) |
 
 Therefore
 
 \[
-\boxed{b(k)=\partial s(k)}
-\]
-
-as vertex chains over \(\mathbf F_2\). This is the branching identity in its
-minimal form.
-
-## 5. The support-boundary proof of compatibility
-
-The local definition of the affine obstruction gives
-
-\[
 \boxed{
-\langle k,[c_f]\rangle_f
-=
-\sum_{v\in V(G)} b(k)_v.
+L_{\mathrm{vert}}\cap L_{\mathrm{edge}}
+\cong H_f^0.
 }
 \]
 
-Let
+Thus the intersection theorem simultaneously gives existence and the complete
+solution torsor. In the quotient-sheaf language this is exactly \([c_f]=0\) and
+the usual affine torsor under \(\ker\delta_f\).
+
+## 6. Fano duality and support-boundary as projections
+
+Using the polar form on \(Q_e\) identifies
 
 \[
-\varepsilon:\mathbf F_2^{V(G)}\to\mathbf F_2
+Q_e\cong\operatorname{Ann}(f(e)).
 \]
 
-be augmentation. Then
+Under this identification, \(L_v\) is the legal dual-configuration space at
+\(v\), while \(L_{\mathrm{edge}}\) says that the two endpoint covectors on an
+edge coincide. Hence the same intersection is also the equilibrium-stress
+space:
 
 \[
 \boxed{
-\langle k,[c_f]\rangle_f
-=
-\varepsilon b(k)
-=
-\varepsilon\partial s(k)
-=0.
+L_{\mathrm{vert}}\cap L_{\mathrm{edge}}
+\cong H_f^0
+\cong\operatorname{Stress}(f)
+\cong(H_f^1)^*.
 }
 \]
 
-The last equality is the handshaking identity: every edge has two endpoints.
-Since the Fano pairing is perfect, this holds for every \(k\in H_f^0\) only if
+Global Fano cohomological duality is therefore not an accidental isomorphism:
+global sections and stresses are two readings of one Lagrangian intersection.
+
+The quadratic-handshaking proof is the restriction criterion in coordinates.
+For \(z\in L_{\mathrm{vert}}\cap L_{\mathrm{edge}}\),
 
 \[
-\boxed{[c_f]=0.}
+q_f(z)=2\sum_eq_e(z_e)=0.
 \]
 
-Thus every nowhere-zero \(\mathbf F_2^3\)-flow on a finite cubic graph admits a
-compatible affine gluing.
+Recording only which edge components are nonzero gives an edge chain \(s\), and
+this equality projects to
 
-The entire compatibility proof is therefore:
+\[
+b=\partial s,
+\qquad
+\varepsilon\partial s=0.
+\]
 
-1. perfect Fano self-duality;
-2. the local identity \(b(k)=\partial s(k)\);
-3. augmentation kills boundaries.
+Thus the support-boundary proof is the combinatorial shadow of the affine
+Lagrangian-intersection theorem.
 
-## 6. Why the hypotheses fit exactly
+The exceptional hypotheses fit exactly because:
 
-The mechanism composes three exceptional facts.
-
-- **Binary field:** a one-dimensional quotient has a unique nonzero value, so
-  its coordinate is a support bit.
-- **Rank three:** each vertex plane has codimension one, so leaving the plane is
-  a single bit.
-- **Cubic graph:** the incident values are exactly the three nonzero points and
-  three lines of a binary plane, giving local degrees \(0,2,3\).
-
-The theorem is exceptional because these features turn the affine obstruction
-into the augmentation of an ordinary graph boundary.
+- binary edge quotients have canonical quadratic norms;
+- a rank-three vertex plane gives the Fano Lagrangian and its characteristic
+  torsor;
+- each edge appears twice, making the edge diagonal totally singular.
 
 ## 7. CDC extraction
 
-The compatible gauges determine local even families whose edge labels agree.
-The verified dart-level construction pairs the relevant incidences, takes
-orbits of the resulting permutation and obtains a standard cycle double
-cover. This extraction remains part of the Paper-1 dependency cone, but is
-logically downstream of the compatibility theorem above.
+A point of
+
+\[
+\operatorname{Char}_{q_f}(L_{\mathrm{vert}})
+\cap L_{\mathrm{edge}}
+\]
+
+is precisely a compatible collection of local even families. The verified
+dart-level construction pairs the relevant incidences, takes orbits of the
+resulting permutation and obtains a standard cycle double cover. This
+extraction remains downstream of the quadratic compatibility theorem.
 
 ---
 
@@ -585,14 +675,17 @@ than expanded inside this spine before the compatibility paper closes.
 
 ### Paper-proof draft, not yet formalized in this presentation
 
-- constructive global Fano cohomological duality as an explicit isomorphism;
-- the transverse-edge chain \(s(k)\);
-- the identity \(b(k)=\partial s(k)\);
-- the one-line support-boundary proof
-  \[
-  \langle k,[c_f]\rangle=\varepsilon\partial s(k)=0;
-  \]
+- the local Fano quadratic space \((\mathbb E_v,q_v)\);
+- local affine families as the characteristic torsor of a Fano Lagrangian;
+- the abstract affine Lagrangian-intersection criterion;
+- the vertex/edge Lagrangian proof of global compatibility;
+- global sections and stresses as the same Lagrangian intersection;
+- the support-boundary identity as the support projection of that proof;
 - exact balanced flags as relative quadratic unisolvent configurations.
+
+See [Fano quadratic transgression](fano-quadratic-transgression.md),
+[the Fano quadratic Lagrangian package](fano-quadratic-lagrangian-package.md),
+and [affine Lagrangian intersection](affine-lagrangian-intersection.md).
 
 These new formulations require independent mathematical review before they
 replace the older presentation in a formal release.
@@ -601,12 +694,13 @@ replace the older presentation in a formal release.
 
 The smallest coherent first paper should contain:
 
-1. local affine families and the intrinsic obstruction;
-2. the quotient sheaf;
-3. local and global Fano duality;
-4. the support-boundary compatibility proof;
-5. the verified CDC extraction;
-6. a theorem-to-Lean map and trust-boundary audit.
+1. the local Fano quadratic package;
+2. local affine families as characteristic torsors;
+3. the global vertex and edge Lagrangians;
+4. the affine Lagrangian-intersection theorem;
+5. the quotient-sheaf and support-boundary translations;
+6. the verified CDC extraction;
+7. a theorem-to-Lean map and trust-boundary audit.
 
 The broad code-flag/Koszul theory, exact-balanced interpolation, circuit
 classifications, interface theory and topological state sums should not block
