@@ -1,236 +1,385 @@
-# AffineCDC — current structural synthesis
+# AffineCDC — active mathematical spine
 
-**First public synthesis:** 2026-07-14  
-**Status:** evolving theorem-level draft. The original coordinate-free compatibility chain and the conditional cubic CDC extraction are Lean-verified in `Yuren-Tang/affine-cdc`; several structural reformulations below are paper-proof complete or computationally verified but not yet formalized in their present form.
+**Last structural rewrite:** 2026-07-15  
+**Status:** evolving theorem-level synthesis. The original coordinate-free
+compatibility chain and conditional cubic CDC extraction are Lean-verified in
+`Yuren-Tang/affine-cdc`. The Fano support-boundary compression below is a
+paper-proof draft awaiting an independent proof audit and a later Lean
+refactor.
 
-This file records the presently coherent mathematical spine. It is intentionally not a finished paper. Sections may later split, merge or be replaced as the theory stabilizes.
+This file is the **active spine**, not an archive. It is expected to be
+rewritten as the mathematics improves. Earlier versions remain available in
+Git history. Specialized notes linked below retain calculations, proofs and
+branches that no longer belong in the main narrative.
 
 ---
 
-## 1. Local affine obstruction
+## 0. Current map
 
-Let \(G\) be a finite connected cubic graph and let
+The project now separates into four layers.
+
+### A. Paper-1 core: affine Fano compatibility
 
 \[
-f:E(G)\to \Gamma
+\text{quotient sheaf}
+\longrightarrow
+\text{Fano cohomological duality}
+\longrightarrow
+\text{support-boundary identity}
+\longrightarrow
+\text{compatibility}
+\longrightarrow
+\text{CDC extraction}.
 \]
 
-be a nowhere-zero flow over a binary vector space. At each vertex the three incident nonzero values sum to zero and span a plane \(W_v\).
+This is the present logical and expository core.
 
-The local affine gluing choices form a torsor, and global compatibility is governed by the linear operator
+### B. Rigidity and interpolation
 
 \[
-\delta_f:\Gamma^{V(G)}\longrightarrow
-\bigoplus_{e=uv}\Gamma/\langle f(e)\rangle,
+\text{relative quadratic evaluation}
+\longrightarrow
+\text{balancedness}
+\longrightarrow
+\text{unisolvence / exactness}
+\longrightarrow
+\text{constraint matroid circuits}.
+\]
+
+This explains exact balanced flags, but it is **not** the primitive behind
+AffineCDC: compatibility remains nontrivial on singular systems.
+
+### C. Generalized tensor and code-flag theory
+
+The flow tensor complex, nested code flags, Schur multiplication, Koszul
+homology, exact sequences, morphisms and interfaces form a broader theory.
+They organize the defect spaces and their functoriality, but do not currently
+belong to the minimal Paper-1 proof.
+
+### D. Graphical consequences
+
+The even gauge-code theorem, low-weight circuit classifications, embeddings,
+Petrials and cut gluing are consequences and test cases of the structural
+framework.
+
+---
+
+# Part I. The Paper-1 core
+
+## 1. Quotient sheaf and affine obstruction
+
+Let \(G\) be a finite cubic graph and let
+
+\[
+f:E(G)\to \Gamma,
 \qquad
-(\delta_fk)_e=[k_u+k_v].
+\Gamma=\mathbf F_2^3,
 \]
 
-The affine equation is
+be a nowhere-zero flow. At a vertex \(v\), the three incident nonzero values
+sum to zero and are the three nonzero points of a plane
 
 \[
-\delta_fm=c_f.
+W_v\le \Gamma.
 \]
 
-Its solution space, when nonempty, is a torsor under \(\ker\delta_f\). Modulo global translations by \(\Gamma\), the homogeneous moduli code is
+Define the quotient-sheaf cochain spaces
 
 \[
-\mathcal B_f:=\ker\delta_f/\Gamma.
+C_f^0=\Gamma^{V(G)},
+\qquad
+C_f^1=\bigoplus_{e=uv}\Gamma/\langle f(e)\rangle,
 \]
 
-Equivalently, a codeword \(\lambda\in\mathbf F_2^E\) belongs to \(\mathcal B_f\) precisely when there is a potential \(k:V\to\Gamma\) satisfying
+with coboundary
 
 \[
-k_u+k_v=\lambda_e f(e)
-\qquad(e=uv).
+(\delta_f k)_e=[k_u+k_v].
 \]
 
----
-
-## 2. Local Fano Hodge duality
-
-Now take
+Write
 
 \[
-\Gamma=\mathbf F_2^3
+H_f^0=\ker\delta_f,
+\qquad
+H_f^1=\operatorname{coker}\delta_f.
 \]
 
-with its canonical nonzero alternating volume form
+The local affine classification supplies an intrinsic right-hand side
 
 \[
-\omega\in\Lambda^3\Gamma^*.
+c_f\in C_f^1.
 \]
 
-For a plane \(W\le\Gamma\), define the legal dual configurations by triples
+Its class
 
 \[
-\eta_h\in\operatorname{Ann}(h)
-\qquad(h\in W\setminus\{0\})
+[c_f]\in H_f^1
 \]
 
-satisfying
+is the complete affine compatibility obstruction. The gluing problem is
+solvable exactly when \([c_f]=0\).
+
+The solution set, when nonempty, is a torsor under \(H_f^0\). After quotienting
+by constant vertex potentials,
 
 \[
-\sum_{h\ne0}\eta_h=0.
+\mathcal B_f:=H_f^0/\Gamma
 \]
 
-The map
+is the homogeneous gauge or moduli code.
+
+## 2. Local Fano duality
+
+Let
 
 \[
-\mathcal H_W:\Gamma\longrightarrow\operatorname{DualConfig}(W),
+\omega\in\Lambda^3\Gamma^*
+\]
+
+be the unique nonzero volume form. For a plane \(W\le\Gamma\), define
+
+\[
+\operatorname{DualConfig}(W)
+=
+\left\{
+(\eta_h)_{h\in W\setminus\{0\}}:
+\eta_h\in\operatorname{Ann}(h),\ 
+\sum_h\eta_h=0
+\right\}.
+\]
+
+Then
+
+\[
+\boxed{
+\mathcal H_W:\Gamma\overset\sim\longrightarrow
+\operatorname{DualConfig}(W),
 \qquad
 (\mathcal H_W(a))_h(x)=\omega(a,h,x)
+}
 \]
 
 is an isomorphism.
 
-This identifies the earlier coordinate cross-bit with the quotient bit detecting whether \(a\notin W\). It is the local mechanism behind the exceptional rank-three compatibility theorem.
+This is the local mechanism previously encoded by legal dual configurations,
+the cross-pairing bit and the codimension-one branching analysis.
 
----
+## 3. Global Fano cohomological duality
 
-## 3. Flow quotient sheaf
-
-Define a cellular sheaf \(\mathscr Q_f\) on \(G\) by
-
-\[
-\mathscr Q_f(v)=\Gamma,
-\qquad
-\mathscr Q_f(e)=\Gamma/\langle f(e)\rangle,
-\]
-
-with endpoint restrictions equal to the quotient maps. Its cellular coboundary is exactly \(\delta_f\).
-
-Hence
-
-\[
-[c_f]\in H^1(G;\mathscr Q_f)
-\]
-
-is the intrinsic affine compatibility obstruction, while
-
-\[
-\widetilde H^0(G;\mathscr Q_f)
-:=H^0(G;\mathscr Q_f)/\Gamma
-\cong\mathcal B_f.
-\]
-
-The dual of \(H^1\) is the equilibrium-stress space consisting of covectors
+An equilibrium stress is a family
 
 \[
 \psi_e\in\operatorname{Ann}(f(e))
 \]
 
-whose incident sum vanishes at every vertex:
+whose incident sum is zero at every vertex. The stress space is canonically
 
 \[
-H^1(G;\mathscr Q_f)^*\cong\operatorname{Stress}(f).
+\operatorname{Stress}(f)\cong(H_f^1)^*.
 \]
 
-For a cubic graph with \(n=|V|\) and \(r=\dim\langle f(E)\rangle\),
+For \(k\in H_f^0\), define
 
 \[
-\chi(G;\mathscr Q_f)
-=r|V|-(r-1)|E|
-=\frac{3-r}{2}n.
+(\mathcal H_f k)_e([x])
+=
+\omega(k_u,f(e),x),
+\qquad e=uv.
 \]
 
-Thus rank three is the unique balanced rank.
-
----
-
-## 4. Canonical alternating stresses and the index trichotomy
-
-Every alternating form
+This is independent of the endpoint because
 
 \[
-\Omega\in\Lambda^2\Gamma^*
+k_u+k_v\in\langle f(e)\rangle.
 \]
 
-defines an equilibrium stress
+It is an equilibrium stress because the three incident flow values sum to
+zero. Conversely, a stress gives at every vertex a unique \(k_v\) by local
+Fano duality; equality of the two endpoint descriptions on an edge forces
 
 \[
-\psi_e^\Omega(x)=\Omega(f(e),x).
+k_u+k_v\in\langle f(e)\rangle.
 \]
 
-If the flow values span \(\Gamma\), these form a canonical subspace of dimension
+Thus the local inverses glue automatically, giving the constructive global
+isomorphism
 
 \[
-\binom r2.
+\boxed{
+\mathcal H_f:H_f^0\overset\sim\longrightarrow
+\operatorname{Stress}(f)
+\cong(H_f^1)^*.
+}
+\]
+
+Equivalently, there is a perfect pairing
+
+\[
+\langle-,-\rangle_f:
+H_f^0\times H_f^1\to\mathbf F_2.
+\]
+
+## 4. The transverse-edge chain
+
+For a global section \(k=(k_v)\in H_f^0\), define
+
+\[
+s(k)\in\mathbf F_2^{E(G)}
+\]
+
+by
+
+\[
+s(k)_e=1
+\iff
+k_u\notin\langle f(e)\rangle,
+\qquad e=uv.
+\]
+
+This is well defined, since the section condition implies
+
+\[
+k_u\in\langle f(e)\rangle
+\iff
+k_v\in\langle f(e)\rangle.
+\]
+
+At a vertex \(v\), define the outside-plane bit
+
+\[
+b(k)_v=1
+\iff
+k_v\notin W_v.
+\]
+
+The three incident flow lines are exactly the three one-dimensional subspaces
+of \(W_v\). Hence:
+
+| position of \(k_v\) | degree of \(s(k)\) at \(v\) | \(b(k)_v\) |
+|---|---:|---:|
+| \(k_v=0\) | \(0\) | \(0\) |
+| \(k_v\in W_v\setminus\{0\}\) | \(2\) | \(0\) |
+| \(k_v\notin W_v\) | \(3\) | \(1\) |
+
+Therefore
+
+\[
+\boxed{b(k)=\partial s(k)}
+\]
+
+as vertex chains over \(\mathbf F_2\). This is the branching identity in its
+minimal form.
+
+## 5. The support-boundary proof of compatibility
+
+The local definition of the affine obstruction gives
+
+\[
+\boxed{
+\langle k,[c_f]\rangle_f
+=
+\sum_{v\in V(G)} b(k)_v.
+}
 \]
 
 Let
 
 \[
-\operatorname{EssStress}(f)
-:=\operatorname{Stress}(f)/\operatorname{AltStress}(f).
+\varepsilon:\mathbf F_2^{V(G)}\to\mathbf F_2
 \]
 
-Writing \(b_f=\dim\mathcal B_f\), one obtains
+be augmentation. Then
 
 \[
 \boxed{
-\dim\operatorname{EssStress}(f)
-=b_f+\frac{(r-3)(n-r)}2.
+\langle k,[c_f]\rangle_f
+=
+\varepsilon b(k)
+=
+\varepsilon\partial s(k)
+=0.
 }
 \]
 
-This yields the rank trichotomy:
+The last equality is the handshaking identity: every edge has two endpoints.
+Since the Fano pairing is perfect, this holds for every \(k\in H_f^0\) only if
 
-- **rank two:** flexibility is forced, with \(b_f=n/2-1\), and every stress is canonical;
-- **rank three:** \(\dim\operatorname{EssStress}(f)=b_f\), producing Fano self-duality;
-- **rank greater than three:** even gauge-rigid systems generally possess dimensionally forced essential obstruction directions.
+\[
+\boxed{[c_f]=0.}
+\]
 
-The explicit rank-four \(K_{3,3}\) example has \(b_f=0\) but one essential stress direction, which detects incompatibility.
+Thus every nowhere-zero \(\mathbf F_2^3\)-flow on a finite cubic graph admits a
+compatible affine gluing.
+
+The entire compatibility proof is therefore:
+
+1. perfect Fano self-duality;
+2. the local identity \(b(k)=\partial s(k)\);
+3. augmentation kills boundaries.
+
+## 6. Why the hypotheses fit exactly
+
+The mechanism composes three exceptional facts.
+
+- **Binary field:** a one-dimensional quotient has a unique nonzero value, so
+  its coordinate is a support bit.
+- **Rank three:** each vertex plane has codimension one, so leaving the plane is
+  a single bit.
+- **Cubic graph:** the incident values are exactly the three nonzero points and
+  three lines of a binary plane, giving local degrees \(0,2,3\).
+
+The theorem is exceptional because these features turn the affine obstruction
+into the augmentation of an ordinary graph boundary.
+
+## 7. CDC extraction
+
+The compatible gauges determine local even families whose edge labels agree.
+The verified dart-level construction pairs the relevant incidences, takes
+orbits of the resulting permutation and obtains a standard cycle double
+cover. This extraction remains part of the Paper-1 dependency cone, but is
+logically downstream of the compatibility theorem above.
 
 ---
 
-## 5. Wedge–handshake identity and Fano compatibility
+# Part II. Reduced duality and the tensor bridge
 
-At a cubic vertex with incident values
+## 8. Constants and alternating stresses
 
-\[
-h_1+h_2+h_3=0,
-\]
-
-the element
+A constant section \(k_v=a\) maps to
 
 \[
-q_v=h_1\wedge h_2\in\Lambda^2\Gamma
+\psi_e(x)=\omega(a,f(e),x),
 \]
 
-is independent of the chosen pair. For every \(\alpha,\beta\in\Gamma^*\), the value
+a canonical alternating stress. Contraction with \(\omega\) identifies
 
 \[
-(\alpha\wedge\beta)(q_v)
+\Gamma\cong\Lambda^2\Gamma^*,
 \]
 
-is the degree parity at \(v\) of the intersection of the binary flows \(\alpha\circ f\) and \(\beta\circ f\). Summing over all vertices counts each common edge twice, so
+so constants correspond exactly to the alternating-stress subspace. The global
+Fano isomorphism descends to
 
 \[
-\boxed{\sum_v q_v=0.}
+\boxed{
+\mathcal B_f
+\cong
+\operatorname{EssStress}(f),
+}
 \]
 
-Therefore every canonical alternating stress annihilates the affine obstruction.
-
-In rank three, the global Hodge map
+where
 
 \[
-(\mathcal H_fk)_e(x)=\omega(k_u,f(e),x)
+\operatorname{EssStress}(f)
+=
+\operatorname{Stress}(f)/\operatorname{AltStress}(f).
 \]
 
-identifies global sections with equilibrium stresses. Constants correspond to canonical determinant stresses, and reduced global sections correspond to essential stresses. The branching identity then annihilates the remaining essential part, yielding
+## 9. Flow tensor complex
 
-\[
-[c_f]=0.
-\]
-
-Thus every nowhere-zero \(\mathbf F_2^3\)-flow on a finite cubic graph admits a compatible affine gluing.
-
----
-
-## 6. Schur code and flow constraint matroid
-
-Let \(\mathcal C(G)\le\mathbf F_2^E\) be the binary cycle space and let
+Let \(\mathcal C(G)\le\mathbf F_2^E\) be the binary cycle space and
 
 \[
 \mathcal F_f=\{\ell\circ f:\ell\in\Gamma^*\}.
@@ -239,54 +388,24 @@ Let \(\mathcal C(G)\le\mathbf F_2^E\) be the binary cycle space and let
 Then
 
 \[
-\boxed{
-\mathcal B_f=(\mathcal C(G)*\mathcal F_f)^\perp,
-}
+\mathcal B_f=(\mathcal C(G)*\mathcal F_f)^\perp.
 \]
 
-where \(*\) is coordinatewise multiplication.
-
-Equivalently, put
+Equivalently, with
 
 \[
-Q_G=\mathbf F_2^E/\mathcal C(G)^\perp\cong\mathcal C(G)^*
+Q_G=\mathbf F_2^E/\mathcal C(G)^\perp,
 \]
 
-and write \(\bar e\in Q_G\) for the class of the edge coordinate. Define
+define
 
 \[
 T_f:\mathbf F_2^E\to\Gamma\otimes Q_G,
 \qquad
-T_f(\lambda)=\sum_e\lambda_e f(e)\otimes\bar e.
+T_f(\lambda)=\sum_e\lambda_e f(e)\otimes\bar e,
 \]
 
-Then
-
-\[
-\ker T_f=\mathcal B_f.
-\]
-
-The columns
-
-\[
-f(e)\otimes\bar e
-\]
-
-define a canonical binary represented matroid \(M_f^\otimes\), the **flow constraint matroid**. Its cycle space is \(\mathcal B_f\), and its cocycle space is \(\mathcal C(G)*\mathcal F_f\). Gauge rigidity is equivalent to this matroid being free.
-
----
-
-## 7. Flow tensor complex
-
-The flow induces a surjection
-
-\[
-F^*:Q_G\to\Gamma,
-\qquad
-F^*(\bar e)=f(e).
-\]
-
-Define
+and
 
 \[
 W_f:\Gamma\otimes Q_G\to\Lambda^2\Gamma,
@@ -294,126 +413,208 @@ W_f:\Gamma\otimes Q_G\to\Lambda^2\Gamma,
 W_f(a\otimes q)=a\wedge F^*(q).
 \]
 
-Since
+The middle homology
 
 \[
-W_f(f(e)\otimes\bar e)=f(e)\wedge f(e)=0,
+\mathcal K_f=\ker W_f/\operatorname{im}T_f
 \]
 
-we obtain the canonical complex
-
-\[
-0\to\mathcal B_f\to\mathbf F_2^E
-\xrightarrow{T_f}\Gamma\otimes Q_G
-\xrightarrow{W_f}\Lambda^2\Gamma\to0,
-\]
-
-exact except possibly at the middle tensor space. Its middle homology is
-
-\[
-\mathcal K_f:=\ker W_f/\operatorname{im}T_f.
-\]
-
-There is a canonical duality
+satisfies
 
 \[
 \mathcal K_f^*\cong\operatorname{EssStress}(f).
 \]
 
-The affine obstruction determines a class
-
-\[
-\kappa_f\in\mathcal K_f,
-\]
-
-and compatibility is equivalent to \(\kappa_f=0\).
-
-For cubic rank-three flows, \(T_f\) becomes a square map onto \(\ker W_f\), and the following are equivalent:
-
-\[
-\mathcal B_f=0
-\iff
-\mathcal K_f=0
-\iff
-T_f:\mathbf F_2^E\overset\sim\longrightarrow\ker W_f
-\iff
-M_f^\otimes\text{ is free}.
-\]
-
-This is the current intrinsic gauge-rigidity criterion for cyclic cores.
-
----
-
-## 8. Fano basis-packing parity
-
-Choose a cycle-space basis beginning with the three coordinate flows and complete it by a matrix \(H\) of dimension
-
-\[
-d=\frac n2-2.
-\]
-
-The reduced tensor determinant expands into ordered triples \((R_1,R_2,R_3)\) of pairwise disjoint \(H\)-bases such that
-
-\[
-R_i\subseteq\operatorname{supp}(f_i),
-\]
-
-and the six complementary edges carry six distinct nonzero Fano labels.
-
-If \(N_f(H)\) is the number of these packings, then
+Combining this with reduced Fano duality gives
 
 \[
 \boxed{
-\det\overline T_f=N_f(H)\pmod2.
+\mathcal B_f\cong\mathcal K_f^*.
 }
 \]
 
-Consequently
+Thus the tensor defect duality is the reduced form of the quotient-sheaf Fano
+cohomological duality, after removing constants and alternating stresses.
 
-\[
-f\text{ is gauge-rigid}
-\iff
-N_f(H)\text{ is odd}.
-\]
-
-The integer count depends on the chosen complement, but its parity is intrinsic.
+The tensor language is structurally valuable, but it is not needed to state
+the shortest compatibility proof.
 
 ---
 
-## 9. Embeddings, Petrials and cut gluing
+# Part III. Rigidity as relative quadratic interpolation
 
-A compatible affine gauge can be interpreted as a strong embedding equipped with \(\Gamma\)-valued face potentials satisfying
+## 10. Relative quadratic evaluation
+
+For a full-support nested binary code flag
 
 \[
-f(e)=t(F_e^+)+t(F_e^-).
+D\subseteq C\subseteq A=\mathbf F_2^E,
 \]
 
-The moduli code acts by code-constrained partial Petrials. This leads to genus and orientability distributions, transition-matroid state sums and a syndrome-refined universal invariant.
-
-Low edge cuts admit exact gluing laws. For a two-edge sum,
+define
 
 \[
-b_G=b_A+b_B+1,
+\kappa:\Lambda^2D\to D\otimes C,
 \qquad
-\Pi_G=2\Pi_A\Pi_B.
+\kappa(d_1\wedge d_2)=d_1\otimes d_2+d_2\otimes d_1,
 \]
 
-For a three-edge sum,
+and
 
 \[
-b_G=b_A+b_B,
-\qquad
-\Pi_G=\Pi_A\Pi_B.
+\mathcal Q(D,C)
+:=(D\otimes C)/\kappa(\Lambda^2D).
 \]
 
-These are naturally interpreted as Mayer–Vietoris statements for the flow quotient sheaf.
+Coordinatewise multiplication descends to the relative quadratic evaluation
+map
+
+\[
+\operatorname{ev}_{D,C}:\mathcal Q(D,C)\to A.
+\]
+
+Since
+
+\[
+\dim\mathcal Q(D,C)
+=(\dim D)(\dim C)-\binom{\dim D}{2},
+\]
+
+the flag is balanced exactly when evaluation is a square linear system.
+
+## 11. Exact balanced flags are unisolvent
+
+For a balanced flag, the following are equivalent:
+
+- the flow-tensor complex is exact;
+- \(\operatorname{ev}_{D,C}\) is injective;
+- \(\operatorname{ev}_{D,C}\) is surjective;
+- every function on \(E\) has a unique relative quadratic interpolant.
+
+Hence
+
+\[
+\boxed{
+\text{exact balanced flag}
+=
+\text{relatively quadratically unisolvent coordinate set}.
+}
+\]
+
+The balanced determinant is an interpolation determinant. Constraint-matroid
+circuits are minimal failures of relative quadratic unisolvence.
+
+This is the correct positive meaning of exact balancedness, but exactness is
+only the rigid locus \(\mathcal B_f=\mathcal K_f=0\). On that locus compatibility
+is automatic, so exact balancedness cannot be the primitive behind AffineCDC.
 
 ---
 
-## 10. Formalization and publication path
+# Part IV. Consequences and specialized branches
 
-The current Lean repository proves the coordinate-free rank-three compatibility chain and extracts a standard cycle double cover for cubic graphs carrying a nowhere-zero \(\mathbf F_2^3\)-flow. The unconditional CDC endpoint remains the eventual integration target.
+## 12. Gauge parity and circuit structure
 
-Before the public Lean API is frozen, the Hodge/sheaf reformulation should be prototyped and compared against the existing branching proof. The broader moduli, embedding, transition and cut-factorization theory belongs to the mathematical research layer and need not block the first stable formal release.
+For rank at most three, every gauge word has even Hamming weight. Equivalently,
+the constraint matroid is bipartite. The rank bound is sharp: rank four admits
+odd gauge words.
 
-A dated SHA-256 snapshot manifest in this project records the original notes, scripts and outputs from which this synthesis was distilled.
+See:
+
+- [Even gauge code](even-gauge-code.md)
+- [Weight-six circuit classification](weight6-circuit-classification.md)
+
+The low-weight graphical circuit layers currently read:
+
+| weight | circuit type |
+|---:|---|
+| \(2\) | equal-labelled \(2K_2\) quotient |
+| \(4\) | equal-labelled \(4K_2\) quotient |
+| \(6\) | \(6K_2\), doubled triangle \(2K_3\), or affine-plane \(K_4\) |
+
+The next unresolved layer is weight eight.
+
+## 13. General code-flag and tensor theory
+
+These notes develop the broader algebraic framework:
+
+- [Flow tensor datum](flow-tensor-datum.md)
+- [Flow tensor foundations v0](flow-tensor-theory-foundations-v0.md)
+- [Code flags, Schur products and Koszul homology](code-flag-schur-koszul.md)
+- [Divided-square exact sequence](divided-square-exact-sequence.md)
+- [Coefficient-quotient exact sequence](coefficient-quotient-exact-sequence.md)
+- [Morphisms and automorphisms](flow-tensor-morphisms-and-automorphisms.md)
+
+Their current role is **generalization and rigidity theory**, not the minimal
+logical core of Paper 1. Earlier language identifying the flow tensor datum as
+the unique master object should therefore be read as a productive provisional
+hypothesis, not the final ontology of the project.
+
+## 14. Interfaces and gluing
+
+The following notes study cuts and sewing:
+
+- [Interface correspondence](interface-correspondence.md)
+- [Interface line duality](interface-line-duality.md)
+
+They are relevant to decomposition, Mayer--Vietoris phenomena and future
+functorial theory, but do not block Paper 1.
+
+## 15. Embeddings and topological interpretations
+
+Compatible affine gauges may be interpreted through strong embeddings, face
+potentials and code-constrained partial Petrials. Genus/orientability
+distributions, transition-matroid state sums and cut-factorization laws remain
+active research branches. They should be developed in specialized notes rather
+than expanded inside this spine before the compatibility paper closes.
+
+---
+
+# Part V. Status and publication discipline
+
+## 16. Verified versus newly compressed
+
+### Lean-verified in `Yuren-Tang/affine-cdc`
+
+- local affine classification and naturality;
+- quotient universality and gauge classification;
+- legal dual configurations and the cross-bit formulation;
+- codimension-one branching identity;
+- rank-three global compatibility;
+- dart-level conditional cycle-double-cover extraction;
+- axiom and no-`sorry` audit.
+
+### Paper-proof draft, not yet formalized in this presentation
+
+- constructive global Fano cohomological duality as an explicit isomorphism;
+- the transverse-edge chain \(s(k)\);
+- the identity \(b(k)=\partial s(k)\);
+- the one-line support-boundary proof
+  \[
+  \langle k,[c_f]\rangle=\varepsilon\partial s(k)=0;
+  \]
+- exact balanced flags as relative quadratic unisolvent configurations.
+
+These new formulations require independent mathematical review before they
+replace the older presentation in a formal release.
+
+## 17. Current Paper-1 boundary
+
+The smallest coherent first paper should contain:
+
+1. local affine families and the intrinsic obstruction;
+2. the quotient sheaf;
+3. local and global Fano duality;
+4. the support-boundary compatibility proof;
+5. the verified CDC extraction;
+6. a theorem-to-Lean map and trust-boundary audit.
+
+The broad code-flag/Koszul theory, exact-balanced interpolation, circuit
+classifications, interface theory and topological state sums should not block
+closure of Paper 1. They may appear as brief outlooks or later companion work.
+
+## 18. Living-document rule
+
+This file states the current best synthesis. When a later structure strictly
+improves it, this file should be rewritten rather than merely supplemented.
+Superseded arguments remain citable through Git history and specialized notes;
+they need not remain in the active narrative.
