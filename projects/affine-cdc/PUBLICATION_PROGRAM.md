@@ -20,25 +20,31 @@ sequel. Paper D should not delay them.
 
 ### Final headline theorem
 
-The paper's final graph-theoretic theorem is the protected finite loopless
-multigraph formulation of the Cycle Double Cover conjecture:
+The paper's final graph-theoretic theorem is:
 
-> every finite loopless bridgeless multigraph has a cycle double cover.
+> Every multigraph with finite active edge set and no bridges has a cycle double
+> cover.
 
-The paper must prove this literal endpoint through the project's own graph model
-and reduction. A theorem only for graphs already cubic and already carrying the
-required flow is an intermediate corollary, not the paper headline.
+Loops are allowed. They are deleted before the loopless proof core and restored
+at the end by adding two occurrences of each singleton loop circuit. A circuit
+is a nonempty inclusion-minimal cut-even edge set. The paper must prove this full
+endpoint through the project's own graph model and reduction.
+
+The current companion Lean `Statement.lean` is still loopless and ambient-finite.
+It is an implementation checkpoint awaiting the approved Path A migration and
+must not be presented as the final natural mathematical statement or as already
+proved.
 
 ### Principal new structural theorem
 
-For a finite cubic graph with a nowhere-zero $\mathbf F_2^3$-flow, the local
-affine-family torsors admit a globally compatible choice. In the invariant
-presentation, the characteristic torsor of the vertex Lagrangian intersects the
-totally singular edge Lagrangian.
+For a finite cubic graph, not necessarily connected, with a nowhere-zero
+$\mathbf F_2^3$-flow, the local affine-family torsors admit a globally compatible
+choice. In the invariant presentation, the characteristic torsor of the vertex
+Lagrangian intersects the totally singular edge Lagrangian.
 
 The retained graph-and-dart data turn a compatible family into a graph-level
-even double cover. Circuit decomposition is postponed until after the outer
-graph reduction.
+multiset even double cover. Circuit decomposition is postponed until after the
+outer graph reduction.
 
 ### Mathematical contents
 
@@ -74,30 +80,32 @@ graph reduction.
    - equivalence with quadratic handshaking and support-boundary cancellation;
    - the compatible-family moduli torsor.
 
-5. **Natural cover output**
+5. **Natural affine output**
    - compatible family to indexed even edge supports;
-   - flattening to a multiset even double cover;
+   - flattening to a graph-level multiset even double cover;
    - exact double coverage and allowance of repeated or empty supports;
-   - why a cubic-flow CDC is only an immediate corollary.
+   - a cubic-flow CDC only as an optional immediate corollary.
 
-6. **Outer graph-theoretic shell**
-   - cubic expansion of a finite loopless bridgeless multigraph;
-   - existence of the required rank-three binary flow on the expansion;
-   - collapse data and edge projection;
-   - cut-evenness as the pure transport invariant;
-   - loopless bridges between vertex parity and cut parity.
+6. **Full outer graph-theoretic shell**
+   - active-edge finiteness and preliminary loop separation;
+   - cubic expansion and rank-three binary flow on the loopless core;
+   - vertex-even/cut-even bridge on the loopless expansion;
+   - pure cut-even collapse transport;
+   - even double cover of the loopless original core.
 
-7. **Final decomposition and theorem**
-   - finite even-support circuit decomposition;
-   - one final decomposition on the original graph;
-   - conclusion of the protected unconditional CDC statement.
+7. **Final decomposition and loop reinsertion**
+   - one finite circuit decomposition after collapse;
+   - two singleton circuit occurrences for every removed loop;
+   - conclusion of the full finite bridgeless-multigraph CDC theorem.
 
 8. **Formal correspondence**
    - exact relation between the paper's characteristic torsor and the existing
      Lean local-family API;
    - exact relation between the current dart-level construction and the
      graph-level even-cover theorem;
-   - theorem-by-theorem status and axiom audit.
+   - theorem-by-theorem status and axiom audit;
+   - explicit separation between the unchanged Lean checkpoint and the approved
+     but unimplemented public-statement migration.
 
 ### Canonical sources
 
@@ -121,14 +129,16 @@ Do not include:
 ### Publication readiness
 
 The affine compatibility core is mathematically coherent, but Paper A is not yet
-closed because the complete unconditional shell and formal correspondence are
-unfinished. Remaining critical work:
+closed because the complete outer shell and formal correspondence are unfinished.
+Remaining critical work:
 
 1. independently audit the invariant characteristic-torsor proof;
 2. match the invariant local characteristic torsor explicitly to the Lean API;
 3. state and prove the exact graph-level even-cover extraction theorem;
-4. close the cubic expansion, flow, collapse, and cut-parity theorem packet;
-5. prove the literal unconditional endpoint in Lean;
+4. close the loop reduction, cubic expansion, flow, collapse, and cut-parity
+   theorem packets;
+5. prove the full unconditional endpoint in Lean after the exact Path A migration
+   packet is approved and implemented;
 6. add graph-flow and cycle-double-cover bibliography;
 7. obtain independent proof review.
 
@@ -291,8 +301,7 @@ restored and classified under the protocol in
 
 The correct immediate sequence is:
 
-1. close the mathematical and formal spine of Paper A through the literal
-   unconditional theorem;
+1. close the mathematical and formal spine of Paper A through the full theorem;
 2. independently audit and prepare Paper B;
 3. develop Paper C if the graph-theory comparisons are favourable;
 4. run recognition tests for Paper D without allowing it to block A or B;
