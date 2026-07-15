@@ -1,26 +1,32 @@
 # Formalization and reliability boundary
 
-This file separates machine-checked results, protected public statements, paper
-proofs, exact computations, and open programmes. It is part of the mathematical
-content: a theorem does not inherit a stronger status merely because it has
+This file separates machine-checked results, the approved mathematical target,
+the unchanged Lean checkpoint, paper proofs, exact computations, and open
+programmes. A theorem does not inherit a stronger status merely because it has
 been rewritten in a more invariant language or placed in a cleaner architecture.
 
-## 1. Protected public statement layer
+## 1. Approved mathematical target and current Lean checkpoint
+
+The natural public theorem is:
+
+> Every multigraph with finite active edge set and no bridges has a cycle double
+> cover.
+
+Loops are allowed. The natural circuit is a nonempty inclusion-minimal cut-even
+edge set, so a singleton loop is a circuit. The author has approved Path A for a
+future clean migration of the public Lean statement to this semantics and to
+active-edge finiteness.
 
 The companion repository
-[`Yuren-Tang/affine-cdc`](https://github.com/Yuren-Tang/affine-cdc) contains a
-self-contained Mathlib-only audit file `Statement.lean`. Its protected endpoint
-is the project's finite loopless multigraph formulation of the unconditional
-Cycle Double Cover conjecture.
+[`Yuren-Tang/affine-cdc`](https://github.com/Yuren-Tang/affine-cdc) still contains
+the earlier self-contained Mathlib-only audit file `Statement.lean`. Its current
+`CDCStatement` is loopless and quantifies over finite ambient vertex and edge
+types. That declaration is **defined but not yet proved**. It remains unchanged
+until the separate exact declaration-and-migration packet is approved and a
+later local Lean task implements it.
 
-That public audit statement is **defined but not yet proved** in the companion
-repository. The mathematical reorganization in this repository does not alter
-its hypotheses, conclusion, loop convention, finiteness convention, or graph
-model.
-
-Any future change to the protected public statement is a separate author-level
-decision. Internal mathematical generalization does not silently rewrite the
-claim being audited.
+Thus the current Lean checkpoint is not the final natural mathematical statement,
+and approval of Path A is not evidence that the migration has already occurred.
 
 ## 2. Machine-checked anchor
 
@@ -36,8 +42,9 @@ At the current audited companion-repository checkpoint, Lean verifies:
   $\mathbf F_2^3$-flow.
 
 The last item is a **cubic-flow corollary**, not the final unconditional theorem.
-The Lean repository does not yet contain a theorem inhabiting the protected
-`CDCStatement` for every finite loopless bridgeless multigraph.
+The Lean repository does not yet prove either the current loopless
+`CDCStatement` for all finite loopless bridgeless multigraphs or the approved
+full theorem with loops and active-edge finiteness.
 
 ## 3. Invariant mathematical bridge not yet machine-checked
 
@@ -65,26 +72,39 @@ mathematical identification, not as literally the same checked term.
 The canonical graph-theoretic factorization is
 
 $$
-\text{compatible affine family}
-\longrightarrow
-\text{even double cover}
-\longrightarrow
-\text{cut-even transport through collapse}
-\longrightarrow
-\text{even double cover of the original graph}
-\longrightarrow
-\text{cycle double cover}.
+\begin{array}{c}
+\text{finite bridgeless multigraph}\
+\downarrow\;\text{delete loops}\
+\text{loopless bridgeless core}\
+\downarrow
+\text{cubic expansion with rank-three flow}\
+\downarrow
+\text{compatible affine family}\
+\downarrow
+\text{graph-level multiset even double cover}\
+\downarrow
+\text{vertex-even/cut-even bridge on the loopless expansion}\
+\downarrow
+\text{pure cut-even collapse transport}\
+\downarrow
+\text{even double cover of the loopless original core}\
+\downarrow
+\text{one final circuit decomposition}\
+\downarrow\;\text{reinsert two singleton circuits per loop}\
+\text{cycle double cover of the original multigraph}.
+\end{array}
 $$
 
-The current Lean proof passes through the relevant even supports internally, but
-the following have not yet been formalized as the approved architecture:
+The current Lean proof passes through relevant even supports internally, but the
+following have not yet been formalized as the approved architecture:
 
 - a named graph-level even-double-cover predicate and construction theorem;
 - finite-support circuit decomposition at its weakest natural hypothesis;
-- vertex-even/cut-even bridge lemmas under the protected loop convention;
+- vertex-even/cut-even bridge lemmas under the current loopless convention;
 - pure cut-even graph-collapse transport;
+- loop deletion and singleton-loop reinsertion;
 - the independent cubic expansion and flow shell;
-- the final unconditional theorem.
+- the full unconditional theorem.
 
 The chapter
 [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md)
@@ -107,13 +127,12 @@ The following canonical chapters contain written theorem-level arguments:
 - [`gauge/gauge-modes-and-circuits.md`](gauge/gauge-modes-and-circuits.md);
 - [`gauge/interface-gluing.md`](gauge/interface-gluing.md).
 
-“Theorem-level” means that a mathematical statement and argument are written.
-It does not mean peer review, independent line-by-line audit, or Lean
-formalization.
+“Theorem-level” means that a mathematical statement and argument are written. It
+does not mean peer review, independent line-by-line audit, or Lean formalization.
 
-The outer expansion/flow theorem packet required for the unconditional CDC shell
-is not yet a closed canonical chapter in this repository. Its absence is a
-mathematical and formalization gap, not merely an editorial gap.
+The outer expansion/flow theorem packet required for the full CDC shell is not
+yet a closed canonical chapter in this repository. Its absence is a mathematical
+and formalization gap, not merely an editorial gap.
 
 ## 6. Exact computational layer
 
@@ -149,10 +168,11 @@ The following claims remain conditional or programmatic:
 2. A finite computation supports an example or identity but does not establish
    an all-rank theorem.
 3. A cubic-flow cycle double cover is not the unconditional CDC theorem.
-4. The protected public statement is the claim the project must ultimately
-   prove; internal architecture may be generalized without changing that audit
-   surface.
-5. Historical filenames, prompts, and superseded ontologies are not current
+4. The approved full finite bridgeless-multigraph theorem is the natural external
+   target; the current loopless ambient-finite Lean declaration is an unchanged
+   implementation checkpoint.
+5. An approved migration direction is not an implemented declaration.
+6. Historical filenames, prompts, and superseded ontologies are not current
    mathematical authority.
 
 ## 9. Scope of the canonical integration
