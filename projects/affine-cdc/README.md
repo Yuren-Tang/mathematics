@@ -1,16 +1,156 @@
-# AffineCDC — active research
+# AffineCDC
 
-This project folder is the evolving public mathematical layer accompanying the Lean repository `Yuren-Tang/affine-cdc`.
+This directory studies a local-to-global mechanism attached to nowhere-zero
+binary flows on cubic graphs.
 
-The active spine may be rewritten, split or merged as the theory develops. Dated snapshots preserve earlier source materials and computational evidence. Files have heterogeneous status: Lean-verified, paper-proof complete, computationally verified, proof sketch, or conjectural.
+> A cubic rank-three flow determines local affine families. Their Fano
+> quadratic geometry forces a globally compatible choice, and the retained
+> graph-and-dart data then extract a cycle double cover.
 
-## Current structural chain
+The active tree is organized by mathematical dependency. Discovery order and
+superseded formulations remain available in Git history and dated snapshots.
 
-1. local affine classification and Fano Hodge duality;
-2. global compatibility and higher-rank sharpness;
-3. the flow quotient sheaf and cubic index trichotomy;
-4. the flow tensor complex and constraint matroid;
-5. gauge–embedding and topological interpretations;
-6. transition/orientability invariants and cut factorization.
+## Canonical reading order
 
-The first public note records the earliest structural mechanism in this chain.
+1. [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md)  
+   The rank-independent compatibility object: incidence space, affine pair
+   complex, quotient sheaf, obstruction class, and equilibrium stresses.
+
+2. [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md)  
+   The canonical quadratic planes, local Fano Lagrangians, characteristic
+   torsors, affine Lagrangian intersection, automatic compatibility, and the
+   boundary of CDC extraction.
+
+3. [`rank-hierarchy/transgression-and-dual-fano-residue.md`](rank-hierarchy/transgression-and-dual-fano-residue.md)  
+   Why rank three is the unique balanced quadratic point, the all-rank support
+   transgression, and the complete dual-Fano residue criterion.
+
+4. [`rank-hierarchy/rank-four-first-obstruction.md`](rank-hierarchy/rank-four-first-obstruction.md)  
+   The Pfaffian cubic residue, symplectic parity, and the triangular-prism versus
+   $K_{3,3}$ sharpness theorem.
+
+5. [`reduction/incidence-to-tensor-complex.md`](reduction/incidence-to-tensor-complex.md)  
+   The exact chain-level zigzag from affine incidence geometry to the tensor
+   complex, including what the reduction preserves and forgets.
+
+6. [`tensor/code-flag-complex.md`](tensor/code-flag-complex.md),
+   [`tensor/exact-sequences-and-functoriality.md`](tensor/exact-sequences-and-functoriality.md), and
+   [`tensor/torsion-and-rigidity.md`](tensor/torsion-and-rigidity.md)  
+   The downstream based-quotient/code-flag theory, divided-square and
+   coefficient exact sequences, and balanced torsion.
+
+7. [`gauge/gauge-modes-and-circuits.md`](gauge/gauge-modes-and-circuits.md) and
+   [`gauge/interface-gluing.md`](gauge/interface-gluing.md)  
+   Harmonic cut quotients, parity and low-weight circuits, mixed-variance cut
+   gluing, interface lines, and sewing laws.
+
+## The central object
+
+Let $G=(V,E)$ be a finite connected cubic graph, let $\Gamma$ be a binary vector
+space, and let
+
+$$
+f:E\longrightarrow\Gamma
+$$
+
+be a nowhere-zero flow. For every edge put
+
+$$
+Q_e:=\Gamma/\langle f(e)\rangle.
+$$
+
+Let $E_f$ be the direct sum of the incidence copies of the $Q_e$. Local
+homogeneous families form $L_{\mathrm{vert}}\leq E_f$, edge matching forms
+$L_{\mathrm{edge}}\leq E_f$, and the actual local families form the affine
+coset
+
+$$
+\kappa+L_{\mathrm{vert}}.
+$$
+
+The compatibility problem is the pointed two-term complex
+
+$$
+\boxed{
+\mathcal P_f:
+L_{\mathrm{vert}}\oplus L_{\mathrm{edge}}
+\xrightarrow{+}
+E_f,
+\qquad
+\kappa\in E_f.
+}
+$$
+
+It has
+
+$$
+H^0(\mathcal P_f)
+\cong
+L_{\mathrm{vert}}\cap L_{\mathrm{edge}}
+$$
+
+and
+
+$$
+H^1(\mathcal P_f)
+\cong
+E_f/(L_{\mathrm{vert}}+L_{\mathrm{edge}}).
+$$
+
+Compatibility is exactly
+
+$$
+[\kappa]=0\in H^1(\mathcal P_f),
+$$
+
+and the compatible-family space is then a torsor under $H^0(\mathcal P_f)$.
+
+In rank three, each $Q_e$ is a canonical anisotropic quadratic plane. The vertex
+space is Lagrangian, the affine coset is its characteristic torsor, and the
+edge-matching space is a totally singular Lagrangian. The abstract
+characteristic-torsor intersection theorem forces $[\kappa]=0$.
+
+## Logical levels
+
+### Compatibility spine
+
+- source cubic flow and local affine families;
+- affine incidence-pair complex;
+- quotient-sheaf and stress presentations;
+- rank-three Fano quadratic-Lagrangian theorem;
+- compatible-family torsor;
+- CDC extraction using the retained dart-level source data.
+
+### Rank hierarchy
+
+- degree-lowering Fano support transgression;
+- rank-three coincidence of quadraticity, half-dimension, and zero index;
+- complete all-rank dual-Fano residue;
+- rank-four Pfaffian equation and first counterexample.
+
+### Downstream reductions and consequences
+
+- tensor and code-flag homology;
+- constraint matroid and balanced torsion;
+- harmonic cut quotients and circuit classification;
+- cut interfaces and sewing exact sequences.
+
+These are generated by the compatibility geometry but are not alternative
+centres of the existence proof.
+
+## Reliability and provenance
+
+- [`FORMAL_STATUS.md`](FORMAL_STATUS.md) separates machine-checked anchors,
+  paper proofs, exact computations, and programmes.
+- [`MIGRATION_LEDGER.md`](MIGRATION_LEDGER.md) maps every former active dossier
+  to its canonical destination.
+- [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md) is the compact
+  dependency map.
+- [`PUBLICATION_PROGRAM.md`](PUBLICATION_PROGRAM.md) gives natural paper-sized
+  blocks.
+- [`topology/README.md`](topology/README.md) records the hash-only embedding and
+  surface programme without pretending to reconstruct missing sources.
+
+The historical title “flow tensor datum as the master object” is obsolete. The
+affine incidence-pair complex is the complete compatibility centre; the tensor
+complex is its canonical chain-level reduction.

@@ -9,16 +9,22 @@ is not a claim of peer review or final correctness.
 
 ## Current projects
 
-- [AffineCDC](projects/affine-cdc/README.md) — affine Fano compatibility,
-  quotient sheaves, tensor complexes, moduli codes and cycle-double-cover
-  formalization.
+- [AffineCDC](projects/affine-cdc/README.md) — affine incidence geometry for
+  cubic binary flows, the rank-three Fano compatibility theorem and
+  cycle-double-cover extraction, higher-rank residue obstructions, and the
+  downstream tensor/code and graphical theories.  Start with its
+  [mathematical architecture](projects/affine-cdc/MATHEMATICAL_ARCHITECTURE.md),
+  not the chronological research notes.
 
-## Minimal organization
+## Repository organization
 
-- `projects/` — material that already belongs to a natural project.
+- `projects/` — material that belongs to a coherent mathematical project;
 - `unfiled/` — material worth preserving publicly before it has a natural home.
 
-Deeper organization is optional and may be maintained by automated tools or AI.
+Within an active project, files are organized by mathematical dependency and
+status.  Git history and snapshots preserve discovery order, so the active
+exposition may merge repetitions and replace superseded formulations without
+carrying the entire research history into the theorem structure.
 
 ## Chronology
 
