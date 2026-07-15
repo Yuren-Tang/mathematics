@@ -1,380 +1,257 @@
-# AffineCDC publication program
+# AffineCDC publication programme
 
-This plan derives paper boundaries from mathematical closure.  Existing labels such as “Paper 1” are retained only where they coincide with a natural theorem block.
+Paper boundaries should follow mathematical closure, not the order in which the
+notes were discovered. The present corpus contains three immediate paper-sized
+blocks, one conditional abstract programme, and one deferred topological
+programme.
 
-## Executive judgment
-
-The present material does not form one paper.  It contains at least two strong, coherent theorem papers, one plausible graph-theory sequel, one conditional abstract-algebra programme, and one topological/computational programme whose sources must first be restored.
-
-The recommended order is:
+## Recommended order
 
 1. **Affine Fano compatibility and cycle double covers**;
 2. **Dual-Fano residues and the rank hierarchy**;
 3. **Gauge circuits, harmonic quotients, and cut interfaces**;
-4. **Flow tensor/code-flag homology**, only after recognition and payoff tests;
-5. **Embedding and Petrial state spaces**, only after source restoration and audit.
+4. **Tensor and code-flag homology**, after literature and payoff tests;
+5. **Embedding and Petrial state spaces**, after source restoration.
 
-The first two are already natural mathematical units.  They should not be delayed until the broader tensor or topological frameworks are finished.
-
----
+Papers A and B form the conceptual core. Paper C is a coherent graph-theoretic
+sequel. Paper D should not delay them.
 
 ## Paper A — Affine Fano compatibility and cycle double covers
 
 ### Central theorem
 
-For a finite cubic graph with a nowhere-zero \(\mathbf F_2^3\)-flow, the local affine-family torsors admit a globally compatible choice.  The compatible choice yields a cycle double cover.
+For a finite cubic graph with a nowhere-zero $\mathbf F_2^3$-flow, the local
+affine-family torsors admit a globally compatible choice. With the original
+dart-level source data, a compatible choice yields a cycle double cover.
 
-### Natural contents
+### Mathematical contents
 
-1. **Source datum and local affine families**
-   - cubic binary flow;
-   - local Fano plane \(W_v\);
-   - quotient labels \(Q_e=\Gamma/\langle f(e)\rangle\);
-   - local classification \(\kappa_v+L_v\).
+1. **Source and local families**
+   - cubic binary flows and local Fano planes;
+   - quotient coefficients $Q_e$;
+   - the invariant local affine coset $\kappa_v+L_v$;
+   - exact correspondence with the formal local-family API.
 
-2. **Affine incidence-pair complex**
-   - \(E_f\), \(L_{\mathrm{vert}}\), \(L_{\mathrm{edge}}\);
-   - \(H^0=L_{\mathrm{vert}}\cap L_{\mathrm{edge}}\);
-   - \(H^1=E_f/(L_{\mathrm{vert}}+L_{\mathrm{edge}})\);
-   - affine obstruction \([\kappa]\).
+2. **Affine incidence compatibility**
+   - incidence space $E_f$;
+   - vertex and edge subspaces;
+   - pair complex
 
-3. **Local Fano quadratic package**
-   - canonical anisotropic forms on binary edge quotients;
-   - diagonal Fano Lagrangian;
-   - quadratic transgression;
-   - local affine family as characteristic torsor;
-   - legal dual configurations and cross/support identity.
+     $$
+     L_{\mathrm{vert}}\oplus L_{\mathrm{edge}}
+     \longrightarrow E_f;
+     $$
 
-4. **Global affine Lagrangian intersection**
-   - abstract exact criterion;
-   - edge diagonal as totally singular Lagrangian;
-   - automatic intersection;
-   - full compatible-solution torsor.
+   - obstruction class $[\kappa]$ and solution torsor;
+   - quotient-sheaf and equilibrium-stress presentations.
 
-5. **Equivalent presentations**
-   - quotient sheaf;
-   - equilibrium stresses/Fredholm criterion;
-   - support-boundary cancellation;
-   - Fano Hodge duality.
+3. **Rank-three Fano geometry**
+   - canonical anisotropic quadratic forms on the edge quotients;
+   - local Fano Lagrangians;
+   - characteristic torsors;
+   - legal dual configurations and the cross-bit;
+   - global totally singular edge Lagrangian.
 
-   These should be presented as translations of one theorem, not as parallel foundations.
+4. **Compatibility theorem**
+   - the abstract characteristic-torsor intersection theorem;
+   - automatic intersection with a totally singular Lagrangian;
+   - equivalence with quadratic handshaking and support-boundary cancellation;
+   - full moduli torsor and Fano duality.
 
-6. **CDC extraction**
-   - reconstruction from quotient labels to local dart pairings;
-   - global cycles;
-   - double coverage.
+5. **CDC extraction and formal contract**
+   - what the reduced incidence object does and does not remember;
+   - the dart pairing and orbit extraction from the companion Lean repository;
+   - explicit theorem correspondence between the paper and formal APIs.
 
-7. **Formal correspondence**
-   - exact map from manuscript definitions to the companion Lean development;
-   - statement equivalence;
-   - list of invariant lemmas not yet formalized.
+### Canonical sources
 
-### What should be excluded
+- [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md);
+- [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md);
+- [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
 
-- general code flags and abstract tensor categories;
-- rank-four residue theory beyond a brief sharpness remark;
+### Exclusions
+
+Do not include:
+
+- the abstract code-flag theory;
+- the rank-four calculations beyond a brief sharpness remark;
 - circuit classifications;
-- Petrial/state-sum material;
-- broad claims that tensor theory is the master object.
+- embedding or Petrial state spaces.
 
-### Why this is a complete paper
+### Publication readiness
 
-It begins with a graph-theoretic input, isolates the exact affine compatibility problem, proves compatibility by a concise invariant theorem, describes all solutions, and returns to the graph-theoretic CDC output.  No later generalization is needed for closure.
+The mathematical paper structure is closed. The remaining critical work is:
 
-### Current risk
-
-The new Lagrangian compression is not yet the Lean proof itself.  The paper must either formalize the compression or include a precise correspondence to the verified implementation.  Elegance alone is not proof transport.
-
-### Recommended title candidates
-
-- *Affine Fano compatibility and cycle double covers*
-- *Characteristic Fano torsors on cubic flows*
-- *A Lagrangian compatibility theorem for cubic binary flows*
-
-The first is the clearest.
-
----
+1. match the invariant local characteristic torsor explicitly to the Lean API;
+2. state the exact CDC extraction theorem without relying on informal prose;
+3. add graph-flow and cycle-double-cover bibliography;
+4. obtain independent proof review.
 
 ## Paper B — Dual-Fano residues and the rank hierarchy
 
 ### Central theorem
 
-For a cubic graph with a nowhere-zero binary flow in arbitrary rank, the affine obstruction evaluated on an equilibrium stress equals the parity of vertices carrying a hidden dual Fano plane in the local annihilator.
+For a cubic nowhere-zero binary flow of arbitrary rank, the affine compatibility
+pairing against an equilibrium stress is exactly the parity of its hidden
+annihilator-plane residues:
 
-This yields:
+$$
+\psi(\kappa)=\sum_v\rho_v(\psi_v).
+$$
 
-- automatic compatibility in rank three;
-- the cubic/Pfaffian obstruction in rank four;
-- a decorated-plane residue geometry in higher rank.
+Rank three is automatically compatible because the local annihilator cannot
+contain a plane. Rank four is the first obstructed layer and has a canonical
+Pfaffian cubic equation.
 
-### Natural contents
+### Mathematical contents
 
-1. **All-rank support transgression**
-   - nonzero-indicator polynomial on \(Q_h\);
-   - Fano summation lowers degree by one;
-   - global outside-plane parity;
-   - explanation of what the scalar identity forgets beyond rank three.
+1. the nonzero-indicator polynomial and its degree;
+2. the coincidence of quadraticity, half-dimension, and zero index at rank
+   three;
+3. the all-rank Fano degree-lowering transgression;
+4. global outside-plane parity and its information loss;
+5. legal dual configurations, cross-bit, support parity, and residue;
+6. exact residue counting;
+7. the complete global residue theorem;
+8. rank-four alternating-form quotient and Pfaffian cubic;
+9. symplectic vertex-plane parity;
+10. the triangular-prism/$K_{3,3}$ six-vertex dichotomy.
 
-2. **Legal dual configurations**
-   - annihilator constraints;
-   - cross-bit;
-   - support parity;
-   - hidden dual Fano plane.
+### Canonical sources
 
-3. **Dual-Fano residue theorem**
-   - local identity \(\sigma=\beta+\rho\);
-   - global handshaking cancellation;
-   - complete compatibility criterion.
+- [`rank-hierarchy/transgression-and-dual-fano-residue.md`](rank-hierarchy/transgression-and-dual-fano-residue.md);
+- [`rank-hierarchy/rank-four-first-obstruction.md`](rank-hierarchy/rank-four-first-obstruction.md).
 
-4. **Rank-three coincidence principle**
-   - quadratic support degree;
-   - local half-dimension;
-   - global index balance;
-   - no room for a residue plane.
+### Exclusions
 
-5. **Rank-four Pfaffian specialization**
-   - alternating forms modulo \(\Lambda^2(\Gamma/W)^*\);
-   - divided square/Pfaffian;
-   - cubic directional residue;
-   - symplectic-transversality interpretation.
+Do not make the tensor complex the paper's organizing object. It may appear in a
+short index or stress-dimension remark, but the theorem is about the affine
+incidence obstruction and its complete dual residue.
 
-6. **Minimal examples**
-   - canonical rank-four \(K_{3,3}\) obstruction;
-   - triangular prism versus \(K_{3,3}\);
-   - gauge rigidity and obstruction dimension are insufficient;
-   - symplectic parity anomaly.
+### Publication readiness
 
-7. **Higher-rank questions**
-   - residue vertices decorated by annihilator planes;
-   - possible global incidence geometry among residue planes;
-   - relation to higher-degree polarizations.
+The theorem block is coherent. Remaining work:
 
-### Why this is a separate paper
-
-Paper A proves the exceptional positive theorem.  Paper B explains the exceptionalism and gives a complete obstruction law in every rank.  Combining them would obscure both narratives and make the core CDC result hostage to a much broader hierarchy.
-
-### Current risk
-
-The all-rank theorem-level drafts need independent proof audit.  The finite rank-three-through-six checks should be reported as validation, not as the theorem proof.
-
-### Recommended title candidates
-
-- *Dual-Fano residues in binary flow compatibility*
-- *The rank hierarchy of affine Fano compatibility*
-- *Pfaffian residues beyond the Fano rank*
-
-The first best reflects the general theorem.
-
----
+1. independently audit the local cross-bit criterion and residue count;
+2. formalize at least the rank-four local identity or supply a transparent
+   coordinate appendix;
+3. compare the obstruction with existing characteristic-two quadratic and
+   symplectic invariants;
+4. decide whether higher-rank decorated residue planes belong in the paper or
+   only in future work.
 
 ## Paper C — Gauge circuits, harmonic quotients, and cut interfaces
 
-### Central theorem block
+### Central theme
 
-The homogeneous gauge code of a flow-labelled graph is the code of harmonic cut quotients: its nonzero words correspond exactly to connected contracted quotients on which the induced labels are simultaneously a nowhere-zero flow and an exact tension.
+The homogeneous solution space has an intrinsic graph geometry. Gauge words are
+exactly harmonic cut quotients, their minimal supports are constraint-matroid
+circuits, and graph decomposition is governed by the same labelled interface
+objects.
 
-For coefficient rank at most three the code is even, its low-weight circuits admit concrete classifications, and two-edge/three-edge gluing is governed by the gauge space of a labelled theta interface.
+### Mathematical contents
 
-### Natural contents
+1. gauge code as the tensor kernel and reduced global-section space;
+2. harmonic cut-quotient theorem;
+3. bicycle-space and Laplacian interpretation;
+4. third-order orthogonality and evenness in rank at most three;
+5. the sharp rank-four $K_6$ example;
+6. low-weight circuit classification through weight six;
+7. cycle-space fiber products and cographic pushouts;
+8. theta interfaces and mixed variance;
+9. the common interface line
 
-1. gauge code from reduced global sections;
-2. harmonic cut-quotient characterization;
-3. constraint-matroid circuit interpretation;
-4. third-order graph-bicycle orthogonality;
-5. evenness theorem and sharp rank-four counterexample;
-6. low-weight classification through weight six;
-7. interface line \(L_S\) and matching quotient \(\Gamma/L_S\);
-8. cycle-space pullback and cographic pushout;
-9. exact two-edge and three-edge gluing laws;
-10. torsion and state-count factorization.
+   $$
+   L_S=\bigcap_i\langle h_i\rangle;
+   $$
 
-### Independence from Paper A
+10. matching obstructions $\Gamma/L_S$ and sewing modes $L_S$;
+11. two-edge and three-edge moduli and torsion laws;
+12. exact scope of the cap-extension hypothesis.
 
-This paper uses the homogeneous reduction of the incidence complex, but not the affine compatibility theorem or CDC extraction.  It should be written as graph theory/coding theory, with AffineCDC as its source rather than its entire justification.
+### Canonical sources
 
-### Strongest publishable results
+- [`gauge/gauge-modes-and-circuits.md`](gauge/gauge-modes-and-circuits.md);
+- [`gauge/interface-gluing.md`](gauge/interface-gluing.md);
+- selected rigidity statements from
+  [`tensor/torsion-and-rigidity.md`](tensor/torsion-and-rigidity.md).
 
-- general evenness of the rank-at-most-three gauge code;
-- exact harmonic quotient characterization;
-- complete weight-six circuit classification;
-- universal interface line formula;
-- multiplicativity/vanishing of Fano torsion across low cuts.
+### Publication readiness
 
-These results provide the “payoff” test that the tensor/constraint viewpoint needs.
+This is a plausible independent graph-theory paper after:
 
-### Open endpoint
+1. literature comparison for graph bicycle spaces and harmonic labellings;
+2. verification that the weight-four and weight-six classifications use the
+   weakest natural hypotheses;
+3. a clean statement of cap extension;
+4. computational tables separated from the proofs;
+5. a decision whether weight eight is an open problem section or omitted.
 
-Weight eight is the next circuit layer.  It is not necessary for publication if the weight-six classification and interface theorem are complete and audited.
+## Paper D — Tensor and code-flag homology
 
-### Recommended title candidates
+### Conditional thesis
 
-- *Harmonic cut quotients of binary flows*
-- *Even gauge codes and harmonic interfaces*
-- *Flow–tension circuits in binary flow-labelled graphs*
+A nested binary code flag
 
-The first is the most intrinsic.
+$$
+D\subseteq C\subseteq\mathbf F_2^E
+$$
 
----
+has a natural complex
 
-## Paper D — Flow tensor and code-flag homology
-
-### Proposed subject
-
-For a nested binary code flag
-
-\[
-D\subseteq C\subseteq\mathbf F_2^E,
-\]
-
-study the complex
-
-\[
+$$
 \Lambda^2D
 \longrightarrow
 D\otimes C
 \xrightarrow{*}
 \mathbf F_2^E,
-\]
+$$
 
-its homology, constraint matroid, balanced torsion, divided-square sequence, coefficient quotients, and graphical realizations.
+whose homology, constraint matroid, divided-square exact sequence, coefficient
+functoriality, and balanced torsion recover the reduced graphical structures.
 
-### Why this is not yet a settled paper
+### Canonical sources
 
-The internal formalism is coherent, but four validation tests remain unmet or only partly met:
+- [`reduction/incidence-to-tensor-complex.md`](reduction/incidence-to-tensor-complex.md);
+- [`tensor/code-flag-complex.md`](tensor/code-flag-complex.md);
+- [`tensor/exact-sequences-and-functoriality.md`](tensor/exact-sequences-and-functoriality.md);
+- [`tensor/torsion-and-rigidity.md`](tensor/torsion-and-rigidity.md).
 
-1. **Recognition.**  Determine whether the exact complex and its quotient-by-commutativity syzygy space already have a standard home in coding, Koszul, Rees, or matroid literature.
-2. **External examples.**  Compute meaningful cases from Reed–Muller, cyclic, evaluation, or projective-geometry code flags not derived from graphs.
-3. **Payoff.**  Prove a theorem that is new and clearer in the abstract framework.
-4. **Functoriality.**  Stabilize ordinary morphisms and the correspondence formalism needed for deletion, contraction, and gluing.
+### Required tests before treating this as a paper
 
-### Core material if the tests succeed
+1. **Recognition:** compare with Schur-product syzygies, Koszul complexes,
+   diagonal/Khatri–Rao constructions, and represented matroid quotients.
+2. **External examples:** find natural code flags not reverse-engineered from
+   AffineCDC.
+3. **Payoff:** prove a theorem that is materially shorter or stronger in the
+   abstract language.
+4. **Functorial closure:** stabilize morphisms, coefficient quotients, and graph
+   correspondences.
+5. **Terminology:** retain “mixed Schur–Koszul” only if the literature supports
+   or clearly distinguishes it.
 
-1. based quotient data and dual code flags;
-2. tensor/Schur–Koszul complex;
-3. index and balancedness;
-4. divided-square exact sequence;
-5. constraint matroid and syzygies;
-6. determinant-line torsion;
-7. coefficient-quotient long exact sequence;
-8. strict morphisms and automorphisms;
-9. graphical realization and chain-level bridge;
-10. external examples.
+Until these tests succeed, this is a strong internal theory and a possible
+paper, not a publication priority.
 
-### Editorial warning
+## Paper E — Embedding and Petrial state spaces
 
-Do not publish this as a grand general theory merely because many AffineCDC objects fit into it.  The name “mixed Schur–Koszul complex” must remain provisional until the literature search is complete.
+The snapshot names substantial material on embeddings, rotation systems,
+partial Petrials, orientability, transition invariants, delta-matroid slices,
+and surface polynomials. The source bodies are absent from the current tree.
 
-### Possible alternative
+No paper outline should be presented as theorem-complete until those sources are
+restored and classified under the protocol in
+[`topology/README.md`](topology/README.md).
 
-If external novelty is thin, the best material can be folded into Paper C as a concise algebraic framework, with the divided-square and torsion results presented as tools rather than a separate theory.
+## Immediate programme
 
----
+The correct immediate sequence is:
 
-## Paper E — Gauge embeddings and code-filtered Petrial state spaces
+1. finish the formal bridge and exposition for Paper A;
+2. independently audit and prepare Paper B;
+3. develop Paper C if the graph-theory comparisons are favourable;
+4. run recognition tests for Paper D without allowing it to block A or B;
+5. restore the topological sources before making claims about Paper E.
 
-### Proposed subject
-
-Compatible/gauge states as embedding modifications, partial Petrials, orientability constraints, transition structures, and code-filtered surface polynomials, together with low-cut factorization.
-
-### Present status
-
-Not ready for paper design.  The 2026-07-14 snapshot records the source filenames and hashes, but their bodies are absent from `main`.  Some active synthesis survives, but it is insufficient to guarantee that every lemma, convention, and computational condition has been preserved.
-
-### Required work before outlining the paper
-
-1. rematerialize all topological manuscript sources and scripts;
-2. separate proved correspondences from census observations;
-3. identify which state space is affine compatibility and which is homogeneous gauge freedom;
-4. normalize rotation, Petrial, orientability, and transition conventions;
-5. compare with established ribbon-graph, delta-matroid, transition-matroid, and circuit-partition literature;
-6. rerun computational tables from the preserved scripts;
-7. determine whether one invariant genuinely subsumes the others.
-
-### Likely natural split after restoration
-
-The material may divide into two papers rather than one:
-
-- an algebraic/topological correspondence paper;
-- a state-sum/factorization and census paper.
-
-No decision should be made from filenames alone.
-
----
-
-## Short-note possibilities
-
-Some results may be cleaner as short independent notes if they do not fit the main papers.
-
-### Fano torsion
-
-A concise note could present:
-
-- the basis-free determinant-line invariant;
-- rigidity criterion;
-- divided-square factorization;
-- basis-packing expansion;
-- two-edge vanishing and three-edge multiplicativity.
-
-It is mathematically complete, but may have greater impact as a section of Paper C or D.
-
-### Symplectic vertex-plane parity
-
-The global parity theorem and its local-field anomaly are elegant, but currently too small alone.  They belong naturally in Paper B.
-
-### Six-vertex rank-four dichotomy
-
-This is an excellent example/corollary, not a separate paper unless connected to a wider small-order classification.
-
----
-
-## Recommended immediate sequence
-
-### First manuscript
-
-Write Paper A now, using the incidence-pair/Lagrangian architecture.  Keep the original Lean theorem as the formal anchor and explicitly map the compressed proof to it.
-
-### Parallel audit
-
-Audit Paper B's residue theorem and rank-four examples.  This can proceed independently of the CDC extraction prose.
-
-### Then graph consequences
-
-Consolidate harmonic quotients, evenness, weight-six circuits, interfaces, and torsion into Paper C.  This provides a clear external theorem payoff.
-
-### Defer broad frameworks
-
-Do not spend the publication-critical path polishing categorical vocabulary or the topological state programme before Papers A and B are stable.
-
----
-
-## Dependency among papers
-
-The logical dependency is lighter than the discovery history suggests.
-
-\[
-\text{Paper A}
-\quad\text{and}\quad
-\text{Paper B}
-\]
-
-share the source incidence geometry and local Fano notation, but neither requires the full tensor/code theory.
-
-\[
-\text{Paper C}
-\]
-
-uses the homogeneous reduction and can cite Paper A for origin, but its theorems stand independently.
-
-\[
-\text{Paper D}
-\]
-
-abstracts the algebra behind Papers A and C; it should follow them unless the literature review reveals an existing framework.
-
-\[
-\text{Paper E}
-\]
-
-uses the state spaces and cut laws but has its own topological prerequisites.
-
-This order prevents the strongest finished theorem from being buried under the least mature generalization.
+This order follows the mathematics: existence first, sharp obstruction second,
+homogeneous graph consequences third, abstraction and topology afterward.
