@@ -57,7 +57,7 @@ Use top vertices \(0,1,2\), bottom vertices \(3,4,5\), and vertical edges
 
 \[
 \begin{array}{c|c}
-	ext{edge}&f(e)\\ \hline
+\mathrm{edge}&f(e)\\ \hline
 01&a+c+d\\
 12&a+d\\
 20&a\\
@@ -178,7 +178,7 @@ spanning rank-four binary flows:
 \boxed{
 \begin{array}{c|c|c|c}
 G&\dim\mathcal B_f&\dim\operatorname{EssStress}(f)&[c_f]\\ \hline
-\text{triangular prism}&0&1&0\\
+\mathrm{triangular\ prism}&0&1&0\\
 K_{3,3}&0&1&\ne0
 \end{array}
 }
@@ -204,9 +204,9 @@ The pair is therefore the smallest concrete demonstration that
 
 \[
 \boxed{
-\text{essential stress}
+\mathrm{essential\ stress}
 \not\Rightarrow
-\text{incompatibility},
+\mathrm{incompatibility},
 }
 \]
 
@@ -214,8 +214,8 @@ while
 
 \[
 \boxed{
-\text{odd dual-Fano residue parity}
+\mathrm{odd\ dual\text{-}Fano\ residue\ parity}
 \Longleftrightarrow
-\text{incompatibility}.
+\mathrm{incompatibility}.
 }
 \]
