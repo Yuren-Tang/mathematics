@@ -10,9 +10,10 @@ is not a claim of peer review or final correctness.
 ## Current projects
 
 - [AffineCDC](projects/affine-cdc/README.md) — affine incidence geometry for
-  cubic binary flows, the rank-three Fano compatibility theorem and
-  cycle-double-cover extraction, higher-rank residue obstructions, and the
-  downstream tensor/code and graphical theories.  Start with its
+  cubic binary flows, the rank-three Fano compatibility theorem, its natural
+  graph-level even-double-cover output, and the programme toward the full theorem
+  that every finite bridgeless multigraph has a cycle double cover. Loops are
+  handled by deletion and final singleton-circuit reinsertion. Start with its
   [mathematical architecture](projects/affine-cdc/MATHEMATICAL_ARCHITECTURE.md),
   not the chronological research notes.
 
@@ -22,7 +23,7 @@ is not a claim of peer review or final correctness.
 - `unfiled/` — material worth preserving publicly before it has a natural home.
 
 Within an active project, files are organized by mathematical dependency and
-status.  Git history and snapshots preserve discovery order, so the active
+status. Git history and snapshots preserve discovery order, so the active
 exposition may merge repetitions and replace superseded formulations without
 carrying the entire research history into the theorem structure.
 
