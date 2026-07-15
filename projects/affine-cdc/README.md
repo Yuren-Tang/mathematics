@@ -1,53 +1,63 @@
 # AffineCDC
 
-This directory studies a local-to-global mechanism attached to nowhere-zero
-binary flows on cubic graphs.
+This directory studies the affine incidence geometry attached to nowhere-zero
+binary flows on cubic graphs and its role in the Cycle Double Cover problem.
 
 > A cubic rank-three flow determines local affine families. Their Fano
-> quadratic geometry forces a globally compatible choice, and the retained
-> graph-and-dart data then extract a cycle double cover.
+> quadratic geometry forces a globally compatible choice. The retained graph
+> and dart data then produce an even double cover, which is transported through
+> the outer graph reduction and decomposed into a cycle double cover only at the
+> end.
 
 The active tree is organized by mathematical dependency. Discovery order and
 superseded formulations remain available in Git history and dated snapshots.
 
 ## Canonical reading order
 
-1. [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md)  
+1. [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md)  
+   The dependency map for the affine core, the even-cover output, the
+   unconditional outer shell, and the downstream theories.
+
+2. [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md)  
    The rank-independent compatibility object: incidence space, affine pair
    complex, quotient sheaf, obstruction class, and equilibrium stresses.
 
-2. [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md)  
-   The canonical quadratic planes, local Fano Lagrangians, characteristic
-   torsors, affine Lagrangian intersection, automatic compatibility, and the
-   boundary of CDC extraction.
+3. [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md)  
+   Canonical quadratic planes, local Fano Lagrangians, characteristic torsors,
+   affine Lagrangian intersection, and automatic rank-three compatibility.
 
-3. [`rank-hierarchy/transgression-and-dual-fano-residue.md`](rank-hierarchy/transgression-and-dual-fano-residue.md)  
+4. [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md)  
+   The natural graph-level output of the affine construction, cut-evenness as
+   the collapse invariant, projection through graph surgery, and final circuit
+   decomposition.
+
+5. [`rank-hierarchy/transgression-and-dual-fano-residue.md`](rank-hierarchy/transgression-and-dual-fano-residue.md)  
    Why rank three is the unique balanced quadratic point, the all-rank support
    transgression, and the complete dual-Fano residue criterion.
 
-4. [`rank-hierarchy/rank-four-first-obstruction.md`](rank-hierarchy/rank-four-first-obstruction.md)  
+6. [`rank-hierarchy/rank-four-first-obstruction.md`](rank-hierarchy/rank-four-first-obstruction.md)  
    The Pfaffian cubic residue, symplectic parity, and the triangular-prism versus
    $K_{3,3}$ sharpness theorem.
 
-5. [`reduction/incidence-to-tensor-complex.md`](reduction/incidence-to-tensor-complex.md)  
+7. [`reduction/incidence-to-tensor-complex.md`](reduction/incidence-to-tensor-complex.md)  
    The exact chain-level zigzag from affine incidence geometry to the tensor
    complex, including what the reduction preserves and forgets.
 
-6. [`tensor/code-flag-complex.md`](tensor/code-flag-complex.md),
+8. [`tensor/code-flag-complex.md`](tensor/code-flag-complex.md),
    [`tensor/exact-sequences-and-functoriality.md`](tensor/exact-sequences-and-functoriality.md), and
    [`tensor/torsion-and-rigidity.md`](tensor/torsion-and-rigidity.md)  
-   The downstream based-quotient/code-flag theory, divided-square and
-   coefficient exact sequences, and balanced torsion.
+   The downstream based-quotient/code-flag theory, exact sequences, and balanced
+   torsion.
 
-7. [`gauge/gauge-modes-and-circuits.md`](gauge/gauge-modes-and-circuits.md) and
+9. [`gauge/gauge-modes-and-circuits.md`](gauge/gauge-modes-and-circuits.md) and
    [`gauge/interface-gluing.md`](gauge/interface-gluing.md)  
-   Harmonic cut quotients, parity and low-weight circuits, mixed-variance cut
-   gluing, interface lines, and sewing laws.
+   Harmonic cut quotients, parity and low-weight circuits, interface lines, and
+   sewing laws.
 
-## The central object
+## The compatibility centre
 
-Let $G=(V,E)$ be a finite connected cubic graph, let $\Gamma$ be a binary vector
-space, and let
+Let $G=(V,E)$ be a finite cubic graph, not necessarily connected, let $\Gamma$
+be a binary vector space, and let
 
 $$
 f:E\longrightarrow\Gamma
@@ -107,19 +117,44 @@ and the compatible-family space is then a torsor under $H^0(\mathcal P_f)$.
 
 In rank three, each $Q_e$ is a canonical anisotropic quadratic plane. The vertex
 space is Lagrangian, the affine coset is its characteristic torsor, and the
-edge-matching space is a totally singular Lagrangian. The abstract
-characteristic-torsor intersection theorem forces $[\kappa]=0$.
+edge-matching space is a totally singular Lagrangian. The characteristic-torsor
+intersection theorem forces $[\kappa]=0$.
+
+## The existence spine
+
+The affine incidence pair is the complete centre of the compatibility question,
+but it is not the whole unconditional CDC proof. The full spine is:
+
+- a finite loopless bridgeless multigraph;
+- an independently constructed cubic expansion carrying the required
+  rank-three binary flow;
+- affine incidence compatibility on the cubic graph;
+- a graph-level even double cover;
+- cut-even transport through collapse;
+- an even double cover of the original graph;
+- one final decomposition into circuits;
+- the literal cycle double cover of the original graph.
+
+A cycle double cover of the already cubic flow graph is an immediate corollary
+of the even-cover construction, not a necessary intermediate node.
 
 ## Logical levels
 
 ### Compatibility spine
 
-- source cubic flow and local affine families;
+- cubic binary flow and local affine families;
 - affine incidence-pair complex;
 - quotient-sheaf and stress presentations;
 - rank-three Fano quadratic-Lagrangian theorem;
-- compatible-family torsor;
-- CDC extraction using the retained dart-level source data.
+- compatible-family torsor.
+
+### Cover and reduction spine
+
+- compatible family to indexed even supports;
+- graph-level multiset even double cover;
+- vertex-even/cut-even bridge under the current loopless convention;
+- pure cut-parity transport through graph collapse;
+- finite circuit decomposition at the end.
 
 ### Rank hierarchy
 
@@ -144,13 +179,13 @@ centres of the existence proof.
   paper proofs, exact computations, and programmes.
 - [`MIGRATION_LEDGER.md`](MIGRATION_LEDGER.md) maps every former active dossier
   to its canonical destination.
-- [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md) is the compact
-  dependency map.
 - [`PUBLICATION_PROGRAM.md`](PUBLICATION_PROGRAM.md) gives natural paper-sized
   blocks.
 - [`topology/README.md`](topology/README.md) records the hash-only embedding and
   surface programme without pretending to reconstruct missing sources.
 
 The historical title “flow tensor datum as the master object” is obsolete. The
-affine incidence-pair complex is the complete compatibility centre; the tensor
-complex is its canonical chain-level reduction.
+affine incidence-pair complex is the compatibility centre; the tensor complex
+is its canonical chain-level reduction. The public companion formalization's
+`Statement.lean` remains a separate protected audit layer and is not modified by
+this mathematical reorganization.
