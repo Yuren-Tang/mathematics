@@ -1,27 +1,55 @@
 # Even covers, cut parity, and collapse transport
 
 This chapter isolates the graph-theoretic output of the affine compatibility
-construction and the invariant naturally preserved by graph collapse.  It is a
-mathematical chapter, not a Lean implementation plan.  The public formal
-statement in the companion repository is unchanged.
+construction and the invariant naturally preserved by graph collapse. It is a
+mathematical chapter, not a Lean implementation plan. The public formal
+statement in the companion repository is unchanged at the current checkpoint.
 
-The purpose of the chapter is to prevent three distinct layers from being
-conflated:
+The purpose is to prevent four distinct layers from being conflated:
 
 1. the affine construction of a family of even edge supports;
-2. transport of those supports through a graph expansion or collapse;
-3. final decomposition of finite even supports into circuits.
+2. transport of those supports through graph expansion and collapse;
+3. final decomposition of finite even supports into circuits;
+4. deletion and reinsertion of loops around the loopless proof core.
 
 The first layer belongs to the AffineCDC core, the second to the outer
-unconditional reduction, and the third is general finite graph theory.
+unconditional reduction, the third is general finite graph theory, and the
+fourth identifies the natural full multigraph theorem with its loopless core.
 
-## 1. Even supports and even double covers
+## 1. Cut-even supports and circuits
 
-Let $G$ be a multigraph and let $F\subseteq E(G)$ be an edge support.  In the
-loopless convention used by the companion formalization, $F$ is **vertex-even**
-when every vertex is incident with an even number of edges of $F$.
+Let $G$ be a multigraph and let $F\subseteq E(G)$ be a finite edge support.
+Define
 
-An **even double cover** of $G$ is a finite multiset
+$$
+\operatorname{CutEven}_G(F)
+\iff
+\forall S\subseteq V(G),
+\quad |F\cap\delta_G(S)|\equiv0\pmod2,
+$$
+
+where $\delta_G(S)$ is the set of edges with one end in $S$ and one end outside
+$S$.
+
+A **circuit** is a nonempty inclusion-minimal cut-even edge set contained in
+$E(G)$. This is the natural cycle object for multigraphs with loops:
+
+- a loop crosses no cut, so a singleton loop is a circuit;
+- two parallel edges form a circuit;
+- on a loopless graph, finite circuits agree with minimal nonempty vertex-even
+  supports under the vertex-even/cut-even bridge below.
+
+The natural finiteness condition for the full theorem is `E(G).Finite`. Finite
+ambient vertex and edge types are a stronger representation convention used by
+the current Lean checkpoint, not part of the mathematical theorem.
+
+## 2. Vertex-even supports and even double covers
+
+Under the loopless incidence convention used by the present companion
+formalization, a support is **vertex-even** when every vertex is incident with an
+even number of selected edge objects.
+
+An **even double cover** of a loopless graph $G$ is a finite multiset
 
 $$
 \mathcal F=[F_1,\dots,F_m]
@@ -34,31 +62,28 @@ of edge supports such that:
 3. every edge of $G$ occurs in exactly two members of $\mathcal F$, counted with
    multiset multiplicity.
 
-Empty supports and repeated supports are allowed.  They are mathematically
-natural before circuit decomposition:
+For a general graph the intrinsic variant uses cut-even supports instead of the
+current vertex-incidence convention.
+
+Empty supports and repeated supports are allowed. They are natural before
+circuit decomposition:
 
 - an empty support contributes no edge coverage;
-- two equal supports occurring twice are two different cover occurrences;
+- equal supports occurring twice are two distinct cover occurrences;
 - projection through a graph gadget may turn a nonempty support into the empty
   support.
 
-For finite graphs, the existence of an even double cover is equivalent to the
-existence of a cycle double cover.  The witness notions are not identical:
-cycle members are required to be support-minimal nonempty even sets, whereas an
-even support may contain several circuits.  The existence equivalence follows by
-decomposing each finite even support into circuits and concatenating the
-resulting multisets.
+For a graph with finite active edge set, every finite cut-even support decomposes
+into circuits. Thus a cut-even double cover becomes a cycle double cover by
+performing decomposition memberwise and concatenating the resulting multisets.
+Conversely, forgetting minimality turns any cycle double cover into an even
+double cover. These are equivalent existence statements in the finite setting,
+but their witnesses serve different compositional roles.
 
-Thus the even double cover is not a stronger existence theorem than CDC.  Its
-importance is structural: it is the natural output of the affine construction
-and the natural input to graph surgery.
+## 3. Output of a compatible affine family
 
-## 2. Output of a compatible affine family
-
-Let $(G,\Gamma,f)$ be a finite cubic graph with a nowhere-zero binary
-rank-three flow, together with a globally compatible affine family supplied by
-the rank-three Fano theorem.
-
+Let $(G,\Gamma,f)$ be a finite cubic graph, not necessarily connected, with a
+nowhere-zero rank-three binary flow and a globally compatible affine family.
 The retained graph-and-dart data canonically produce a $\Gamma$-indexed family
 of edge supports
 
@@ -66,16 +91,16 @@ $$
 (F_s)_{s\in\Gamma}
 $$
 
-with the following properties:
+such that:
 
 1. each $F_s$ is an edge subset of $G$;
-2. each $F_s$ is vertex-even;
-3. every edge belongs to exactly two of the supports $F_s$.
+2. each $F_s$ is vertex-even in the present loopless graph representation;
+3. every edge belongs to exactly two supports $F_s$.
 
-Flattening the finite index set $\Gamma$ gives an unlabelled multiset even
-double cover.  The $\Gamma$-labels, dart pairing, partner data, and rotation data
-remain useful internal structure, but they are not required by the outer graph
-reduction.
+Flattening the finite index set $\Gamma$ gives an unlabelled graph-level multiset
+even double cover. The $\Gamma$-labels, dart pairing, partner data, and rotation
+data remain useful internal structure, but the outer graph reduction does not
+need them.
 
 The natural graph-level conclusion of the affine core is therefore
 
@@ -83,33 +108,15 @@ $$
 \boxed{
 \text{compatible affine family}
 \Longrightarrow
-\text{even double cover}.
+\text{graph-level multiset even double cover}.
 }
 $$
 
-Applying circuit decomposition immediately also gives a cycle double cover of
-the cubic graph.  That statement is a correct corollary, but it is not a
-necessary node in the unconditional proof: decomposition is more naturally
-performed once, after all graph surgery has finished.
+Immediate circuit decomposition gives a CDC of the cubic flow graph, but that is
+only an optional corollary. The full proof performs circuit decomposition once,
+after graph collapse.
 
-## 3. Cut-even supports
-
-For a finite edge support $F\subseteq E(G)$, define **cut-evenness** by
-
-$$
-\operatorname{CutEven}_G(F)
-\iff
-\forall S\subseteq V(G),
-\quad |F\cap\delta_G(S)|\equiv0\pmod2,
-$$
-
-where $\delta_G(S)$ is the set of edges with one end in $S$ and one end outside
-$S$.
-
-Cut-evenness is the intrinsic transport invariant for graph collapse.  It does
-not mention cubicity, flows, darts, affine families, or circuit minimality.
-
-### Loopless bridge
+## 4. The loopless vertex-even/cut-even bridge
 
 For a finite support in a loopless multigraph,
 
@@ -121,47 +128,47 @@ F\text{ is cut-even}.
 }
 $$
 
-The forward direction is the usual parity sum over the vertices of $S$:
+The forward direction sums selected incidence counts over the vertices of $S$:
 selected edges internal to $S$ are counted twice and selected crossing edges
-once.  The reverse direction applies cut parity to the singleton cut
-$S=\{v\}$, which equals the incidence set of $v$ in a loopless graph.
+once. The reverse direction applies cut parity to the singleton cut $S=\{v\}$,
+which equals the incidence set at $v$ under looplessness.
 
-The loopless condition belongs precisely to this bridge under the current
-incidence convention.  It is not an affine/Fano hypothesis and it is not needed
-for pure cut transport.
+Looplessness belongs precisely to these bridge statements under the current
+once-per-edge incidence convention. It is not an affine/Fano hypothesis and it
+is not needed for pure cut transport.
 
 If loops are counted only once in a vertex incidence set, vertex-evenness need
-not imply cut-evenness.  For example, take two vertices joined by one ordinary
-edge and place one loop at each vertex.  The support consisting of all three
-edges is vertex-even under the once-per-edge incidence count, but the cut
-separating the two vertices contains exactly one selected edge.
+not imply cut-evenness. For example, take two vertices joined by one ordinary
+edge and place one loop at each vertex. The support consisting of all three
+edges is vertex-even under the current incidence count, but the cut separating
+the vertices contains exactly one selected edge.
 
-## 4. Collapse data
+## 5. Collapse data
 
 Let $H$ be an expanded graph and $G$ the graph obtained by collapsing vertex
-clusters.  The transport theorem needs only the following graph-theoretic data.
+clusters. The transport theorem needs only:
 
-1. A vertex map
+1. a vertex map
 
    $$
    \pi:V(H)\longrightarrow V(G),
    $$
 
-   whose fibres are the collapse clusters.  Surjectivity is unnecessary:
-   isolated vertices of $G$ may have empty fibres.
+   whose fibres are the collapse clusters; surjectivity is unnecessary because
+   isolated vertices of $G$ may have empty fibres;
 
-2. An injective edge lift
+2. an injective edge lift
 
    $$
    \lambda:E(G)\hookrightarrow E(H)
    $$
 
-   preserving endpoints under $\pi$.
+   preserving endpoints under $\pi$;
 
-3. Every edge of $H$ joining two different $\pi$-fibres is a lifted original
-   edge, and every auxiliary edge has both ends in one fibre.
+3. every edge of $H$ joining different $\pi$-fibres is a lifted original edge,
+   and every auxiliary edge stays inside one fibre.
 
-These conditions imply, for every vertex subset $S\subseteq V(G)$,
+Then for every $S\subseteq V(G)$,
 
 $$
 e\in\delta_G(S)
@@ -169,10 +176,10 @@ e\in\delta_G(S)
 \lambda(e)\in\delta_H(\pi^{-1}S).
 $$
 
-No cubic, bridgeless, flow, affine, or global ambient-finiteness hypothesis is
-part of this transport datum.
+No loopless, cubic, bridgeless, flow, affine, connectedness, or global
+ambient-finiteness hypothesis belongs to this pure transport datum.
 
-For an edge support $F'\subseteq E(H)$, define its projection by
+For $F'\subseteq E(H)$ define
 
 $$
 \operatorname{proj}(F')
@@ -180,9 +187,9 @@ $$
 \{e\in E(G):\lambda(e)\in F'\}.
 $$
 
-If $F'$ is finite, then $\operatorname{proj}(F')$ is finite.
+Finite supports project to finite supports.
 
-## 5. Pure cut-parity transport
+## 6. Pure cut-parity transport
 
 For every finite support $F'\subseteq E(H)$,
 
@@ -206,14 +213,12 @@ $$
 F'\cap\delta_H(\pi^{-1}S).
 $$
 
-Their cardinalities are equal, so their parities agree.
+Their cardinalities and parities agree. The proof does not sum over a cluster
+and needs no finite-cluster hypothesis. It requires only finite transported
+support.
 
-This proof does not sum over a cluster and does not require finite vertex
-clusters.  The only finiteness needed is finiteness of the transported support,
-so that ordinary parity of its cut intersections is defined.
-
-Extending projection memberwise to a multiset preserves exact double coverage:
-for every original edge $e$ and every support occurrence $F'$, one has
+Extending projection memberwise to a multiset preserves exact double coverage,
+since
 
 $$
 e\in\operatorname{proj}(F')
@@ -221,71 +226,85 @@ e\in\operatorname{proj}(F')
 \lambda(e)\in F'.
 $$
 
-Thus a cut-even double cover of $H$ projects to a cut-even double cover of $G$.
-The support projection itself need not be injective; distinct upstairs support
-occurrences may have the same downstairs image, and multiset multiplicity keeps
-them distinct.
+Distinct upstairs support occurrences may have the same downstairs image;
+multiset multiplicity keeps them distinct.
 
-## 6. The unconditional route
+## 7. Loop deletion and reinsertion
 
-The clean graph-theoretic spine is therefore
+Let $L$ be the set of loops of a graph $G$ with finite active edge set, and let
+$G_0$ be obtained by deleting them.
+
+- loops cross no cut;
+- a loop is not a bridge;
+- deleting loops preserves all cuts on nonloop edges and preserves
+  bridgelessness;
+- $G_0$ is loopless and still has finite active edge set.
+
+After constructing a CDC of $G_0$, regard its circuits as circuits of $G$ and
+add two occurrences of the singleton circuit $\{e\}$ for every $e\in L$. This
+covers each loop exactly twice and leaves nonloop coverage unchanged.
+
+Thus looplessness is a reduction condition for the current proof machinery, not
+part of the natural external theorem.
+
+## 8. The full unconditional route
+
+The clean graph-theoretic spine is
 
 $$
 \begin{array}{c}
-\text{finite loopless bridgeless multigraph }G\\
-\downarrow\\
-\text{cubic expansion }H\text{ with a rank-three binary flow}\\
-\downarrow\\
-\text{rank-three affine compatibility on }H\\
-\downarrow\\
-\text{vertex-even double cover of }H\\
-\downarrow\quad\text{loopless bridge}\\
-\text{cut-even double cover of }H\\
-\downarrow\quad\text{pure collapse transport}\\
-\text{cut-even double cover of }G\\
-\downarrow\quad\text{loopless bridge}\\
-\text{vertex-even double cover of }G\\
-\downarrow\quad\text{finite circuit decomposition}\\
+\text{bridgeless multigraph }G\text{ with }E(G)\text{ finite}\
+\downarrow\quad\text{delete loops}\
+\text{loopless bridgeless core }G_0\
+\downarrow\
+\text{cubic expansion }H\text{ with a rank-three binary flow}\
+\downarrow\
+\text{rank-three affine compatibility on }H\
+\downarrow\
+\text{graph-level vertex-even multiset double cover of }H\
+\downarrow\quad\text{loopless bridge}\
+\text{cut-even double cover of }H\
+\downarrow\quad\text{pure collapse transport}\
+\text{cut-even double cover of }G_0\
+\downarrow\quad\text{one finite circuit decomposition}\
+\text{cycle double cover of }G_0\
+\downarrow\quad\text{two singleton circuits per removed loop}\
 \text{cycle double cover of }G.
 \end{array}
 $$
 
 The outer reduction must independently supply the expansion, the relevant flow,
-and the collapse datum.  Those results are outside the affine compatibility
+and the collapse datum. These results are outside the affine compatibility
 kernel but inside the complete unconditional CDC proof.
 
-## 7. Finiteness layers
+## 9. Finiteness layers
 
-Several different finiteness conditions must not be conflated.
+Several finiteness conditions must not be conflated.
 
-- The public CDC problem concerns a finite active graph.
+- The public theorem requires finite active edge set.
 - The affine global compatibility theorem uses finite dart and vertex indexing
-  in the finite-graph application.
-- The even-cover predicate itself need not bundle an ambient-carrier finiteness
-  condition.
-- Circuit decomposition needs each support to be finite; it does not
-  mathematically require the entire ambient edge type to be finite.
+  in its finite-graph application.
+- The even-cover predicates need not bundle ambient-carrier finiteness.
+- Circuit decomposition needs finite supports.
 - Cut transport needs finite transported supports, not finite ambient vertex
   carriers or finite collapse fibres.
 
 A formal implementation may retain stronger finite-type corollaries for
-convenience, but the mathematical architecture is controlled by the active and
-support-level hypotheses above.
+convenience, but the mathematical architecture is controlled by active-edge and
+support-level hypotheses.
 
-## 8. Relation to the companion formalization
+## 10. Relation to the companion formalization
 
 The companion Lean repository currently machine-checks:
 
 - the local affine-family classification;
-- the rank-three compatibility conclusion through the branching/cross-bit
-  presentation;
-- the dart-level support construction;
-- cycle-double-cover extraction for an already cubic graph carrying the
+- rank-three compatibility through the branching/cross-bit presentation;
+- the dart-level indexed support construction;
+- the cubic-flow CDC corollary for an already cubic loopless graph carrying the
   required flow.
 
-It does not yet machine-check the factorization through a named graph-level even
-double cover, the cut-even collapse transport, the full outer reduction, or the
-final unconditional theorem inhabiting the public `CDCStatement`.
-
-No public statement is changed by this chapter.  It records the internal
-mathematical factorization that future paper and Lean work should follow.
+It does not yet machine-check the approved graph-level even-cover factorization,
+the cut-even collapse transport, loop deletion and reinsertion, the full outer
+reduction, or the full finite bridgeless-multigraph theorem. The current
+`Statement.lean` remains loopless and ambient-finite until the separate exact
+Path A migration packet is implemented.
