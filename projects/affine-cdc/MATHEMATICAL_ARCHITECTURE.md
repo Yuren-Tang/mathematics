@@ -7,13 +7,24 @@ Engineering plans and implementation prompts do not control this file.
 The project has two nested scopes:
 
 1. the **affine compatibility core** attached to a cubic binary flow;
-2. the **unconditional CDC shell** that supplies a cubic flow object, transports
-   the affine output back to the original graph, and proves the protected public
-   Cycle Double Cover statement.
+2. the **full finite bridgeless-multigraph CDC shell**, which separates loops,
+   supplies a cubic flow object for the loopless core, transports the affine
+   output back, decomposes once, and reinserts singleton loop circuits.
 
 The first scope contains the principal new affine/Fano mathematics. The second
 is necessary for the complete theorem and must be formalized independently in
 the companion Lean project.
+
+The natural external theorem is:
+
+> Every multigraph with finite active edge set and no bridges has a cycle double
+> cover.
+
+Loops are allowed. A circuit is a nonempty inclusion-minimal cut-even edge set,
+so a singleton loop is a circuit. The current companion `Statement.lean` is
+still loopless and ambient-finite. It is an implementation checkpoint awaiting
+the approved Path A migration; it is not the final natural statement and has
+not yet been proved.
 
 ## 1. Source and compatibility image
 
@@ -59,7 +70,7 @@ $H^0(\mathcal P_f)$.
 
 The pair complex is the complete image of the **compatibility question**, but it
 is not the full graph source. The graph, dart pairing, and local-family
-interpretation are retained for cover extraction.
+interpretation are retained for the graph-level even-cover construction.
 
 **Canonical chapter:**
 [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md).
@@ -171,11 +182,11 @@ invariant bridge and proof are themselves formalized.
 **Canonical chapter:**
 [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md).
 
-## 4. Natural cover output
+## 4. Natural affine output
 
 A compatible affine family does not intrinsically produce a minimal circuit
-decomposition. It first produces a finite family of even edge supports in which
-every graph edge occurs exactly twice.
+decomposition. It first produces a finite indexed family of even edge supports
+in which every graph edge occurs exactly twice.
 
 Flattening the internal $\Gamma$-index gives a graph-level multiset **even double
 cover**. This is the natural output of the affine core:
@@ -184,15 +195,9 @@ $$
 \boxed{
 \text{compatible affine family}
 \Longrightarrow
-\text{even double cover}.
+\text{graph-level multiset even double cover}.
 }
 $$
-
-For a finite graph, every even support decomposes into circuits, so an even
-double cover can be converted to a cycle double cover. Conversely, forgetting
-minimality turns any cycle double cover into an even double cover. The existence
-statements are therefore equivalent in the finite setting, but the witness
-shapes serve different purposes.
 
 The even-cover witness is the correct compositional object because:
 
@@ -200,18 +205,18 @@ The even-cover witness is the correct compositional object because:
 - it does not expose $\Gamma$-labels, darts, partner, or rotation data to the
   outer reduction;
 - it is transported naturally through graph collapse;
-- it postpones circuit decomposition until the original graph is recovered.
+- it postpones circuit decomposition until the original loopless core is
+  recovered.
 
-A cycle double cover of the already cubic flow graph is an immediate corollary,
-not a necessary node in the unconditional proof and not a separate mathematical
-centre.
+A CDC of the already cubic flow graph is an optional immediate corollary, not a
+necessary node in the full proof and not a separate mathematical centre.
 
 **Canonical chapter:**
 [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md).
 
 ## 5. Cut parity and graph collapse
 
-For a finite support $F\subseteq E(G)$, define cut-evenness by
+For a finite support $F\subseteq E(G)$, define
 
 $$
 \operatorname{CutEven}_G(F)
@@ -220,8 +225,9 @@ $$
 \quad |F\cap\delta_G(S)|\equiv0\pmod2.
 $$
 
-Cut-evenness is the invariant directly preserved by a graph collapse. It is
-independent of cubicity, flows, affine families, and circuit minimality.
+Cut-evenness is the invariant directly preserved by graph collapse. It is
+independent of cubicity, flows, affine families, looplessness, connectedness,
+and circuit minimality.
 
 Under the current loopless incidence convention, a finite support is
 vertex-even if and only if it is cut-even. Looplessness belongs to this bridge,
@@ -230,7 +236,7 @@ not to the affine compatibility theorem or the pure collapse theorem.
 A collapse datum consists of vertex clusters and an injective lift of original
 edges such that every auxiliary edge stays inside one cluster and the lifted
 edges are exactly the inter-cluster edges. Projection of an upstairs support is
-then defined by retaining the original edges whose lifts lie in the support.
+defined by retaining the original edges whose lifts lie in the support.
 
 For every original vertex subset $S$, lifted cut edges identify
 
@@ -252,28 +258,30 @@ This separates the outer shell into three clean pieces:
 
 1. vertex-even to cut-even on the loopless expansion;
 2. pure cut-even transport through collapse;
-3. cut-even to vertex-even on the loopless original graph.
+3. cut-even cover of the loopless original core, followed directly by intrinsic
+   circuit decomposition.
 
 **Canonical chapter:**
 [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md).
 
-## 6. The unconditional Cycle Double Cover spine
+## 6. Loop separation and the full CDC spine
 
-The full project theorem starts from a finite loopless bridgeless multigraph
-$G$, not from an already cubic flow graph. The outer graph-theoretic shell must
-independently supply:
+Let $G$ be a bridgeless multigraph with finite active edge set. Delete all loop
+edges to obtain $G_0$.
 
-- a suitable cubic expansion $H$;
-- the required nowhere-zero rank-three binary flow on $H$;
-- collapse data from $H$ to $G$;
-- the proof that the relevant graph hypotheses are preserved.
+- loops cross no cut and are not bridges;
+- deletion preserves bridgelessness on the nonloop core;
+- $G_0$ is loopless and has finite active edge set;
+- a singleton loop is a cut-even circuit.
 
-The complete mathematical chain is
+The complete chain is
 
 $$
 \boxed{
 \begin{array}{c}
-\text{finite loopless bridgeless multigraph }G\\
+\text{bridgeless multigraph }G\text{ with }E(G)\text{ finite}\\
+\downarrow\;\text{delete loops}\\
+\text{loopless bridgeless core }G_0\\
 \downarrow\\
 \text{cubic expansion }H\text{ with rank-three binary flow}\\
 \downarrow\\
@@ -281,14 +289,18 @@ $$
 \downarrow\\
 \text{rank-three Fano compatibility}\\
 \downarrow\\
-\text{even double cover of }H\\
+\text{graph-level multiset even double cover of }H\\
 \downarrow\\
-\text{cut-even transport through collapse}\\
+\text{vertex-even/cut-even bridge on }H\\
 \downarrow\\
-\text{even double cover of }G\\
+\text{pure cut-even transport through collapse}\\
+\downarrow\\
+\text{even double cover of }G_0\\
 \downarrow\\
 \text{one final finite circuit decomposition}\\
 \downarrow\\
+\text{cycle double cover of }G_0\\
+\downarrow\;\text{two singleton circuits per removed loop}\\
 \text{cycle double cover of }G.
 \end{array}
 }
@@ -309,17 +321,19 @@ The architecture distinguishes several logically different conditions.
 - The abstract dart structure permits two distinct paired darts at one vertex.
 - The current Mathlib graph-to-dart port uses looplessness because its incidence
   pair does not distinguish the two half-incidences of a loop.
-- The protected public statement also uses looplessness because the current
-  incidence parity convention counts a loop edge once.
+- The current Lean `Statement.lean` uses looplessness because the present
+  vertex-incidence parity convention counts a loop edge once.
+- The approved natural statement removes this representation restriction and
+  uses cut-even circuits.
 - Pure cut-even collapse transport does not require looplessness.
 
 ### Finiteness
 
-- The public CDC theorem concerns a finite active graph.
+- The natural public theorem requires `E(G).Finite`.
+- The current Lean checkpoint uses finite ambient vertex and edge types.
 - The finite-graph affine compatibility theorem uses finite global indexing.
 - The even-cover notion itself need not bundle ambient-carrier finiteness.
-- Circuit decomposition mathematically needs finite supports, or equivalently
-  finite active edge sets in the finite graph application.
+- Circuit decomposition mathematically needs finite supports.
 - Cut transport needs finite transported supports, not finite ambient vertex
   types or finite collapse fibres.
 
@@ -388,7 +402,7 @@ residue parity. This is the complete all-rank criterion.
 ## 10. Rank-four first failure
 
 For $\Gamma=\mathbf F_2^4$, legal local stresses are alternating two-forms modulo
-one quotient-form line. The residue is represented by the cubic expression
+one quotient-form line. The residue is represented by
 
 $$
 \rho_W=(1+\beta_W)\operatorname{Pf}.
@@ -405,8 +419,8 @@ comparison:
 | triangular prism | $0$ | $1$ | compatible |
 | $K_{3,3}$ | $0$ | $1$ | incompatible |
 
-Thus rigidity and homology dimension alone do not decide compatibility; the
-residue character does.
+Here connectedness describes these two specific comparison graphs; it is not a
+hypothesis of the affine compatibility source.
 
 **Canonical chapter:**
 [`rank-hierarchy/rank-four-first-obstruction.md`](rank-hierarchy/rank-four-first-obstruction.md).
@@ -512,16 +526,17 @@ existence spine.
 
 The companion Lean repository currently machine-checks the original local
 classification, the compatibility conclusion through the branching/cross-bit
-presentation, the dart-level cover construction, and cycle-double-cover
-extraction for a graph already carrying the required cubic flow.
+presentation, the indexed support construction, and the cubic-flow CDC
+corollary for a graph already carrying the required flow.
 
 It does **not** yet machine-check:
 
 - the invariant characteristic-torsor identification and Lagrangian proof;
 - the named graph-level even-cover factorization;
 - cut-even collapse transport;
+- loop deletion and singleton-loop reinsertion;
 - the independent outer reduction;
-- a theorem inhabiting the protected unconditional `CDCStatement`.
+- the current loopless `CDCStatement` or the approved full theorem.
 
 The snapshot-only embedding, Petrial, transition, and surface sources are not
 reconstructed. Their inventory and restoration protocol are in
@@ -539,11 +554,13 @@ See:
 $$
 \boxed{
 \begin{array}{c}
-\text{protected unconditional CDC statement}\\
+\text{full finite bridgeless-multigraph CDC theorem}\\
 \uparrow\\
-\text{outer expansion, flow, collapse, and final decomposition}\\
+\text{loop reinsertion after one final decomposition}\\
 \uparrow\\
-\text{graph-level even double cover}\\
+\text{outer expansion, flow, and cut-even collapse transport}\\
+\uparrow\\
+\text{graph-level multiset even double cover}\\
 \uparrow\\
 \text{compatible affine family}\\
 \uparrow\\
@@ -551,7 +568,7 @@ $$
 \uparrow\\
 (\mathcal P_f,\kappa)\\
 \uparrow\\
-(G,\Gamma,f)
+(G,\Gamma,f).
 \end{array}
 }
 $$
