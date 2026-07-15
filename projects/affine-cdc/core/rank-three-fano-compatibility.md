@@ -2,9 +2,9 @@
 
 **Status.** The finite-dimensional quadratic and symplectic arguments below are
 complete paper proofs. Their identification with the original local-family API
-and the final cycle-double-cover extraction is anchored in the companion Lean
-repository. The quadratic presentation itself has not yet been independently
-formalized.
+and the indexed-support construction is anchored in the companion Lean
+repository. The quadratic presentation and the graph-level even-cover
+factorization have not yet been independently formalized in this form.
 
 This chapter assumes the rank-independent incidence geometry of
 [`affine-incidence-and-obstruction.md`](affine-incidence-and-obstruction.md).
@@ -387,7 +387,8 @@ $$
 
 ## 7. Global Fano compatibility
 
-Return to a finite connected cubic graph with a nowhere-zero flow
+Return to a finite cubic graph, not necessarily connected, with a nowhere-zero
+flow
 
 $$
 f:E(G)\longrightarrow\Gamma=\mathbf F_2^3.
@@ -596,9 +597,9 @@ $$
 
 For odd valence this is the same outside-plane identity; for even valence the
 quadratic contributions cancel locally. This extension concerns the scalar
-support mechanism only. A local-family interpretation and a CDC extraction for
-such vertices require additional definitions and do not follow automatically
-from the cubic theory.
+support mechanism only. A local-family interpretation and an even-cover
+construction for such vertices require additional definitions and do not follow
+automatically from the cubic theory.
 
 ## 11. Output boundary
 
@@ -611,10 +612,17 @@ L_{\mathrm{edge}}
 $$
 
 is a compatible collection of local affine families. The companion Lean
-repository proves that, for the original AffineCDC local objects, the associated
-dart pairing has orbits that form a standard cycle double cover.
+repository proves that, for the original AffineCDC local objects, the retained
+dart and support data yield an indexed family of even edge supports with exact
+double coverage. Flattening that family gives the natural graph-level multiset
+even double cover.
 
-The quadratic theorem proves the compatibility input to that extraction. It
-does not reconstruct the dart permutation from the reduced quadratic space.
-The source graph and local combinatorial API must therefore remain part of the
-formal theorem statement.
+The existing cubic-flow CDC theorem is obtained by immediately decomposing those
+supports and is a checked corollary. In the full proof architecture, circuit
+decomposition is deferred until after collapse and performed once on the
+loopless original core, followed by singleton-loop reinsertion.
+
+The quadratic theorem proves the compatibility input. It does not reconstruct
+the dart permutation or support extraction from the reduced quadratic space.
+The source graph and local combinatorial API must therefore remain available to
+the downstream even-cover construction.
