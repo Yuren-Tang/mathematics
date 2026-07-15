@@ -1,13 +1,13 @@
 # AffineCDC publication programme
 
-Paper boundaries should follow mathematical closure, not the order in which the
-notes were discovered. The present corpus contains three immediate paper-sized
-blocks, one conditional abstract programme, and one deferred topological
-programme.
+Paper boundaries should follow mathematical closure, not discovery order or the
+historical Lean module endpoint. The present corpus contains three immediate
+paper-sized blocks, one conditional abstract programme, and one deferred
+topological programme.
 
 ## Recommended order
 
-1. **Affine Fano compatibility and cycle double covers**;
+1. **Affine Fano compatibility and the Cycle Double Cover theorem**;
 2. **Dual-Fano residues and the rank hierarchy**;
 3. **Gauge circuits, harmonic quotients, and cut interfaces**;
 4. **Tensor and code-flag homology**, after literature and payoff tests;
@@ -16,13 +16,29 @@ programme.
 Papers A and B form the conceptual core. Paper C is a coherent graph-theoretic
 sequel. Paper D should not delay them.
 
-## Paper A — Affine Fano compatibility and cycle double covers
+## Paper A — Affine Fano compatibility and the Cycle Double Cover theorem
 
-### Central theorem
+### Final headline theorem
+
+The paper's final graph-theoretic theorem is the protected finite loopless
+multigraph formulation of the Cycle Double Cover conjecture:
+
+> every finite loopless bridgeless multigraph has a cycle double cover.
+
+The paper must prove this literal endpoint through the project's own graph model
+and reduction. A theorem only for graphs already cubic and already carrying the
+required flow is an intermediate corollary, not the paper headline.
+
+### Principal new structural theorem
 
 For a finite cubic graph with a nowhere-zero $\mathbf F_2^3$-flow, the local
-affine-family torsors admit a globally compatible choice. With the original
-dart-level source data, a compatible choice yields a cycle double cover.
+affine-family torsors admit a globally compatible choice. In the invariant
+presentation, the characteristic torsor of the vertex Lagrangian intersects the
+totally singular edge Lagrangian.
+
+The retained graph-and-dart data turn a compatible family into a graph-level
+even double cover. Circuit decomposition is postponed until after the outer
+graph reduction.
 
 ### Mathematical contents
 
@@ -53,20 +69,42 @@ dart-level source data, a compatible choice yields a cycle double cover.
    - global totally singular edge Lagrangian.
 
 4. **Compatibility theorem**
-   - the abstract characteristic-torsor intersection theorem;
+   - the characteristic-torsor intersection theorem;
    - automatic intersection with a totally singular Lagrangian;
    - equivalence with quadratic handshaking and support-boundary cancellation;
-   - full moduli torsor and Fano duality.
+   - the compatible-family moduli torsor.
 
-5. **CDC extraction and formal contract**
-   - what the reduced incidence object does and does not remember;
-   - the dart pairing and orbit extraction from the companion Lean repository;
-   - explicit theorem correspondence between the paper and formal APIs.
+5. **Natural cover output**
+   - compatible family to indexed even edge supports;
+   - flattening to a multiset even double cover;
+   - exact double coverage and allowance of repeated or empty supports;
+   - why a cubic-flow CDC is only an immediate corollary.
+
+6. **Outer graph-theoretic shell**
+   - cubic expansion of a finite loopless bridgeless multigraph;
+   - existence of the required rank-three binary flow on the expansion;
+   - collapse data and edge projection;
+   - cut-evenness as the pure transport invariant;
+   - loopless bridges between vertex parity and cut parity.
+
+7. **Final decomposition and theorem**
+   - finite even-support circuit decomposition;
+   - one final decomposition on the original graph;
+   - conclusion of the protected unconditional CDC statement.
+
+8. **Formal correspondence**
+   - exact relation between the paper's characteristic torsor and the existing
+     Lean local-family API;
+   - exact relation between the current dart-level construction and the
+     graph-level even-cover theorem;
+   - theorem-by-theorem status and axiom audit.
 
 ### Canonical sources
 
 - [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md);
 - [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md);
+- [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md);
+- [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md);
 - [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
 
 ### Exclusions
@@ -75,17 +113,24 @@ Do not include:
 
 - the abstract code-flag theory;
 - the rank-four calculations beyond a brief sharpness remark;
-- circuit classifications;
-- embedding or Petrial state spaces.
+- gauge-circuit classifications;
+- embedding or Petrial state spaces;
+- a separate numbered cubic-flow CDC theorem unless exposition genuinely needs
+  the immediate corollary.
 
 ### Publication readiness
 
-The mathematical paper structure is closed. The remaining critical work is:
+The affine compatibility core is mathematically coherent, but Paper A is not yet
+closed because the complete unconditional shell and formal correspondence are
+unfinished. Remaining critical work:
 
-1. match the invariant local characteristic torsor explicitly to the Lean API;
-2. state the exact CDC extraction theorem without relying on informal prose;
-3. add graph-flow and cycle-double-cover bibliography;
-4. obtain independent proof review.
+1. independently audit the invariant characteristic-torsor proof;
+2. match the invariant local characteristic torsor explicitly to the Lean API;
+3. state and prove the exact graph-level even-cover extraction theorem;
+4. close the cubic expansion, flow, collapse, and cut-parity theorem packet;
+5. prove the literal unconditional endpoint in Lean;
+6. add graph-flow and cycle-double-cover bibliography;
+7. obtain independent proof review.
 
 ## Paper B — Dual-Fano residues and the rank hierarchy
 
@@ -125,8 +170,8 @@ Pfaffian cubic equation.
 ### Exclusions
 
 Do not make the tensor complex the paper's organizing object. It may appear in a
-short index or stress-dimension remark, but the theorem is about the affine
-incidence obstruction and its complete dual residue.
+short index or stress-dimension remark, but the theorem concerns the affine
+incidence obstruction and its dual residue.
 
 ### Publication readiness
 
@@ -138,7 +183,7 @@ The theorem block is coherent. Remaining work:
 3. compare the obstruction with existing characteristic-two quadratic and
    symplectic invariants;
 4. decide whether higher-rank decorated residue planes belong in the paper or
-   only in future work.
+   future work.
 
 ## Paper C — Gauge circuits, harmonic quotients, and cut interfaces
 
@@ -184,7 +229,7 @@ This is a plausible independent graph-theory paper after:
 2. verification that the weight-four and weight-six classifications use the
    weakest natural hypotheses;
 3. a clean statement of cap extension;
-4. computational tables separated from the proofs;
+4. computational tables separated from proofs;
 5. a decision whether weight eight is an open problem section or omitted.
 
 ## Paper D — Tensor and code-flag homology
@@ -223,8 +268,8 @@ functoriality, and balanced torsion recover the reduced graphical structures.
    diagonal/Khatri–Rao constructions, and represented matroid quotients.
 2. **External examples:** find natural code flags not reverse-engineered from
    AffineCDC.
-3. **Payoff:** prove a theorem that is materially shorter or stronger in the
-   abstract language.
+3. **Payoff:** prove a theorem materially shorter or stronger in the abstract
+   language.
 4. **Functorial closure:** stabilize morphisms, coefficient quotients, and graph
    correspondences.
 5. **Terminology:** retain “mixed Schur–Koszul” only if the literature supports
@@ -238,7 +283,6 @@ paper, not a publication priority.
 The snapshot names substantial material on embeddings, rotation systems,
 partial Petrials, orientability, transition invariants, delta-matroid slices,
 and surface polynomials. The source bodies are absent from the current tree.
-
 No paper outline should be presented as theorem-complete until those sources are
 restored and classified under the protocol in
 [`topology/README.md`](topology/README.md).
@@ -247,11 +291,13 @@ restored and classified under the protocol in
 
 The correct immediate sequence is:
 
-1. finish the formal bridge and exposition for Paper A;
+1. close the mathematical and formal spine of Paper A through the literal
+   unconditional theorem;
 2. independently audit and prepare Paper B;
 3. develop Paper C if the graph-theory comparisons are favourable;
 4. run recognition tests for Paper D without allowing it to block A or B;
 5. restore the topological sources before making claims about Paper E.
 
-This order follows the mathematics: existence first, sharp obstruction second,
-homogeneous graph consequences third, abstraction and topology afterward.
+This order follows the mathematics: unconditional existence first, sharp
+obstruction second, homogeneous graph consequences third, abstraction and
+topology afterward.
