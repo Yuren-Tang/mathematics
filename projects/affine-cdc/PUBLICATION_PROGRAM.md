@@ -88,10 +88,17 @@ outer graph reduction.
 
 6. **Full outer graph-theoretic shell**
    - active-edge finiteness and preliminary loop separation;
-   - cubic expansion and rank-three binary flow on the loopless core;
+   - the isolated loopless binary-eight-flow input, with componentwise Seymour,
+     literal integer `6-flow -> 8-flow`, and Tutte's equal-order existence
+     theorem;
+   - adaptive prefix avoidance in every finite binary rank at least two;
+   - the preferred adaptive flow-first route
+     `G -> (G,f) -> (H,\widetilde f,\pi,\lambda)`;
+   - the independent expansion-first route `G -> H -> (H,f)`;
+   - exact expansion sizes `|V(H)|=2|E(G)|` and `|E(H)|=3|E(G)|`;
    - vertex-even/cut-even bridge on the loopless expansion;
    - pure cut-even collapse transport;
-   - even double cover of the loopless original core.
+   - a multiset cut-even double cover of the loopless original core.
 
 7. **Final decomposition and loop reinsertion**
    - one finite circuit decomposition after collapse;
@@ -111,6 +118,7 @@ outer graph reduction.
 
 - [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md);
 - [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md);
+- [`reduction/outer-shell-and-binary-flow.md`](reduction/outer-shell-and-binary-flow.md);
 - [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md);
 - [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md);
 - [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
@@ -126,21 +134,53 @@ Do not include:
 - a separate numbered cubic-flow CDC theorem unless exposition genuinely needs
   the immediate corollary.
 
+### Outer-shell exposition and implementation decision
+
+Use the adaptive flow-first route as the primary concise Paper A proof. State the
+general binary-rank adaptive ordering theorem, specialize it to
+$\mathbf F_2^3$, and retain the degree-eight Gray-tour example as sharpness for
+a preselected cyclic order. Adaptive ordering belongs to Paper A and is not a
+separately authorized present paper.
+
+Retain the expansion-first route as an independent flow-free theorem. It is also
+the selected first Lean outer-shell implementation route, because it avoids the
+initial formalization cost of the adaptive multiset-ordering and extension
+witnesses. The first Lean route must expose one exact isolated external
+`BinaryEightFlow` theorem boundary; neither route, Seymour, nor Tutte is thereby
+machine-checked.
+
+### External source status
+
+The verified six-flow citation is P. D. Seymour, “Nowhere-zero 6-flows”,
+*Journal of Combinatorial Theory, Series B* **30** (1981), 130–135, DOI
+`10.1016/0095-8956(81)90058-7`. The exact primary theorem and page pinpoint for
+Tutte's equal-order group-flow existence result remain an unresolved publication
+source gate. The existence theorem and the group-flow counting theorem must be
+kept distinct.
+
 ### Publication readiness
 
-The affine compatibility core is mathematically coherent, but Paper A is not yet
-closed because the complete outer shell and formal correspondence are unfinished.
-Remaining critical work:
+The affine compatibility core and the outer-shell packet are mathematically
+coherent at paper level, but Paper A is not yet closed because canonical
+acceptance, formal correspondence, independent proof review, bibliography, and
+the Lean endpoint remain unfinished. Remaining critical work:
 
 1. independently audit the invariant characteristic-torsor proof;
 2. match the invariant local characteristic torsor explicitly to the Lean API;
 3. state and prove the exact graph-level even-cover extraction theorem;
-4. close the loop reduction, cubic expansion, flow, collapse, and cut-parity
-   theorem packets;
+4. after canonical acceptance of `outer-shell-and-binary-flow.md`, independently
+   review the outer-shell proof and integrate it with the loop reduction and
+   cut-even handoff; formalization remains separately open;
 5. prove the full unconditional endpoint in Lean after the exact Path A migration
    packet is approved and implemented;
-6. add graph-flow and cycle-double-cover bibliography;
-7. obtain independent proof review.
+6. complete graph-flow and cycle-double-cover bibliography, including the exact
+   Tutte primary theorem/page source gate;
+7. obtain independent line-by-line review of adaptive ordering, the outer shell,
+   collapse compatibility, and final assembly;
+8. complete author decisions on title, authorship, affiliation, ORCID, AI
+   disclosure, acknowledgements, novelty language, and publication mode;
+9. complete the final source/PDF package and obtain explicit later `AC-DIR`,
+   author, and arXiv authorization.
 
 ## Paper B — Dual-Fano residues and the rank hierarchy
 
