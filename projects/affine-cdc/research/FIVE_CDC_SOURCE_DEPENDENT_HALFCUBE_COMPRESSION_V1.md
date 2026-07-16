@@ -246,8 +246,8 @@ D_3=F_4\triangle F_7
 }
 \]
 
-form a three-support double cover of the cube. Each is an eight-edge Hamiltonian
-cycle.
+form a three-support double cover of the cube. Each is a 2-factor consisting of
+two opposite square faces.
 
 Therefore the earlier cube theorem says only:
 
