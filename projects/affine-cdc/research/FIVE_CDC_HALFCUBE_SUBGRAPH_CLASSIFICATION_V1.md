@@ -344,10 +344,15 @@ which means that `J` contains `K_6`, or
 \overline J=C_5\sqcup3K_1,
 \]
 
-which means that `J=K_8-C_5`. Conversely, the complement of a `K_6` contains no
-three-template on those six vertices, and the complement of `K_8-C_5` is
-`C_5\sqcup3K_1`; by the already proved equivalence `(1)⇔(2)`, either subgraph
-prevents a homomorphism. This proves Theorem 1.1. ∎
+which means that `J=K_8-C_5`.
+
+Conversely, if `J` contains `K_6`, then no homomorphism `J→\mathscr A_5` exists,
+because `\mathscr A_5` has clique number five by Lemma 4.2. If `J` contains
+`K_8-C_5`, then a homomorphism would restrict to one on `K_8-C_5`; but its
+complement is `C_5\sqcup3K_1`, which contains none of the three templates, so the
+already proved equivalence `(1)⇔(2)` excludes such a homomorphism. Applying
+`(1)⇔(2)` once more shows that in either case `\overline J` contains no template.
+This proves Theorem 1.1. ∎
 
 ## 7. Consequences for AffineCDC root compression
 
