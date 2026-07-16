@@ -79,11 +79,11 @@ The corresponding edge transition is
 \end{cases}
 \]
 
-Thus `lambda_e=1` is exactly the face-side swap of the partial Petrial theorem.
+Thus `\lambda_e=1` is exactly the face-side swap of the partial Petrial theorem.
 
 ### Theorem 2.1 — face-transition model
 
-The face cycles of the embedding `S_{g^k}` are exactly the connected components of the two-regular graph on `\mathcal D_g` whose edge set is the union of the matchings `nu` and `epsilon_lambda`.
+The face cycles of the embedding `S_{g^k}` are exactly the connected components of the two-regular graph on `\mathcal D_g` whose edge set is the union of the matchings `\nu` and `\epsilon_\lambda`.
 
 Equivalently, they are the orbits of the permutation
 
@@ -95,8 +95,8 @@ Equivalently, they are the orbits of the permutation
 
 A face boundary alternates between two operations:
 
-1. at a source vertex it continues through the other incident source edge carrying the same local support index, which is `nu`;
-2. across a source edge it follows the face-side identification prescribed by the embedding, which is `epsilon_lambda`.
+1. at a source vertex it continues through the other incident source edge carrying the same local support index, which is `\nu`;
+2. across a source edge it follows the face-side identification prescribed by the embedding, which is `\epsilon_\lambda`.
 
 Every dart has one transition of each kind, so the union is two-regular and its connected components are precisely the face-boundary circuits. The local gauge admissibility equation guarantees that the translated support colour is constant along each circuit. ∎
 
@@ -104,7 +104,7 @@ This model keeps the face-side set fixed while the gauge code changes only the e
 
 ## 3. Pointwise persistence of marked faces
 
-Fix one gauge state `beta` and let `F` be one face cycle in its transition system. Let
+Fix one gauge state `\beta` and let `F` be one face cycle in its transition system. Let
 
 \[
 Z(F)\subseteq E(G)
@@ -138,13 +138,13 @@ denote its coordinate restriction by
 
 ### Theorem 3.1 — marked-face stabilizer
 
-Starting from the gauge state `beta`, the same face-side dart sets
+Starting from the gauge state `\beta`, the same face-side dart sets
 
 \[
 F_1,\ldots,F_m
 \]
 
-remain face cycles after adding `lambda` if and only if
+remain face cycles after adding `\lambda` if and only if
 
 \[
 \boxed{\rho_{\mathcal F}(\lambda)=0.}
@@ -152,9 +152,9 @@ remain face cycles after adding `lambda` if and only if
 
 #### Proof
 
-If `lambda` vanishes on every source edge traversed by the marked faces, all edge transitions used by those face cycles remain unchanged, so every marked dart circuit persists.
+If `\lambda` vanishes on every source edge traversed by the marked faces, all edge transitions used by those face cycles remain unchanged, so every marked dart circuit persists.
 
-Conversely, suppose `lambda_e=1` for an edge traversed by a marked face `F_i`. At `e`, the old edge transition from a dart of `F_i` is replaced by the crossed transition to the dart that belonged to the other old incident face. Hence the dart set of `F_i` is not invariant under the new transition system and cannot remain the same face cycle. ∎
+Conversely, suppose `\lambda_e=1` for an edge traversed by a marked face `F_i`. At `e`, the old edge transition from a dart of `F_i` is replaced by the crossed transition to the dart that belonged to the other old incident face. Hence the dart set of `F_i` is not invariant under the new transition system and cannot remain the same face cycle. ∎
 
 ### Corollary 3.2 — affine occurrence locus
 
@@ -181,13 +181,13 @@ then the marked family occurs in exactly
 
 gauge states.
 
-Call `r(mathcal F)` the **exposure rank** of the marked face system.
+Call `r(\mathcal F)` the **exposure rank** of the marked face system.
 
 - `r=0`: the system is pointwise rigid throughout the whole gauge orbit;
 - `r>0`: some admissible partial Petrial destroys the marked system;
 - larger rank means a smaller stabilizer and fewer states carrying that exact system.
 
-In dual-code language, `r=0` precisely when every coordinate functional supported on `Z(mathcal F)` vanishes on `B_f`; equivalently, every unit coordinate vector of that zone belongs to `B_f^perp`.
+In dual-code language, `r=0` precisely when every coordinate functional supported on `Z(\mathcal F)` vanishes on `B_f`; equivalently, every unit coordinate vector of that zone belongs to `B_f^\perp`.
 
 ## 4. Marked obstruction cores
 
@@ -211,11 +211,11 @@ A_C=\beta_C+\ker\rho_C.
 }
 \]
 
-Every state in `A_C` is componentwise bad because its dual triangulation contains a graph that does not map to `mathscr A_5`.
+Every state in `A_C` is componentwise bad because its dual triangulation contains a graph that does not map to `\mathscr A_5`.
 
 The theorem applies in particular to:
 
-- `H=K_6`, by the clique-number bound `omega(mathscr A_5)=5`;
+- `H=K_6`, by the clique-number bound `\omega(\mathscr A_5)=5`;
 - any marked copy of the `K_6`-free Mycielski obstruction `M(K_5)`;
 - any later finite library of certified half-cube homomorphism obstructions.
 
@@ -261,7 +261,7 @@ Each `A_C` has relative density `2^{-r(C)}` in `B_f`. The union bound shows that
 
 This criterion is only sufficient. Exact avoidance may instead be tested by the intersection lattice and Möbius inversion already developed for affine-subspace arrangements.
 
-A `K_6`-free state need not yet map to `mathscr A_5`; the Mycielski warning shows that deeper graph-homomorphism cores exist in general. The same arrangement construction applies to any finite obstruction library once compatible cores are identified.
+A `K_6`-free state need not yet map to `\mathscr A_5`; the Mycielski warning shows that deeper graph-homomorphism cores exist in general. The same arrangement construction applies to any finite obstruction library once compatible cores are identified.
 
 ## 6. Topology of a visible `K_6`
 
@@ -288,11 +288,11 @@ Exactly one of the following holds.
 
 #### Proof
 
-If `T` has a vertex outside `X`, connectedness gives a clique vertex `x` with an outside neighbour. The link of `x` is a cycle containing all five other clique vertices and at least one outside vertex. At a transition in this cyclic link between an inside and an outside neighbour, there is a triangular face `xyz` with `y in X` and `z notin X`; hence the clique edge `xy` is externally exposed.
+If `T` has a vertex outside `X`, connectedness gives a clique vertex `x` with an outside neighbour. The link of `x` is a cycle containing all five other clique vertices and at least one outside vertex. At a transition in this cyclic link between an inside and an outside neighbour, there is a triangular face `xyz` with `y\in X` and `z\notin X`; hence the clique edge `xy` is externally exposed.
 
 If no outside vertex exists, the simplicial one-skeleton is exactly `K_6`. The displayed Euler count gives a closed surface of Euler characteristic one, hence the real projective plane. The six-vertex triangulation is unique up to combinatorial isomorphism, and its dual is the hemi-dodecahedral Petersen map. ∎
 
-For the uniqueness statement one may use the standard uniqueness of the six-vertex triangulation of `RP^2`; it is also verified by the elementary fact that the ten triangular faces form, up to `S_6`, the unique `2-(6,3,2)` design.
+The uniqueness of the six-vertex triangulation of `\mathbb{RP}^2` is standard; it is noted, for example, in A. Gaifullin, *634 vertex-transitive and more than 10^103 non-vertex-transitive 27-vertex triangulations of manifolds like the octonionic projective plane* (2022). Independently, it is verified here by the finite fact that the ten triangular faces form, up to `S_6`, the unique `2-(6,3,2)` design.
 
 ### Proposition 6.2 — exposed-edge cycle
 
@@ -300,7 +300,7 @@ If `T` has more than six vertices, form a graph `H_X` on `X` from the externally
 
 #### Proof
 
-At a clique vertex `x` with outside neighbours, inspect the cyclic link of `x`. The five other clique vertices occur in one or more runs separated by outside vertices. The boundary of these runs contains at least two distinct clique neighbours, and each corresponding edge from `x` is externally exposed. Thus the nonisolated part of `H_X` has minimum degree at least two and therefore contains a cycle. ∎
+At a clique vertex `x` with outside neighbours, inspect the cyclic link of `x`. The five other clique vertices occur in one or more runs separated by outside vertices. If there is one run, its two distinct endpoints are exposed; if there are several runs, their boundary vertices include at least two distinct clique neighbours. Each corresponding edge from `x` is externally exposed. Thus the nonisolated part of `H_X` has minimum degree at least two and therefore contains a cycle. ∎
 
 This exposed cycle is a natural geometric candidate on which an admissible Petrial word may act. Its existence does not by itself prove that the required word lies in the gauge code.
 
@@ -345,4 +345,4 @@ The next theorem-level tasks are therefore:
 - classify the clique-renewal mechanism in the one-dimensional certificate and search for higher-dimensional analogues;
 - enlarge the obstruction library beyond `K_6`, while respecting the distinction between arbitrary graphs and compatible closed dual triangulations.
 
-No statement here proves that every gauge fibre has a `K_6`-free state, that every `K_6`-free compatible dual maps to `mathscr A_5`, or that every cubic graph has a five-support cycle double cover.
+No statement here proves that every gauge fibre has a `K_6`-free state, that every `K_6`-free compatible dual maps to `\mathscr A_5`, or that every cubic graph has a five-support cycle double cover.
