@@ -103,7 +103,10 @@ following have not yet been formalized as the approved architecture:
 - vertex-even/cut-even bridge lemmas under the current loopless convention;
 - pure cut-even graph-collapse transport;
 - loop deletion and singleton-loop reinsertion;
-- the independent cubic expansion and flow shell;
+- the independent port-cycle expansion and the expansion-first outer shell;
+- adaptive prefix avoidance and the flow-preserving adaptive expansion;
+- the isolated classical `BinaryEightFlow` interface, including componentwise
+  assembly and the loopless characteristic-two adapter;
 - the full unconditional theorem.
 
 The chapter
@@ -117,6 +120,7 @@ The following canonical chapters contain written theorem-level arguments:
 
 - [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md);
 - [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md);
+- [`reduction/outer-shell-and-binary-flow.md`](reduction/outer-shell-and-binary-flow.md);
 - [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md);
 - [`rank-hierarchy/transgression-and-dual-fano-residue.md`](rank-hierarchy/transgression-and-dual-fano-residue.md);
 - [`rank-hierarchy/rank-four-first-obstruction.md`](rank-hierarchy/rank-four-first-obstruction.md);
@@ -130,9 +134,20 @@ The following canonical chapters contain written theorem-level arguments:
 “Theorem-level” means that a mathematical statement and argument are written. It
 does not mean peer review, independent line-by-line audit, or Lean formalization.
 
-The outer expansion/flow theorem packet required for the full CDC shell is not
-yet a closed canonical chapter in this repository. Its absence is a mathematical
-and formalization gap, not merely an editorial gap.
+The chapter
+[`reduction/outer-shell-and-binary-flow.md`](reduction/outer-shell-and-binary-flow.md)
+now gives the paper-level outer-shell packet. It proves the finite-active-edge
+port-cycle expansion, exact collapse data, preservation of bridgelessness, the
+adaptive binary ordering theorem, and both the expansion-first and adaptive
+flow-first routes. Its `BinaryEightFlow` node remains a classical external
+Seymour--Tutte input. None of the outer shell, adaptive ordering, or the
+Seymour--Tutte input is thereby machine-checked.
+
+The verified Seymour source is P. D. Seymour, “Nowhere-zero 6-flows”,
+*Journal of Combinatorial Theory, Series B* **30** (1981), 130–135, DOI
+`10.1016/0095-8956(81)90058-7`. The exact primary Tutte theorem and page pinpoint
+remain an unresolved publication source gate; the existence theorem and the
+flow-counting theorem must continue to be cited as distinct statements.
 
 ## 6. Exact computational layer
 
@@ -174,6 +189,9 @@ The following claims remain conditional or programmatic:
 5. An approved migration direction is not an implemented declaration.
 6. Historical filenames, prompts, and superseded ontologies are not current
    mathematical authority.
+7. Director-reviewed paper proofs of adaptive ordering and the outer shell do not
+   acquire Lean status; Seymour and Tutte remain external until an explicit
+   formal theorem boundary or implementation is accepted.
 
 ## 9. Scope of the canonical integration
 
