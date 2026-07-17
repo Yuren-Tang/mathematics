@@ -1,20 +1,20 @@
 # Genuine rainbow path families and the final zero-norm reduction
 
 **Programme:** `AffineCDC — Research Lead`  
-**Status:** theorem-level reduction of genuine three-switch loops; finite edge-membership signature verified exactly; composition/decomposition consequence remains open  
+**Status:** theorem-level reduction of each genuine three-switch loop; exact finite obstruction signature for the physical lift family; a cube-coordinate model is retained only conditionally  
 **Parents:** `FIVE_CDC_RAINBOW_SWITCH_FLOW_TAIT_RESOLUTION_V1.md`, `FIVE_CDC_TYPE_H_TAIT_ESCAPE_V1.md`, `FIVE_CDC_TYPE_H_LOCAL_TO_GLOBAL_HOLONOMY_STACK_V1.md`
 
 ## 1. Purpose
 
-The preceding local-to-global packet allowed the rank-one switch-flow support to contain a terminal path together with closed components.  That is correct for an arbitrary rank-one quotient flow, but it is too broad for a genuine rainbow loop.
+The preceding local-to-global packet allowed the rank-one switch-flow support to contain a terminal path together with closed components. That is correct for an arbitrary rank-one quotient flow, but it is too broad for a genuine rainbow loop.
 
-A genuine rainbow loop is the composite of three switches on three individual terminal-path components.  Let these paths be
+A genuine rainbow loop is the composite of three switches on three individual terminal-path components. Let these paths be
 
 \[
 P_0,\qquad P_1,\qquad P_2,
 \]
 
-in routing-colour order.  The first and third switches have the same support coefficient `u`; the middle switch has coefficient `v`.  Therefore
+in routing-colour order. The first and third switches have the same transported support coefficient `u`; the middle switch has coefficient `v`. Therefore
 
 \[
 \boxed{
@@ -26,7 +26,7 @@ in routing-colour order.  The first and third switches have the same support coe
 }
 \]
 
-This path formula sharpens all zero-norm lifting obstructions.
+This path formula sharpens every zero-norm lifting obstruction for one physical lifted loop.
 
 The principal conclusions are:
 
@@ -41,13 +41,14 @@ The principal conclusions are:
    \[
    E(P)=P_1\cup(P_0\triangle P_2);
    \]
-6. the family of all path-component choices admits a finite edge-membership obstruction signature on the cube `F_2^3`, but edgewise enumeration alone does not yield decomposition: the connectivity of the six terminal paths must be used.
+6. the complete physical lift family is therefore labelled only by ambient translations, uncovered-edge sets, and missed-vertex sets;
+7. a `27`-state cube model exists as an exact abstract local model if the path-component choices can be coherently trivialised, but that global trivialisation has not yet been proved.
 
 No five-cycle double cover theorem is claimed.
 
 ## 2. The genuine three-path formula
 
-Let `x` be the initial indexed root cover and `x^gamma` the cover after the three physical path switches, before support names are quotiented.  For the canonical rainbow word the switch coefficients are
+Let `x` be the initial indexed root cover and `x^gamma` the cover after the three physical path switches, before support names are quotiented. For the canonical rainbow word the transported switch coefficients are
 
 \[
 w_0=u,\qquad w_1=v,\qquad w_2=u,
@@ -59,7 +60,7 @@ with `u,v` independent in the switch plane
 W=\langle u,v\rangle\cong F_2^2.
 \]
 
-Since switching a path component adds its incidence chain tensored with the support-pair coefficient,
+Since switching a path component adds its incidence chain tensored with the transported support-pair coefficient,
 
 \[
 x^\gamma
@@ -97,7 +98,7 @@ Then edgewise the four switch-flow values are
 \end{array}
 \]
 
-This is the only edgewise information needed below.
+This is the only edgewise information needed for the single-loop theorems.
 
 ## 3. Rank-one monodromy collapses to one terminal path
 
@@ -117,7 +118,7 @@ Since a zero-norm switch flow is of the form
 t_\gamma=(1+\pi)r,
 \]
 
-it follows that every edge value of `t_gamma` is either `0` or `kappa`.
+every edge value of `t_gamma` is either `0` or `kappa`.
 
 ### Theorem 3.1 — rank-one path identity
 
@@ -137,25 +138,25 @@ Consequently
 
 #### Proof
 
-In the basis `u,v`, the values `0,kappa` are exactly the vectors whose two coordinates are equal.  The `u`-coordinate of `t_gamma` is `1_{P_0 triangle P_2}`, while the `v`-coordinate is `1_{P_1}`.  Equality of the two coordinates on every edge gives the identity. ∎
+In the basis `u,v`, the values `0,kappa` are exactly the vectors whose two coordinates are equal. The `u`-coordinate of `t_gamma` is `1_{P_0\triangle P_2}`, while the `v`-coordinate is `1_{P_1}`. Equality of the two coordinates on every edge gives the identity. ∎
 
 ### Corollary 3.2 — no genuine odd-component branch
 
-The nonzero support of a rank-one genuine loop is the single path component `P_1`.  It contains no closed component.
+The nonzero support of a rank-one genuine loop is the single path component `P_1`. It contains no closed component.
 
-Thus the odd closed components allowed by an arbitrary rank-one quotient flow are absent from the genuine rainbow family.
+Thus the odd closed components allowed by an arbitrary rank-one quotient flow are absent from the genuine rainbow loop.
 
 ## 4. Spanning-path dichotomy
 
-The middle switch `P_1` is a terminal path component of a relative even subgraph.  At an internal vertex it has degree either zero or two.
+The middle switch `P_1` is a terminal path component of a relative even subgraph. At an internal vertex it has degree either zero or two.
 
 ### Proposition 4.1 — nonspanning means empty vertex relation
 
-If `P_1` omits an internal vertex `w`, then all three edges incident with `w` have switch-flow value zero.  Hence the root-fibre vertex relation at `w` is empty for types `2^2 1` and `3 2`.
+If `P_1` omits an internal vertex `w`, then all three edges incident with `w` have switch-flow value zero. Hence the root-fibre vertex relation at `w` is empty for types `2^2 1` and `3 2`.
 
 #### Proof
 
-By Theorem 3.1, `t_gamma` is nonzero precisely on `P_1`.  A vertex outside the path has no incident path edge.  Apply the previously proved all-zero-vertex obstruction. ∎
+By Theorem 3.1, `t_gamma` is nonzero precisely on `P_1`. A vertex outside the path has no incident path edge. Apply the previously proved all-zero-vertex obstruction. ∎
 
 ### Lemma 4.2 — a cubic four-pole has even order
 
@@ -178,25 +179,23 @@ For a genuine lifted rainbow loop of support type `2^2 1` or `3 2` with zero amb
 
 If `P_1` is not spanning, apply Proposition 4.1.
 
-If `P_1` is spanning, it contains every internal vertex exactly once.  Its complement is a perfect matching of the internal vertices together with the two zero-valued terminal semiedges.  The matching-complement degree-two system has only the one terminal path `P_1`, with `n` internal vertices.  By Lemma 4.2, `n` is even.  The exact even-component lifting theorem therefore supplies a root lift. ∎
+If `P_1` is spanning, it contains every internal vertex exactly once. Its complement is a perfect matching of the internal vertices together with the two zero-valued terminal semiedges. The matching-complement degree-two system has only the one terminal path `P_1`, with `n` internal vertices. By Lemma 4.2, `n` is even. The exact even-component lifting theorem therefore supplies a root lift. ∎
 
 ### Corollary 4.4 — rank-one Tait escape
 
-Inside a minimal Type H kernel, every zero-norm rank-one lifted loop must have a nonspanning middle path.  A spanning middle path would give a Tait resolution and hence strict boundary-profile escape.
+Inside a minimal Type H kernel, every zero-norm rank-one lifted loop must have a nonspanning middle path. A spanning middle path would give a Tait resolution and hence strict boundary-profile escape.
 
-Thus the genuine rank-one residual mechanism is not oddness.  It is:
+Thus the genuine rank-one residual mechanism is not oddness. It is:
 
 \[
 \boxed{
-\text{every relevant middle Kempe path misses an internal vertex}.
+\text{the selected middle Kempe path misses an internal vertex}.
 }
 \]
 
-This is a path-coverage obstruction suitable for decomposition arguments.
-
 ## 5. Full-rank monodromy is an XOR path-cover problem
 
-Let `pi` have type `4 1` or `5`.  The exact root-fibre theorem says that a zero-norm root lift exists if and only if `t_gamma` has no zero edge.
+Let `pi` have type `4 1` or `5`. The exact root-fibre theorem says that a zero-norm root lift exists if and only if `t_gamma` has no zero edge.
 
 By the edge table in Section 2,
 
@@ -217,14 +216,14 @@ For a genuine zero-norm rainbow loop of support type `4 1` or `5`, the following
 3. the two path chains cover every edge:
    \[
    \boxed{
-   E(P)=P_1\cup(P_0\triangle P_2).
+   E(P)=P_1\cup(P_0\triangle P_2);
    }
    \]
 4. the loop has a Tait resolution.
 
 #### Proof
 
-The equivalence of root linearization, no zero edge, and Tait resolution is the full-rank part of the preceding switch-flow theorem.  The equivalence with the displayed path cover follows directly from the edgewise formula. ∎
+The equivalence of root linearization, no zero edge, and Tait resolution is the full-rank part of the preceding switch-flow theorem. The equivalence with the displayed path cover follows directly from the edgewise formula. ∎
 
 ### Corollary 5.2 — full-rank residual certificate
 
@@ -238,7 +237,7 @@ Thus the residual obstruction is a concrete uncovered edge of a two-chain path c
 
 ## 6. The complete genuine zero-norm ladder
 
-The previous local-to-global stack now sharpens to:
+For one genuine lifted loop the preceding local-to-global stack sharpens to:
 
 \[
 \boxed{
@@ -253,23 +252,105 @@ The previous local-to-global stack now sharpens to:
 
 If the success condition holds, a Tait resolution exists and the Type H Tait-escape theorem destroys the minimal triangle profile.
 
-The component-holonomy oddness branch was an artefact of allowing an arbitrary rank-one switch flow.  It is removed from the genuine three-path family.
+The component-holonomy oddness branch was an artefact of allowing an arbitrary rank-one switch flow. It is removed from each genuine three-path loop.
 
-## 7. Finite path-choice signature
+## 7. The unconditional physical lift-family signature
 
-For each of the three challenge subgraphs, let
+Let `Lambda` be the finite set of physical lifted rainbow loops over one triangle shore, including terminal-path-component and repeated-trace-role choices. For every
 
 \[
-P_j^0,\ P_j^1
+\lambda\in\Lambda
 \]
 
-be its two terminal path components.  A physical path choice is
+record:
+
+- its support permutation `pi_lambda`;
+- its ambient norm defect
+  \[
+  d_\lambda=N_{\pi_\lambda}z_\lambda;
+  \]
+- its selected terminal paths
+  \[
+  P_0^\lambda,P_1^\lambda,P_2^\lambda.
+  \]
+
+Define the **physical obstruction signature**
+
+\[
+\mathfrak S(\lambda)
+=
+\begin{cases}
+(\mathrm A,d_\lambda),
+&d_\lambda\ne0;\\[1mm]
+(\mathrm F,U_\lambda),
+&d_\lambda=0,\ \pi_\lambda\text{ full rank};\\[1mm]
+(\mathrm R,X_\lambda),
+&d_\lambda=0,\ \pi_\lambda\text{ rank one},
+\end{cases}
+\]
+
+where
+
+\[
+U_\lambda
+:=
+E(P)\setminus
+\bigl(P_1^\lambda\cup(P_0^\lambda\triangle P_2^\lambda)\bigr)
+\]
+
+and
+
+\[
+X_\lambda
+:=
+V_{\mathrm{int}}(P)\setminus V(P_1^\lambda).
+\]
+
+### Theorem 7.1 — exact family obstruction criterion
+
+For every physical lifted loop `lambda` in a minimal Type H kernel, at least one of the following holds:
+
+\[
+\boxed{
+ d_\lambda\ne0,
+ \qquad
+ U_\lambda\ne\varnothing,
+ \qquad
+ X_\lambda\ne\varnothing.
+}
+\]
+
+Conversely, if one physical lift has
+
+\[
+d_\lambda=0
+\]
+
+and the corresponding set `U_lambda` or `X_lambda` is empty, then that lift has a Tait resolution and the triangle profile escapes.
+
+#### Proof
+
+Apply the ambient norm theorem first. If the norm vanishes, apply Theorem 5.1 in the full-rank case and Theorem 4.3 in the rank-one case. Then apply the Type H Tait-escape theorem. ∎
+
+This is the correct unconditional family-level object. The remaining target is to prove that a family in which every leaf carries one of these obstructions has a common geometric witness.
+
+## 8. Conditional cube trivialisation and the abstract `27`-state alphabet
+
+It is tempting to choose, for each of the three challenge stages, two fixed terminal paths
+
+\[
+P_j^0,P_j^1
+\]
+
+and identify every physical lift with
 
 \[
 \epsilon=(\epsilon_0,\epsilon_1,\epsilon_2)\in F_2^3.
 \]
 
-Put
+This requires a coherent trivialisation of the path-component choices through the lifted reconfiguration groupoid. Such a trivialisation is not currently proved: a later challenge subgraph may depend on earlier switches and support transport.
+
+Conditional on such a trivialisation, put
 
 \[
 A_\epsilon=P_0^{\epsilon_0}\triangle P_2^{\epsilon_2},
@@ -283,9 +364,7 @@ For an edge `e`, record
 \sigma(e)=(s_0,s_1,s_2)\in\{\bot,0,1\}^3,
 \]
 
-where `s_j=i` means `e in P_j^i`, and `s_j=bot` means `e` lies in neither terminal path of system `j`.  The two paths in one system are edge-disjoint, so these are the only possibilities.
-
-Define the zero-choice set
+where `s_j=i` means `e in P_j^i`, and `s_j=bot` means `e` lies in neither terminal path of system `j`. Define
 
 \[
 \mathcal Z_e
@@ -296,31 +375,9 @@ Define the zero-choice set
 \right\}.
 \]
 
-Equivalently,
+### Computational Proposition 8.1 — abstract local alphabet
 
-\[
-\epsilon\in\mathcal Z_e
-\]
-
-when
-
-\[
-[\,s_0=\epsilon_0\,]
-=
-[\,s_2=\epsilon_2\,]
-\]
-
-and
-
-\[
-s_1\ne\epsilon_1,
-\]
-
-where `bot` is unequal to both binary choices.
-
-### Computational Theorem 7.1 — exact local family alphabet
-
-Among the `27` edge-membership states `sigma in {bot,0,1}^3`, the cardinalities of `Z_e` are distributed as
+Among the `27` formal states `sigma in {bot,0,1}^3`, the cardinalities of `Z_e` are distributed as
 
 \[
 \boxed{
@@ -332,120 +389,85 @@ Among the `27` edge-membership states `sigma in {bot,0,1}^3`, the cardinalities 
 }
 \]
 
-The unique size-eight state is
+The unique size-eight state is `(bot,bot,bot)`.
 
-\[
-(\bot,\bot,\bot),
-\]
+Exact dependency-free Wolfram enumeration verifies this abstract table.
 
-an edge lying in none of the six terminal paths.
+### Trust boundary for the cube model
 
-Exact dependency-free Wolfram enumeration verifies the table.
+The finite table is exact. Its direct use for the physical family is conditional on constructing the coherent path-component trivialisation.
 
-### Theorem 7.2 — full-rank family obstruction signature
+Failure of such a trivialisation is itself potentially meaningful: it defines an `S_2` path-component transport holonomy over the lifted reconfiguration groupoid. This may become another route to orbit growth or decomposition, but no theorem is claimed yet.
 
-Let `Lambda_fr` be the set of physical path choices whose lifted loop has full-rank support type and zero ambient norm.  Then every such lift is obstructed by a zero edge if and only if
+## 9. Why edgewise enumeration is not the mechanism
 
-\[
-\boxed{
-\Lambda_{\mathrm{fr}}
-\subseteq
-\bigcup_{e\in E(P)}\mathcal Z_e.
-}
-\]
-
-#### Proof
-
-For a choice `epsilon`, Theorem 5.1 fails exactly when some edge lies outside `A_epsilon union B_epsilon`, which is exactly `epsilon in Z_e`. ∎
-
-This is the desired finite **family obstruction signature**.  It is not yet a decomposition theorem.
-
-## 8. Why edgewise enumeration is not the mechanism
-
-The local alphabet is finite, but arbitrary collections of the `27` edge types produce many distinct covers of the choice cube.  Enumerating those covers without the path constraints gives a large case list and no decreasing graph parameter.
+Even in the conditional cube model, arbitrary collections of the `27` edge types produce many covers of the choice cube. Enumerating them without path connectivity gives a large case list and no decreasing graph parameter.
 
 The missing information is global:
 
-- each colour `P_j^i` is one connected terminal path;
-- the two paths of one challenge system are disjoint;
-- their terminal pairings are prescribed by the routing policy;
-- all six paths arise from three fixed relative even subgraphs;
+- each switched object is one connected terminal path;
+- the two terminal paths of one relative even subgraph are disjoint;
+- later challenge systems are transported through previous switches;
+- all path triples arise in one finite reconfiguration groupoid;
 - their overlaps are constrained at cubic vertices.
 
-Therefore the next theorem must use **path connectivity**, not just the finite edge alphabet.
+Therefore the next theorem must use the **path-component groupoid and overlap geometry**, not just the finite edge alphabet.
 
-The target is:
-
-\[
-\boxed{
-\begin{array}{c}
-\text{all relevant path choices obstructed}
-\\ \Downarrow\\
-\text{common uncovered strip, common missed vertex region,}
-\\
-\text{or serial/dot-product separation}.
-\end{array}
-}
-\]
-
-## 9. Updated Type H mechanism
+## 10. Updated Type H mechanism
 
 The genuine Type H branch is now:
 
 \[
 \boxed{
 \begin{array}{c}
-\text{lifted rainbow family}
+\text{physical lifted-loop family }\Lambda
 \\ \downarrow\\
-\text{ambient norm }N_\pi z
-\\ \downarrow\\
-\begin{cases}
-N_\pi z\ne0
-&\Rightarrow\text{pure interior translation};\\
-N_\pi z=0
-&\Rightarrow\text{three-path quotient flow}.
-\end{cases}
+\lambda\mapsto
+(d_\lambda,U_\lambda,X_\lambda)
 \\ \downarrow\\
 \begin{cases}
-\text{full rank: }E=P_1\cup(P_0\triangle P_2),\\
-\text{rank one: }P_1=P_0\triangle P_2\text{ and }P_1\text{ spanning}.
-\end{cases}
-\\ \downarrow\\
-\begin{cases}
-\text{success}&\Rightarrow\text{Tait resolution and profile escape};\\
-\text{failure}&\Rightarrow\text{uncovered edge or missed-vertex path certificate}.
+\exists\lambda\text{ with no obstruction}
+&\Rightarrow\text{Tait resolution and profile escape};\\
+\forall\lambda\text{ obstructed}
+&\Rightarrow\text{common-witness theorem required}.
 \end{cases}
 \end{array}
 }
 \]
 
-The root-fibre holonomy layer has therefore collapsed, for genuine loops, to terminal-path coverage.
+The sought common witness should be one of:
 
-## 10. Trust boundary
+- a translation submodule shared by the nonzero norm defects;
+- a connected edge strip meeting every full-rank uncovered set;
+- a vertex region missed by every relevant middle path;
+- nontrivial path-component transport holonomy;
+- a serial or dot-product factor bounded by a smaller separator.
+
+## 11. Trust boundary
 
 The following are theorem-level:
 
-- the three-path switch-flow formula;
+- the three-path switch-flow formula for each physical lift;
 - the rank-one path identity;
-- removal of closed odd components from genuine rank-one loops;
+- removal of closed odd components from each genuine rank-one loop;
 - the spanning-path dichotomy;
 - the full-rank XOR path-cover criterion;
-- the family obstruction-set formulation.
+- the unconditional physical obstruction signature.
 
-The `27`-state cardinality table is exact finite computation.
+The `27`-state cardinality table is an exact computation for the conditional fixed-cube model.
 
 The following remain open:
 
-- proving that all obstructed choices force a common path strip or smaller separator;
-- integrating nonzero norm translations with the same path family;
-- translating the path certificates into an explicit dot-product or bounded-fragment replacement;
-- proving the analogous composition theorem for the Type T path automaton;
+- coherently trivialising path-component choices over the whole lifted groupoid;
+- or exploiting the obstruction to such a trivialisation;
+- proving that all obstructed physical lifts have a common path strip, missed region, translation, or smaller separator;
+- translating the common witness into an explicit dot-product or bounded-fragment replacement;
 - eliminating the complete cyclic four-cut obstruction.
 
-## 11. Next exact tasks
+## 12. Next exact tasks
 
-1. Construct the overlap graph of the six terminal paths `P_j^i`.
-2. Prove that a cube-cover by the sets `Z_e`, subject to path connectivity, has a connected witness region meeting the boundary in at most four points.
-3. Test whether the witness region is exactly a dot-product factor, serial four-pole, or reconfiguration-contractible fragment.
-4. Add nonzero norm data as cycle labels on the same overlap graph.
-5. Compare the resulting composition law only with the relevant snark factorisation and cycle-cut literature; do not expand to the full Berge--Fulkerson programme.
+1. Build the path-component transport groupoid rather than assuming a fixed cube.
+2. Determine its `S_2` holonomy and its interaction with the existing `S_5` support holonomy.
+3. Attach the exact signature `(d_lambda,U_lambda,X_lambda)` to every groupoid loop.
+4. Prove a finite-family Helly/decomposition principle for these signatures using path connectivity.
+5. Compare the resulting witness only with dot-product factorisation, cyclic-cut completion, Catlin reduction, and reconfiguration-contractible fragments.
