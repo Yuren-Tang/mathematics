@@ -39,10 +39,10 @@ The displayed chain is a proof-development order, not a claim that every mathema
 
 | Code | State | Exact unit boundary | Completion test | Immediate consumers |
 |---|---|---|---|---|
-| `AC-PD-A0` | `ACTIVE` | multigraph model; finite active edge set; active vertices; cuts; intrinsic boundary parity; cut-even supports; circuits; components; indexed families and multiset multiplicity; empty and loop-only cases | all definitions fixed; cut-even/boundary-even equivalence proved; circuit characterization proved including loops and digons; multiplicity semantics exact | A1, A2, A7, A9, A10 |
-| `AC-PD-A1` | `QUEUED` | delete all loops; preserve nonloop cuts and no-singleton-cut condition; reinsert exactly two singleton-loop circuit occurrences | both directions and all empty/loop-only cases proved | A2, A10 |
-| `AC-PD-A2` | `QUEUED` | loopless port-cycle cubic expansion; degree-two parallel fibre; disconnected components; fibres, auxiliary edges, lift and collapse map | construction, finiteness, cubicity, looplessness, exact sizes and bridgelessness proved | A3, A4, A8 |
-| `AC-PD-A3` | `QUEUED` | componentwise `BinaryEightFlow`; Seymour six-flow input; literal 6-to-8 range inclusion; Tutte equal-order existence; orientation forgetting in characteristic two | exact theorem statements, hypotheses and source locators fixed; existence/counting distinction explicit | A4, A10 |
+| `AC-PD-A0` | `COMPLETE-DRAFT` | multigraph model; finite active edge set; active vertices; cuts; intrinsic boundary parity; cut-even supports; circuits; components; indexed families and multiset multiplicity; empty and loop-only cases | closed at `0d8c9102fa117e5f58b5d1617f3fae782c164097` | A1, A2, A7, A9, A10 |
+| `AC-PD-A1` | `COMPLETE-DRAFT` | delete all loops; preserve nonloop cuts and no-singleton-cut condition; reinsert exactly two singleton-loop circuit occurrences | closed at `b193d55461040a6b6b7692e4f24e91d88c97a663` | A2, A10 |
+| `AC-PD-A2` | `COMPLETE-DRAFT` | loopless port-cycle cubic expansion; degree-two parallel fibre; disconnected components; fibres, auxiliary edges, lift and collapse map | closed at `7c271c41f9d442ddb14034fb40b730fcc61c83a5` | A3, A4, A8 |
+| `AC-PD-A3` | `ACTIVE` | componentwise `BinaryEightFlow`; Seymour six-flow input; literal 6-to-8 range inclusion; equal-order finite-abelian-group transport; orientation forgetting in characteristic two | exact external statement/source fixed; equal-order group step proved internally; all disconnected, empty, isolated-vertex and representation cases closed | A4, A10 |
 | `AC-PD-A4` | `QUEUED` | incidence space, vertex affine torsor, edge diagonal, pair complex and obstruction class | well-definedness and equivalence of affine intersection, pair complex, quotient and stress forms proved | A5 |
 | `AC-PD-A5` | `QUEUED` | canonical quadratic planes; local Fano Lagrangian/characteristic torsor; abstract Lagrangian intersection; global compatibility | every local identity and global implication proved without hidden rank/connectedness cases | A6 |
 | `AC-PD-A6` | `QUEUED` | retain graph/dart data; construct finite indexed supports; prove support parity and exact edge multiplicity two; flatten to multiset | graph-level witness and all index/multiplicity maps explicit | A7, A8 |
@@ -75,8 +75,8 @@ The global five-support theorem remains open. Proof development begins here only
 
 ## 4. Repair queue
 
-No repair unit is active at initialization. Every later entry must record its trigger, affected integrated checkpoint, exact claim or proof step, severity, required mathematical action, whether it returns to `AC-RL`, and its Curator-ready test.
+No repair unit is active at this checkpoint. Every later entry must record its trigger, affected integrated checkpoint, exact claim or proof step, severity, required mathematical action, whether it returns to `AC-RL`, and its Curator-ready test.
 
 ## 5. Current active unit
 
-`AC-PD-A0` is active because all later graph-theoretic units use its objects and parity/multiplicity conventions. The baseline contains the ingredients, but they are distributed between `reduction/outer-shell-and-binary-flow.md`, `reduction/even-cover-and-collapse.md`, the complete-spine architecture, and the formal-status boundary. A0 will close one reusable interface without importing A9's decomposition theorem.
+`AC-PD-A3` is active. Seymour's 1981 theorem supplies the sole non-elementary existence input: every finite graph without an isthmus has a nowhere-zero integral 6-flow. The literal range inclusion makes this an integral 8-flow. Rather than leave transport from `\mathbb Z_8` to `\mathbf F_2^3` as an opaque external invocation, A3 will prove internally that the number of nowhere-zero flows over a finite abelian group depends only on its order, by a spanning-forest kernel count and inclusion-exclusion. This separates the existence argument from Tutte's historical counting theorem and removes the unresolved primary-page locator from the logical dependency chain while retaining exact source attribution.
