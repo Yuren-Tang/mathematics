@@ -40,16 +40,25 @@ Its seventy-eight `research/FIVE_CDC_*.md` packets are retired from the current 
 10. [`quartic-terminal-nucleus.md`](quartic-terminal-nucleus.md)  
     The canonical `O^-(4,2)` terminal nucleus, its intrinsic `E_5/K_5` geometry and `D_8` route stabiliser, the curvature carrier, block projections, and the split-or-peel recursion.
 
-11. [`quartic-nucleus-transport.md`](quartic-nucleus-transport.md)  
+11. [`quartic-terminal-defect-geometry.md`](quartic-terminal-defect-geometry.md)  
+    Projected sheet conservation and the exact identification of terminal distributions `3`, `2+1`, and `1+1+1` with an equality wire, one `K_6` one-factor vertex, or a one-factor vertex followed by a root triangle.
+
+12. [`quartic-nucleus-transport.md`](quartic-nucleus-transport.md)  
     Canonical isometry between successive nuclei, diagonal singular gluing, curvature transport, and the exact two-vertex pairwise transition shell contributed by each concentrated peel.
 
-12. [`frontier-localisation.md`](frontier-localisation.md)  
+13. [`scalar-interval-transfer.md`](scalar-interval-transfer.md)  
+    Three-state scalar-interval walks, telescoping side output, eighteen quotient transfer states, and algebraic backtrack reduction.
+
+14. [`scalar-interval-caps-and-cells.md`](scalar-interval-caps-and-cells.md)  
+    Physical backtrack caps with exact four-sheet routing and the decomposition of every reduced interval into periodic three-turn triangle cells.
+
+15. [`frontier-localisation.md`](frontier-localisation.md)  
     Exact remaining localisation/composition frontier and recommended proof order.
 
-13. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md)  
+16. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md)  
     Preferred and independent proof families, exact equivalences, sufficient templates, and negative boundaries.
 
-14. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md)  
+17. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md)  
     Exact finite computations, counterexamples, certificates, and their evidentiary scope.
 
 ## Scope
@@ -64,7 +73,9 @@ $$
 
 not merely the global-colour quotient criterion `J_g -> A_5`.
 
-The sharp nonflat frontier is composition of a singleton enriched atom or a two-edge scalar transition interval, together with physical realization of the quartic split-or-peel theorem. Pure quartic incidence parity is unbounded, but every quartic design has a canonical minus-type four-dimensional terminal nucleus. A nonconcentrated sheet exposes anisotropic `E_5` root projections; an all-concentrated design peels recursively to a strictly smaller quartic design. Successive nuclei are canonically `D_8`-equivariantly isometric, and every pairwise ribbon skeleton grows by one fixed two-vertex shell contributing exactly two cycles. Physical route-lock further supplies the affine sheet plane, quotient Kempe cycles, and aligned/crossed endpoint labels. The remaining concentrated task is to compress the four scalar intervals of that shell into finite transfer data and prove simultaneous composition across all sheet pairs. The flat-potential, defect-forest, four-pole, and horizontal bad-flow transfer problems remain open.
+The sharp nonflat frontier is composition of bounded singleton/transition interfaces and physical realization of the quartic split-or-peel theorem. Every quartic design has a canonical minus-type terminal nucleus. A split sheet already projects to a bounded `K_6` defect gadget with at most two cubic vertices; an all-concentrated design peels to a smaller quartic design through one canonical `D_8` nucleus layer. Successive nuclei and their curvature carriers transport canonically, while each pairwise ribbon skeleton grows by one fixed two-vertex shell.
+
+The scalar intervals inside those shells no longer carry unbounded flow algebra: each has one of eighteen quotient transfer states, and every interval either contains a bounded two-vertex Tait cap or is a chain of periodic three-turn triangle cells with bounded ends. The remaining unbounded datum is the external side-attachment semantics of those cells and its simultaneous compatibility across the four scalar sheets. The flat-potential, defect-forest, four-pole, and horizontal bad-flow transfer problems remain open.
 
 ## Reliability
 
