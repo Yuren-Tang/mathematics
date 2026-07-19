@@ -25,13 +25,16 @@ Its seventy-eight `research/FIVE_CDC_*.md` packets are retired from the current 
 5. [`holonomy-defects-and-atoms.md`](holonomy-defects-and-atoms.md)  
    Interior affine holonomy, Tait resolution, BBD common origin, defect forests, Petersen transport, route-locked atoms, curvature, and flat potentials.
 
-6. [`frontier-localisation.md`](frontier-localisation.md)  
-   Exact localisation/composition frontier and recommended proof order.
+6. [`common-cut-circuit-localisation.md`](common-cut-circuit-localisation.md)  
+   Scalar-component incidence, odd witness circuits, the physical-cut counterexample, and the singleton/transition/quartic-core localisation theorem.
 
-7. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md)  
+7. [`frontier-localisation.md`](frontier-localisation.md)  
+   Exact remaining localisation/composition frontier and recommended proof order.
+
+8. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md)  
    Preferred and independent proof families, exact equivalences, sufficient templates, and negative boundaries.
 
-8. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md)  
+9. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md)  
    Exact finite computations, counterexamples, certificates, and their evidentiary scope.
 
 ## Scope
@@ -46,7 +49,7 @@ $$
 
 not merely the global-colour quotient criterion `J_g -> A_5`.
 
-The sharp frontier is graph-level localisation and composition of full-rank route-locked defects, together with associated four-pole and horizontal bad-flow transfer problems.
+The sharp nonflat frontier is now composition of a singleton enriched atom or a two-edge scalar transition interval, together with elimination or identification of the residual quartic near-resolution core. The flat-potential, defect-forest, four-pole, and horizontal bad-flow transfer problems remain open.
 
 ## Reliability
 
