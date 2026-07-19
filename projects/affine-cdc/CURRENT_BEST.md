@@ -7,9 +7,9 @@ This file gives the compact current-best picture after substantive reconstructio
 At paper level, the project has a complete Cycle Double Cover spine:
 
 $$
-	ext{finite-active-edge bridgeless multigraph}
+\text{finite-active-edge bridgeless multigraph}
 \longrightarrow
-	ext{cycle double cover}.
+\text{cycle double cover}.
 $$
 
 The proof architecture separates:
@@ -28,7 +28,7 @@ The natural theorem allows loops and finite active edge set. The current Lean ch
 The open strengthening asks for five indexed even supports. This is equivalent to a root-valued flow
 
 $$
-E(G)	o R_5\subset E_5,
+E(G)\longrightarrow R_5\subset E_5,
 $$
 
 or to a `K_5` triangle labelling, matching/four-flow structure, quadratic-cycle solution, or cographic map.
@@ -36,7 +36,7 @@ or to a `K_5` triangle labelling, matching/four-flow structure, quadratic-cycle 
 Above any cubic Fano flow, a compatible eight-support root lift exists. The complete fixed-lift target is
 
 $$
-oxed{T_g^{(1)}	o\mathscr A_5.}
+\boxed{T_g^{(1)}\longrightarrow\mathscr A_5.}
 $$
 
 The quotient `J_g -> A_5` is only the global-index-factorable subroute.
@@ -55,8 +55,9 @@ The current backbone includes:
 - cap forcing, Kempe pairing, routing coordinates, and Type T/Type H reduction;
 - affine holonomy, root-fibre section theory, Tait resolution, and elimination of the soluble Type H branch;
 - BBD common origin, canonical defect flow, `K_6` completion, induced defect forests, and Petersen transport;
-- DDD atom triality, unique bad route, rank-two Tait escape;
-- full-rank curvature/common-cut duality and flat-potential equivalence.
+- DDD atom triality, unique bad route, and rank-two Tait escape;
+- full-rank curvature/common-cut duality and flat-potential equivalence;
+- common-cut component incidence, odd witness circuits, and the singleton/transition/quartic-core localisation trichotomy.
 
 ## 4. Controlling negative boundaries
 
@@ -68,26 +69,43 @@ The following are false or unsupported:
 - a bad fixed-flow fibre makes the graph bad;
 - every binary-cycle switch is one horizontal adjacency;
 - route-lock forces a graph two-cut or automatic flatness;
+- a scalar-common-cut witness must be a cut in the underlying four-pole;
 - repeated Petersen state implies a replaceable strip;
 - finite census proves universal closure.
+
+The physical-cut statement is explicitly false: the exact nonflat singleton witness is a common cut in all four scalar sheets while its unique witness edge is not a bridge of the underlying graph.
 
 ## 5. Sharp frontier
 
 For a blocked co-root atom, unique-bad-route reduction gives a locked quotient flow with equal terminal colour and four scalar circuit partitions.
 
 - rank two escapes through a Tait lift;
-- full rank with nonzero curvature gives a support-minimal common-cut witness with odd terminal parity;
-- full rank with zero curvature gives an eight-state affine potential.
+- full rank with zero curvature gives an eight-state affine potential;
+- full rank with nonzero curvature gives a support-minimal curvature-odd circuit in the four-partite closed-component incidence matroid.
 
-The immediate missing theorem must turn these outputs into a bounded DDD/Petersen factor, smaller separator, transition split, finite four-pole transfer state, or profile/orbit escape.
+The nonflat circuit has exactly three possible forms:
+
+1. a singleton enriched `g`-edge atom;
+2. a closed scalar component meeting the witness in two edges, hence a marked transition interval;
+3. a quartic near-resolution core of size `4k+1`, with one terminal witness edge per sheet and independent four-edge closed-component blocks.
+
+The singleton is either aligned, with resolution labels `g,g,0`, or crossed, with DDD/Petersen resolution labels `g,r,r+g`.
+
+The immediate missing theorem must:
+
+1. compose an aligned zero/equality-wire singleton or crossed DDD singleton;
+2. convert a two-edge scalar interval into a smaller separator, transition split, finite four-pole transfer state, or bounded replacement;
+3. eliminate, bound, or physically identify the quartic near-resolution core;
+4. extract a finite interface from the flat potential.
 
 Wider open bridges are:
 
-1. Type T unique-linkage decomposition;
-2. residual Type H translation/zero/oddness reduction;
-3. full-cap-profile or realizability theorem;
-4. horizontal escape-or-decomposition for bad-flow components;
-5. target-certificate completion beyond dominating cliques.
+1. defect-forest pruning;
+2. Type T unique-linkage decomposition;
+3. residual Type H translation/zero/oddness reduction;
+4. full-cap-profile or realizability theorem;
+5. horizontal escape-or-decomposition for bad-flow components;
+6. target-certificate completion beyond dominating cliques.
 
 ## 6. Source and active-surface state
 
@@ -96,9 +114,11 @@ The synthesis uses:
 - canonical ancestor `main@749e0579581fcc838685138b3582f4de306b8e72`;
 - accepted outer-shell source `0927011177cabac20f06a57fa5e57476d6f13dee`;
 - complete public five-support checkpoint `dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`;
-- reconstruction base `7a166d2eb5642ec967f640323488e49f1c2ad5d4`.
+- reconstruction base `7a166d2eb5642ec967f640323488e49f1c2ad5d4`;
+- completed corpus migration `960c92b7ff231c78b387894149779083060a75eb`;
+- later active Research Lead frontier commits on `research/affine-cdc-five-cdc-v1`.
 
-The seventy-eight discovery-order source packets are retired from the current tip after exact successor mapping. They remain ancestors and are recoverable by `git show` or `git restore` from `dad218dd...`.
+The seventy-eight discovery-order source packets are retired from the current tip after exact successor mapping. They remain ancestors and are recoverable from `dad218dd...`; they are not the active reading surface.
 
 See:
 
@@ -109,7 +129,7 @@ See:
 
 ## 7. Assurance state
 
-The corpus separates theorem-level arguments, exact finite results, counterexamples, corrections, and open programmes. This curation and self-audit do not add independent review, Lean verification, peer review, manuscript approval, release, DOI, arXiv, or publication status.
+The corpus separates theorem-level arguments, exact finite results, counterexamples, corrections, and open programmes. Current-best inclusion and Research Lead checkpointing do not add independent review, Lean verification, peer review, manuscript approval, release, DOI, arXiv, or publication status.
 
 ## 8. Reading order
 
@@ -117,5 +137,6 @@ The corpus separates theorem-level arguments, exact finite results, counterexamp
 - theorem graph: [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md);
 - active surface: [`ACTIVE_MATHEMATICAL_SURFACE.md`](ACTIVE_MATHEMATICAL_SURFACE.md);
 - five-support corpus: [`five-support/README.md`](five-support/README.md);
+- common-cut localisation: [`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md);
 - exact frontier: [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md);
 - reliability: [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
