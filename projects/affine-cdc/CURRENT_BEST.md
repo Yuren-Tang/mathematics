@@ -45,15 +45,17 @@ The active backbone includes:
 - full-rank curvature/common-cut duality and flat-potential equivalence;
 - odd witness circuits and the singleton/transition/quartic trichotomy;
 - unbounded abstract quartic designs and their symplectic form;
-- quotient Tait-phase representation, affine sheet plane, Kempe differences, and aligned/crossed signatures;
+- quotient Tait phase, the affine sheet plane, Kempe differences, and aligned/crossed signatures;
 - connected pairwise marked transition skeletons;
-- the canonical `O^-(4,2)` terminal nucleus, intrinsic `E_5/K_5` geometry, route `D_8` stabiliser, curvature carrier, and exact split-or-peel recursion;
+- the canonical `O^-(4,2)` terminal nucleus, intrinsic `E_5/K_5` geometry, one-dimensional curvature carrier, and exact split-or-peel recursion;
 - bounded `K_6` defect geometry for split terminal distributions;
-- canonical transport between successive nuclei and the fixed pairwise marked shell;
+- canonical `S_4`-equivariant transport between successive nuclei and the fixed pairwise marked shell;
 - finite elementary scalar-interval transfer, backtrack caps, periodic cells, and rigid Kempe ladders;
 - the physical `g`-component transition quotient `\Gamma_g`;
 - the canonical route-capped `4`-regular flag-line graph;
-- the fourfold relative touch-homology formulation of curvature witnesses.
+- touch-shadow closure and the bounded two-transition cap residue;
+- exact IAS classification of loop, parallel, twin, and pendant cap degenerations;
+- the general minimal two-marker cocycle decomposition theorem.
 
 ## 4. Controlling negative boundaries and corrections
 
@@ -66,9 +68,14 @@ The following are false or unsupported:
 - repeated Petersen state alone gives a replaceable strip;
 - finite census proves universal closure;
 - quartic near-resolution and rank axioms bound `k`;
-- consecutive witness edges on a scalar circuit are necessarily consecutive full `g`-edges.
+- consecutive witness edges on a scalar circuit are necessarily consecutive full `g`-edges;
+- the natural `S_4` symmetry of the sheet-indexed terminal nucleus is canonically the support-label `D_8` stabiliser of a DDD one-factor.
 
-The last correction is essential. A quartic block has four marked witness arcs, but each arc may pass through arbitrarily many edges of `E_g\setminus\eta`. The cap/cell/ladder theorems apply to elementary non-`g` paths between consecutive full `g`-incidences. Whole witness arcs are transition walks in `\Gamma_g`.
+The last two corrections are essential.
+
+A quartic block has four marked witness arcs, but each arc may pass through arbitrarily many edges of `E_g\setminus\eta`. The cap/cell/ladder theorems apply to elementary non-`g` paths between consecutive full `g` incidences. Whole witness arcs are transition walks in `\Gamma_g`.
+
+The four sheets are indexed by `\Lambda_g\cong AG(2,2)` and have natural affine symmetry `AGL(2,2)\cong S_4`. The physical terminal-route symmetry and the DDD support-label one-factor stabiliser are separate objects. Constructing a comparison map is part of the open theorem.
 
 ## 5. Sharp nonflat endpoint
 
@@ -88,9 +95,9 @@ For a quartic core:
 
 - abstract incidence is unbounded for all `k`;
 - the four whole-sheet sums span a canonical minus-type four-space;
-- a split terminal distribution is a bounded equality/one-factor/root-triangle gadget;
+- a split terminal distribution is a bounded equality/one-factor/root-triangle coefficient gadget;
 - an all-concentrated design peels canonically from level `k` to `k-1`;
-- successive nuclei and curvature carriers are canonically `D_8`-equivariantly identified.
+- successive nuclei and curvature carriers are canonically `S_4`-equivariantly identified.
 
 ## 6. Three coordinated physical carriers
 
@@ -123,51 +130,66 @@ $$
 F=\mathcal L(\widehat Q).
 $$
 
-Every scalar even subgraph gives a canonical circuit partition of the same `4`-regular graph. The four sheets are four transition transversals, with exact local transition distributions determined by the edge colour and aligned/crossed endpoint type. Scalar component incidence is one-sided touch-graph incidence.
+Every scalar even subgraph gives a canonical circuit partition of the same `4`-regular graph. The four sheets are four transition transversals, with exact local transition distributions determined by the edge colour and aligned/crossed endpoint type.
 
-### 6.3 Relative touch carrier
+### 6.3 Touch and isotropic carrier
 
-In each scalar touch-graph, the common-cut witness is a relative `1`-cycle: its boundary vanishes at closed scalar-circuit vertices but may remain at terminal and complementary partition circuits.
+For each sheet, every selected scalar circuit has one distinguished line-graph circuit and one shadow circuit. The selected touch subgraph is a disjoint union of dipoles. Hence even intersection with a closed scalar circuit automatically kills both distinguished and shadow boundary.
 
-The common kernel is
-
-$$
-\mathcal Z_{\mathrm{com}}
-=
-\bigcap_{\phi\in U^*}
-Z_1(\Theta_\phi,B_\phi),
-$$
-
-and curvature is terminal relative-boundary evaluation
+Adding the two fixed route-cap edges closes every scalar common cut to an ordinary touch cycle. Summing the four cap-completed transition supports cancels every internal `g`-edge transition and leaves exactly
 
 $$
-\Omega(x)
-=
-\sum_{\phi}\beta_{\phi,34}(x).
+R=\{r_p,r_q\},
 $$
 
-Therefore the pointed curvature circuit is not yet proved to be a circuit or cocircuit of the transition matroid. Direct appeal to isotropic connectivity is not yet justified.
+one cross transition at each of the two cap vertices.
 
-## 7. Exact current frontier
+Thus all unbounded witness support has disappeared from the four-sheet residue.
 
-The immediate theorem is a complementary-boundary closure/decomposition theorem:
+## 7. Minimal full completion
+
+The bare residue is not a full cocycle because every IAS cocycle meets each vertex triple in zero or two elements.
+
+If a residue transition is a loop, there is an immediate one-element degeneration. Otherwise a full cocycle containing both residue transitions always exists by elementary binary linear algebra.
+
+Choose an inclusion-minimal such cocycle `C`. Exactly one of:
+
+1. **coupled:** `C` is one cocircuit containing both cap residues;
+2. **separated:**
+   $$
+   C=D_p\sqcup D_q,
+   $$
+   where `D_p,D_q` are cocircuits carrying one residue each.
+
+In the separated case the isotropic vertex supports of `D_p` and `D_q` are disjoint, because every nonzero cocycle meets a vertex triple in two elements and two disjoint two-subsets cannot occupy one triple.
+
+Before this dichotomy, all completions supported only at the cap triples have already been classified: they occur exactly in loop, parallel, twin, or pendant interlacement configurations.
+
+## 8. Exact current frontier
+
+The central theorem is now a physical projection theorem for the minimal completion:
 
 $$
 \boxed{
-\text{fourfold relative curvature circuit}
+\text{bounded two-cap residue}
 \Longrightarrow
 \begin{cases}
-\text{bounded closure to an ordinary touch cycle / transverse dependence},\\
-\text{terminal-even separator or transition two-sum in }\Gamma_g,\\
-\text{physical }D_8\text{ class}.
+\text{two disjoint one-cap cocircuits},\\
+\text{one coupled cap-to-cap cocircuit}
+\end{cases}
+\Longrightarrow
+\begin{cases}
+\text{terminal-even separator / serial composition in }\Gamma_g,\\
+\text{alternate route and root escape},\\
+\text{or a comparison with the physical DDD class.}
 \end{cases}}
 $$
 
-The terminal boundary is finite and already carried by the canonical nucleus. The uncontrolled part is boundary on complementary partition circuits.
+The separated branch should project to two independent terminal interfaces. Only the coupled branch can carry an irreducible two-ended obstruction.
 
-The full-rank flat branch remains separate: its eight-state potential still needs a finite physical interface.
+The full-rank flat branch remains separate: its eight-state potential still needs a finite physical interface. Wider downstream bridges remain defect-forest pruning, four-pole transfer, and horizontal bad-flow escape/decomposition.
 
-## 8. Source and assurance state
+## 9. Source and assurance state
 
 The active line uses the completed migration
 
