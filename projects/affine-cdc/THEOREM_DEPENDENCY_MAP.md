@@ -1,366 +1,261 @@
 # AffineCDC theorem dependency map
 
-This map separates the complete Cycle Double Cover spine from the open five-support strengthening and records the dependencies among the active chapters.
+This map separates the complete Cycle Double Cover spine from the open five-support strengthening.
 
-## 1. Complete CDC existence spine
+## 1. Complete CDC spine
 
 $$
-\boxed{
-\begin{array}{c}
-\text{bridgeless multigraph with finite active edge set}\\
-\downarrow\;\text{delete loops}\\
-\text{finite loopless bridgeless core}\\
-\downarrow\\
-\text{cubic expansion with nowhere-zero }\mathbf F_2^3\text{ flow}\\
-\downarrow\\
-\text{affine incidence datum }(\mathcal P_f,\kappa)\\
-\downarrow\\
-\text{rank-three Fano compatibility}\\
-\downarrow\\
-\text{compatible indexed support family}\\
-\downarrow\\
-\text{graph-level multiset even double cover}\\
-\downarrow\\
-\text{cut-even collapse transport}\\
-\downarrow\\
-\text{one finite circuit decomposition}\\
-\downarrow\;\text{reinsert singleton loop circuits}\\
-\text{cycle double cover.}
-\end{array}}
+\text{bridgeless finite-active-edge multigraph}
+\to
+\text{cubic binary-flow shell}
+\to
+\text{rank-three affine compatibility}
+\to
+\text{even double cover}
+\to
+\text{collapse transport}
+\to
+\text{cycle double cover}.
 $$
 
 Controlling chapters:
 
 - [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md);
 - [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md);
-- [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md);
-- [`reduction/outer-shell-and-binary-flow.md`](reduction/outer-shell-and-binary-flow.md).
+- [`reduction/outer-shell-and-binary-flow.md`](reduction/outer-shell-and-binary-flow.md);
+- [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md).
 
-This spine is paper-level mathematics with the formal boundaries stated in [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
-
-## 2. Five-support object layer
+## 2. Five-support object
 
 $$
-\boxed{
-\begin{array}{c}
-\text{indexed five-support even cover}\\
-\Updownarrow\\
-\text{root-valued }E_5\text{ flow}\\
-\Updownarrow\\
-\text{$K_5$ triangle labelling}\\
-\Updownarrow\\
-\text{matching + nowhere-zero }\mathbf F_2^2\text{ flow}\\
-\Updownarrow\\
-\text{quadratic-cycle / cographic formulation.}
-\end{array}}
+\text{five indexed even supports}
+\Longleftrightarrow
+\text{root-valued }E_5\text{ flow}
+\Longleftrightarrow
+\text{$K_5$ triangles / matching--four-flow / quadratic-cycle / cographic data}.
 $$
 
 Controlling chapter:
 [`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md).
 
-## 3. Projection/lifting layer
+## 3. Fixed-lift architecture
 
 $$
-\begin{array}{c}
-\text{nowhere-zero Fano flow }f\\
-\downarrow\\
-\text{universal compatible eight-support root lift }g\\
-\downarrow\;\text{choose plane/slice }W\\
-\text{singular quotient and component obstruction}\\
-\Updownarrow\\
-\text{outside-colour cut parity}\\
-\Updownarrow\\
-\partial(x*y)=0\\
-\Updownarrow\\
-\text{vanishing against all relative stresses.}
-\end{array}
-$$
-
-The fixed-plane theorem is complete after `f` and `W` are fixed. The graph-level five-support statement requires varying the flow, lift, and componentwise surface map.
-
-## 4. Surface/target layer
-
-$$
-\begin{array}{c}
-\text{compatible root lift }g\\
-\Updownarrow\\
-\text{coloured cycle-face surface }S_g\\
-\Updownarrow\\
-\text{coloured dual triangulation }T_g\\
-\downarrow\\
+\text{Fano flow}
+\to
+\text{compatible eight-support lift}
+\Longleftrightarrow
+\text{cycle-face surface / coloured dual triangulation}
+\to
 T_g^{(1)}\longrightarrow\mathscr A_5\ ?
-\end{array}
 $$
 
-The colour quotient factors this as
-
-$$
-T_g^{(1)}\longrightarrow J_g\longrightarrow\mathscr A_5,
-$$
-
-but the factorable route through `J_g` is a strict subclass.
-
-Controlling chapter:
-[`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md).
-
-## 5. Vertical gauge and horizontal flow layers
-
-For one fixed Fano flow:
-
-$$
-\text{root-lift torsor}
-\longrightarrow
-\text{reduced gauge code }B_f
-\longrightarrow
-\text{marked-core occurrence cosets }A_C.
-$$
-
-Across Fano flows:
-
-$$
-\operatorname{NZFlow}(G;\mathbf F_2^3)
-\xrightarrow{\text{connected-cycle switches}}
-\text{new flow, new gauge code, new obstruction arrangement}.
-$$
-
-Internal switch directions correct one fixed slice; external directions reslice the quotient.
-
-Controlling chapter:
-[`five-support/gauge-and-reconfiguration.md`](five-support/gauge-and-reconfiguration.md).
-
-## 6. Source-interface layer
-
-$$
-\begin{array}{c}
-\text{persistent obstruction or bad fibre}\\
-\downarrow\\
-\text{reserve code / harmonic quotient}\\
-\downarrow\\
-\begin{cases}
-\text{cyclic three-cut}&\Rightarrow\text{immediate gluing},\\
-\text{cyclic four-cut}&\Rightarrow\text{ten-state shore profiles}.
-\end{cases}
-\end{array}
-$$
-
-For a four-cut:
-
-$$
-\text{cap forcing + Kempe closure}
-\longrightarrow
-\text{deterministic routing}
-\longrightarrow
-P_5\mid P_5
-\quad\text{or}\quad
-P_4\mid C_3.
-$$
-
-Controlling chapter:
-[`five-support/cuts-four-poles-and-routing.md`](five-support/cuts-four-poles-and-routing.md).
-
-## 7. Type H holonomy and defect layer
-
-$$
-\begin{array}{c}
-\text{rainbow routing loop}\\
-\downarrow\\
-\text{root-fibre section / Tait-resolution problem}\\
-\downarrow\\
-\begin{cases}
-\text{Tait resolution}&\Rightarrow\text{profile escape},\\
-\text{no section}&\Rightarrow\text{local or holonomy certificate}
-\end{cases}\\
-\downarrow\\
-\text{BBD root rigidity and canonical }E_5\text{ defect flow}\\
-\downarrow\\
-\text{induced defect forest, zero networks, co-root strips}\\
-\downarrow\\
-L(\mathrm{Petersen})\text{ transport and DDD atoms}.
-\end{array}
-$$
-
-Controlling chapter:
-[`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md).
-
-## 8. Route-locked endpoint
-
-A blocked co-root atom gives a locked quotient flow with equal terminal colour `g`:
-
-$$
-\begin{array}{c}
-\text{locked }\mathbf F_2^3\text{ quotient flow}\\
-\downarrow\\
-\begin{cases}
-\operatorname{rank}=2&\Rightarrow\text{Tait escape},\\
-\operatorname{rank}=3,\ \Omega=0&\Rightarrow\text{eight-state affine potential},\\
-\operatorname{rank}=3,\ \Omega\ne0&\Rightarrow\text{support-minimal common-cut witness}.
-\end{cases}
-\end{array}
-$$
-
-The nonflat witness is a curvature-odd circuit in the four-partite closed-component incidence matroid.
+The fixed-plane singular quotient, Schur boundary, colour-cut, and stress criteria are complete after the flow and plane are fixed. The factorable route through `J_g` is a strict subclass of the componentwise criterion.
 
 Controlling chapters:
 
-- [`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md);
-- [`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md).
+- [`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md);
+- [`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md).
 
-## 9. Nonflat circuit localisation
+## 4. Gauge, routing, and defect reduction
 
-The support-minimal witness satisfies the exact trichotomy
+$$
+\text{gauge torsor / horizontal switches}
+\to
+\text{three-cut and ten-state four-cut interfaces}
+\to
+P_5\mid P_5\text{ or }P_4\mid C_3
+\to
+\text{holonomy / Tait resolution / defect forest / Petersen atoms}.
+$$
+
+The soluble Type H branch escapes by Tait colouring. A blocked co-root atom gives the route-locked quotient endpoint.
+
+Controlling chapters:
+
+- [`five-support/gauge-and-reconfiguration.md`](five-support/gauge-and-reconfiguration.md);
+- [`five-support/cuts-four-poles-and-routing.md`](five-support/cuts-four-poles-and-routing.md);
+- [`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md).
+
+## 5. Route-locked dichotomy
+
+For the equal-terminal-colour quotient flow:
+
+$$
+\begin{cases}
+\operatorname{rank}=2&\Rightarrow\text{Tait escape},\\
+\operatorname{rank}=3,\ \Omega=0&\Rightarrow\text{eight-state flat potential},\\
+\operatorname{rank}=3,\ \Omega\ne0&\Rightarrow\text{support-minimal common-cut witness}.
+\end{cases}
+$$
+
+The nonflat witness is a curvature-odd circuit of the closed-component incidence matrix.
+
+## 6. Nonflat circuit localisation
 
 $$
 \boxed{
 \begin{cases}
-|\eta|=1&\Rightarrow\text{aligned or crossed enriched atom},\\
-|C\cap\eta|=2&\Rightarrow\text{marked scalar transition interval},\\
+|\eta|=1&\Rightarrow\text{aligned/crossed enriched atom},\\
+|C\cap\eta|=2&\Rightarrow\text{marked scalar transition pair},\\
 |\eta|=4k+1&\Rightarrow\text{quartic near-resolution core}.
 \end{cases}}
 $$
 
-The quartic incidence axioms alone are unbounded: abstract designs exist for every `k\ge1`. Physical route-lock supplies:
+Controlling chapter:
+[`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md).
 
-- quotient `\mathbf F_2^2` Tait flow plus one binary phase;
-- an affine plane of four scalar sheets;
-- three quotient Kempe cycle systems;
-- aligned/crossed endpoint labels;
-- connected pairwise ribbon transition skeletons.
+## 7. Quartic incidence and strict abstract progress
 
-Controlling chapters:
+Abstract quartic designs exist for every `k`, so incidence parity alone is unbounded.
 
-- [`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md);
-- [`five-support/quartic-witness-designs.md`](five-support/quartic-witness-designs.md);
-- [`five-support/route-locked-quotient-phase.md`](five-support/route-locked-quotient-phase.md);
-- [`five-support/quartic-transition-skeletons.md`](five-support/quartic-transition-skeletons.md).
-
-## 10. Quartic terminal nucleus and strict abstract progress
-
-For one quartic design, the four whole-sheet sums
+Every design nevertheless has a canonical terminal nucleus
 
 $$
-s_i=1_X+e_i
+S\cong O^-(4,2),
 $$
 
-span a canonical minus-type four-space
-
-$$
-S\cong O^-(4,2).
-$$
-
-Its five singular points and ten anisotropic roots form the intrinsic `E_5/K_5` geometry. The fixed route matching has coordinate stabiliser `D_8`, and the odd curvature quotient is
+with intrinsic `E_5/K_5` geometry, route stabiliser `D_8`, and curvature carrier
 
 $$
 S/s_\infty^\perp\cong\mathbf F_2.
 $$
 
-Terminal-point distribution gives the strict dichotomy
+Terminal distribution gives:
+
+- `3`: co-root equality transport;
+- `2+1`: one `K_6` one-factor vertex;
+- `1+1+1`: one-factor vertex plus root triangle.
+
+Hence
 
 $$
 \boxed{
-\text{root-exposed split}
+\text{bounded root-exposed split}
 \quad\text{or}\quad
 \text{canonical nucleus peel }k\mapsto k-1.
 }
 $$
 
-More precisely:
-
-- distribution `3` is a co-root equality wire;
-- distribution `2+1` is one `K_6` perfect-matching vertex;
-- distribution `1+1+1` is one perfect-matching vertex followed by one root triangle;
-- if every sheet has distribution `3`, the old nucleus peels and the residual blocks form a level-`k-1` quartic design.
-
-Successive nuclei are canonically `D_8`-equivariantly isometric. Their distinguished blocks form the maximal totally singular diagonal graph of that isometry, and every pairwise transition skeleton grows by one fixed two-vertex shell contributing exactly two cycles.
-
 Controlling chapters:
 
+- [`five-support/quartic-witness-designs.md`](five-support/quartic-witness-designs.md);
 - [`five-support/quartic-terminal-nucleus.md`](five-support/quartic-terminal-nucleus.md);
 - [`five-support/quartic-terminal-defect-geometry.md`](five-support/quartic-terminal-defect-geometry.md);
 - [`five-support/quartic-nucleus-transport.md`](five-support/quartic-nucleus-transport.md).
 
-## 11. Scalar interval compression
+## 8. Quotient-phase and elementary interval layer
 
-Each four-witness scalar block is divided into four non-`g` intervals. For a fixed sheet, one interval is a walk on a three-colour triangle.
+After quotient by `\langle g\rangle`, the flow is a degenerate `\mathbf F_2^2` Tait flow plus one binary phase. The four scalar sheets form an affine plane and differ by the three quotient Kempe cycle systems.
 
-The exact interval chain is:
+Between consecutive **full** `g`-incidences, an elementary non-`g` scalar path has:
 
-$$
-\begin{array}{c}
-\text{arbitrarily long scalar interval}\\
-\downarrow\\
-(q_-,q_+,\text{turn parity})\\
-\downarrow\\
-\text{one of eighteen quotient transfer states},
-\end{array}
-$$
+- one of eighteen quotient transfer states;
+- telescoping side-output sum;
+- a bounded backtrack cap or periodic triangle-cell chain;
+- rigid three-rail Kempe wiring.
 
-with telescoping side output
-
-$$
-\sum\text{side colours}=x_-+x_+.
-$$
-
-Its physical normal form is
-
-$$
-\boxed{
-\text{two-vertex Tait backtrack cap}
-\quad\text{or}\quad
-\text{periodic chain of three-turn triangle cells with bounded ends}.
-}
-$$
-
-Thus interval length produces no new flow state. The sole remaining unbounded datum is the ordered side-attachment semantics of the periodic cells and its simultaneous compatibility across all four sheets.
+A witness-to-witness arc may contain additional edges of `E_g\setminus\eta`. It is a transition walk, not necessarily one elementary interval.
 
 Controlling chapters:
 
+- [`five-support/route-locked-quotient-phase.md`](five-support/route-locked-quotient-phase.md);
 - [`five-support/scalar-interval-transfer.md`](five-support/scalar-interval-transfer.md);
-- [`five-support/scalar-interval-caps-and-cells.md`](five-support/scalar-interval-caps-and-cells.md).
+- [`five-support/scalar-interval-caps-and-cells.md`](five-support/scalar-interval-caps-and-cells.md);
+- [`five-support/periodic-kempe-ladders.md`](five-support/periodic-kempe-ladders.md).
 
-## 12. Open closure dependencies
+## 9. Physical cut carrier
 
-The current frontier requires the following bridges.
+Contract the connected components of `Q-E_g` to obtain an even-total-degree four-pole `\Gamma_g`. The four scalar sheets induce four transition systems.
 
-1. **Side-semantic composition**  
-   A periodic triangle-cell chain must yield repeated enriched state with matching attachments, a smaller cyclic separator, a transition-matroid split, a bounded four-pole transfer, or the physical `D_8` class.
+Scalar components containing `g`-edges are exactly transition circuits/trails. Common-cut localisation therefore lives on `\Gamma_g`.
 
-2. **Bounded atom and interval composition**  
-   Aligned/crossed singleton atoms, two-edge scalar intervals, and internal Tait caps must become valid replacements or gluing interfaces.
+Every internal quotient cut lifts exactly:
 
-3. **Physical nucleus descent**  
-   The strict abstract decrease `k\mapsto k-1` must preserve the four-sheet ribbon/Kempe/terminal semantics, or its failure must expose a bounded DDD interface.
+$$
+\delta^{\mathrm{int}}_{\Gamma_g}(\mathcal U)
+=
+\delta^{\mathrm{int}}_Q(X_\mathcal U),
+$$
 
-4. **Flat-potential interface**  
-   The eight-state potential must yield finite transfer data, a proper split, or a smaller separator.
+with parity
 
-5. **Forest pruning and four-pole transfer**  
-   Local defect factors must reduce zero/co-root trees and expand the ten-state boundary profile.
+$$
+|\delta^{\mathrm{int}}(\mathcal U)|
+\equiv t(\mathcal U)\pmod2.
+$$
 
-6. **Horizontal/global theorem**  
-   Every persistent bad-flow component must have a good exit or a coherent decomposition certificate.
+Controlling chapter:
+[`five-support/g-component-transition-quotient.md`](five-support/g-component-transition-quotient.md).
 
-Target-library completeness may be developed in parallel but does not remove the need for source composition.
+## 10. Canonical `4`-regular carrier
 
-Controlling frontier chapter:
-[`five-support/frontier-localisation.md`](five-support/frontier-localisation.md).
+Close the terminals according to `12\mid34` and take the flag-line graph
 
-## 13. Secondary projections
+$$
+F=\mathcal L(\widehat Q).
+$$
 
-These depend on a five-support solution but do not control its existence.
+Every scalar even subgraph gives a canonical circuit partition of `F`; the four sheets are four transition transversals of one transition matroid.
 
-- orientable good lift `\Rightarrow` nowhere-zero `\mathbf Z_5` flow;
-- Fano line-field flattening `\Rightarrow` Tait colouring in the planar setting;
-- coefficient holonomy describes transport of affine `\mathbf F_5` structures;
-- tensor/Schur and Fourier/stress complexes provide alternate algebraic projections.
+Scalar components are distinguished partition circuits, and their incidence with `g`-edges is one-sided touch-graph incidence. The aligned/crossed transition law is uniform on all edges.
 
-## 14. Assurance axes
+Controlling chapter:
+[`five-support/route-capped-line-graph-carrier.md`](five-support/route-capped-line-graph-carrier.md).
 
-No arrow in this map automatically transfers:
+## 11. Relative touch-homology
 
-- Lean status;
-- independent audit;
-- peer review;
-- novelty or publication status;
-- release or DOI status.
+For each sheet, let `\Theta_\phi` be the touch subgraph on internal `g`-edges. Interior vertices are closed scalar circuits; boundary vertices are terminal and complementary partition circuits.
 
-Those axes are recorded separately in [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
+The common-cut space is
+
+$$
+\mathcal Z_{\mathrm{com}}
+=
+\bigcap_{\phi\in U^*}Z_1(\Theta_\phi,B_\phi),
+$$
+
+and curvature is
+
+$$
+\Omega(x)=\sum_\phi\beta_{\phi,34}(x).
+$$
+
+Thus the pointed curvature matroid is a coextension of the stacked relative boundary matrix. The witness is not yet proved to be a transverse circuit or cocircuit because complementary touch boundary may remain.
+
+Controlling chapter:
+[`five-support/relative-touch-homology.md`](five-support/relative-touch-homology.md).
+
+## 12. Exact open bridge
+
+The primary theorem still needed is
+
+$$
+\boxed{
+\text{fourfold relative curvature circuit}
+\Longrightarrow
+\begin{cases}
+\text{bounded closure to ordinary touch/transverse dependence},\\
+\text{terminal-even separator or transition two-sum in }\Gamma_g,\\
+\text{physical }D_8\text{ class}.
+\end{cases}}
+$$
+
+Equivalently, control the complementary boundary syndromes
+
+$$
+b_\phi=\partial_{B,\phi}(\eta).
+$$
+
+After this bridge come:
+
+1. singleton and marked-pair composition;
+2. flat-potential finite interface;
+3. defect-forest pruning;
+4. four-pole transfer and gluing;
+5. horizontal escape/decomposition;
+6. target-certificate completion where required.
+
+## 13. Assurance axes
+
+No arrow in this map automatically transfers Lean status, independent audit, peer review, novelty, release, DOI, arXiv, or publication status. See [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
