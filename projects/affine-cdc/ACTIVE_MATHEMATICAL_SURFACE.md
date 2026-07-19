@@ -1,18 +1,19 @@
 # AffineCDC active mathematical surface
 
-This file identifies the current-best mathematical surface produced by `AC-CORPUS-01`. It distinguishes active mathematics from historical source packets, assurance projections, and recoverable Git history.
+This file identifies the current-best mathematical surface produced by `AC-CORPUS-01` and subsequently extended by exact active Research Lead frontier commits. It distinguishes active mathematics from historical source packets, assurance projections, and recoverable Git history.
 
 ## 1. Exact construction line
 
-The active surface is built on:
+The reconstructed active surface is built on:
 
 - canonical ancestor `main@749e0579581fcc838685138b3582f4de306b8e72`;
 - public five-support checkpoint `dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`;
 - accepted outer-shell source `0927011177cabac20f06a57fa5e57476d6f13dee`;
 - integration base `7a166d2eb5642ec967f640323488e49f1c2ad5d4`;
-- curation branch `curation/affine-cdc-natural-mathematical-corpus-v1`.
+- completed corpus migration `960c92b7ff231c78b387894149779083060a75eb`;
+- later exact frontier commits on `research/affine-cdc-five-cdc-v1`.
 
-The source checkpoint remains an ancestor. Retirement from the current tree does not remove source history or priority.
+The source checkpoint remains an ancestor. Retirement from the current tree does not remove source history or priority. Later frontier chapters require a fresh exact intake before another corpus freeze or assurance disposition.
 
 ## 2. Primary entrypoints
 
@@ -49,11 +50,14 @@ The active five-support corpus is exactly:
 3. [`five-support/gauge-and-reconfiguration.md`](five-support/gauge-and-reconfiguration.md);
 4. [`five-support/cuts-four-poles-and-routing.md`](five-support/cuts-four-poles-and-routing.md);
 5. [`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md);
-6. [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md);
-7. [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
-8. [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
+6. [`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md);
+7. [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md);
+8. [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
+9. [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
 
 The global five-support theorem remains open. The controlling fixed-lift object is the full dual triangulation `T_g`, not only the factorable quotient `J_g`.
+
+The nonflat common-cut endpoint is now reduced to singleton enriched atoms, two-edge scalar transition intervals, or a rigid quartic near-resolution core. Composition of the bounded interfaces and elimination or identification of the quartic core remain open.
 
 ## 5. Provenance and reliability control
 
