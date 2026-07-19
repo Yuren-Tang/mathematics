@@ -40,13 +40,16 @@ Its seventy-eight `research/FIVE_CDC_*.md` packets are retired from the current 
 10. [`quartic-terminal-nucleus.md`](quartic-terminal-nucleus.md)  
     The canonical `O^-(4,2)` terminal nucleus, its intrinsic `E_5/K_5` geometry and `D_8` route stabiliser, the curvature carrier, block projections, and the split-or-peel recursion.
 
-11. [`frontier-localisation.md`](frontier-localisation.md)  
+11. [`quartic-nucleus-transport.md`](quartic-nucleus-transport.md)  
+    Canonical isometry between successive nuclei, diagonal singular gluing, curvature transport, and the exact two-vertex pairwise transition shell contributed by each concentrated peel.
+
+12. [`frontier-localisation.md`](frontier-localisation.md)  
     Exact remaining localisation/composition frontier and recommended proof order.
 
-12. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md)  
+13. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md)  
     Preferred and independent proof families, exact equivalences, sufficient templates, and negative boundaries.
 
-13. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md)  
+14. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md)  
     Exact finite computations, counterexamples, certificates, and their evidentiary scope.
 
 ## Scope
@@ -61,7 +64,7 @@ $$
 
 not merely the global-colour quotient criterion `J_g -> A_5`.
 
-The sharp nonflat frontier is composition of a singleton enriched atom or a two-edge scalar transition interval, together with physical realization of the quartic split-or-peel theorem. Pure quartic incidence parity is unbounded, but every quartic design has a canonical minus-type four-dimensional terminal nucleus. A nonconcentrated sheet exposes anisotropic `E_5` root projections; an all-concentrated design peels recursively to a strictly smaller quartic design. Physical route-lock further adds an affine plane of scalar sheets related by three quotient Kempe cycle systems, nine endpoint quotient labels with aligned/crossed signatures, and connected ribbon transition skeletons. The remaining quartic task is to make either the root-exposed split or the canonical `D_8` nucleus peeling composition-safe in the original four-pole. The flat-potential, defect-forest, four-pole, and horizontal bad-flow transfer problems remain open.
+The sharp nonflat frontier is composition of a singleton enriched atom or a two-edge scalar transition interval, together with physical realization of the quartic split-or-peel theorem. Pure quartic incidence parity is unbounded, but every quartic design has a canonical minus-type four-dimensional terminal nucleus. A nonconcentrated sheet exposes anisotropic `E_5` root projections; an all-concentrated design peels recursively to a strictly smaller quartic design. Successive nuclei are canonically `D_8`-equivariantly isometric, and every pairwise ribbon skeleton grows by one fixed two-vertex shell contributing exactly two cycles. Physical route-lock further supplies the affine sheet plane, quotient Kempe cycles, and aligned/crossed endpoint labels. The remaining concentrated task is to compress the four scalar intervals of that shell into finite transfer data and prove simultaneous composition across all sheet pairs. The flat-potential, defect-forest, four-pole, and horizontal bad-flow transfer problems remain open.
 
 ## Reliability
 
