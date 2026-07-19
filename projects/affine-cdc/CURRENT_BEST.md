@@ -57,7 +57,9 @@ The current backbone includes:
 - BBD common origin, canonical defect flow, `K_6` completion, induced defect forests, and Petersen transport;
 - DDD atom triality, unique bad route, and rank-two Tait escape;
 - full-rank curvature/common-cut duality and flat-potential equivalence;
-- common-cut component incidence, odd witness circuits, and the singleton/transition/quartic-core localisation trichotomy.
+- common-cut component incidence, odd witness circuits, and the singleton/transition/quartic-core localisation trichotomy;
+- unbounded abstract quartic witness designs and their symplectic cross-intersection form;
+- the quotient Tait-phase representation of route-locked flows, the affine plane of four scalar sheets, and complete aligned/crossed endpoint switch signatures.
 
 ## 4. Controlling negative boundaries
 
@@ -71,9 +73,12 @@ The following are false or unsupported:
 - route-lock forces a graph two-cut or automatic flatness;
 - a scalar-common-cut witness must be a cut in the underlying four-pole;
 - repeated Petersen state implies a replaceable strip;
-- finite census proves universal closure.
+- finite census proves universal closure;
+- the quartic near-resolution and rank axioms bound the residual common-cut core.
 
 The physical-cut statement is explicitly false: the exact nonflat singleton witness is a common cut in all four scalar sheets while its unique witness edge is not a bridge of the underlying graph.
+
+The abstract quartic branch is genuinely unbounded: for every `k\ge1` there is a quartic witness design on `4k+1` points satisfying all incidence-level near-resolution, rank, omitted-point, and odd-side constraints. Any bound must therefore use physical flow compatibility.
 
 ## 5. Sharp frontier
 
@@ -91,11 +96,19 @@ The nonflat circuit has exactly three possible forms:
 
 The singleton is either aligned, with resolution labels `g,g,0`, or crossed, with DDD/Petersen resolution labels `g,r,r+g`.
 
+The quartic incidence axioms alone cannot reduce case 3. Physical route-lock adds the exact quotient-phase structure:
+
+1. after quotient by `\langle g\rangle`, the flow is a degenerate `\mathbf F_2^2` Tait flow whose zero edges are exactly `E_g`;
+2. one binary phase reconstructs the full `\mathbf F_2^3` flow;
+3. the four scalar sheets form an affine plane, and their three nonzero differences are quotient Kempe cycle systems;
+4. every `g`-edge carries one of nine ordered endpoint quotient labels;
+5. aligned edges have switch signatures `(0,0),(1,1),(1,1)`, while crossed edges have `(0,1),(1,0),(1,1)`.
+
 The immediate missing theorem must:
 
 1. compose an aligned zero/equality-wire singleton or crossed DDD singleton;
 2. convert a two-edge scalar interval into a smaller separator, transition split, finite four-pole transfer state, or bounded replacement;
-3. eliminate, bound, or physically identify the quartic near-resolution core;
+3. classify or decompose enriched quartic phase designs using cyclic orders, quotient labels, Kempe cycle differences, and intervening path data;
 4. extract a finite interface from the flat potential.
 
 Wider open bridges are:
@@ -138,5 +151,7 @@ The corpus separates theorem-level arguments, exact finite results, counterexamp
 - active surface: [`ACTIVE_MATHEMATICAL_SURFACE.md`](ACTIVE_MATHEMATICAL_SURFACE.md);
 - five-support corpus: [`five-support/README.md`](five-support/README.md);
 - common-cut localisation: [`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md);
+- quartic designs: [`five-support/quartic-witness-designs.md`](five-support/quartic-witness-designs.md);
+- quotient phase: [`five-support/route-locked-quotient-phase.md`](five-support/route-locked-quotient-phase.md);
 - exact frontier: [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md);
 - reliability: [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
