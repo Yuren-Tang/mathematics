@@ -4,7 +4,7 @@
 **Standing issue:** `Yuren-Tang/research-workbench#37`  
 **Owned branch:** `proof-development/affine-cdc-rigour-v1`  
 **Exact initial baseline:** `main@960c92b7ff231c78b387894149779083060a75eb`  
-**Programme state:** persistent; Programme A is `READY-FOR-CURATOR`, Programme B continues
+**Programme state:** persistent; Programme A and B1 are `READY-FOR-CURATOR`; Programme B continues
 
 ## 1. Control and assurance boundary
 
@@ -72,17 +72,30 @@ B6 ──> B7  route-lock, curvature, and common-cut localization
 B1–B7 + B8 finite certificates ──> B9 global five-support assembly
 ```
 
-| Code | State | Exact unit boundary |
+| Code | State | Exact unit / checkpoint |
 |---|---|---|
-| `AC-PD-B1` | `ACTIVE` | prove the root-flow, fixed-plane, fixed-lift, local family, and support-count equivalence chain; separate existence, gauge choice, and normalization |
-| `AC-PD-B2` | `QUEUED` | prove equivalence of singular, quadratic, Schur, cographic, orthogonal, and Fourier formulations with exact rank hypotheses |
-| `AC-PD-B3` | `QUEUED` | prove dual-triangulation, quotient, and halfcube constructions and all well-definedness statements |
+| `AC-PD-B1.1` | `COMPLETE-DRAFT` | `ed0288c2485d4eb826b49b8289a0025e1b2c0d64` — five-support ↔ root flow ↔ $K_5$ triangle law |
+| `AC-PD-B1.2` | `COMPLETE-DRAFT / CORPUS-CORRECTION` | `24e923bcfcfc3aa2765c3269018c977bd1351403` — exact $(B,D,M)$ matching/four-flow theorem and component $T$-join condition |
+| `AC-PD-B1.3` | `COMPLETE-DRAFT` | `dbd01c86059368619a51f9b5252dfec0a2cf7778` — fixed-flow/fixed-plane colour-cut, distinguished-support, and plane-profile criterion |
+| `AC-PD-B1.4` | `COMPLETE-DRAFT / SCOPE-CORRECTION` | `a9695a1045bdb157b8d0d8aa1e318302c28e785d` — root-lift/surface equivalence, full-dual half-cube potential, holonomy, and factorable quotient scope |
+| `AC-PD-B1` | `READY-FOR-CURATOR` | `73be22f42298470bd9ebaeb519de7ed686c27e41` — consolidated graph/fixed-flow/fixed-lift equivalence and implication map |
+| `AC-PD-B2` | `ACTIVE` | normalize and prove singular, quadratic, Schur, cographic, orthogonal, and Fourier/stress formulations; classify every arrow as equivalence, quotient, obstruction, or evidence |
+| `AC-PD-B3` | `QUEUED` | prove dual-triangulation, quotient, halfcube target, link, and marked-core constructions beyond the B1 structural interface |
 | `AC-PD-B4` | `QUEUED` | prove vertical/horizontal reconfiguration moves, preserved invariants, and exact reachability claims |
 | `AC-PD-B5` | `QUEUED` | formalize three-cut, four-pole, and routing-state reductions |
 | `AC-PD-B6` | `QUEUED` | prove holonomy, BBD/DDD, canonical defects, and atom statements |
 | `AC-PD-B7` | `QUEUED` | prove route-lock, curvature, and common-cut localization consequences |
 | `AC-PD-B8` | `QUEUED` | normalize finite laboratories and exact certificates; separate evidence from proof |
 | `AC-PD-B9` | `BLOCKED-FRONTIER` | maintain the exact smallest missing global composition/localization implication; return only this genuine new-mathematics gap to AC-RL |
+
+### Programme B1 corrections retained
+
+1. A fixed support-coordinate inverse image is even; a fixed root-label inverse image is a matching.
+2. Bare matching plus four-flow is insufficient; exact $(B,D)$ or component-parity/$T$-join data are required.
+3. The fixed-flow plane-profile criterion is complete only with its fixed/existential quantifiers stated.
+4. A full-dual map $T_g^{(1)}\to\mathscr A_5$ classifies componentwise compression of the same embedding; it does not represent every external cover on an arbitrary fixed surface without zero dual holonomy.
+5. $J_g\to\mathscr A_5$ is only the old-colour-factorable subclass.
+6. If $\mathscr A_5$ denotes the even half-cube, singleton words require an odd translation before use as its five-clique.
 
 ## 4. Repair queue
 
@@ -97,4 +110,4 @@ No repair unit is active. Any later Curator, audit, Lean, manuscript, or Researc
 
 ## 5. Current active unit
 
-`AC-PD-B1` is active. The first task is to normalize the integrated five-support corpus into one exact root equivalence diagram, identify which arrows are already proved versus computationally supported or conjectural, and close the first unresolved proof obligation that does not require new mathematics. Programme A remains available for repair and Curator intake without pausing B1.
+`AC-PD-B2` is active. The first task is to build one exact arrow ledger across `five-support/equivalent-formulations-and-proof-families.md`, `singular-quotient-lifting.md`, `orthogonal-rank-reduction.md`, `fourier-and-stress-duals.md`, and the controlling recovered packets. Each formulation must be classified as a full witness equivalence, a fixed-data equivalence, a quotient with lost lift data, a dual obstruction criterion, or finite evidence. The first proof unit will close the earliest unambiguous arrow and isolate any false or overbroad equivalence before proceeding.
