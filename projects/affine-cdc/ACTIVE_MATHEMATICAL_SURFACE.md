@@ -54,13 +54,16 @@ The active five-support corpus is exactly:
 7. [`five-support/quartic-witness-designs.md`](five-support/quartic-witness-designs.md);
 8. [`five-support/route-locked-quotient-phase.md`](five-support/route-locked-quotient-phase.md);
 9. [`five-support/quartic-transition-skeletons.md`](five-support/quartic-transition-skeletons.md);
-10. [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md);
-11. [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
-12. [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
+10. [`five-support/quartic-terminal-nucleus.md`](five-support/quartic-terminal-nucleus.md);
+11. [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md);
+12. [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
+13. [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
 
 The global five-support theorem remains open. The controlling fixed-lift object is the full dual triangulation `T_g`, not only the factorable quotient `J_g`.
 
-The nonflat common-cut endpoint is reduced to singleton enriched atoms, two-edge scalar transition intervals, or a quartic near-resolution core. Abstract quartic witness designs exist for every size `4k+1`, so common-cut parity alone cannot bound that core. Physical route-lock supplies additional finite structure: a quotient Tait flow with binary phase, an affine plane of four scalar sheets related by three Kempe cycle systems, aligned/crossed endpoint switch signatures, and a connected pairwise ribbon transition skeleton with two terminal leaves and cycle rank `2k`. Composition of the bounded interfaces and classification or decomposition of the resulting enriched quartic phase designs remain open.
+The nonflat common-cut endpoint is reduced to singleton enriched atoms, two-edge scalar transition intervals, or a quartic near-resolution core. Abstract quartic witness designs exist for every size `4k+1`, so common-cut parity alone cannot bound that core. Physical route-lock supplies a quotient Tait flow with binary phase, an affine plane of four scalar sheets related by three Kempe cycle systems, aligned/crossed endpoint switch signatures, and connected pairwise ribbon transition skeletons.
+
+The quartic incidence branch now has a strict abstract decomposition theorem. Every quartic design contains a canonical minus-type four-dimensional terminal nucleus with intrinsic `E_5/K_5` geometry and route stabiliser `D_8`. If a sheet splits its other three omitted points, anisotropic root-projected blocks are exposed. If all sheets are concentrated, the nucleus peels and leaves a quartic design of level `k-1`, with the five-point nucleus as base. The remaining theorem is to transport this root-exposed split or recursive nucleus peel through the physical ribbon/Kempe/endpoint data and the original four-pole gluing semantics.
 
 ## 5. Provenance and reliability control
 
