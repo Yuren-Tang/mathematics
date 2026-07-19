@@ -12,14 +12,16 @@ Within their stated scopes, the active line now closes:
 - unbounded abstract quartic designs and their symplectic form;
 - quotient Tait-phase representation and affine sheet/Kempe relations;
 - connected pairwise marked transition skeletons;
-- canonical `O^-(4,2)` terminal nucleus, intrinsic `E_5/K_5`, route `D_8`, and curvature carrier;
-- exact split-or-peel recursion;
-- bounded `K_6` defect geometry of split terminal distributions;
-- canonical nucleus transport and pairwise marked shell;
-- elementary scalar-interval transfer, backtrack caps, periodic cells, and rigid Kempe ladders;
+- canonical `O^-(4,2)` terminal nucleus, intrinsic `E_5/K_5`, and one-dimensional curvature carrier;
+- exact split-or-peel recursion and bounded `K_6` coefficient gadgets;
+- canonical `S_4`-equivariant nucleus transport and pairwise marked shell;
+- elementary scalar transfer, caps, periodic cells, and Kempe ladders;
 - physical `g`-component transition quotient `\Gamma_g` and exact internal-cut lifting;
 - canonical route-capped `4`-regular line-graph carrier;
-- fourfold relative touch-homology formulation.
+- touch-shadow decomposition and automatic complementary-boundary closure;
+- the bounded two-transition cap residue;
+- IAS loop/parallel/twin/pendant cap classification;
+- existence and coupled/separated decomposition of minimal full cap-cocycle completions.
 
 The global five-support theorem remains open.
 
@@ -39,7 +41,7 @@ It is a curvature-odd circuit of the closed-component incidence matroid and has 
 
 A scalar-common cut need not be a cut in the original four-pole. The exact full-rank singleton certificate proves this.
 
-## 3. Quartic incidence progress
+## 3. Quartic incidence progress and symmetry correction
 
 Every quartic design contains a canonical nondegenerate minus-type four-space
 
@@ -47,7 +49,7 @@ $$
 S=\langle1_X+e_0,\ldots,1_X+e_3\rangle.
 $$
 
-Its five singular points and ten roots form intrinsic `E_5/K_5` geometry. The route matching gives `D_8`, and curvature is carried by
+Its five singular points and ten roots form intrinsic `E_5/K_5` geometry. Curvature is carried by
 
 $$
 S/s_\infty^\perp\cong\mathbf F_2.
@@ -69,13 +71,13 @@ $$
 }
 $$
 
-This is strict incidence progress, not yet physical graph composition.
+The natural symmetry of the four sheet labels is `AGL(2,2)\cong S_4`. It is not canonically identical to either the terminal-route stabiliser or the support-label `D_8` stabiliser of a DDD one-factor. A comparison map remains part of the open graph-level theorem.
 
 ## 4. Scope correction for scalar intervals
 
 A scalar circuit block may contain additional `g`-edges outside `\eta`. Therefore its four marked witness edges determine four witness arcs, not necessarily four non-`g` intervals.
 
-An elementary scalar interval lies between consecutive full `g`-incidences. Such an interval has:
+An elementary scalar interval lies between consecutive full `g` incidences. Such an interval has:
 
 - one of eighteen quotient transfer states;
 - telescoping side-output sum;
@@ -105,8 +107,6 @@ $$
 
 where `t(\mathcal U)` counts original terminal flags on the shore. Thus terminal-free and two-terminal shores have even internal boundary.
 
-The quartic incidence partitions live canonically on this physical transition quotient.
-
 ## 6. Standard `4`-regular carrier
 
 Close the terminals according to the locked route `12\mid34` and take the flag-line graph
@@ -117,69 +117,67 @@ $$
 
 Every scalar even subgraph gives a canonical circuit partition of this common `4`-regular graph. The four sheets are four transition transversals of one transition matroid.
 
-At every edge of `\widehat Q`, the four transition choices are governed by one uniform local law:
+At every edge of `\widehat Q`, the four transition choices obey the unified local law:
 
 - non-`g` aligned: `2+2+0`;
 - non-`g` crossed: `2+1+1`;
 - `g` aligned: all four use one cross transition;
 - `g` crossed: two use each cross transition.
 
-Scalar component incidence is one-sided incidence in the partition touch-graphs.
+## 7. Touch closure and bounded residue
 
-## 7. Relative touch-homology frontier
+For one scalar even subgraph, every scalar circuit gives one distinguished circuit and one shadow circuit in the line-graph partition. Selected touch edges form dipoles between the two. Therefore even intersection at a scalar component kills both distinguished and shadow boundary.
 
-For each sheet, restrict its touch-graph to internal `g`-edges. Interior vertices are closed scalar circuits; boundary vertices are terminal scalar circuits and complementary partition circuits.
-
-The common-cut space is the fourfold relative cycle space
+The two fixed route caps close every scalar common cut to an ordinary touch cycle. Summing the four cap-completed transition-support vectors cancels every internal `g`-edge transition and leaves
 
 $$
-\mathcal Z_{\mathrm{com}}
-=
-\bigcap_{\phi\in U^*}
-Z_1(\Theta_\phi,B_\phi).
+\boxed{R=\{r_p,r_q\},}
 $$
 
-Curvature is terminal relative-boundary evaluation:
+one cross transition at each cap vertex.
 
-$$
-\Omega(x)=\sum_\phi\beta_{\phi,34}(x).
-$$
+The complementary-boundary problem is therefore closed. The size and location of the original witness no longer appear in the four-sheet residue.
 
-The pointed curvature circuit is therefore a circuit in a coextension of the stacked relative boundary matrix. It is **not yet** proved to be a transverse circuit or cocircuit of `M_\tau(F)`, because boundary may remain on complementary partition circuits.
+## 8. Full cocycle completion
 
-This is the exact obstruction to directly applying isotropic connectivity or split decomposition.
+Every full IAS cocycle meets each vertex triple in zero or two elements, so `R` is not itself a cocycle.
 
-## 8. Immediate theorem target
+If a selected residue transition is a loop, there is an immediate one-element degeneration. Otherwise a cocycle containing both elements exists by binary linear algebra.
+
+Choose an inclusion-minimal such cocycle `C`. Exactly one of:
+
+1. **coupled:** `C` is one cocircuit containing both cap residues;
+2. **separated:**
+   $$
+   C=D_p\sqcup D_q,
+   $$
+   where `D_p,D_q` are disjoint cocircuits, each carrying one cap residue.
+
+In the separated case their isotropic vertex supports are disjoint.
+
+All completions confined to the two cap triples are already classified: they occur only through loop, parallel, twin, or pendant interlacement configurations.
+
+## 9. Immediate theorem target
 
 The primary frontier is now:
 
 $$
 \boxed{
-\text{fourfold relative curvature circuit}
+\text{minimal cap-cocycle completion}
 \Longrightarrow
 \begin{cases}
-\text{bounded closure to an ordinary touch cycle / transverse dependence},\\
-\text{terminal-even separator or transition two-sum in }\Gamma_g,\\
-\text{physical }D_8\text{ class}.
+\text{terminal-even separator / serial composition in }\Gamma_g,\\
+\text{alternate route and root escape},\\
+\text{or a graph-level comparison with the DDD class.}
 \end{cases}}
 $$
 
-Concretely, for the complementary boundary syndrome
+The two branches should be treated separately.
 
-$$
-b_\phi=\partial_{B,\phi}(\eta),
-$$
+- **Separated branch:** project two disjoint one-cap cocircuits to two independent terminal interfaces or a proper separator.
+- **Coupled branch:** use its local-set/cut-rank structure. Low cut-rank should force an isotropic split; only a prime coupled carrier can remain a candidate for an irreducible DDD-type obstruction.
 
-prove one of:
-
-1. bounded cap/complement paths close every `b_\phi`;
-2. its support lies in a proper region yielding a cut in `\Gamma_g`;
-3. the relative cycle factors through a low-order touch/transition separation;
-4. all four syndromes form one irreducible orbit equal to the physical DDD class.
-
-The terminal part is already finite and carried by the canonical nucleus. Only complementary boundary remains uncontrolled.
-
-## 9. Secondary open lines
+## 10. Secondary open lines
 
 After this primary bridge:
 
@@ -190,6 +188,6 @@ After this primary bridge:
 - prove horizontal escape/decomposition;
 - enlarge target certificates only where required.
 
-## 10. Status
+## 11. Status
 
 No active source proves the global five-support theorem. No Lean, independent-review, peer-review, merge, release, arXiv, DOI, or publication status is implied.
