@@ -31,13 +31,16 @@ Its seventy-eight `research/FIVE_CDC_*.md` packets are retired from the current 
 7. [`quartic-witness-designs.md`](quartic-witness-designs.md)  
    Unbounded abstract quartic cores, an explicit design for every size `4k+1`, and the symplectic cross-intersection formulation.
 
-8. [`frontier-localisation.md`](frontier-localisation.md)  
+8. [`route-locked-quotient-phase.md`](route-locked-quotient-phase.md)  
+   Quotient Tait flow, binary phase, affine scalar-sheet plane, Kempe cycle differences, and aligned/crossed endpoint switch signatures.
+
+9. [`frontier-localisation.md`](frontier-localisation.md)  
    Exact remaining localisation/composition frontier and recommended proof order.
 
-9. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md)  
-   Preferred and independent proof families, exact equivalences, sufficient templates, and negative boundaries.
+10. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md)  
+    Preferred and independent proof families, exact equivalences, sufficient templates, and negative boundaries.
 
-10. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md)  
+11. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md)  
     Exact finite computations, counterexamples, certificates, and their evidentiary scope.
 
 ## Scope
@@ -52,7 +55,7 @@ $$
 
 not merely the global-colour quotient criterion `J_g -> A_5`.
 
-The sharp nonflat frontier is now composition of a singleton enriched atom or a two-edge scalar transition interval, together with physical elimination or identification of the residual quartic near-resolution core. Pure quartic incidence parity cannot bound that core: abstract quartic witness designs exist for every `k\ge1`. The flat-potential, defect-forest, four-pole, and horizontal bad-flow transfer problems remain open.
+The sharp nonflat frontier is composition of a singleton enriched atom or a two-edge scalar transition interval, together with classification or decomposition of enriched quartic phase designs. Pure quartic incidence parity cannot bound the residual core: abstract quartic witness designs exist for every `k\ge1`. The four physical scalar sheets are, however, an affine plane related by three quotient Kempe cycle systems, and every witness edge carries one of nine endpoint quotient labels with aligned/crossed switch signatures. The flat-potential, defect-forest, four-pole, and horizontal bad-flow transfer problems remain open.
 
 ## Reliability
 
