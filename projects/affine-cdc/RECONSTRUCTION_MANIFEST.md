@@ -130,13 +130,16 @@ All seventy-eight `research/FIVE_CDC_*.md` packets are retired from the current 
 
 The disjoint classification is:
 
+- 39 controlling theorem or mechanism packets;
+- 10 independent proof or representation packets;
+- 18 exact finite-result or certificate packets;
+- 10 controlling correction or negative-boundary packets;
+- 1 discovery-order programme synthesis.
+
+Thus:
+
 $$
-39	ext{ controlling theorem/mechanism}
-+10	ext{ independent proof/representation}
-+18	ext{ finite result/certificate}
-+10	ext{ correction/negative boundary}
-+1	ext{ programme synthesis}
-=78.
+39+10+18+10+1=78.
 $$
 
 The obsolete `BASELINE_MANIFEST.md` is also retired. It described the temporary `AC-BASELINE-01` state and is superseded by the active-surface, recovery, and reconstruction manifests.
