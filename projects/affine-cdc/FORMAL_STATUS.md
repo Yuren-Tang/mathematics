@@ -1,206 +1,183 @@
 # Formalization and reliability boundary
 
-This file separates machine-checked results, the approved mathematical target,
-the unchanged Lean checkpoint, paper proofs, exact computations, and open
-programmes. A theorem does not inherit a stronger status merely because it has
-been rewritten in a more invariant language or placed in a cleaner architecture.
+This file separates mathematical content, source provenance, exact computation, independent review, formal verification, and publication status. A theorem does not inherit a stronger status merely because it has been rewritten in a natural invariant language or integrated into the primary corpus.
 
-## 1. Approved mathematical target and current Lean checkpoint
+## 1. Natural Cycle Double Cover target
 
 The natural public theorem is:
 
-> Every multigraph with finite active edge set and no bridges has a cycle double
-> cover.
+> Every multigraph with finite active edge set and no bridges has a cycle double cover.
 
-Loops are allowed. The natural circuit is a nonempty inclusion-minimal cut-even
-edge set, so a singleton loop is a circuit. The author has approved Path A for a
-future clean migration of the public Lean statement to this semantics and to
-active-edge finiteness.
+Loops are allowed. A circuit is a nonempty inclusion-minimal cut-even edge set, so a singleton loop is a circuit.
 
-The companion repository
-[`Yuren-Tang/affine-cdc`](https://github.com/Yuren-Tang/affine-cdc) still contains
-the earlier self-contained Mathlib-only audit file `Statement.lean`. Its current
-`CDCStatement` is loopless and quantifies over finite ambient vertex and edge
-types. That declaration is **defined but not yet proved**. It remains unchanged
-until the separate exact declaration-and-migration packet is approved and a
-later local Lean task implements it.
-
-Thus the current Lean checkpoint is not the final natural mathematical statement,
-and approval of Path A is not evidence that the migration has already occurred.
+The companion Lean repository still contains an earlier self-contained `Statement.lean` checkpoint whose public declaration is loopless and quantifies over finite ambient vertex and edge types. That declaration is defined but not yet proved. The approved natural mathematical target has not yet been implemented as the final Lean statement.
 
 ## 2. Machine-checked anchor
 
 At the current audited companion-repository checkpoint, Lean verifies:
 
-- the local affine-family classification;
-- the quotient, gauge, dual-configuration, invariance, and branching machinery;
-- the rank-three affine compatibility conclusion in the original
-  branching/cross-bit presentation;
-- the dart-level indexed support construction with exact double coverage;
-- passage from that construction to a cycle double cover for a finite loopless
-  cubic graph already carrying the required nowhere-zero
-  $\mathbf F_2^3$-flow.
+- local affine-family classification;
+- quotient, gauge, dual-configuration, invariance, and branching machinery;
+- rank-three affine compatibility in the original branching/cross-bit presentation;
+- dart-level indexed support construction with exact double coverage;
+- a cycle double cover for a finite loopless cubic graph already carrying the required nowhere-zero $\mathbf F_2^3$ flow.
 
-The last item is a **cubic-flow corollary**, not the final unconditional theorem.
-The Lean repository does not yet prove either the current loopless
-`CDCStatement` for all finite loopless bridgeless multigraphs or the approved
-full theorem with loops and active-edge finiteness.
+The last item is a cubic-flow corollary. Lean does not yet prove either the current unconditional loopless `CDCStatement` or the approved full theorem with loops and active-edge finiteness.
 
-## 3. Invariant mathematical bridge not yet machine-checked
+## 3. Paper-level complete CDC mathematics not yet machine-checked
 
-The canonical mathematical corpus identifies the original local-family object
-with the characteristic torsor
+The canonical corpus contains theorem-level arguments for:
+
+- the invariant characteristic-torsor/Lagrangian compatibility proof;
+- graph-level even-cover extraction;
+- finite-support circuit decomposition;
+- vertex-even/cut-even bridge;
+- pure cut-even collapse transport;
+- loop deletion and singleton-loop reinsertion;
+- port-cycle cubic expansion;
+- adaptive binary ordering and flow-preserving expansion;
+- the isolated classical `BinaryEightFlow` boundary;
+- assembly of the full finite-active-edge CDC theorem.
+
+These are paper-level mathematical arguments. They are not automatically Lean-checked by their inclusion in the corpus.
+
+The external six-flow citation to Seymour is verified. The exact primary Tutte theorem/page source for the equal-order group-flow existence input remains a publication source gate. Existence and counting theorems must remain distinct.
+
+## 4. Formal correspondence still required
+
+The canonical invariant local object is
 
 $$
-\text{original Lean local family}
-\longleftrightarrow
 \kappa_v+L_v
 =
 \operatorname{Char}_{q_v}(L_v).
 $$
 
-It then proves rank-three compatibility through the quadratic-Lagrangian
-intersection theorem.
+The existing Lean local-family API uses the original branching presentation. Their mathematical equivalence is documented, but the bridge is not yet a checked Lean term.
 
-This identification and the invariant proof are paper-level mathematics until
-separately formalized. The existing Lean theorem and the canonical corpus should
-therefore be treated as corresponding presentations with a documented
-mathematical identification, not as literally the same checked term.
+Similarly, the current Lean indexed support construction has not yet been factored formally through the named graph-level multiset even-cover predicate and the outer collapse shell.
 
-## 4. Cover factorization and outer reduction not yet machine-checked
+## 5. Five-support mathematical status
 
-The canonical graph-theoretic factorization is
+The reconstructed `five-support/` corpus integrates theorem-level public arguments, exact finite classifications, counterexamples, and open programmes from checkpoint
 
-$$
-\begin{array}{c}
-\text{finite bridgeless multigraph}\
-\downarrow\;\text{delete loops}\
-\text{loopless bridgeless core}\
-\downarrow
-\text{cubic expansion with rank-three flow}\
-\downarrow
-\text{compatible affine family}\
-\downarrow
-\text{graph-level multiset even double cover}\
-\downarrow
-\text{vertex-even/cut-even bridge on the loopless expansion}\
-\downarrow
-\text{pure cut-even collapse transport}\
-\downarrow
-\text{even double cover of the loopless original core}\
-\downarrow
-\text{one final circuit decomposition}\
-\downarrow\;\text{reinsert two singleton circuits per loop}\
-\text{cycle double cover of the original multigraph}.
-\end{array}
-$$
+`dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`.
 
-The current Lean proof passes through relevant even supports internally, but the
-following have not yet been formalized as the approved architecture:
+### Theorem-level public mathematics
 
-- a named graph-level even-double-cover predicate and construction theorem;
-- finite-support circuit decomposition at its weakest natural hypothesis;
-- vertex-even/cut-even bridge lemmas under the current loopless convention;
-- pure cut-even graph-collapse transport;
-- loop deletion and singleton-loop reinsertion;
-- the independent port-cycle expansion and the expansion-first outer shell;
-- adaptive prefix avoidance and the flow-preserving adaptive expansion;
-- the isolated classical `BinaryEightFlow` interface, including componentwise
-  assembly and the loopless characteristic-two adapter;
-- the full unconditional theorem.
+The following are written with general mathematical arguments in the public source surface and synthesized in the corpus:
 
-The chapter
-[`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md)
-records the present mathematical factorization. It is not itself evidence that
-these statements are already checked.
+- root-valued $E_5$ flow and equivalent five-support formulations;
+- universal compatible eight-support root lift above a cubic Fano flow;
+- fixed-plane component-parity/singular-quotient criterion;
+- Schur, stress, Fourier, and colour-cut equivalents;
+- root-lift/cycle-face-surface/dual-triangulation correspondence;
+- complete componentwise criterion $T_g^{(1)}\to\mathscr A_5$;
+- exact factorable half-cube classification in its narrowed scope;
+- dominating-clique capacity for ranks two through five;
+- gauge/Petrial correspondence and marked-core affine occurrence loci;
+- exact internal switch correction image and internal/external dichotomy;
+- three-edge-cut gluing and ten-state four-edge interface;
+- cap forcing, pairing alignment, routing coordinates, and uniform-routing elimination;
+- affine holonomy, root-fibre section theory, Tait-resolution equivalence, and Type H Tait escape;
+- BBD root rigidity, $H^1(S_5,E_5)=0$, and canonical defect flow;
+- $K_6$ completion, defect strips, variational defect forest, and Petersen transport;
+- DDD atom triality, unique bad route, rank-two Tait escape;
+- full-rank curvature/common-cut duality and flat-potential equivalence.
 
-## 5. Paper-proof layer
+“Theorem-level” means a mathematical statement and argument are written. It does not mean independently audited, formalized, peer reviewed, or accepted for publication.
 
-The following canonical chapters contain written theorem-level arguments:
+### Exact finite computational mathematics
 
-- [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md);
-- [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md);
-- [`reduction/outer-shell-and-binary-flow.md`](reduction/outer-shell-and-binary-flow.md);
-- [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md);
-- [`rank-hierarchy/transgression-and-dual-fano-residue.md`](rank-hierarchy/transgression-and-dual-fano-residue.md);
-- [`rank-hierarchy/rank-four-first-obstruction.md`](rank-hierarchy/rank-four-first-obstruction.md);
-- [`reduction/incidence-to-tensor-complex.md`](reduction/incidence-to-tensor-complex.md);
-- [`tensor/code-flag-complex.md`](tensor/code-flag-complex.md);
-- [`tensor/exact-sequences-and-functoriality.md`](tensor/exact-sequences-and-functoriality.md);
-- [`tensor/torsion-and-rigidity.md`](tensor/torsion-and-rigidity.md);
-- [`gauge/gauge-modes-and-circuits.md`](gauge/gauge-modes-and-circuits.md);
-- [`gauge/interface-gluing.md`](gauge/interface-gluing.md).
+Exact computation supports:
 
-“Theorem-level” means that a mathematical statement and argument are written. It
-does not mean peer review, independent line-by-line audit, or Lean formalization.
+- fixed-flow cube obstruction;
+- thirty-vertex renewal and switch censuses;
+- complete Petersen Fano-flow/fibre/surface/switch classification;
+- flower-$J_5$ mixed-core and one-step neighbourhood classification;
+- small four-pole profile census;
+- routing and monodromy tables;
+- atom counts and explicit no-two-cut/nonflat witnesses;
+- root-fibre and cohomology tables;
+- selected reserve-code and renewal modules.
 
-The chapter
-[`reduction/outer-shell-and-binary-flow.md`](reduction/outer-shell-and-binary-flow.md)
-now gives the paper-level outer-shell packet. It proves the finite-active-edge
-port-cycle expansion, exact collapse data, preservation of bridgelessness, the
-adaptive binary ordering theorem, and both the expansion-first and adaptive
-flow-first routes. Its `BinaryEightFlow` node remains a classical external
-Seymour--Tutte input. None of the outer shell, adaptive ordering, or the
-Seymour--Tutte input is thereby machine-checked.
+These are exact theorems about named finite objects. They do not establish universal graph statements.
 
-The verified Seymour source is P. D. Seymour, “Nowhere-zero 6-flows”,
-*Journal of Combinatorial Theory, Series B* **30** (1981), 130–135, DOI
-`10.1016/0095-8956(81)90058-7`. The exact primary Tutte theorem and page pinpoint
-remain an unresolved publication source gate; the existence theorem and the
-flow-counting theorem must continue to be cited as distinct statements.
+### Open five-support mathematics
 
-## 6. Exact computational layer
+Not proved:
 
-Exact finite calculations support:
+- the global five-support cycle-double-cover statement;
+- universal existence of a good Fano flow or good compatible lift;
+- common-cut localization in the full-rank nonflat atom sector;
+- a composition-safe finite interface for the flat potential;
+- zero-network/co-root-forest pruning;
+- Type T decomposition;
+- elimination of all residual Type H obstruction families;
+- full-cap-profile or arbitrary four-pole realizability theorem;
+- horizontal escape/decomposition for every bad-flow component;
+- completeness of the target obstruction library.
 
-- local residue identities in small ranks;
-- the canonical rank-four $K_{3,3}$ obstruction;
-- the triangular-prism comparison;
-- small-graph gauge-circuit censuses;
-- selected matrices in the incidence-to-tensor bridge.
+## 6. Five-support formal status
 
-These calculations verify examples, expose obstructions, and detect errors. They
-do not replace the general proofs.
+No theorem in the reconstructed five-support corpus is represented here as Lean-formalized unless separately identified in the companion repository. The reconstruction did not modify Lean.
 
-## 7. Conditional and programmatic layer
+In particular, there is no checked Lean theorem asserting:
 
-The following claims remain conditional or programmatic:
+- existence of a five-support cover for every bridgeless cubic graph;
+- the componentwise half-cube criterion as a formal graph/surface theorem;
+- the four-pole routing reductions;
+- the holonomy, defect-forest, atom-curvature, or localization results.
 
-- “mixed Schur–Koszul complex” as established terminology or a novel general
-  theory;
-- a complete categorical treatment of deletion, contraction, and arbitrary
-  graph interfaces;
-- decorated higher-rank residues beyond the scalar compatibility criterion;
-- integral or polynomial lifts of binary tensor torsion;
-- transition-matroid, delta-matroid, embedding, Petrial, and surface-polynomial
-  theories whose source bodies are absent from the current tree;
-- publication-level novelty claims before a proper literature comparison.
+Some underlying affine compatibility, gauge, and support-construction infrastructure is machine-checked in another presentation. That does not transfer formal status to the new five-support statements without explicit bridges.
 
-## 8. Reliability rules
+## 7. Independent-review status
 
-1. A clean invariant reformulation does not inherit Lean status from an older
-   equivalent-looking implementation without a checked bridge.
-2. A finite computation supports an example or identity but does not establish
-   an all-rank theorem.
-3. A cubic-flow cycle double cover is not the unconditional CDC theorem.
-4. The approved full finite bridgeless-multigraph theorem is the natural external
-   target; the current loopless ambient-finite Lean declaration is an unchanged
-   implementation checkpoint.
-5. An approved migration direction is not an implemented declaration.
-6. Historical filenames, prompts, and superseded ontologies are not current
-   mathematical authority.
-7. Director-reviewed paper proofs of adaptive ordering and the outer shell do not
-   acquire Lean status; Seymour and Tutte remain external until an explicit
-   formal theorem boundary or implementation is accepted.
+The accepted outer-shell MP2 packet has its recorded Director disposition and review history. The full 78-packet five-support checkpoint has not received one independent line-by-line audit as a whole.
 
-## 9. Scope of the canonical integration
+This reconstruction performed a Curator self-audit for consistency, dependency, scope, source coverage, and supersession. Self-audit is not independent mathematical review.
 
-The canonical corpus integrates every active mathematical Markdown dossier that
-was present on `main` at the start of the reorganization. It does not claim to
-reconstruct material available only as a filename and hash in the dated
-snapshot. That boundary is recorded in
-[`topology/README.md`](topology/README.md).
+A future independent audit should prioritize:
 
-Git history preserves superseded formulations and discovery order. Their former
-existence is not evidence that their terminology, theorem hierarchy, or
-reliability status remains current.
+1. the componentwise surface criterion and scope correction;
+2. the four-pole routing closure and physical realizability boundary;
+3. BBD root rigidity and cohomology assembly;
+4. variational defect-forest inequalities;
+5. atom route-lock, curvature, and flat-potential proofs;
+6. every transfer step used in a future localization/composition theorem.
+
+## 8. Source status
+
+- canonical CDC sources live in `core/` and `reduction/`;
+- reconstructed five-support mathematics lives in `five-support/`;
+- exact discovery, priority, finite-evidence, correction, and intermediate sources remain in `research/`;
+- private notebook/recovery branches remain mapped evidence and are not copied wholesale;
+- snapshot-only older topological sources remain subject to their restoration boundary.
+
+The source-to-corpus map is [`MIGRATION_LEDGER.md`](MIGRATION_LEDGER.md).
+
+## 9. Publication and release status
+
+This reconstruction did not:
+
+- write or revise a manuscript;
+- authorize arXiv submission;
+- establish novelty relative to the literature;
+- create a release or tag;
+- modify a DOI or Zenodo record;
+- implement a timestamp or priority-attestation workflow.
+
+The public Git history records exact source priority. Publication decisions remain separate.
+
+## 10. Reliability rules
+
+1. Natural reformulation does not inherit Lean status without a checked bridge.
+2. Exact finite computation does not prove a universal theorem.
+3. A bad lift, bad fixed-flow fibre, and bad graph have different quantifiers.
+4. $J_g\to\mathscr A_5$ is factorable compression; the complete fixed-lift object is $T_g$.
+5. A $K_6$-free graph need not map to the half-cube.
+6. Connected-cycle switches and general binary-cycle switches are not the same adjacency notion.
+7. Route-lock does not imply a graph two-cut or flatness.
+8. A successful local algebraic resolution is not valid graph replacement until boundary semantics and gluing are proved.
+9. Superseded packets may retain valid narrower theorems and exact evidence.
+10. Corpus placement, Director acceptance, independent audit, Lean verification, peer review, and publication are separate axes.
