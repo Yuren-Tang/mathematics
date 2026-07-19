@@ -1,105 +1,193 @@
-# Migration ledger
+# AffineCDC source-to-corpus migration ledger
 
-This ledger records the transition from the historical flat directory of theorem
-dossiers to the canonical mathematical corpus. It is organized by source file,
-not by discovery date. A source is removed from the active tree only after its
-substantive mathematical content has a named destination below. Git history
-preserves every deleted source verbatim.
+This ledger records the substantive migration of the complete public five-support checkpoint
+
+`research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`
+
+into the reconstructed natural mathematical corpus.
+
+All inherited source files remain in `projects/affine-cdc/research/` with their exact Git history. Migration means that a future mathematical reader should use the named corpus destination rather than reconstructing the theorem from discovery-order packets.
+
+The earlier migration from the historical flat AffineCDC dossiers into `core/`, `rank-hierarchy/`, `reduction/`, `tensor/`, and `gauge/` was completed before this reconstruction. Its exact prior ledger remains recoverable at base `7a166d2eb5642ec967f640323488e49f1c2ad5d4` and in Git history.
 
 Status terms:
 
-- **merged** — all substantive content is integrated into one canonical chapter;
-- **split** — distinct mathematical components were moved to different chapters;
-- **superseded** — a later theorem corrects or strictly strengthens the source;
-- **example absorbed** — an example is retained inside the theorem it tests;
-- **programme deferred** — the source body is absent or the claim remains
-  programmatic.
+- **integrated** — theorem and proof are synthesized in the named chapter;
+- **split** — distinct mathematics has multiple named destinations;
+- **correction controlling** — the source narrows or replaces an earlier interpretation;
+- **finite evidence** — retained primarily as an exact finite theorem/certificate;
+- **alternative proof** — retained as an independently useful proof family;
+- **programme boundary** — open targets and limitations are integrated, not promoted to theorem.
 
-## 1. Compatibility core
+## 1. Root-flow and lifting corpus
 
-| Historical source | Canonical destination | Action and mathematical decision |
-|---|---|---|
-| `affine-incidence-pair-complex.md` | [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md) | **Merged.** The pair complex, its $H^0/H^1$, affine class, quotient-sheaf cancellation, and dual stress complex now form one rank-independent chapter. |
-| `theory-map-v1-affine-incidence-pair.md` | [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md), [`reduction/incidence-to-tensor-complex.md`](reduction/incidence-to-tensor-complex.md) | **Split and superseded.** Its compatibility image is retained; its provisional description of the tensor complex as a compression is replaced by the later chain-level zigzag. |
-| `fano-quadratic-lagrangian-package.md` | [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md) | **Merged.** The canonical quadratic plane, local Lagrangian, characteristic torsor, legal dual configurations, cross-bit, and support parity are one local theorem package. |
-| `affine-lagrangian-intersection.md` | [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md) | **Merged.** The abstract characteristic-torsor intersection theorem and its global application are now the central positive proof. |
-| `fano-quadratic-transgression.md` | [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md), [`rank-hierarchy/transgression-and-dual-fano-residue.md`](rank-hierarchy/transgression-and-dual-fano-residue.md) | **Split.** The rank-three quadratic identity and support-boundary proof are equivalent views of the core theorem; the odd-valence plane-supported extension is preserved explicitly. |
+Primary destination:
+[`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md).
 
-## 2. Rank hierarchy
+- `FIVE_CDC_FIXED_FLOW_REDUCTION_V1.md` — **integrated / negative boundary**: fixed-flow component obstruction and cube six-support certificate.
+- `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` — **integrated**: universal plus-type anisotropic lift and orthogonal rank-reduction viewpoint.
+- `FIVE_CDC_ROOT_FLOW_TRIANGLE_COMPLEX_V1.md` — **integrated**: root-valued flow and local triangle complex.
+- `FIVE_CDC_SINGULAR_QUOTIENT_LIFT_V1.md` — **integrated / alternative proof**: singular-line fibres and component holonomy.
+- `FIVE_CDC_ANISOTROPIC_RANK_FOUR_FLOW_V1.md` — **integrated**: minus-type four-space and five-support root orbit.
+- `FIVE_CDC_QUADRATIC_CYCLE_EQUATION_V1.md` — **integrated / alternative proof**: quadratic cycle equation.
+- `FIVE_CDC_MATCHING_FOUR_FLOW_BRIDGE_V1.md` — **integrated**: matching plus nowhere-zero four-flow equivalence.
+- `FIVE_CDC_K5_COGRAPHIC_MAP_V1.md` — **integrated**: cographic/cycle-continuous formulation.
+- `FIVE_CDC_SCHUR_QUOTIENT_CRITERION_V1.md` — **integrated / alternative proof**: Schur boundary criterion.
+- `FIVE_CDC_COLOUR_CUT_REFINEMENT_V1.md` — **integrated as preferred proof**: equal outside-colour cut parity.
+- `FIVE_CDC_UNUSED_MATCHING_COMPRESSION_V1.md` — **integrated as sufficient template**: unused three-matching compression.
+- `FIVE_CDC_UNUSED_MATCHING_ORBITS_V1.md` — **integrated / finite geometry**: three affine matching orbits.
+- `FIVE_CDC_AFFINE_PLANE_K4_RESIDUE_V1.md` — **split** between root lifting and gauge controllability; seven strong sufficient slice tests.
 
-| Historical source | Canonical destination | Action and mathematical decision |
-|---|---|---|
-| `rank-three-coincidence-principle.md` | [`rank-hierarchy/transgression-and-dual-fano-residue.md`](rank-hierarchy/transgression-and-dual-fano-residue.md) | **Merged.** Support degree, local half-dimension, quotient-sheaf index, and quadraticity now appear as one rank-three coincidence theorem. |
-| `higher-degree-fano-transgression.md` | [`rank-hierarchy/transgression-and-dual-fano-residue.md`](rank-hierarchy/transgression-and-dual-fano-residue.md) | **Merged.** The all-rank degree-lowering identity and outside-plane parity are the positive first half of the rank hierarchy. |
-| `dual-fano-residue-theorem.md` | [`rank-hierarchy/transgression-and-dual-fano-residue.md`](rank-hierarchy/transgression-and-dual-fano-residue.md) | **Merged as controlling theorem.** The hidden annihilator-plane residue is the complete all-rank compatibility criterion. |
-| `rank-four-cubic-directional-residue.md` | [`rank-hierarchy/rank-four-first-obstruction.md`](rank-hierarchy/rank-four-first-obstruction.md) | **Merged as specialization.** The alternating-form quotient, cross-bit, Pfaffian, cubic residue, and global formula are the rank-four equation of the all-rank residue. |
-| `rank-four-k33-residue-example.md` | [`rank-hierarchy/rank-four-first-obstruction.md`](rank-hierarchy/rank-four-first-obstruction.md) | **Example absorbed.** The explicit flow matrix, essential stress, local residue table, and incompatibility computation are retained in full. |
-| `rank-four-six-vertex-dichotomy.md` | [`rank-hierarchy/rank-four-first-obstruction.md`](rank-hierarchy/rank-four-first-obstruction.md) | **Merged.** The triangular-prism solution and the $K_{3,3}$ obstruction are presented together as the minimal sharpness theorem. |
-| `symplectic-vertex-plane-parity.md` | [`rank-hierarchy/rank-four-first-obstruction.md`](rank-hierarchy/rank-four-first-obstruction.md) | **Merged as interpretation.** Global symplectic parity and the essential local anomaly now follow the rank-four residue theorem. |
+## 2. Equivalent proofs and controllability
 
-## 3. Incidence-to-tensor reduction
+Primary destination:
+[`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md).
 
-| Historical source | Canonical destination | Action and mathematical decision |
-|---|---|---|
-| `incidence-tensor-comparison.md` | [`reduction/incidence-to-tensor-complex.md`](reduction/incidence-to-tensor-complex.md) | **Merged and corrected.** The cohomological exact sequences are retained. The statement that no chain-level quotient was known is removed because it was superseded by the later bridge. |
-| `chain-level-incidence-tensor-bridge.md` | [`reduction/incidence-to-tensor-complex.md`](reduction/incidence-to-tensor-complex.md) | **Merged as controlling refinement.** The universal tension resolution, lifted incidence complex, extended quotient sheaf, and canonical zigzag now govern the relation. |
+Secondary destination:
+[`five-support/gauge-and-reconfiguration.md`](five-support/gauge-and-reconfiguration.md).
 
-## 4. Tensor and code theory
+- `FIVE_CDC_ROOT_LIFT_FOURIER_STRESS_DUALITY_V1.md` — **alternative proof**: primal controllability, dual stresses, Fourier characters.
+- `FIVE_CDC_AFFINE_SUBSPACE_ARRANGEMENT_SIEVE_V1.md` — **alternative proof**: Fourier-free arrangement and Möbius form.
+- `FIVE_CDC_ADMISSIBLE_SWITCH_IMAGE_V1.md` — **integrated**: exact one-direction correction image and dual annihilator.
+- `FIVE_CDC_ROOT_ADMISSIBLE_HOLONOMY_LINEARIZATION_V1.md` — **split**: finite root-fibre lifting and local-to-global obstruction.
+- `FIVE_CDC_FLOW_TENSION_FINITE_STATE_V1.md` — **split / trust-boundary warning**: general finite-state tension obstruction, narrowed by the genuine switch-flow packets.
+- `FIVE_CDC_SWITCH_INCIDENCE_GRAPH_V1.md` — **integrated / alternative duality**: switch-incidence graph and obstruction pairing.
+- `FIVE_CDC_FLOW_SWITCH_HARMONIC_QUOTIENT_SURGERY_V1.md` — **integrated**: harmonic quotient update under flow switching.
+- `FIVE_CDC_INTERNAL_EXTERNAL_SWITCH_DICHOTOMY_V1.md` — **integrated as controlling theorem**: fixed-quotient correction versus reslicing.
 
-| Historical source | Canonical destination | Action and mathematical decision |
-|---|---|---|
-| `flow-tensor-datum.md` | [`reduction/incidence-to-tensor-complex.md`](reduction/incidence-to-tensor-complex.md), [`tensor/code-flag-complex.md`](tensor/code-flag-complex.md), [`tensor/torsion-and-rigidity.md`](tensor/torsion-and-rigidity.md), [`gauge/gauge-modes-and-circuits.md`](gauge/gauge-modes-and-circuits.md) | **Split and ontology corrected.** Every theorem is retained, but the historical claim that the tensor datum is the master compatibility object is rejected. |
-| `flow-tensor-theory-foundations-v0.md` | [`tensor/code-flag-complex.md`](tensor/code-flag-complex.md), [`tensor/exact-sequences-and-functoriality.md`](tensor/exact-sequences-and-functoriality.md), [`tensor/torsion-and-rigidity.md`](tensor/torsion-and-rigidity.md) | **Split.** Definitions, index, enhancements, exact sequences, and validation tests are assigned to their actual theorem blocks. |
-| `code-flag-schur-koszul.md` | [`tensor/code-flag-complex.md`](tensor/code-flag-complex.md) | **Merged.** Based quotient data, nested code flags, Schur multiplication, syzygies, constraint matroid, matroid quotient, and recognition caveat now form one abstract chapter. |
-| `divided-square-exact-sequence.md` | [`tensor/exact-sequences-and-functoriality.md`](tensor/exact-sequences-and-functoriality.md), [`tensor/torsion-and-rigidity.md`](tensor/torsion-and-rigidity.md) | **Split.** The canonical exact sequence and Veronese quotient are structural; their determinant-line consequence belongs to torsion. |
-| `coefficient-quotient-exact-sequence.md` | [`tensor/exact-sequences-and-functoriality.md`](tensor/exact-sequences-and-functoriality.md) | **Merged.** The relative wedge complex, long exact sequence, and rank-drop formulas remain together. |
-| `flow-tensor-morphisms-and-automorphisms.md` | [`tensor/code-flag-complex.md`](tensor/code-flag-complex.md) | **Merged.** Diagonal coalgebra maps, strict morphisms, code-flag automorphisms, forgotten structure, and categorical limits are one section. |
-| `fano-torsion.md` | [`tensor/torsion-and-rigidity.md`](tensor/torsion-and-rigidity.md) | **Merged.** The top wedge, rigidity criterion, basis-packing expansion, Hodge relation, and cut behaviour form one invariant theorem. |
+## 3. Surface and half-cube corpus
 
-## 5. Gauge, circuits, and interfaces
+Primary destination:
+[`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md).
 
-| Historical source | Canonical destination | Action and mathematical decision |
-|---|---|---|
-| `harmonic-cut-quotients.md` | [`gauge/gauge-modes-and-circuits.md`](gauge/gauge-modes-and-circuits.md) | **Merged as controlling geometric theorem.** Gauge words, tensor dependencies, and flow–tension quotients are proved equivalent. |
-| `even-gauge-code.md` | [`gauge/gauge-modes-and-circuits.md`](gauge/gauge-modes-and-circuits.md) | **Merged.** Third-order bicycle orthogonality, evenness in rank at most three, and the rank-four $K_6$ sharpness example are retained. |
-| `weight6-circuit-classification.md` | [`gauge/gauge-modes-and-circuits.md`](gauge/gauge-modes-and-circuits.md) | **Merged.** The complete proof and low-weight table through weight six are retained; weight eight remains open. |
-| `interface-correspondence.md` | [`gauge/interface-gluing.md`](gauge/interface-gluing.md) | **Merged.** Cycle-space fiber products, cographic pushouts, mixed variance, theta interfaces, and two-/three-edge laws are one gluing theorem. |
-| `interface-line-duality.md` | [`gauge/interface-gluing.md`](gauge/interface-gluing.md) | **Merged as refinement.** The common line $L_S$, matching quotient $\Gamma/L_S$, universal exact sequences, affine fibers, and cap-extension scope are integrated. |
+- `FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_V1.md` — **integrated as controlling geometry**: cycle-face surface, dual triangulation, componentwise half-cube criterion.
+- `FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_ERRATUM_V1.md` — **correction controlling**: corrected witness table; theorem retained.
+- `FIVE_CDC_HALFCUBE_SCOPE_CORRECTION_V1.md` — **correction controlling**: $J_g$ factorable scope versus full $T_g$ criterion; connected-cycle adjacency distinction.
+- `FIVE_CDC_COMPONENTWISE_PROGRAMME_CHECKPOINT_V1.md` — **correction controlling / finite evidence**: corrected componentwise census and revised agenda.
+- `FIVE_CDC_HALFCUBE_SUBGRAPH_CLASSIFICATION_V1.md` — **integrated in narrowed scope**: exact $K_6/K_8-C_5$ classification for $J\subseteq K_8$.
+- `FIVE_CDC_HALFCUBE_CLIQUE_LINK_CAPACITY_V1.md` — **integrated**: exact clique links.
+- `FIVE_CDC_DOMINATING_CLIQUE_EXACT_CAPACITY_V1.md` — **integrated as target theorem**: $K_r\vee H$ chromatic criterion for $2\le r\le5$.
+- `FIVE_CDC_NO_UNIVERSAL_K8_TO_K5_COMPRESSION_V1.md` — **integrated / negative boundary**: no source-independent universal compression.
+- `FIVE_CDC_SOURCE_DEPENDENT_HALFCUBE_COMPRESSION_V1.md` — **integrated in factorable subtheory**: used-label-graph homomorphism route.
+- `FIVE_CDC_K6_FREE_HALFCUBE_WARNING_V1.md` — **integrated / negative boundary**: $K_6$-free is insufficient in general.
+- `FIVE_CDC_K6_LABEL_GRAPH_OBSTRUCTION_V1.md` — **split** between target obstruction and finite laboratory evidence.
+- `FIVE_CDC_BAD_LIFT_CONTAINER_DICHOTOMY_V1.md` — **integrated as historical factorable classification**; not the full componentwise obstruction.
+- `FIVE_CDC_DEFECT_CORE_QUOTIENT_AND_TWO_LEVEL_ARRANGEMENT_V1.md` — **split**: exact factorable core theory retained; two-level architecture integrated in gauge chapter.
+- `FIVE_CDC_DEFECT_COVER_DEPTH_AND_IDEAL_PIVOT_V1.md` — **integrated in narrowed factorable dynamics**: ideal target escape and source-realizability boundary.
 
-## 6. Working syntheses and navigation
+## 4. Gauge, Petrial, and marked-core corpus
 
-| Historical source | Canonical destination | Action and mathematical decision |
-|---|---|---|
-| `current-synthesis.md` | all canonical chapters; especially [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md) and [`FORMAL_STATUS.md`](FORMAL_STATUS.md) | **Superseded.** Its mathematics is distributed to theorem chapters; discovery-stage sections and repeated proofs are not retained as parallel exposition. |
-| `NOTE_MAP_AND_STATUS.md` | this ledger and [`FORMAL_STATUS.md`](FORMAL_STATUS.md) | **Superseded.** The old ledger classified dossiers; the new ledger records completed migration and current reliability. |
-| historical project `README.md` | [`README.md`](README.md) | **Rewritten.** The entry point now links only to canonical chapters. |
-| first version of `MATHEMATICAL_ARCHITECTURE.md` | [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md) | **Rewritten.** It is reduced to a dependency map and no longer duplicates full proofs. |
-| first version of `PUBLICATION_PROGRAM.md` | [`PUBLICATION_PROGRAM.md`](PUBLICATION_PROGRAM.md) | **Rewritten.** Paper blocks cite canonical chapters rather than historical dossiers. |
+Primary destinations:
 
-## 7. Snapshot-only topological sources
+- [`five-support/gauge-and-reconfiguration.md`](five-support/gauge-and-reconfiguration.md);
+- [`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md).
 
-The source bodies named in the 2026-07-14 manifest are absent from the active
-tree. Their status is recorded in
-[`topology/README.md`](topology/README.md).
+- `FIVE_CDC_GAUGE_AS_PIECEWISE_ROOT_TRANSLATION_V1.md` — **integrated**: piecewise translation structure.
+- `FIVE_CDC_GAUGE_PARTIAL_PETRIAL_CORRESPONDENCE_V1.md` — **integrated as controlling theorem**: gauge code equals admissible partial Petrials.
+- `FIVE_CDC_FACE_TRANSITION_OBSTRUCTION_ARRANGEMENT_V1.md` — **integrated**: fixed dart model, marked-face stabilizers, affine obstruction arrangements.
+- `FIVE_CDC_K6_ESCAPE_OR_FROZEN_CYCLE_CERTIFICATE_V1.md` — **integrated**: marked $K_6$ exposure, projective core, frozen exposed-cycle certificate.
+- `FIVE_CDC_K6_GAUGE_ESCAPE_V1.md` — **integrated / finite mechanism**: explicit gauge escape and renewal behaviour.
+- `FIVE_CDC_MIXED_CORE_AFFINE_ARRANGEMENT_V1.md` — **integrated as generalization**: mixed certificate species have affine occurrence loci.
+- `FIVE_CDC_FIXED_FANO_ORBIT_OBSTRUCTION_V1.md` — **finite evidence / negative boundary**: wholly bad fixed-flow fibre.
+- `FIVE_CDC_FIXED_FLOW_GRAPH_LEVEL_SEPARATION_V1.md` — **correction controlling**: fixed-lift/fixed-flow/graph-level quantifiers.
 
-The older quotient-sheaf, tensor, determinant, cut, higher-rank, and $K_{3,3}$
-themes have active replacements. The detailed embedding, Petrial, transition,
-delta-matroid, surface-census, and state-polynomial content remains
-**programme deferred** until the source bodies are restored and read.
+## 5. Renewal and two-level dynamics
 
-## 8. Completeness criterion for this migration
+Primary destinations:
 
-The migration is complete with respect to the active Markdown mathematics that
-was present on `main` when the work began if all of the following hold:
+- [`five-support/gauge-and-reconfiguration.md`](five-support/gauge-and-reconfiguration.md);
+- [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
 
-1. every source above has a canonical destination;
-2. every unique theorem, proof mechanism, example, counterexample, exact
-   sequence, and explicit limitation has been preserved;
-3. superseded conclusions are absent from the canonical chapters;
-4. only `$...$` and `$$...$$` are used as TeX delimiters;
-5. internal links resolve within the new hierarchy;
-6. the snapshot-only boundary is not represented as reconstructed mathematics;
-7. Git history, rather than duplicate active files, preserves the historical
-   formulations.
+- `FIVE_CDC_INTRINSIC_RENEWAL_CUBE_COORDINATES_V1.md` — **finite evidence**: intrinsic three-cube coordinates.
+- `FIVE_CDC_UNIVERSAL_RENEWAL_CUBE_TEMPLATE_V1.md` — **finite module / terminology narrowed**: exact recurring module, not universal fibre theorem.
+- `FIVE_CDC_UNIVERSAL_SIX_CUBE_MODULE_V1.md` — **finite module**: six-dimensional renewal and redundant lines.
+- `FIVE_CDC_ESSENTIAL_RENEWAL_QUOTIENT_V1.md` — **integrated**: quotient by invisible directions.
+- `FIVE_CDC_RENEWAL_SKELETON_AND_RESERVE_CODE_CENSUS_V1.md` — **finite evidence**: complete selected residual census and reserve-code data.
+- `FIVE_CDC_HORIZONTAL_RENEWAL_NEIGHBOURHOOD_V1.md` — **finite evidence**: exact flower-$J_5$ one-step neighbourhood and horizontal escape statistics.
+- `FIVE_CDC_COMPONENTWISE_DUAL_CENSUS_V1.md` — **finite evidence**: corrected componentwise dual census.
+- `FIVE_CDC_MECHANISM_CLOSURE_MAP_V1.md` — **programme synthesis superseded by corpus**: theorem/finite/open distinctions integrated throughout.
 
-The final audit checks these conditions before the branch can replace `main`.
+## 6. Calibrating graph laboratories
+
+Primary destination:
+[`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
+
+- `FIVE_CDC_PETERSEN_ALL_FANO_FLOWS_V1.md` — **finite theorem**: complete flow/fibre/surface/switch classification and $\mathfrak B(P)=\varnothing$.
+- `FIVE_CDC_FLOWER_J5_MIXED_CORE_OBSTRUCTION_V1.md` — **finite theorem / target correction**: compatible $K_6$-free obstruction and two-state renewal.
+- `FIVE_CDC_HORIZONTAL_RENEWAL_NEIGHBOURHOOD_V1.md` — **finite theorem**: complete one-step connected-cycle neighbourhood.
+- `FIVE_CDC_FIXED_FLOW_GRAPH_LEVEL_SEPARATION_V1.md` — **finite certificate plus quantifier theorem**: thirty-vertex three-edge-colouring.
+- `FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md` — **recovery evidence**: independently rerun bounded modules; truncated old verifier remains `CODE-PARTIAL`.
+
+## 7. Cut and four-pole corpus
+
+Primary destination:
+[`five-support/cuts-four-poles-and-routing.md`](five-support/cuts-four-poles-and-routing.md).
+
+- `FIVE_CDC_FOUR_EDGE_BOUNDARY_SIGNATURES_V1.md` — **integrated as boundary foundation**: ten states and exact gluing.
+- `FIVE_CDC_FOUR_EDGE_CAP_FORCING_KERNELS_V1.md` — **integrated / finite closure**: cap forcing and four abstract disjoint kernels.
+- `FIVE_CDC_FOUR_POLE_KEMPE_CLOSURE_V1.md` — **integrated**: Kempe closure, routing game, and realization boundary.
+- `FIVE_CDC_CAP_KEMPE_PAIRING_ALIGNMENT_V1.md` — **integrated as controlling graph theorem**: transition iff path pairing aligns with cap matching.
+- `FIVE_CDC_SMALL_FOUR_POLE_PROFILE_CENSUS_V1.md` — **finite evidence**: exact small census and lower bound.
+- `FIVE_CDC_K4_RESERVE_LINE_THREE_CUT_REDUCTION_V1.md` — **integrated**: reserve line gives cyclic three-cut and is excluded from minimal counterexamples.
+- `FIVE_CDC_ROUTING_WEIGHT_AND_HOLONOMY_DICHOTOMY_V1.md` — **integrated**: routing weights, uniform-routing elimination, Type T/Type H reduction.
+
+## 8. Rainbow holonomy and Tait corpus
+
+Primary destinations:
+
+- [`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md);
+- [`five-support/cuts-four-poles-and-routing.md`](five-support/cuts-four-poles-and-routing.md).
+
+- `FIVE_CDC_RAINBOW_CHOICE_PARITY_SQUARE_V1.md` — **finite coordinate precursor**: parity square and raw choice quotient.
+- `FIVE_CDC_RAINBOW_RESIDUAL_QUOTIENT_COORDINATES_V1.md` — **finite coordinate theorem / negative result**: four binary coordinates, no common $V_4$ coset.
+- `FIVE_CDC_INTERIOR_AFFINE_HOLONOMY_NORM_V1.md` — **integrated**: affine semidirect product, norm defects, cyclic cohomology.
+- `FIVE_CDC_GENUINE_RAINBOW_PATH_FAMILY_REDUCTION_V1.md` — **correction controlling**: genuine connected path family removes spurious abstract branches.
+- `FIVE_CDC_RAINBOW_SWITCH_FLOW_TAIT_RESOLUTION_V1.md` — **integrated as controlling theorem**: quotient-flow lifting equals Tait resolution.
+- `FIVE_CDC_TYPE_H_LOCAL_TO_GLOBAL_HOLONOMY_STACK_V1.md` — **integrated**: edge/vertex/component local-system obstruction levels.
+- `FIVE_CDC_TYPE_H_TAIT_ESCAPE_V1.md` — **integrated as branch elimination**: root-linearizable zero-norm Type H escapes.
+- `FIVE_CDC_TAIT_TUTTE_STRUCTURE_BRIDGE_V1.md` — **split**: local Tait/line-field theorems integrated; Four Colour and five-flow programmes remain secondary/open.
+- `FIVE_CDC_ORIENTATION_TRANSGRESSION_AND_COEFFICIENT_HOLONOMY_V1.md` — **split**: orientable-flow extraction retained as downstream projection; coefficient transport remains secondary.
+
+## 9. BBD defects, forests, and atoms
+
+Primary destination:
+[`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md).
+
+- `FIVE_CDC_BBD_GLOBAL_HOLONOMY_AND_K6_DEFECT_STRIPS_V1.md` — **integrated as controlling BBD synthesis**: translation-kernel elimination, common origin, $K_6$ completion, defect strips, DDD exception.
+- `FIVE_CDC_DEFECT_MINIMAL_FOREST_PETERSEN_TRANSPORT_V1.md` — **integrated as controlling variational refinement**: induced defect forest and Petersen transducer.
+- `FIVE_CDC_DDD_ATOM_RESOLUTION_TRIALITY_V1.md` — **integrated**: atom/one-factor bijection and three resolutions.
+- `FIVE_CDC_ATOM_ROUTE_LOCK_CURVATURE_V1.md` — **integrated / precursor**: unique bad route, locked quotient, flatness class.
+- `FIVE_CDC_ATOM_ROUTE_LOCK_FANO_CURVATURE_V1.md` — **integrated as most complete atom synthesis**: rank drop, touch curvature, exact witnesses, flat potential.
+- `FIVE_CDC_ROUTE_LOCK_RANK_TWO_TAIT_ESCAPE_V1.md` — **integrated as branch closure**: rank-two Tait escape.
+- `FIVE_CDC_FULL_RANK_CURVATURE_DUAL_CERTIFICATE_V1.md` — **integrated**: common-cut dual certificate and odd terminal word.
+- `FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md` — **finite verification / correction support**: nonflat and no-two-cut witnesses.
+
+## 10. Frontier and programme boundaries
+
+Primary destination:
+[`five-support/frontier-localisation.md`](five-support/frontier-localisation.md).
+
+The open obligations distributed across the packets are consolidated as:
+
+- Type T unique-linkage decomposition;
+- Type H translation/zero/oddness reduction;
+- common-cut localization;
+- flat-potential finite interface;
+- zero-network and co-root-forest pruning;
+- DDD class identification/elimination;
+- full-cap-profile or realizability theorem;
+- horizontal bad-component escape/decomposition;
+- target obstruction completion beyond dominating cliques.
+
+No source packet proves the global five-support theorem.
+
+## 11. Completeness audit
+
+The exact checkpoint contains `78` public research files. Every file is named above at least once and has one of:
+
+- a substantive corpus destination;
+- a controlling correction role;
+- an exact finite-evidence destination;
+- an explicit retained programme-boundary purpose.
+
+No research source file was deleted, renamed, or rewritten in this reconstruction.
