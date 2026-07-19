@@ -38,7 +38,9 @@ The following layers are mathematically closed within their stated scopes:
 - common-cut component-incidence and odd-circuit localisation;
 - singleton/transition/quartic-core localisation;
 - unbounded abstract quartic witness designs and their symplectic form;
-- route-locked quotient Tait-phase representation, affine scalar-sheet plane, Kempe cycle differences, affine endpoint selectors, and aligned/crossed switch signatures.
+- route-locked quotient Tait-phase representation, affine scalar-sheet plane, Kempe cycle differences, affine endpoint selectors, and aligned/crossed switch signatures;
+- connected pairwise quartic transition skeletons and their ribbon interpretation;
+- the canonical quartic terminal `O^-(4,2)` nucleus, intrinsic `E_5/K_5` geometry, route `D_8` stabiliser, curvature carrier, terminal-block projection table, and split-or-peel recursion.
 
 Closed finite interfaces include the ten four-pole states, the exact small-four-pole census through six internal vertices, half-cube clique-link tables, Petersen Fano-flow census, calibrated graph laboratories, and atom/monodromy/root-fibre/cohomology tables.
 
@@ -89,7 +91,7 @@ The active theorem [`five-support/quartic-witness-designs.md`](five-support/quar
 
 Therefore incidence parity, block size, omitted points, and binary rank cannot bound `k` or force the five-point core.
 
-The active theorem [`five-support/route-locked-quotient-phase.md`](five-support/route-locked-quotient-phase.md) supplies the missing physical layer:
+The active theorem [`five-support/route-locked-quotient-phase.md`](five-support/route-locked-quotient-phase.md) supplies the first physical layer:
 
 1. after quotient by `\langle g\rangle`, `c` is a `\mathbf F_2^2` flow whose zero set is exactly `E_g`, together with one reconstructing binary phase;
 2. away from `E_g` the quotient is a Tait colouring, while endpoints of `E_g` are matched defect vertices with one repeated quotient colour;
@@ -98,15 +100,51 @@ The active theorem [`five-support/route-locked-quotient-phase.md`](five-support/
 5. every endpoint selector is a balanced affine function on the four sheets;
 6. every `g`-edge has one of nine ordered endpoint quotient labels, with aligned signatures `(0,0),(1,1),(1,1)` or crossed signatures `(0,1),(1,0),(1,1)`.
 
-Thus the former wording “prove that `\eta` is a cut in the underlying four-pole” is false and retired. The correct immediate frontier is:
+The active theorem [`five-support/quartic-transition-skeletons.md`](five-support/quartic-transition-skeletons.md) proves that every pair of quartic sheets has a connected bipartite transition skeleton with:
+
+- two terminal leaves;
+- all block vertices of degree four;
+- exact cycle rank `2k`;
+- a terminal-to-terminal Euler trail;
+- a physical ribbon rotation inherited from scalar circuits.
+
+The active theorem [`five-support/quartic-terminal-nucleus.md`](five-support/quartic-terminal-nucleus.md) now classifies the abstract unbounded mechanism:
+
+1. the four whole-sheet block sums span a canonical nondegenerate minus-type four-space `S`;
+2. its five nonzero singular vectors and ten anisotropic vectors form an intrinsic `E_5/K_5` geometry;
+3. the fixed route matching gives the canonical coordinate stabiliser `D_8`;
+4. the odd terminal curvature quotient is canonically
+   $$
+   S/s_\infty^\perp\cong\mathbf F_2;
+   $$
+5. a block containing one or two of the other omitted points has anisotropic root projection to `S`;
+6. every sheet has terminal distribution `3`, `2+1`, or `1+1+1`;
+7. if some sheet is split, two or three root-projected blocks are exposed;
+8. if all sheets are concentrated and `k\ge2`, the canonical nucleus peels off and the remaining blocks form a quartic witness design of level `k-1`;
+9. concentrated extension is the exact inverse operation, with the five-point nucleus as recursion base.
+
+Thus the abstract quartic branch satisfies the exact dichotomy
+
+$$
+\boxed{
+\text{root-exposed split}
+\quad\text{or}\quad
+\text{canonical nucleus peel }k\mapsto k-1.
+}
+$$
+
+This is a strict algebraic progress theorem. It is not yet a physical graph-composition theorem.
+
+The correct immediate frontier is now:
 
 - compose the aligned zero/equality-wire singleton;
 - compose the crossed DDD singleton;
 - convert a two-edge scalar interval into a smaller separator, ten-state transfer, transition split, or bounded replacement;
-- classify or decompose enriched quartic phase designs, using cyclic block orders, endpoint quotient labels, the three coordinated Kempe cycle systems, and intervening non-`g` paths;
-- identify the physical `D_8` class if it is the irreducible remainder.
+- turn a root-exposed quartic split into one of those physical interfaces;
+- prove that concentrated nucleus peeling descends through ribbon rotations, Kempe cycle systems, endpoint quotient labels, intervening non-`g` paths, and the fixed terminal route;
+- if descent fails, identify the failure as the physical DDD `D_8` class.
 
-The odd curvature class is still not canonically identified with the physical DDD cohomology class.
+The former statement that curvature and DDD merely have the same one-dimensional representation type has been sharpened. Curvature now has a canonical incidence-level `D_8` carrier inside the same minus-type geometry. The remaining open comparison is graph-level: construct the map to the physical DDD cocycle and prove nontriviality.
 
 ### Full-rank flat sector
 
@@ -205,8 +243,8 @@ Open:
 
 Recommended sequence:
 
-1. singleton and two-edge nonflat composition;
-2. enriched quartic phase-design classification, decomposition, or `D_8` identification;
+1. physical quartic split-or-peel theorem, in parallel with singleton and two-edge composition;
+2. graph-level comparison of the canonical curvature carrier with the physical DDD class;
 3. flat-potential finite interface;
 4. defect-forest pruning;
 5. four-pole transfer and gluing;
@@ -218,7 +256,8 @@ Recommended sequence:
 A new corpus intake is warranted when a later exact checkpoint does one of:
 
 - composes a singleton or two-edge common-cut interface;
-- classifies, bounds, decomposes, or physically realizes an enriched quartic phase design;
+- makes the quartic root-exposed split or nucleus peel physical and composition-safe;
+- identifies the canonical curvature carrier with the physical DDD class;
 - gives a finite interface for the flat potential;
 - proves defect-forest pruning or Type T decomposition;
 - changes the Type H residual mechanism;
@@ -230,4 +269,4 @@ Exploratory counts that do not change the mechanism or open boundary need not tr
 
 ## 9. Status statement
 
-The global five-support cycle-double-cover statement remains open. The active corpus reduces the nonflat common-cut branch to bounded singleton/series interfaces and enriched quartic phase designs. Abstract quartic incidence is unbounded, but physical route-lock now imposes an affine four-sheet/Kempe-cycle system and a finite aligned/crossed endpoint transition alphabet. The required physical composition or enriched-design decomposition theorem is not yet proved.
+The global five-support cycle-double-cover statement remains open. The nonflat common-cut branch now has a strict abstract decomposition theorem: every quartic core either exposes root-valued terminal blocks or peels a canonical `O^-(4,2)`/`D_8` nucleus and reduces `k` by one. The exact remaining problem is to transport that split-or-peel operation through the physical ribbon/Kempe/endpoint data and the original four-pole gluing semantics.
