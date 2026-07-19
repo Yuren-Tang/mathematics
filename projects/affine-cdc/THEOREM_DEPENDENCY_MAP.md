@@ -25,39 +25,34 @@ Controlling chapters:
 - [`reduction/outer-shell-and-binary-flow.md`](reduction/outer-shell-and-binary-flow.md);
 - [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md).
 
-## 2. Five-support object
+## 2. Five-support object and fixed-lift architecture
 
 $$
 \text{five indexed even supports}
 \Longleftrightarrow
 \text{root-valued }E_5\text{ flow}
 \Longleftrightarrow
-\text{$K_5$ triangles / matching--four-flow / quadratic-cycle / cographic data}.
+\text{$K_5$ triangles / matching--four-flow / quadratic-cycle data}.
 $$
 
-Controlling chapter:
-[`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md).
-
-## 3. Fixed-lift architecture
+Above one Fano flow:
 
 $$
-\text{Fano flow}
-\to
 \text{compatible eight-support lift}
 \Longleftrightarrow
-\text{cycle-face surface / coloured dual triangulation}
+\text{cycle-face surface / coloured dual}
 \to
 T_g^{(1)}\longrightarrow\mathscr A_5\ ?
 $$
 
-The fixed-plane singular quotient, Schur boundary, colour-cut, and stress criteria are complete after the flow and plane are fixed. The factorable route through `J_g` is a strict subclass of the componentwise criterion.
+The factorable route through `J_g` is a strict subclass.
 
 Controlling chapters:
 
 - [`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md);
 - [`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md).
 
-## 4. Gauge, routing, and defect reduction
+## 3. Gauge, routing, and defect reduction
 
 $$
 \text{gauge torsor / horizontal switches}
@@ -77,7 +72,7 @@ Controlling chapters:
 - [`five-support/cuts-four-poles-and-routing.md`](five-support/cuts-four-poles-and-routing.md);
 - [`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md).
 
-## 5. Route-locked dichotomy
+## 4. Route-locked dichotomy
 
 For the equal-terminal-colour quotient flow:
 
@@ -91,7 +86,7 @@ $$
 
 The nonflat witness is a curvature-odd circuit of the closed-component incidence matrix.
 
-## 6. Nonflat circuit localisation
+## 5. Nonflat localisation
 
 $$
 \boxed{
@@ -105,37 +100,23 @@ $$
 Controlling chapter:
 [`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md).
 
-## 7. Quartic incidence and strict abstract progress
+## 6. Quartic incidence and strict abstract progress
 
-Abstract quartic designs exist for every `k`, so incidence parity alone is unbounded.
-
-Every design nevertheless has a canonical terminal nucleus
+Abstract designs exist for every `k`, but every design has a canonical terminal nucleus
 
 $$
 S\cong O^-(4,2),
-$$
-
-with intrinsic `E_5/K_5` geometry, route stabiliser `D_8`, and curvature carrier
-
-$$
+\qquad
 S/s_\infty^\perp\cong\mathbf F_2.
 $$
 
-Terminal distribution gives:
-
-- `3`: co-root equality transport;
-- `2+1`: one `K_6` one-factor vertex;
-- `1+1+1`: one-factor vertex plus root triangle.
-
-Hence
+Terminal distribution gives bounded equality/one-factor/root-triangle coefficient gadgets, or an all-concentrated peel
 
 $$
-\boxed{
-\text{bounded root-exposed split}
-\quad\text{or}\quad
-\text{canonical nucleus peel }k\mapsto k-1.
-}
+\boxed{k\longmapsto k-1.}
 $$
+
+The natural symmetry is the sheet group `AGL(2,2)\cong S_4`. It is not canonically identified with either the terminal-route stabiliser or the support-label `D_8` of a DDD one-factor.
 
 Controlling chapters:
 
@@ -144,18 +125,11 @@ Controlling chapters:
 - [`five-support/quartic-terminal-defect-geometry.md`](five-support/quartic-terminal-defect-geometry.md);
 - [`five-support/quartic-nucleus-transport.md`](five-support/quartic-nucleus-transport.md).
 
-## 8. Quotient-phase and elementary interval layer
+## 7. Quotient phase and elementary transition paths
 
-After quotient by `\langle g\rangle`, the flow is a degenerate `\mathbf F_2^2` Tait flow plus one binary phase. The four scalar sheets form an affine plane and differ by the three quotient Kempe cycle systems.
+After quotient by `\langle g\rangle`, the flow is a degenerate `\mathbf F_2^2` Tait flow plus one binary phase. The four scalar sheets form an affine plane and differ by three quotient Kempe systems.
 
-Between consecutive **full** `g`-incidences, an elementary non-`g` scalar path has:
-
-- one of eighteen quotient transfer states;
-- telescoping side-output sum;
-- a bounded backtrack cap or periodic triangle-cell chain;
-- rigid three-rail Kempe wiring.
-
-A witness-to-witness arc may contain additional edges of `E_g\setminus\eta`. It is a transition walk, not necessarily one elementary interval.
+Between consecutive **full** `g` incidences, an elementary non-`g` path has finite transfer state, telescoping output, and a cap-or-periodic-ladder normal form. A witness arc may contain additional edges of `E_g\setminus\eta`; whole arcs are transition walks rather than one elementary interval.
 
 Controlling chapters:
 
@@ -164,13 +138,9 @@ Controlling chapters:
 - [`five-support/scalar-interval-caps-and-cells.md`](five-support/scalar-interval-caps-and-cells.md);
 - [`five-support/periodic-kempe-ladders.md`](five-support/periodic-kempe-ladders.md).
 
-## 9. Physical cut carrier
+## 8. Physical cut carrier
 
-Contract the connected components of `Q-E_g` to obtain an even-total-degree four-pole `\Gamma_g`. The four scalar sheets induce four transition systems.
-
-Scalar components containing `g`-edges are exactly transition circuits/trails. Common-cut localisation therefore lives on `\Gamma_g`.
-
-Every internal quotient cut lifts exactly:
+Contract the connected components of `Q-E_g` to obtain an even-total-degree four-pole `\Gamma_g`. Scalar sheets become transition systems, and every internal quotient cut lifts exactly:
 
 $$
 \delta^{\mathrm{int}}_{\Gamma_g}(\mathcal U)
@@ -178,84 +148,130 @@ $$
 \delta^{\mathrm{int}}_Q(X_\mathcal U),
 $$
 
-with parity
+with terminal-sensitive parity
 
 $$
-|\delta^{\mathrm{int}}(\mathcal U)|
-\equiv t(\mathcal U)\pmod2.
+|\delta^{\mathrm{int}}(\mathcal U)|\equiv t(\mathcal U)\pmod2.
 $$
 
 Controlling chapter:
 [`five-support/g-component-transition-quotient.md`](five-support/g-component-transition-quotient.md).
 
-## 10. Canonical `4`-regular carrier
+## 9. Standard `4`-regular and touch carriers
 
-Close the terminals according to `12\mid34` and take the flag-line graph
+Close the terminals according to `12\mid34` and take
 
 $$
 F=\mathcal L(\widehat Q).
 $$
 
-Every scalar even subgraph gives a canonical circuit partition of `F`; the four sheets are four transition transversals of one transition matroid.
+Every scalar even subgraph gives a circuit partition of the same `4`-regular graph.
 
-Scalar components are distinguished partition circuits, and their incidence with `g`-edges is one-sided touch-graph incidence. The aligned/crossed transition law is uniform on all edges.
+For each scalar circuit, the line-graph partition contains one distinguished circuit and one shadow circuit. Selected touch edges form a dipole between them. Thus closed-component parity automatically kills complementary touch boundary.
+
+Adding the two route caps closes every scalar common cut to an ordinary touch cycle.
+
+Controlling chapters:
+
+- [`five-support/route-capped-line-graph-carrier.md`](five-support/route-capped-line-graph-carrier.md);
+- [`five-support/relative-touch-homology.md`](five-support/relative-touch-homology.md);
+- [`five-support/touch-shadows-and-cap-residue.md`](five-support/touch-shadows-and-cap-residue.md).
+
+## 10. Bounded cap residue
+
+Summing the four cap-completed transition-support vectors cancels every internal witness transition and leaves
+
+$$
+\boxed{R=\{r_p,r_q\},}
+$$
+
+one cross transition at each cap vertex.
+
+Every full IAS cocycle meets a vertex triple in zero or two elements, so `R` is not itself a cocycle. Local loop/parallel/twin/pendant cases are classified exactly.
 
 Controlling chapter:
-[`five-support/route-capped-line-graph-carrier.md`](five-support/route-capped-line-graph-carrier.md).
+[`five-support/cap-residue-isotropic-completion.md`](five-support/cap-residue-isotropic-completion.md).
 
-## 11. Relative touch-homology
+## 11. Minimal full completion
 
-For each sheet, let `\Theta_\phi` be the touch subgraph on internal `g`-edges. Interior vertices are closed scalar circuits; boundary vertices are terminal and complementary partition circuits.
-
-The common-cut space is
+Except for a loop degeneration, a full cocycle containing `R` exists. Choose an inclusion-minimal one `C`. Then
 
 $$
-\mathcal Z_{\mathrm{com}}
-=
-\bigcap_{\phi\in U^*}Z_1(\Theta_\phi,B_\phi),
+\boxed{
+\begin{cases}
+C\text{ is one cocircuit containing }r_p,r_q,&\text{coupled},\\
+C=D_p\sqcup D_q\text{ with disjoint one-cap cocircuits},&\text{separated}.
+\end{cases}}
 $$
 
-and curvature is
-
-$$
-\Omega(x)=\sum_\phi\beta_{\phi,34}(x).
-$$
-
-Thus the pointed curvature matroid is a coextension of the stacked relative boundary matrix. The witness is not yet proved to be a transverse circuit or cocircuit because complementary touch boundary may remain.
+In the separated case the two isotropic vertex supports are disjoint.
 
 Controlling chapter:
-[`five-support/relative-touch-homology.md`](five-support/relative-touch-homology.md).
+[`five-support/minimal-cap-cocycle-decomposition.md`](five-support/minimal-cap-cocycle-decomposition.md).
 
-## 12. Exact open bridge
+## 12. Cocircuit cut-rank mechanism
+
+For an IAS cocircuit `D`, let `L(D)` be the set of active vertex triples. Then
+
+$$
+\operatorname{span}D=\operatorname{span}\tau(L(D)),
+$$
+
+and
+
+$$
+\boxed{
+ r(D)=|L(D)|+\rho_G(L(D)),
+ \qquad
+ n(D)=|L(D)|-\rho_G(L(D)).
+}
+$$
+
+For a cocircuit,
+
+$$
+\boxed{
+\lambda_M(D)=|L(D)|+\rho_G(L(D))-1.
+}
+$$
+
+Hence:
+
+- `\rho=0`: interlacement disconnection;
+- `\rho=1`: Cunningham split, when both shores are nontrivial;
+- `\rho\ge2`: prime-side carrier.
+
+Only a **coupled prime cocircuit** can remain an irreducible two-ended candidate. In the separated branch, each one-cap cocircuit has its own cut-rank, and low rank already exposes a split.
+
+Controlling chapter:
+[`five-support/cocircuit-cutrank-mechanism.md`](five-support/cocircuit-cutrank-mechanism.md).
+
+## 13. Exact open bridge
 
 The primary theorem still needed is
 
 $$
 \boxed{
-\text{fourfold relative curvature circuit}
+\text{coupled/separated cap cocircuit}
 \Longrightarrow
 \begin{cases}
-\text{bounded closure to ordinary touch/transverse dependence},\\
-\text{terminal-even separator or transition two-sum in }\Gamma_g,\\
-\text{physical }D_8\text{ class}.
+\text{terminal-even separator or serial composition in }\Gamma_g,\\
+\text{alternate route and root escape},\\
+\text{or graph-level comparison with the DDD class.}
 \end{cases}}
 $$
 
-Equivalently, control the complementary boundary syndromes
+The recommended order is:
 
-$$
-b_\phi=\partial_{B,\phi}(\eta).
-$$
+1. project low cut-rank cocircuits through the line graph to `Q` and `\Gamma_g`;
+2. eliminate two disjoint prime one-cap carriers in the separated branch;
+3. analyse the prime coupled cap cocircuit;
+4. only there construct the comparison with the DDD support-label cocycle;
+5. then return to the flat potential, defect-forest pruning, four-pole transfer, and horizontal escape/decomposition.
 
-After this bridge come:
+Controlling frontier chapter:
+[`five-support/frontier-localisation.md`](five-support/frontier-localisation.md).
 
-1. singleton and marked-pair composition;
-2. flat-potential finite interface;
-3. defect-forest pruning;
-4. four-pole transfer and gluing;
-5. horizontal escape/decomposition;
-6. target-certificate completion where required.
-
-## 13. Assurance axes
+## 14. Assurance axes
 
 No arrow in this map automatically transfers Lean status, independent audit, peer review, novelty, release, DOI, arXiv, or publication status. See [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
