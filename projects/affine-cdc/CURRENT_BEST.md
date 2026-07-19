@@ -59,7 +59,9 @@ The current backbone includes:
 - full-rank curvature/common-cut duality and flat-potential equivalence;
 - common-cut component incidence, odd witness circuits, and the singleton/transition/quartic-core localisation trichotomy;
 - unbounded abstract quartic witness designs and their symplectic cross-intersection form;
-- the quotient Tait-phase representation of route-locked flows, the affine plane of four scalar sheets, and complete aligned/crossed endpoint switch signatures.
+- the quotient Tait-phase representation of route-locked flows, the affine plane of four scalar sheets, and complete aligned/crossed endpoint switch signatures;
+- connected pairwise quartic transition skeletons with exact degree sequence, cycle rank, terminal Euler trail, and ribbon interpretation;
+- the canonical quartic terminal nucleus, its intrinsic minus-type `E_5/K_5` geometry, `D_8` route stabiliser, one-dimensional curvature carrier, terminal-block projection table, and exact split-or-peel recursion.
 
 ## 4. Controlling negative boundaries
 
@@ -80,6 +82,8 @@ The physical-cut statement is explicitly false: the exact nonflat singleton witn
 
 The abstract quartic branch is genuinely unbounded: for every `k\ge1` there is a quartic witness design on `4k+1` points satisfying all incidence-level near-resolution, rank, omitted-point, and odd-side constraints. Any bound must therefore use physical flow compatibility.
 
+That unboundedness is now structurally classified. Every quartic design has a canonical four-dimensional `O^-(4,2)` terminal nucleus. If some sheet splits its three other omitted points among two or three blocks, those blocks have explicit anisotropic `E_5` root projections. If all sheets are concentrated, the nucleus peels off and leaves a quartic design of level `k-1`; the five-point nucleus is the recursion base. Thus abstract unbounded examples are iterated nucleus extensions, not arbitrary large incidence patterns.
+
 ## 5. Sharp frontier
 
 For a blocked co-root atom, unique-bad-route reduction gives a locked quotient flow with equal terminal colour and four scalar circuit partitions.
@@ -96,20 +100,28 @@ The nonflat circuit has exactly three possible forms:
 
 The singleton is either aligned, with resolution labels `g,g,0`, or crossed, with DDD/Petersen resolution labels `g,r,r+g`.
 
-The quartic incidence axioms alone cannot reduce case 3. Physical route-lock adds the exact quotient-phase structure:
+For the quartic branch, the active structure is now:
 
-1. after quotient by `\langle g\rangle`, the flow is a degenerate `\mathbf F_2^2` Tait flow whose zero edges are exactly `E_g`;
-2. one binary phase reconstructs the full `\mathbf F_2^3` flow;
-3. the four scalar sheets form an affine plane, and their three nonzero differences are quotient Kempe cycle systems;
-4. every `g`-edge carries one of nine ordered endpoint quotient labels;
-5. aligned edges have switch signatures `(0,0),(1,1),(1,1)`, while crossed edges have `(0,1),(1,0),(1,1)`.
+1. every pair of sheets has a connected bipartite ribbon transition skeleton with two terminal leaves and cycle rank `2k`;
+2. after quotient by `\langle g\rangle`, the flow is a degenerate `\mathbf F_2^2` Tait flow whose zero edges are exactly `E_g`;
+3. one binary phase reconstructs the full `\mathbf F_2^3` flow;
+4. the four scalar sheets form an affine plane, and their three nonzero differences are quotient Kempe cycle systems;
+5. every `g`-edge carries one of nine ordered endpoint quotient labels;
+6. aligned edges have switch signatures `(0,0),(1,1),(1,1)`, while crossed edges have `(0,1),(1,0),(1,1)`;
+7. the four whole-sheet block sums generate a canonical minus-type four-space with five singular points and ten anisotropic roots;
+8. the fixed route matching cuts the coordinate symmetry to `D_8`;
+9. the odd curvature quotient is canonically carried by the one-dimensional quotient `S/s_\infty^\perp`;
+10. every abstract quartic design satisfies a root-exposed split or a strict nucleus peel `k\mapsto k-1`.
 
 The immediate missing theorem must:
 
 1. compose an aligned zero/equality-wire singleton or crossed DDD singleton;
 2. convert a two-edge scalar interval into a smaller separator, transition split, finite four-pole transfer state, or bounded replacement;
-3. classify or decompose enriched quartic phase designs using cyclic orders, quotient labels, Kempe cycle differences, and intervening path data;
-4. extract a finite interface from the flat potential.
+3. turn a root-exposed quartic terminal split into one of those physical interfaces;
+4. prove that concentrated nucleus peeling descends through the ribbon rotations, quotient Kempe cycles, endpoint labels, and terminal route, or else exposes the physical DDD `D_8` class;
+5. extract a finite interface from the flat potential.
+
+The old statement that curvature and the DDD exception merely have the same one-dimensional representation type has been sharpened: curvature now has a canonical incidence-level `D_8` carrier inside the same minus-type geometry. The remaining gap is the physical graph-level comparison with the DDD cocycle.
 
 Wider open bridges are:
 
@@ -153,5 +165,7 @@ The corpus separates theorem-level arguments, exact finite results, counterexamp
 - common-cut localisation: [`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md);
 - quartic designs: [`five-support/quartic-witness-designs.md`](five-support/quartic-witness-designs.md);
 - quotient phase: [`five-support/route-locked-quotient-phase.md`](five-support/route-locked-quotient-phase.md);
+- transition skeletons: [`five-support/quartic-transition-skeletons.md`](five-support/quartic-transition-skeletons.md);
+- terminal nucleus: [`five-support/quartic-terminal-nucleus.md`](five-support/quartic-terminal-nucleus.md);
 - exact frontier: [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md);
 - reliability: [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
