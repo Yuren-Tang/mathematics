@@ -4,7 +4,7 @@
 **Standing issue:** `Yuren-Tang/research-workbench#37`  
 **Owned branch:** `proof-development/affine-cdc-rigour-v1`  
 **Exact initial baseline:** `main@960c92b7ff231c78b387894149779083060a75eb`  
-**Programme state:** persistent; Programme A and B1 are `READY-FOR-CURATOR`; Programme B continues
+**Programme state:** persistent; Programme A, B1, and B2 are `READY-FOR-CURATOR`; Programme B continues
 
 ## 1. Control and assurance boundary
 
@@ -47,19 +47,9 @@ A1 + A2 + A3 + A4 + A5 + A6 + A7 + A8 + A9 ──> A10 final theorem
 | `AC-PD-A9` | `COMPLETE-DRAFT` | `400404e5413dfc933668aa0ec152010bae5a742c` | terminating finite circuit decomposition and global multiplicity preservation |
 | `AC-PD-A10` | `READY-FOR-CURATOR` | `143538ef0fc9518ce877a42fa422d57cb6e3ce8a` | natural finite-active-edge no-singleton-cut CDC theorem assembly and assurance ledger |
 
-### Programme A corrections retained
-
-1. A0 owns circuit semantics and characterization; A9 owns finite decomposition.
-2. Intrinsic half-edge boundary parity is the natural loop-aware notion; the companion once-per-edge predicate is loopless only.
-3. The pair complex captures compatibility but not graph/dart/indexed-support semantics.
-4. Equal-order group-flow transport is proved internally rather than left as a Tutte black box.
-5. Collapse preserves cut-even supports and occurrence multiplicity, not circuits.
-6. Equal support values at different indices remain different occurrences.
-7. The natural hypotheses are finite active edge set plus no singleton cut; connectedness, simplicity, looplessness, and ambient-vertex finiteness are unnecessary.
+Programme A immutable intake checkpoint: `8bee16780b549f51e1f29343671a059961ec4172`.
 
 ## 3. Programme B — five-support proof tree
-
-The global five-support theorem remains open. Programme B proves and normalizes all mature subchains while maintaining the smallest exact frontier gap.
 
 ```text
 B1  root-flow / fixed-plane / fixed-lift equivalences
@@ -72,34 +62,53 @@ B6 ──> B7  route-lock, curvature, and common-cut localization
 B1–B7 + B8 finite certificates ──> B9 global five-support assembly
 ```
 
-| Code | State | Exact unit / checkpoint |
+### B1 — exact object and quantifier layer
+
+| Code | State | Exact checkpoint / output |
 |---|---|---|
 | `AC-PD-B1.1` | `COMPLETE-DRAFT` | `ed0288c2485d4eb826b49b8289a0025e1b2c0d64` — five-support ↔ root flow ↔ $K_5$ triangle law |
 | `AC-PD-B1.2` | `COMPLETE-DRAFT / CORPUS-CORRECTION` | `24e923bcfcfc3aa2765c3269018c977bd1351403` — exact $(B,D,M)$ matching/four-flow theorem and component $T$-join condition |
 | `AC-PD-B1.3` | `COMPLETE-DRAFT` | `dbd01c86059368619a51f9b5252dfec0a2cf7778` — fixed-flow/fixed-plane colour-cut, distinguished-support, and plane-profile criterion |
-| `AC-PD-B1.4` | `COMPLETE-DRAFT / SCOPE-CORRECTION` | `a9695a1045bdb157b8d0d8aa1e318302c28e785d` — root-lift/surface equivalence, full-dual half-cube potential, holonomy, and factorable quotient scope |
-| `AC-PD-B1` | `READY-FOR-CURATOR` | `73be22f42298470bd9ebaeb519de7ed686c27e41` — consolidated graph/fixed-flow/fixed-lift equivalence and implication map |
-| `AC-PD-B2` | `ACTIVE` | normalize and prove singular, quadratic, Schur, cographic, orthogonal, and Fourier/stress formulations; classify every arrow as equivalence, quotient, obstruction, or evidence |
-| `AC-PD-B3` | `QUEUED` | prove dual-triangulation, quotient, halfcube target, link, and marked-core constructions beyond the B1 structural interface |
-| `AC-PD-B4` | `QUEUED` | prove vertical/horizontal reconfiguration moves, preserved invariants, and exact reachability claims |
-| `AC-PD-B5` | `QUEUED` | formalize three-cut, four-pole, and routing-state reductions |
-| `AC-PD-B6` | `QUEUED` | prove holonomy, BBD/DDD, canonical defects, and atom statements |
-| `AC-PD-B7` | `QUEUED` | prove route-lock, curvature, and common-cut localization consequences |
-| `AC-PD-B8` | `QUEUED` | normalize finite laboratories and exact certificates; separate evidence from proof |
-| `AC-PD-B9` | `BLOCKED-FRONTIER` | maintain the exact smallest missing global composition/localization implication; return only this genuine new-mathematics gap to AC-RL |
+| `AC-PD-B1.4` | `COMPLETE-DRAFT / SCOPE-CORRECTION` | `a9695a1045bdb157b8d0d8aa1e318302c28e785d` — root-lift/surface equivalence, full-dual half-cube potential, holonomy, and quotient scope |
+| `AC-PD-B1` | `READY-FOR-CURATOR` | `73be22f42298470bd9ebaeb519de7ed686c27e41` — consolidated graph/fixed-flow/fixed-lift map |
 
-### Programme B1 corrections retained
+Programme B1 immutable intake checkpoint: `778b09ac8260192e022f512f24cdef1d04871f37`.
 
-1. A fixed support-coordinate inverse image is even; a fixed root-label inverse image is a matching.
-2. Bare matching plus four-flow is insufficient; exact $(B,D)$ or component-parity/$T$-join data are required.
-3. The fixed-flow plane-profile criterion is complete only with its fixed/existential quantifiers stated.
-4. A full-dual map $T_g^{(1)}\to\mathscr A_5$ classifies componentwise compression of the same embedding; it does not represent every external cover on an arbitrary fixed surface without zero dual holonomy.
-5. $J_g\to\mathscr A_5$ is only the old-colour-factorable subclass.
-6. If $\mathscr A_5$ denotes the even half-cube, singleton words require an odd translation before use as its five-clique.
+### B2 — formulation and witness hierarchy
+
+| Code | State | Closed output |
+|---|---|---|
+| `AC-PD-B2.1` | `COMPLETE-DRAFT` | anisotropic $O^-(4,2)$ mother flow; singular-line lift torsor; quadratic cycle equation; Schur quotient criterion |
+| `AC-PD-B2.2` | `COMPLETE-DRAFT / TERMINOLOGY-BOUNDARY` | exact cographic cycle-continuous edge-map equivalence and composition law |
+| `AC-PD-B2.3` | `COMPLETE-DRAFT / MATHEMATICAL-CORRECTION` | refutation of false universal $2r$ orthogonal-root claim; sharp $q-2$ lower bound; deleted permutation module; rank-three exception |
+| `AC-PD-B2.4` | `COMPLETE-DRAFT / WITNESS-SCOPE` | exact prescribed-value Fredholm duality; relative-stress code; product-avoidance Fourier count; witness reconstruction boundary |
+| `AC-PD-B2` | `READY-FOR-CURATOR / MATHEMATICAL-CORRECTION` | formulation/witness hierarchy at `769d4e9ec48c99eab695a0fc49b0a622e7e36ac4` |
+
+#### B2 corrections retained
+
+1. Full graph-level witnesses are five supports, $R_5$ roots, $K_5$ triangles, anisotropic $O^-(4,2)$ flows, quadratic solutions, and cographic cycle-continuous edge maps.
+2. Singular quotient and Schur product are complete fixed-data lift criteria only when the quotient flow, kernel/plane, quotient graph, and lift torsor are retained.
+3. Stress spaces are linear dual obstructions; Fourier spectra are exact nonlinear counts. Neither alone is a source witness.
+4. The recovered universal construction in dimension $2r$ is false for $r\geq4$ and contains a type-invalid formula.
+5. Every additive anisotropic representation of $K_q$ with triangle addition has dimension at least $q-2$.
+6. The correct universal module is the deleted permutation module of dimension $q-2$.
+7. The $O^+(6,2)$ realization of eight supports is exceptional because $8-2=6$; it is not the first case of a universal $O^+(2r,2)$ tower.
+
+### Remaining Programme B units
+
+| Code | State | Exact unit boundary |
+|---|---|---|
+| `AC-PD-B3` | `ACTIVE` | full dual triangulation; old-colour quotient; half-cube target/link geometry; marked cores; target-capacity and quotient-classification theorems, with full-dual scope kept exact |
+| `AC-PD-B4` | `QUEUED` | vertical and horizontal reconfiguration moves, preserved invariants, and exact reachability claims |
+| `AC-PD-B5` | `QUEUED` | three-cut, four-pole, and routing-state reductions |
+| `AC-PD-B6` | `QUEUED` | holonomy, BBD/DDD, canonical defects, and atom statements |
+| `AC-PD-B7` | `QUEUED` | route-lock, curvature, and common-cut localization consequences |
+| `AC-PD-B8` | `QUEUED` | finite laboratories and exact certificates; evidence separated from proof |
+| `AC-PD-B9` | `BLOCKED-FRONTIER` | exact smallest missing global composition/localization implication; only this genuine new-mathematics gap returns to AC-RL |
 
 ## 4. Repair queue
 
-No repair unit is active. Any later Curator, audit, Lean, manuscript, or Research Lead defect must be entered with:
+No repair unit is active. B2.3 is a completed mathematical correction awaiting Curator integration, not an open repair. Any later Curator, audit, Lean, manuscript, or Research Lead defect must be entered with:
 
 - exact triggering checkpoint;
 - exact false, incomplete, or ambiguous statement;
@@ -110,4 +119,10 @@ No repair unit is active. Any later Curator, audit, Lean, manuscript, or Researc
 
 ## 5. Current active unit
 
-`AC-PD-B2` is active. The first task is to build one exact arrow ledger across `five-support/equivalent-formulations-and-proof-families.md`, `singular-quotient-lifting.md`, `orthogonal-rank-reduction.md`, `fourier-and-stress-duals.md`, and the controlling recovered packets. Each formulation must be classified as a full witness equivalence, a fixed-data equivalence, a quotient with lost lift data, a dual obstruction criterion, or finite evidence. The first proof unit will close the earliest unambiguous arrow and isolate any false or overbroad equivalence before proceeding.
+`AC-PD-B3` is active. The first task is to normalize the target hierarchy
+
+$$
+T_g^{(1)}\longrightarrow J_g\longrightarrow\mathscr A_5,
+$$
+
+its strict factorization boundary, the half-cube link and marked-core reductions, and the exact finite target-capacity theorems. Every finite classification must be labelled by the graph it actually classifies; no $J_g$ computation may be promoted to the full dual $T_g$ without proof.
