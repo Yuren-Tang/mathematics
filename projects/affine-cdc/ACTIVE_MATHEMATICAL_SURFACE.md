@@ -52,13 +52,14 @@ The active five-support corpus is exactly:
 5. [`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md);
 6. [`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md);
 7. [`five-support/quartic-witness-designs.md`](five-support/quartic-witness-designs.md);
-8. [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md);
-9. [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
-10. [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
+8. [`five-support/route-locked-quotient-phase.md`](five-support/route-locked-quotient-phase.md);
+9. [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md);
+10. [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
+11. [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
 
 The global five-support theorem remains open. The controlling fixed-lift object is the full dual triangulation `T_g`, not only the factorable quotient `J_g`.
 
-The nonflat common-cut endpoint is reduced to singleton enriched atoms, two-edge scalar transition intervals, or a rigid quartic near-resolution core. Abstract quartic witness designs exist for every size `4k+1`, so common-cut parity alone cannot bound the residual core. Composition of the bounded interfaces and use of the additional physical flow compatibility remain open.
+The nonflat common-cut endpoint is reduced to singleton enriched atoms, two-edge scalar transition intervals, or a quartic near-resolution core. Abstract quartic witness designs exist for every size `4k+1`, so common-cut parity alone cannot bound that core. Physical route-lock supplies additional finite structure: a quotient Tait flow with binary phase, an affine plane of four scalar sheets related by three Kempe cycle systems, and aligned/crossed endpoint switch signatures. Composition of the bounded interfaces and classification or decomposition of the resulting enriched quartic phase designs remain open.
 
 ## 5. Provenance and reliability control
 
