@@ -51,13 +51,14 @@ The active five-support corpus is exactly:
 4. [`five-support/cuts-four-poles-and-routing.md`](five-support/cuts-four-poles-and-routing.md);
 5. [`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md);
 6. [`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md);
-7. [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md);
-8. [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
-9. [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
+7. [`five-support/quartic-witness-designs.md`](five-support/quartic-witness-designs.md);
+8. [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md);
+9. [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
+10. [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
 
 The global five-support theorem remains open. The controlling fixed-lift object is the full dual triangulation `T_g`, not only the factorable quotient `J_g`.
 
-The nonflat common-cut endpoint is now reduced to singleton enriched atoms, two-edge scalar transition intervals, or a rigid quartic near-resolution core. Composition of the bounded interfaces and elimination or identification of the quartic core remain open.
+The nonflat common-cut endpoint is reduced to singleton enriched atoms, two-edge scalar transition intervals, or a rigid quartic near-resolution core. Abstract quartic witness designs exist for every size `4k+1`, so common-cut parity alone cannot bound the residual core. Composition of the bounded interfaces and use of the additional physical flow compatibility remain open.
 
 ## 5. Provenance and reliability control
 
