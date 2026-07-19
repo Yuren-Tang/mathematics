@@ -1,180 +1,232 @@
 # AffineCDC frontier status
 
-This ledger records the exact live five-support frontier corresponding to the rolling-baseline candidate. It is a synchronization and status surface, not an acceptance or audit document.
+This file records the exact mathematical frontier represented by public checkpoint
 
-## 1. Exact live source
+`research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`.
 
-- **Repository:** `Yuren-Tang/mathematics`
-- **Live branch:** `research/affine-cdc-five-cdc-v1`
-- **Checkpoint included in this baseline:** `dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`
-- **Active writer:** `AffineCDC — Research Lead`
-- **Writer model:** one writer on the live research branch; the Curator does not write that branch
-- **Observed drift at AC-BASELINE-01 intake:** none
+It is a theorem-boundary ledger, not an assurance upgrade.
 
-At the beginning of this integration, the live branch and the named checkpoint compared as identical: zero commits ahead and zero behind. No later live commit is included silently.
+## 1. Source and writer state at reconstruction intake
 
-## 2. Frontier question at `dad218dd...`
+- exact public checkpoint: `dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`;
+- exact reconstruction base: `7a166d2eb5642ec967f640323488e49f1c2ad5d4`;
+- live research branch at intake: identical to the checkpoint;
+- active research writer: `AffineCDC — Research Lead`;
+- curation branch: separate, one writer, no live-branch mutation.
 
-The current endpoint lies in the full-rank universally route-locked atom sector.
+Any later live commits are outside this corpus until a new exact intake packet names them.
 
-The exact reductions already established are:
+## 2. Closed local and finite layers
 
-1. a crossed full-challenge route rootifies the local co-root defect;
-2. if every challenge uses the original pairing, one obtains a canonical nowhere-zero $\mathbf F_2^3$ challenge quotient with all four scalar sheets on route `12|34`;
-3. route-lock does not force a graph two-cut;
-4. rank one is impossible;
-5. rank two admits a Tait root lift and boundary-state escape;
-6. only full rank three survives;
-7. full-rank curvature has a primal affine-potential form when flat and a dual common-cut witness when nonflat;
-8. an explicit full-rank nonflat witness exists.
+The following layers are mathematically closed within their stated scopes.
 
-Choose a support-minimal nonflat dual witness
+### Complete general theorem blocks
+
+- rank-three affine compatibility;
+- five-support/root-flow global equivalence package;
+- fixed-plane component-parity lifting criterion;
+- root-lift/surface/dual correspondence;
+- componentwise half-cube criterion;
+- factorable quotient classification in corrected scope;
+- dominating-clique target capacity for ranks two through five;
+- gauge/Petrial and marked-core occurrence-coset theorems;
+- internal switch correction image and internal/external switch dichotomy;
+- three-cut gluing;
+- ten-state four-edge boundary and exact gluing;
+- cap forcing, pairing alignment, routing coordinates, and uniform-routing elimination;
+- cyclic holonomy and root-fibre section classification;
+- Tait-resolution equivalence and Type H Tait escape;
+- BBD root rigidity and simultaneous ambient origin;
+- $K_6$ completion and defect-strip theorem;
+- variational defect-forest and induced-tree theorems;
+- Petersen endpoint transport;
+- DDD atom triality and unique-bad-route theorem;
+- rank-two route-lock Tait escape;
+- full-rank curvature duality and flat-potential equivalence.
+
+### Closed finite interfaces
+
+- ten four-pole states and abstract closure game;
+- exact small-four-pole census through six internal vertices;
+- exact half-cube clique-link tables;
+- exact Petersen Fano-flow census;
+- exact thirty-vertex and flower-$J_5$ laboratories;
+- exact atom, monodromy, root-fibre, and cohomology tables.
+
+Finite closure does not imply global theorem closure.
+
+## 3. Primary frontier: route-locked atom localisation
+
+A nondegenerate co-root atom has two crossed root resolutions. If a full challenge takes a crossed route, the atom becomes root-valued. If all challenges are blocked, unique-bad-route reduction gives a locked $K_{2,4}$ orbit.
+
+At a locked $C$-state, quotienting gives a nowhere-zero $\mathbf F_2^3$ flow $c$ with all terminal values equal to $g$ and four scalar circuit partitions routed as $12\mid34$.
+
+### Rank two
+
+The rank-two sector is a Tait three-edge-colouring and has a root-valued boundary-state escape. It is no longer part of the residual obstruction.
+
+### Full-rank nonflat sector
+
+If
 
 $$
-\eta\subseteq E_g.
+\Omega(c)\ne0,
 $$
 
-The current primary question is:
+there is a support-minimal witness
 
-> Localise $\eta$ to a bounded DDD/Petersen factor, a smaller cyclic separator or reducible transition interval, a transition-matroid two-sum, or the physical $D_8$ class; otherwise give a precise counterexample requiring a weaker localisation theorem.
+$$
+\eta\subseteq E_g
+$$
 
-The flat sector separately requires a composition-safe graph resolution from its affine potential.
+that is simultaneously a cut in all four scalar sheets and has odd terminal parity.
 
-**Controlling files:**
+The open theorem is to localize $\eta$ to one of:
 
-- [`research/FIVE_CDC_ATOM_ROUTE_LOCK_CURVATURE_V1.md`](research/FIVE_CDC_ATOM_ROUTE_LOCK_CURVATURE_V1.md);
-- [`research/FIVE_CDC_ROUTE_LOCK_RANK_TWO_TAIT_ESCAPE_V1.md`](research/FIVE_CDC_ROUTE_LOCK_RANK_TWO_TAIT_ESCAPE_V1.md);
-- [`research/FIVE_CDC_FULL_RANK_CURVATURE_DUAL_CERTIFICATE_V1.md`](research/FIVE_CDC_FULL_RANK_CURVATURE_DUAL_CERTIFICATE_V1.md);
-- [`research/FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md`](research/FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md).
+- a bounded DDD/Petersen atom or factor;
+- a smaller cyclic separator;
+- a reducible transition interval or transition-matroid two-sum;
+- the physical $D_8$ affine class;
+- or a precisely stated weaker alternative forced by a counterexample.
 
-## 3. Status classification
+Not yet proved:
 
-The labels below classify the claims at the included checkpoint. They do not raise independent-review, formal, peer-review, or publication status.
+- $\eta$ is a cut in the underlying four-pole;
+- $\eta$ has bounded size;
+- the odd parity class is canonically the DDD cohomology class.
 
-### 3.1 Universal theorem-level statements
+### Full-rank flat sector
 
-The checkpoint presents the following as general proofs within their stated hypotheses:
+If
 
-- root lifts correspond to coloured cycle-face embeddings and dual triangular cellulations;
-- the same-embedding five-support criterion is $T_g^{(1)}\to\mathscr A_5$;
-- gauge words are exactly the code-filtered partial Petrials available at fixed Fano flow;
-- fixed-flow badness and graph-level badness have different quantifiers;
-- marked-core occurrence loci are affine shortened-code loci;
-- a connected $K_4$ reserve line yields a cyclic three-edge cut and is reducible in a vertex-minimal counterexample;
-- four-pole boundary behaviour has a ten-state alphabet and exact signature-intersection gluing;
-- cap forcing and support-Kempe moves give finite closure rules;
-- dominating-clique ranks two through five have exact half-cube capacity criteria;
-- the DDD atom has one co-root and two root-valued resolutions;
-- the original atom route is the unique bad route under a full challenge;
-- universal route-lock has the stated $\mathbf F_2^3$ challenge quotient;
-- rank-two route-lock admits Tait escape;
-- nonzero full-rank curvature has a dual witness that is a common cut in all four scalar sheets and carries odd terminal parity.
+$$
+\Omega(c)=0,
+$$
 
-These statements remain paper-level unless separately formalized.
+there is an eight-state potential $p$ satisfying
 
-### 3.2 Closed finite-interface results
+$$
+p(u)+p(v)\in\{0,c(e)+g\}.
+$$
 
-Complete within the named finite universe:
+The open theorem is to extract a finite enriched interface from the potential fibres and prove a proper split, bounded replacement, smaller separator, or gluing transfer state.
 
-- the ten four-pole boundary states and the abstract Kempe/cap closure problem;
-- the half-cube clique-link tables and dominating-clique capacity for ranks two through five;
-- the `640/280/180` ordered atom census;
-- the fixed-fibre lock graph $K_{2,4}$;
-- every exhaustive computation over a named finite graph, fixed flow, gauge fibre, or displayed neighbourhood.
+Flatness is not yet a graph reduction.
 
-“Closed” here means exhaustive for that finite interface, not complete for arbitrary cubic graphs.
+## 4. Defect-forest composition frontier
 
-### 3.3 Exact graph-specific and finite-verified evidence
+The canonical or energy-minimal $E_5$ flow has an induced defect forest. Co-root paths carry an $L(\mathrm{Petersen})$ state walk together with a side-root output word.
 
-- all `28560` nowhere-zero Fano flows of Petersen;
-- the thirty-vertex fixed-flow and connected-cycle neighbourhood censuses;
-- the displayed $J_5$ witness and one-step renewal neighbourhood;
-- explicit rank-two route-lock witnesses with minimum pair-separating cut four;
-- the recovered full-rank nonflat witness with curvature class nonzero;
-- exact small four-pole profiles and selected cap/Kempe closures.
+The required pruning theorem must combine the atom localization with the forest structure and prove one of:
 
-These are theorems about the displayed finite objects. They do not establish the global five-support statement.
+1. zero networks give equality-wire replacement or serial decomposition;
+2. one-factor leaves admit a composition-safe Petersen endpoint resolution;
+3. repeated enriched transport states yield a bounded replacement;
+4. a root-side attachment exposes a smaller cyclic cut;
+5. the only irreducible remainder is the DDD $D_8$ class.
 
-### 3.4 Computational support
+Repeated endpoint state without equal side semantics is insufficient.
 
-Some finite statements are supported by exact Python or Wolfram enumeration. Where a general argument is also written, computation checks the finite instance or identity. Where no universal proof is supplied, the claim stays finite/computational.
+## 5. Four-pole frontier
 
-The private notebook branch
+The abstract four-edge obstruction has been compressed to two routing mechanisms.
 
-`Yuren-Tang/research-workbench:research/affine-cdc-five-cdc-notebook-v1`
+### Type T
 
-is mapped provenance and recovery evidence. It is not copied wholesale into the public baseline. Public claims must retain a public source or an explicit finite certificate boundary.
+$$
+P_5\mid P_5.
+$$
 
-### 3.5 Substantial arguments with named gaps
+Open: prove that acyclic unique routing forces nested linkage, serial decomposition, a smaller separator, or a bounded replaceable fragment.
 
-The checkpoint supplies strong reductions but not complete graph-level transfer for:
+### Type H
 
-- composition-safe use of a crossed atom resolution;
-- graph resolution from a flat affine potential;
-- localisation of a nonflat common-cut witness;
-- realisability/full-cap closure for arbitrary four-poles;
-- global horizontal escape or decomposition of all bad-flow components.
+$$
+P_4\mid C_3.
+$$
 
-These are not to be restated as completed theorems.
+The zero-norm root-linearizable branch is eliminated by Tait escape. The residual family must carry ambient translation, empty edge fibre, empty vertex relation, component holonomy, zero network, or co-root defect data.
 
-### 3.6 False overstrong statements and counterexamples
+Open: prove that a family in which every lift is obstructed shares one path-overlap, odd-ring, translation, or defect-strip structure yielding strict progress.
 
-The following readings are false or unsupported:
+### Full-cap problem
 
-- $J_g\to\mathscr A_5$ is the complete fixed-lift criterion;
-- every binary-cycle switch is one edge of the flow-reconfiguration graph;
-- $K_6$-freeness is sufficient for an arbitrary graph to map to $\mathscr A_5$;
-- a bad fixed-flow gauge fibre makes the underlying graph a counterexample;
-- universal route-lock forces a graph-theoretic two-edge separation;
-- universal route-lock forces zero curvature or automatic affine flatness;
-- finite neighbourhood evidence that all residual bad lifts contain $K_6$ is a universal obstruction theorem.
+The small exhaustive census supports, but does not prove, that every admissible four-pole contains one full cap sector $\mathcal K_i$.
 
-The controlling counterexamples and corrections are linked in [`SUPERSESSION_MAP.md`](SUPERSESSION_MAP.md).
+Open: prove the full-cap-profile theorem or identify and structurally analyze the first genuine large counterexample profile.
 
-### 3.7 Superseded formulations
+## 6. Horizontal/global frontier
 
-Superseded files remain in Git and in `projects/affine-cdc/research/` as priority and discovery records. Their theorem fragments may remain valid under narrowed hypotheses. Navigation must use the controlling successors rather than deleting or silently rewriting historical sources.
+For a graph $G$, graph-level failure means every nowhere-zero Fano flow is wholly bad:
 
-### 3.8 Open statements
+$$
+\mathfrak B(G)=\operatorname{NZFlow}(G;\mathbf F_2^3).
+$$
 
-The global five-support theorem remains open.
+The laboratories show that:
 
-The present wider open bridges are:
+- a graph may be easy while some fixed flows are hard;
+- Petersen is vertically soluble for every Fano flow;
+- a flower-snark bad flow may have many one-step exits.
 
-1. composition-safe resolution of flat and nonflat locked atoms;
-2. localisation of a support-minimal common-cut witness;
-3. a full-cap-profile/realisability theorem for arbitrary admissible four-poles;
-4. classification or exclusion of compatible bad dual triangulations without a dominating clique of rank at least two;
-5. graph-level horizontal escape-or-decomposition;
-6. a global theorem proving that the finite local mechanisms cover every obstruction.
+Open: prove that every bad-flow component has either:
 
-## 4. Current mechanism layers
+1. a horizontal edge to a vertically good state; or
+2. a coherent certificate forcing a cut, four-pole, bounded replacement, or smaller instance.
 
-The programme should be read in this order:
+This theorem must transport changing gauge codes and obstruction arrangements; a neighbour count is not enough.
 
-1. **graph choice:** choose a nowhere-zero Fano flow;
-2. **vertical fibre:** explore compatible root lifts through the gauge/partial-Petrial code;
-3. **same-embedding test:** seek $T_g^{(1)}\to\mathscr A_5$;
-4. **target analysis:** use half-cube links and dominating-clique capacities;
-5. **source analysis:** use harmonic reserves, cuts, four-poles, and boundary signatures;
-6. **horizontal motion:** use connected-cycle switches to change the Fano flow and the available vertical fibre;
-7. **composition:** prove that local escapes and finite interfaces assemble globally.
+## 7. Target-side frontier
 
-A fixed-lift, fixed-flow, and graph-level obstruction must never be conflated.
+Target capacity is complete for dominating cliques of ranks two through five. The first open link is rank one, involving homomorphisms to
 
-## 5. Next intake trigger
+$$
+L(K_5).
+$$
 
-Create a new exact frontier checkpoint for rolling-baseline intake when one of the following occurs:
+The flower $J_5$ example proves that $K_6$-only theory is insufficient even for compatible dual triangulations.
 
-- a theorem or counterexample changes the full-rank localisation endpoint;
-- the flat-potential or nonflat common-cut sector is closed, split, or materially weakened;
-- a new universal four-pole or target-capacity theorem changes the mechanism map;
-- a graph-level bad-flow escape/decomposition theorem is obtained;
-- a correction materially changes a controlling statement already referenced by `CURRENT_BEST.md`;
-- the live branch advances before an owner decision on this baseline.
+Open:
 
-Routine exploratory commits that do not alter the current mechanism, correction map, or open boundary need not trigger immediate re-integration.
+- classify rank-one and non-dominating target obstructions;
+- determine whether every compatible non-homomorphism has a bounded marked certificate or canonical decomposition;
+- enlarge obstruction arrangements without confusing arbitrary graph warnings with realizable compatible duals.
 
-## 6. Synchronization rule
+## 8. Secondary open programmes
 
-This file records checkpoint `dad218dd...` only. The integration branch must not be used as a substitute writer for the live research branch. No research-branch synchronization is authorized before a later owner movement decision. Any later drift must be recorded by exact SHA and reviewed before inclusion.
+These are not the immediate closure bottleneck.
+
+- planar Fano-line flattening toward Tait colouring;
+- orientable-good affine slices and five-flow extraction;
+- coefficient-holonomy transport;
+- higher-rank and transition-matroid interpretations;
+- literature and novelty positioning.
+
+## 9. Current proof priority
+
+Recommended sequence:
+
+1. common-cut localization and flat-potential interface;
+2. defect-forest pruning;
+3. four-pole transfer and gluing;
+4. horizontal bad-component theorem;
+5. target-certificate completion where required.
+
+## 10. Intake trigger
+
+A new corpus intake is warranted when a later exact checkpoint does one of:
+
+- closes or materially weakens the common-cut localization theorem;
+- gives a finite interface for the flat potential;
+- proves defect-forest pruning or Type T decomposition;
+- changes the Type H residual mechanism;
+- proves a full-cap or four-pole realizability theorem;
+- proves horizontal escape/decomposition;
+- supplies a new controlling correction to the componentwise half-cube criterion;
+- changes the global theorem status.
+
+Exploratory counts that do not change the mechanism or open boundary need not trigger immediate reconstruction.
+
+## 11. Status statement
+
+The global five-support cycle-double-cover statement remains open. The current public checkpoint supplies a deep, coherent mechanism theory but not the missing localization/composition theorem.
