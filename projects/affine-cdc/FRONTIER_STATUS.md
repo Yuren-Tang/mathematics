@@ -35,7 +35,10 @@ The following layers are mathematically closed within their stated scopes:
 - DDD atom triality and unique-bad-route theorem;
 - rank-two route-lock Tait escape;
 - full-rank curvature duality and flat-potential equivalence;
-- common-cut component-incidence and odd-circuit localisation.
+- common-cut component-incidence and odd-circuit localisation;
+- singleton/transition/quartic-core localisation;
+- unbounded abstract quartic witness designs and their symplectic form;
+- route-locked quotient Tait-phase representation, affine scalar-sheet plane, Kempe cycle differences, affine endpoint selectors, and aligned/crossed switch signatures.
 
 Closed finite interfaces include the ten four-pole states, the exact small-four-pole census through six internal vertices, half-cube clique-link tables, Petersen Fano-flow census, calibrated graph laboratories, and atom/monodromy/root-fibre/cohomology tables.
 
@@ -67,7 +70,7 @@ $$
 
 which is simultaneously a cut in all four scalar sheets and has odd terminal parity.
 
-The active theorem [`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md) now proves:
+The active theorem [`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md) proves:
 
 1. `\eta` is a curvature-odd circuit of the four-partite closed-component incidence matroid;
 2. a scalar-common cut need not be a cut in the underlying four-pole;
@@ -78,12 +81,30 @@ The active theorem [`five-support/common-cut-circuit-localisation.md`](five-supp
 4. in the quartic core, each sheet has exactly one terminal witness edge, the other `4k` edges split into four-edge closed-component blocks, all `4k` incidence rows are independent, and the four terminal edges are distinct with odd `12/34` side word;
 5. a singleton atom is either aligned, with resolution labels `g,g,0`, or crossed, with DDD/Petersen labels `g,r,r+g`.
 
+The active theorem [`five-support/quartic-witness-designs.md`](five-support/quartic-witness-designs.md) proves a sharp negative boundary:
+
+1. for every `k\ge1`, an abstract quartic witness design exists on `4k+1` points;
+2. the four block spaces are totally isotropic `k`-spaces whose direct sum is the full even-weight symplectic space;
+3. the complete cross-sheet block-intersection Gram matrix is nonsingular.
+
+Therefore incidence parity, block size, omitted points, and binary rank cannot bound `k` or force the five-point core.
+
+The active theorem [`five-support/route-locked-quotient-phase.md`](five-support/route-locked-quotient-phase.md) supplies the missing physical layer:
+
+1. after quotient by `\langle g\rangle`, `c` is a `\mathbf F_2^2` flow whose zero set is exactly `E_g`, together with one reconstructing binary phase;
+2. away from `E_g` the quotient is a Tait colouring, while endpoints of `E_g` are matched defect vertices with one repeated quotient colour;
+3. the four scalar sheets form an affine plane in the relative cycle space;
+4. their three nonzero differences are the three quotient Kempe cycle systems;
+5. every endpoint selector is a balanced affine function on the four sheets;
+6. every `g`-edge has one of nine ordered endpoint quotient labels, with aligned signatures `(0,0),(1,1),(1,1)` or crossed signatures `(0,1),(1,0),(1,1)`.
+
 Thus the former wording “prove that `\eta` is a cut in the underlying four-pole” is false and retired. The correct immediate frontier is:
 
 - compose the aligned zero/equality-wire singleton;
 - compose the crossed DDD singleton;
 - convert a two-edge scalar interval into a smaller separator, ten-state transfer, transition split, or bounded replacement;
-- eliminate, bound, or identify the quartic near-resolution core.
+- classify or decompose enriched quartic phase designs, using cyclic block orders, endpoint quotient labels, the three coordinated Kempe cycle systems, and intervening non-`g` paths;
+- identify the physical `D_8` class if it is the irreducible remainder.
 
 The odd curvature class is still not canonically identified with the physical DDD cohomology class.
 
@@ -185,7 +206,7 @@ Open:
 Recommended sequence:
 
 1. singleton and two-edge nonflat composition;
-2. quartic-core elimination or `D_8` identification;
+2. enriched quartic phase-design classification, decomposition, or `D_8` identification;
 3. flat-potential finite interface;
 4. defect-forest pruning;
 5. four-pole transfer and gluing;
@@ -197,7 +218,7 @@ Recommended sequence:
 A new corpus intake is warranted when a later exact checkpoint does one of:
 
 - composes a singleton or two-edge common-cut interface;
-- eliminates, bounds, or physically realizes the quartic core;
+- classifies, bounds, decomposes, or physically realizes an enriched quartic phase design;
 - gives a finite interface for the flat potential;
 - proves defect-forest pruning or Type T decomposition;
 - changes the Type H residual mechanism;
@@ -209,4 +230,4 @@ Exploratory counts that do not change the mechanism or open boundary need not tr
 
 ## 9. Status statement
 
-The global five-support cycle-double-cover statement remains open. The active corpus now reduces the nonflat common-cut branch to bounded singleton/series interfaces and one rigid quartic near-resolution core, but the required physical composition theorem is not yet proved.
+The global five-support cycle-double-cover statement remains open. The active corpus reduces the nonflat common-cut branch to bounded singleton/series interfaces and enriched quartic phase designs. Abstract quartic incidence is unbounded, but physical route-lock now imposes an affine four-sheet/Kempe-cycle system and a finite aligned/crossed endpoint transition alphabet. The required physical composition or enriched-design decomposition theorem is not yet proved.
