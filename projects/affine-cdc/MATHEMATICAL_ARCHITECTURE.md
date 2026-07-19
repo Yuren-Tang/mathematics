@@ -1,195 +1,109 @@
 # AffineCDC mathematical architecture
 
-This file is the canonical dependency map for the mathematical project.
-Definitions, proofs, examples, and limitations live in the linked chapters.
-Engineering plans and implementation prompts do not control this file.
+This file is the canonical dependency architecture for the reconstructed mathematical corpus. It distinguishes the complete Cycle Double Cover theorem line from the open five-support strengthening and places every secondary theory downstream of its natural object.
 
-The project has two nested scopes:
+## 1. Project scopes
 
-1. the **affine compatibility core** attached to a cubic binary flow;
-2. the **full finite bridgeless-multigraph CDC shell**, which separates loops,
-   supplies a cubic flow object for the loopless core, transports the affine
-   output back, decomposes once, and reinserts singleton loop circuits.
+The project has three nested but logically distinct scopes.
 
-The first scope contains the principal new affine/Fano mathematics. The second
-is necessary for the complete theorem and must be formalized independently in
-the companion Lean project.
+1. **Affine compatibility core**  
+   Given a finite cubic graph with a nowhere-zero binary flow, classify the local affine families and prove a globally compatible choice in rank three.
 
-The natural external theorem is:
+2. **Complete CDC shell**  
+   Supply the cubic flow object from an arbitrary bridgeless finite-active-edge multigraph, transport the affine even cover through collapse, decompose once, and reinsert loops.
 
-> Every multigraph with finite active edge set and no bridges has a cycle double
-> cover.
+3. **Five-support strengthening**  
+   Ask whether the compatible cover can be chosen with only five indexed supports, equivalently as a root-valued $E_5$ flow.
 
-Loops are allowed. A circuit is a nonempty inclusion-minimal cut-even edge set,
-so a singleton loop is a circuit. The current companion `Statement.lean` is
-still loopless and ambient-finite. It is an implementation checkpoint awaiting
-the approved Path A migration; it is not the final natural statement and has
-not yet been proved.
+Scope 3 is open. It must not be used as a premise for Scope 2.
 
-## 1. Source and compatibility image
+## 2. Affine compatibility centre
 
-The affine source is a finite cubic graph, not necessarily connected, with a
-nowhere-zero binary flow
+Let
 
 $$
-(G,\Gamma,f).
+f:E(G)\to\Gamma\setminus\{0\}
 $$
 
-For every edge $e$, put
+be a nowhere-zero binary flow on a finite cubic graph. For an edge $e$, put
 
 $$
-Q_e:=\Gamma/\langle f(e)\rangle.
+Q_e=\Gamma/\langle f(e)\rangle.
 $$
 
-The source determines:
-
-- an incidence space $E_f$;
-- a homogeneous vertex space $L_{\mathrm{vert}}$;
-- a canonical affine translate $\kappa+L_{\mathrm{vert}}$ of local families;
-- an edge-matching space $L_{\mathrm{edge}}$.
-
-The compatibility problem is
+The incidence space is
 
 $$
-(\kappa+L_{\mathrm{vert}})\cap L_{\mathrm{edge}}\neq\varnothing.
+E_f=\bigoplus_{(v,e)}Q_e.
 $$
 
-Equivalently, it is the pointed pair complex
+Local homogeneous vertex choices form $L_{\mathrm{vert}}$, edge matching forms $L_{\mathrm{edge}}$, and the distinguished local affine data give $\kappa\in E_f$.
+
+The pair complex is
 
 $$
 \mathcal P_f:
 L_{\mathrm{vert}}\oplus L_{\mathrm{edge}}
-\xrightarrow{+}
-E_f,
+\longrightarrow E_f,
 \qquad
-[\kappa]\in H^1(\mathcal P_f).
+(\ell,m)\mapsto\ell+m.
 $$
 
-Compatibility is $[\kappa]=0$; the solution set is then a torsor under
-$H^0(\mathcal P_f)$.
-
-The pair complex is the complete image of the **compatibility question**, but it
-is not the full graph source. The graph, dart pairing, and local-family
-interpretation are retained for the graph-level even-cover construction.
-
-**Canonical chapter:**
-[`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md).
-
-## 2. Equivalent presentations of the compatibility core
-
-The pair complex has two canonical presentations.
-
-### Primal quotient presentation
-
-Cancelling the contractible edge-diagonal summand gives
+Then
 
 $$
-\Gamma^V
-\xrightarrow{\delta_f}
-\bigoplus_eQ_e,
-\qquad
-(\delta_fm)_e=[m_u+m_v].
+H^0(\mathcal P_f)=L_{\mathrm{vert}}\cap L_{\mathrm{edge}},
 $$
 
-The image of $\kappa$ is the quotient-sheaf cochain $c_f$. Thus
+and
 
 $$
-[c_f]=0
-\iff
-[\kappa]=0.
+H^1(\mathcal P_f)=E_f/(L_{\mathrm{vert}}+L_{\mathrm{edge}}).
 $$
 
-### Dual presentation
-
-The dual obstruction space is the equilibrium-stress space:
+Compatibility is exactly
 
 $$
-(H^1(\mathcal P_f))^*
-\cong
-L_{\mathrm{vert}}^\perp
-\cap
-L_{\mathrm{edge}}^\perp
-=
-\operatorname{Stress}(f).
+[\kappa]=0\in H^1(\mathcal P_f),
 $$
 
-Hence
+and the solution set is a torsor under $H^0(\mathcal P_f)$.
 
-$$
-[\kappa]=0
-\iff
-\psi(\kappa)=0
-\text{ for every equilibrium stress }\psi.
-$$
-
-Quotient sheaf and stresses are the primal and dual presentations of the same
-affine incidence pair, not competing foundations.
+This is the complete centre of the compatibility question. The graph, dart, and local-family data remain necessary for extracting even supports.
 
 ## 3. Rank-three Fano compatibility
 
-When
+For $\Gamma\cong\mathbf F_2^3$, every edge quotient $Q_e$ is a binary plane with canonical anisotropic quadratic form
 
 $$
-\Gamma=\mathbf F_2^3,
+q_e(x)=1_{x\ne0}.
 $$
 
-every $Q_e$ is a binary plane with canonical quadratic form
+The global incidence space becomes quadratic symplectic. The vertex space and edge diagonal are Lagrangians; the edge diagonal is totally singular. The local affine family is the characteristic torsor of the vertex Lagrangian.
+
+For Lagrangians $L,M$ in a quadratic symplectic space,
 
 $$
-q_e(x)=\mathbf1_{x\neq0}.
-$$
-
-The direct-sum quadratic space has:
-
-- $L_{\mathrm{vert}}$ Lagrangian;
-- $\kappa+L_{\mathrm{vert}}$ equal to the characteristic torsor of
-  $L_{\mathrm{vert}}$;
-- $L_{\mathrm{edge}}$ totally singular Lagrangian.
-
-For Lagrangians $L,M$ in a nondegenerate quadratic space,
-
-$$
-\operatorname{Char}_q(L)\cap M\neq\varnothing
+\operatorname{Char}_q(L)\cap M\ne\varnothing
 \iff
 q|_{L\cap M}=0.
 $$
 
-The condition is automatic when $M$ is totally singular. Therefore
+Since the edge Lagrangian is totally singular, intersection is automatic.
 
-$$
-\operatorname{Char}_{q_f}(L_{\mathrm{vert}})
-\cap
-L_{\mathrm{edge}}
-\neq\varnothing,
-$$
+Equivalent proof presentations are:
 
-and the rank-three affine obstruction vanishes.
+- quadratic-Lagrangian intersection;
+- quadratic handshaking;
+- cross-bit/support-boundary cancellation.
 
-The following are equivalent resolutions of the same proof:
-
-$$
-\text{Lagrangian intersection}
-\Longleftrightarrow
-\text{quadratic handshaking}
-\Longleftrightarrow
-\text{cross-bit/support-boundary cancellation}.
-$$
-
-The Lagrangian formulation is the canonical paper geometry. The existing
-branching/cross-bit argument remains the machine-checked anchor until the
-invariant bridge and proof are themselves formalized.
-
-**Canonical chapter:**
-[`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md).
+The invariant proof and the existing Lean branching proof are corresponding presentations; their exact bridge is not yet formalized.
 
 ## 4. Natural affine output
 
-A compatible affine family does not intrinsically produce a minimal circuit
-decomposition. It first produces a finite indexed family of even edge supports
-in which every graph edge occurs exactly twice.
+A compatible family produces indexed even edge supports with exact double coverage. Flattening the internal rank-three index gives a graph-level multiset even double cover.
 
-Flattening the internal $\Gamma$-index gives a graph-level multiset **even double
-cover**. This is the natural output of the affine core:
+The natural implication is
 
 $$
 \boxed{
@@ -199,381 +113,224 @@ $$
 }
 $$
 
-The even-cover witness is the correct compositional object because:
+Circuit minimality is not imposed at this stage.
 
-- it is what the affine construction already produces before decomposition;
-- it does not expose $\Gamma$-labels, darts, partner, or rotation data to the
-  outer reduction;
-- it is transported naturally through graph collapse;
-- it postpones circuit decomposition until the original loopless core is
-  recovered.
+## 5. Full CDC shell
 
-A CDC of the already cubic flow graph is an optional immediate corollary, not a
-necessary node in the full proof and not a separate mathematical centre.
+For a bridgeless multigraph $G$ with finite active edge set:
 
-**Canonical chapter:**
-[`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md).
+1. delete loops to obtain the loopless core $G_0$;
+2. supply a nowhere-zero binary flow using the isolated classical flow input;
+3. build a cubic port-cycle expansion $H$ with collapse data;
+4. apply rank-three affine compatibility on $H$;
+5. convert the affine output to a graph-level even double cover of $H$;
+6. pass from vertex-even to cut-even on $H$;
+7. transport cut-even supports through collapse to $G_0$;
+8. decompose each finite cut-even support into circuits once;
+9. add two singleton circuit occurrences for every removed loop.
 
-## 5. Cut parity and graph collapse
+The preferred paper route chooses the binary flow first and uses adaptive ordering. The selected first Lean route expands first and isolates a `BinaryEightFlow` boundary. Neither route changes the assurance boundary.
 
-For a finite support $F\subseteq E(G)$, define
+## 6. Five-support object
 
-$$
-\operatorname{CutEven}_G(F)
-\iff
-\forall S\subseteq V(G),
-\quad |F\cap\delta_G(S)|\equiv0\pmod2.
-$$
-
-Cut-evenness is the invariant directly preserved by graph collapse. It is
-independent of cubicity, flows, affine families, looplessness, connectedness,
-and circuit minimality.
-
-Under the current loopless incidence convention, a finite support is
-vertex-even if and only if it is cut-even. Looplessness belongs to this bridge,
-not to the affine compatibility theorem or the pure collapse theorem.
-
-A collapse datum consists of vertex clusters and an injective lift of original
-edges such that every auxiliary edge stays inside one cluster and the lifted
-edges are exactly the inter-cluster edges. Projection of an upstairs support is
-defined by retaining the original edges whose lifts lie in the support.
-
-For every original vertex subset $S$, lifted cut edges identify
+Put
 
 $$
-\operatorname{proj}(F')\cap\delta_G(S)
-$$
-
-with
-
-$$
-F'\cap\delta_H(\pi^{-1}S).
-$$
-
-Hence finite cut-even supports, and therefore cut-even double covers, project
-without any loopless, cubic, bridgeless, flow, affine, ambient-finiteness, or
-finite-cluster assumption in the pure transport theorem.
-
-This separates the outer shell into three clean pieces:
-
-1. vertex-even to cut-even on the loopless expansion;
-2. pure cut-even transport through collapse;
-3. cut-even cover of the loopless original core, followed directly by intrinsic
-   circuit decomposition.
-
-**Canonical chapter:**
-[`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md).
-
-## 6. Loop separation and the full CDC spine
-
-Let $G$ be a bridgeless multigraph with finite active edge set. Delete all loop
-edges to obtain $G_0$.
-
-- loops cross no cut and are not bridges;
-- deletion preserves bridgelessness on the nonloop core;
-- $G_0$ is loopless and has finite active edge set;
-- a singleton loop is a cut-even circuit.
-
-The complete chain is
-
-$$
-\boxed{
-\begin{array}{c}
-\text{bridgeless multigraph }G\text{ with }E(G)\text{ finite}\\
-\downarrow\;\text{delete loops}\\
-\text{loopless bridgeless core }G_0\\
-\downarrow\\
-\text{cubic expansion }H\text{ with rank-three binary flow}\\
-\downarrow\\
-(\mathcal P_f,\kappa)\\
-\downarrow\\
-\text{rank-three Fano compatibility}\\
-\downarrow\\
-\text{graph-level multiset even double cover of }H\\
-\downarrow\\
-\text{vertex-even/cut-even bridge on }H\\
-\downarrow\\
-\text{pure cut-even transport through collapse}\\
-\downarrow\\
-\text{even double cover of }G_0\\
-\downarrow\\
-\text{one final finite circuit decomposition}\\
-\downarrow\\
-\text{cycle double cover of }G_0\\
-\downarrow\;\text{two singleton circuits per removed loop}\\
-\text{cycle double cover of }G.
-\end{array}
-}
-$$
-
-This shell is part of the complete AffineCDC project even though its principal
-new geometry lies in the affine rank-three core. The companion Lean repository
-must prove its own version of the shell and may not discharge the final theorem
-by importing an external CDC endpoint.
-
-## 7. Finiteness and loop layers
-
-The architecture distinguishes several logically different conditions.
-
-### Looplessness
-
-- It is not an affine/Fano hypothesis.
-- The abstract dart structure permits two distinct paired darts at one vertex.
-- The current Mathlib graph-to-dart port uses looplessness because its incidence
-  pair does not distinguish the two half-incidences of a loop.
-- The current Lean `Statement.lean` uses looplessness because the present
-  vertex-incidence parity convention counts a loop edge once.
-- The approved natural statement removes this representation restriction and
-  uses cut-even circuits.
-- Pure cut-even collapse transport does not require looplessness.
-
-### Finiteness
-
-- The natural public theorem requires `E(G).Finite`.
-- The current Lean checkpoint uses finite ambient vertex and edge types.
-- The finite-graph affine compatibility theorem uses finite global indexing.
-- The even-cover notion itself need not bundle ambient-carrier finiteness.
-- Circuit decomposition mathematically needs finite supports.
-- Cut transport needs finite transported supports, not finite ambient vertex
-  types or finite collapse fibres.
-
-Implementation-level finite-type corollaries may be useful, but they do not
-control the mathematical node.
-
-## 8. Why rank three is exceptional
-
-Three independent dimension and degree conditions coincide:
-
-1. the support function on $Q_e$ has degree $r-1$, so it is quadratic exactly
-   at $r=3$;
-2. the local homogeneous image has dimension $r$ inside dimension $3(r-1)$ and
-   is half-dimensional exactly when $2r=3(r-1)$;
-3. the cubic quotient-sheaf index is
-
-   $$
-   \frac{3-r}{2}|V|,
-   $$
-
-   and vanishes exactly at $r=3$.
-
-Rank three is therefore the unique balanced quadratic point of the hierarchy.
-
-## 9. All-rank transgression and complete obstruction
-
-For a plane $W\leq\Gamma$ and its three nonzero points,
-
-$$
-\sum_{h\in W\setminus\{0\}}
-\nu_{\Gamma/\langle h\rangle}([x]_h)
-=
-\nu_{\Gamma/W}([x]_W).
-$$
-
-This lowers support degree by one in every rank. It gives a universal
-outside-plane parity law, but for rank greater than three the scalar law forgets
-directional information.
-
-The missing information is recovered dually. A legal local stress triple has a
-cross-bit $\beta$, support parity $\sigma$, and hidden-plane residue $\rho$ with
-
-$$
-\sigma=\beta+\rho.
-$$
-
-For every global equilibrium stress,
-
-$$
-\boxed{
-\psi(\kappa)=\sum_v\rho_v(\psi_v).
-}
-$$
-
-Hence compatibility holds exactly when every equilibrium stress has even
-residue parity. This is the complete all-rank criterion.
-
-- in rank three, $\operatorname{Ann}(W)$ is one-dimensional and contains no
-  residue plane;
-- in rank four, it is a plane and the first residue becomes possible;
-- in higher rank, residues carry additional annihilator-plane decorations.
-
-**Canonical chapter:**
-[`rank-hierarchy/transgression-and-dual-fano-residue.md`](rank-hierarchy/transgression-and-dual-fano-residue.md).
-
-## 10. Rank-four first failure
-
-For $\Gamma=\mathbf F_2^4$, legal local stresses are alternating two-forms modulo
-one quotient-form line. The residue is represented by
-
-$$
-\rho_W=(1+\beta_W)\operatorname{Pf}.
-$$
-
-It equals one precisely when the local flow plane is isotropic and the induced
-cross-pairing with its quotient is perfect.
-
-The two connected simple cubic graphs on six vertices give the minimal
-comparison:
-
-| graph | gauge code | essential-stress dimension | compatibility |
-|---|---:|---:|---|
-| triangular prism | $0$ | $1$ | compatible |
-| $K_{3,3}$ | $0$ | $1$ | incompatible |
-
-Here connectedness describes these two specific comparison graphs; it is not a
-hypothesis of the affine compatibility source.
-
-**Canonical chapter:**
-[`rank-hierarchy/rank-four-first-obstruction.md`](rank-hierarchy/rank-four-first-obstruction.md).
-
-## 11. Chain-level reduction to the tensor complex
-
-Let
-
-$$
-Q_G:=\mathbf F_2^E/\mathcal C(G)^\perp
-$$
-
-and define
-
-$$
-T_f(\lambda)=\sum_e\lambda_ef(e)\otimes\bar e,
+E_5=\{x\in\mathbf F_2^5:\sum_i x_i=0\},
 \qquad
-W_f(a\otimes q)=a\wedge F_f(q).
+R_5=\{e_i+e_j:i<j\}.
 $$
 
-The tensor complex is
+An indexed five-support cover is equivalent to a nowhere-zero root-valued flow
 
 $$
-\mathbf F_2^E
-\xrightarrow{T_f}
-\Gamma\otimes Q_G
-\xrightarrow{W_f}
-\Lambda^2\Gamma.
+E(G)\to R_5.
 $$
 
-It is related to the incidence geometry by a canonical zigzag
+At a cubic vertex the three roots form a triangle of $K_5$.
+
+Equivalent global formulations include:
+
+- $K_5$ triangle labelling;
+- cographic/cycle-continuous map;
+- matching plus nowhere-zero $\mathbf F_2^2$ flow;
+- quadratic cycle equation.
+
+The universal rank-three theorem always gives an eight-support root lift in the plus-type orthogonal model. The five-support problem is orthogonal confinement to the minus-type four-dimensional root model.
+
+## 7. Fixed projection and lifting obstruction
+
+Fix a Fano flow $f$ and a plane $W\le\Gamma$. Let $G_W$ be the subgraph of $W$-valued edges. Every component $K$ has one common outside-colour boundary parity $\chi_W(K)$.
+
+A five-coordinate lift in this slice exists exactly when
 
 $$
-\widehat{\mathscr Q}_f
-\xleftarrow{\simeq}
-\widehat{\mathcal R}_f
-\twoheadrightarrow
-\mathcal T_f.
+\chi_W(K)=0
 $$
 
-The exact comparison is
+for every component.
 
-$$
-0\to\Gamma\to H_f^0\to\ker T_f\to0,
-$$
+Equivalent forms are:
 
-$$
-H_f^1\cong\operatorname{coker}T_f,
-$$
+- singular quotient holonomy;
+- Eulerian outside-colour classes after contraction;
+- vanishing of $\partial(x*y)$;
+- trivial pairing with every relative stress.
 
-and
+This criterion is complete after $f$ and $W$ are fixed, not at the graph level.
 
-$$
-0\to\mathcal K_f\to H_f^1\xrightarrow{\mu_f}\Lambda^2\Gamma\to0,
-\qquad
-\mathcal K_f=\ker W_f/\operatorname{im}T_f.
-$$
+## 8. Cycle-face surface and full target object
 
-The affine class lies canonically in $\mathcal K_f$. Thus the tensor complex
-preserves compatibility but forgets constants, nonzero wedge moment, a preferred
-vertex realization, and the dart-level cover data.
+A compatible root lift $g$ determines a properly face-coloured cycle-face embedding $S_g$. Its dual $T_g$ is a closed triangular cellulation.
 
-**Canonical chapter:**
-[`reduction/incidence-to-tensor-complex.md`](reduction/incidence-to-tensor-complex.md).
-
-## 12. Tensor, code, gauge, and interface branches
-
-Dualizing a based quotient datum gives a nested code flag
-
-$$
-D\subseteq C\subseteq\mathbf F_2^E
-$$
-
-and a dual complex
-
-$$
-\Lambda^2D
-\longrightarrow
-D\otimes C
-\xrightarrow{*}
-\mathbf F_2^E.
-$$
-
-This downstream branch contains Schur multiplication, syzygies, constraint
-matroids, divided-square and coefficient exact sequences, strict morphisms, and
-balanced determinant-line torsion. Its recognition as an independent general
-framework remains conditional on literature comparison and external payoff.
-
-The homogeneous kernel has a direct graph interpretation through harmonic cut
-quotients, gauge circuits, and interface gluing. These results are genuine
-mathematics, but they emanate from the compatibility core and do not replace the
-existence spine.
-
-**Canonical chapters:**
-
-- [`tensor/code-flag-complex.md`](tensor/code-flag-complex.md);
-- [`tensor/exact-sequences-and-functoriality.md`](tensor/exact-sequences-and-functoriality.md);
-- [`tensor/torsion-and-rigidity.md`](tensor/torsion-and-rigidity.md);
-- [`gauge/gauge-modes-and-circuits.md`](gauge/gauge-modes-and-circuits.md);
-- [`gauge/interface-gluing.md`](gauge/interface-gluing.md).
-
-## 13. Trust and archive boundary
-
-The companion Lean repository currently machine-checks the original local
-classification, the compatibility conclusion through the branching/cross-bit
-presentation, the indexed support construction, and the cubic-flow CDC
-corollary for a graph already carrying the required flow.
-
-It does **not** yet machine-check:
-
-- the invariant characteristic-torsor identification and Lagrangian proof;
-- the named graph-level even-cover factorization;
-- cut-even collapse transport;
-- loop deletion and singleton-loop reinsertion;
-- the independent outer reduction;
-- the current loopless `CDCStatement` or the approved full theorem.
-
-The snapshot-only embedding, Petrial, transition, and surface sources are not
-reconstructed. Their inventory and restoration protocol are in
-[`topology/README.md`](topology/README.md).
-
-See:
-
-- [`FORMAL_STATUS.md`](FORMAL_STATUS.md) for reliability;
-- [`MIGRATION_LEDGER.md`](MIGRATION_LEDGER.md) for the disposition of former
-  active sources;
-- [`PUBLICATION_PROGRAM.md`](PUBLICATION_PROGRAM.md) for paper boundaries.
-
-## 14. Dependency graph
+The complete fixed-lift criterion is
 
 $$
 \boxed{
-\begin{array}{c}
-\text{full finite bridgeless-multigraph CDC theorem}\\
-\uparrow\\
-\text{loop reinsertion after one final decomposition}\\
-\uparrow\\
-\text{outer expansion, flow, and cut-even collapse transport}\\
-\uparrow\\
-\text{graph-level multiset even double cover}\\
-\uparrow\\
-\text{compatible affine family}\\
-\uparrow\\
-\text{rank-three Fano intersection}\\
-\uparrow\\
-(\mathcal P_f,\kappa)\\
-\uparrow\\
-(G,\Gamma,f).
-\end{array}
+T_g^{(1)}\to\mathscr A_5.
 }
 $$
 
-The rank hierarchy branches from the affine obstruction. The tensor/code and
-gauge/interface theories branch from reductions and homogeneous structures of
-the same core. None of those branches replaces the unconditional existence
-spine.
+The used old-colour graph $J_g$ is only a quotient:
+
+$$
+T_g^{(1)}\to J_g.
+$$
+
+Thus $J_g\to\mathscr A_5$ classifies global-index-factorable compression. The exact $K_6/K_8-C_5$ theorem remains valid only in this scope.
+
+Target obstruction is organized by:
+
+- dominating-clique links;
+- common-neighbour chromatic cores;
+- marked finite dual certificates;
+- projective and exposed-cycle geometry of visible $K_6$ cores.
+
+## 9. Vertical gauge geometry
+
+For fixed $f$, compatible lifts form a torsor under $H_f^0$; modulo global translations this is the reduced gauge code $B_f$.
+
+A gauge word is simultaneously:
+
+- a homogeneous affine difference;
+- a piecewise root translation;
+- a code-filtered partial Petrial of the cycle-face surface.
+
+Every fixed marked obstruction core has occurrence locus
+
+$$
+\beta+(B_f\cap\mathbf F_2^R),
+$$
+
+where $R$ is the reserve outside its face zone. A finite certificate library therefore yields an affine-subspace arrangement in $B_f$.
+
+Renewal cubes are exact finite examples of arrangement coverage; they are not universal fibre structure.
+
+## 10. Horizontal Fano-flow geometry
+
+All $\Gamma$-valued flows form
+
+$$
+Z_1(G)\otimes\Gamma.
+$$
+
+Nowhere-zero flows are an arrangement complement. A connected-cycle switch is a rank-one tensor move and one reconfiguration edge. Disconnected cycle switches are compositions.
+
+Relative to a fixed plane $W$:
+
+- internal switch directions $t\in W$ give a linear correction map on the fixed quotient;
+- external directions $t\notin W$ reslice the quotient while preserving lower-rank flow data.
+
+The graph-level five-support question depends on the decorated two-level system consisting of horizontal flow states and their vertical obstruction arrangements.
+
+## 11. Source interfaces
+
+Three-edge cuts are completely reducible: five-support covers glue after matching the unique local pair-support law.
+
+Four-edge cuts have the ten-state alphabet
+
+$$
+\{A,B_i,C_i,D_i:i=0,1,2\}.
+$$
+
+Gluing is exact profile intersection. Minimality gives cap forcing; Kempe path pairing gives closure. Routing-weight coordinates identify the three matching directions of $AG(2,2)$.
+
+Uniform routing is eliminated. The four abstract residual kernels reduce to:
+
+- Type T: $P_5\mid P_5$ unique linkage;
+- Type H: $P_4\mid C_3$ rainbow holonomy.
+
+## 12. Interior holonomy and Tait resolution
+
+A lifted Type H loop has affine datum
+
+$$
+(\pi,z)\in(Z_1(P)\otimes E_5)\rtimes S_5.
+$$
+
+The cyclic norm $N_\pi z$ is the ambient obstruction. When it vanishes, root-admissible linearization is a finite root-fibre section problem.
+
+The genuine three-switch word reduces the problem to a low-rank switch flow. Root lifting is equivalent to a Tait resolution. In a minimal Type H kernel, every Tait resolution forces boundary-profile escape.
+
+For the BBD family, root rigidity kills the full translation kernel, $H^1(S_5,E_5)=0$, and one canonical $E_5$ flow controls all loops.
+
+## 13. Defects and atoms
+
+The canonical or energy-minimal $E_5$ flow has zero and co-root defects.
+
+- the complete defect support is an induced forest;
+- co-root paths carry an $L(\mathrm{Petersen})$ transducer with side-root output;
+- one-factor endpoints are the fifteen Petersen-edge states;
+- the smallest co-root component is a DDD atom with one co-root and two root resolutions.
+
+If both crossed atom resolutions are blocked, unique-bad-route reduction gives a locked $K_{2,4}$ orbit and a quotient $\mathbf F_2^3$ flow with equal terminal colour.
+
+Rank two escapes through a Tait root lift. In full rank:
+
+- $\Omega\ne0$ gives a common-cut dual witness with odd terminal parity;
+- $\Omega=0$ gives an eight-state affine potential.
+
+The DDD subgroup retains one exceptional class in $H^1(D_8,E_5)$.
+
+## 14. Current frontier
+
+The missing theorem is a strict localization/composition result. It must convert one of:
+
+- Type T unique linkage;
+- Type H ambient or root-fibre obstruction;
+- zero network;
+- co-root strip;
+- nonflat common-cut witness;
+- flat potential partition;
+- exceptional DDD class;
+
+into one of:
+
+- profile expansion or orbit escape;
+- smaller cyclic separator;
+- serial or bounded four-pole replacement;
+- transition-matroid split;
+- gluing of smaller instances.
+
+The sharpest current target is support-minimal common-cut localization together with a finite interface for the flat potential branch.
+
+## 15. Secondary theories
+
+The following are downstream projections and do not replace the main architecture:
+
+- tensor/code-flag homology;
+- gauge circuits and harmonic quotients;
+- rank-four residue hierarchy;
+- orientation transgression and five-flow extraction;
+- planar Fano-line flattening;
+- embedding/Petrial theories whose older sources may be incomplete.
+
+## 16. Canonical reading map
+
+- complete CDC spine: `core/` and `reduction/`;
+- five-support corpus: [`five-support/README.md`](five-support/README.md);
+- dependency graph: [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md);
+- open boundary: [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md);
+- assurance: [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
+
+No structural placement in this architecture upgrades formal, independent-review, peer-review, publication, release, or DOI status.
