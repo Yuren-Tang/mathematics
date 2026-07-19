@@ -35,7 +35,7 @@ Its seventy-eight `research/FIVE_CDC_*.md` packets are retired from the current 
    Quotient Tait flow, binary phase, affine scalar-sheet plane, Kempe cycle differences, and aligned/crossed endpoint switch signatures.
 
 9. [`quartic-transition-skeletons.md`](quartic-transition-skeletons.md)  
-   Connected pairwise sheet-incidence graphs, terminal Euler trails, exact cycle rank, and the physical ribbon transition skeleton.
+   Connected pairwise sheet-incidence graphs, terminal Euler trails, exact cycle rank, and the marked ribbon transition skeleton.
 
 10. [`quartic-terminal-nucleus.md`](quartic-terminal-nucleus.md)  
     The canonical `O^-(4,2)` terminal nucleus, its intrinsic `E_5/K_5` geometry and `D_8` route stabiliser, the curvature carrier, block projections, and the split-or-peel recursion.
@@ -44,21 +44,33 @@ Its seventy-eight `research/FIVE_CDC_*.md` packets are retired from the current 
     Projected sheet conservation and the exact identification of terminal distributions `3`, `2+1`, and `1+1+1` with an equality wire, one `K_6` one-factor vertex, or a one-factor vertex followed by a root triangle.
 
 12. [`quartic-nucleus-transport.md`](quartic-nucleus-transport.md)  
-    Canonical isometry between successive nuclei, diagonal singular gluing, curvature transport, and the exact two-vertex pairwise transition shell contributed by each concentrated peel.
+    Canonical isometry between successive nuclei, diagonal singular gluing, curvature transport, and the exact two-vertex marked shell contributed by each concentrated peel.
 
 13. [`scalar-interval-transfer.md`](scalar-interval-transfer.md)  
-    Three-state scalar-interval walks, telescoping side output, eighteen quotient transfer states, and algebraic backtrack reduction.
+    Elementary `g`-to-`g` scalar intervals, telescoping side output, eighteen quotient transfer states, and algebraic backtrack reduction.
 
 14. [`scalar-interval-caps-and-cells.md`](scalar-interval-caps-and-cells.md)  
-    Physical backtrack caps with exact four-sheet routing and the decomposition of every reduced interval into periodic three-turn triangle cells.
+    Physical backtrack caps with exact four-sheet routing and periodic three-turn triangle cells for elementary intervals.
 
-15. [`frontier-localisation.md`](frontier-localisation.md)  
+15. [`periodic-kempe-ladders.md`](periodic-kempe-ladders.md)  
+    Exact three-Kempe wiring inside periodic elementary intervals and the rigid three-rail ladder normal form.
+
+16. [`g-component-transition-quotient.md`](g-component-transition-quotient.md)  
+    The physical Eulerian quotient obtained by contracting `Q-E_g`, its four transition systems, common-cut formulation, exact cut lifting, and terminal-sensitive cut parity.
+
+17. [`route-capped-line-graph-carrier.md`](route-capped-line-graph-carrier.md)  
+    The canonical route-capped `4`-regular flag-line graph, four scalar circuit partitions, unified aligned/crossed transition law, and one-sided touch incidence.
+
+18. [`relative-touch-homology.md`](relative-touch-homology.md)  
+    The common-cut kernel as a fourfold relative touch-cycle space, curvature as terminal relative-boundary evaluation, and the exact obstruction to direct isotropic connectivity.
+
+19. [`frontier-localisation.md`](frontier-localisation.md)  
     Exact remaining localisation/composition frontier and recommended proof order.
 
-16. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md)  
+20. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md)  
     Preferred and independent proof families, exact equivalences, sufficient templates, and negative boundaries.
 
-17. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md)  
+21. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md)  
     Exact finite computations, counterexamples, certificates, and their evidentiary scope.
 
 ## Scope
@@ -73,9 +85,17 @@ $$
 
 not merely the global-colour quotient criterion `J_g -> A_5`.
 
-The sharp nonflat frontier is composition of bounded singleton/transition interfaces and physical realization of the quartic split-or-peel theorem. Every quartic design has a canonical minus-type terminal nucleus. A split sheet already projects to a bounded `K_6` defect gadget with at most two cubic vertices; an all-concentrated design peels to a smaller quartic design through one canonical `D_8` nucleus layer. Successive nuclei and their curvature carriers transport canonically, while each pairwise ribbon skeleton grows by one fixed two-vertex shell.
+The sharp nonflat frontier has three coordinated carriers.
 
-The scalar intervals inside those shells no longer carry unbounded flow algebra: each has one of eighteen quotient transfer states, and every interval either contains a bounded two-vertex Tait cap or is a chain of periodic three-turn triangle cells with bounded ends. The remaining unbounded datum is the external side-attachment semantics of those cells and its simultaneous compatibility across the four scalar sheets. The flat-potential, defect-forest, four-pole, and horizontal bad-flow transfer problems remain open.
+1. **Incidence carrier.**  Every quartic design has a canonical minus-type terminal nucleus. A split sheet projects to a bounded `K_6` defect gadget with at most two cubic vertices; an all-concentrated design peels to a smaller quartic design through one canonical `D_8` nucleus layer.
+2. **Physical cut carrier.**  Contracting the connected components of `Q-E_g` gives an Eulerian four-pole `\Gamma_g` with four physically realized transition systems. Every internal quotient cut lifts exactly to a `g`-coloured cut in `Q`, with parity determined by the number of original terminal flags on the shore.
+3. **Standard `4`-regular carrier.**  Closing the terminals according to `12\mid34` and taking the flag-line graph gives one canonical `4`-regular graph carrying all four scalar circuit partitions. The common-cut witness is presently a fourfold relative touch cycle, not yet a proved transition-matroid circuit.
+
+The elementary non-`g` pieces between consecutive full `g`-incidences have finite flow algebra: eighteen transfer states, bounded backtrack caps, or rigid periodic Kempe ladders. A witness-to-witness arc may nevertheless contain arbitrarily many additional edges of `E_g\setminus\eta`; it is a transition walk in `\Gamma_g`, not one elementary interval.
+
+The central missing theorem is now a **relative-boundary closure/decomposition theorem**: close the complementary touch boundary by bounded data and obtain a transverse dependence, or force a terminal-even separator/transition two-sum in `\Gamma_g`, with the irreducible alternative identified as the physical `D_8` class.
+
+The flat-potential, defect-forest, four-pole, and horizontal bad-flow transfer problems remain open.
 
 ## Reliability
 
