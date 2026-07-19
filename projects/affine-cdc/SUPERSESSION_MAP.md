@@ -1,251 +1,338 @@
-# AffineCDC supersession and correction map
+# AffineCDC supersession and correction ledger
 
-This map identifies which formulations control the rolling baseline at checkpoint `dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`.
+This ledger records which formulations control the reconstructed corpus. Supersession means that a broader interpretation, count, endpoint, or status has been replaced. It does not erase valid lemmas, finite certificates, discovery history, or priority records in the source file.
 
-Supersession here does not erase a source. Historical files remain exact priority, discovery, failed-route, and finite-evidence records. A superseded file may contain valid lemmas or computations; only the identified broad interpretation, status, count, or programme claim is replaced.
+## 1. Corpus-level control
 
-## 1. Outer-shell provenance line
-
-| Earlier source | Controlling successor | Current use |
+| Earlier control surface | Controlling surface | Effect |
 |---|---|---|
-| Original M1 outer-shell dossier `3f79773e...` | Reviewed M2 corrections and later promotion packets | Frozen historical source; not edited in place. |
-| MP1 `research/affine-cdc-outer-shell-promotion-v1@eb6f184d...` | MP2 `promotion/affine-cdc-outer-shell-v1@0927011177cabac20f06a57fa5e57476d6f13dee` | Content-superseded accepted provenance. |
-| Adaptive-ordering source `04f9a370...` | MP2 outer-shell chapter | Retained as a frozen accepted proof source; absorbed into the preferred flow-first route. |
-| Binary-eight-flow source `8b17ebb...` | MP2 outer-shell chapter | Retained as frozen accepted source for the isolated classical boundary. |
-| Canonical `main@749e057...` without the closed outer-shell chapter | MP2 exact three-file delta | MP2 is the controlling accepted outer-shell source in this candidate; no `main` movement is implied. |
+| Flat chronological `research/FIVE_CDC_*.md` reading path | [`five-support/README.md`](five-support/README.md) and reconstructed chapters | Research packets remain exact sources; they no longer determine exposition order. |
+| Rolling baseline navigation only | [`README.md`](README.md), [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md), [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md) | Replaces filing/indexing with substantive theorem-driven corpus. |
+| Preliminary frontier summary | [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md) and [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md) | Sharpens the endpoint to localisation/composition. |
+| Preliminary source map | [`MIGRATION_LEDGER.md`](MIGRATION_LEDGER.md) | Maps every public packet to a substantive destination. |
 
-The controlling public files are:
+## 2. Complete CDC shell provenance
 
-- [`reduction/outer-shell-and-binary-flow.md`](reduction/outer-shell-and-binary-flow.md);
-- [`FORMAL_STATUS.md`](FORMAL_STATUS.md);
-- [`PUBLICATION_PROGRAM.md`](PUBLICATION_PROGRAM.md).
+The accepted outer-shell MP2 source remains
 
-## 2. Half-cube criterion: colour quotient to componentwise dual
+`0927011177cabac20f06a57fa5e57476d6f13dee`.
 
-### Earlier broad reading
+It controls:
 
-[`research/FIVE_CDC_HALFCUBE_SUBGRAPH_CLASSIFICATION_V1.md`](research/FIVE_CDC_HALFCUBE_SUBGRAPH_CLASSIFICATION_V1.md) proves the exact eight-vertex graph theorem
+- `reduction/outer-shell-and-binary-flow.md`;
+- the corresponding additions to `FORMAL_STATUS.md`;
+- the corresponding Paper A boundary in `PUBLICATION_PROGRAM.md`.
+
+Earlier M1/M2, adaptive-ordering, binary-eight-flow, and MP1 sources remain frozen provenance. MP2 is content-controlling for this corpus. No `main` movement is implied.
+
+## 3. Global-colour quotient to full componentwise dual
+
+### Earlier broad statement
+
+A fixed root lift compresses to five supports if and only if
 
 $$
-J\to\mathscr A_5
-\iff
-K_6\nsubseteq J
-\text{ and }
-K_8-C_5\nsubseteq J.
+J_g\to\mathscr A_5.
 $$
 
-The early programme read $J_g\to\mathscr A_5$ as the complete compression criterion for a fixed root lift.
+### Controlling statement
 
-### Controlling correction
+$$
+\boxed{
+T_g^{(1)}\to\mathscr A_5.
+}
+$$
 
-- [`research/FIVE_CDC_HALFCUBE_SCOPE_CORRECTION_V1.md`](research/FIVE_CDC_HALFCUBE_SCOPE_CORRECTION_V1.md);
-- [`research/FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_V1.md`](research/FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_V1.md);
-- [`research/FIVE_CDC_COMPONENTWISE_PROGRAMME_CHECKPOINT_V1.md`](research/FIVE_CDC_COMPONENTWISE_PROGRAMME_CHECKPOINT_V1.md).
+The $J_g$ theorem classifies only maps factoring through the old eight support colours:
 
-The current reading is:
+$$
+T_g^{(1)}\to J_g\to\mathscr A_5.
+$$
 
-- $J_g\to\mathscr A_5$ classifies maps factoring through the eight old global support colours;
-- the complete same-embedding criterion is $T_g^{(1)}\to\mathscr A_5$ on the full dual triangulation;
-- the quotient-factorable route remains a valid and useful sufficient subroute, not a false theorem.
+Controlling sources:
 
-## 3. Support switches: one neighbour versus a composite move
+- `FIVE_CDC_HALFCUBE_SCOPE_CORRECTION_V1.md`;
+- `FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_V1.md`;
+- `FIVE_CDC_COMPONENTWISE_PROGRAMME_CHECKPOINT_V1.md`.
 
-### Earlier broad reading
+The exact $K_6/K_8-C_5$ graph classification, unused-matching theorem, defect-core quotient, and ideal-pivot results remain valid in their factorable scope.
 
-[`research/FIVE_CDC_SUPPORT_CYCLE_PIVOT_AND_FLOW_RECONFIGURATION_V1.md`](research/FIVE_CDC_SUPPORT_CYCLE_PIVOT_AND_FLOW_RECONFIGURATION_V1.md) used “adjacent” too broadly for all `7737` nonzero binary-cycle switch pairs in the thirty-vertex laboratory.
+## 4. Coloured-surface witness erratum
 
-### Controlling correction
+The malformed witness display in `FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_V1.md` is corrected by
 
-[`research/FIVE_CDC_HALFCUBE_SCOPE_CORRECTION_V1.md`](research/FIVE_CDC_HALFCUBE_SCOPE_CORRECTION_V1.md).
+`FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_ERRATUM_V1.md`.
 
-Current distinction:
+Only the table is superseded. The surface correspondence and componentwise theorem remain controlling.
 
-- a connected-cycle switch is one edge of the flow-reconfiguration graph;
-- a disconnected binary-cycle switch is a composition/path of its connected components;
-- exactly `2801` of the `7737` pairs in that census are genuine one-edge neighbours.
+## 5. Binary-cycle switches to connected-cycle adjacency
 
-## 4. Coloured-surface witness-table erratum
+### Earlier broad language
 
-### Corrected file
+All `7737` nonzero binary-cycle switch pairs in the thirty-vertex laboratory were called adjacent.
 
-[`research/FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_V1.md`](research/FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_V1.md), Section 6 witness display.
+### Controlling distinction
 
-### Controlling successor
+- connected support: one reconfiguration edge;
+- disconnected support: commuting composition/path.
 
-[`research/FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_ERRATUM_V1.md`](research/FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_ERRATUM_V1.md).
+Exactly `2801` pairs have connected support. Componentwise outcome counts must be read from the corrected census.
 
-The corrected colour-pair witness table supersedes only the malformed display. The triangulation, the two colourings, and the theorem statements are retained.
+Controlling source:
+`FIVE_CDC_HALFCUBE_SCOPE_CORRECTION_V1.md`.
 
-## 5. Old factorable census to corrected componentwise census
+## 6. Factorable census to componentwise census
 
-### Earlier data and interpretation
+The old `3453/3060/1224` and connected `1245/1133/423` counts concern factorable goodness.
 
-The early thirty-vertex census classified global-index-factorable outcomes and included all binary-cycle switches in one population.
+The controlling componentwise counts are:
 
-### Controlling successor
+- all `7737`: `1121/2128/4488` none/some/all;
+- connected `2801`: `360/783/1658` none/some/all.
 
-[`research/FIVE_CDC_COMPONENTWISE_PROGRAMME_CHECKPOINT_V1.md`](research/FIVE_CDC_COMPONENTWISE_PROGRAMME_CHECKPOINT_V1.md), together with the scope correction above.
+Controlling source:
+`FIVE_CDC_COMPONENTWISE_PROGRAMME_CHECKPOINT_V1.md`.
 
-Current counts:
+## 7. Clique-only obstruction to deeper target links
 
-- all `7737` nonzero switch pairs: componentwise `none/some/all = 1121/2128/4488`;
-- `2801` connected-cycle neighbours: componentwise `none/some/all = 360/783/1658`;
-- the `360` wholly bad neighbour fibres contain `752` reduced lifts, every one with a $K_6$ in that finite neighbourhood.
+### Overstrong inference
 
-These counts are exact finite evidence. They do not make $K_6$ the complete general obstruction.
+Every bad compatible dual is detected by a $K_6$.
 
-## 6. Clique-local evidence to the $K_6$-free warning
+### Controlling boundary
 
-### Tempting overgeneralisation
+- $K_6$ is the first visible clique obstruction;
+- $K_6$-free does not imply a half-cube map in general;
+- the flower $J_5$ realizes a compatible $K_6$-free obstruction containing $K_2\vee W_5$.
 
-The corrected neighbourhood census found a $K_6$ in every residual bad lift.
+Controlling sources:
 
-### Controlling negative theorem
+- `FIVE_CDC_K6_FREE_HALFCUBE_WARNING_V1.md`;
+- `FIVE_CDC_FLOWER_J5_MIXED_CORE_OBSTRUCTION_V1.md`;
+- `FIVE_CDC_DOMINATING_CLIQUE_EXACT_CAPACITY_V1.md`.
 
-[`research/FIVE_CDC_K6_FREE_HALFCUBE_WARNING_V1.md`](research/FIVE_CDC_K6_FREE_HALFCUBE_WARNING_V1.md).
+The thirty-vertex observation that every residual bad neighbour contains $K_6$ remains an exact finite statement only.
 
-The Mycielski graph $M(K_5)$ is $K_6$-free but does not map to $\mathscr A_5$. Therefore $K_6$-freeness is not sufficient for arbitrary target graphs. The packet does **not** claim that $M(K_5)$ occurs as a compatible closed dual triangulation; that compatible-realisation question remains open.
+## 8. Fixed lift, fixed flow, and graph-level obstruction
 
-## 7. Fixed-lift/fixed-flow modules to graph-level quantifiers
+### Overstrong inference
 
-### Earlier risk
+A closed bad gauge fibre or renewal cube is a graph-level obstruction atom.
 
-The fixed-Fano obstruction, universal renewal cubes, and closed bad gauge fibres could be read as graph-level obstruction mechanisms.
+### Controlling quantifiers
 
-Relevant historical files include:
+1. one bad lift;
+2. one wholly bad fixed-flow fibre;
+3. graph-level failure only if every nowhere-zero Fano flow is wholly bad.
 
-- [`research/FIVE_CDC_FIXED_FANO_ORBIT_OBSTRUCTION_V1.md`](research/FIVE_CDC_FIXED_FANO_ORBIT_OBSTRUCTION_V1.md);
-- [`research/FIVE_CDC_UNIVERSAL_RENEWAL_CUBE_TEMPLATE_V1.md`](research/FIVE_CDC_UNIVERSAL_RENEWAL_CUBE_TEMPLATE_V1.md);
-- [`research/FIVE_CDC_UNIVERSAL_SIX_CUBE_MODULE_V1.md`](research/FIVE_CDC_UNIVERSAL_SIX_CUBE_MODULE_V1.md).
+The thirty-vertex graph is explicitly three-edge-colourable despite large bad fixed-flow modules. Petersen has no bad Fano flow. The flower $J_5$ displayed bad flow has many one-step exits.
 
-### Controlling correction
+Controlling sources:
 
-[`research/FIVE_CDC_FIXED_FLOW_GRAPH_LEVEL_SEPARATION_V1.md`](research/FIVE_CDC_FIXED_FLOW_GRAPH_LEVEL_SEPARATION_V1.md).
+- `FIVE_CDC_FIXED_FLOW_GRAPH_LEVEL_SEPARATION_V1.md`;
+- `FIVE_CDC_PETERSEN_ALL_FANO_FLOWS_V1.md`;
+- `FIVE_CDC_HORIZONTAL_RENEWAL_NEIGHBOURHOOD_V1.md`.
 
-Current hierarchy:
+## 9. Fixed-flow five-support hope to the cube certificate
 
-1. one fixed lift may be bad;
-2. every lift over one fixed Fano flow may be bad;
-3. the graph is bad only if every Fano flow has an entirely bad fibre.
+The statement
 
-The thirty-vertex laboratory is explicitly three-edge-colourable and has a three-support CDC. Its renewal cubes are bad fixed-flow modules, not graph-level counterexample atoms.
+> every fixed nowhere-zero Fano flow admits a compatible five-support lift
 
-## 8. Fixed-flow five-support hope and the cube obstruction
+is false. `FIVE_CDC_FIXED_FLOW_REDUCTION_V1.md` gives an explicit cube flow requiring six indexed supports.
 
-[`research/FIVE_CDC_FIXED_FLOW_REDUCTION_V1.md`](research/FIVE_CDC_FIXED_FLOW_REDUCTION_V1.md) contains the exact cube certificate showing that one fixed Fano flow may require six indexed supports.
+The graph-level statement survives because the Fano flow and componentwise lift may change.
 
-The false strengthening is:
+## 10. Source-independent compression to source-dependent homomorphism
 
-> Every fixed nowhere-zero $\mathbf F_2^3$-flow has a compatible family using at most five indexed supports.
+There is no universal map $K_8\to K_5$ and no compression rule depending only on the eight old support names.
 
-The surviving graph-level question permits joint choice of the flow and compatible lift. The controlling quantifier separation is the file in Section 7 above.
+Controlling replacement:
 
-## 9. Arbitrary route search to unique-bad-route and route-lock
+- use the actual used-label graph $J_g$ for factorable compression;
+- use the full dual $T_g$ for the complete same-embedding problem;
+- allow gauge/Petrial and horizontal flow motion.
 
-### Earlier search space
+Controlling sources:
 
-A one-edge co-root atom appeared to require an uncontrolled search over three possible terminal pairings under every full challenge.
+- `FIVE_CDC_NO_UNIVERSAL_K8_TO_K5_COMPRESSION_V1.md`;
+- `FIVE_CDC_SOURCE_DEPENDENT_HALFCUBE_COMPRESSION_V1.md`;
+- componentwise scope correction.
 
-### Controlling successors
+## 11. Static factorable cores to the two-level state space
 
-- [`research/FIVE_CDC_DDD_ATOM_RESOLUTION_TRIALITY_V1.md`](research/FIVE_CDC_DDD_ATOM_RESOLUTION_TRIALITY_V1.md);
-- [`research/FIVE_CDC_ATOM_ROUTE_LOCK_CURVATURE_V1.md`](research/FIVE_CDC_ATOM_ROUTE_LOCK_CURVATURE_V1.md).
+The two-apex/pentagon defect-core classification and ideal-pivot depth theorem remain exact for the factorable quotient $J_g$.
 
-Current theorem:
+They are no longer the complete fixed-lift obstruction theory. The controlling architecture uses:
 
-- the three pairings are exactly one co-root and two root-valued DDD/Petersen resolutions;
-- the original atom pairing is the unique route that remains bad;
-- either a crossed route rootifies the defect, or every challenge is locked to the original route.
+- full dual triangulations;
+- marked componentwise obstruction cores;
+- vertical gauge arrangements;
+- horizontal Fano-flow motion.
 
-This replaces arbitrary route enumeration by one exact dichotomy. It does not by itself prove composition-safe graph replacement.
+The one-star ideal trap remains a useful target-side dynamical model, not the universal graph frontier.
 
-## 10. Route-lock does not imply a graph two-cut
+## 12. Individual clique destruction to arrangement renewal
 
-### Disproved shortcut
+### Earlier hope
 
-The four scalar sheets all using route `12|34` might appear to force a two-edge separation of the terminal pairs.
+If every marked $K_6$ can be destroyed by some gauge word, the fibre contains a $K_6$-free state.
 
-### Controlling negative evidence/theorem boundary
+### Controlling theorem
 
-- [`research/FIVE_CDC_ATOM_ROUTE_LOCK_CURVATURE_V1.md`](research/FIVE_CDC_ATOM_ROUTE_LOCK_CURVATURE_V1.md), rank-drop witness;
-- [`research/FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md`](research/FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md), independent rerun and second witness.
+Each marked core occurs on an affine subspace. Individual exposure does not prevent the collection of occurrence subspaces from covering the whole gauge torsor.
 
-Exact witnesses have universal route-lock but minimum pair-separating cut size four. The locked sector must be treated as a flow/transition system, not silently replaced by a graph two-cut.
+The thirty-vertex two-state fibre is an exact clique-renewal example.
 
-## 11. Rank-two locked sector to Tait-lift escape
+Controlling sources:
 
-### Earlier residual branch
+- `FIVE_CDC_FACE_TRANSITION_OBSTRUCTION_ARRANGEMENT_V1.md`;
+- `FIVE_CDC_K6_ESCAPE_OR_FROZEN_CYCLE_CERTIFICATE_V1.md`.
 
-[`research/FIVE_CDC_ATOM_ROUTE_LOCK_CURVATURE_V1.md`](research/FIVE_CDC_ATOM_ROUTE_LOCK_CURVATURE_V1.md) retained a rank-drop transition sector.
+## 13. Arbitrary route search to unique-bad-route reduction
 
-### Controlling successor
+A nondegenerate co-root atom has one co-root and two root resolutions. For every full challenge, the original atom pairing is the unique route that remains bad.
 
-[`research/FIVE_CDC_ROUTE_LOCK_RANK_TWO_TAIT_ESCAPE_V1.md`](research/FIVE_CDC_ROUTE_LOCK_RANK_TWO_TAIT_ESCAPE_V1.md).
+Thus the route problem is:
 
-Current theorem:
+- some crossed route occurs, giving root resolution; or
+- all routes lock to the original pairing.
+
+Controlling sources:
+
+- `FIVE_CDC_DDD_ATOM_RESOLUTION_TRIALITY_V1.md`;
+- `FIVE_CDC_ATOM_ROUTE_LOCK_CURVATURE_V1.md`;
+- `FIVE_CDC_ATOM_ROUTE_LOCK_FANO_CURVATURE_V1.md`.
+
+## 14. Route-lock to graph two-cut: false
+
+Explicit rank-two locked four-poles have minimum pair-separating cut four.
+
+Therefore
+
+$$
+\text{route-lock}\not\Rightarrow\text{graph two-edge separation}.
+$$
+
+Controlling sources:
+
+- route-lock packets;
+- `FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md`.
+
+## 15. Rank-drop branch to Tait escape
+
+The earlier route-lock trichotomy retained an unresolved rank-drop sector.
+
+Controlling theorem:
 
 - rank one is impossible;
-- rank two is a Tait three-edge-colouring of the quotient four-pole;
-- every such colour plane has a root-triangle section;
-- the resulting root flow has boundary state $A$ and escapes the locked Type-H profile.
+- rank two is a Tait three-edge-colouring;
+- a root-triangle section produces boundary-state escape.
 
-Only full rank three remains as a possible locked obstruction sector.
+Source:
+`FIVE_CDC_ROUTE_LOCK_RANK_TWO_TAIT_ESCAPE_V1.md`.
 
-## 12. Automatic-flatness hope to a full-rank nonflat counterexample
+Only full rank remains.
+
+## 16. Automatic flatness to the curvature dichotomy
 
 ### Overstrong hope
 
-Universal route-lock might have forced the quadratic transition class $\Omega(c)$ to vanish, yielding an automatic affine potential.
+Universal route-lock forces a common affine side potential.
 
-### Controlling structure and counterexample
+### Controlling result
 
-- [`research/FIVE_CDC_FULL_RANK_CURVATURE_DUAL_CERTIFICATE_V1.md`](research/FIVE_CDC_FULL_RANK_CURVATURE_DUAL_CERTIFICATE_V1.md) gives the exact flat/nonflat primal-dual dichotomy;
-- [`research/FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md`](research/FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md) gives an explicit full-rank locked witness with $\Omega(c)\ne0$.
+There is an explicit full-rank nonflat witness with
 
-Current reading:
+$$
+\Omega(c)\ne0.
+$$
 
-- flatness is a meaningful branch, not automatic;
-- nonflat curvature has a common-cut dual witness with odd terminal parity;
-- graph localisation of a support-minimal witness is the open endpoint.
+The correct dichotomy is:
 
-## 13. Lost notebook state to public recovery verification
+- $\Omega=0$: affine potential;
+- $\Omega\ne0$: common-cut dual certificate with odd terminal parity.
 
-The predecessor's rescued notebook contained incomplete code fragments and an unidentified failing assertion. It is not a controlling proof source.
+Controlling sources:
 
-[`research/FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md`](research/FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md) reconstructs and reruns the bounded public modules. It classifies the truncated combined verifier as `CODE-PARTIAL`, confirms the listed finite claims, and does not claim to recover hidden reasoning or omitted state.
+- `FIVE_CDC_FULL_RANK_CURVATURE_DUAL_CERTIFICATE_V1.md`;
+- `FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md`;
+- `FIVE_CDC_ATOM_ROUTE_LOCK_FANO_CURVATURE_V1.md`.
 
-The private notebook remains mapped provenance and is not copied wholesale.
+## 17. Per-loop Type H alternatives to the global BBD flow
 
-## 14. Current endpoint versus the broader mechanism map
+Earlier Type H analysis treated each lifted loop through its norm, uncovered edges, and missed vertices.
 
-[`research/FIVE_CDC_MECHANISM_CLOSURE_MAP_V1.md`](research/FIVE_CDC_MECHANISM_CLOSURE_MAP_V1.md) remains the controlling broad separation of universal mechanisms, finite interfaces, laboratory evidence, and global bridges.
+For the BBD family, the controlling synthesis is stronger:
 
-The sharper immediate endpoint at `dad218dd...` is controlled by:
+- the physical translation kernel is zero by root rigidity;
+- $H^1(S_5,E_5)=0$;
+- all loops share one unique ambient origin;
+- one canonical $E_5$ flow controls the residual defects.
 
-- [`research/FIVE_CDC_FULL_RANK_CURVATURE_DUAL_CERTIFICATE_V1.md`](research/FIVE_CDC_FULL_RANK_CURVATURE_DUAL_CERTIFICATE_V1.md);
-- [`research/FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md`](research/FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md).
+Source:
+`FIVE_CDC_BBD_GLOBAL_HOLONOMY_AND_K6_DEFECT_STRIPS_V1.md`.
 
-The next problem is support-minimal common-cut localisation, not another undifferentiated obstruction census.
+The DDD subgroup remains a separate $H^1(D_8,E_5)\cong\mathbf F_2$ exception.
 
-## 15. Alternative formulations that are not supersessions
+## 18. Abstract tension universe to the genuine switch flow
 
-The following pairs should remain available as complementary presentations.
+The general root-admissible affine-line system admits four-valued tension obstructions. A physical rainbow loop has a special three-switch word with first and third coefficients equal.
 
-| Presentation A | Presentation B | Relation |
-|---|---|---|
-| [`research/FIVE_CDC_ROOT_LIFT_FOURIER_STRESS_DUALITY_V1.md`](research/FIVE_CDC_ROOT_LIFT_FOURIER_STRESS_DUALITY_V1.md) | [`research/FIVE_CDC_AFFINE_SUBSPACE_ARRANGEMENT_SIEVE_V1.md`](research/FIVE_CDC_AFFINE_SUBSPACE_ARRANGEMENT_SIEVE_V1.md) | Fourier and Fourier-free/Möbius forms of the same avoidance mechanism. |
-| Global-index quotient theory | Componentwise dual-triangulation theory | The first is a strict, exact sufficient subroute of the second, not discarded. |
-| Vertical gauge/Petrial motion | Horizontal connected-cycle flow motion | Complementary directions; neither replaces the other. |
-| Affine-potential flat branch | Common-cut nonflat branch | Exact dichotomy in the full-rank locked sector. |
-| Finite census | Invariant theorem | Census may verify or discover; it does not replace a universal proof. |
+Controlling reduction:
 
-## 16. Historical preservation rule
+$$
+\text{loop word}
+\to
+\text{two-dimensional switch flow}
+\to
+\text{root-fibre lift}
+\to
+\text{Tait resolution}.
+$$
 
-No source file named above is deleted or rewritten by this baseline integration. Current use is determined by:
+Sources:
 
-1. [`CURRENT_BEST.md`](CURRENT_BEST.md);
-2. [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md);
-3. this supersession map;
-4. exact source SHAs in [`BASELINE_MANIFEST.md`](BASELINE_MANIFEST.md).
+- `FIVE_CDC_RAINBOW_SWITCH_FLOW_TAIT_RESOLUTION_V1.md`;
+- `FIVE_CDC_GENUINE_RAINBOW_PATH_FAMILY_REDUCTION_V1.md`.
 
-When a later result materially changes a controlling statement, the next checkpoint must add a new explicit map entry rather than silently altering the historical source.
+The unrestricted tension examples remain trust-boundary warnings, not main-branch mechanisms without a physical realization.
+
+## 19. Zero-norm soluble Type H branch to profile escape
+
+A zero-norm root-linearizable rainbow loop admits a Tait resolution. The Tait challenge coincidence contradicts the deterministic BBD triangle policy, while a DDD triangle immediately gains a $B_i$ state.
+
+Therefore the root-linearizable zero-norm Type H branch is eliminated.
+
+Controlling source:
+`FIVE_CDC_TYPE_H_TAIT_ESCAPE_V1.md`.
+
+## 20. Raw defect strips to the variational forest
+
+The first BBD synthesis gives zero networks and co-root paths/cycles. The variational minimization sharpens the complete defect support to an induced forest and gives exact cycle inequalities and boundary size.
+
+Controlling source:
+`FIVE_CDC_DEFECT_MINIMAL_FOREST_PETERSEN_TRANSPORT_V1.md`.
+
+The earlier strip theorem remains the canonical-flow precursor.
+
+## 21. Petersen state repetition to enriched transport
+
+A co-root strip is not merely a walk in $L(\mathrm{Petersen})$. Every turn emits a side-root label and may attach different root components.
+
+Therefore repeated endpoint state does not imply pumping or deletion. The controlling semantic object is the state walk plus side-root output and attached interface data.
+
+## 22. Preliminary baseline navigation to reconstructed chapters
+
+The preliminary `CURRENT_BEST.md`, `FRONTIER_STATUS.md`, and `SUPERSESSION_MAP.md` were intentionally broad navigation aids. They are superseded by the reconstructed versions on this branch and the substantive `five-support/` corpus.
+
+## 23. Assurance non-supersession
+
+No mathematical correction in this ledger changes:
+
+- Lean status;
+- independent-review status;
+- peer-review or publication status;
+- release, DOI, or arXiv status.
+
+See [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
