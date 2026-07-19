@@ -34,67 +34,72 @@ The paper-level Cycle Double Cover line is contained in:
 
 The natural theorem allows loops and finite active edge set. The present Lean declaration remains an earlier loopless ambient-finite checkpoint.
 
-## 4. Active five-support chapters
+## 4. Active five-support surface
 
-1. [`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md);
-2. [`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md);
-3. [`five-support/gauge-and-reconfiguration.md`](five-support/gauge-and-reconfiguration.md);
-4. [`five-support/cuts-four-poles-and-routing.md`](five-support/cuts-four-poles-and-routing.md);
-5. [`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md);
-6. [`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md);
-7. [`five-support/quartic-witness-designs.md`](five-support/quartic-witness-designs.md);
-8. [`five-support/route-locked-quotient-phase.md`](five-support/route-locked-quotient-phase.md);
-9. [`five-support/quartic-transition-skeletons.md`](five-support/quartic-transition-skeletons.md);
-10. [`five-support/quartic-terminal-nucleus.md`](five-support/quartic-terminal-nucleus.md);
-11. [`five-support/quartic-terminal-defect-geometry.md`](five-support/quartic-terminal-defect-geometry.md);
-12. [`five-support/quartic-nucleus-transport.md`](five-support/quartic-nucleus-transport.md);
-13. [`five-support/scalar-interval-transfer.md`](five-support/scalar-interval-transfer.md);
-14. [`five-support/scalar-interval-caps-and-cells.md`](five-support/scalar-interval-caps-and-cells.md);
-15. [`five-support/periodic-kempe-ladders.md`](five-support/periodic-kempe-ladders.md);
-16. [`five-support/g-component-transition-quotient.md`](five-support/g-component-transition-quotient.md);
-17. [`five-support/route-capped-line-graph-carrier.md`](five-support/route-capped-line-graph-carrier.md);
-18. [`five-support/relative-touch-homology.md`](five-support/relative-touch-homology.md);
-19. [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md);
-20. [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
-21. [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
+The active five-support reading surface is the ordered chapter list in [`five-support/README.md`](five-support/README.md). Its latest route-locked extension contains:
+
+- common-cut circuit localisation;
+- quartic witness designs and the `O^-(4,2)` terminal nucleus;
+- quotient Tait phase, marked transition skeletons, and nucleus transport;
+- elementary scalar transfer, caps, cells, and Kempe ladders;
+- the physical `g`-component quotient `\Gamma_g`;
+- the route-capped `4`-regular flag-line carrier;
+- relative touch homology, shadow closure, and the two-transition cap residue;
+- IAS loop/parallel/twin/pendant classification;
+- minimal two-cap cocycle decomposition.
 
 The global five-support theorem remains open. The controlling fixed-lift object is `T_g^{(1)}`, not merely the factorable quotient `J_g`.
 
 ## 5. Current nonflat architecture
 
-The common-cut witness is localized to a singleton, a marked two-edge transition, or a quartic core.
+The common-cut witness is localised to a singleton, a marked two-edge transition, or a quartic core.
 
-At the incidence level:
+At incidence level:
 
 - quartic designs exist for every `4k+1`;
-- every design has a canonical `O^-(4,2)` terminal nucleus with intrinsic `E_5/K_5` geometry and route stabiliser `D_8`;
-- a split sheet exposes a bounded `K_6` defect gadget;
-- an all-concentrated design peels to level `k-1`.
+- every design has a canonical `O^-(4,2)` terminal nucleus with intrinsic `E_5/K_5` geometry;
+- a split sheet exposes a bounded `K_6` coefficient gadget;
+- an all-concentrated design peels to level `k-1`;
+- successive nuclei are canonically equivariant under the natural sheet group `AGL(2,2)\cong S_4`.
 
-At the physical level there are three carriers.
+The sheet group, the physical terminal-route stabiliser, and the support-label `D_8` stabiliser of a DDD one-factor are distinct. Their comparison remains open.
+
+At physical level there are three coordinated carriers.
 
 1. **`g`-component quotient `\Gamma_g`.** Contract the components of `Q-E_g`. Four scalar sheets become four transition systems on an even-total-degree four-pole. Every internal quotient cut lifts exactly to a `g`-coloured cut of `Q`; cut parity retains the number of original terminal flags on the shore.
-2. **Route-capped line graph.** Close terminals according to `12\mid34` and take the flag-line graph. This gives one canonical `4`-regular graph carrying four scalar circuit partitions and a uniform aligned/crossed transition law.
-3. **Relative touch homology.** The common-cut kernel is the intersection of four relative touch-cycle spaces. Curvature is terminal relative-boundary evaluation. Complementary touch boundary may remain, so the witness is not yet proved to be a transition-matroid circuit.
+2. **Route-capped line graph.** Close terminals according to `12\mid34` and take the flag-line graph. This gives one canonical `4`-regular graph carrying four scalar circuit partitions and one transition matroid.
+3. **Touch/isotropic carrier.** Every selected scalar circuit has a shadow circuit. Consequently complementary touch boundary closes automatically. Adding the two fixed route caps turns each scalar common cut into an ordinary touch cycle.
 
-Elementary non-`g` paths between consecutive full `g`-incidences have eighteen transfer states and bounded cap-or-periodic-ladder normal forms. Consecutive witness edges may contain further edges of `E_g\setminus\eta`; whole witness arcs are transition walks in `\Gamma_g`.
+Summing the four cap-completed transition supports cancels every internal witness transition and leaves one selected cross transition at each cap vertex.
 
 ## 6. Exact frontier
 
-The immediate theorem is:
+Let
+
+$$
+R=\{r_p,r_q\}
+$$
+
+be the bounded two-cap residue. It is not itself a full cocycle because every IAS cocycle meets each vertex triple in zero or two elements.
+
+Except for an immediate loop degeneration, a full cocycle containing `R` exists. Choose one inclusion-minimal under support. Exactly one of:
+
+1. **coupled:** one cocircuit contains both `r_p,r_q`;
+2. **separated:** the completion is the disjoint union of two cocircuits, one carrying each residue, and their isotropic vertex supports are disjoint.
+
+The immediate local completion cases are already classified as loop, parallel, twin, or pendant interlacement configurations.
+
+The next theorem must project the minimal completion to the physical layer:
 
 $$
 \boxed{
-\text{fourfold relative curvature cycle}
+\text{coupled/separated cap cocircuit}
 \Longrightarrow
-\begin{cases}
-\text{bounded touch-boundary closure / transverse dependence},\\
-\text{terminal-even separator or transition two-sum in }\Gamma_g,\\
-\text{physical }D_8\text{ class}.
-\end{cases}}
+\text{separator, serial composition, alternate route, or DDD comparison.}
+}
 $$
 
-Direct use of isotropic connectivity is not yet justified because the present witness is only relatively closed at the scalar-circuit shore.
+Only the coupled branch can remain a genuinely irreducible two-ended obstruction.
 
 ## 7. Reliability and provenance
 
