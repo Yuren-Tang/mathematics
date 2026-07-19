@@ -2,658 +2,528 @@
 
 **Proof-development state:** `COMPLETE-DRAFT`  
 **Owner:** `AffineCDC — Proof Development Lead` (`AC-PDL`)  
-**Initial baseline:** `main@960c92b7ff231c78b387894149779083060a75eb`  
+**Exact initial baseline:** `main@960c92b7ff231c78b387894149779083060a75eb`  
 **Depends on:** `AC-PD-A4`  
 **Immediate consumer:** `AC-PD-A6`  
 **External mathematical inputs:** none
 
 ## 0. Main theorem
 
-Let `G` be a finite loopless cubic multigraph, not necessarily connected, and let
+Let $G$ be a finite loopless cubic multigraph, not necessarily connected, and let
 
-\[
+$$
 f:E(G)\longrightarrow \Gamma\setminus\{0\},
 \qquad
 \Gamma=\mathbf F_2^3,
-\]
+$$
 
-be a nowhere-zero flow. Let
+be a nowhere-zero flow. For the affine incidence pair $(\mathcal P_f,\kappa)$ of A4, there exists
 
-\[
-(\mathcal P_f,\kappa)
-\]
-
-be the affine incidence pair constructed in A4. Then
-
-\[
-\boxed{
+$$
+x\in
 (\kappa+L_{\mathrm{vert}})
-\cap L_{\mathrm{edge}}
-e\varnothing.
-}
-\]
+\cap L_{\mathrm{edge}}.
+$$
 
 Equivalently,
 
-\[
+$$
 [\kappa]=0\in H^1(\mathcal P_f),
 \qquad
 [c_f]=0\in\operatorname{coker}\delta_f.
-\]
+$$
 
 The compatible-family space is a torsor under
 
-\[
+$$
 L_{\mathrm{vert}}\cap L_{\mathrm{edge}}
 \cong H_f^0.
-\]
+$$
 
-The proof is invariant and basis-free at the theorem level: each edge quotient is a canonical anisotropic quadratic plane; each local affine family is a characteristic torsor of a Fano Lagrangian; the global edge diagonal is a totally singular Lagrangian; an abstract quadratic-Lagrangian theorem forces intersection.
+The proof is invariant: every edge quotient is a canonical anisotropic quadratic plane; every local affine-family coset is the characteristic torsor of a Fano Lagrangian; the global edge diagonal is a totally singular Lagrangian; an abstract quadratic-Lagrangian theorem forces an intersection.
 
-## 1. Canonical quadratic structure on a binary plane
+## 1. The canonical quadratic binary plane
 
-Let `U` be a two-dimensional vector space over `𝔽₂`. Define
+Let $U$ be a two-dimensional vector space over $\mathbf F_2$. Define
 
-\[
+$$
 q_U(u)=
 \begin{cases}
 0,&u=0,\\
-1,&u\ne0.
+1,&u≠0.
 \end{cases}
-\]
+$$
 
-Define its polarization
+and polarize by
 
-\[
-B_U(u,v):=q_U(u+v)+q_U(u)+q_U(v).
-\]
+$$
+B_U(u,v)=q_U(u+v)+q_U(u)+q_U(v).
+$$
 
-### Proposition 1.1 — canonical anisotropic plane
+### Proposition 1.1
 
-The map `q_U` is a quadratic form, and `B_U` is the unique nonzero alternating bilinear form on `U`. It is nondegenerate. Moreover `q_U` has no nonzero singular vector.
+The map $q_U$ is a quadratic form; $B_U$ is the unique nonzero alternating bilinear form on $U$, hence is nondegenerate; and $q_U$ has no nonzero singular vector.
 
-#### Proof
+### Proof
 
-If `u,v` are linearly dependent, then one of them is zero or `u=v`; direct substitution gives `B_U(u,v)=0`. If they are independent, the three vectors `u,v,u+v` are all nonzero, so
+If $u,v$ are dependent, direct substitution gives $B_U(u,v)=0$. If they are independent, then $u,v,u+v$ are the three nonzero vectors of $U$, so
 
-\[
-B_U(u,v)=1+1+1=1
-\]
+$$
+B_U(u,v)=1+1+1=1.
+$$
 
-in `𝔽₂`. Thus relative to any basis `(u,v)`, the Gram matrix is
+Relative to any basis the Gram matrix is
 
-\[
+$$
 \begin{pmatrix}0&1\\1&0\end{pmatrix},
-\]
+$$
 
-which is bilinear, alternating, and nondegenerate. Since the space of alternating forms on a binary plane is one-dimensional, this is the unique nonzero one. Finally, the definition gives `q_U(x)=1` for every nonzero `x`. ∎
+which is alternating and nondegenerate. The alternating-form space on a binary plane is one-dimensional, so this is its unique nonzero element. The final assertion is immediate from the definition of $q_U$. $\square$
 
 ## 2. Edge quotient planes in rank three
 
-The one-dimensional space
+The one-dimensional space $\Lambda^3\Gamma^*$ over $\mathbf F_2$ has a unique nonzero element; denote it by $\omega$. For $0≠h\in\Gamma$, put
 
-\[
-\Lambda^3\Gamma^*
-\]
+$$
+Q_h=\Gamma/\langle h\rangle.
+$$
 
-over `𝔽₂` has a unique nonzero element; denote it by
+Its canonical quadratic form is
 
-\[
-\omega.
-\]
-
-For `0\ne h\in Γ`, put
-
-\[
-Q_h:=\Gamma/\langle h\rangle.
-\]
-
-This is a binary plane. Its canonical quadratic form is
-
-\[
+$$
 q_h([x])=
 \begin{cases}
 0,&x\in\langle h\rangle,\\
 1,&x\notin\langle h\rangle.
 \end{cases}
-\]
+$$
 
 ### Proposition 2.1 — polar determinant formula
 
-The polar form of `q_h` is
-
-\[
-\boxed{
+$$
 B_h([x],[y])=\omega(h,x,y).
-}
-\]
+$$
 
-#### Proof
+### Proof
 
-The right-hand side is unchanged if `x` or `y` is altered by a multiple of `h`, so it descends to `Q_h`. It is alternating and nonzero: choose `x,y` whose images form a basis of `Q_h`; then `(h,x,y)` is a basis of `Γ`, so `ω(h,x,y)=1`. By Proposition 1.1 there is only one nonzero alternating form on `Q_h`, namely the polarization of its canonical anisotropic quadratic form. ∎
+Changing $x$ or $y$ by a multiple of $h$ does not change the right-hand side, so it descends to $Q_h$. It is alternating and nonzero: if $[x],[y]$ form a basis of $Q_h$, then $(h,x,y)$ is a basis of $\Gamma$ and $\omega(h,x,y)=1$. Proposition 1.1 identifies it with the polar form of $q_h$. $\square$
 
-In particular each `(Q_h,q_h)` is a nondegenerate quadratic plane.
+Thus every $(Q_h,q_h)$ is a canonical nondegenerate anisotropic quadratic plane.
 
-## 3. Local Fano incidence space
+## 3. The local Fano Lagrangian
 
-Let `W\le Γ` be a plane and let
+Let $W\leq\Gamma$ be a plane and
 
-\[
-D:=W\setminus\{0\}=\{h_1,h_2,h_3\},
+$$
+D=W\setminus\{0\}=\{h_1,h_2,h_3\},
 \qquad
 h_1+h_2+h_3=0.
-\]
+$$
 
 Define
 
-\[
-E_W:=\bigoplus_{h\in D}Q_h,
+$$
+E_W=\bigoplus_{h\in D}Q_h,
 \qquad
-q_W:=\sum_{h\in D}q_h,
+q_W=\sum_{h\in D}q_h,
 \qquad
-B_W:=\sum_{h\in D}B_h.
-\]
+B_W=\sum_{h\in D}B_h,
+$$
 
-Then `E_W` has dimension six and `B_W` is nondegenerate as a direct sum of three nondegenerate planes.
+and
 
-Define
-
-\[
+$$
 \Delta_W:\Gamma\longrightarrow E_W,
 \qquad
 \Delta_W(x)=([x]_h)_{h\in D},
-\]
-
-and put
-
-\[
-L_W:=\operatorname{im}\Delta_W.
-\]
+\qquad
+L_W=\operatorname{im}\Delta_W.
+$$
 
 ### Theorem 3.1 — local Fano Lagrangian
 
-The map `Δ_W` is injective and `L_W` is Lagrangian in `(E_W,B_W)`.
+The map $\Delta_W$ is injective and $L_W$ is Lagrangian in $(E_W,B_W)$.
 
-#### Proof
+### Proof
 
-If `Δ_W(x)=0`, then `x` lies in all three distinct lines `\langle h\rangle`, whose common intersection is zero. Hence `Δ_W` is injective and
+The three distinct lines $\langle h\rangle$ have trivial common intersection, so $\Delta_W$ is injective and $\dim L_W=3$. The space $E_W$ has dimension six and nondegenerate polar form. For $x,y\in\Gamma$,
 
-\[
-\dim L_W=3=\tfrac12\dim E_W.
-\]
-
-For `x,y\in Γ`, Proposition 2.1 gives
-
-\[
+$$
 \begin{aligned}
 B_W(\Delta_Wx,\Delta_Wy)
 &=\sum_{h\in D}\omega(h,x,y)\\
 &=\omega\left(\sum_{h\in D}h,x,y\right)\\
 &=0.
 \end{aligned}
-\]
+$$
 
-Thus `L_W` is isotropic of half dimension, hence Lagrangian. ∎
+Thus $L_W$ is isotropic of half dimension and hence Lagrangian. $\square$
 
-## 4. Quadratic transgression on the Fano diagonal
+## 4. Fano quadratic transgression
 
-Let
+Let $\ell_W:\Gamma\to\mathbf F_2$ be the unique nonzero linear functional with kernel $W$.
 
-\[
-\ell_W:\Gamma\longrightarrow\mathbf F_2
-\]
+### Theorem 4.1
 
-be the unique nonzero linear functional with kernel `W`.
+For every $x\in\Gamma$,
 
-### Theorem 4.1 — Fano transgression
-
-For every `x\in Γ`,
-
-\[
-\boxed{
+$$
 q_W(\Delta_Wx)=\ell_W(x).
-}
-\]
+$$
 
-#### Proof
+### Proof
 
 By definition,
 
-\[
-q_W(\Delta_Wx)
-=
+$$
+q_W(\Delta_Wx)=
 \sum_{h\in D}\mathbf 1_{x\notin\langle h\rangle}.
-\]
+$$
 
-If `x=0`, all three terms vanish. If `x\in W\setminus\{0\}`, it lies in exactly one of the three nonzero lines of `W`; one term vanishes and two equal one, giving zero in `𝔽₂`. If `x\notin W`, it lies in none of the three lines, so all three terms equal one and the sum is one. This is precisely the functional with kernel `W`. ∎
-
-Thus the restriction of the six-dimensional quadratic form to the Lagrangian `L_W` is linear rather than zero.
+If $x=0$, the sum is zero. If $x\in W\setminus\{0\}$, precisely one quotient class vanishes and two are nonzero, so the sum is zero in $\mathbf F_2$. If $x\notin W$, all three quotient classes are nonzero and the sum is one. This is exactly $\ell_W(x)$. $\square$
 
 ## 5. Characteristic torsors
 
-Let `(E,q)` be a finite-dimensional nondegenerate quadratic space over `𝔽₂`, with polar form `B`, and let `L\le E` be Lagrangian. Since `B|_L=0`, the restriction `q|_L` is linear. Define
+Let $(E,q)$ be a finite-dimensional nondegenerate quadratic space over $\mathbf F_2$, with polar form $B$, and let $L\leq E$ be Lagrangian. Since $B|_L=0$, the restriction $q|_L$ is linear. Define
 
-\[
+$$
 \operatorname{Char}_q(L)
-:=
+=
 \{a\in E:B(z,a)=q(z)\text{ for every }z\in L\}.
-\]
+$$
 
-### Proposition 5.1 — existence and torsor structure
+### Proposition 5.1
 
-The set `Char_q(L)` is nonempty and is an affine torsor under `L`.
+The set $\operatorname{Char}_q(L)$ is nonempty and is an affine torsor under $L$.
 
-#### Proof
+### Proof
 
-Consider the restriction map
+The restriction map
 
-\[
-\rho:E\longrightarrow L^*,
+$$
+E\longrightarrow L^*,
 \qquad
-\rho(a)=B(-,a)|_L.
-\]
+a\longmapsto B(-,a)|_L
+$$
 
-Nondegeneracy of `B` identifies `E` with `E^*`. Every functional on `L` extends to `E`, so `ρ` is surjective. Its kernel is
+is surjective: nondegeneracy identifies $E$ with $E^*$ and every functional on $L$ extends to $E$. Its kernel is $L^\perp=L$. The fibre over the functional $q|_L$ is therefore a nonempty affine coset of $L$. $\square$
 
-\[
-L^\perp=L
-\]
+## 6. Local affine families as characteristic vectors
 
-because `L` is Lagrangian. The fibre over the linear functional `q|_L` is therefore nonempty and is one affine coset of `L`. ∎
+For $h\in D$, let $\kappa_h\in Q_h$ be the common class of the other two nonzero elements of $W$, and put
 
-## 6. The local affine family is the characteristic torsor
+$$
+\kappa_W=(\kappa_h)_{h\in D}\in E_W.
+$$
 
-For each `h\in D`, let `κ_h\in Q_h` be the common class of the other two nonzero elements of `W`, and put
+### Lemma 6.1 — local cross-pairing
 
-\[
-\kappa_W:=(\kappa_h)_{h\in D}\in E_W.
-\]
+For every $x\in\Gamma$,
 
-### Lemma 6.1 — local cross-pairing identity
-
-For every `x\in Γ`,
-
-\[
-\boxed{
+$$
 B_W(\Delta_Wx,\kappa_W)=\ell_W(x).
-}
-\]
+$$
 
-#### Proof
+### Proof
 
-Both sides are linear in `x`. Choose independent `a,b\in W`, put `c=a+b`, and choose `t\notin W` with `ω(a,b,t)=1`. Use the representatives
+Choose independent $a,b\in W$, put $c=a+b$, and choose $t\notin W$ with $\omega(a,b,t)=1$. Use representatives
 
-\[
+$$
 \kappa_a=[b]_a,
 \qquad
 \kappa_b=[a]_b,
 \qquad
 \kappa_c=[a]_c.
-\]
+$$
 
-Write
+Write $x=\alpha a+\beta b+\gamma t$. Proposition 2.1 gives
 
-\[
-x=\alpha a+\beta b+\gamma t.
-\]
-
-By Proposition 2.1 and alternation,
-
-\[
+$$
 \begin{aligned}
 B_W(\Delta_Wx,\kappa_W)
 &=\omega(a,x,b)+\omega(b,x,a)+\omega(c,x,a)\\
 &=\gamma+\gamma+\gamma\\
 &=\gamma.
 \end{aligned}
-\]
+$$
 
-The coordinate `γ` is exactly `\ell_W(x)`. The computation is independent of the displayed representative choices because each `κ_h` is a quotient class. ∎
+The coefficient $\gamma$ is $\ell_W(x)$. The result is independent of representative choices because every $\kappa_h$ is a quotient class. $\square$
 
-### Theorem 6.2 — characteristic description of local families
+### Theorem 6.2 — local characteristic torsor
 
-One has
-
-\[
-\boxed{
+$$
 \kappa_W\in\operatorname{Char}_{q_W}(L_W),
 \qquad
 \operatorname{Char}_{q_W}(L_W)=\kappa_W+L_W.
-}
-\]
+$$
 
-Under A4's local classification, this is exactly the set of local affine even families at a vertex with flow plane `W`.
+Under A4's local classification, this is exactly the space of local affine even families at a vertex with flow plane $W$.
 
-#### Proof
+### Proof
 
-For `z=Δ_Wx`, Lemma 6.1 and Theorem 4.1 give
+For $z=\Delta_Wx$, Lemma 6.1 and Theorem 4.1 give
 
-\[
+$$
 B_W(z,\kappa_W)=\ell_W(x)=q_W(z).
-\]
+$$
 
-Thus `κ_W` is characteristic. Proposition 5.1 says the characteristic set is the affine coset `κ_W+L_W`. A4 identifies the same coordinate coset with the complete local-family space. ∎
+Thus $\kappa_W$ is characteristic. Proposition 5.1 gives the affine coset $\kappa_W+L_W$. A4 identifies the same quotient-label coset with all local affine families. $\square$
 
-### Corollary 6.3 — anisotropic affine Lagrangian
+### Corollary 6.3
 
-The quadratic form is constant on `κ_W+L_W`, and its value is one.
+The quadratic form is constant with value one on $\kappa_W+L_W$.
 
-#### Proof
+### Proof
 
-For `z\in L_W`, characteristicity gives
+For $z\in L_W$, characteristicity gives
 
-\[
+$$
 q_W(\kappa_W+z)
 =q_W(\kappa_W)+q_W(z)+B_W(\kappa_W,z)
 =q_W(\kappa_W).
-\]
+$$
 
-Every component of `κ_W` is nonzero, so
+Every component of $\kappa_W$ is nonzero, so $q_W(\kappa_W)=1+1+1=1$. $\square$
 
-\[
-q_W(\kappa_W)=1+1+1=1.
-\]
+## 7. The abstract intersection theorem
 
-∎
+### Lemma 7.1
 
-## 7. Abstract quadratic-Lagrangian intersection
+For subspaces $L,M$ of a finite-dimensional nondegenerate bilinear space,
 
-### Lemma 7.1 — orthogonal of an intersection
-
-For subspaces `L,M` of a finite-dimensional nondegenerate bilinear space,
-
-\[
+$$
 (L\cap M)^\perp=L^\perp+M^\perp.
-\]
+$$
 
-If `L,M` are Lagrangian, then
+In particular, if $L$ and $M$ are Lagrangian, then
 
-\[
+$$
 (L\cap M)^\perp=L+M.
-\]
+$$
 
-#### Proof
+### Proof
 
-The inclusion `L^⊥+M^⊥\subseteq(L\cap M)^⊥` is immediate. For equality, compare dimensions:
+The inclusion from right to left is immediate. Equality follows by dimension comparison, using
 
-\[
-\dim(L^\perp+M^\perp)
-=
-\dim L^\perp+\dim M^\perp-\dim(L^\perp\cap M^\perp),
-\]
+$$
+L^\perp\cap M^\perp=(L+M)^\perp
+$$
 
-and use nondegeneracy together with
+and nondegeneracy. For Lagrangians, $L^\perp=L$ and $M^\perp=M$. $\square$
 
-\[
-L^\perp\cap M^\perp=(L+M)^\perp.
-\]
+### Theorem 7.2 — characteristic-torsor intersection
 
-Both sides have dimension `\dim E-\dim(L\cap M)`. For Lagrangians, `L^⊥=L` and `M^⊥=M`. ∎
+Let $(E,q)$ be a finite-dimensional nondegenerate quadratic space over $\mathbf F_2$ and let $L,M\leq E$ be Lagrangians. Then
 
-### Theorem 7.2 — characteristic-torsor intersection theorem
-
-Let `(E,q)` be a finite-dimensional nondegenerate quadratic space over `𝔽₂`, and let `L,M\le E` be Lagrangians. Then
-
-\[
-\boxed{
-\operatorname{Char}_q(L)\cap M\ne\varnothing
-\iff
+$$
+\operatorname{Char}_q(L)\cap M\text{ is nonempty}
+\quad\Longleftrightarrow\quad
 q|_{L\cap M}=0.
-}
-\]
+$$
 
-When nonempty, the intersection is a torsor under `L\cap M`.
+When nonempty, the intersection is a torsor under $L\cap M$.
 
-#### Proof
+### Proof
 
-Suppose `m\in\operatorname{Char}_q(L)\cap M`. For `z\in L\cap M`,
+If $m\in\operatorname{Char}_q(L)\cap M$ and $z\in L\cap M$, then
 
-\[
+$$
 q(z)=B(z,m)=0
-\]
+$$
 
-because `z,m\in M` and `M` is isotropic.
+because $z,m\in M$ and $M$ is isotropic.
 
-Conversely, choose `κ\in\operatorname{Char}_q(L)` and assume `q` vanishes on `L\cap M`. Then for every `z\in L\cap M`,
+Conversely choose $\kappa\in\operatorname{Char}_q(L)$ and assume $q$ vanishes on $L\cap M$. Then
 
-\[
-B(z,\kappa)=q(z)=0,
-\]
+$$
+B(z,\kappa)=q(z)=0
+\qquad(z\in L\cap M),
+$$
 
-so by Lemma 7.1,
+so Lemma 7.1 gives $\kappa\in L+M$. Write $\kappa=\ell+m$ with $\ell\in L$ and $m\in M$. Since $\operatorname{Char}_q(L)=\kappa+L$,
 
-\[
-\kappa\in(L\cap M)^\perp=L+M.
-\]
-
-Write `κ=ℓ+m` with `ℓ\in L`, `m\in M`. Since `Char_q(L)=κ+L`,
-
-\[
+$$
 m=\kappa+\ell\in\operatorname{Char}_q(L)\cap M.
-\]
+$$
 
-Differences of two intersection points lie in `L\cap M`, and translation by that intersection preserves both sets; hence the intersection is a torsor under `L\cap M`. ∎
+Taking differences proves the torsor statement. $\square$
 
-### Corollary 7.3 — totally singular target
+### Corollary 7.3
 
-If `M` is a totally singular Lagrangian, meaning `q|_M=0`, then
+If $M$ is a totally singular Lagrangian, then $\operatorname{Char}_q(L)\cap M$ is nonempty.
 
-\[
-\operatorname{Char}_q(L)\cap M\ne\varnothing.
-\]
+## 8. Global Fano compatibility
 
-## 8. Global quadratic incidence space
+On each incidence quotient $Q_e$, use the form $q_e=q_{f(e)}$ and define
 
-Return to the finite cubic flow graph `(G,f)`. On every incidence quotient use the canonical form `q_e=q_{f(e)}` and define
-
-\[
-q_f:=\sum_{(v,e)\in I(G)}q_e,
+$$
+q_f=\sum_{(v,e)\in I(G)}q_e,
 \qquad
-B_f:=\sum_{(v,e)\in I(G)}B_e
-\]
+B_f=\sum_{(v,e)\in I(G)}B_e
+$$
 
-on `E_f`.
+on $E_f$.
 
-### Proposition 8.1 — nondegeneracy
+### Proposition 8.1
 
-The quadratic space `(E_f,q_f)` is nondegenerate.
+The quadratic space $(E_f,q_f)$ is nondegenerate.
 
-#### Proof
+### Proof
 
-Its polar form is the direct sum of the nondegenerate polar forms on the incidence quotient planes. ∎
+Its polar form is the direct sum of the nondegenerate polar forms on the incidence quotient planes. $\square$
 
-### Proposition 8.2 — vertex Lagrangian and characteristic torsor
+### Proposition 8.2
 
-The subspace
+The space
 
-\[
+$$
 L_{\mathrm{vert}}=\bigoplus_vL_v
-\]
+$$
 
-is Lagrangian, and
+is Lagrangian and
 
-\[
-\boxed{
+$$
 \operatorname{Char}_{q_f}(L_{\mathrm{vert}})
 =
 \kappa+L_{\mathrm{vert}}.
-}
-\]
+$$
 
-#### Proof
+### Proof
 
-At each vertex, Theorems 3.1 and 6.2 give a local Lagrangian and its characteristic torsor. Direct sums preserve nondegeneracy, Lagrangian dimension, and characteristic equations componentwise. ∎
+Apply Theorems 3.1 and 6.2 at each vertex and take direct sums. $\square$
 
-### Proposition 8.3 — edge diagonal is totally singular Lagrangian
+### Proposition 8.3
 
-For an edge `e=uv`, the diagonal
+For an edge $e=uv$, the diagonal
 
-\[
-D_e:=\{(x,x):x\in Q_e\}
-\le Q_e^{(u)}\oplus Q_e^{(v)}
-\]
+$$
+D_e=\{(x,x):x\in Q_e\}
+\leq Q_e^{(u)}\oplus Q_e^{(v)}
+$$
 
-is a totally singular Lagrangian for the quadratic form `q_e\oplus q_e`. Consequently
+is a totally singular Lagrangian for $q_e\oplus q_e$. Consequently
 
-\[
-L_{\mathrm{edge}}:=\bigoplus_eD_e
-\]
+$$
+L_{\mathrm{edge}}=\bigoplus_eD_e
+$$
 
-is a totally singular Lagrangian in `(E_f,q_f)`.
+is a totally singular Lagrangian in $(E_f,q_f)$.
 
-#### Proof
+### Proof
 
-For diagonal vectors `(x,x)` and `(y,y)`,
+For diagonal vectors,
 
-\[
+$$
 (B_e\oplus B_e)((x,x),(y,y))
-=B_e(x,y)+B_e(x,y)=0.
-\]
+=B_e(x,y)+B_e(x,y)=0,
+$$
 
-Thus `D_e` is isotropic. Its dimension is `\dim Q_e=2`, exactly half the dimension of `Q_e\oplus Q_e`, so it is Lagrangian. Moreover
+so $D_e$ is isotropic. It has dimension two, half the dimension of $Q_e\oplus Q_e$, and is therefore Lagrangian. Moreover
 
-\[
-(q_e\oplus q_e)(x,x)=q_e(x)+q_e(x)=0,
-\]
+$$
+(q_e\oplus q_e)(x,x)=q_e(x)+q_e(x)=0.
+$$
 
-so it is totally singular. Direct sums preserve both properties. ∎
+Direct sums preserve both properties. $\square$
 
-## 9. Rank-three automatic compatibility
+### Theorem 8.4 — rank-three automatic compatibility
 
-### Theorem 9.1 — global Fano compatibility
+There exists
 
-One has
-
-\[
-\boxed{
+$$
+x\in
 \operatorname{Char}_{q_f}(L_{\mathrm{vert}})
-\cap L_{\mathrm{edge}}
-e\varnothing.
-}
-\]
+\cap L_{\mathrm{edge}}.
+$$
 
-Equivalently, the AffineCDC local families admit a globally compatible choice.
+Hence the AffineCDC local families admit a globally compatible choice.
 
-#### Proof
+### Proof
 
-By Propositions 8.2 and 8.3, `L_vert` and `L_edge` are Lagrangians and `L_edge` is totally singular. Apply Corollary 7.3. A4 identifies the resulting intersection point with a globally edge-compatible choice of local affine families. ∎
+Propositions 8.2 and 8.3 give two Lagrangians, of which $L_{\mathrm{edge}}$ is totally singular. Apply Corollary 7.3, then A4's affine-family interpretation. $\square$
 
-### Corollary 9.2 — obstruction vanishing and full moduli
+### Corollary 8.5 — obstruction and moduli
 
-The obstruction classes vanish:
-
-\[
+$$
 [\kappa]=0\in H^1(\mathcal P_f),
 \qquad
-[c_f]=0\in\operatorname{coker}\delta_f.
-\]
+[c_f]=0\in\operatorname{coker}\delta_f,
+$$
 
-The compatible-family space is a torsor under
+and the compatible-family space is a torsor under
 
-\[
+$$
 L_{\mathrm{vert}}\cap L_{\mathrm{edge}}
 \cong H_f^0.
-\]
+$$
 
-#### Proof
+## 9. Lower-resolution identities
 
-Use A4's equivalence between compatibility, obstruction vanishing, and the solution torsor. ∎
+### Proposition 9.1 — quadratic handshaking
 
-## 10. Lower-resolution forms of the same proof
+For $z\in L_{\mathrm{vert}}\cap L_{\mathrm{edge}}$, write $z_{u,e}=z_{v,e}=z_e$ at every edge $e=uv$. Then
 
-The invariant theorem contains two familiar coarser presentations.
+$$
+\begin{aligned}
+q_f(z)
+&=\sum_{e=uv}
+\bigl(q_e(z_{u,e})+q_e(z_{v,e})\bigr)\\
+&=\sum_e\bigl(q_e(z_e)+q_e(z_e)\bigr)\\
+&=0.
+\end{aligned}
+$$
 
-### Proposition 10.1 — quadratic handshaking
+This is exactly the restriction condition in Theorem 7.2.
 
-For every `z\in L_{\mathrm{vert}}\cap L_{\mathrm{edge}}`,
+### Proposition 9.2 — stress cancellation
 
-\[
-q_f(z)=0.
-\]
+Under the polar self-duality of the quotient planes, every equilibrium stress $\psi$ satisfies
 
-#### Proof
-
-The same quotient vector occurs at the two endpoint incidences of each edge, so
-
-\[
-q_f(z)=\sum_eq_e(z_e)=2\sum_eq_e(z_e)=0.
-\]
-
-This is exactly the restriction condition in Theorem 7.2. ∎
-
-### Proposition 10.2 — stress cancellation
-
-Under the polar self-duality of the quotient planes, every equilibrium stress `ψ` satisfies
-
-\[
+$$
 \psi(\kappa)=0.
-\]
+$$
 
-#### Proof
+### Proof
 
-The local characteristic identity reads
+The local characteristic identity gives $\psi_v(\kappa_v)=q_v(\psi_v)$. Edge matching of the stress then yields
 
-\[
-\psi_v(\kappa_v)=q_v(\psi_v).
-\]
-
-Summing over vertices and using edge matching of the stress gives
-
-\[
+$$
+\begin{aligned}
 \psi(\kappa)
-=
-\sum_vq_v(\psi_v)
-=
-2\sum_eq_e(\psi_e)
-=0.
-\]
+&=\sum_vq_v(\psi_v)\\
+&=\sum_{e=uv}
+\bigl(q_e(\psi_e)+q_e(\psi_e)\bigr)\\
+&=0.
+\end{aligned}
+$$
 
-This is A4's Fredholm criterion. ∎
+This is A4's Fredholm criterion. Recording only whether each quotient component is nonzero produces the earlier support-parity or cross-bit cancellation; it is a projection of the same quadratic identity.
 
-Recording only whether each quotient component is nonzero turns `q_v` into the local support parity or cross-bit and the global sum into boundary cancellation. These are projections of the same quadratic identity, not independent proofs with stronger hypotheses.
+## 10. Components and boundary cases
 
-## 11. Components and degenerate cases
+- **Disconnected graph.** Every object is a direct sum over edge-bearing components; no connectedness hypothesis is used.
+- **Empty graph.** All spaces and $\kappa$ are zero, and the unique zero point is compatible.
+- **Parallel edges.** Each edge object contributes its own pair of quotient summands and diagonal.
+- **Loops.** The representation is loopless by A1–A3; no loop extension of the current dart/diagonal API is asserted.
+- **Rank.** The proof is genuinely rank three: each quotient is a binary plane and the three incident directions are the nonzero points of one Fano plane. No higher-rank automatic-compatibility claim follows.
 
-### Disconnected graph
+## 11. Formal and output boundary
 
-Every quadratic incidence object is a direct sum over edge-bearing components. The theorem applies either globally or independently componentwise. No connectedness hypothesis is present.
+The companion Lean repository machine-checks rank-three compatibility in the original branching/cross-bit presentation; A4 checks the exact local-family coordinate correspondence. The invariant characteristic-torsor and quadratic-Lagrangian assembly here is a complete paper proof, not thereby a Lean theorem in this form.
 
-### Empty graph
+The output is a compatible collection of local affine families. It does not reconstruct graph-level indexed supports from a bare pair complex; A6 must retain the original graph, flow, incidence, and dart data.
 
-For the empty active graph, `E_f=0`; both Lagrangians and `κ` are zero. Their intersection contains the unique zero vector.
-
-### Parallel edges
-
-Each parallel edge contributes its own pair of quotient-plane incidence summands and its own diagonal. No step identifies edge objects sharing endpoints.
-
-### Loops
-
-The representation is loopless by A1–A3. A loop would have one edge object but two oriented endpoint occurrences, whereas the current graph/dart API and edge-diagonal decomposition are formulated for two distinct endpoint darts. No loop extension is asserted here.
-
-### Rank boundary
-
-The proof uses that every `Q_e` is a two-dimensional anisotropic quadratic plane and that the three local flow directions are exactly the nonzero points of a plane in `Γ`. It is a rank-three theorem. It does not imply automatic compatibility in rank four or above.
-
-## 12. Formal and output boundary
-
-The companion Lean repository machine-checks rank-three compatibility in the original branching/cross-bit presentation. A4 verifies the exact local-family coordinate correspondence. The invariant characteristic-torsor and quadratic-Lagrangian assembly in this dossier is a complete paper proof but is not thereby a checked Lean theorem in this form.
-
-The theorem outputs a compatible collection of local affine families. It does not by itself reconstruct the dart permutation or graph-level indexed supports. A6 must retain the original graph, flow, and local combinatorial data and prove the support extraction and exact edge multiplicity two.
-
-## 13. Exported interface
+## 12. Exported interface
 
 A6 may cite:
 
-1. every rank-three edge quotient has a canonical nondegenerate anisotropic quadratic form;
-2. every local translation space is Lagrangian;
-3. every local affine-family coset is exactly its characteristic torsor;
-4. the global vertex space is Lagrangian;
-5. the global edge diagonal is a totally singular Lagrangian;
-6. the characteristic torsor intersects the edge diagonal;
-7. therefore compatible local affine families exist on every finite cubic loopless `F₂³`-flow graph, without connectedness;
-8. the full compatible-family moduli is the torsor under `L_vert∩L_edge`;
-9. graph/dart data remain required for support extraction.
+1. canonical nondegenerate anisotropic quadratic forms on all rank-three edge quotients;
+2. local and global vertex Lagrangians;
+3. exact identification of the local affine-family coset with the characteristic torsor;
+4. total singularity and Lagrangianity of the edge diagonal;
+5. existence and full torsor of globally compatible local families;
+6. persistence of graph/dart data as a separate downstream requirement.
 
-## 14. Completion assessment
+## 13. Completion assessment
 
-`AC-PD-A5` is `COMPLETE-DRAFT`. No contradiction, external source gap, or genuine frontier question arose. The next dependency-respecting unit is `AC-PD-A6`: exact graph-level indexed even-support extraction, including the retained dart construction, vertex parity, exact edge multiplicity two, empty and repeated supports, and flattening to a multiset witness.
+`AC-PD-A5` is `COMPLETE-DRAFT`. No contradiction, source gap, or genuine frontier question arose. The next dependency-respecting unit is A6, graph-level indexed even-support extraction.
