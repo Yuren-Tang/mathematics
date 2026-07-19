@@ -1,272 +1,195 @@
 # AffineCDC frontier status
 
-This file records the exact mathematical frontier on the active reconstructed corpus. It is a theorem-boundary ledger, not an assurance upgrade.
+This file records the exact theorem boundary on the active corpus. It is not an assurance upgrade.
 
-The reconstruction intake used:
+## 1. Closed route-locked layers
 
-- public five-support checkpoint `dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`;
-- reconstruction base `7a166d2eb5642ec967f640323488e49f1c2ad5d4`;
-- completed corpus migration tip `960c92b7ff231c78b387894149779083060a75eb`.
+Within their stated scopes, the active line now closes:
 
-Later Research Lead commits on `research/affine-cdc-five-cdc-v1` are active frontier mathematics and require a later exact intake before another corpus freeze.
+- full-rank curvature/common-cut duality and flat-potential equivalence;
+- support-minimal odd-circuit localisation;
+- singleton/transition/quartic trichotomy;
+- unbounded abstract quartic designs and their symplectic form;
+- quotient Tait-phase representation and affine sheet/Kempe relations;
+- connected pairwise marked transition skeletons;
+- canonical `O^-(4,2)` terminal nucleus, intrinsic `E_5/K_5`, route `D_8`, and curvature carrier;
+- exact split-or-peel recursion;
+- bounded `K_6` defect geometry of split terminal distributions;
+- canonical nucleus transport and pairwise marked shell;
+- elementary scalar-interval transfer, backtrack caps, periodic cells, and rigid Kempe ladders;
+- physical `g`-component transition quotient `\Gamma_g` and exact internal-cut lifting;
+- canonical route-capped `4`-regular line-graph carrier;
+- fourfold relative touch-homology formulation.
 
-## 1. Closed local and finite layers
+The global five-support theorem remains open.
 
-The following layers are mathematically closed within their stated scopes:
+## 2. Nonflat localisation
 
-- rank-three affine compatibility;
-- five-support/root-flow global equivalence package;
-- fixed-plane component-parity lifting criterion;
-- root-lift/surface/dual correspondence;
-- componentwise half-cube criterion;
-- factorable quotient classification in corrected scope;
-- dominating-clique target capacity for ranks two through five;
-- gauge/Petrial and marked-core occurrence-coset theorems;
-- internal switch correction image and internal/external switch dichotomy;
-- three-cut gluing;
-- ten-state four-edge boundary and exact gluing;
-- cap forcing, pairing alignment, routing coordinates, and uniform-routing elimination;
-- cyclic holonomy and root-fibre section classification;
-- Tait-resolution equivalence and Type H Tait escape;
-- BBD root rigidity and simultaneous ambient origin;
-- `K_6` completion and defect-strip theorem;
-- variational defect-forest and induced-tree theorems;
-- Petersen endpoint transport;
-- DDD atom triality and unique-bad-route theorem;
-- rank-two route-lock Tait escape;
-- full-rank curvature duality and flat-potential equivalence;
-- common-cut component-incidence and odd-circuit localisation;
-- singleton/transition/quartic-core localisation;
-- unbounded abstract quartic witness designs and their symplectic form;
-- route-locked quotient Tait-phase representation, affine scalar-sheet plane, Kempe cycle differences, affine endpoint selectors, and aligned/crossed switch signatures;
-- connected pairwise quartic transition skeletons and their ribbon interpretation;
-- the canonical quartic terminal `O^-(4,2)` nucleus, intrinsic `E_5/K_5` geometry, route `D_8` stabiliser, curvature carrier, terminal-block projection table, and split-or-peel recursion.
-
-Closed finite interfaces include the ten four-pole states, the exact small-four-pole census through six internal vertices, half-cube clique-link tables, Petersen Fano-flow census, calibrated graph laboratories, and atom/monodromy/root-fibre/cohomology tables.
-
-Finite closure does not imply global theorem closure.
-
-## 2. Primary frontier: route-locked atom localisation
-
-A nondegenerate co-root atom has two crossed root resolutions. If a full challenge takes a crossed route, the atom becomes root-valued. If all challenges are blocked, unique-bad-route reduction gives a locked `K_{2,4}` orbit.
-
-At a locked `C`-state, quotienting gives a nowhere-zero `\mathbf F_2^3` flow `c` with all terminal values equal to `g` and four scalar circuit partitions routed as `12\mid34`.
-
-### Rank two
-
-The rank-two sector is a Tait three-edge-colouring and has a root-valued boundary-state escape. It is no longer part of the residual obstruction.
-
-### Full-rank nonflat sector
-
-If
+For the locked full-rank nonflat flow, choose a support-minimal witness
 
 $$
-\Omega(c)\ne0,
+\eta\subseteq E_g.
 $$
 
-there is a support-minimal witness
+It is a curvature-odd circuit of the closed-component incidence matroid and has exactly one form:
+
+1. singleton enriched atom;
+2. a closed scalar component meets `\eta` in two edges;
+3. quartic core `|\eta|=4k+1`.
+
+A scalar-common cut need not be a cut in the original four-pole. The exact full-rank singleton certificate proves this.
+
+## 3. Quartic incidence progress
+
+Every quartic design contains a canonical nondegenerate minus-type four-space
 
 $$
-\eta\subseteq E_g
+S=\langle1_X+e_0,\ldots,1_X+e_3\rangle.
 $$
 
-which is simultaneously a cut in all four scalar sheets and has odd terminal parity.
+Its five singular points and ten roots form intrinsic `E_5/K_5` geometry. The route matching gives `D_8`, and curvature is carried by
 
-The active theorem [`five-support/common-cut-circuit-localisation.md`](five-support/common-cut-circuit-localisation.md) proves:
+$$
+S/s_\infty^\perp\cong\mathbf F_2.
+$$
 
-1. `\eta` is a curvature-odd circuit of the four-partite closed-component incidence matroid;
-2. a scalar-common cut need not be a cut in the underlying four-pole;
-3. exactly one of the following holds:
-   - `|\eta|=1`, giving one bounded enriched `g`-edge atom;
-   - a closed scalar component meets `\eta` in exactly two edges, giving a marked transition interval;
-   - `|\eta|=4k+1` and the witness is a quartic near-resolution core;
-4. in the quartic core, each sheet has exactly one terminal witness edge, the other `4k` edges split into four-edge closed-component blocks, all `4k` incidence rows are independent, and the four terminal edges are distinct with odd `12/34` side word;
-5. a singleton atom is either aligned, with resolution labels `g,g,0`, or crossed, with DDD/Petersen labels `g,r,r+g`.
+Terminal distribution yields:
 
-The active theorem [`five-support/quartic-witness-designs.md`](five-support/quartic-witness-designs.md) proves a sharp negative boundary:
+- `3`: co-root equality transport;
+- `2+1`: one `K_6` perfect-matching vertex;
+- `1+1+1`: a perfect-matching vertex followed by a root triangle.
 
-1. for every `k\ge1`, an abstract quartic witness design exists on `4k+1` points;
-2. the four block spaces are totally isotropic `k`-spaces whose direct sum is the full even-weight symplectic space;
-3. the complete cross-sheet block-intersection Gram matrix is nonsingular.
-
-Therefore incidence parity, block size, omitted points, and binary rank cannot bound `k` or force the five-point core.
-
-The active theorem [`five-support/route-locked-quotient-phase.md`](five-support/route-locked-quotient-phase.md) supplies the first physical layer:
-
-1. after quotient by `\langle g\rangle`, `c` is a `\mathbf F_2^2` flow whose zero set is exactly `E_g`, together with one reconstructing binary phase;
-2. away from `E_g` the quotient is a Tait colouring, while endpoints of `E_g` are matched defect vertices with one repeated quotient colour;
-3. the four scalar sheets form an affine plane in the relative cycle space;
-4. their three nonzero differences are the three quotient Kempe cycle systems;
-5. every endpoint selector is a balanced affine function on the four sheets;
-6. every `g`-edge has one of nine ordered endpoint quotient labels, with aligned signatures `(0,0),(1,1),(1,1)` or crossed signatures `(0,1),(1,0),(1,1)`.
-
-The active theorem [`five-support/quartic-transition-skeletons.md`](five-support/quartic-transition-skeletons.md) proves that every pair of quartic sheets has a connected bipartite transition skeleton with:
-
-- two terminal leaves;
-- all block vertices of degree four;
-- exact cycle rank `2k`;
-- a terminal-to-terminal Euler trail;
-- a physical ribbon rotation inherited from scalar circuits.
-
-The active theorem [`five-support/quartic-terminal-nucleus.md`](five-support/quartic-terminal-nucleus.md) now classifies the abstract unbounded mechanism:
-
-1. the four whole-sheet block sums span a canonical nondegenerate minus-type four-space `S`;
-2. its five nonzero singular vectors and ten anisotropic vectors form an intrinsic `E_5/K_5` geometry;
-3. the fixed route matching gives the canonical coordinate stabiliser `D_8`;
-4. the odd terminal curvature quotient is canonically
-   $$
-   S/s_\infty^\perp\cong\mathbf F_2;
-   $$
-5. a block containing one or two of the other omitted points has anisotropic root projection to `S`;
-6. every sheet has terminal distribution `3`, `2+1`, or `1+1+1`;
-7. if some sheet is split, two or three root-projected blocks are exposed;
-8. if all sheets are concentrated and `k\ge2`, the canonical nucleus peels off and the remaining blocks form a quartic witness design of level `k-1`;
-9. concentrated extension is the exact inverse operation, with the five-point nucleus as recursion base.
-
-Thus the abstract quartic branch satisfies the exact dichotomy
+Hence every quartic core satisfies
 
 $$
 \boxed{
-\text{root-exposed split}
+\text{bounded root-exposed split}
 \quad\text{or}\quad
 \text{canonical nucleus peel }k\mapsto k-1.
 }
 $$
 
-This is a strict algebraic progress theorem. It is not yet a physical graph-composition theorem.
+This is strict incidence progress, not yet physical graph composition.
 
-The correct immediate frontier is now:
+## 4. Scope correction for scalar intervals
 
-- compose the aligned zero/equality-wire singleton;
-- compose the crossed DDD singleton;
-- convert a two-edge scalar interval into a smaller separator, ten-state transfer, transition split, or bounded replacement;
-- turn a root-exposed quartic split into one of those physical interfaces;
-- prove that concentrated nucleus peeling descends through ribbon rotations, Kempe cycle systems, endpoint quotient labels, intervening non-`g` paths, and the fixed terminal route;
-- if descent fails, identify the failure as the physical DDD `D_8` class.
+A scalar circuit block may contain additional `g`-edges outside `\eta`. Therefore its four marked witness edges determine four witness arcs, not necessarily four non-`g` intervals.
 
-The former statement that curvature and DDD merely have the same one-dimensional representation type has been sharpened. Curvature now has a canonical incidence-level `D_8` carrier inside the same minus-type geometry. The remaining open comparison is graph-level: construct the map to the physical DDD cocycle and prove nontriviality.
+An elementary scalar interval lies between consecutive full `g`-incidences. Such an interval has:
 
-### Full-rank flat sector
+- one of eighteen quotient transfer states;
+- telescoping side-output sum;
+- either a bounded backtrack cap or a periodic triangle-cell chain;
+- rigid three-Kempe ladder wiring in the periodic case.
 
-If
+A witness arc may concatenate arbitrarily many elementary intervals separated by edges of `E_g\setminus\eta`.
 
-$$
-\Omega(c)=0,
-$$
+## 5. Physical cut carrier: `\Gamma_g`
 
-there is an eight-state potential `p` satisfying
+Delete all `g`-edges and contract each remaining connected component. The quotient `\Gamma_g` is an even-total-degree four-pole whose edges are the `g`-edges and whose four scalar sheets give four transition systems.
+
+Every internal quotient cut lifts exactly:
 
 $$
-p(u)+p(v)\in\{0,c(e)+g\}.
-$$
-
-The open theorem is to extract a finite enriched interface from the potential fibres and prove a proper split, bounded replacement, smaller separator, or gluing transfer state. Flatness is structure, not yet graph reduction.
-
-## 3. Defect-forest composition frontier
-
-The canonical or energy-minimal `E_5` flow has an induced defect forest. Co-root paths carry an `L(\mathrm{Petersen})` state walk together with a side-root output word.
-
-The pruning theorem must combine the atom localisation with the forest structure and prove one of:
-
-1. zero networks give equality-wire replacement or serial decomposition;
-2. one-factor leaves admit a composition-safe Petersen endpoint resolution;
-3. repeated enriched transport states yield a bounded replacement;
-4. a root-side attachment exposes a smaller cyclic cut;
-5. the only irreducible remainder is the DDD `D_8` class.
-
-Repeated endpoint state without equal side semantics is insufficient.
-
-## 4. Four-pole frontier
-
-The abstract four-edge obstruction has been compressed to two routing mechanisms.
-
-### Type T
-
-$$
-P_5\mid P_5.
-$$
-
-Open: prove that acyclic unique routing forces nested linkage, serial decomposition, a smaller separator, or a bounded replaceable fragment.
-
-### Type H
-
-$$
-P_4\mid C_3.
-$$
-
-The zero-norm root-linearizable branch is eliminated by Tait escape. The residual family must carry ambient translation, an empty edge fibre or vertex relation, component holonomy, a zero network, or co-root defect data.
-
-Open: prove that a family in which every lift is obstructed shares one geometric witness yielding strict progress.
-
-### Full-cap problem
-
-The small exhaustive census supports, but does not prove, that every admissible four-pole contains one full cap sector `\mathcal K_i`.
-
-Open: prove the full-cap-profile theorem or identify and structurally analyse the first genuine large counterexample profile.
-
-## 5. Horizontal/global frontier
-
-For a graph `G`, graph-level failure means every nowhere-zero Fano flow is wholly bad:
-
-$$
-\mathfrak B(G)
+\delta^{\mathrm{int}}_{\Gamma_g}(\mathcal U)
 =
-\operatorname{NZFlow}(G;\mathbf F_2^3).
+\delta^{\mathrm{int}}_Q(X_\mathcal U).
 $$
 
-The laboratories show that a graph may be easy while some fixed flows are hard, Petersen is vertically soluble for every Fano flow, and a flower-snark bad flow may have many one-step exits.
-
-Open: prove that every bad-flow component has either:
-
-1. a horizontal edge to a vertically good state; or
-2. a coherent certificate forcing a cut, four-pole, bounded replacement, or smaller instance.
-
-This theorem must transport changing gauge codes and obstruction arrangements; neighbour count alone is insufficient.
-
-## 6. Target-side frontier
-
-Target capacity is complete for dominating cliques of ranks two through five. The first open link is rank one, involving homomorphisms to
+The correct parity law is
 
 $$
-L(K_5).
+|\delta^{\mathrm{int}}(\mathcal U)|
+\equiv t(\mathcal U)\pmod2,
 $$
 
-The flower `J_5` example proves that `K_6`-only theory is insufficient even for compatible dual triangulations.
+where `t(\mathcal U)` counts original terminal flags on the shore. Thus terminal-free and two-terminal shores have even internal boundary.
 
-Open:
+The quartic incidence partitions live canonically on this physical transition quotient.
 
-- classify rank-one and non-dominating target obstructions;
-- determine whether every compatible non-homomorphism has a bounded marked certificate or canonical decomposition;
-- enlarge obstruction arrangements without confusing arbitrary graph warnings with realizable compatible duals.
+## 6. Standard `4`-regular carrier
 
-## 7. Current proof priority
+Close the terminals according to the locked route `12\mid34` and take the flag-line graph
 
-Recommended sequence:
+$$
+F=\mathcal L(\widehat Q).
+$$
 
-1. physical quartic split-or-peel theorem, in parallel with singleton and two-edge composition;
-2. graph-level comparison of the canonical curvature carrier with the physical DDD class;
-3. flat-potential finite interface;
-4. defect-forest pruning;
-5. four-pole transfer and gluing;
-6. horizontal bad-component theorem;
-7. target-certificate completion where required.
+Every scalar even subgraph gives a canonical circuit partition of this common `4`-regular graph. The four sheets are four transition transversals of one transition matroid.
 
-## 8. Intake trigger
+At every edge of `\widehat Q`, the four transition choices are governed by one uniform local law:
 
-A new corpus intake is warranted when a later exact checkpoint does one of:
+- non-`g` aligned: `2+2+0`;
+- non-`g` crossed: `2+1+1`;
+- `g` aligned: all four use one cross transition;
+- `g` crossed: two use each cross transition.
 
-- composes a singleton or two-edge common-cut interface;
-- makes the quartic root-exposed split or nucleus peel physical and composition-safe;
-- identifies the canonical curvature carrier with the physical DDD class;
-- gives a finite interface for the flat potential;
-- proves defect-forest pruning or Type T decomposition;
-- changes the Type H residual mechanism;
-- proves a full-cap or four-pole realizability theorem;
-- proves horizontal escape/decomposition;
-- changes the global theorem status.
+Scalar component incidence is one-sided incidence in the partition touch-graphs.
 
-Exploratory counts that do not change the mechanism or open boundary need not trigger immediate reconstruction.
+## 7. Relative touch-homology frontier
 
-## 9. Status statement
+For each sheet, restrict its touch-graph to internal `g`-edges. Interior vertices are closed scalar circuits; boundary vertices are terminal scalar circuits and complementary partition circuits.
 
-The global five-support cycle-double-cover statement remains open. The nonflat common-cut branch now has a strict abstract decomposition theorem: every quartic core either exposes root-valued terminal blocks or peels a canonical `O^-(4,2)`/`D_8` nucleus and reduces `k` by one. The exact remaining problem is to transport that split-or-peel operation through the physical ribbon/Kempe/endpoint data and the original four-pole gluing semantics.
+The common-cut space is the fourfold relative cycle space
+
+$$
+\mathcal Z_{\mathrm{com}}
+=
+\bigcap_{\phi\in U^*}
+Z_1(\Theta_\phi,B_\phi).
+$$
+
+Curvature is terminal relative-boundary evaluation:
+
+$$
+\Omega(x)=\sum_\phi\beta_{\phi,34}(x).
+$$
+
+The pointed curvature circuit is therefore a circuit in a coextension of the stacked relative boundary matrix. It is **not yet** proved to be a transverse circuit or cocircuit of `M_\tau(F)`, because boundary may remain on complementary partition circuits.
+
+This is the exact obstruction to directly applying isotropic connectivity or split decomposition.
+
+## 8. Immediate theorem target
+
+The primary frontier is now:
+
+$$
+\boxed{
+\text{fourfold relative curvature circuit}
+\Longrightarrow
+\begin{cases}
+\text{bounded closure to an ordinary touch cycle / transverse dependence},\\
+\text{terminal-even separator or transition two-sum in }\Gamma_g,\\
+\text{physical }D_8\text{ class}.
+\end{cases}}
+$$
+
+Concretely, for the complementary boundary syndrome
+
+$$
+b_\phi=\partial_{B,\phi}(\eta),
+$$
+
+prove one of:
+
+1. bounded cap/complement paths close every `b_\phi`;
+2. its support lies in a proper region yielding a cut in `\Gamma_g`;
+3. the relative cycle factors through a low-order touch/transition separation;
+4. all four syndromes form one irreducible orbit equal to the physical DDD class.
+
+The terminal part is already finite and carried by the canonical nucleus. Only complementary boundary remains uncontrolled.
+
+## 9. Secondary open lines
+
+After this primary bridge:
+
+- compose singleton and marked two-edge interfaces;
+- extract a finite interface from the flat potential;
+- prune defect forests;
+- complete Type T/Type H four-pole composition;
+- prove horizontal escape/decomposition;
+- enlarge target certificates only where required.
+
+## 10. Status
+
+No active source proves the global five-support theorem. No Lean, independent-review, peer-review, merge, release, arXiv, DOI, or publication status is implied.
