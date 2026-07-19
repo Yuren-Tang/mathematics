@@ -4,7 +4,7 @@
 **Standing issue:** `Yuren-Tang/research-workbench#37`  
 **Owned branch:** `proof-development/affine-cdc-rigour-v1`  
 **Exact initial baseline:** `main@960c92b7ff231c78b387894149779083060a75eb`  
-**Programme state:** persistent; this ledger remains live after the initial theorem spine
+**Programme state:** persistent; Programme A is `READY-FOR-CURATOR`, Programme B continues
 
 ## 1. Control and assurance boundary
 
@@ -16,7 +16,7 @@ Status words are authorial proof-development states:
 
 `COMPLETE-DRAFT` and `READY-FOR-CURATOR` do not mean independently audited or machine-checked.
 
-## 2. Normalized complete-CDC DAG
+## 2. Complete-CDC DAG
 
 ```text
 A0  foundational graph/cut/circuit/multiplicity semantics
@@ -25,60 +25,76 @@ A0  foundational graph/cut/circuit/multiplicity semantics
       └──> A3  binary-flow external boundary
             └──> A4  affine pair complex and obstruction object
                   └──> A5  rank-three Fano compatibility
-                        └──> A6  graph-level even double-cover extraction
+                        └──> A6  graph-level even-support extraction
 A0 ───────────────────────────────┘
-A0 + A6 ──> A7  intrinsic vertex-boundary/cut-even bridge
-A2 + A6 + A7 ──> A8  collapse preservation and multiplicity bookkeeping
+A0 + A6 ──> A7  vertex/boundary/cut parity bridge
+A2 + A6 + A7 ──> A8  collapse and multiplicity transport
 A0 + A8 ──> A9  finite circuit decomposition
-A1 + A2 + A3 + A4 + A5 + A6 + A7 + A8 + A9 ──> A10 final theorem assembly
+A1 + A2 + A3 + A4 + A5 + A6 + A7 + A8 + A9 ──> A10 final theorem
 ```
 
-The displayed chain is a proof-development order, not a claim that every mathematical construction is logically impossible to state earlier. It records the order in which downstream chapters may rely on closed interfaces.
+| Code | State | Exact checkpoint | Closed output |
+|---|---|---|---|
+| `AC-PD-A0` | `COMPLETE-DRAFT` | `0d8c9102fa117e5f58b5d1617f3fae782c164097` | finite-active multigraph, cuts, intrinsic parity, circuits, components, indexed/multiset multiplicity |
+| `AC-PD-A1` | `COMPLETE-DRAFT` | `b193d55461040a6b6b7692e4f24e91d88c97a663` | exact loop deletion, preservation, and forced two-singleton reinsertion |
+| `AC-PD-A2` | `COMPLETE-DRAFT` | `7c271c41f9d442ddb14034fb40b730fcc61c83a5` | finite loopless cubic port-cycle expansion, components, fibres, cut pullback, collapse |
+| `AC-PD-A3` | `COMPLETE-DRAFT` | `6817896a301157db886f7c016866748a9161d15f` | Seymour boundary, literal 6-to-8 step, internal equal-order group-flow transport, characteristic-two adapter |
+| `AC-PD-A4` | `COMPLETE-DRAFT` | `93bd8019099f0fa10ee53928681167f81506c407` | local affine torsor, pair complex, quotient equation, stress dual, retained-data boundary |
+| `AC-PD-A5` | `COMPLETE-DRAFT` | `6ce41bd87b5700346c572f701c40c8ac6f374e3f` | canonical quotient quadratics, Fano Lagrangians, characteristic torsor, automatic compatibility |
+| `AC-PD-A6` | `COMPLETE-DRAFT` | `f953619d6fda7105fef406892530496c7d72178a` | point-indexed graph supports, local evenness, exact double coverage, multiset flattening |
+| `AC-PD-A7` | `COMPLETE-DRAFT` | `b0755c3b95939482c6e223c24e4d8327c53f02e8` | exact loopless equivalence of set-incidence parity, intrinsic boundary parity, and cut parity |
+| `AC-PD-A8` | `COMPLETE-DRAFT` | `d9718c6204d4f11aa853ee2f6e350d5c08444820` | memberwise cut-even collapse and exact original-edge occurrence transport |
+| `AC-PD-A9` | `COMPLETE-DRAFT` | `400404e5413dfc933668aa0ec152010bae5a742c` | terminating finite circuit decomposition and global multiplicity preservation |
+| `AC-PD-A10` | `READY-FOR-CURATOR` | `143538ef0fc9518ce877a42fa422d57cb6e3ce8a` | natural finite-active-edge no-singleton-cut CDC theorem assembly and assurance ledger |
 
-### Unit table
+### Programme A corrections retained
 
-| Code | State | Exact unit boundary | Completion test | Immediate consumers |
-|---|---|---|---|---|
-| `AC-PD-A0` | `COMPLETE-DRAFT` | multigraph model; finite active edge set; active vertices; cuts; intrinsic boundary parity; cut-even supports; circuits; components; indexed families and multiset multiplicity; empty and loop-only cases | closed at `0d8c9102fa117e5f58b5d1617f3fae782c164097` | A1, A2, A7, A9, A10 |
-| `AC-PD-A1` | `COMPLETE-DRAFT` | delete all loops; preserve nonloop cuts and no-singleton-cut condition; reinsert exactly two singleton-loop circuit occurrences | closed at `b193d55461040a6b6b7692e4f24e91d88c97a663` | A2, A10 |
-| `AC-PD-A2` | `COMPLETE-DRAFT` | loopless port-cycle cubic expansion; degree-two parallel fibre; disconnected components; fibres, auxiliary edges, lift and collapse map | closed at `7c271c41f9d442ddb14034fb40b730fcc61c83a5` | A3, A4, A8 |
-| `AC-PD-A3` | `COMPLETE-DRAFT` | componentwise `BinaryEightFlow`; Seymour six-flow input; literal 6-to-8 range inclusion; equal-order finite-abelian-group transport; orientation forgetting in characteristic two | closed at `6817896a301157db886f7c016866748a9161d15f` | A4, A10 |
-| `AC-PD-A4` | `COMPLETE-DRAFT` | incidence space, local affine torsor, edge diagonal, pair complex, quotient equation, stress dual, retained source-data boundary | closed at `93bd8019099f0fa10ee53928681167f81506c407` | A5 |
-| `AC-PD-A5` | `ACTIVE` | canonical quadratic planes; local Fano Lagrangian/characteristic torsor; abstract Lagrangian intersection; global compatibility | every local identity and global implication proved without hidden rank, connectedness, or representation cases | A6 |
-| `AC-PD-A6` | `QUEUED` | retain graph/dart data; construct finite indexed supports; prove support parity and exact edge multiplicity two; flatten to multiset | graph-level witness and all index/multiplicity maps explicit | A7, A8 |
-| `AC-PD-A7` | `QUEUED` | distinguish intrinsic boundary parity from the companion once-per-edge incidence API; prove the exact bridge used on the loopless cubic graph | required directions and hypotheses proved; any stronger scope corrected | A8 |
-| `AC-PD-A8` | `QUEUED` | project supports along injective original-edge lift; prove cut transport and exact double coverage after collapse | auxiliary edges, equal projected supports, empty images and repeated occurrences handled | A9 |
-| `AC-PD-A9` | `QUEUED` | decompose each finite cut-even support into finitely many circuits; concatenate indexed decompositions | termination, empty support, multiplicity preservation and component cases proved | A10 |
-| `AC-PD-A10` | `QUEUED` | assemble the natural finite-active-edge bridgeless multigraph theorem under the weakest proved hypotheses | every arrow cites an exact completed unit; empty graph, isolated vertices, disconnected graph, parallel edges and loops handled | Curator / later Lean and manuscript projections |
+1. A0 owns circuit semantics and characterization; A9 owns finite decomposition.
+2. Intrinsic half-edge boundary parity is the natural loop-aware notion; the companion once-per-edge predicate is loopless only.
+3. The pair complex captures compatibility but not graph/dart/indexed-support semantics.
+4. Equal-order group-flow transport is proved internally rather than left as a Tutte black box.
+5. Collapse preserves cut-even supports and occurrence multiplicity, not circuits.
+6. Equal support values at different indices remain different occurrences.
+7. The natural hypotheses are finite active edge set plus no singleton cut; connectedness, simplicity, looplessness, and ambient-vertex finiteness are unnecessary.
 
-### Boundary corrections recorded at normalization
+## 3. Programme B — five-support proof tree
 
-A0 owns **circuit semantics and characterization**. A9 owns **finite decomposition into circuits**. The baseline prose sometimes mentions decomposition near the definitions; no downstream proof may treat that mention as a closed A0 result.
+The global five-support theorem remains open. Programme B proves and normalizes all mature subchains while maintaining the smallest exact frontier gap.
 
-The intrinsic graph-theoretic parity object is the mod-two boundary of a support, equivalently half-edge degree parity with loops counted twice. The companion formal API's current once-per-edge incidence convention is a distinct loopless representation. A7 will state its exact bridge; it must not be silently extended across loops.
+```text
+B1  root-flow / fixed-plane / fixed-lift equivalences
+├──> B2  singular, quadratic, Schur, cographic, orthogonal, Fourier forms
+├──> B3  dual triangulation, quotient, and halfcube structures
+└──> B4  vertical and horizontal reconfiguration
+B2 + B3 + B4 ──> B5  three-cuts, four-poles, and routing states
+B5 ──> B6  holonomy, BBD/DDD, defects, and atoms
+B6 ──> B7  route-lock, curvature, and common-cut localization
+B1–B7 + B8 finite certificates ──> B9 global five-support assembly
+```
 
-The pair complex is the complete compatibility image but does not retain graph/dart/indexed-support semantics. A6 must consume the retained source object `(G, Γ, f)` together with a compatible point, not a bare abstract pair complex.
-
-## 3. Five-support proof tree
-
-The global five-support theorem remains open. Proof development begins here only after the complete-CDC foundational chain is stable, except for an urgent returned defect.
-
-| Code | State | Family |
+| Code | State | Exact unit boundary |
 |---|---|---|
-| `AC-PD-B1` | `QUEUED` | root-flow and fixed-plane/fixed-lift equivalences |
-| `AC-PD-B2` | `QUEUED` | singular, quadratic, Schur, cographic, orthogonal and Fourier formulations |
-| `AC-PD-B3` | `QUEUED` | dual triangulation, quotient and halfcube structures |
-| `AC-PD-B4` | `QUEUED` | vertical and horizontal reconfiguration |
-| `AC-PD-B5` | `QUEUED` | three-cuts, four-poles and routing states |
-| `AC-PD-B6` | `QUEUED` | holonomy, BBD/DDD and canonical defects |
-| `AC-PD-B7` | `QUEUED` | route-lock, curvature and common-cut localization |
-| `AC-PD-B8` | `QUEUED` | finite laboratories and exact certificates |
-| `AC-PD-B9` | `BLOCKED-FRONTIER` | global five-support assembly; exact smallest missing bridge to be maintained |
+| `AC-PD-B1` | `ACTIVE` | prove the root-flow, fixed-plane, fixed-lift, local family, and support-count equivalence chain; separate existence, gauge choice, and normalization |
+| `AC-PD-B2` | `QUEUED` | prove equivalence of singular, quadratic, Schur, cographic, orthogonal, and Fourier formulations with exact rank hypotheses |
+| `AC-PD-B3` | `QUEUED` | prove dual-triangulation, quotient, and halfcube constructions and all well-definedness statements |
+| `AC-PD-B4` | `QUEUED` | prove vertical/horizontal reconfiguration moves, preserved invariants, and exact reachability claims |
+| `AC-PD-B5` | `QUEUED` | formalize three-cut, four-pole, and routing-state reductions |
+| `AC-PD-B6` | `QUEUED` | prove holonomy, BBD/DDD, canonical defects, and atom statements |
+| `AC-PD-B7` | `QUEUED` | prove route-lock, curvature, and common-cut localization consequences |
+| `AC-PD-B8` | `QUEUED` | normalize finite laboratories and exact certificates; separate evidence from proof |
+| `AC-PD-B9` | `BLOCKED-FRONTIER` | maintain the exact smallest missing global composition/localization implication; return only this genuine new-mathematics gap to AC-RL |
 
 ## 4. Repair queue
 
-No repair unit is active at this checkpoint. Every later entry must record its trigger, affected integrated checkpoint, exact claim or proof step, severity, required mathematical action, whether it returns to `AC-RL`, and its Curator-ready test.
+No repair unit is active. Any later Curator, audit, Lean, manuscript, or Research Lead defect must be entered with:
+
+- exact triggering checkpoint;
+- exact false, incomplete, or ambiguous statement;
+- mathematical severity;
+- required repair;
+- whether new mathematics is needed from AC-RL;
+- Curator-ready completion test.
 
 ## 5. Current active unit
 
-`AC-PD-A5` is active. It must prove that in rank three every quotient plane `Q_e` carries its canonical anisotropic quadratic form, that the vertex translation space is Lagrangian and its affine local-family coset is the characteristic torsor, and that the edge diagonal is a totally singular Lagrangian. The abstract characteristic-torsor intersection theorem should then give global compatibility componentwise. The existing branching/cross-bit Lean theorem remains a formal anchor, but the invariant quadratic presentation is not thereby machine-checked.
+`AC-PD-B1` is active. The first task is to normalize the integrated five-support corpus into one exact root equivalence diagram, identify which arrows are already proved versus computationally supported or conjectural, and close the first unresolved proof obligation that does not require new mathematics. Programme A remains available for repair and Curator intake without pausing B1.
