@@ -2,146 +2,149 @@
 
 This file separates current mathematical inclusion, authorial proof completion, independent audit, machine verification, manuscript projection, peer review, publication, release, arXiv, and DOI status.
 
-## 1. Natural complete theorem
+## 1. Programme A complete theorem
 
 Programme A proves at authorial paper-proof level:
 
 > Every multigraph with finite active edge set and no singleton cut has a finite circuit double cover.
 
-A circuit is a nonempty inclusion-minimal finite cut-even support. Loops, parallel edge objects, disconnected components, isolated vertices, and an arbitrary ambient vertex carrier are allowed.
-
-For nonloop active edges, no singleton cut is equivalent to no bridge.
-
-## 2. Programme A status
-
-Exact source:
+Exact Programme A source:
 
 `proof-development/affine-cdc-rigour-v1@8bee16780b549f51e1f29343671a059961ec4172`.
 
-Integrated scope:
+Fixed Audit A candidate:
 
-- A0–A9: `COMPLETE-DRAFT` authorial proof units;
-- A10: `READY-FOR-CURATOR` aggregate authorial proof;
-- curation candidate: Curator-integrated authorial paper-proof.
+`curation/affine-cdc-programme-a-v1@68715fb29bb4b6555e2bc3e089603c5390d01566`.
+
+This B1 intake does not modify that branch or change its audit status.
+
+## 2. Programme B1 status
+
+Exact immutable B1 source:
+
+`proof-development/affine-cdc-rigour-v1@778b09ac8260192e022f512f24cdef1d04871f37`.
+
+Integrated B1 scope:
+
+- B1.1 root-flow/$K_5$-triangle equivalence: `COMPLETE-DRAFT`;
+- B1.2 exact matching/four-flow theorem: `COMPLETE-DRAFT / CORPUS-CORRECTION`;
+- B1.3 fixed-flow/fixed-plane criterion: `COMPLETE-DRAFT`;
+- B1.4 surface/halfcube scope: `COMPLETE-DRAFT / SCOPE-CORRECTION`;
+- B1 aggregate: Curator-integrated authorial proof layer.
+
+The preferred integrated chapter is [`five-support/b1-object-quantifier-and-scope.md`](five-support/b1-object-quantifier-and-scope.md). Exact provenance is in [`PROGRAMME_B1_INTEGRATION_MAP.md`](PROGRAMME_B1_INTEGRATION_MAP.md).
 
 These statuses do not mean independently audited or machine-checked.
 
-The controlling integrated proof is under [`complete-cdc/`](complete-cdc/). Exact unit provenance is in [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md).
+## 3. B1 theorem boundary
 
-## 3. Logical external input
+Programme B1 proves exact graph-level equivalences among:
 
-The sole external non-elementary logical theorem is Seymour’s nowhere-zero six-flow theorem:
+- five indexed even supports;
+- root-valued $E_5$ flows;
+- $K_5$-triangle labellings;
+- exact matching/four-flow data;
+- existential Fano-flow/plane empty-profile data;
+- existential cycle-face surfaces whose full dual maps to the even half-cube.
 
-P. D. Seymour, “Nowhere-zero 6-flows”, Journal of Combinatorial Theory, Series B 30 (1981), 130–135, DOI `10.1016/0095-8956(81)90058-7`.
+It also proves the exact fixed-data statements for:
 
-Programme A proves internally:
+- a fixed pair $(f,W)$;
+- a fixed Fano flow with variable plane;
+- a fixed compatible root lift and its same-embedding componentwise compression;
+- integration of an external root flow on a prescribed dual subject to zero holonomy;
+- the old-colour-factorable quotient.
 
-- flow-kernel cardinality over arbitrary finite abelian groups;
-- the nowhere-zero flow count by inclusion–exclusion;
-- dependence of that count only on group order;
-- transport from `Z/8Z` to `F₂³`.
+The global five-support theorem for all graphs remains open.
 
-Tutte’s equal-order theorem is historical provenance, not an unresolved logical premise. Exact Tutte primary-page refinement may remain useful bibliographically but is not a proof-completeness gate.
+## 4. Six B1 corrections
 
-## 4. Machine-checked anchor
+The active corpus now records:
+
+1. support-coordinate inverse images are even; root-label inverse images are matchings;
+2. bare matching plus four-flow is insufficient without $(B,D)$ or component $T$-join data;
+3. fixed-$g$ half-cube equivalence concerns componentwise compression of the same embedding;
+4. external covers require zero dual holonomy on a prescribed surface;
+5. $J_g$ classifies only old-colour-factorable compression;
+6. singleton words require an odd translation when the target is the even half-cube.
+
+## 5. Boundary with B2+
+
+This intake consumes no B2, B3, or later moving-branch mathematics.
+
+In particular, it does not integrate or disposition:
+
+- singular/quadratic/Schur/cographic/orthogonal/Fourier dossiers;
+- later target-link or finite-certificate corrections;
+- later obligation-ledger modifications;
+- Programme B2/B3 handoffs.
+
+Any broader equivalence claim remains subject to a separate exact checkpoint and Curator intake.
+
+## 6. Machine-checked anchor
 
 The companion checkpoint
 
 `Yuren-Tang/affine-cdc:main@ebd7098a7a8b824e8c0a511d3c71f61705672aa8`
 
-machine-checks substantial internal slices, including:
+machine-checks substantial internal slices of the rank-three AffineCDC machinery, including local families, gluing, indexed dart supports, exact two-point coverage, and a cubic-flow CDC result.
 
-- local affine-family classification;
-- quotient, gauge, branching, and dual-configuration machinery;
-- rank-three compatibility in the original branching/cross-bit presentation;
-- dart gluing and indexed dart supports;
-- exact two-point edge coverage;
-- a cubic-flow graph-level CDC result.
-
-It does not yet prove the integrated natural theorem end to end.
-
-Unformalized or unassembled interfaces include:
-
-- finite-active multigraph semantics with loops and arbitrary ambient vertex carrier;
-- exact loop deletion/reinsertion witness normalization;
-- the port-cycle expansion/collapse dossier used by Programme A;
-- Programme A’s internal equal-order flow-count proof;
-- the invariant pair-complex and characteristic-torsor global presentation;
-- the explicit even-cover-first graph/dart extraction and collapse factorization;
-- final circuit decomposition and outer theorem assembly.
+It does not end-to-end verify Programme A or the integrated B1 graph/fixed-flow/fixed-lift package.
 
 No Lean repository was changed by this intake.
 
-## 5. Independent-review status
+## 7. Independent-review status
 
-Programme A has not yet passed dedicated independent Audit A.
+Programme A is fixed for Audit A, but this intake does not perform or complete that audit.
 
-The priority audit targets are:
+Programme B1 has not received a dedicated independent line-by-line audit. Priority B1 review targets include:
 
-1. alternate-path lifting for external edges in the port-cycle expansion;
-2. spanning-forest flow-kernel count and inclusion–exclusion;
-3. local affine-family completeness and quotient formula;
-4. Fano cross-pairing and characteristic-torsor intersection;
-5. graph/dart descent and indexed occurrence counting;
-6. loopless set-incidence to intrinsic cut-parity conversion;
-7. pulled-back-cut collapse and repeated projected occurrences;
-8. terminating circuit decomposition and loop/core reinsertion.
+1. mutual inverse root-flow/support construction;
+2. matching/four-flow reconstruction and the component $T$-join criterion;
+3. common outside-colour parity and fixed-plane equivalence;
+4. root-lift/surface construction with support-cycle components;
+5. prescribed-dual path-independence/holonomy criterion;
+6. full-dual versus old-colour quotient factorization;
+7. even-component half-cube parity adapter.
 
 These are assurance targets, not known defects.
 
-## 6. Complete-theorem source status
+## 8. Current source surfaces
 
-The active current-best proof surface is:
+Programme A:
 
-- `complete-cdc/README.md`;
-- `complete-cdc/foundations-expansion-and-flow.md`;
-- `complete-cdc/affine-compatibility-and-extraction.md`;
-- `complete-cdc/collapse-decomposition-and-assembly.md`.
+- [`complete-cdc/`](complete-cdc/);
+- [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md);
+- exact A0–A10 dossiers under `proof-development/`.
 
-The A0–A10 dossiers and `OBLIGATION_DAG.md` remain under `proof-development/` as exact authorial provenance, audit detail, and repair inputs.
+Programme B1:
 
-The specialized `core/` and `reduction/` chapters remain current mechanism-level companions. They do not supersede the end-to-end Programme A dependency closure.
+- [`five-support/b1-object-quantifier-and-scope.md`](five-support/b1-object-quantifier-and-scope.md);
+- [`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md);
+- [`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md);
+- [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
+- [`PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md`](PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md);
+- exact B1 dossiers under `proof-development/`.
 
-## 7. Programme B separation
-
-The five-support theorem remains open. This intake consumes no B1 or later PDL checkpoint.
-
-The next B1 checkpoint is
-
-`778b09ac8260192e022f512f24cdef1d04871f37`.
-
-No B1 theorem or correction acquires current-best status through Programme A.
-
-## 8. Five-support current status
-
-The active `five-support/` corpus contains theorem-level public arguments, exact finite computations, counterexamples, corrections, and open programmes from its previously integrated source line.
-
-The global five-support theorem, universal good-flow existence, full-rank localization/composition, full-cap realizability, horizontal escape/decomposition, and target-library completeness remain open.
-
-No five-support statement is represented as Lean-formalized unless separately identified in the companion repository.
-
-## 9. Manuscript and publication status
+## 9. Publication and release status
 
 This intake did not:
 
-- edit or approve Paper A;
+- edit or approve a manuscript;
 - establish novelty relative to literature;
 - authorize arXiv or journal submission;
 - create a release or tag;
 - modify a DOI or Zenodo record;
 - implement a timestamp or priority-attestation workflow.
 
-A later manuscript revision must consume an AC-DIR-dispositioned mathematical candidate and may not silently repair theorem content.
-
 ## 10. Reliability rules
 
 1. Curator integration does not equal independent audit.
 2. Natural reformulation does not inherit Lean status without checked bridges.
 3. Exact finite computation does not prove a universal theorem.
-4. Intrinsic half-edge parity and once-per-edge incidence parity agree only on loopless graphs.
-5. The pair complex does not by itself retain graph/dart/indexed-support semantics.
-6. Collapse preserves cut-even supports and occurrence multiplicity, not circuit minimality.
-7. Equal support values at distinct indices remain distinct occurrences.
-8. Current-best inclusion, Director acceptance, independent audit, Lean verification, manuscript approval, peer review, publication, release, and DOI status are separate axes.
-
-See [`PROGRAMME_A_ASSURANCE_BOUNDARY.md`](PROGRAMME_A_ASSURANCE_BOUNDARY.md) for the intake-specific boundary.
+4. Graph-level existential statements do not preserve fixed flow, lift, or surface data.
+5. Failure for one fixed flow is not failure for the graph.
+6. Same-embedding compression is not arbitrary cover existence on a prescribed surface.
+7. Local triangular conservation does not imply zero global dual holonomy.
+8. The old-colour quotient is not the full dual.
+9. Current-best inclusion, Director acceptance, independent audit, Lean verification, manuscript approval, peer review, publication, release, and DOI status are separate axes.
