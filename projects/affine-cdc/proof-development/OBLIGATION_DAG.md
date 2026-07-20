@@ -4,13 +4,9 @@
 **Standing issue:** `Yuren-Tang/research-workbench#37`  
 **Owned branch:** `proof-development/affine-cdc-rigour-v1`  
 **Exact initial baseline:** `main@960c92b7ff231c78b387894149779083060a75eb`  
-**Programme state:** persistent; Programme A and B1–B8 are `READY-FOR-CURATOR`; B9 is the corrected blocked frontier
+**Programme state:** persistent; Programme A and B1–B8 are `READY-FOR-CURATOR`; B9 is `BLOCKED-FRONTIER / CORRECTED-ASSEMBLY`
 
-## 1. Assurance boundary
-
-This branch develops authorial mathematics and assurance records. It does not move `main`, alter Curator or Research Lead branches, mutate Lean/manuscript repositories, or change release/publication surfaces.
-
-## 2. Completed checkpoints
+## 1. Completed checkpoints
 
 | Programme | State | Immutable checkpoint | Closed layer |
 |---|---|---|---|
@@ -22,11 +18,27 @@ This branch develops authorial mathematics and assurance records. It does not mo
 | `B5` | `READY-FOR-CURATOR / FRONTIER-LOCALIZED` | `274970ef9c56cafdbfceeed3c0cc08238d3dfd40` | cuts, four-poles, routing |
 | `B6` | `READY-FOR-CURATOR / CORRECTION / AC-RL-GAPS` | `404f7511f16d1225e066a91842a57e2084943c72` | individual holonomy, Tait escape, DDD atoms; BBD corrections |
 | `B7` | `READY-FOR-CURATOR / AC-RL-GAPS / GLOBAL-OPEN` | `164f7655f9ec7c0e0a73d49303cf66230fb26487` | route-lock rank, curvature, exact localisation gaps |
-| `B8` | `READY-FOR-CURATOR / ASSURANCE-NORMALIZED` | `6d7bcaa531a232923adf2f4a9c858b2526f11feb` | finite-certificate and code/reproducibility ledger |
+| `B8` | `READY-FOR-CURATOR / ASSURANCE-NORMALIZED` | `989cb002598fd91786029be201c2747c697bb476` | finite-certificate and code/reproducibility ledger |
 
-## 3. Corrected theorem frontier
+## 2. B9 corrected assembly
 
-The global five-support statement is not proved. The exact unresolved source obligations are:
+`AC-PD-B9` is fixed at the current branch checkpoint as
+
+`BLOCKED-FRONTIER / CORRECTED-ASSEMBLY / AC-RL-DEPENDENT`.
+
+It proves the five-support outer reduction:
+
+$$
+\text{finite-active bridgeless multigraph case}
+\Longleftrightarrow
+\text{finite loopless bridgeless cubic case}.
+$$
+
+Loops can be inserted into two fixed support occurrences; port-cycle collapse preserves all five indexed supports and exact edge multiplicity.
+
+It does **not** prove the cubic five-support theorem.
+
+## 3. Exact unresolved obligations
 
 1. `AC-RL-BBD-GROUPOID-CLOSURE`;
 2. `AC-RL-BBD-VARIATION-SLICE`;
@@ -35,8 +47,24 @@ The global five-support statement is not proved. The exact unresolved source obl
 5. `AC-RL-COMMON-CUT-LOCALISATION`;
 6. `AC-RL-TYPE-H-COMMON-WITNESS`.
 
-Finite certificate data do not close any of these arrows.
+The first two concern the corrected BBD route. The last four are the corrected DDD/four-pole source-localisation route. Finite certificates close none of them.
 
-## 4. Active unit
+## 4. Minimal sufficient future packages
 
-`AC-PD-B9` is `ACTIVE / BLOCKED-FRONTIER`. It will assemble the corrected global theorem dependency map, identify the minimal sufficient future closure packets, and state precisely what may and may not be claimed now.
+Either of the following would close the global strengthening.
+
+- **Escape:** every bridgeless cubic graph has some Fano flow/root lift with full dual mapping to $\mathscr A_5$.
+- **Decomposition:** every persistent bad cubic state yields a strictly smaller labelled interface decomposition whose profiles glue.
+
+A mixed escape/decomposition theorem also suffices.
+
+## 5. Persistent-role state
+
+AC-PDL remains active for:
+
+- AC-RL-returned proof packets;
+- Curator/audit/Lean/manuscript repair units;
+- theorem-DAG maintenance;
+- new mature proof checkpoints.
+
+Without such input, B9 remains blocked rather than declared complete or abandoned.
