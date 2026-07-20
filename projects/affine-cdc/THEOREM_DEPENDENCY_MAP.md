@@ -1,284 +1,152 @@
 # AffineCDC theorem dependency map
 
-This map separates the complete Cycle Double Cover spine from the open five-support strengthening and records the dependencies among the reconstructed chapters.
+This map separates the complete Cycle Double Cover theorem from the open five-support strengthening.
 
-## 1. Complete CDC existence spine
+## 1. Complete theorem DAG
 
-$$
-\boxed{
-\begin{array}{c}
-\text{bridgeless multigraph with finite active edge set}\\
-\downarrow\;\text{delete loops}\\
-\text{finite loopless bridgeless core}\\
-\downarrow\\
-\text{cubic expansion with nowhere-zero }\mathbf F_2^3\text{ flow}\\
-\downarrow\\
-\text{affine incidence datum }(\mathcal P_f,\kappa)\\
-\downarrow\\
-\text{rank-three Fano compatibility}\\
-\downarrow\\
-\text{compatible indexed support family}\\
-\downarrow\\
-\text{graph-level multiset even double cover}\\
-\downarrow\\
-\text{cut-even collapse transport}\\
-\downarrow\\
-\text{one finite circuit decomposition}\\
-\downarrow\;\text{reinsert singleton loop circuits}\\
-\text{cycle double cover.}
-\end{array}}
-$$
+```text
+A0  finite-active multigraph, cut, intrinsic parity, circuit, and occurrence semantics
+├── A1  loop deletion and exact two-occurrence reinsertion
+└── A2  loopless port-cycle cubic expansion and collapse data
+    └── A3  Seymour six-flow boundary and internal order-eight group-flow transport
+        └── A4  affine pair complex, quotient equation, and stress obstruction
+            └── A5  rank-three quadratic-Lagrangian compatibility
+                └── A6  graph/dart indexed even-support extraction
+A0 + A6 ── A7  loopless vertex/boundary/cut parity equivalence
+A2 + A6 + A7 ── A8  cut-even collapse and exact occurrence transport
+A0 + A8 ── A9  terminating finite circuit decomposition
+A1 + A2 + A3 + A4 + A5 + A6 + A7 + A8 + A9 ── A10 final theorem
+```
 
-Controlling chapters:
+The preferred integrated chapters are:
 
-- [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md);
-- [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md);
-- [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md);
-- [`reduction/outer-shell-and-binary-flow.md`](reduction/outer-shell-and-binary-flow.md).
+- [`complete-cdc/foundations-expansion-and-flow.md`](complete-cdc/foundations-expansion-and-flow.md): A0–A3;
+- [`complete-cdc/affine-compatibility-and-extraction.md`](complete-cdc/affine-compatibility-and-extraction.md): A4–A7;
+- [`complete-cdc/collapse-decomposition-and-assembly.md`](complete-cdc/collapse-decomposition-and-assembly.md): A8–A10.
 
-This spine is paper-level mathematics with the formal boundaries stated in [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
+The exact unit checkpoints and source destinations are in [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md).
 
-## 2. Five-support strengthening: object layer
+## 2. Foundational outputs
 
-$$
-\boxed{
-\begin{array}{c}
-\text{indexed five-support even cover}\\
-\Updownarrow\\
-\text{root-valued }E_5\text{ flow}\\
-\Updownarrow\\
-\text{$K_5$ triangle labelling}\\
-\Updownarrow\\
-\text{matching + nowhere-zero }\mathbf F_2^2\text{ flow}\\
-\Updownarrow\\
-\text{quadratic-cycle / cographic formulation.}
-\end{array}}
-$$
+A0 exports:
 
-Controlling chapter:
-[`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md).
+- finite-active multigraph and active-vertex reduction;
+- singleton cut/bridge equivalence;
+- intrinsic half-edge boundary parity;
+- cut-even/boundary-even equivalence;
+- circuit characterization;
+- indexed and multiset occurrence semantics;
+- componentwise and degenerate cases.
 
-## 3. Projection/lifting layer
+A1 exports exact equivalence between a graph and its loopless core at the level of cuts, core circuits, CDC existence, and forced singleton-loop occurrences.
 
-$$
-\begin{array}{c}
-\text{nowhere-zero Fano flow }f\\
-\downarrow\\
-\text{universal compatible eight-support root lift }g\\
-\downarrow\;\text{choose plane/slice }W\\
-\text{singular quotient and component obstruction}\\
-\Updownarrow\\
-\text{outside-colour cut parity}\\
-\Updownarrow\\
-\partial(x*y)=0\\
-\Updownarrow\\
-\text{vanishing against all relative stresses.}
-\end{array}
-$$
+## 3. Expansion and flow outputs
 
-The fixed-plane theorem is complete after $f$ and $W$ are fixed. The global five-support statement requires varying the flow, lift, and componentwise surface map.
+A2 exports:
 
-## 4. Surface/target layer
+- finite loopless cubic expansion `H`;
+- collapse map `π` and injective original-edge lift `λ`;
+- internal/external edge partition;
+- degree-two parallel fibres;
+- component correspondence and exact size formulae;
+- no-singleton-cut preservation;
+- cut pullback `δ_H(π⁻¹(S)) = λ(δ_G(S))`.
 
-$$
-\begin{array}{c}
-\text{compatible root lift }g\\
-\Updownarrow\\
-\text{coloured cycle-face surface }S_g\\
-\Updownarrow\\
-\text{coloured dual triangulation }T_g\\
-\downarrow\\
-T_g^{(1)}\to\mathscr A_5\ ?
-\end{array}
-$$
+A3 consumes Seymour’s six-flow theorem and proves:
 
-The colour quotient factors this map as
+- literal six-to-eight range inclusion;
+- modular reduction to `Z/8Z`;
+- flow-kernel cardinality by spanning forests;
+- nowhere-zero flow count by inclusion–exclusion;
+- equal-order transfer to `F₂³`;
+- exact loopless characteristic-two orientation adapter.
 
-$$
-T_g^{(1)}\to J_g\to\mathscr A_5.
-$$
+Only Seymour is an external non-elementary logical input.
 
-The second route is a strict factorable subclass.
+## 4. Affine compatibility outputs
 
-Dependencies:
+A4 constructs:
 
-- root-flow lifting;
-- root-lift/surface correspondence;
-- target half-cube geometry;
-- marked obstruction certificates.
+- edge quotient planes `Q_e`;
+- incidence space `E_f`;
+- local torsor `κ+L_vert`;
+- edge diagonal `L_edge`;
+- pair complex `P_f`;
+- obstruction class `[κ]`;
+- quotient equation `δ_fm=c_f`;
+- equilibrium-stress criterion.
 
-Controlling chapter:
-[`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md).
+A5 proves:
 
-## 5. Vertical gauge layer
+- canonical anisotropic quadratic forms on rank-three quotients;
+- local Fano Lagrangians;
+- local families as characteristic torsors;
+- total singularity of the edge diagonal;
+- characteristic-torsor intersection;
+- automatic global compatibility.
 
-$$
-\begin{array}{c}
-\text{fixed Fano flow }f\\
-\downarrow\\
-\text{root-lift torsor under }H_f^0\\
-\downarrow/\text{global translations}\\
-\text{reduced gauge code }B_f\\
-\Updownarrow\\
-\text{code-filtered partial Petrials}\\
-\downarrow\\
-\text{marked-core occurrence cosets }A_C\subseteq B_f.
-\end{array}
-$$
+The pair complex captures compatibility but does not replace retained graph/dart data.
 
-For a finite certificate library $\mathscr L$,
+## 5. Support extraction and parity outputs
 
-$$
-\operatorname{Bad}_f(\mathscr L)=\bigcup_C A_C.
-$$
+A6 uses the compatible edge lines and retained graph/dart pairing to produce an `F₂³`-indexed family `(F_s)` with:
 
-Controlling chapters:
+- local once-per-edge vertex parity;
+- exact edge occurrence multiplicity two;
+- retained empty and repeated support occurrences.
 
-- [`five-support/gauge-and-reconfiguration.md`](five-support/gauge-and-reconfiguration.md);
-- [`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md).
+A7 proves on loopless graphs:
 
-## 6. Horizontal flow layer
+`once-per-edge vertex-even ⇔ intrinsic boundary-even ⇔ cut-even`.
 
-$$
-\begin{array}{c}
-\operatorname{NZFlow}(G;\mathbf F_2^3)\\
-\subseteq Z_1(G)\otimes\mathbf F_2^3\\
-\downarrow\;\text{connected-cycle rank-one switches}\\
-\text{new Fano flow }f'\\
-\downarrow\\
-\text{new root-lift torsor and new obstruction arrangement.}
-\end{array}
-$$
+The adapter is intentionally not extended to loops.
 
-Internal directions correct one fixed slice by the exact boundary-space image. External directions reslice the quotient.
+## 6. Collapse and decomposition outputs
 
-Controlling chapter:
-[`five-support/gauge-and-reconfiguration.md`](five-support/gauge-and-reconfiguration.md).
+A8 projects each support through `λ` and proves:
 
-## 7. Source-interface layer
+- memberwise cut-evenness downstairs;
+- exact original-edge occurrence transport;
+- harmless empty and repeated images;
+- no assertion that circuits project to circuits.
 
-$$
-\begin{array}{c}
-\text{persistent marked obstruction or bad fibre}\\
-\downarrow\\
-\text{reserve code / harmonic quotient}\\
-\downarrow\\
-\begin{cases}
-\text{cyclic three-cut} &\Rightarrow\text{glue immediately},\\
-\text{cyclic four-cut} &\Rightarrow\text{ten-state shore profiles}.
-\end{cases}
-\end{array}
-$$
+A9 proves:
 
-For a four-cut:
+- every finite cut-even support contains a circuit;
+- strict-cardinality terminating decomposition;
+- exact edgewise `0/1` count within one support;
+- global occurrence preservation after concatenating indexed decompositions.
 
-$$
-\begin{array}{c}
-\text{cap forcing + Kempe closure}\\
-\downarrow\\
-\text{deterministic routing policy}\\
-\downarrow\\
-P_5\mid P_5
-\quad\text{or}\quad
-P_4\mid C_3.
-\end{array}
-$$
+## 7. Final theorem
 
-Controlling chapter:
-[`five-support/cuts-four-poles-and-routing.md`](five-support/cuts-four-poles-and-routing.md).
+A10 assembles:
 
-## 8. Type H holonomy layer
+```text
+finite-active no-singleton-cut multigraph
+→ loopless core
+→ cubic expansion
+→ F₂³ flow
+→ compatible affine family
+→ indexed intrinsic even cover upstairs
+→ indexed intrinsic even cover downstairs
+→ circuit double cover of the core
+→ circuit double cover after loop reinsertion
+```
 
-$$
-\begin{array}{c}
-\text{rainbow routing triangle}\\
-\downarrow\\
-(\pi,z)\in(Z_1(P)\otimes E_5)\rtimes S_5\\
-\downarrow\\
-N_\pi z\\
-\downarrow\\
-\begin{cases}
-N_\pi z\ne0&\text{ambient translation},\\
-N_\pi z=0&\text{root-fibre section problem}.
-\end{cases}\\
-\downarrow\\
-\begin{cases}
-\text{Tait resolution}&\Rightarrow\text{profile escape},\\
-\text{no section}&\Rightarrow\text{local/holonomy certificate}.
-\end{cases}
-\end{array}
-$$
+The output is a finite indexed family, equivalently a finite multiset, of circuits covering every active edge object exactly twice.
 
-The BBD family strengthens this to one canonical $E_5$ flow by root rigidity and $H^1(S_5,E_5)=0$.
+## 8. Assurance dependencies
 
-Controlling chapter:
-[`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md).
+The proof states are authorial:
 
-## 9. Defect/atom layer
+- A0–A9: `COMPLETE-DRAFT`;
+- A10 aggregate: `READY-FOR-CURATOR` at the immutable source checkpoint;
+- integrated candidate: Curator-integrated authorial paper-proof.
 
-$$
-\begin{array}{c}
-\text{canonical or energy-minimal }E_5\text{ flow}\\
-\downarrow\\
-\text{induced defect forest}\\
-\downarrow\\
-\text{zero networks + co-root strips}\\
-\downarrow\\
-L(\mathrm{Petersen})\text{ transducer}\\
-\downarrow\\
-\text{one-edge co-root atoms and DDD triality}\\
-\downarrow\\
-\text{unique bad route / locked }K_{2,4}\text{ orbit}\\
-\downarrow\\
-\begin{cases}
-\text{rank two}&\Rightarrow\text{Tait escape},\\
-\text{full rank, }\Omega\ne0&\Rightarrow\text{common-cut witness},\\
-\text{full rank, }\Omega=0&\Rightarrow\text{affine potential}.
-\end{cases}
-\end{array}
-$$
+Independent audit, Lean verification, manuscript acceptance, peer review, release, arXiv, DOI, and publication are separate axes. See [`PROGRAMME_A_ASSURANCE_BOUNDARY.md`](PROGRAMME_A_ASSURANCE_BOUNDARY.md).
 
-Controlling chapter:
-[`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md).
+## 9. Five-support dependency tree
 
-## 10. Open closure dependencies
+The global five-support theorem remains open. Its current active corpus begins with root-flow equivalences, then passes through surfaces, gauge/reconfiguration, four-pole routing, holonomy/defects, and localization/composition.
 
-The current frontier requires four bridges in this order.
-
-1. **Atom localisation**  
-   Common-cut witness or flat potential $\Rightarrow$ bounded interface, smaller separator, transition split, or DDD class.
-
-2. **Forest pruning**  
-   Local atom/interface results $\Rightarrow$ strict reduction of zero/co-root defect trees.
-
-3. **Four-pole transfer**  
-   Defect transfer data $\Rightarrow$ profile expansion, full cap set, serial replacement, or gluing.
-
-4. **Horizontal/global theorem**  
-   Persistent bad-flow component $\Rightarrow$ good exit or coherent decomposition certificate.
-
-Target-library completeness may be developed in parallel but does not remove the need for source composition.
-
-Controlling frontier chapter:
-[`five-support/frontier-localisation.md`](five-support/frontier-localisation.md).
-
-## 11. Secondary projections
-
-These depend on a five-support solution but do not control its existence.
-
-- orientable good lift $\Rightarrow$ nowhere-zero $\mathbf Z_5$ flow;
-- Fano line-field flattening $\Rightarrow$ Tait colouring in the planar setting;
-- coefficient holonomy describes transport of affine $\mathbf F_5$ structures;
-- tensor/Schur and Fourier/stress complexes provide alternate algebraic projections.
-
-## 12. Assurance axes
-
-No arrow in this map automatically transfers:
-
-- Lean status;
-- independent audit;
-- peer review;
-- novelty or publication status;
-- release or DOI status.
-
-Those axes are recorded separately in [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
+Programme B1 and later proof-development checkpoints are not consumed by Programme A. The active five-support dependency details remain in [`five-support/README.md`](five-support/README.md) and [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md).
