@@ -1,121 +1,96 @@
 # AffineCDC current mathematical state
 
-This file gives the compact current-best picture after substantive reconstruction and current-tree retirement. Proofs live in the active chapters; exact historical packets remain recoverable from Git.
-
 ## 1. Complete result line
 
-At paper level, the project has a complete Cycle Double Cover spine:
+Programme A supplies a complete authorial paper-proof of:
 
-$$
-	ext{finite-active-edge bridgeless multigraph}
-\longrightarrow
-	ext{cycle double cover}.
-$$
+> Every multigraph with finite active edge set and no singleton cut has a finite circuit double cover.
 
-The proof architecture separates:
+Equivalently, no nonloop active edge is a bridge. The theorem allows loops, parallel edge objects, disconnected components, isolated vertices, and an arbitrary ambient vertex carrier.
 
-1. loop deletion and reinsertion;
-2. an outer cubic binary-flow construction;
-3. rank-three affine compatibility;
-4. graph-level even-cover extraction;
-5. cut-even collapse transport;
-6. one final circuit decomposition.
+The exact proof chain is:
 
-The natural theorem allows loops and finite active edge set. The current Lean checkpoint is earlier, loopless, and ambient-finite; the unconditional endpoint is not yet machine-checked.
+1. intrinsic multigraph, cut, circuit, and indexed-occurrence semantics;
+2. exact loop deletion;
+3. finite loopless cubic port-cycle expansion;
+4. nowhere-zero `F₂³` flow;
+5. affine pair complex and rank-three characteristic-torsor compatibility;
+6. graph/dart indexed even-support extraction;
+7. loopless vertex-to-cut parity bridge;
+8. cut-even collapse with exact occurrence transport;
+9. one terminating circuit decomposition downstairs;
+10. exact two-occurrence loop reinsertion.
 
-## 2. Five-support object
+The controlling proof chapters are under [`complete-cdc/`](complete-cdc/).
 
-The open strengthening asks for five indexed even supports. This is equivalent to a root-valued flow
+## 2. Logical source boundary
 
-$$
-E(G)	o R_5\subset E_5,
-$$
+Seymour’s nowhere-zero six-flow theorem is the sole external non-elementary logical input.
 
-or to a `K_5` triangle labelling, matching/four-flow structure, quadratic-cycle solution, or cographic map.
+Programme A proves equal-order finite-abelian-group transport internally by:
 
-Above any cubic Fano flow, a compatible eight-support root lift exists. The complete fixed-lift target is
+- spanning-forest flow-kernel counting;
+- inclusion–exclusion for nowhere-zero flows;
+- transport from `Z/8Z` to `F₂³` by equality of group order.
 
-$$
-oxed{T_g^{(1)}	o\mathscr A_5.}
-$$
+Tutte’s theorem is historical provenance and no longer an unresolved logical source gate.
 
-The quotient `J_g -> A_5` is only the global-index-factorable subroute.
+## 3. Load-bearing clarifications
 
-## 3. Durable closed blocks
+1. Circuit characterization and finite circuit decomposition are distinct interfaces.
+2. Intrinsic half-edge boundary parity is loop-aware; once-per-edge vertex parity is loopless only.
+3. The pair complex captures compatibility but not graph/dart/indexed-support semantics.
+4. Collapse transports cut-even supports and occurrence multiplicity, not circuits.
+5. Equal support values at distinct indices remain separate occurrences.
+6. The natural hypotheses do not include connectedness, simplicity, looplessness, ambient-vertex finiteness, or absence of isolated vertices.
 
-The current backbone includes:
+## 4. Programme A source state
 
-- fixed-plane component parity and its singular, Schur, stress/Fourier, and colour-cut forms;
-- root-lift/surface/dual correspondence;
-- exact factorable half-cube classification in corrected scope;
-- dominating-clique target capacity for ranks two through five;
-- gauge/Petrial equivalence and affine occurrence loci for marked certificates;
-- connected-cycle horizontal motion and the internal/external switch dichotomy;
-- three-edge-cut gluing and the ten-state four-edge interface;
-- cap forcing, Kempe pairing, routing coordinates, and Type T/Type H reduction;
-- affine holonomy, root-fibre section theory, Tait resolution, and elimination of the soluble Type H branch;
-- BBD common origin, canonical defect flow, `K_6` completion, induced defect forests, and Petersen transport;
-- DDD atom triality, unique bad route, rank-two Tait escape;
-- full-rank curvature/common-cut duality and flat-potential equivalence.
+- canonical base: `main@960c92b7ff231c78b387894149779083060a75eb`;
+- immutable source: `proof-development/affine-cdc-rigour-v1@8bee16780b549f51e1f29343671a059961ec4172`;
+- integrated scope: A0–A10 and Programme A obligation/provenance ledger;
+- excluded scope: B1 checkpoint `778b09ac8260192e022f512f24cdef1d04871f37` and every later PDL commit.
 
-## 4. Controlling negative boundaries
+The exact dossiers remain in `proof-development/` as authorial provenance. See [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md).
 
-The following are false or unsupported:
+## 5. Five-support strengthening
 
-- every fixed Fano flow has a five-support lift;
-- `J_g` is the complete fixed-lift object;
-- `K_6`-free implies a half-cube map;
-- a bad fixed-flow fibre makes the graph bad;
-- every binary-cycle switch is one horizontal adjacency;
-- route-lock forces a graph two-cut or automatic flatness;
-- repeated Petersen state implies a replaceable strip;
-- finite census proves universal closure.
+The open strengthening asks for five indexed even supports, equivalently a root-valued flow into the ten roots of `E₅`.
 
-## 5. Sharp frontier
+The complete fixed-lift object is the full cycle-face dual triangulation; the global support-colour quotient gives only the factorable subroute.
 
-For a blocked co-root atom, unique-bad-route reduction gives a locked quotient flow with equal terminal colour and four scalar circuit partitions.
+The global five-support theorem remains open. Programme A makes no claim about Programme B mathematics.
 
-- rank two escapes through a Tait lift;
-- full rank with nonzero curvature gives a support-minimal common-cut witness with odd terminal parity;
-- full rank with zero curvature gives an eight-state affine potential.
+## 6. Five-support durable blocks and frontier
 
-The immediate missing theorem must turn these outputs into a bounded DDD/Petersen factor, smaller separator, transition split, finite four-pole transfer state, or profile/orbit escape.
+The active corpus records mature root-flow, surface, gauge, reconfiguration, four-pole, holonomy, defect, and atom results. Controlling negative boundaries remain:
 
-Wider open bridges are:
+- a fixed Fano flow may fail to admit five supports;
+- the colour quotient is not the complete fixed-lift object;
+- `K₆`-free does not imply a half-cube map;
+- a bad fixed-flow fibre does not imply a bad graph;
+- arbitrary binary-cycle switches are not single horizontal adjacencies;
+- route-lock implies neither a graph two-cut nor automatic flatness;
+- finite census does not prove universal closure.
 
-1. Type T unique-linkage decomposition;
-2. residual Type H translation/zero/oddness reduction;
-3. full-cap-profile or realizability theorem;
-4. horizontal escape-or-decomposition for bad-flow components;
-5. target-certificate completion beyond dominating cliques.
-
-## 6. Source and active-surface state
-
-The synthesis uses:
-
-- canonical ancestor `main@749e0579581fcc838685138b3582f4de306b8e72`;
-- accepted outer-shell source `0927011177cabac20f06a57fa5e57476d6f13dee`;
-- complete public five-support checkpoint `dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`;
-- reconstruction base `7a166d2eb5642ec967f640323488e49f1c2ad5d4`.
-
-The seventy-eight discovery-order source packets are retired from the current tip after exact successor mapping. They remain ancestors and are recoverable by `git show` or `git restore` from `dad218dd...`.
-
-See:
-
-- [`ACTIVE_MATHEMATICAL_SURFACE.md`](ACTIVE_MATHEMATICAL_SURFACE.md);
-- [`CHAPTER_PROVENANCE.md`](CHAPTER_PROVENANCE.md);
-- [`RETIRED_SOURCE_CLASSIFICATION.md`](RETIRED_SOURCE_CLASSIFICATION.md);
-- [`SOURCE_RECOVERY_AUDIT.md`](SOURCE_RECOVERY_AUDIT.md).
+The sharp endpoint remains localization and composition of full-rank route-locked defects. See [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md).
 
 ## 7. Assurance state
 
-The corpus separates theorem-level arguments, exact finite results, counterexamples, corrections, and open programmes. This curation and self-audit do not add independent review, Lean verification, peer review, manuscript approval, release, DOI, arXiv, or publication status.
+Programme A is:
+
+`CURATOR-INTEGRATED / AUTHORIAL PAPER-PROOF COMPLETE`.
+
+It is not yet independently audited and is not end-to-end Lean verified. No manuscript, peer-review, publication, release, arXiv, DOI, or timestamp status is created.
+
+See [`PROGRAMME_A_ASSURANCE_BOUNDARY.md`](PROGRAMME_A_ASSURANCE_BOUNDARY.md) and [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
 
 ## 8. Reading order
 
+- complete theorem: [`complete-cdc/README.md`](complete-cdc/README.md);
 - architecture: [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md);
 - theorem graph: [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md);
+- exact Programme A map: [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md);
 - active surface: [`ACTIVE_MATHEMATICAL_SURFACE.md`](ACTIVE_MATHEMATICAL_SURFACE.md);
 - five-support corpus: [`five-support/README.md`](five-support/README.md);
-- exact frontier: [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md);
-- reliability: [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
+- exact frontier: [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md).
