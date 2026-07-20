@@ -2,188 +2,167 @@
 
 This file separates the complete Cycle Double Cover theorem from the open five-support strengthening and identifies the current controlling proof interfaces.
 
-## 1. Three mathematical scopes
+## 1. Three scopes
 
-1. **Affine compatibility core**  
-   For a finite loopless cubic graph carrying a nowhere-zero binary flow, classify local affine families and prove a globally compatible choice in rank three.
+1. **Affine compatibility core** — rank-three compatible affine families on finite loopless cubic graphs with nowhere-zero binary flow.
+2. **Complete CDC theorem** — the Programme A finite-active multigraph theorem, including loops, collapse, decomposition, and exact occurrence multiplicity.
+3. **Five-support strengthening** — existence of five indexed even supports, equivalently a root-valued $E_5$ flow.
 
-2. **Complete CDC theorem**  
-   Starting from an arbitrary finite-active multigraph with no singleton cut, supply the cubic binary-flow object, extract a graph-level even cover, transport it through collapse, decompose once, and reinsert loops.
+Scope 3 remains open and is not used in Scope 2.
 
-3. **Five-support strengthening**  
-   Ask whether a compatible cover can be chosen with only five indexed supports, equivalently as a root-valued `E₅` flow.
+## 2. Programme A architecture
 
-Scope 3 is open and is not used in Scope 2.
-
-## 2. Natural complete theorem
-
-The controlling Programme A theorem is:
+The controlling theorem is:
 
 > Every multigraph with finite active edge set and no singleton cut has a finite circuit double cover.
 
-A circuit is a nonempty inclusion-minimal finite cut-even support. Circuits are exactly singleton loops, parallel-edge digons, and ordinary simple cycles.
-
-For nonloop edges, singleton-cut status is equivalent to bridge status. The cut formulation is controlling because loops cross no cuts and cut parity is the invariant transported through collapse.
-
-## 3. Foundations and occurrence semantics
-
-The natural local parity of a finite support counts endpoint occurrences. Loops contribute two. A support is cut-even exactly when its intrinsic half-edge boundary is empty.
-
-The cover witness is a finite indexed family or finite multiset of occurrences. Equal support values at distinct indices remain distinct occurrences; empty supports are allowed. Every active edge object must belong to exactly two occurrences.
-
-Circuit characterization and circuit decomposition are separate interfaces:
-
-- foundations characterize minimal cut-even supports;
-- the terminal decomposition theorem proves that every finite cut-even support is a disjoint union of circuits.
-
-## 4. Loop normalization
-
-Delete all loops to form the loopless core `G₀`.
-
-- every cut is unchanged;
-- no-singleton-cut status is equivalent for `G` and `G₀`;
-- every nonloop circuit has identical status in both graphs;
-- every circuit containing a loop is exactly that singleton loop.
-
-A circuit double cover of `G₀` extends uniquely up to reindexing by adding two singleton occurrences for every deleted loop. Conversely, every circuit double cover of `G` contains exactly those forced loop occurrences.
-
-## 5. Port-cycle cubic expansion
-
-For every active vertex of the loopless core, choose a cyclic order on its incidence set. Replace the vertex by a cycle of incidence ports and lift each original edge between its two corresponding ports.
-
-The result is a finite loopless cubic multigraph `H` with:
-
-- collapse map `π:V(H) → V(G₀)`;
-- injective original-edge lift `λ:E(G₀) → E(H)`;
-- internal fibre edges and external lifted edges as a disjoint partition;
-- degree-two fibres represented by two distinct parallel internal edges;
-- exact size formulae `|V(H)|=2|E(G₀)|` and `|E(H)|=3|E(G₀)|`;
-- exact edge-bearing component correspondence;
-- preservation of the no-singleton-cut condition;
-- cut pullback `δ_H(π⁻¹(S)) = λ(δ_{G₀}(S))`.
-
-## 6. Binary-flow boundary
-
-Seymour’s nowhere-zero six-flow theorem is the sole external non-elementary logical input.
-
-Programme A proves the remaining transport internally:
-
-1. a six-flow is literally an eight-flow by range inclusion;
-2. modular reduction gives a nowhere-zero `Z/8Z` flow;
-3. a spanning-forest argument counts all flows over any finite abelian group;
-4. inclusion–exclusion counts nowhere-zero flows;
-5. the count depends only on the group order;
-6. order eight transports existence from `Z/8Z` to `F₂³`.
-
-Tutte’s equal-order group-flow theorem is historical provenance, not a logical black box.
-
-On the loopless graph, characteristic two removes orientation and gives the once-per-edge incidence-sum representation.
-
-## 7. Affine compatibility centre
-
-For every edge `e`, put
-
-`Q_e = Γ / <f(e)>`.
-
-The incidence space `E_f` is the direct sum of one copy of `Q_e` for every dart.
-
-- `L_vert` records homogeneous vertex translations;
-- `κ + L_vert` is the product of local affine-family torsors;
-- `L_edge` is the direct sum of endpoint diagonals.
-
-The pair complex is
-
-`P_f : L_vert ⊕ L_edge → E_f`.
-
-Compatibility is equivalent to each of:
-
-- nonempty affine intersection `(κ+L_vert) ∩ L_edge`;
-- vanishing of `[κ]` in `E_f/(L_vert+L_edge)`;
-- solvability of the quotient equation `δ_f m = c_f`;
-- annihilation of `κ` by every equilibrium stress.
-
-The pair complex is the complete compatibility object. It does not retain named graph edges, darts, local-line semantics, or indexed-support extraction. The source graph and flow remain attached.
-
-## 8. Rank-three Fano theorem
-
-For `Γ=F₂³`, every quotient `Q_e` is a canonical anisotropic quadratic plane.
-
-- each local vertex translation space is Lagrangian;
-- its affine family is the characteristic torsor;
-- the global edge diagonal is a totally singular Lagrangian.
-
-The characteristic-torsor intersection theorem states that `Char_q(L) ∩ M` is nonempty exactly when `q` vanishes on `L∩M`. Total singularity of the edge diagonal makes the condition automatic.
-
-Therefore every cubic nowhere-zero `F₂³` flow has a globally compatible affine family. The solution set is a torsor under `L_vert ∩ L_edge`.
-
-## 9. Graph-level even-support extraction
-
-A compatible family assigns one common two-point affine line to every graph edge. For each point `s∈F₂³`, define the support of edges whose assigned line contains `s`.
-
-- local family evenness gives zero or two selected edges at every cubic vertex;
-- every edge line contains exactly two points, so every edge belongs to exactly two indexed supports;
-- empty and repeated indexed supports remain distinct occurrences;
-- graph and dart data supply the endpoint-independent descent from incidence lines to edge objects.
-
-On a loopless graph, once-per-edge vertex parity equals intrinsic half-edge boundary parity and hence cut parity. The extracted family is therefore an intrinsic even double cover of `H`.
-
-## 10. Collapse and decomposition
-
-Project a support `F'⊆E(H)` to
-
-`{e∈E(G₀):λ(e)∈F'}`.
-
-The pulled-back-cut identity preserves cut parity memberwise. For every original edge, membership in a projected support is equivalent to membership of its lifted edge upstairs, so indexed occurrence multiplicity remains exactly two.
-
-Circuit structure is not projected: an upstairs circuit may disappear, cease to be minimal, or split. The invariant transported through collapse is cut-even support plus occurrence multiplicity.
-
-After collapse, decompose every finite cut-even support by induction on its cardinality. Choose a circuit sub-support, remove it by symmetric difference, and iterate. Concatenating memberwise decompositions preserves every edge multiplicity exactly.
-
-Finally reinsert loops with two forced singleton occurrences each.
-
-## 11. Complete dependency chain
+The preferred proof chain is:
 
 ```text
-foundational finite-active multigraph semantics
+foundational multigraph and occurrence semantics
 → loop deletion
 → port-cycle cubic expansion
 → Seymour six-flow
 → internal order-eight group-flow transport
 → affine pair complex
-→ rank-three characteristic-torsor intersection
-→ graph/dart indexed support extraction
+→ rank-three compatibility
+→ graph/dart indexed even-support extraction
 → loopless parity adapter
 → cut-even collapse
-→ terminating circuit decomposition
-→ loop reinsertion
-→ finite circuit double cover
+→ finite circuit decomposition
+→ loop reinsertion.
 ```
 
-The preferred detailed reading is [`complete-cdc/README.md`](complete-cdc/README.md).
+Programme A remains the fixed Audit A candidate at
 
-## 12. Five-support architecture
+`curation/affine-cdc-programme-a-v1@68715fb29bb4b6555e2bc3e089603c5390d01566`.
 
-The five-support programme begins with a root-valued flow into the ten roots of `E₅`. The complete fixed-lift object is the full cycle-face dual triangulation, not only the global support-colour quotient.
+This B1 descendant does not modify that branch or its audit target.
 
-Its active architecture remains:
+## 3. Programme B1 root object
 
-1. root-flow lifting;
-2. surfaces and half-cube target;
-3. vertical gauge and horizontal reconfiguration;
-4. cuts, four-poles, and routing;
-5. holonomy, defects, and atoms;
-6. localization/composition frontier;
-7. independent proof families;
-8. finite laboratories.
+For a finite loopless cubic multigraph $G$, the following graph-level existence data are equivalent:
 
-Programme A consumes no Programme B checkpoint.
+- five indexed even supports with exact double coverage;
+- an $R_5$-valued $E_5$ flow;
+- a $K_5$-triangle edge labelling;
+- exact matching/four-flow data $(B,D,M,w)$;
+- the equivalent component $T$-join formulation;
+- existence of a Fano flow and plane with empty component-obstruction profile;
+- existence of a cycle-face embedding whose full dual maps to the even half-cube.
 
-## 13. Provenance and assurance
+All auxiliary data are existential at graph level.
 
-- exact Programme A map: [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md);
-- assurance boundary: [`PROGRAMME_A_ASSURANCE_BOUNDARY.md`](PROGRAMME_A_ASSURANCE_BOUNDARY.md);
-- exact intake manifest: [`PROGRAMME_A_INTEGRATION_MANIFEST.md`](PROGRAMME_A_INTEGRATION_MANIFEST.md);
-- authorial dossiers: [`proof-development/`](proof-development/);
-- five-support corpus: [`five-support/README.md`](five-support/README.md).
+The preferred B1 chapter is [`five-support/b1-object-quantifier-and-scope.md`](five-support/b1-object-quantifier-and-scope.md).
 
-Programme A is Curator-integrated authorial paper-proof mathematics. It is not independently audited, end-to-end Lean verified, manuscript-approved, peer reviewed, published, released, or DOI-dispositioned.
+## 4. Matching/four-flow boundary
+
+A fixed support-coordinate inverse image is an even support. A fixed root-label inverse image is a matching.
+
+The exact converse requires:
+
+$$
+B,D\text{ even},\qquad M=B\cap D\text{ a matching},
+$$
+
+and a nowhere-zero $\mathbf F_2^2$ flow on $G-M$.
+
+Equivalently, replace $D$ by even $M$-endpoint parity in every component of $G-B$. Bare matching plus four-flow is insufficient.
+
+## 5. Fixed Fano flow and plane
+
+Fix a nowhere-zero Fano flow $f$ and a plane $W$. Let $G_W$ be the subgraph of $W$-valued edges.
+
+For every component $K$ of $G_W$, the four outside-colour cut parities are equal. Their common bit is the component obstruction $\chi_W(K)$.
+
+For fixed $(f,W)$, the following are equivalent:
+
+- a global five-coordinate slice;
+- the distinguished even support;
+- the matching endpoint $T$-join condition;
+- vanishing of one or all outside-colour cut parities;
+- Eulerian outside-colour classes after contraction;
+- vanishing of the local affine component obstruction.
+
+For fixed $f$, factorable success requires some plane with empty profile. A prescribed flow may fail; this does not imply that the graph fails.
+
+## 6. Fixed lift and full dual
+
+A compatible root lift $g$ is equivalent to a properly face-coloured cycle-face surface $S_g$ and its properly vertex-coloured full dual triangular cellulation $T_g$.
+
+The exact fixed-lift statement is:
+
+$$
+\text{componentwise compression of the same embedding}
+\Longleftrightarrow
+T_g^{(1)}\to\mathscr A_5.
+$$
+
+This does not classify arbitrary five-support covers on $G$ relative to the prescribed surface.
+
+## 7. Prescribed-surface holonomy
+
+An externally supplied root flow integrates to a potential on a fixed dual graph if and only if its sum vanishes on every dual cycle.
+
+Local conservation checks triangular dual faces only. Residual dual holonomy may remain.
+
+## 8. Old-colour factorability
+
+The old-colour map gives
+
+$$
+T_g^{(1)}\to J_g.
+$$
+
+A half-cube map factors through $J_g$ exactly when it is constant on all face components carrying the same old support index.
+
+Thus $J_g\to\mathscr A_5$ classifies only global-index-factorable compression. It is not the complete fixed-lift object.
+
+## 9. Even-halfcube convention
+
+If $\mathscr A_5$ denotes the even component, singleton words are not vertices. Choose one odd word $t$ and use
+
+$$
+t+\varepsilon_i\in E_5.
+$$
+
+Alternatively, name the odd component explicitly.
+
+## 10. Safe fixed-data hierarchy
+
+For corresponding fixed flow and lift:
+
+```text
+global five-point slice
+→ J_g → 𝒜₅
+→ T_g^(1) → 𝒜₅
+→ five-support cover.
+```
+
+The converses need not hold at the same fixed data.
+
+## 11. Boundary with B2 and later programmes
+
+B1 closes the root object and quantifier layer. It does not consume the B2 singular/quadratic/Schur/cographic/orthogonal/Fourier dossiers or B3 target-correction dossiers.
+
+Later formulations must be classified as full witness equivalences, fixed-data equivalences, quotients with lost lift data, dual obstructions, or evidence before entering the graph-level equivalence box.
+
+The wider five-support architecture remains:
+
+1. B1 root object and quantifiers;
+2. B2 equivalent-formulation classification;
+3. B3 surface/target construction and correction layer;
+4. gauge and horizontal reconfiguration;
+5. cuts, four-poles, and routing;
+6. holonomy, defects, and atoms;
+7. localization/composition frontier;
+8. finite certificates.
+
+## 12. Provenance and assurance
+
+- Programme A map: [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md);
+- Programme B1 map: [`PROGRAMME_B1_INTEGRATION_MAP.md`](PROGRAMME_B1_INTEGRATION_MAP.md);
+- B1 quantifier control: [`PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md`](PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md);
+- exact authorial dossiers: [`proof-development/`](proof-development/).
+
+Programme A and B1 are integrated authorial mathematics. This does not create independent-review, Lean, manuscript, peer-review, publication, release, arXiv, DOI, or timestamp status.
