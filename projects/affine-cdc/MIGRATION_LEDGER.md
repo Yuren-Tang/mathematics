@@ -1,177 +1,155 @@
 # AffineCDC source-to-corpus migration ledger
 
-This ledger records final migration of the complete public five-support checkpoint
+This ledger records migration of the complete public five-support checkpoint
 
 `research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`
 
-into the natural current-best corpus.
+into the natural current-best corpus, together with later B1 and B2 proof-development corrections.
 
-## 1. Final migration state
+## 1. Migration state
 
-The checkpoint contains seventy-eight public files under `projects/affine-cdc/research/`. Every file has:
+The public checkpoint contains seventy-eight files under `projects/affine-cdc/research/`. Every file has:
 
 - an exact historical path and ancestor commit;
-- a named active successor or current mathematical role;
-- a retirement class in [`RETIRED_SOURCE_CLASSIFICATION.md`](RETIRED_SOURCE_CLASSIFICATION.md);
-- a recovery command in [`SOURCE_RECOVERY_AUDIT.md`](SOURCE_RECOVERY_AUDIT.md).
+- a named active successor, finite role, negative boundary, or supersession class;
+- a recovery command;
+- an assurance classification.
 
-The source files are retired from the current branch tip. Migration is complete because current mathematical value has been reconstructed in the active chapters, while Git history remains the source and priority archive.
+The source packets are retired from the active tip. Git history remains the source and priority archive.
 
-The preliminary ledger omitted `FIVE_CDC_SUPPORT_CYCLE_PIVOT_AND_FLOW_RECONFIGURATION_V1.md`. It is now included explicitly in the gauge/horizontal layer. Final accounting is exactly seventy-eight files.
+## 2. B1 and B2 proof-development overlays
 
-## 2. Root flow and lifting
+Exact later proof checkpoints:
 
-Primary successor: [`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md).
+- B1: `778b09ac8260192e022f512f24cdef1d04871f37`;
+- B2: `d62974704d6dac77aaa00275a595fedf7f70cfd2`.
+
+B1 repairs object and quantifier scope. B2 installs the formulation/witness hierarchy and a mathematical correction to the universal orthogonal packet.
+
+## 3. Root flow and complete witnesses
+
+Primary successors:
+
+- [`five-support/b1-object-quantifier-and-scope.md`](five-support/b1-object-quantifier-and-scope.md);
+- [`five-support/b2-formulation-and-witness-hierarchy.md`](five-support/b2-formulation-and-witness-hierarchy.md);
+- [`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md).
 
 Integrated mathematics:
 
-- root-valued `E_5` flows and local `K_5` triangles;
-- universal plus-type compatible root lifts;
-- minus-type rank-four target geometry;
-- matching/four-flow, cographic, quadratic-cycle, Schur, and singular-quotient formulations;
-- preferred colour-cut component-parity proof;
+- root-valued $E_5$ flows and local $K_5$ triangles;
+- exact matching/four-flow and component $T$-join formulations;
+- anisotropic $O^-(4,2)$ mother flow;
+- complete quadratic cycle equation;
+- exactly defined cographic cycle-continuous edge map;
+- fixed-plane colour-cut criterion;
+- fixed singular quotient and Schur solvability;
+- stress/Fourier duality with exact witness scope;
 - fixed-flow cube negative certificate;
 - unused-matching and affine-plane sufficient templates.
 
-Independent proof roles are retained in [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md).
+## 4. Orthogonal correction and migration
 
-## 3. Surface and target geometry
+The previously migrated phrase “universal plus-type compatible root lifts” was overbroad.
+
+The valid active statements are:
+
+- five supports use $O^-(4,2)$;
+- eight supports use the exceptional complete-root model $O^+(6,2)$;
+- every additive complete-graph root model with triangle addition has dimension at least $q-2$;
+- the deleted permutation module of dimension $q-2$ is the correct universal model.
+
+`FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` is mapped to:
+
+`RETIRED / SUPERSEDED / FALSE THEOREM / HISTORICAL PROVENANCE`.
+
+It is not an absorbed controlling theorem. Its failed universal $2r$ claim and type-invalid formula are replaced by Programme B2.3.
+
+## 5. Surface and target geometry
 
 Primary successor: [`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md).
 
 Integrated mathematics:
 
 - cycle-face surface and full dual triangulation;
-- complete componentwise target `T_g -> A_5`;
-- factorable quotient `J_g -> A_5` in narrowed scope;
-- coloured-surface erratum;
-- exact clique-link and dominating-clique capacity;
-- source-dependent compression and no-universal-compression boundary;
-- `K_6`-free warning and compatible flower-snark obstruction;
-- factorable defect-core and ideal-pivot theory with explicit scope.
+- same-embedding componentwise target $T_g^{(1)}\to\mathscr A_5$;
+- prescribed-dual holonomy criterion;
+- factorable quotient $J_g\to\mathscr A_5$ in narrowed scope;
+- even-halfcube parity correction;
+- target links, marked cores, and finite target certificates in their prior scopes.
 
-The scope correction, erratum, and negative boundaries are controlling and are also recorded in [`SUPERSESSION_MAP.md`](SUPERSESSION_MAP.md).
-
-## 4. Gauge, Petrial, and horizontal reconfiguration
+## 6. Gauge and horizontal reconfiguration
 
 Primary successor: [`five-support/gauge-and-reconfiguration.md`](five-support/gauge-and-reconfiguration.md).
 
-Integrated mathematics:
+Integrated mathematics includes gauge/Petrial motion, affine occurrence loci, support-cycle pivots, connected-cycle flow reconfiguration, switch image, internal correction/external reslicing, and fixed-lift/fixed-flow/graph-level separation.
 
-- gauge as piecewise root translation;
-- gauge code as admissible partial Petrials;
-- face-transition systems and affine occurrence loci;
-- frozen-cycle and mixed-core certificates;
-- essential renewal quotients;
-- support-cycle pivots and connected-cycle flow reconfiguration;
-- harmonic quotient surgery;
-- admissible switch image;
-- internal correction versus external reslicing;
-- fixed-lift, fixed-flow, and graph-level quantifier separation.
+The source `FIVE_CDC_SUPPORT_CYCLE_PIVOT_AND_FLOW_RECONFIGURATION_V1.md`, omitted from the preliminary ledger, remains explicitly restored here.
 
-The restored source `FIVE_CDC_SUPPORT_CYCLE_PIVOT_AND_FLOW_RECONFIGURATION_V1.md` belongs here.
-
-## 5. Cuts, four-poles, and routing
+## 7. Cuts, four-poles, and routing
 
 Primary successor: [`five-support/cuts-four-poles-and-routing.md`](five-support/cuts-four-poles-and-routing.md).
 
-Integrated mathematics:
+Integrated mathematics includes three-cut gluing, ten four-edge states, cap forcing, Kempe closure, path-pairing alignment, routing weights, uniform-routing elimination, and Type T/Type H reduction.
 
-- three-edge-cut gluing and `K_4` reserve-line reduction;
-- ten labelled four-edge states and exact gluing;
-- cap forcing and Kempe closure;
-- path-pairing alignment as the genuine transition condition;
-- exact small-four-pole census;
-- routing weights, uniform-routing elimination, and Type T/Type H reduction.
+Finite profile counts remain finite statements.
 
-Finite profile counts remain finite statements; the full-cap-profile theorem remains open.
-
-## 6. Holonomy, defects, and atoms
+## 8. Holonomy, defects, and atoms
 
 Primary successor: [`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md).
 
-Integrated mathematics:
+Integrated mathematics includes rainbow coordinates, interior holonomy, root-fibre lifting, Tait resolution, BBD common origin and canonical defect flow, defect forests, Petersen transport, DDD triality, rank-two escape, and full-rank curvature/flat-potential alternatives.
 
-- rainbow choice coordinates and boundary monodromy;
-- interior affine holonomy and cyclic norm;
-- genuine path-family correction;
-- root-fibre section problem and Tait resolution;
-- elimination of the soluble Type H branch;
-- BBD root rigidity, `S_5` cohomology, and unique common origin;
-- canonical `E_5` defect flow and `K_6` completion;
-- variational defect forest and Petersen transducer;
-- DDD atom triality and one-bit exception;
-- unique bad route, rank-two Tait escape;
-- full-rank curvature/common-cut duality and flat potential.
-
-Earlier per-loop alternatives are subordinate diagnostics of the later BBD global synthesis.
-
-## 7. Independent proof families
+## 9. Independent proof families
 
 Primary successor: [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md).
 
-Preserved independently:
+Preserved roles include:
 
-- singular-fibre/local-system proof;
+- singular/local-system proof;
 - quadratic and Schur proof;
-- stress/Fourier and Möbius-arrangement proof;
 - cographic formulation;
-- orthogonal-group formulation;
-- surface/half-cube formulation;
-- finite-interface proof family;
-- holonomy/cohomology proof family;
-- orientation transgression and five-flow projection.
+- corrected orthogonal formulation;
+- stress/Fourier and Möbius-arrangement proof;
+- surface/half-cube proof;
+- finite-interface proof;
+- holonomy/cohomology proof;
+- orientation and five-flow projections.
 
-A preferred exposition does not erase these mechanisms; it records their exact role without retaining parallel discovery-order packets.
+A preferred exposition does not erase these mechanisms. The false universal theorem is not preserved as a proof family.
 
-## 8. Finite laboratories and certificates
+## 10. Finite laboratories and certificates
 
 Primary successor: [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
 
-Preserved current value includes:
+Current value includes fixed-flow cube certificates, thirty-vertex renewal counts, Petersen classification, flower mixed-core obstruction, small-four-pole census, routing/monodromy/atom/root-fibre tables, and explicit negative witnesses.
 
-- fixed-flow cube certificate;
-- thirty-vertex renewal and switch censuses;
-- complete Petersen classification;
-- flower `J_5` mixed-core obstruction and neighbourhood;
-- small-four-pole census;
-- routing, monodromy, atom, root-fibre, and cohomology tables;
-- exact no-two-cut and nonflat witnesses;
-- recovery verification and `CODE-PARTIAL` boundary.
+Finite Fourier enumerators and cancellation tables remain finite evidence unless a uniform estimate is separately proved.
 
-Historical computation narration and full raw tables remain recoverable from the exact source commit.
-
-## 9. Frontier and open boundaries
+## 11. Frontier and open boundaries
 
 Primary successor: [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md).
 
-Consolidated live obligations:
+The open frontier includes localization, flat-potential interfaces, defect-forest pruning, Type T decomposition, residual Type H reduction, four-pole realizability, horizontal escape, and target-library completion.
 
-- common-cut localization;
-- flat-potential finite interface;
-- defect-forest pruning;
-- Type T decomposition;
-- residual Type H reduction;
-- full-cap-profile or realizability theorem;
-- horizontal bad-component escape/decomposition;
-- target obstruction completion beyond dominating cliques.
+Programme B2 does not solve the global five-support theorem.
 
-`FIVE_CDC_MECHANISM_CLOSURE_MAP_V1.md` is retired as a discovery-order synthesis because these obligations now live in the dependency architecture and frontier chapter.
+## 12. Classification and accounting
 
-## 10. Chapter provenance and exact source recovery
-
-The packet-by-chapter map is [`CHAPTER_PROVENANCE.md`](CHAPTER_PROVENANCE.md).
-
-The exhaustive disjoint retirement classification is [`RETIRED_SOURCE_CLASSIFICATION.md`](RETIRED_SOURCE_CLASSIFICATION.md):
+The exhaustive retirement classes are:
 
 $$
-39	ext{ theorem/mechanism}
-+10	ext{ alternate proof}
-+18	ext{ finite}
-+10	ext{ correction}
-+1	ext{ programme synthesis}
+38\text{ theorem/mechanism}
++10\text{ alternate proof}
++18\text{ finite}
++10\text{ correction}
++1\text{ programme synthesis}
++1\text{ superseded false theorem}
 =78.
 $$
+
+See [`RETIRED_SOURCE_CLASSIFICATION.md`](RETIRED_SOURCE_CLASSIFICATION.md).
+
+## 13. Recovery
 
 For any retired `FILE`:
 
@@ -179,27 +157,15 @@ For any retired `FILE`:
 git show dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c:projects/affine-cdc/research/FILE
 ```
 
-## 11. Assurance boundary
+Historical recovery does not restore active theorem authority to superseded claims.
 
-Migration and retirement do not upgrade:
+## 14. Assurance boundary
 
-- mathematical completeness beyond the written theorem or finite scope;
+Migration, correction, and retirement do not upgrade:
+
 - independent-review status;
 - Lean or other formal status;
-- peer-review or publication status;
-- release, arXiv, DOI, or novelty status.
+- manuscript or peer-review status;
+- publication, release, arXiv, DOI, novelty, or timestamp status.
 
 See [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
-
-## 12. Completion test
-
-Final migration is complete when:
-
-1. all seventy-eight packets are recoverable at the exact checkpoint;
-2. every packet is classified and mapped;
-3. the active chapters preserve present mathematical value;
-4. corrections and negative boundaries remain controlling;
-5. the current tip contains no duplicate discovery-order packet surface;
-6. no public history, source branch, default branch, release, or DOI record is rewritten.
-
-The final no-loss result is recorded in [`SOURCE_RECOVERY_AUDIT.md`](SOURCE_RECOVERY_AUDIT.md) and [`RECONSTRUCTION_MANIFEST.md`](RECONSTRUCTION_MANIFEST.md).
