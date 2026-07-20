@@ -2,190 +2,174 @@
 
 ## 1. Purpose
 
-The five-support corpus contains many useful formulations. Programme B1 separates three classes:
+Programme B2 classifies five-support formulations by witness content.
 
-1. graph-level witness equivalences proved in B1;
-2. fixed-flow or fixed-lift equivalences whose quantifiers must be retained;
-3. later B2+ formulations whose exact arrow status is not yet consumed by this intake.
+1. **Full graph-level witnesses** reconstruct the five indexed supports.
+2. **Fixed-data solvability criteria** are equivalent only while the quotient flow, kernel or plane, quotient graph, and lift torsor are retained.
+3. **Dual and counting layers** decide prescribed or nonlinear fixed-orbit problems but are not independent source witnesses.
+4. **Historical or finite evidence** remains recoverable without being promoted beyond its proved scope.
 
-Different proof families remain recoverable because they expose different operations, but shared vocabulary does not by itself prove equivalence.
+The controlling detailed chapter is [`b2-formulation-and-witness-hierarchy.md`](b2-formulation-and-witness-hierarchy.md).
 
-## 2. B1 graph-level equivalence package
+## 2. Complete graph-level witness box
 
-For a finite loopless cubic multigraph $G$, the following are equivalent.
+For a finite loopless cubic multigraph $G$, the following are equivalent:
 
-1. An indexed five-support even double cover.
-2. A root-valued flow
+1. five indexed even supports;
+2. an $R_5$-valued flow;
+3. a $K_5$-triangle edge labelling;
+4. an anisotropic flow in the minus-type four-space $(H_5,q_5)$;
+5. cycle words $b,d,x,y\in\mathcal C(G)$ satisfying
    $$
-   E(G)\to R_5\subset E_5.
+   b*d=(\mathbf1+x)*(\mathbf1+y);
    $$
-3. A $K_5$-triangle edge labelling.
-4. Exact matching/four-flow data: even supports $B,D$, matching $M=B\cap D$, and a nowhere-zero $\mathbf F_2^2$ flow on $G-M$.
-5. Equivalently, an even support $B$, matching $M\subseteq B$, nowhere-zero four-flow on $G-M$, and even $M$-endpoint parity in every component of $G-B$.
-6. Existence of a Fano flow $f$ and plane $W$ with empty component-obstruction profile.
-7. Existence of a cycle-face embedding $S$ whose full dual graph admits a homomorphism
+6. a cycle-continuous edge map
    $$
-   T_S^{(1)}\to\mathscr A_5.
+   E(G)\to E(K_5)
    $$
+   whose inverse image sends every target cut to a source binary cycle.
 
-All auxiliary data are existential at graph level. These arrows do not preserve a previously fixed flow, plane, root lift, or surface.
-
-## 3. Matching/four-flow correction
-
-A fixed support-coordinate inverse image is an even support. A fixed root-label inverse image is a matching.
-
-Bare matching plus four-flow is not a complete converse. The missing datum is either:
-
-- the second even support $D$ with $M=B\cap D$; or
-- the explicit component endpoint-parity/$T$-join condition.
-
-Any concise formulation must include one of these equivalent data packages.
-
-## 4. Fixed-flow package
-
-Fix a Fano flow $f$ and plane $W$. Let $G_W$ be the subgraph of $W$-valued edges. For every component $K$ of $G_W$, the four outside-colour cut parities are equal.
-
-The following are equivalent for this fixed $(f,W)$:
-
-1. a global five-coordinate slice;
-2. a distinguished even support $D$;
-3. the matching endpoint $T$-join condition;
-4. vanishing of one outside-colour cut parity;
-5. vanishing of all outside-colour cut parities;
-6. Eulerian outside-colour classes after contraction;
-7. vanishing of the local affine component obstruction.
-
-For a prescribed $f$, factorable success means that some plane profile is empty. Failure for this fixed flow is not failure of the graph.
-
-## 5. Fixed-lift surface package
-
-Fix a compatible root lift $g$. It determines a properly face-coloured cycle-face surface $S_g$, its full dual triangular cellulation $T_g$, and the old-colour quotient $J_g$.
-
-The exact same-embedding equivalence is:
+The coordinate isomorphism is
 
 $$
-\text{componentwise compression of the face components of }g
+\Phi(b,d,x,y)
+=(b,d,b+d+y,b+d+x,b+d+x+y).
+$$
+
+The cographic phrase means only the inverse-cycle condition for a ground-set map
+
+$$
+M(G)\to M^*(K_5).
+$$
+
+No strong-map, quotient, embedding, injectivity, or surjectivity property is implied.
+
+The B1 matching/four-flow and existential Fano-plane descriptions remain additional graph-level equivalences with their exact data and quantifiers.
+
+## 3. Fixed singular and Schur package
+
+Fix a four-dimensional minus-type space $(H,q)$, a nonzero singular kernel vector $k$, and a nowhere-zero quotient Fano flow in
+
+$$
+\Gamma=H/\langle k\rangle.
+$$
+
+The following are equivalent for this fixed data:
+
+1. an anisotropic $H$-flow lift;
+2. vanishing kernel-line defect on each plane-subgraph component;
+3. vanishing B1 fixed-plane colour-cut obstruction;
+4. existence of the eliminated cycle word $d$;
+5. the Schur condition
+   $$
+   x*y\in\mathcal C(Q_b).
+   $$
+
+When solutions exist they form the same lift torsor in different coordinates.
+
+A Schur boundary word, quotient residue, or component bit alone is not a five-support witness. The fixed quotient data and a primal solution must remain recoverable.
+
+## 4. Direct colour-cut proof family
+
+For fixed $(f,W)$, contract each $W$-valued component. The four outside colours form one affine $W$-plane, and their only nonzero binary relation is their total sum. Therefore the four colour parities at every quotient vertex are either $0000$ or $1111$.
+
+This gives the shortest proof of the fixed-plane criterion and identifies the same obstruction seen by singular lifting and the Schur boundary.
+
+## 5. Quadratic and Schur proof family
+
+The quadratic equation is a complete graph-level witness because all four cycle coordinates are retained and the inverse map $\Phi$ reconstructs the five supports.
+
+The Schur quotient eliminates $d$. It is a complete fixed-data solvability criterion, but not a full witness until the incidence equation is solved for $d$.
+
+This distinction is load-bearing in switch and quotient arguments.
+
+## 6. Cographic proof family
+
+The cographic edge map retains the complete edgewise root label. Its star preimages are the five supports, and its inverse-cut condition is exactly coordinatewise flow conservation.
+
+Cycle-continuous edge maps compose. This supports intermediate-target strategies, but every intermediate theorem still requires its own hypotheses and source audit.
+
+## 7. Stress/Fredholm proof family
+
+For a fixed evaluation map, relative stresses form the orthogonal complement of the attainable code.
+
+A prescribed target is attainable exactly when every relative stress annihilates its displacement from the base lift. When attainable, a primal preimage reconstructs the translated lift.
+
+The stress space is therefore an exact dual criterion, not a source witness by itself.
+
+## 8. Fourier proof family
+
+For an evaluation code $\mathcal C_F$ and allowed set $A$,
+
+$$
+|\mathcal C_F\cap A|
+=
+\frac{|\mathcal C_F|}{|Q_F|}
+\sum_{y\in\mathcal C_F^\perp}
+\widehat{\mathbf1_A}(y).
+$$
+
+The nonzero frequencies are relative stresses. The zero frequency is an exact main term, not an independence assumption.
+
+- positive count proves existence in the fixed orbit;
+- an explicit witness still requires a codeword and primal preimage;
+- zero count gives aggregate spectral cancellation;
+- one separating stress need not exist for a nonlinear product set.
+
+Finite weight enumerators and phase tables remain finite evidence unless a uniform theorem is separately proved.
+
+## 9. Correct orthogonal proof family
+
+Five supports use the anisotropic orbit of $O^-(4,2)$. Eight supports use the exceptional complete-root realization in $O^+(6,2)$.
+
+The retired universal packet claiming a canonical $2r$-dimensional model for all pairs of $2^r$ support points is false for $r\ge4$. Triangle addition forces a Gram matrix of rank $q-2$, hence
+
+$$
+\dim V\ge q-2.
+$$
+
+The correct universal additive module is
+
+$$
+\overline E_I
+=
+\left\{z\in\mathbf F_2^I:\sum_i z_i=0\right\}/\langle\mathbf1_I\rangle,
+$$
+
+with roots $[\varepsilon_a+\varepsilon_b]$ and dimension $q-2$.
+
+The equality $8-2=6=2\cdot3$ makes rank three exceptional. There is no universal $O^+(2r,2)$ tower.
+
+## 10. Surface and half-cube proof family
+
+The B1 full-dual criterion remains:
+
+$$
+\text{componentwise compression of the fixed embedding}
 \Longleftrightarrow
 T_g^{(1)}\to\mathscr A_5.
 $$
 
-This does not say that every external five-support cover integrates on the prescribed surface. An externally supplied root flow is a dual potential exactly when all dual cycle holonomies vanish.
+The old-colour quotient $J_g$ classifies only fibre-constant factorable maps. An external root flow integrates on a prescribed dual only when all dual cycle holonomies vanish.
 
-The quotient criterion
+These topological statements are compatible with B2 but are not consequences of quotient or stress terminology alone.
 
-$$
-J_g\to\mathscr A_5
-$$
+## 11. Sufficient templates and later families
 
-classifies only maps constant on old-colour fibres. It is a strict factorable subroute.
+The following remain sufficient subroutes rather than necessary formulations:
 
-## 6. Half-cube parity convention
-
-If $\mathscr A_5$ denotes the even component, singleton words $\varepsilon_i$ are not vertices. Embed the five colours by choosing an odd word $t$ and using
-
-$$
-t+\varepsilon_i\in E_5.
-$$
-
-Alternatively, name the odd component explicitly.
-
-## 7. Safe fixed-data implication hierarchy
-
-For corresponding fixed flow and fixed lift:
-
-$$
-\text{global five-point slice}
-\Longrightarrow
-J_g\to\mathscr A_5
-\Longrightarrow
-T_g^{(1)}\to\mathscr A_5
-\Longrightarrow
-\text{five-support cover}.
-$$
-
-No converse is automatic for the same fixed data.
-
-## 8. B2 formulation queue
-
-Programme B1 does not close the full arrows involving:
-
-- cycle-continuous or cographic maps;
-- quadratic-cycle equations;
-- Schur-product equations;
-- singular quotient lifting;
-- orthogonal rank reduction;
-- Fourier and stress duality.
-
-Programme B2 must classify each arrow as one of:
-
-1. full witness equivalence;
-2. equivalence after fixed data are named;
-3. quotient or projection with lost lift data;
-4. dual obstruction criterion;
-5. finite or computational evidence.
-
-Until that classification is integrated, these formulations remain valuable proof families but are not all entries in the B1 graph-level equivalence box.
-
-## 9. Direct colour-cut proof family
-
-The fixed-plane criterion has a short geometric proof.
-
-- Contract every $W$-component.
-- The four outside colours form one affine $W$-plane.
-- Their only nonzero binary relation is their total sum.
-- Hence the four colour-degree parities at each quotient vertex are either $0000$ or $1111$.
-- The affine component obstruction is this common bit.
-
-This is the preferred proof of the fixed-$(f,W)$ theorem.
-
-## 10. Singular-fibre proof family
-
-The singular quotient treats every edge as a finite root fibre and every cubic vertex as a local relation. It is natural for later monodromy and Type H analysis.
-
-Its use in B1 is limited to the same fixed-plane component obstruction. Broader equivalence claims await B2.
-
-## 11. Quadratic and Schur proof family
-
-Cycle coordinates and Schur products expose nonlinear correction and switch images. They are important algebraic and computational tools.
-
-Programme B1 does not assert that every displayed quadratic or Schur equation retains the full five-support witness. The reconstruction and lost-data boundary are B2 obligations.
-
-## 12. Stress and Fourier proof family
-
-Dual stresses provide obstruction certificates; Fourier and Möbius methods organize counts over affine choice spaces.
-
-These tools do not solve the graph-level composition problem merely by showing that one finite arrangement is sparse. Their exact equivalence or dual-only status belongs to B2.
-
-## 13. Orthogonal proof family
-
-The universal eight-support lift belongs to a plus-type quadratic space, while the five-support root set lies in a minus-type four-space. This is the clean invariant rank-reduction viewpoint.
-
-It does not remove the need to track fixed-flow, fixed-lift, component, and holonomy quantifiers.
-
-## 14. Surface and half-cube proof family
-
-The full dual retains individual support-cycle components and therefore exposes componentwise freedom, partial Petrials, target links, and marked source circuits.
-
-The old-colour quotient is useful only after the factorability restriction is stated.
-
-## 15. Finite-interface and holonomy families
-
-Cut traces, four-pole states, routing automata, affine holonomy, and defect flows belong to later B3–B7 layers. They remain active mathematical material but are not consumed as B1 equivalences.
-
-## 16. Sufficient templates that are not equivalences
-
-The following remain useful sufficient routes:
-
-- a global-index-factorable map $J_g\to\mathscr A_5$;
-- an unused three-matching of old root labels;
-- vanishing of an affine-plane residue;
+- one global-index-factorable map $J_g\to\mathscr A_5$;
+- an unused three-matching;
+- a vanishing affine-plane residue;
 - an orientable good lift;
-- an abstract target pivot whose source realization is separately proved.
+- a target pivot with separately proved source realization.
 
-No one of these is necessary at fixed lift or graph level.
+Gauge motion, target-link corrections, four-pole routing, defects, atoms, and localisation belong to B3 and later exact intakes.
 
-## 17. Preservation and assurance
+## 12. Preservation and assurance
 
-The exact B1 dossiers remain under `proof-development/`. Recovered source packets remain public provenance and priority records.
+The exact B1 and B2 dossiers remain under `proof-development/`. Retired public packets remain recoverable as source and priority history.
 
-B1 curation is substantive mathematical integration, not independent audit, Lean formalization, manuscript approval, publication, release, arXiv, or DOI action. The global five-support theorem remains open.
+`FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` is retained only as `SUPERSEDED / FALSE THEOREM / HISTORICAL PROVENANCE`.
+
+Programme B2 integration is substantive mathematical curation. It is not independent audit, Lean formalization, manuscript approval, peer review, publication, release, arXiv, DOI, or novelty determination. The global five-support theorem remains open.
