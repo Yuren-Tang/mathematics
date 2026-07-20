@@ -4,7 +4,7 @@
 **Standing issue:** `Yuren-Tang/research-workbench#37`  
 **Owned branch:** `proof-development/affine-cdc-rigour-v1`  
 **Exact initial baseline:** `main@960c92b7ff231c78b387894149779083060a75eb`  
-**Programme state:** persistent; Programme A and B1–B3 are `READY-FOR-CURATOR`; Programme B continues
+**Programme state:** persistent; Programme A and B1–B4 are `READY-FOR-CURATOR`; Programme B continues
 
 ## 1. Control and assurance boundary
 
@@ -16,40 +16,15 @@ Status words are authorial proof-development states:
 
 `COMPLETE-DRAFT` and `READY-FOR-CURATOR` do not mean independently audited or machine-checked.
 
-## 2. Complete-CDC DAG
+## 2. Complete-CDC programme
 
-```text
-A0  foundational graph/cut/circuit/multiplicity semantics
-├──> A1  loop deletion and exact loop reinsertion
-└──> A2  loopless cubic expansion and collapse data
-      └──> A3  binary-flow external boundary
-            └──> A4  affine pair complex and obstruction object
-                  └──> A5  rank-three Fano compatibility
-                        └──> A6  graph-level even-support extraction
-A0 ───────────────────────────────┘
-A0 + A6 ──> A7  vertex/boundary/cut parity bridge
-A2 + A6 + A7 ──> A8  collapse and multiplicity transport
-A0 + A8 ──> A9  finite circuit decomposition
-A1 + A2 + A3 + A4 + A5 + A6 + A7 + A8 + A9 ──> A10 final theorem
-```
+Programme A is complete and ready for Curator intake at immutable checkpoint
 
-| Code | State | Exact checkpoint | Closed output |
-|---|---|---|---|
-| `AC-PD-A0` | `COMPLETE-DRAFT` | `0d8c9102fa117e5f58b5d1617f3fae782c164097` | finite-active multigraph, cuts, intrinsic parity, circuits, components, indexed/multiset multiplicity |
-| `AC-PD-A1` | `COMPLETE-DRAFT` | `b193d55461040a6b6b7692e4f24e91d88c97a663` | exact loop deletion, preservation, and forced two-singleton reinsertion |
-| `AC-PD-A2` | `COMPLETE-DRAFT` | `7c271c41f9d442ddb14034fb40b730fcc61c83a5` | finite loopless cubic port-cycle expansion, components, fibres, cut pullback, collapse |
-| `AC-PD-A3` | `COMPLETE-DRAFT` | `6817896a301157db886f7c016866748a9161d15f` | Seymour boundary, literal 6-to-8 step, internal equal-order group-flow transport, characteristic-two adapter |
-| `AC-PD-A4` | `COMPLETE-DRAFT` | `93bd8019099f0fa10ee53928681167f81506c407` | local affine torsor, pair complex, quotient equation, stress dual, retained-data boundary |
-| `AC-PD-A5` | `COMPLETE-DRAFT` | `6ce41bd87b5700346c572f701c40c8ac6f374e3f` | canonical quotient quadratics, Fano Lagrangians, characteristic torsor, automatic compatibility |
-| `AC-PD-A6` | `COMPLETE-DRAFT` | `f953619d6fda7105fef406892530496c7d72178a` | point-indexed graph supports, local evenness, exact double coverage, multiset flattening |
-| `AC-PD-A7` | `COMPLETE-DRAFT` | `b0755c3b95939482c6e223c24e4d8327c53f02e8` | exact loopless equivalence of set-incidence parity, intrinsic boundary parity, and cut parity |
-| `AC-PD-A8` | `COMPLETE-DRAFT` | `d9718c6204d4f11aa853ee2f6e350d5c08444820` | memberwise cut-even collapse and exact original-edge occurrence transport |
-| `AC-PD-A9` | `COMPLETE-DRAFT` | `400404e5413dfc933668aa0ec152010bae5a742c` | terminating finite circuit decomposition and global multiplicity preservation |
-| `AC-PD-A10` | `READY-FOR-CURATOR` | `143538ef0fc9518ce877a42fa422d57cb6e3ce8a` | natural finite-active-edge no-singleton-cut CDC theorem assembly and assurance ledger |
+`8bee16780b549f51e1f29343671a059961ec4172`.
 
-Programme A immutable intake checkpoint: `8bee16780b549f51e1f29343671a059961ec4172`.
+Its A0–A10 chain proves the finite-active-edge no-singleton-cut multigraph CDC theorem with exact loop, parallel-edge, disconnected, collapse, parity, multiplicity, source, and assurance boundaries.
 
-## 3. Programme B — five-support proof tree
+## 3. Five-support programme
 
 ```text
 B1  root-flow / fixed-plane / fixed-lift equivalences
@@ -64,62 +39,80 @@ B1–B7 + B8 finite certificates ──> B9 global five-support assembly
 
 ### B1 — exact object and quantifier layer
 
-| Code | State | Exact checkpoint / output |
-|---|---|---|
-| `AC-PD-B1.1` | `COMPLETE-DRAFT` | `ed0288c2485d4eb826b49b8289a0025e1b2c0d64` — five-support ↔ root flow ↔ $K_5$ triangle law |
-| `AC-PD-B1.2` | `COMPLETE-DRAFT / CORPUS-CORRECTION` | `24e923bcfcfc3aa2765c3269018c977bd1351403` — exact $(B,D,M)$ matching/four-flow theorem and component $T$-join condition |
-| `AC-PD-B1.3` | `COMPLETE-DRAFT` | `dbd01c86059368619a51f9b5252dfec0a2cf7778` — fixed-flow/fixed-plane colour-cut, distinguished-support, and plane-profile criterion |
-| `AC-PD-B1.4` | `COMPLETE-DRAFT / SCOPE-CORRECTION` | `a9695a1045bdb157b8d0d8aa1e318302c28e785d` — root-lift/surface equivalence, full-dual half-cube potential, holonomy, and quotient scope |
-| `AC-PD-B1` | `READY-FOR-CURATOR` | `73be22f42298470bd9ebaeb519de7ed686c27e41` — consolidated graph/fixed-flow/fixed-lift map |
+Immutable intake checkpoint: `778b09ac8260192e022f512f24cdef1d04871f37`.
 
-Programme B1 immutable intake checkpoint: `778b09ac8260192e022f512f24cdef1d04871f37`.
+| Unit | State | Output |
+|---|---|---|
+| `B1.1` | `COMPLETE-DRAFT` | five supports ↔ root flow ↔ $K_5$ triangle law |
+| `B1.2` | `COMPLETE-DRAFT / CORPUS-CORRECTION` | exact $(B,D,M)$ matching/four-flow theorem and component $T$-join condition |
+| `B1.3` | `COMPLETE-DRAFT` | fixed-flow/fixed-plane colour-cut, distinguished-support, and plane-profile criterion |
+| `B1.4` | `COMPLETE-DRAFT / SCOPE-CORRECTION` | root-lift/surface equivalence, full-dual half-cube potential, holonomy, and quotient scope |
+| `B1` | `READY-FOR-CURATOR` | consolidated graph/fixed-flow/fixed-lift map |
 
 ### B2 — formulation and witness hierarchy
 
-| Code | State | Closed output |
-|---|---|---|
-| `AC-PD-B2.1` | `COMPLETE-DRAFT` | anisotropic $O^-(4,2)$ mother flow; singular-line lift torsor; quadratic cycle equation; Schur quotient criterion |
-| `AC-PD-B2.2` | `COMPLETE-DRAFT / TERMINOLOGY-BOUNDARY` | exact cographic cycle-continuous edge-map equivalence and composition law |
-| `AC-PD-B2.3` | `COMPLETE-DRAFT / MATHEMATICAL-CORRECTION` | refutation of false universal $2r$ orthogonal-root claim; sharp $q-2$ lower bound; deleted permutation module; rank-three exception |
-| `AC-PD-B2.4` | `COMPLETE-DRAFT / WITNESS-SCOPE` | exact prescribed-value Fredholm duality; relative-stress code; product-avoidance Fourier count; witness reconstruction boundary |
-| `AC-PD-B2` | `READY-FOR-CURATOR / MATHEMATICAL-CORRECTION` | formulation/witness hierarchy at `769d4e9ec48c99eab695a0fc49b0a622e7e36ac4` |
+Immutable intake checkpoint: `d62974704d6dac77aaa00275a595fedf7f70cfd2`.
 
-Programme B2 immutable intake checkpoint: `d62974704d6dac77aaa00275a595fedf7f70cfd2`.
+| Unit | State | Output |
+|---|---|---|
+| `B2.1` | `COMPLETE-DRAFT` | anisotropic $O^-(4,2)$ mother flow; singular lift; quadratic equation; Schur criterion |
+| `B2.2` | `COMPLETE-DRAFT / TERMINOLOGY-BOUNDARY` | cographic cycle-continuous edge-map equivalence |
+| `B2.3` | `COMPLETE-DRAFT / MATHEMATICAL-CORRECTION` | false universal $2r$ hierarchy refuted; $q-2$ bound; deleted permutation module |
+| `B2.4` | `COMPLETE-DRAFT / WITNESS-SCOPE` | relative-stress Fredholm duality and exact Fourier count |
+| `B2` | `READY-FOR-CURATOR / MATHEMATICAL-CORRECTION` | full witness versus fixed-data/dual hierarchy |
 
 ### B3 — target, dual, and quotient layer
 
-| Code | State | Exact checkpoint / output |
-|---|---|---|
-| `AC-PD-B3.1` | `COMPLETE-DRAFT / PROVENANCE-REPAIR` | `bcd7398a5d2e7c15948ea2707fec1484a6a78cb5` — general quadratic common-link formula; validation of clique-link and exact capacity packets |
-| `AC-PD-B3.2` | `COMPLETE-DRAFT / PROVENANCE-REPAIR` | `5cf1ace96102982db1b9e79d1cc5d15f1fb39f2d` — independent $K_6$/$K_8-C_5$ no-go proofs and validation of exact eight-vertex classification |
-| `AC-PD-B3.3` | `COMPLETE-DRAFT / SCOPE-NORMALIZATION` | `9b9263195e0bc578a71ffdb182c3fdb3ece52703` — packet audit; factorable/full-dual separation; matching representative correction; certificate classification |
-| `AC-PD-B3` | `READY-FOR-CURATOR / PROVENANCE-REPAIRED` | `e7f4143bc1e12fa8ea20478f79402c5e02f81abe` — consolidated target and scope map |
+Immutable intake checkpoint: `d806168bb579dbc13f267f44f631e07de909b706`.
 
-#### B3 boundaries retained
+| Unit | State | Exact checkpoint / output |
+|---|---|---|
+| `B3.1` | `COMPLETE-DRAFT / PROVENANCE-REPAIR` | `bcd7398a5d2e7c15948ea2707fec1484a6a78cb5` — common-link formula and validated capacity packets |
+| `B3.2` | `COMPLETE-DRAFT / PROVENANCE-REPAIR` | `5cf1ace96102982db1b9e79d1cc5d15f1fb39f2d` — $K_6$/$K_8-C_5$ no-go and exact eight-vertex classification |
+| `B3.3` | `COMPLETE-DRAFT / SCOPE-NORMALIZATION` | `9b9263195e0bc578a71ffdb182c3fdb3ece52703` — target packet audit and factorable/full-dual separation |
+| `B3` | `READY-FOR-CURATOR / PROVENANCE-REPAIRED` | `e7f4143bc1e12fa8ea20478f79402c5e02f81abe` — consolidated target/scope map |
+
+Controlling B3 boundaries:
 
 1. $T_g^{(1)}$ is the complete same-embedding object; $J_g$ is the old-colour-factorable quotient.
-2. Clique links and dominating-clique capacity are valid target-graph theorems.
-3. For eight-colour quotients, $J\to\mathscr A_5$ iff $J$ contains neither $K_6$ nor $K_8-C_5$.
-4. Unused-root containers, two-apex/pentagon cores, and ideal pivots are factorable-route objects.
-5. The flower $D_9$ obstruction is full-dual conditional on its explicit finite certificate.
-6. Numerical censuses remain certificate data, not independently audited proofs.
-7. The all-parallel unused-matching representative is corrected to $\{01,23,45\}$; the three orbit sizes remain $28,168,224$.
+2. The exact half-cube link, capacity, and eight-vertex packets are valid.
+3. Unused-root containers, two-apex/pentagon cores, and ideal pivots are factorable-route objects.
+4. Flower/census numerical data remain on the certificate axis.
+5. The all-parallel matching representative is corrected to $\{01,23,45\}$; orbit sizes remain $28,168,224$.
 
-### Remaining Programme B units
+### B4 — vertical and horizontal motion
+
+| Unit | State | Exact checkpoint / output |
+|---|---|---|
+| `B4.1` | `COMPLETE-DRAFT` | `bbfe3bee38cb54c6a9878baa79c5608660492285` — vertical root-lift torsor, componentwise reduced kernel, harmonic quotient, partial Petrial |
+| `B4.2` | `COMPLETE-DRAFT / SCOPE-NORMALIZATION` | `21dbd865f0101ad029fa76612229581cdb3735c9` — support pivots, connected-switch adjacency, disconnected commuting decomposition |
+| `B4.3` | `COMPLETE-DRAFT / SCOPE-CORRECTION` | `8f854d5744abf77c7d74acaa214685ec215eb4a9` — used-root transport, gauge constraint replacement, internal/external defect transport, connected-neighbour boundary |
+| `B4` | `READY-FOR-CURATOR / FRONTIER-EXPLICIT` | `37ad2b11b6b0d55b69eb0a14799e3049790c2c46` — consolidated motion and transport map |
+
+Controlling B4 boundaries:
+
+1. The labelled root-lift fibre is a torsor under $H_f^0$; the reduced code is $H_f^0/\Gamma^{\pi_0(G)}$.
+2. Gauge words are exactly code-filtered partial Petrials at fixed Fano flow.
+3. Support-cycle pivots preserve the uncoloured embedding and lift one connected-cycle flow switch.
+4. General connected switches require a new affine lift solve; disconnected cycle words are commuting paths, not one adjacency.
+5. The linear admissible-switch image ranges over composite same-direction endpoints. Connected-neighbour images need not be linear.
+6. Internal switches correct a fixed quotient; external switches reslice the quotient.
+7. No global escape, component-hitting, or monotone-potential theorem is claimed.
+
+### Remaining units
 
 | Code | State | Exact unit boundary |
 |---|---|---|
-| `AC-PD-B4` | `ACTIVE` | vertical gauge translations, partial Petrials, support-cycle pivots, horizontal connected-cycle switches, and exact preserved/transported data |
-| `AC-PD-B5` | `QUEUED` | three-cut, four-pole, and routing-state reductions |
+| `AC-PD-B5` | `ACTIVE` | three-edge cuts, four-poles, boundary signatures, cap forcing, Kempe closure, routing states, and exact gluing |
 | `AC-PD-B6` | `QUEUED` | holonomy, BBD/DDD, canonical defects, and atom statements |
 | `AC-PD-B7` | `QUEUED` | route-lock, curvature, and common-cut localization consequences |
 | `AC-PD-B8` | `QUEUED` | finite laboratories and exact certificates; evidence separated from proof |
-| `AC-PD-B9` | `BLOCKED-FRONTIER` | exact smallest missing global composition/localization implication; only this genuine new-mathematics gap returns to AC-RL |
+| `AC-PD-B9` | `BLOCKED-FRONTIER` | exact smallest missing global composition/localization implication; only genuine new-mathematics gaps return to AC-RL |
 
 ## 4. Repair queue
 
-No repair unit is active. The B3 provenance mistake was repaired before Curator handoff; issue #37 comment `5017021539` was updated in place. Any later defect must record the exact triggering checkpoint, statement, severity, repair, AC-RL need, and Curator-ready test.
+No repair unit is active. The B3 provenance mistake was repaired before handoff and its issue record was corrected in place. Later defects must record triggering checkpoint, exact claim, severity, repair, AC-RL requirement, and Curator-ready test.
 
 ## 5. Current active unit
 
-`AC-PD-B4` is active. Its first subunit will normalize the vertical action: the gauge translation group, reduced stabilizers, exact local-face effect, and the equivalence between admissible gauge words and code-filtered partial Petrials. It will then separate support-cycle pivots from horizontal Fano-flow switches and prove which disconnected switches are compositions rather than single reconfiguration edges.
+`AC-PD-B5` is active. The first subunit will normalize three-edge-cut and four-pole boundary data, prove the exact parity constraints on terminal root values and support incidences, and identify the minimal gluing datum required to combine local five-support witnesses across a separator.
