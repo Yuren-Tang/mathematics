@@ -4,7 +4,7 @@
 **Standing issue:** `Yuren-Tang/research-workbench#37`  
 **Owned branch:** `proof-development/affine-cdc-rigour-v1`  
 **Exact initial baseline:** `main@960c92b7ff231c78b387894149779083060a75eb`  
-**Programme state:** persistent; Programme A, B1, and B2 are `READY-FOR-CURATOR`; Programme B continues
+**Programme state:** persistent; Programme A and B1–B3 are `READY-FOR-CURATOR`; Programme B continues
 
 ## 1. Control and assurance boundary
 
@@ -84,22 +84,32 @@ Programme B1 immutable intake checkpoint: `778b09ac8260192e022f512f24cdef1d04871
 | `AC-PD-B2.4` | `COMPLETE-DRAFT / WITNESS-SCOPE` | exact prescribed-value Fredholm duality; relative-stress code; product-avoidance Fourier count; witness reconstruction boundary |
 | `AC-PD-B2` | `READY-FOR-CURATOR / MATHEMATICAL-CORRECTION` | formulation/witness hierarchy at `769d4e9ec48c99eab695a0fc49b0a622e7e36ac4` |
 
-#### B2 corrections retained
+Programme B2 immutable intake checkpoint: `d62974704d6dac77aaa00275a595fedf7f70cfd2`.
 
-1. Full graph-level witnesses are five supports, $R_5$ roots, $K_5$ triangles, anisotropic $O^-(4,2)$ flows, quadratic solutions, and cographic cycle-continuous edge maps.
-2. Singular quotient and Schur product are complete fixed-data lift criteria only when the quotient flow, kernel/plane, quotient graph, and lift torsor are retained.
-3. Stress spaces are linear dual obstructions; Fourier spectra are exact nonlinear counts. Neither alone is a source witness.
-4. The recovered universal construction in dimension $2r$ is false for $r\geq4$ and contains a type-invalid formula.
-5. Every additive anisotropic representation of $K_q$ with triangle addition has dimension at least $q-2$.
-6. The correct universal module is the deleted permutation module of dimension $q-2$.
-7. The $O^+(6,2)$ realization of eight supports is exceptional because $8-2=6$; it is not the first case of a universal $O^+(2r,2)$ tower.
+### B3 — target, dual, and quotient layer
+
+| Code | State | Exact checkpoint / output |
+|---|---|---|
+| `AC-PD-B3.1` | `COMPLETE-DRAFT / PROVENANCE-REPAIR` | `bcd7398a5d2e7c15948ea2707fec1484a6a78cb5` — general quadratic common-link formula; validation of clique-link and exact capacity packets |
+| `AC-PD-B3.2` | `COMPLETE-DRAFT / PROVENANCE-REPAIR` | `5cf1ace96102982db1b9e79d1cc5d15f1fb39f2d` — independent $K_6$/$K_8-C_5$ no-go proofs and validation of exact eight-vertex classification |
+| `AC-PD-B3.3` | `COMPLETE-DRAFT / SCOPE-NORMALIZATION` | `9b9263195e0bc578a71ffdb182c3fdb3ece52703` — packet audit; factorable/full-dual separation; matching representative correction; certificate classification |
+| `AC-PD-B3` | `READY-FOR-CURATOR / PROVENANCE-REPAIRED` | `e7f4143bc1e12fa8ea20478f79402c5e02f81abe` — consolidated target and scope map |
+
+#### B3 boundaries retained
+
+1. $T_g^{(1)}$ is the complete same-embedding object; $J_g$ is the old-colour-factorable quotient.
+2. Clique links and dominating-clique capacity are valid target-graph theorems.
+3. For eight-colour quotients, $J\to\mathscr A_5$ iff $J$ contains neither $K_6$ nor $K_8-C_5$.
+4. Unused-root containers, two-apex/pentagon cores, and ideal pivots are factorable-route objects.
+5. The flower $D_9$ obstruction is full-dual conditional on its explicit finite certificate.
+6. Numerical censuses remain certificate data, not independently audited proofs.
+7. The all-parallel unused-matching representative is corrected to $\{01,23,45\}$; the three orbit sizes remain $28,168,224$.
 
 ### Remaining Programme B units
 
 | Code | State | Exact unit boundary |
 |---|---|---|
-| `AC-PD-B3` | `ACTIVE` | full dual triangulation; old-colour quotient; half-cube target/link geometry; marked cores; target-capacity and quotient-classification theorems, with full-dual scope kept exact |
-| `AC-PD-B4` | `QUEUED` | vertical and horizontal reconfiguration moves, preserved invariants, and exact reachability claims |
+| `AC-PD-B4` | `ACTIVE` | vertical gauge translations, partial Petrials, support-cycle pivots, horizontal connected-cycle switches, and exact preserved/transported data |
 | `AC-PD-B5` | `QUEUED` | three-cut, four-pole, and routing-state reductions |
 | `AC-PD-B6` | `QUEUED` | holonomy, BBD/DDD, canonical defects, and atom statements |
 | `AC-PD-B7` | `QUEUED` | route-lock, curvature, and common-cut localization consequences |
@@ -108,21 +118,8 @@ Programme B1 immutable intake checkpoint: `778b09ac8260192e022f512f24cdef1d04871
 
 ## 4. Repair queue
 
-No repair unit is active. B2.3 is a completed mathematical correction awaiting Curator integration, not an open repair. Any later Curator, audit, Lean, manuscript, or Research Lead defect must be entered with:
-
-- exact triggering checkpoint;
-- exact false, incomplete, or ambiguous statement;
-- mathematical severity;
-- required repair;
-- whether new mathematics is needed from AC-RL;
-- Curator-ready completion test.
+No repair unit is active. The B3 provenance mistake was repaired before Curator handoff; issue #37 comment `5017021539` was updated in place. Any later defect must record the exact triggering checkpoint, statement, severity, repair, AC-RL need, and Curator-ready test.
 
 ## 5. Current active unit
 
-`AC-PD-B3` is active. The first task is to normalize the target hierarchy
-
-$$
-T_g^{(1)}\longrightarrow J_g\longrightarrow\mathscr A_5,
-$$
-
-its strict factorization boundary, the half-cube link and marked-core reductions, and the exact finite target-capacity theorems. Every finite classification must be labelled by the graph it actually classifies; no $J_g$ computation may be promoted to the full dual $T_g$ without proof.
+`AC-PD-B4` is active. Its first subunit will normalize the vertical action: the gauge translation group, reduced stabilizers, exact local-face effect, and the equivalence between admissible gauge words and code-filtered partial Petrials. It will then separate support-cycle pivots from horizontal Fano-flow switches and prove which disconnected switches are compositions rather than single reconfiguration edges.
