@@ -1,12 +1,16 @@
-# Relative witness subtraction and the uniform DDD network
+# Relative witness subtraction and the coefficient one-factor skeleton
 
-## Research dossier v1
+## Research dossier v1.1
 
 **Role:** `AffineCDC — Research Lead` (`AC-RL`)  
 **Workspace:** `Yuren-Tang/mathematics:research/affine-cdc-five-cdc-v1`  
 **Parent mechanism:** `projects/affine-cdc/research/QUADRATIC_CHANNEL_PROJECTION_V1.md`  
-**Status:** exact chain-level theorem; conversion to strict graph reduction remains open  
+**Status:** exact chain-level theorem; physical transport semantics and strict graph reduction remain open  
 **Not implied:** canonical acceptance, independent audit, Lean verification, manuscript readiness, or the global five-support theorem.
+
+### Correction from v1
+
+The first version correctly classified the **difference coefficients**, but over-interpreted their repeated one-factor pattern as a physically uniform DDD network with immediately reusable crossed resolutions. That conclusion is not justified. The actual two root-valued witnesses carry base-dependent root-pair states and side-root outputs along the overlap. The exact physical object is an **enriched co-root transducer with a uniform coefficient skeleton**. Repeated coefficient state alone does not permit pumping, deletion, or contraction.
 
 ---
 
@@ -32,7 +36,7 @@ Let `A,B` be two relative even subgraphs with the same terminal boundary
 \partial A=\partial B=T.
 \]
 
-Let `s,t in R_5` be two repair coefficients. Define the relative `E_5` chain
+Let `s,t\in R_5` be two repair coefficients. Define the relative `E_5` chain
 
 \[
 h=s1_A+t1_B.
@@ -62,7 +66,7 @@ s+t,&e\in I,\\
 \end{cases}
 \]
 
-This elementary formula gives the complete subtraction classification.
+This formula gives the complete coefficient-level subtraction classification.
 
 ---
 
@@ -76,12 +80,12 @@ Suppose either `s=t` or the two roots `s,t` meet in the `K_5` edge model. Then e
   \[
   h=s1_{A\triangle B}.
   \]
-- If `s neq t` and the roots meet, then `s+t` is the third root of their `K_5` triangle. The only trivalent nonzero local state is
+- If `s\ne t` and the roots meet, then `s+t` is the third root of their `K_5` triangle. The only trivalent nonzero coefficient state is
   \[
   (s,t,s+t).
   \]
 
-Hence the subtraction is a root-supported relative chain. Its zero-side degree-two pieces are ordinary equality wires.
+Hence the subtraction is a root-supported relative chain. Its equal-value degree-two pieces are coefficient equality wires.
 
 ### Repair-channel interpretation
 
@@ -98,7 +102,11 @@ Two channels are adjacent whenever
 1. they belong to the same algebraic resolution class `k`; or
 2. they belong to different classes but have the same orientation bit.
 
-Therefore both of these collision types lie entirely in the root branch.
+Therefore both of these collision types lie in the root-supported coefficient branch.
+
+### Trust boundary
+
+A root-supported **difference chain** does not by itself prove an admissible Kempe switch relative to a chosen base cover. The two endpoint witnesses are genuine, but converting their subtraction into a third route, a profile-expanding transition, or a source reduction still requires boundary-state and edgewise-admissibility control.
 
 ---
 
@@ -112,13 +120,13 @@ Suppose `s` and `t` are disjoint roots. Put
 c=s+t.
 \]
 
-Then `c` is a co-root and the co-root support of `h` is exactly
+Then `c` is a co-root and the co-root support of the difference chain `h` is exactly
 
 \[
 I=A\cap B.
 \]
 
-At an internal cubic vertex, the only possible nonzero local patterns are
+At an internal cubic vertex, the only possible nonzero coefficient patterns are
 
 \[
 (0,s,s),\qquad
@@ -129,10 +137,10 @@ At an internal cubic vertex, the only possible nonzero local patterns are
 
 The last triple is one perfect matching of the `K_6` edge model. Consequently:
 
-- vertices of co-root degree two have pattern `(0,c,c)`;
-- vertices of co-root degree one have the fixed one-factor pattern `(s,t,c)`;
+- vertices of co-root degree two have coefficient pattern `(0,c,c)`;
+- vertices of co-root degree one have coefficient pattern `(s,t,c)`;
 - the co-root support is a union of paths and cycles;
-- every internal endpoint of a co-root path is a one-factor vertex of the same DDD type.
+- every internal endpoint of a co-root path is a one-factor vertex in the coefficient difference flow.
 
 ### Proof
 
@@ -140,30 +148,75 @@ Both `A` and `B` have internal degree zero or two. If both use the same local pa
 
 ---
 
-## 4. Uniform DDD core
+## 4. Uniform coefficient core versus enriched physical transport
 
-Delete zero edges from the support of `h` and suppress every degree-two vertex whose two nonzero incident values agree. In the disjoint-coefficient branch, every remaining trivalent internal vertex carries exactly the same one-factor
+Delete zero coefficients from `h` and suppress every degree-two vertex whose two nonzero difference coefficients agree. Every remaining trivalent internal vertex in the disjoint branch carries the same coefficient one-factor
 
 \[
 \{s,t,c\}.
 \]
 
-### Theorem 4.1 — uniform one-factor reduction
+### Theorem 4.1 — uniform coefficient one-factor reduction
 
-The suppressed subtraction core has the following structure:
+The suppressed **difference-coefficient** core has the following structure:
 
-1. the `c`-edges form a matching (with possible terminal ends);
+1. the `c`-edges form a matching, with possible terminal ends;
 2. the `s`- and `t`-edges form alternating cycles and terminal paths;
-3. every internal vertex is a copy of one fixed DDD one-factor state;
-4. each suppressed `c`-path is a stretched co-root atom with the same two crossed root resolutions as the elementary DDD atom.
+3. every internal vertex carries the same one-factor coefficient state `(s,t,c)`.
 
-Thus the non-root subtraction branch is not a general co-root transducer. It is a uniform DDD network governed by one binary crossed-resolution choice.
+This is exact for the subtraction chain.
+
+### Theorem 4.2 — retained base semantics
+
+Assume there is a base `E_5` flow `lambda` and that
+
+\[
+\lambda_A=\lambda+s1_A,
+\qquad
+\lambda_B=\lambda+t1_B
+\]
+
+are root-valued on the relevant witness region. For every overlap edge `e\in I`, put
+
+\[
+y_e=\lambda(e)+s,
+\qquad
+z_e=\lambda(e)+t.
+\]
+
+Then `y_e,z_e` are roots and
+
+\[
+y_e+z_e=c.
+\]
+
+Hence they are a disjoint root pair above the co-root direction `c`. The unordered pair
+
+\[
+\{y_e,z_e\}
+\]
+
+is an enriched transport state; it is not determined by the constant difference coefficient `c`.
+
+At a degree-two overlap vertex, let `e_1,e_2` be the overlap edges and let `f` be the third edge. The two root witnesses have the same value on `f`, say `w`. Conservation gives
+
+\[
+y_{e_1}+y_{e_2}=w,
+\qquad
+z_{e_1}+z_{e_2}=w.
+\]
+
+Thus the overlap transports the disjoint-root-pair state while emitting the side-root output `w`. This is precisely the enriched co-root/Petersen transport phenomenon.
+
+At a divergence vertex, the coefficient difference has pattern `(s,t,c)`, but the actual two root triangles depend on the base labels. The constant coefficient one-factor therefore does **not** imply identical physical DDD endpoint states or automatic crossed resolutions.
+
+### Consequence 4.3
+
+The disjoint subtraction branch is an enriched co-root transducer whose coefficient shadow is uniform. It may enter the DDD mechanism after localisation, but it is not already a contractible DDD blossom.
 
 ### Minimal-witness refinement
 
-If `A` and `B` are chosen without redundant closed components, then `I=A cap B` has no closed component common to both witnesses. Its co-root support is a forest of paths whose endpoints are terminals or one-factor divergence vertices.
-
-This refinement is exact for path-system witnesses after deleting irrelevant common cycles. It does not by itself justify contraction of a long stretched atom inside the original source graph.
+If `A` and `B` are chosen without redundant common closed components, then `I=A\cap B` has no closed component common to both witnesses. Its co-root coefficient support is a forest of paths whose endpoints are terminals or route-divergence vertices. The enriched state and side-root word along each path must still be retained.
 
 ---
 
@@ -182,13 +235,13 @@ Set
 u=c+r.
 \]
 
-Then `u=k\ell` is a root disjoint from `r`. Define
+Then `u=k\ell` is a root disjoint from `r`. Define the coefficient chain
 
 \[
 h^\sharp=h+r1_I.
 \]
 
-On `A\setminus B`, `B\setminus A`, and `I`, the nonzero values of `h^sharp` are respectively
+On `A\setminus B`, `B\setminus A`, and `I`, the nonzero coefficients of `h^\sharp` are respectively
 
 \[
 s,\qquad t,\qquad u,
@@ -202,22 +255,20 @@ Let
 D=\{v\in V_{\mathrm{int}}(P):\deg_I(v)=1\}
 \]
 
-be the divergence set. Since both route witnesses use every terminal semiedge,
+be the route-divergence set. Since both witnesses use every terminal semiedge,
 
 \[
 \partial I=T+D.
 \]
 
-Therefore:
-
-### Theorem 5.1 — exact root-plus-binary decomposition
+### Theorem 5.1 — exact root-plus-binary coefficient decomposition
 
 \[
 \boxed{
 h=h^\sharp+r1_I,}
 \]
 
-where `h^sharp` is root-supported and
+where `h^sharp` is root-supported as a coefficient chain and
 
 \[
 \boxed{
@@ -225,25 +276,27 @@ where `h^sharp` is root-supported and
 }
 \]
 
-The entire failure of `h^sharp` to be a genuine root-valued relative flow is the binary `r`-boundary on the divergence set `D`. The overlap `I` is an explicit `T union D`-join carrying that binary fibre.
+The entire failure of `h^sharp` to be a root-valued relative **flow** is the binary `r`-boundary on the divergence set `D`. The overlap `I` is an explicit `T\cup D`-join carrying that binary coefficient fibre.
 
-At each `v in D`, the three root labels of `h^sharp` sum to `r`; restoring the `r`-fibre changes the common-edge root `u` back to the co-root `c` and recovers the one-factor state `(s,t,c)`.
+### Trust boundary
+
+The operation `h -> h^sharp` is a coefficient identity. It does not assert that adding `r` on every overlap edge preserves root-admissibility relative to the base flow. The enriched states of Theorem 4.2 determine that edgewise question.
 
 ---
 
 ## 6. Exact collision classification
 
-For repair channels in `S_r`, subtraction has only the following outcomes.
+For repair channels in `S_r`, subtraction has only the following coefficient outcomes.
 
 ### Corollary 6.1
 
 1. **Same resolution class:** root-supported subtraction.
 2. **Different classes, same orientation:** root-supported subtraction.
-3. **Different classes, opposite orientation:** uniform DDD subtraction, equivalently a root-supported chain plus one binary `r`-fibre.
+3. **Different classes, opposite orientation:** co-root-overlap subtraction with a uniform coefficient one-factor shadow, equivalently a root-supported coefficient chain plus one binary `r`-fibre.
 
-No fourth edge-value mechanism can appear.
+No fourth coefficient-value mechanism can appear.
 
-This proves the finite algebraic part of the proposed collision-or-progress theorem. What remains is graph composition: showing that the first two branches force a profile-expanding/Kempe move or a smaller separator, and that the third branch can be localised or contracted without changing the relevant four-pole semantics.
+This closes the finite algebraic part of witness subtraction. It does not close graph composition, because Case 3 retains the full enriched root-pair and side-output word of the base witnesses.
 
 ---
 
@@ -251,12 +304,10 @@ This proves the finite algebraic part of the proposed collision-or-progress theo
 
 Suppose a current four-pole state and challenge admit more than one physical route witness.
 
-- If the corresponding repair coefficients fall in Cases 1 or 2 of Corollary 6.1, their subtraction is root-supported. In a deterministic residual routing kernel, the second genuine route is expected to leave the kernel profile; proving this requires matching the chain subtraction to the exact support-unordered boundary transition.
-- If they fall in Case 3, their subtraction is a uniform DDD network. Its only local non-root datum is the crossed-resolution bit of the fixed one-factor `(s,t,c)`.
+- In Cases 1 and 2, their difference is root-supported at coefficient level. A deterministic residual kernel should then either admit a profile-expanding genuine transition or expose a smaller source interface, but this must be proved with the actual base cover.
+- In Case 3, the coefficient difference has only one co-root direction, but the overlap carries an enriched transport state. Localisation may end in a DDD atom, a flat equality/defect strip, a smaller separator, or a solvable route switch; the repeated coefficient shadow alone does not choose among them.
 
-Accordingly, a non-permutation resolution-route relation cannot create a new finite obstruction alphabet. It must be discharged by either root/Kempe composition or DDD composition.
-
-This is a mechanism theorem, not yet the strict-progress theorem.
+Accordingly, a non-permutation resolution-route relation cannot create a new **coefficient alphabet**, but its physical composition semantics remain nontrivial.
 
 ---
 
@@ -264,16 +315,22 @@ This is a mechanism theorem, not yet the strict-progress theorem.
 
 ### Obligation A — boundary-transition compatibility
 
-Prove that a root-supported subtraction between two genuine route witnesses gives an actual Kempe/profile transition or exposes a smaller cyclic separator. The fact that the chain is root-supported is not alone sufficient; edgewise admissibility relative to the base cover and support-unordered boundary bookkeeping must be retained.
+Prove that a root-supported subtraction between two genuine route witnesses gives an actual Kempe/profile transition or exposes a smaller cyclic separator. Preserve edgewise admissibility relative to the base cover and the support-unordered boundary state.
 
-### Obligation B — stretched-atom composition
+### Obligation B — enriched-overlap localisation
 
-For a uniform DDD network, prove one of:
+For the disjoint branch, retain the state sequence
 
-1. crossed resolutions can be chosen consistently, yielding a root-valued route witness and profile escape;
-2. the first inconsistent cycle carries the unique `C_2` holonomy and may be isolated as a bounded blossom;
-3. a long co-root path plus its zero equality attachments admits a composition-safe replacement;
-4. a smaller separator or defect-forest unit is exposed.
+\[
+\{y_e,z_e\}
+\]
+
+and side-root output word along every overlap component. Prove one of:
+
+1. the enriched word admits a crossed/root resolution and profile escape;
+2. a first repeated enriched state with compatible side semantics yields a composition-safe contraction;
+3. incompatible return produces a nontrivial `C_2`/DDD holonomy on a bounded blossom;
+4. a smaller separator, zero-equality tree, or defect-forest unit is exposed.
 
 ### Obligation C — relation-to-connection
 
@@ -292,15 +349,17 @@ as the complete physical lifting model.
 ### Exact here
 
 - the edgewise subtraction formula;
-- the adjacent/disjoint dichotomy;
-- the complete local pattern classification;
-- the uniform one-factor reduction;
-- the root-plus-binary overlap decomposition;
-- the three-case collision classification for `S_r`.
+- the adjacent/disjoint coefficient dichotomy;
+- the complete local coefficient-pattern classification;
+- the uniform coefficient one-factor reduction;
+- the base-dependent disjoint-root-pair transport law;
+- the root-plus-binary coefficient decomposition;
+- the three-case coefficient collision classification for `S_r`.
 
 ### Still open
 
 - automatic profile expansion from every root-supported subtraction;
-- composition-safe contraction of every stretched DDD atom;
+- contraction or resolution of the enriched overlap transducer;
+- localisation of every nontrivial return to a bounded DDD blossom;
 - the physical permutation-connection theorem;
 - Type T strict descent, Type H closure, horizontal/global induction, and the global five-support theorem.
