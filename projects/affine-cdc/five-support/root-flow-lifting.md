@@ -8,208 +8,217 @@ $$
 (F_1,\ldots,F_5)
 $$
 
-of vertex-even edge supports such that every source edge belongs to exactly two indexed supports. Empty supports and equal support values at different indices are allowed. This is the natural pre-decomposition object; circuit decomposition is not part of the definition.
+of vertex-even edge supports such that every source edge belongs to exactly two indexed supports. Empty supports and equal support values at different indices are allowed.
 
 Put
 
 $$
-E_5=\left\{x\in\mathbf F_2^5:\sum_i x_i=0\right\},
+H_5=E_5=\left\{x\in\mathbf F_2^5:\sum_i x_i=0\right\},
 \qquad
 R_5=\{\varepsilon_i+\varepsilon_j:i<j\}.
 $$
 
-For an edge contained in supports $F_i,F_j$, assign the root $\varepsilon_i+\varepsilon_j$. Coordinatewise support parity is exactly the $E_5$ flow equation. Conversely, the coordinate inverse images of a root-valued flow recover the indexed supports.
-
-### Theorem 1.1 — root-flow and triangle equivalence
+### Theorem 1.1 — root, triangle, and anisotropic equivalence
 
 The following are canonically equivalent:
 
 1. indexed five-support even double covers;
-2. root-valued flows
+2. root-valued flows $E(G)\to R_5$;
+3. $K_5$-triangle edge labellings;
+4. anisotropic flows in the minus-type quadratic space $(H_5,q_5)$, where
    $$
-   \lambda:E(G)\to R_5\subset E_5;
+   q_5(x)=\sum_{i<j}x_ix_j.
    $$
-3. edge labellings by $E(K_5)$ for which the three labels at every cubic vertex form one triangle of $K_5$.
 
-The constructions are mutually inverse and equivariant under permutations of the five support indices.
+The anisotropic vectors of $H_5$ are exactly its ten weight-two roots.
 
 ## 2. Relation to the rank-three AffineCDC theorem
 
 A nowhere-zero Fano flow
 
 $$
-f:E(G)\to\Gamma\setminus\{0\},
-\qquad
-\Gamma\cong\mathbf F_2^3,
+f:E(G)\to\mathbf F_2^3\setminus\{0\}
 $$
 
-has a compatible eight-index affine root lift by the rank-three theorem. The five-support strengthening asks whether $G$ also has a root-valued $E_5$ flow.
+has a compatible eight-index affine root lift by Programme A. The eight-support complete-root model is the exceptional plus-type six-space $O^+(6,2)$.
 
-This is not a request to delete three arbitrary supports from one prescribed eight-support witness. At graph level one may change the Fano flow, compatible lift, cycle-face embedding, and support identification.
+The five-support strengthening asks whether the graph has an anisotropic root flow in $O^-(4,2)$. It is not a request to delete three supports from one prescribed eight-support lift. At graph level the Fano flow, compatible lift, embedding, and support identification may all vary.
+
+The eight-to-five problem is a specific exceptional reduction
+
+$$
+O^+(6,2)\rightsquigarrow O^-(4,2),
+$$
+
+not the first step of a universal $O^+(2r,2)$ hierarchy.
 
 ## 3. Exact matching/four-flow formulation
 
-A fixed support coordinate and a fixed root label have different inverse images.
+A fixed support-coordinate inverse image is an even support. A fixed root-label inverse image is a matching.
 
-- A fixed **support-coordinate** inverse image is an even support: locally the coordinate occurs zero or two times.
-- A fixed **root-label** inverse image is a matching: a target triangle contains a given target edge at most once.
-
-The previous compressed statement that a distinguished support coordinate itself gives a matching was false.
-
-Let $W\cong\mathbf F_2^2$. An exact matching/four-flow datum consists of:
+An exact matching/four-flow datum consists of:
 
 1. even supports $B,D$;
-2. a matching
+2. a matching $M=B\cap D$;
+3. a nowhere-zero $\mathbf F_2^2$-flow on $G-M$.
+
+### Theorem 3.1
+
+$G$ has an indexed five-support even double cover if and only if it has exact data $(B,D,M,w)$.
+
+Equivalently, replace $D$ by even $M$-endpoint parity in every component of $G-B$:
+
+$$
+|M\cap\delta_G(K)|\equiv0\pmod2.
+$$
+
+Bare matching plus four-flow is insufficient.
+
+## 4. Complete quadratic witness
+
+Define the linear isomorphism
+
+$$
+\Phi(b,d,x,y)
+=(b,d,b+d+y,b+d+x,b+d+x+y)
+$$
+
+from $\mathbf F_2^4$ to $H_5$. Direct expansion gives
+
+$$
+q_5(\Phi(b,d,x,y))=bd+x+y+xy.
+$$
+
+### Theorem 4.1 — quadratic cycle equation
+
+$G$ has five indexed even supports if and only if there are cycle words
+
+$$
+b,d,x,y\in\mathcal C(G)
+$$
+
+such that
+
+$$
+\boxed{b*d=(\mathbf1+x)*(\mathbf1+y).}
+$$
+
+The five supports are the five coordinate words of $\Phi(b,d,x,y)$. This is a complete graph-level witness, not merely an obstruction equation.
+
+## 5. Exact cographic formulation
+
+A cycle-continuous edge map in this corpus is a function
+
+$$
+\phi:E(G)\to E(K_5)
+$$
+
+such that the inverse image of every cut of $K_5$, equivalently every binary cycle of $M^*(K_5)$, is a binary cycle of $G$.
+
+### Theorem 5.1
+
+Five indexed even supports are equivalent to such a cycle-continuous edge map.
+
+- the target label of a source edge is the pair of support indices containing it;
+- the support $F_i$ is the inverse image of the target star $\delta_{K_5}(i)$.
+
+No strong-map, quotient, embedding, injectivity, or surjectivity property is implied.
+
+## 6. Fixed Fano flow and plane
+
+Fix a nowhere-zero Fano flow $f$ and a plane $W$. Let $G_W$ be the subgraph of $W$-valued edges. For each component $K$ of $G_W$, the four outside-colour cut parities are equal; denote the common bit by $\chi_W(K)$.
+
+For fixed $(f,W)$, the following are equivalent:
+
+1. a global five-coordinate affine slice;
+2. the distinguished even support;
+3. the matching endpoint $T$-join condition;
+4. vanishing of one or all outside-colour cut parities;
+5. Eulerian outside-colour classes after contraction;
+6. vanishing of the local affine component obstruction.
+
+For fixed $f$, factorable success means
+
+$$
+\exists W,\qquad \mathfrak O_f(W)=\varnothing.
+$$
+
+A prescribed flow may fail without the graph failing.
+
+## 7. Singular-line and Schur resolution
+
+Let $(H,q)$ be a four-dimensional minus-type space, let $k$ be a nonzero singular vector, and fix a quotient Fano flow in
+
+$$
+\Gamma=H/\langle k\rangle.
+$$
+
+The following are equivalent for the retained fixed data:
+
+1. an anisotropic $H$-flow lift;
+2. vanishing component sums of the kernel-line lift defect;
+3. the fixed-plane colour-cut condition;
+4. existence of the eliminated cycle word $d$;
+5. after contracting the $b=0$ components,
    $$
-   M=B\cap D;
+   x*y\in\mathcal C(Q_b).
    $$
-3. a nowhere-zero $W$-flow on $G-M$.
 
-### Theorem 3.1 — exact matching/four-flow equivalence
+When nonempty, the lift set is a torsor under the cycle space of the plane subgraph.
 
-$G$ has an indexed five-support even double cover if and only if it has exact data $(B,D,M,w)$ as above.
+The Schur boundary word alone is not a five-support witness. The quotient flow, kernel or plane, quotient graph, and a primal solution must remain recoverable.
 
-The support $D$ can be removed from the data only by replacing it with the exact finite $T$-join condition.
+## 8. Stress and Fourier scope
 
-### Corollary 3.2 — component form
+Relative stresses are the dual linear dependencies of a selected fibre-evaluation code. They give an exact Fredholm criterion for a prescribed target.
 
-$G$ has an indexed five-support even double cover if and only if there exist:
-
-1. an even support $B$;
-2. a matching $M\subseteq B$;
-3. a nowhere-zero $\mathbf F_2^2$-flow on $G-M$;
-4. even $M$-endpoint parity in every component of $G-B$.
-
-Equivalently,
+For an allowed set $A$ in a fixed evaluation space,
 
 $$
-|M\cap\delta_G(K)|\equiv0\pmod2
+|\mathcal C_F\cap A|
+=
+\frac{|\mathcal C_F|}{|Q_F|}
+\sum_{y\in\mathcal C_F^\perp}\widehat{\mathbf1_A}(y).
 $$
 
-for every component $K$ of $G-B$.
+A positive count proves existence in the fixed orbit, but a full witness still requires a codeword and primal preimage. A zero count gives aggregate spectral cancellation and need not produce one separating stress.
 
-Bare matching plus four-flow is insufficient: it forgets the root-fibre or boundary datum required for reconstruction.
+## 9. Correction of the universal root module
 
-## 4. Fixed Fano flow and fixed plane
+The retired packet `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` claimed a canonical $2r$-dimensional model for the complete graph on $2^r$ support points. The claim is false for every $r\ge4$, and its displayed evaluation formula is type-invalid without a chosen self-duality.
 
-Now fix both a nowhere-zero Fano flow $f$ and a plane $W\leq\Gamma$. Choose $a\notin W$ and write
-
-$$
-f=w+ba,
-\qquad
-B_W=\operatorname{supp}b=\{e:f(e)\notin W\}.
-$$
-
-Let
+For any even set $I$ of cardinality $q$, additive anisotropic roots satisfying the triangle law require
 
 $$
-G_W=G-B_W.
+\boxed{\dim V\ge q-2.}
 $$
 
-For each outside colour $c\in\Gamma\setminus W$, put
+The correct universal module is
 
 $$
-M_c=\{e:f(e)=c\}.
+\overline E_I
+=
+\left\{z\in\mathbf F_2^I:\sum_i z_i=0\right\}/\langle\mathbf1_I\rangle,
 $$
 
-Each $M_c$ is a matching. If $K$ is a component of $G_W$, define
+with quadratic form $q_I([z])=\operatorname{wt}(z)/2\pmod2$ and roots $[\varepsilon_a+\varepsilon_b]$.
 
-$$
-n_c(K)=|M_c\cap\delta_G(K)|\pmod2.
-$$
+For eight supports, $q-2=6=2\cdot3$, giving the exceptional $O^+(6,2)$ model. There is no universal $O^+(2r,2)$ tower.
 
-The four outside-colour parities are equal; denote their common value by $\chi_W(K)$.
+## 10. Relation to the full fixed-lift surface object
 
-### Theorem 4.1 — fixed-$(f,W)$ criterion
-
-For the fixed pair $(f,W)$, the following are equivalent:
-
-1. a global five-coordinate affine slice above $(f,W)$;
-2. an even support $D$ with
-   $$
-   B_W\cap D=M_a;
-   $$
-3. even $M_a$-endpoint parity in every component of $G_W$;
-4. $n_a(K)=0$ for every component;
-5. $n_c(K)=0$ for every outside colour and every component;
-6. Eulerian outside-colour classes after contracting the components of $G_W$;
-7. vanishing of the local affine component obstruction.
-
-These are equivalent presentations of one fixed-data obstruction.
-
-## 5. Fixed flow and graph-level quantifiers
-
-For fixed $f$, define
-
-$$
-\mathfrak O_f(W)=\{K\in\pi_0(G_W):\chi_W(K)=1\}.
-$$
-
-### Theorem 5.1 — fixed-flow factorable criterion
-
-The prescribed Fano flow $f$ admits a globally point-index-factorable five-coordinate lift if and only if
-
-$$
-\exists W\leq\Gamma,
-\qquad
-\dim W=2,
-\qquad
-\mathfrak O_f(W)=\varnothing.
-$$
-
-This may fail for one fixed flow. A finite fixed-flow obstruction is not a graph-level counterexample because another Fano flow may succeed.
-
-### Theorem 5.2 — graph-level existential form
-
-$G$ has an indexed five-support even double cover if and only if there exist a nowhere-zero Fano flow $f$ and a plane $W$ such that
-
-$$
-\mathfrak O_f(W)=\varnothing.
-$$
-
-The existential quantifier on $f$ is load-bearing.
-
-## 6. Relation to the full fixed-lift surface object
-
-The fixed-flow criterion above concerns one global five-point subset of the point-index torsor. It is therefore a **global-index-factorable** route.
-
-A fixed compatible root lift $g$ has a finer object: its individual support-cycle face components form the vertices of the full dual triangulation $T_g$. A map
+A fixed compatible root lift $g$ has the full dual triangulation $T_g$. A map
 
 $$
 T_g^{(1)}\to\mathscr A_5
 $$
 
-may relabel different components carrying the same old support index independently. This is strictly more general than one global point-index slice for the same fixed data.
+classifies componentwise compression of that same embedding. It is more general than one global point-index slice for the same fixed data.
 
-At graph level, any successful fixed-lift route gives a five-support cover, which can then be re-encoded by some existential Fano-flow/plane presentation. That presentation need not be the original fixed flow or lift.
+An external root flow integrates on a prescribed dual only when all dual-cycle holonomies vanish. The old-colour quotient $J_g$ classifies only fibre-constant factorable maps.
 
-See [`b1-object-quantifier-and-scope.md`](b1-object-quantifier-and-scope.md) and [`surfaces-and-halfcube.md`](surfaces-and-halfcube.md).
+## 11. Reliability boundary
 
-## 7. Strong sufficient templates
+The exact B1 and B2 authorial dossiers are retained under `proof-development/`. Programme B2 is complete for the stated witness hierarchy and orthogonal correction.
 
-Several useful routes sit inside the exact criteria.
-
-- If all values of $f$ lie in one plane $W$, then the profile is empty. This is the nowhere-zero $\mathbf F_2^2$ or Tait sector.
-- If the contracted outside-colour classes are Eulerian, the fixed-plane criterion holds.
-- Unused root-label patterns and affine-plane residue tests can give factorable compression.
-
-These are sufficient templates. They are not a replacement for the full fixed-lift surface criterion.
-
-## 8. Boundary with Programme B2
-
-Programme B1 closes:
-
-- five supports $\leftrightarrow$ root flow $\leftrightarrow$ $K_5$ triangles;
-- exact matching/four-flow data;
-- fixed-flow/fixed-plane component parity;
-- the graph-level existential Fano-flow/plane form.
-
-It does **not** yet promote all cographic, quadratic, Schur, singular, orthogonal, or Fourier/stress presentations into one unconditional equivalence package. Programme B2 must classify each of those arrows as a full witness equivalence, fixed-data equivalence, quotient with lost lift data, dual obstruction, or evidence.
-
-## 9. Reliability boundary
-
-The B1 statements above are complete authorial proofs at the immutable checkpoint
-
-`778b09ac8260192e022f512f24cdef1d04871f37`.
-
-They are not independently audited or end-to-end Lean verified. Exact finite fixed-flow certificates remain finite evidence in their stated scope. The global five-support theorem remains open. No manuscript, publication, release, arXiv, DOI, or priority status is created by curation.
+It is not independently audited or end-to-end Lean verified. The global five-support theorem remains open. No manuscript, publication, release, arXiv, DOI, novelty, or priority status is created by curation.
