@@ -1,131 +1,149 @@
 # AffineCDC current mathematical state
 
-## 1. Complete Cycle Double Cover line
+## 1. Complete CDC line
 
-Programme A supplies a complete authorial paper-proof of:
+Programme A supplies a complete authorial paper-proof:
 
 > Every multigraph with finite active edge set and no singleton cut has a finite circuit double cover.
 
-The fixed Audit A candidate remains
+Fixed Audit A candidate:
 
 `curation/affine-cdc-programme-a-v1@68715fb29bb4b6555e2bc3e089603c5390d01566`.
 
-The controlling proof remains under [`complete-cdc/`](complete-cdc/). Programme B1 and B2 descendants do not modify that candidate or its audit status.
+The B3–B8 intake does not modify that branch or its assurance status.
 
-## 2. Programme B1 object and quantifier layer
+## 2. Five-support object and witness hierarchy
 
-Exact immutable B1 source:
+For finite loopless cubic multigraphs, five indexed even supports are equivalent to:
 
-`proof-development/affine-cdc-rigour-v1@778b09ac8260192e022f512f24cdef1d04871f37`.
+- `R_5` root flows;
+- `K_5` triangle labellings;
+- exact matching/four-flow data;
+- existential Fano-flow/plane data;
+- existential cycle-face surfaces with a full-dual map to `\mathscr A_5`;
+- anisotropic `O^-(4,2)` flows;
+- quadratic cycle solutions;
+- cographic cycle-continuous edge maps.
 
-For a finite loopless cubic multigraph, graph-level five-support existence is equivalent to:
+Singular/Schur formulations are fixed-data criteria. Stress/Fourier are dual solvability/counting layers. The false universal `2r` orthogonal theorem remains superseded by the `q-2` deleted-permutation-module theorem.
 
-- an $R_5$-valued flow;
-- a $K_5$-triangle edge labelling;
-- exact matching/four-flow data $(B,D,M,w)$;
-- the component $T$-join formulation;
-- existential Fano-flow/plane data with empty obstruction profile;
-- an existential cycle-face embedding whose full dual maps to the even half-cube.
+## 3. B3 target layer
 
-B1 separately controls fixed $(f,W)$, fixed $f$, fixed lift, prescribed-dual holonomy, and old-colour quotient scopes.
-
-## 3. Programme B2 witness hierarchy
-
-Exact immutable B2 source:
-
-`proof-development/affine-cdc-rigour-v1@d62974704d6dac77aaa00275a595fedf7f70cfd2`.
-
-The complete graph-level witness box is now:
+The active target hierarchy is
 
 $$
-\boxed{
-\begin{array}{c}
-\text{five indexed supports}\\
-\Updownarrow\\
-R_5\text{-valued flow}\\
-\Updownarrow\\
-K_5\text{-triangle labelling}\\
-\Updownarrow\\
-O^-(4,2)\text{ anisotropic flow}\\
-\Updownarrow\\
-\exists(b,d,x,y)\in\mathcal C(G)^4:\ b*d=(\mathbf1+x)*(\mathbf1+y)\\
-\Updownarrow\\
-M(G)\to M^*(K_5)\text{ cycle-continuous edge map}.
-\end{array}}
+J_g\to\mathscr A_5
+\Longrightarrow
+T_g^{(1)}\to\mathscr A_5
+\Longrightarrow
+\text{five-support cover}.
 $$
 
-The cographic map is an arbitrary ground-set map whose inverse image sends every target binary cycle, equivalently every cut of $K_5$, to a source binary cycle. No strong-map, quotient, embedding, injectivity, or surjectivity property is implied.
+`J_g` is only the old-colour-factorable quotient. B3 integrates the exact common-link and capacity theorems, the exact eight-vertex factorable classification, unused-matching/core theory, and the conditional flower full-dual obstruction.
 
-## 4. Fixed-data and dual boundaries
-
-For a fixed singular quotient, the following are equivalent only with the quotient flow, singular line or plane, quotient graph, and lift torsor retained:
-
-- anisotropic lifting;
-- vanishing component lift defect;
-- fixed-plane colour-cut obstruction;
-- existence of the eliminated cycle word $d$;
-- the Schur condition $x*y\in\mathcal C(Q_b)$.
-
-A Schur boundary word alone is not a five-support witness.
-
-Relative stresses give an exact Fredholm criterion for one prescribed target. Fourier gives an exact count of allowed assignments in one fixed affine orbit. Neither layer alone is a source witness:
-
-- positive Fourier count proves existence but not an exhibited lift;
-- an explicit lift still requires a codeword and primal preimage;
-- zero count gives aggregate spectral cancellation and need not yield one separating stress.
-
-## 5. Orthogonal mathematical correction
-
-The retired packet `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` contains a false theorem. Its displayed evaluation map is type-invalid without a chosen self-duality, and no $2r$-dimensional model can realize all additive roots of $K_{2^r}$ for $r\ge4$.
-
-Every additive anisotropic representation of $K_q$ satisfying triangle addition obeys
+Matching-orbit display correction:
 
 $$
-\dim V\ge q-2.
+\{01,23,45\}
 $$
 
-The correct universal module is the deleted permutation module
+is a valid all-parallel representative; orbit sizes `28,168,224` are unchanged.
+
+## 4. B4 motion layer
+
+- fixed-flow lifts form an `H_f^0` torsor;
+- the reduced gauge code is `H_f^0/\Gamma^{\pi_0(G)}`;
+- gauge bits are accessible partial Petrials;
+- one horizontal edge is one connected-cycle switch;
+- disconnected cycle words give commuting paths;
+- a support pivot is one special connected switch with a fixed uncoloured embedding and one explicit new lift;
+- the new fibre must be recomputed;
+- internal correction is a composite fixed-quotient linear problem;
+- external correction is quotient reslicing.
+
+The `7737` and `2801` laboratory populations remain separate composite-endpoint and connected-neighbour counts.
+
+## 5. B5 interface layer
+
+Theorem-level:
+
+- cubic local law;
+- cyclic three-cut gluing;
+- ten four-pole states and `640` ordered assignments;
+- exact profile-intersection gluing;
+- cap forcing;
+- Kempe path-pairing alignment;
+- routing weights;
+- uniform-routing elimination.
+
+Open:
+
+- full-cap containment;
+- realization/elimination of residual mismatch kernels;
+- Type T serialization;
+- Type H common-witness/composition.
+
+## 6. B6 correction and retained theorems
+
+Retained unconditionally:
+
+- individual-loop holonomy and cyclic norm;
+- genuine path-family switch flow;
+- root-fibre section problem;
+- root lifting iff Tait resolution;
+- Type H soluble zero-norm escape;
+- DDD atom triality and unique bad route;
+- local `K_6`/Petersen geometry when a defect strip is independently supplied.
+
+Corrected:
+
+- BBD simultaneous common origin is conditional on `AC-RL-BBD-GROUPOID-CLOSURE`;
+- the nontrivial defect-minimal forest is removed from the active theorem layer pending `AC-RL-BBD-VARIATION-SLICE`.
+
+## 7. B7 rank and curvature
+
+- rank one is impossible;
+- rank two is a Tait/root-triangle escape;
+- full rank has an exact flat/nonflat curvature dichotomy;
+- flatness gives an eight-state affine potential;
+- nonflatness gives a common scalar-sheet cut with odd terminal parity.
+
+The scalar-sheet cut is not yet a source graph cut, and the potential is not yet a bounded interface.
+
+Open returns:
+
+- `AC-RL-TYPE-T-SERIALISATION`;
+- `AC-RL-FLAT-POTENTIAL-INTERFACE`;
+- `AC-RL-COMMON-CUT-LOCALISATION`;
+- `AC-RL-TYPE-H-COMMON-WITNESS`.
+
+Together with the two BBD gaps, six exact AC-RL obligations control the frontier.
+
+## 8. B8 assurance
+
+Finite claims are visibly classified as `F-PROVED`, `F-CERT-PUBLIC`, `F-CERT-PRIVATE`, `F-CENSUS`, `CODE-PARTIAL`, or `AFFECTED`.
+
+B8 is assurance normalization, not independent review or a reproducibility upgrade.
+
+## 9. Global status
+
+The global five-support theorem remains open. Programme B9/global assembly remains blocked on physical localization and composition:
 
 $$
-\overline E_I
-=
-\left\{z\in\mathbf F_2^I:\sum_i z_i=0\right\}/\langle\mathbf1_I\rangle,
+\text{persistent bad data}
+\Longrightarrow
+\text{good escape or strict source progress}.
 $$
 
-of dimension $q-2$, with roots $[\varepsilon_a+\varepsilon_b]$.
+## 10. Exact B3–B8 controls
 
-The eight-support $O^+(6,2)$ model is exceptional because $8-2=6$. It is not the first member of a universal $O^+(2r,2)$ hierarchy. The false packet is retained only as `SUPERSEDED / FALSE THEOREM / HISTORICAL PROVENANCE`.
+- integration map: `PROGRAMME_B3_B8_INTEGRATION_MAP.md`;
+- unit states and gaps: `PROGRAMME_B3_B8_STATUS_AND_GAPS.md`;
+- certificate assurance: `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md`;
+- intake manifest: `PROGRAMME_B3_B8_INTEGRATION_MANIFEST.md`.
 
-## 6. B1 scope corrections retained
+## 11. Assurance state
 
-1. A support-coordinate inverse image is even; a root-label inverse image is a matching.
-2. Bare matching plus four-flow is insufficient without the second even support or component $T$-join datum.
-3. The fixed-$g$ half-cube biconditional concerns componentwise compression of the same embedding.
-4. An external root flow integrates on a prescribed dual only when all dual cycle holonomies vanish.
-5. $J_g$ classifies only old-colour-factorable compression.
-6. Singleton words require an odd translation when the target is the even half-cube.
+B3–B7 are Curator-integrated authorial theorem/correction/frontier layers in their stated scopes. B8 is Curator-integrated assurance normalization. None has received dedicated independent audit or end-to-end Lean verification through this intake.
 
-## 7. B3+ exclusion and frontier
-
-This candidate consumes no B3 target correction, B4 reconfiguration, B5 cut/routing, or later PDL delta. Those remain separate immutable-intake units.
-
-The global five-support theorem remains open. The wider sharp endpoint remains graph-level localization and composition of full-rank route-locked defects.
-
-## 8. Assurance state
-
-Programme B2 is:
-
-`CURATOR-INTEGRATED / AUTHORIAL B2 PROOF LAYER COMPLETE / MATHEMATICAL CORRECTION INSTALLED`.
-
-Programme B1 remains integrated in its prior scope. Neither B1 nor B2 has received dedicated independent audit or end-to-end Lean verification. No manuscript, peer-review, publication, release, arXiv, DOI, novelty, or timestamp status is created.
-
-## 9. Reading order
-
-- complete theorem: [`complete-cdc/README.md`](complete-cdc/README.md);
-- B1 object and quantifiers: [`five-support/b1-object-quantifier-and-scope.md`](five-support/b1-object-quantifier-and-scope.md);
-- B2 witness hierarchy: [`five-support/b2-formulation-and-witness-hierarchy.md`](five-support/b2-formulation-and-witness-hierarchy.md);
-- B2 exact map: [`PROGRAMME_B2_INTEGRATION_MAP.md`](PROGRAMME_B2_INTEGRATION_MAP.md);
-- B2 witness scope: [`PROGRAMME_B2_WITNESS_SCOPE.md`](PROGRAMME_B2_WITNESS_SCOPE.md);
-- theorem DAG: [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md);
-- architecture: [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md);
-- assurance: [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
+No manuscript, peer-review, publication, release, arXiv, DOI, novelty, or timestamp status is created.

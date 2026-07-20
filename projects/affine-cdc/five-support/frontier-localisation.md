@@ -1,289 +1,201 @@
-# The current five-support frontier: localisation and composition
+# The corrected five-support frontier: exact localization and composition gaps
 
-## 1. What is closed and what is not
+## 1. Closed layers
 
-The public source surface now contains complete theorem blocks for:
+The integrated corpus contains authorial proof layers for:
 
-- existence and structure of compatible eight-support root lifts;
-- exact global formulations of five-support covers;
-- the fixed-plane lifting obstruction;
-- the root-lift/surface/dual correspondence;
-- the componentwise half-cube criterion;
-- large classes of target links and marked obstruction cores;
-- gauge/Petrial occurrence arrangements;
-- three-cut gluing and the full ten-state four-edge interface;
-- routing reduction to Type T and Type H;
-- Tait elimination of the soluble Type H branch;
-- BBD simultaneous linearisation and defect geometry;
-- atom route-lock, rank-two escape, and the full-rank curvature dichotomy.
+- five-support witness equivalences and fixed-data quantifiers;
+- target links, exact half-cube capacity, and factorable eight-colour classification;
+- vertical gauge/Petrial mechanics and horizontal connected-cycle mechanics;
+- three-cut gluing, four-pole states, cap forcing, routing coordinates, and uniform-routing elimination;
+- individual-loop holonomy, root-fibre sections, and Type H Tait escape;
+- DDD atom triality and unique bad route;
+- rank-one impossibility, rank-two Tait escape, and full-rank curvature duality;
+- finite-certificate assurance normalization.
 
-The missing result is not another local identity or a larger census. It is a strict **localisation/composition theorem** converting the residual transfer data into a smaller graph or an escaping state.
+The global five-support theorem remains open.
 
-## 2. The global quantifier
+## 2. Corrections controlling the frontier
 
-For a bridgeless cubic graph $G$, let $\mathfrak B(G)$ be the set of nowhere-zero Fano flows whose whole compatible root-lift fibre is bad.
+Two old BBD premises are not active theorems.
 
-The global five-support statement is equivalent to
+1. Physical BBD loops are not yet proved to close as one root-preserving reconfiguration groupoid. Hence simultaneous common origin is conditional on `AC-RL-BBD-GROUPOID-CLOSURE`.
+2. The fixed-terminal variation domain contains the original root cover as a zero-defect competitor. Hence the nontrivial defect-minimal forest is removed pending `AC-RL-BBD-VARIATION-SLICE`.
 
-$$
-\boxed{
-\mathfrak B(G)
-e\operatorname{NZFlow}(G;\mathbf F_2^3)
-}
-$$
+No frontier argument may use simultaneous BBD origin or a canonical defect forest without discharging these exact gaps.
 
-for every bridgeless cubic $G$.
+## 3. Global quantifier
 
-A proof may succeed by either route:
+For a bridgeless cubic graph `G`, let `\mathfrak B(G)` be the set of nowhere-zero Fano flows whose entire compatible-lift fibre is bad.
 
-1. **escape:** find one Fano flow and one gauge state with $T_g^{(1)}\to\mathscr A_5$;
-2. **decomposition:** show that any horizontally and vertically persistent bad region forces a graph interface across which smaller five-support covers glue.
-
-The present corpus has not established either route in full generality.
-
-## 3. The finite-certificate/global-composition gap
-
-For a fixed flow and a finite marked obstruction library $\mathscr L$, the bad locus is a finite affine arrangement
+Graph-level failure would require
 
 $$
-\operatorname{Bad}_f(\mathscr L)
-=
-\bigcup_C A_C
-\subseteq B_f.
+\mathfrak B(G)=\operatorname{NZFlow}(G;\mathbf F_2^3).
 $$
 
-This layer is finite and explicit.
+A proof can proceed by:
 
-Across arbitrary compatible dual triangulations, however, the obstruction library may not yet be complete. Dominating-clique ranks two through five are classified, but rank-one and non-dominating target obstructions remain.
+- **escape:** find one flow and one compatible lift whose full dual maps to `\mathscr A_5`;
+- **decomposition:** turn persistent bad data into a smaller graph, bounded replaceable interface, or exact gluing factor.
 
-Even if a complete finite or structured library were known, a second theorem would still be needed: either its occurrence arrangement fails to cover some fibre, or a minimal irredundant cover has coherent reserves/cuts forcing decomposition.
+A bad lift or bad fixed-flow fibre is not a graph-level obstruction.
 
-Thus two distinct bridges remain:
+## 4. Target completeness versus source progress
 
-1. **target completeness:** compress all non-homomorphisms into a controlled certificate language;
-2. **source composition:** turn persistent certificates into strict graph progress.
+The target side is exact for:
 
-## 4. The four-pole frontier
+- dominating-clique ranks two through five;
+- the eight-vertex old-colour-factorable quotient;
+- several explicit full-dual obstructions conditional on certificate data.
 
-After three-cut reduction, a cyclic four-edge cut is governed by two shore profiles in the ten-state boundary alphabet.
+It is not complete for arbitrary full dual triangulations. Rank-one common links and non-dominating obstruction families remain.
 
-Cap forcing and Kempe closure reduce every abstract disjoint pair to deterministic routing. Uniform routing is eliminated. The residual automata are:
+Even a complete target certificate library would not close the theorem. A second source theorem must show that persistent certificate arrangements either leave a good state or force strict graph progress.
 
-$$
-P_5\mid P_5
-\qquad\text{or}\qquad
-P_4\mid C_3.
-$$
+## 5. B4 global transport gap
 
-### Type T target
+B4 proves the mechanics but not global escape. Horizontal switches alter the flow, gauge code, lift fibre, surface, and obstruction library simultaneously.
 
-Prove that the acyclic unique-routing policy forces nested terminal linkages, a serial decomposition, a smaller separator, or a bounded replacement.
-
-The theorem must provide an explicit decreasing measure, such as vertex number, cyclic-cut complexity, or a bounded transfer-state factor.
-
-### Type H target
-
-The soluble zero-norm branch is eliminated by Tait escape. The remaining data must be converted into strict progress:
-
-- a nonzero ambient translation;
-- a zero edge or empty local relation;
-- a nonspanning middle path or uncovered edge;
-- a nontrivial root-fibre holonomy;
-- after BBD synthesis, a zero network or co-root defect structure.
-
-The exact physical path-family signature is
+The missing global statement has the form
 
 $$
-(d_\lambda,U_\lambda,X_\lambda),
-$$
-
-where $d_\lambda$ is the ambient norm defect, $U_\lambda$ the uncovered-edge set in the full-rank path-cover test, and $X_\lambda$ the missed-vertex set in the rank-one test.
-
-The family theorem still needed is:
-
-> if every physical lift is obstructed, all obstruction signatures share one geometric witness that yields decomposition or orbit escape.
-
-## 5. Defect-forest pruning
-
-The canonical or energy-minimal $E_5$ flow has a defect forest with equality leaves, one-factor leaves, co-root paths, zero branches, and all-zero branches.
-
-Each defect-tree component is induced and has boundary $k+2$ when it has $k$ vertices. Co-root strips carry an $L(\mathrm{Petersen})$ state walk and a side-root output word.
-
-The required pruning theorem should prove one of:
-
-1. an equality leaf or zero network gives a serial four-pole factor or bounded replacement;
-2. a co-root strip endpoint admits one of its two Petersen root resolutions in a composition-safe manner;
-3. a repeated enriched Petersen state yields a replaceable segment;
-4. failure of all reductions produces the unique DDD $D_8$ affine class on a closed complementary-$K_4$ cycle.
-
-State repetition without matching side semantics is insufficient.
-
-## 6. The route-locked atom endpoint
-
-A nondegenerate co-root atom has two crossed root resolutions. If one full challenge takes a crossed route, the atom becomes root-valued. If both resolutions are blocked, every challenge uses the original atom pairing and the safe orbit is $K_{2,4}$.
-
-At a locked $C$-state, quotienting produces a full-rank-or-rank-two $\mathbf F_2^3$ flow with all terminal values equal.
-
-The rank-two sector is closed by Tait escape. Therefore the sharp atom endpoint has two full-rank branches.
-
-### 6.1 Nonflat branch
-
-Choose a support-minimal dual witness
-
-$$
-\eta\subseteq E_g
-$$
-
-for $\Omega(c)\ne0$. It is simultaneously a cut in all four scalar circuit partitions and carries odd terminal parity.
-
-The required localisation theorem is:
-
-$$
-\boxed{
-\eta
+\text{horizontally closed component of wholly bad flows}
 \Longrightarrow
-\begin{cases}
-\text{bounded DDD/Petersen atom or factor},\\
-\text{smaller cyclic separator},\\
-\text{reducible transition interval or matroid two-sum},\\
-\text{physical }D_8\text{ class},
-\end{cases}
-}
+\text{good boundary edge or coherent decomposition certificate}.
 $$
 
-or a precise counterexample showing that the statement must be weakened.
+Composite linear switch images do not settle the connected-neighbour problem.
 
-Unproved points include:
+## 6. B5 Type T branch
 
-- $\eta$ need not yet be a cut in the underlying four-pole;
-- no universal size bound is known;
-- the odd terminal bit has not yet been canonically identified with the physical DDD cohomology class.
+After cap forcing and uniform-routing elimination, one residual mechanism is the acyclic Type T routing policy.
 
-### 6.2 Flat branch
+Exact open return:
 
-If $\Omega(c)=0$, there is an eight-state potential
+`AC-RL-TYPE-T-SERIALISATION`.
+
+Required output: nested terminal linkages, serial decomposition, smaller separator, bounded replacement, or another explicit decreasing/gluing mechanism. A finite path-shaped routing automaton alone is not source decomposition.
+
+## 7. B6 Type H family branch
+
+Individual zero-norm loops are understood, and the soluble root-admissible branch escapes by a Tait resolution.
+
+A family-level theorem is still required when every physical lift is obstructed. The obstruction signatures must share one geometric witness that survives changes of loop, route, and lift.
+
+Exact open return:
+
+`AC-RL-TYPE-H-COMMON-WITNESS`.
+
+This gap must not be replaced by an unproved simultaneous BBD origin.
+
+## 8. B7 nonflat branch
+
+For full-rank route-lock with `\Omega(c)\ne0`, there is one terminal-colour edge set `\eta` that is a cut in all four scalar sheets and has odd terminal parity.
+
+Exact open return:
+
+`AC-RL-COMMON-CUT-LOCALISATION`.
+
+Required comparison theorem: convert the scalar-sheet object into one of:
+
+- a cut or bounded separator in the source four-pole;
+- a composition-safe DDD/Petersen atom or factor;
+- a reducible interval or matroid sum;
+- the physical `D_8` class;
+- a precise weakened statement if none of these is true.
+
+No size, connectedness, or source-cut theorem is currently proved.
+
+## 9. B7 flat branch
+
+For `\Omega(c)=0`, an eight-state affine potential exists with the exact edge law.
+
+Exact open return:
+
+`AC-RL-FLAT-POTENTIAL-INTERFACE`.
+
+Required output: finite transfer semantics, a smaller separator, repeated replaceable fibre, or bounded gluing state. A finite potential range is not itself a bounded interface because a potential fibre may contain unbounded source structure.
+
+## 10. B6 variation-space gap
+
+Exact open return:
+
+`AC-RL-BBD-VARIATION-SLICE`.
+
+A future defect-pruning programme must first define a nontrivial, holonomy-compatible variation space that:
+
+- excludes the original root cover as a trivial zero-defect minimizer or otherwise changes the objective;
+- retains the legal variations used in any cycle inequalities;
+- is tied to a physically justified BBD or Type H structure.
+
+Only after that may a forest, strip, or pruning theorem re-enter the active layer.
+
+## 11. B6 groupoid-closure gap
+
+Exact open return:
+
+`AC-RL-BBD-GROUPOID-CLOSURE`.
+
+A future theorem must show that the relevant physical loops compose, invert, and compare basepoints inside a root-preserving reconfiguration groupoid. Abstract permutations and ambient affine actions are insufficient.
+
+## 12. Four-pole completion gap
+
+B5 leaves two exact source alternatives:
 
 $$
-p:V(Q)\to\mathbf F_2^3
-$$
-
-with
-
-$$
-p(u)+p(v)\in\{0,c(e)+g\}.
-$$
-
-Edges between distinct potential fibres have forced colours; same-fibre subgraphs may carry unbounded internal semantics.
-
-The needed theorem must extract a finite interface from the potential partition and prove either:
-
-- a proper split or smaller separator;
-- a replaceable repeated fibre;
-- a bounded transfer state under four-terminal gluing.
-
-Flatness is therefore structure, not yet solution.
-
-## 7. Horizontal escape or coherent bad-flow component
-
-The three calibrated laboratories show:
-
-- a graph may be easy while some fixed flows are hard;
-- a snark may have every Fano flow vertically soluble;
-- a graph may have bad flows that nevertheless have many one-step exits.
-
-The unresolved graph-level possibility is a horizontally closed component of wholly bad flows, or ultimately a graph for which every Fano flow is bad.
-
-A useful theorem form is:
-
-$$
-\boxed{
-\text{bad-flow component}
-\Longrightarrow
-\text{good boundary edge}
+\text{sufficient terminal-pair alignment}
 \quad\text{or}\quad
-\text{coherent decomposition certificate}.
-}
+\text{bounded four-pole decomposition}.
 $$
 
-The certificate must survive the fact that horizontal switches change the gauge code, the surface, and the obstruction library simultaneously.
+Open targets include:
 
-## 8. Full-cap and four-pole realizability
+- a full-cap-profile theorem;
+- realizability classification of residual Kempe-stable profiles;
+- conversion of Type T/H transfer data into strict replacement or gluing.
 
-The abstract four-edge state universe is closed, but realizability by arbitrary cubic four-poles is not.
+The small census supplies a lower bound and calibration only.
 
-Two concrete targets remain:
+## 13. Certificate boundary
 
-1. **full-cap-profile theorem:** every admissible shore contains one complete $\mathcal K_i$;
-2. **realizability classification:** determine which Kempe-stable abstract profiles occur beyond the small exhaustive census.
+Finite data may:
 
-A proof of the first theorem would close cyclic four-cut gluing. A counterexample would identify the first genuine large interface type and should be converted into transfer data rather than added as an isolated profile.
+- verify a finite object;
+- provide a counterexample;
+- serve as an explicit premise for a conditional theorem;
+- calibrate mechanisms.
 
-## 9. Target-side open boundary
+They may not supply any of the six open source implications above. In particular:
 
-The target theory is complete for dominating-clique rank at least two. The first unresolved link is rank one:
+- BBD monodromy tables do not prove groupoid closure;
+- local defect tables do not repair the vacuous variation domain;
+- `7737` composite endpoints do not prove connected escape;
+- small four-pole profiles do not prove the full-cap theorem;
+- scalar-sheet witnesses do not prove source localization.
 
-$$
-H\to L(K_5).
-$$
+## 14. Recommended dependency order
 
-More generally, compatible dual triangulations may contain non-dominating obstructions not covered by the current library. The flower $J_5$ shows that clique-only theory is insufficient.
+1. physical BBD groupoid closure or a replacement avoiding simultaneous origin;
+2. valid Type H variation/common-witness formulation;
+3. common-cut source localization;
+4. flat-potential finite interface;
+5. Type T serialization;
+6. four-pole composition and strict replacement;
+7. global horizontal theorem;
+8. target-library enlargement only where required by the source argument.
 
-The natural target programme is:
+The order may change if one route bypasses another, but no exact gap may be silently treated as closed.
 
-1. classify common-neighbour and iterated-link capacities;
-2. find structural certificates for non-homomorphism of closed triangulations;
-3. determine whether every compatible obstruction has a bounded marked certificate or a canonical decomposition.
+## 15. Current conclusion
 
-## 10. Secondary open programmes
-
-These are mathematically meaningful but not the current closure bottleneck.
-
-### 10.1 Planar Fano-line flattening
-
-A Tait colouring is a constant Fano line field. Cycle switches pivot local Fano lines. A monotone planar flattening theorem would offer a new Four Colour architecture, but no such theorem is presently known.
-
-### 10.2 Orientable good lifts
-
-The orientable locus is an affine slice of the gauge torsor. An orientable five-support cover yields a nowhere-zero $\mathbf Z_5$ flow. Universal existence of an orientable good lift would imply a strong route to five-flow theory, but is not established and may be stronger than necessary.
-
-### 10.3 Coefficient holonomy
-
-Rainbow $S_5$ monodromy preserves no common affine $\mathbf F_5$ structure on support names. This obstructs canonical coefficient transport around the reconfiguration loop, not extraction of a five-flow from one final orientable cover.
-
-## 11. Recommended proof order
-
-The present dependencies suggest the following order.
-
-1. **Atom localisation:** identify the nonflat common-cut witness with a bounded source interface or the DDD class.
-2. **Flat interface:** extract finite transfer data from the eight-state potential.
-3. **Forest pruning:** combine atom resolution with the induced defect forest and Petersen transducer.
-4. **Four-pole composition:** express the resulting transfer data in the ten-state boundary language and prove strict replacement/gluing.
-5. **Horizontal theorem:** show that a persistent bad-flow component produces one of these bounded interfaces.
-6. **Target completeness:** enlarge the certificate library only where the source theorem requires it.
-
-This order follows the sharpest current endpoint. It avoids returning to broad census or superseded quotient-only classifications.
-
-## 12. Stop conditions for future consolidation
-
-A future theorem should not be promoted as closing the programme unless it supplies all of:
-
-- exact hypotheses and graph model;
-- a valid transfer from the local algebraic object to the original incidence graph;
-- a strictly decreasing parameter or an explicit gluing theorem;
-- compatibility with componentwise half-cube semantics;
-- no reliance on hidden private computation;
-- a clear separation from formal, independent-review, and publication status.
-
-## 13. Current conclusion
-
-The mathematical frontier is sharply localized but open:
+The corrected endpoint is:
 
 $$
 \boxed{
-\text{local universes are finite and largely classified;}
+\text{local target, motion, interface, holonomy, and curvature structures are largely classified;}
 \quad
-\text{global localisation and composition remain missing.}
-}
+\text{physical localization and composition remain open}.}
 $$
 
-No public source at checkpoint `dad218dd...` proves the global five-support cycle-double-cover statement.
+The six exact AC-RL returns are recorded in `PROGRAMME_B3_B8_STATUS_AND_GAPS.md`. Programme B9 or any global assembly remains blocked until the required source implications are supplied.

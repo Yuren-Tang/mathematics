@@ -1,75 +1,89 @@
 # Five-support strengthening
 
-This directory is the active mathematical corpus for the AffineCDC five-support programme. The global five-support theorem remains open.
+The global five-support theorem remains open. This directory is the active current-best mathematical corpus.
 
-Exact integrated proof-development checkpoints:
+## 1. Reading order
 
-- B1 object and quantifier layer: `778b09ac8260192e022f512f24cdef1d04871f37`;
-- B2 formulation and witness layer: `d62974704d6dac77aaa00275a595fedf7f70cfd2`.
+1. `b1-object-quantifier-and-scope.md` — root object, matching/four-flow, fixed-flow/fixed-lift quantifiers.
+2. `b2-formulation-and-witness-hierarchy.md` — anisotropic, quadratic, cographic, singular/Schur, stress/Fourier, orthogonal correction.
+3. `surfaces-and-halfcube.md` — full dual, old-colour quotient, target links, capacity, factorable cores.
+4. `gauge-and-reconfiguration.md` — vertical torsor, Petrials, connected switches, pivots, transport.
+5. `cuts-four-poles-and-routing.md` — cuts, ten-state interface, gluing, caps, pairing, routing.
+6. `holonomy-defects-and-atoms.md` — individual holonomy, BBD correction, DDD atoms, rank and curvature.
+7. `frontier-localisation.md` — six exact AC-RL gaps and the open composition endpoint.
+8. `finite-laboratories-and-certificates.md` — B8 assurance classes and corrected finite scope.
+9. `equivalent-formulations-and-proof-families.md` — alternative proof roles and implication boundaries.
 
-The public research checkpoint remains
+## 2. B3 target rules
 
-`research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`.
+- full dual: `T_g^{(1)}→𝒜₅`;
+- factorable quotient: `J_g→𝒜₅`;
+- `J_g` failure does not imply full-dual failure;
+- unused-root/core/ideal-pivot results are factorable unless separately stated;
+- common-link theorems apply to arbitrary target graphs;
+- the all-parallel matching representative is `{01,23,45}`.
 
-## Reading order
+## 3. B4 motion rules
 
-1. [`b1-object-quantifier-and-scope.md`](b1-object-quantifier-and-scope.md)  
-   Root object, matching/four-flow data, fixed-flow profiles, fixed-lift scope, prescribed-dual holonomy, quotient factorability, and half-cube parity.
+- vertical gauge motion preserves the flow and may change the surface;
+- one horizontal edge has one connected cycle as support;
+- disconnected switch support gives a commuting path;
+- a support pivot preserves the uncoloured embedding and supplies one new lift;
+- the new gauge fibre must be recomputed;
+- internal linear images classify composite endpoints;
+- external even-support reslicing also classifies composite endpoints;
+- connected adjacency is an additional support condition;
+- `7737` and `2801` are different certificate populations.
 
-2. [`b2-formulation-and-witness-hierarchy.md`](b2-formulation-and-witness-hierarchy.md)  
-   Full graph-level witnesses, fixed singular/Schur criteria, cographic terminology, stress/Fourier duality, and the corrected orthogonal root-module theorem.
+## 4. B5 interface rules
 
-3. [`root-flow-lifting.md`](root-flow-lifting.md)  
-   Narrative root-flow, anisotropic, quadratic, cographic, fixed-plane, singular, Schur, stress, and orthogonal route.
+- terminal labels are retained through gluing;
+- cap forcing proves profile intersection with every cap set, not full-cap containment;
+- abstract state transitions are separated from source terminal-path pairing;
+- four residual kernels, Type T/H policies, monodromies, and small censuses remain finite results;
+- the open source alternative is sufficient pairing alignment or bounded four-pole decomposition.
 
-4. [`surfaces-and-halfcube.md`](surfaces-and-halfcube.md)  
-   Cycle-face surfaces, full dual triangulations, prescribed-surface holonomy, componentwise half-cube compression, and the old-colour quotient subroute.
+## 5. B6/B7 correction rules
 
-5. [`gauge-and-reconfiguration.md`](gauge-and-reconfiguration.md)  
-   Gauge torsors, partial Petrials, support pivots, connected-cycle flow motion, switch laws, and two-level dynamics.
+- individual-loop holonomy is not simultaneous BBD group closure;
+- BBD simultaneous origin is conditional on `AC-RL-BBD-GROUPOID-CLOSURE`;
+- the nontrivial defect forest is not active pending `AC-RL-BBD-VARIATION-SLICE`;
+- DDD atom triality and unique bad route remain independent;
+- rank-two Tait escape and full-rank curvature are active;
+- scalar-sheet cuts are not source graph cuts without a comparison theorem;
+- finite potential range is not bounded interface semantics.
 
-6. [`cuts-four-poles-and-routing.md`](cuts-four-poles-and-routing.md)  
-   Three-cut gluing, four-edge states, cap forcing, Kempe pairing, routing weights, and Type T/Type H reduction.
+Exact localization returns:
 
-7. [`holonomy-defects-and-atoms.md`](holonomy-defects-and-atoms.md)  
-   Interior holonomy, Tait resolution, defect forests, Petersen transport, route-locked atoms, curvature, and flat potentials.
+- `AC-RL-TYPE-T-SERIALISATION`;
+- `AC-RL-FLAT-POTENTIAL-INTERFACE`;
+- `AC-RL-COMMON-CUT-LOCALISATION`;
+- `AC-RL-TYPE-H-COMMON-WITNESS`.
 
-8. [`frontier-localisation.md`](frontier-localisation.md)  
-   Localization/composition frontier.
+## 6. B8 assurance rules
 
-9. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md)  
-   Preferred proof families, exact witness classification, dual boundaries, sufficient templates, and preservation rules.
+Finite claims carry one of:
 
-10. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md)  
-    Exact finite computations, counterexamples, certificates, and evidentiary scope.
+- `F-PROVED`;
+- `F-CERT-PUBLIC`;
+- `F-CERT-PRIVATE`;
+- `F-CENSUS`;
+- `CODE-PARTIAL`;
+- `AFFECTED`.
 
-## B1 and B2 control surfaces
+Packet inclusion is not a reproducibility or independent-review upgrade.
 
-- [`../PROGRAMME_B1_INTEGRATION_MAP.md`](../PROGRAMME_B1_INTEGRATION_MAP.md);
-- [`../PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md`](../PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md);
-- [`../PROGRAMME_B2_INTEGRATION_MAP.md`](../PROGRAMME_B2_INTEGRATION_MAP.md);
-- [`../PROGRAMME_B2_WITNESS_SCOPE.md`](../PROGRAMME_B2_WITNESS_SCOPE.md);
-- [`../PROGRAMME_B2_INTEGRATION_MANIFEST.md`](../PROGRAMME_B2_INTEGRATION_MANIFEST.md).
+## 7. Exact controls
 
-The exact authorial dossiers remain under [`../proof-development/`](../proof-development/).
+- `../PROGRAMME_B3_B8_INTEGRATION_MAP.md`;
+- `../PROGRAMME_B3_B8_STATUS_AND_GAPS.md`;
+- `../PROGRAMME_B3_B8_ASSURANCE_LEDGER.md`;
+- `../PROGRAMME_B3_B8_INTEGRATION_MANIFEST.md`.
 
-## Controlling witness rules
+The exact dossiers remain under `../proof-development/` with source blob identity.
 
-- graph-level full witnesses retain an explicit reconstruction of the five supports;
-- singular quotient and Schur conditions are complete only with fixed quotient and lift data;
-- relative stresses are dual dependencies, not source witnesses;
-- Fourier gives an exact fixed-orbit count, not automatically an explicit witness or one separating stress;
-- the universal $2r$ orthogonal-root theorem is false and superseded;
-- the correct universal additive root module has dimension $q-2$;
-- the eight-support $O^+(6,2)$ model is exceptional;
-- B1 fixed-flow, fixed-lift, holonomy, factorability, and half-cube parity boundaries remain controlling.
+## 8. Historical recovery and assurance
 
-## Boundary with B3+
+The seventy-eight discovery-order packets remain recoverable through Git history. Current theorem scope and certificate classes are controlled by the integrated chapters and supersession/provenance ledgers.
 
-B2 does not consume B3 target corrections, B4 reconfiguration, B5 cut/routing, or later moving-branch material. Those require separate exact checkpoints and Curator intake.
-
-## Historical recovery and assurance
-
-The seventy-eight discovery-order packets remain recoverable through Git history. `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` is retained only as `SUPERSEDED / FALSE THEOREM / HISTORICAL PROVENANCE`.
-
-B1 and B2 integration records complete authorial proof-development mathematics in their stated scopes. It does not create independent-review, Lean, manuscript, peer-review, publication, release, arXiv, DOI, novelty, or timestamp status. See [`../FORMAL_STATUS.md`](../FORMAL_STATUS.md).
+B3–B7 curation is authorial mathematical integration; B8 is assurance normalization. Neither creates independent-review, Lean, manuscript, publication, release, arXiv, DOI, novelty, or timestamp status.

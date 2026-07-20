@@ -1,117 +1,112 @@
 # AffineCDC
 
-AffineCDC studies affine incidence geometry attached to nowhere-zero binary flows, its complete Cycle Double Cover consequence, and the stronger open problem of compressing compatible covers to five indexed supports.
-
-The active current-best surface is listed in [`ACTIVE_MATHEMATICAL_SURFACE.md`](ACTIVE_MATHEMATICAL_SURFACE.md).
+AffineCDC studies affine incidence geometry above nowhere-zero binary flows, its complete Cycle Double Cover consequence, and the stronger open problem of compressing compatible covers to five indexed supports.
 
 ## 1. Complete Cycle Double Cover theorem
 
-Programme A integrates a complete authorial paper-proof of:
+Programme A integrates a complete authorial paper-proof:
 
 > Every multigraph with finite active edge set and no singleton cut has a finite circuit double cover.
 
-The fixed Audit A candidate is
+Fixed Audit A candidate:
 
 `curation/affine-cdc-programme-a-v1@68715fb29bb4b6555e2bc3e089603c5390d01566`.
 
-Programme B1 and B2 candidates descend from that exact ref and do not modify it.
+Read `complete-cdc/README.md` and the three controlling Programme A chapters.
 
-Read the controlling Programme A proof under [`complete-cdc/`](complete-cdc/). The exact A0–A10 dossiers remain under [`proof-development/`](proof-development/) as provenance, audit, and repair surfaces.
+## 2. Five-support programme
 
-## 2. Programme B1 — object and quantifiers
+For finite loopless cubic multigraphs, five-support existence has exact root, triangle, matching/four-flow, Fano-plane, surface, anisotropic, quadratic, and cographic formulations. Singular/Schur criteria retain fixed data; stress/Fourier are dual/counting layers.
 
-Programme B1 closes:
+The global five-support theorem remains open.
 
-- five supports ↔ $R_5$ flow ↔ $K_5$ triangles;
-- exact matching/four-flow data;
-- fixed-$(f,W)$ component obstruction;
-- fixed-flow existential plane criterion;
-- root-lift/cycle-face-surface equivalence;
-- fixed-lift same-embedding full-dual criterion;
-- prescribed-dual holonomy;
-- strict old-colour quotient scope;
-- even-halfcube parity adapter.
+Preferred reading order:
 
-Preferred reading:
+1. `five-support/b1-object-quantifier-and-scope.md`;
+2. `five-support/b2-formulation-and-witness-hierarchy.md`;
+3. `five-support/surfaces-and-halfcube.md`;
+4. `five-support/gauge-and-reconfiguration.md`;
+5. `five-support/cuts-four-poles-and-routing.md`;
+6. `five-support/holonomy-defects-and-atoms.md`;
+7. `five-support/frontier-localisation.md`;
+8. `five-support/finite-laboratories-and-certificates.md`.
 
-- [`five-support/b1-object-quantifier-and-scope.md`](five-support/b1-object-quantifier-and-scope.md);
-- [`PROGRAMME_B1_INTEGRATION_MAP.md`](PROGRAMME_B1_INTEGRATION_MAP.md);
-- [`PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md`](PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md).
+## 3. Current B3–B8 integration
 
-## 3. Programme B2 — formulations and witness hierarchy
+Exact base:
 
-Programme B2 extends the complete graph-level witness box to:
+`curation/affine-cdc-programme-b2-v1@08b662ecc31848456b9904f4d5b85c3801d090a1`.
 
-$$
-\text{five supports}
-\Longleftrightarrow
-R_5\text{ flow}
-\Longleftrightarrow
-K_5\text{ triangles}
-\Longleftrightarrow
-O^-(4,2)\text{ anisotropic flow}
-\Longleftrightarrow
-\text{quadratic cycle solution}
-\Longleftrightarrow
-M(G)\to M^*(K_5)\text{ cycle-continuous edge map}.
-$$
+Exact B3–B8 source splice:
 
-It separately classifies:
+`4dadc7add4743d7da63e28d93806c8d76529c07b`.
 
-- singular and Schur descriptions as complete fixed-data lift criteria;
-- relative stresses as exact dual linear obstructions;
-- Fourier expansion as an exact fixed-orbit count with a separate primal-witness step.
+The integrated source checkpoints are:
 
-Preferred reading:
+- B3 `d806168bb579dbc13f267f44f631e07de909b706`;
+- B4 `345074690b7a8658c1208ae84f10d709f8b74bcf`;
+- B5 `274970ef9c56cafdbfceeed3c0cc08238d3dfd40`;
+- B6 `404f7511f16d1225e066a91842a57e2084943c72`;
+- B7 `164f7655f9ec7c0e0a73d49303cf66230fb26487`;
+- B8 `989cb002598fd91786029be201c2747c697bb476`.
 
-- [`five-support/b2-formulation-and-witness-hierarchy.md`](five-support/b2-formulation-and-witness-hierarchy.md);
-- [`PROGRAMME_B2_INTEGRATION_MAP.md`](PROGRAMME_B2_INTEGRATION_MAP.md);
-- [`PROGRAMME_B2_WITNESS_SCOPE.md`](PROGRAMME_B2_WITNESS_SCOPE.md).
+See:
 
-## 4. Orthogonal correction
+- `PROGRAMME_B3_B8_INTEGRATION_MAP.md`;
+- `PROGRAMME_B3_B8_STATUS_AND_GAPS.md`;
+- `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md`;
+- `PROGRAMME_B3_B8_INTEGRATION_MANIFEST.md`.
 
-The retired packet `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` contains a false universal theorem and is no longer part of the active theorem family.
+## 4. Controlling B3/B4/B5 distinctions
 
-The controlling replacement proves:
+- `T_g^{(1)}→𝒜₅` is componentwise same-embedding compression;
+- `J_g→𝒜₅` is only old-colour-factorable compression;
+- factorable failure is not full-dual failure;
+- the all-parallel matching representative is `{01,23,45}`;
+- one horizontal edge has connected switch support;
+- disconnected switch support gives a path;
+- `7737` composite endpoints and `2801` one-step neighbours remain separate;
+- cap forcing is not full-cap containment;
+- abstract routing transitions require source path-pair realization.
 
-- every additive anisotropic representation of $K_q$ with triangle addition has dimension at least $q-2$;
-- the deleted permutation module attains dimension $q-2$;
-- the eight-support $O^+(6,2)$ realization is exceptional because $8-2=6$;
-- there is no universal $O^+(2r,2)$ hierarchy.
+## 5. B6 correction and B7 frontier
 
-The packet remains recoverable only as `SUPERSEDED / FALSE THEOREM / HISTORICAL PROVENANCE`.
+The active corpus retains individual-loop holonomy, root-fibre/Tait escape, DDD atom triality, unique route-lock, rank escape, and curvature duality.
 
-## 5. Wider five-support programme
+It does not retain as unconditional theorems:
 
-The global five-support theorem remains open. The remaining dependency order is:
+- BBD simultaneous common origin;
+- the nontrivial fixed-terminal defect-minimal forest.
 
-1. B3 surface/target correction and capacity layer;
-2. B4 gauge and horizontal reconfiguration;
-3. B5 cuts, four-poles, and routing;
-4. B6 holonomy, defects, and atoms;
-5. B7 localization consequences;
-6. B8 finite certificates;
-7. B9 global assembly at the genuine localization/composition frontier.
+Exact BBD gaps:
 
-This intake consumes no B3+ moving-branch mathematics.
+- `AC-RL-BBD-GROUPOID-CLOSURE`;
+- `AC-RL-BBD-VARIATION-SLICE`.
 
-Read the wider corpus through [`five-support/README.md`](five-support/README.md). See [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md) for the open endpoint.
+Exact localization gaps:
 
-## 6. Provenance and control
+- `AC-RL-TYPE-T-SERIALISATION`;
+- `AC-RL-FLAT-POTENTIAL-INTERFACE`;
+- `AC-RL-COMMON-CUT-LOCALISATION`;
+- `AC-RL-TYPE-H-COMMON-WITNESS`.
 
-- [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md) — project architecture;
-- [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md) — Programme A/B1/B2 DAGs;
-- [`CURRENT_BEST.md`](CURRENT_BEST.md) — compact mathematical state;
-- [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md) — exact A0–A10 map;
-- [`PROGRAMME_B1_INTEGRATION_MAP.md`](PROGRAMME_B1_INTEGRATION_MAP.md) — exact B1 map;
-- [`PROGRAMME_B2_INTEGRATION_MAP.md`](PROGRAMME_B2_INTEGRATION_MAP.md) — exact B2 map;
-- [`CHAPTER_PROVENANCE.md`](CHAPTER_PROVENANCE.md) — historical source provenance;
-- [`RETIRED_SOURCE_CLASSIFICATION.md`](RETIRED_SOURCE_CLASSIFICATION.md) — retirement and false-theorem classification;
-- [`SUPERSESSION_MAP.md`](SUPERSESSION_MAP.md) — controlling corrections;
-- [`FORMAL_STATUS.md`](FORMAL_STATUS.md) — assurance boundary.
+## 6. Finite assurance
 
-## 7. Assurance
+Finite results are classified as `F-PROVED`, `F-CERT-PUBLIC`, `F-CERT-PRIVATE`, `F-CENSUS`, `CODE-PARTIAL`, or `AFFECTED`.
 
-Programme A remains fixed for Audit A. Programme B1 and B2 are Curator-integrated authorial proof-development mathematics in their stated scopes.
+B8 is assurance normalization, not independent review or public-code certification.
 
-Neither line is end-to-end Lean verified or independently audited by this intake. Current-best inclusion does not create manuscript, peer-review, publication, release, arXiv, DOI, novelty, or timestamp status.
+## 7. Project control
+
+- `ACTIVE_MATHEMATICAL_SURFACE.md` — active tree;
+- `CURRENT_BEST.md` — compact state;
+- `MATHEMATICAL_ARCHITECTURE.md` — controlling architecture;
+- `THEOREM_DEPENDENCY_MAP.md` — proof and obligation DAG;
+- `FORMAL_STATUS.md` — assurance boundaries;
+- `CHAPTER_PROVENANCE.md` — source roles;
+- `SUPERSESSION_MAP.md` — controlling corrections;
+- `FRONTIER_STATUS.md` — project frontier summary.
+
+## 8. Assurance
+
+Programme A and B1–B7 are Curator-integrated authorial mathematics in their stated scopes; B8 is Curator-integrated assurance normalization. This intake does not complete independent audit, end-to-end Lean verification, manuscript review, publication, release, arXiv, DOI, novelty, or timestamp work.

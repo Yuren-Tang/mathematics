@@ -1,33 +1,10 @@
 # AffineCDC supersession and correction ledger
 
-This ledger records which formulations control the current corpus. Supersession replaces an overbroad theorem, interpretation, count, endpoint, or status. It does not erase valid narrower lemmas, finite certificates, discovery history, or priority records.
+Supersession changes current control; it does not erase valid lemmas, finite certificates, discovery history, or priority records.
 
-## 1. Corpus-level control
+## 1. Full dual versus old-colour quotient
 
-| Earlier surface | Controlling surface | Effect |
-|---|---|---|
-| flat chronological research-packet reading | `five-support/README.md` and active chapters | packets remain recoverable but no longer control exposition order |
-| rolling baseline navigation | `README.md`, architecture, theorem map | theorem-driven corpus replaces filing-only navigation |
-| preliminary frontier summary | `FRONTIER_STATUS.md` and `frontier-localisation.md` | endpoint sharpened to localization/composition |
-| preliminary migration map | `MIGRATION_LEDGER.md` | all 78 packets have a destination or supersession class |
-
-## 2. Programme A complete theorem
-
-The Programme A finite-active no-singleton-cut theorem and its assurance boundary control the complete CDC line. Earlier outer-shell packets remain provenance; no Programme B intake changes Audit A or the fixed Programme A candidate.
-
-## 3. B1 support-coordinate and matching correction
-
-Earlier compression conflated two inverse images.
-
-Controlling distinction:
-
-- fixed support-coordinate inverse image: even support;
-- fixed root-label inverse image: matching;
-- matching plus four-flow converse: requires the second even support or component $T$-join datum.
-
-## 4. B1 fixed-lift and quotient correction
-
-Earlier broad statement:
+Earlier broad reading:
 
 $$
 J_g\to\mathscr A_5
@@ -35,143 +12,174 @@ $$
 
 was treated as the complete fixed-lift criterion.
 
-Controlling hierarchy:
+Controlling statement:
 
 $$
 T_g^{(1)}\to\mathscr A_5
 $$
 
-classifies componentwise compression of the same embedding, while
+classifies componentwise same-embedding compression. `J_g` is only the old-colour-factorable quotient.
 
-$$
-T_g^{(1)}\to J_g\to\mathscr A_5
-$$
+## 2. Universal orthogonal-root theorem
 
-is only the old-colour-factorable subroute.
-
-An external root flow integrates on a prescribed dual only when every dual cycle has zero holonomy.
-
-## 5. B1 half-cube parity correction
-
-Singleton words lie in the odd half-cube component. When $\mathscr A_5$ denotes the even component, choose an odd word $t$ and use $t+\varepsilon_i$.
-
-## 6. B2 formulation classification
-
-Earlier synthesis listed singular, quadratic, Schur, cographic, orthogonal, stress, and Fourier descriptions together without uniform witness accounting.
-
-Controlling classification:
-
-- full graph-level witnesses: supports, roots, $K_5$ triangles, anisotropic $O^-(4,2)$ flows, complete quadratic solutions, and exactly defined cographic edge maps;
-- fixed-data criteria: singular quotient, component defect, colour-cut parity, eliminated coordinate, and Schur quotient;
-- dual/counting layers: relative stresses and Fourier intersection counts;
-- target models: valid dimension-specific orthogonal modules.
-
-A formulation enters the graph-level equivalence box only with an explicit reconstruction map.
-
-## 7. Universal orthogonal-root theorem — false
-
-### Superseded claim
-
-`FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` asserted a canonical additive anisotropic-root representation of all pairs of the $2^r$ points of $\mathbf F_2^r$ in dimension $2r$.
-
-### Mathematical defects
-
-1. Its displayed map treats a vector as a canonical functional in $\Gamma^*$; this is type-invalid without an additional self-duality.
-2. Triangle addition forces a point-potential representation whose Gram matrix has rank $q-2$ for $q=2^r$.
-3. Therefore dimension $2r$ is impossible for every $r\ge4$.
-
-### Controlling replacement
-
-Every additive anisotropic representation of $K_q$ satisfying
-
-$$
-r_{ab}+r_{bc}+r_{ca}=0
-$$
-
-obeys
-
-$$
-\boxed{\dim V\ge q-2.}
-$$
-
-The deleted permutation module
-
-$$
-\overline E_I
-=
-\left\{z\in\mathbf F_2^I:\sum_i z_i=0\right\}/\langle\mathbf1_I\rangle
-$$
-
-has dimension $q-2$, quadratic form $q_I([z])=\operatorname{wt}(z)/2\pmod2$, and roots $[\varepsilon_a+\varepsilon_b]$. It attains the lower bound.
-
-The eight-support $O^+(6,2)$ model is exceptional because $8-2=6$. It is not the first member of a universal $O^+(2r,2)$ tower.
-
-### Source classification
+`FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` remains:
 
 `RETIRED / SUPERSEDED / FALSE THEOREM / HISTORICAL PROVENANCE`.
 
-The packet must not be cited as active theorem authority. Any later theorem depending essentially on it requires a fresh audit.
+Controlling replacement:
 
-## 8. Fixed lift, fixed flow, and graph-level quantifiers
+- dimension lower bound `q-2`;
+- deleted permutation module;
+- exceptional eight-support `O^+(6,2)` model;
+- no universal `O^+(2r,2)` tower.
 
-Controlling levels:
+## 3. B3 provenance repair
 
-1. one bad lift;
-2. one wholly bad fixed-flow fibre;
-3. graph-level failure only if every admissible flow/lift route fails.
+Early B3 drafts named nonexistent or noncontrolling packets and alleged a false positive `K_8-C_5` certificate. Those allegations are withdrawn.
 
-A fixed-flow certificate is not a graph counterexample. Graph-level equivalences quantify existentially over auxiliary flow, plane, lift, and embedding data.
+Controlling recovered packets for half-cube links, exact capacity, and the eight-vertex classification are valid theorem sources.
 
-## 9. Binary-cycle switch scope
+## 4. Matching representative correction
 
-Connected support gives one reconfiguration edge. Disconnected support gives a commuting composition/path, not one adjacency. Finite counts must use the corrected connected/disconnected distinction.
+The matching orbit theorem and sizes
 
-## 10. Factorable and componentwise censuses
+$$
+28,\qquad168,\qquad224
+$$
 
-Factorable `J_g` counts and full componentwise `T_g` counts classify different objects. Neither may be substituted for the other.
+remain valid.
 
-## 11. Clique-only target obstruction — false
+The displayed all-parallel representative `\{05,14,23\}` is superseded by
 
-$K_6$ is the first visible clique obstruction, but $K_6$-free does not imply a half-cube map. Compatible deeper target-link obstructions remain possible.
+$$
+\{01,23,45\}.
+$$
 
-## 12. Source-independent compression — false
+Only the display changes.
 
-There is no universal map $K_8\to K_5$ depending only on old support names. Controlling routes use the actual used-label graph, the full dual, and source-dependent gauge or flow motion.
+## 5. Factorable terminology
 
-## 13. Individual core destruction versus arrangement renewal
+Unqualified claims about unused-root graphs, two-apex/pentagon cores, defect-cover depth, and ideal pivots are controlled as old-colour-factorable statements.
 
-Destroying each marked obstruction separately does not imply a good state exists. Occurrence loci are affine subspaces and may cover the whole gauge torsor.
+Factorable badness is not full-dual badness. Ideal target escape is not source-cycle realizability.
 
-## 14. Route-lock corrections
+## 6. Binary-cycle adjacency correction
 
-Controlling boundaries:
+Earlier broad language counted all admissible nonzero switch words as adjacent.
 
-- route-lock does not imply a graph two-edge cut;
-- rank two has a Tait escape and is not residual;
-- route-lock does not imply flatness;
-- full rank splits into nonzero-curvature common-cut witnesses and zero-curvature affine potentials.
+Controlling distinction:
 
-## 15. BBD/DDD global synthesis
+- connected support: one reconfiguration edge;
+- disconnected support: a commuting path.
 
-For the BBD family, per-loop alternatives are superseded by root rigidity, vanishing $S_5$ cohomology, one common ambient origin, and one canonical defect flow.
+In the named laboratory:
 
-The DDD subgroup retains a separate one-bit exception.
+- `7737` = all admissible composite endpoints;
+- `2801` = connected-support one-edge neighbours.
 
-## 16. Type H correction
+## 7. Linear switch-image scope
 
-The unrestricted tension universe is subordinate to the genuine three-switch physical flow. The root-linearizable zero-norm Type H branch is eliminated through Tait resolution and profile escape.
+The internal linear correction image and external even-support reslicing describe all composite same-direction endpoints. They do not identify the connected-neighbour set, which need not be linear.
 
-## 17. Defect-strip correction
+## 8. New-fibre transport correction
 
-Raw co-root strips are sharpened by the variational induced-forest theorem and Petersen transducer with side-root output. Repeated transport state alone does not imply a replaceable strip.
+A support-cycle pivot supplies one distinguished lift above the switched flow. It does not transport the whole old gauge fibre. The new `H_{f'}^0`, gauge code, and Petrial orbit must be recomputed.
 
-## 18. Assurance non-supersession
+## 9. Cap forcing versus full-cap containment
 
-No correction in this ledger upgrades:
+Cap forcing proves that every minimal-counterexample shore profile meets each cap set. It does not prove that one complete cap set is contained in the profile.
 
-- Lean status;
+Abstract Kempe transitions are controlled by routing states; an actual boundary-state change additionally requires source terminal-path pairing alignment.
+
+## 10. Uniform routing to Type T/Type H
+
+Uniform one-matching routing is eliminated. The residual finite policies are Type T and Type H.
+
+This finite classification does not prove Type T serialization or Type H common-witness localization.
+
+## 11. BBD group/common-origin correction
+
+Earlier active text treated the physical BBD loops as one root-preserving affine group and concluded translation-kernel vanishing and a simultaneous common origin.
+
+Controlling boundary:
+
+- individual-loop ambient affine data are theorem-level;
+- physical root-preserving groupoid closure is not yet proved;
+- simultaneous-origin conclusions are conditional on `AC-RL-BBD-GROUPOID-CLOSURE`.
+
+Finite BBD monodromy generation in `S_5` does not supply the missing closure theorem.
+
+## 12. Defect-minimal forest correction
+
+Earlier active text minimized non-root edges over all fixed-terminal `E_5` flows and concluded a nontrivial canonical defect forest.
+
+Controlling correction:
+
+- the original root cover is in that domain;
+- it has zero defect;
+- the minimization is therefore vacuous for a nontrivial defect structure;
+- restricting to a simultaneous-origin slice removes variations used in the old proof unless separately justified.
+
+The nontrivial forest and induced-tree theorem are removed from the active theorem layer pending `AC-RL-BBD-VARIATION-SLICE`.
+
+Local zero/co-root patterns and Petersen transport remain conditional geometry when a defect strip is independently supplied.
+
+## 13. Route-lock to graph cut: false shortcut
+
+Route-lock does not imply a graph two-edge cut. Explicit rank-two witnesses have minimum pair-separating cut four.
+
+## 14. Automatic flatness: false shortcut
+
+Route-lock does not imply flatness. Explicit full-rank witnesses have nonzero curvature.
+
+Controlling result:
+
+- `\Omega=0`: eight-state affine potential;
+- `\Omega\ne0`: common scalar-sheet cut with odd terminal parity.
+
+## 15. Scalar-sheet cut versus source cut
+
+A set that is a cut in all four scalar sheets is not yet proved to be a cut in the underlying source four-pole, bounded, connected, or composition-safe.
+
+Controlling open return:
+
+`AC-RL-COMMON-CUT-LOCALISATION`.
+
+## 16. Finite potential versus bounded interface
+
+An eight-state potential is structural information, not a bounded transfer theorem. Potential fibres may carry unbounded internal semantics.
+
+Controlling open return:
+
+`AC-RL-FLAT-POTENTIAL-INTERFACE`.
+
+## 17. Type H and Type T open returns
+
+- Type H family-level common witness: `AC-RL-TYPE-H-COMMON-WITNESS`;
+- Type T serial decomposition: `AC-RL-TYPE-T-SERIALISATION`.
+
+Individual-loop and finite-policy results do not close these family/source implications.
+
+## 18. Finite assurance normalization
+
+Every finite result now carries one of:
+
+- `F-PROVED`;
+- `F-CERT-PUBLIC`;
+- `F-CERT-PRIVATE`;
+- `F-CENSUS`;
+- `CODE-PARTIAL`;
+- `AFFECTED`.
+
+Current packet inclusion does not upgrade reproducibility or independent review.
+
+## 19. Assurance non-supersession
+
+No mathematical correction in this ledger changes:
+
 - independent-review status;
+- Lean status;
 - manuscript or peer-review status;
 - publication, release, arXiv, DOI, novelty, or timestamp status.
 
-See [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
+The global five-support theorem remains open.

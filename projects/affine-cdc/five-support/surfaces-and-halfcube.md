@@ -1,273 +1,217 @@
-# Cycle-face surfaces, dual triangulations, and the half-cube target
+# Cycle-face surfaces, target hierarchy, and half-cube capacity
 
-## 1. From a compatible root lift to a surface
+## 1. Cycle-face surface and full dual
 
-Let $G$ be a finite loopless cubic multigraph and let
+Let `G` be a finite loopless cubic multigraph and let
 
 $$
 g:E(G)\to\binom I2
 $$
 
-be a compatible root lift on an eight-element support-index set $I$. At every cubic vertex the three incident root labels are
+be a compatible root lift on an eight-element support-index set `I`. At each source vertex the three incident roots are the edges of one triangle on three distinct indices.
+
+For every index `a`, the support
 
 $$
-\{a,b\},\qquad\{b,c\},\qquad\{c,a\}
+F_a=\{e:a\in g(e)\}
 $$
 
-for distinct $a,b,c\in I$.
-
-For each index $a$, define
-
-$$
-F_a=\{e:a\in g(e)\}.
-$$
-
-Every $F_a$ is vertex-even. Each nonempty connected component is therefore a circuit of the loopless cubic graph. Attach one polygonal disc along every such support-cycle component.
+is vertex-even. Attach one face disc along every nonempty connected component of every `F_a`.
 
 ### Theorem 1.1 — root-lift/surface equivalence
 
-The resulting cell complex $S_g$ is a closed cycle-face surface with one properly coloured face occurrence for every support-cycle component. Conversely, every properly face-coloured cycle-face embedding recovers a compatible root lift by labelling each source edge with the pair of colours of its two incident face occurrences.
+Compatible root lifts are equivalent to properly face-coloured cycle-face embeddings `S_g`. Their dual cellulations `T_g` are triangular and properly vertex-coloured by the old support indices.
 
-Thus compatible root lifts are equivalent to:
+A vertex of `T_g` is one individual support-cycle component. Distinct components carrying the same old index remain distinct vertices.
 
-1. properly face-coloured cycle-face embeddings $S_g$ of $G$;
-2. closed triangular dual cellulations $T_g$ with a proper colouring of their vertices by the old support indices.
-
-The vertices of $T_g$ are individual face components. Distinct components carrying the same old support index remain distinct vertices.
-
-## 2. The even half-cube
+## 2. The five-coordinate target
 
 Put
 
 $$
-E_5=\left\{x\in\mathbf F_2^5:\sum_i x_i=0\right\},
+E_5=\{x\in\mathbf F_2^5:\sum_i x_i=0\},
 \qquad
 R_5=\{\varepsilon_i+\varepsilon_j:i<j\}.
 $$
 
-The even half-cube $\mathscr A_5$ is the Cayley graph
+The even half-cube `\mathscr A_5` is the Cayley graph on `E_5` with difference set `R_5`.
 
-$$
-V(\mathscr A_5)=E_5,
-\qquad
-xy\in E(\mathscr A_5)\iff x+y\in R_5.
-$$
+### Theorem 2.1 — fixed-lift criterion
 
-A graph homomorphism
-
-$$
-\varphi:T_g^{(1)}\to\mathscr A_5
-$$
-
-assigns an even word to every individual support-cycle face component. Across a source edge, the two incident face words differ by a root. Reading this difference on the source edge produces a root-valued $E_5$ flow and hence an indexed five-support even double cover.
-
-## 3. Exact fixed-lift criterion
-
-A **componentwise five-support compression of the fixed root lift $g$** is an assignment
-
-$$
-p:V(T_g)\to E_5
-$$
-
-such that $p(x)+p(y)\in R_5$ on every dual edge $xy$.
-
-### Theorem 3.1 — same-embedding componentwise criterion
-
-For fixed $g$, componentwise compressions of the face components of the same embedding are exactly graph homomorphisms
+For a fixed compatible lift `g`, componentwise compression of the face components of the same embedding is exactly
 
 $$
 T_g^{(1)}\to\mathscr A_5.
 $$
 
-The resulting root difference on every dual edge satisfies the source cubic flow equations and therefore gives a five-support cover.
+The edge differences give an `R_5`-valued flow and hence five indexed even supports.
 
-This is the corrected meaning of the fixed-$g$ biconditional. It is not a statement that every independently chosen five-support cover of $G$ must be representable on the prescribed surface $S_g$.
+This does not say that an arbitrary external five-support cover can be represented on the prescribed surface.
 
-## 4. Prescribed-surface holonomy
+### Prescribed-surface holonomy
 
-Let
+An external root labelling on the fixed dual integrates to a vertex potential exactly when its sum vanishes on every dual cycle. Conservation around triangular faces alone is insufficient.
 
-$$
-\lambda:E(T_g)\to E_5
-$$
+## 3. Graph-level existential surface criterion
 
-be an externally supplied root-valued labelling, for example the root flow of a five-support cover constructed independently of $g$.
+For a finite loopless cubic multigraph `G`, the following are equivalent:
 
-### Theorem 4.1 — dual potential criterion
-
-There exists a potential $p:V(T_g)\to E_5$ satisfying
-
-$$
-p(x)+p(y)=\lambda(xy)
-$$
-
-on every dual edge if and only if
-
-$$
-\sum_{e\in C}\lambda(e)=0
-$$
-
-for every cycle $C$ of $T_g^{(1)}$.
-
-When a solution exists, the solution set is a torsor under one constant translation on each connected component of the dual graph.
-
-Local source-vertex conservation verifies zero sum around the triangular dual faces. It does not imply zero sum around every independent dual cycle. Residual dual holonomy is the exact obstruction to carrying an external cover on one prescribed surface.
-
-## 5. Graph-level surface criterion and parity convention
-
-### Theorem 5.1 — graph-level equivalence
-
-For a finite loopless cubic multigraph $G$, the following are equivalent:
-
-1. $G$ has an indexed five-support even double cover;
-2. there exists a cycle-face embedding $S$ of $G$ whose dual graph admits a homomorphism
+1. `G` has five indexed even supports;
+2. some cycle-face embedding `S` of `G` has
    $$
    T_S^{(1)}\to\mathscr A_5.
    $$
 
-For the forward direction, build the cycle-face surface from the five-support cover itself. The embedding is existentially quantified, so no prescribed-surface holonomy obstruction remains.
+The forward construction uses the surface built from the five-support cover itself. The embedding is existentially quantified.
 
-### Even-component parity correction
+If `\mathscr A_5` denotes the even component, singleton words are not target vertices. Choose one odd word `t` and use `t+\varepsilon_i`; pairwise differences remain `\varepsilon_i+\varepsilon_j`.
 
-The singleton words $\varepsilon_i$ have odd weight and are not vertices of the even component $\mathscr A_5$. Choose one odd word $t\in\mathbf F_2^5$ and map support colour $i$ to
+## 4. Full dual versus old-colour quotient
 
-$$
-q_i=t+\varepsilon_i\in E_5.
-$$
-
-Then
-
-$$
-q_i+q_j=\varepsilon_i+\varepsilon_j\in R_5,
-$$
-
-so the five words form a $K_5$ in the even half-cube. Equivalently, one may explicitly use the isomorphic odd component.
-
-## 6. The old-colour quotient and its exact scope
-
-Let $J_g$ be the graph whose vertices are the old support indices used by $g$, with an edge $ab$ whenever a source edge has old root label $\{a,b\}$. The proper old colouring gives a quotient
+Let `J_g` be the graph on the old support indices used by `g`, with an edge for every used old root. The old colouring gives a quotient
 
 $$
 T_g^{(1)}\to J_g.
 $$
 
-### Theorem 6.1 — factorability criterion
+### Theorem 4.1 — exact factorability boundary
 
-A map $\varphi:T_g^{(1)}\to\mathscr A_5$ factors through $J_g$ if and only if it is constant on all face components carrying the same old support index.
+A map from the full dual to `\mathscr A_5` factors through `J_g` exactly when it is constant on all face components carrying the same old support index.
 
 Therefore
 
 $$
 J_g\to\mathscr A_5
-$$
-
-classifies only global-index-factorable compression. A general map from the full dual may assign different values to disconnected face components with the same old colour.
-
-Every theorem stated only for $J_g$ keeps this quotient scope. It must not be promoted to a classification of the full dual.
-
-## 7. Existing factorable-quotient theory
-
-The integrated corpus contains exact finite and theorem-level results about maps from spanning old-colour graphs $J\subseteq K_8$ into $\mathscr A_5$, including unused-root criteria and dense quotient obstructions.
-
-Programme B1 does not re-audit or enlarge those downstream target classifications. It fixes their domain:
-
-$$
-\text{old-colour quotient }J_g,
-$$
-
-not the full componentwise dual $T_g^{(1)}$.
-
-Accordingly, any $K_6$, pentagon, unused-matching, or finite quotient statement in this corpus remains a statement about factorable compression unless a separate full-dual proof is given.
-
-## 8. Clique links and target capacity
-
-The target $\mathscr A_5$ has clique number five. If a source graph contains a dominating clique $K_r$, the remaining vertices must map into the common neighbourhood of an $r$-clique.
-
-For $2\le r\le5$, the existing target-capacity theorem identifies the relevant chromatic threshold. For $r=1$, the link is $J(5,2)=L(K_5)$ and the problem is not controlled by chromatic number alone.
-
-These are target-side results. They do not replace the full-dual source quantifier or prove that every obstruction contains a bounded dominating-clique core.
-
-## 9. Beyond clique obstruction
-
-The implication
-
-$$
-K_6\nsubseteq X\Longrightarrow X\to\mathscr A_5
-$$
-
-is false for arbitrary graphs. Common-neighbour chromatic cores give a deeper obstruction layer, and compatible finite laboratories realize both clique and non-clique target failures.
-
-These examples are exact finite mathematics. They do not constitute a universal obstruction list.
-
-## 10. Marked obstruction cores and gauge occurrence
-
-A marked obstruction core records exact source face circuits and their weighted dual incidence, not only an abstract target-side graph.
-
-For a marked family $\mathcal C$, let $Z_{\mathcal C}$ be the union of source edges traversed by its faces and put
-
-$$
-R_{\mathcal C}=E(G)\setminus Z_{\mathcal C}.
-$$
-
-If $B_f$ is the reduced gauge code and $\beta$ is one state containing the marked core, the same marked circuits persist on the affine occurrence locus
-
-$$
-A_{\mathcal C}
-=
-\beta+\left(B_f\cap\mathbf F_2^{R_{\mathcal C}}\right).
-$$
-
-Thus a finite marked certificate library gives an affine-subspace arrangement in the gauge torsor. B1 does not assert that the present library is complete or that its union always leaves an uncovered state.
-
-## 11. Visible clique geometry and renewal
-
-Existing downstream theory distinguishes:
-
-- rigid marked cores;
-- mobile renewal, where destroying one certificate creates another;
-- arrangement escape, where the union of marked occurrence loci is proper.
-
-Projective Petersen-type cores, exposed dual cycles, renewal laboratories, and mixed obstruction species remain in their previous theorem/evidence classifications. Programme B1 changes only the full-dual versus quotient scope in which they may be invoked.
-
-## 12. Orientability data
-
-The cycle-face surface retains information beyond the half-cube map. For a signed rotation-system presentation, a gauge/Petrial word changes the edge-twist vector affinely, and the orientable locus is an affine intersection with the cut space.
-
-An orientable five-support cover yields a nowhere-zero $\mathbf Z_5$ flow after orienting support components and assigning coefficients. This is a sufficient bridge, not an equivalence and not a proof of a five-flow conjecture.
-
-## 13. Safe fixed-data hierarchy
-
-For corresponding fixed flow and root lift:
-
-$$
-\boxed{
-\text{global five-point slice}
 \Longrightarrow
-J_g\to\mathscr A_5
-\Longrightarrow
-T_g^{(1)}\to\mathscr A_5
-\Longrightarrow
-\text{five-support cover}.}
+T_g^{(1)}\to\mathscr A_5,
 $$
 
-The converses need not hold at the same fixed $(f,g)$. At graph level, any successful route yields a cover that can be re-encoded by some existential Fano-flow/plane presentation, not necessarily the original one.
+but the converse fails in general.
 
-## 14. Natural dependency order
+Terminology:
 
-```text
-compatible root lift g
-↔ properly coloured cycle-face surface S_g
-↔ properly coloured full dual T_g
-→ same-embedding componentwise half-cube question
-→ old-colour-factorable quotient as a strict subroute
-→ target links and marked obstruction cores
-→ affine occurrence arrangements and source localization
-```
+- `componentwise same-embedding compressible`: `T_g^{(1)}\to\mathscr A_5`;
+- `old-colour-factorably compressible`: `J_g\to\mathscr A_5`;
+- `factorably bad`: failure of the second condition only.
 
-The prescribed-surface converse additionally passes through the dual holonomy criterion.
+Unused-root graphs, matching orbits, two-apex/pentagon cores, and ideal pivots are factorable objects unless a separate full-dual theorem is stated.
 
-## 15. Reliability boundary
+## 5. Quadratic common-link formula
 
-The B1 root-lift/surface correspondence, same-embedding componentwise criterion, prescribed-dual holonomy criterion, graph-level existential surface criterion, factorability boundary, and parity correction are integrated authorial proofs from checkpoint `778b09ac...`.
+Let `(E,q)` be a nondegenerate quadratic space over `\mathbf F_2`, let `\mathscr A(E,q)` have adjacency `x\sim y` when `q(x+y)=1`, and let `C` be a nonempty target clique. Choose `\alpha\in C`, put
 
-Downstream target classifications, gauge theorems, and finite laboratories retain their previous assurance status and are not independently re-audited by this intake. The global five-support theorem and completeness of the obstruction library remain open. No Lean, independent-review, manuscript, publication, release, arXiv, or DOI status is created.
+$$
+S_C=\{c+\alpha:c\in C-\{\alpha\}\},
+\qquad
+D_C=\operatorname{span}S_C.
+$$
+
+### Theorem 5.1
+
+A vertex `y=\alpha+z` is adjacent to every member of `C` exactly when
+
+$$
+q(z)=1,
+\qquad
+B(z,d)=1\quad(d\in S_C).
+$$
+
+Hence every common link is a quadratic slice of an affine coset:
+
+$$
+\alpha+\{z\in z_0+D_C^\perp:q(z)=1\}.
+$$
+
+## 6. Exact half-cube link and capacity theorems
+
+For an `r`-clique `Q_r` in `\mathscr A_5`:
+
+$$
+\begin{array}{c|c|c}
+r&\operatorname{Lk}(Q_r)&\chi\\
+\hline
+1&L(K_5)&5\\
+2&K_3\square K_2&3\\
+3&K_2\sqcup K_1&2\\
+4&K_1&1\\
+5&\varnothing&0.
+\end{array}
+$$
+
+### Theorem 6.1 — dominating-clique capacity
+
+For every finite loopless graph `H` and `2\le r\le5`,
+
+$$
+K_r\vee H\to\mathscr A_5
+\Longleftrightarrow
+\chi(H)\le5-r.
+$$
+
+For `r=1`, the exact condition is `H\to L(K_5)`; chromatic number alone is not complete.
+
+Consequences include `K_6\not\to\mathscr A_5` and `K_3\vee C_{2m+1}\not\to\mathscr A_5`.
+
+## 7. Exact eight-vertex factorable classification
+
+For every graph `J` on the eight old support indices,
+
+$$
+J\to\mathscr A_5
+\Longleftrightarrow
+K_6\nsubseteq J
+\text{ and }
+K_8-C_5\nsubseteq J.
+$$
+
+Equivalently, the unused-root graph `K_8-J` contains `3K_2`, `K_3\sqcup K_2`, or `K_4`.
+
+This theorem completely classifies the eight-vertex old-colour-factorable target. It does not classify arbitrary full duals.
+
+## 8. Unused matchings and factorable cores
+
+An unused `3K_2` gives an immediate factorable compression. The action of `AGL(3,2)` on three-edge matchings has three orbits of sizes
+
+$$
+28,\qquad168,\qquad224.
+$$
+
+The correct all-parallel representative is
+
+$$
+\boxed{\{01,23,45\}}.
+$$
+
+The old display `\{05,14,23\}` has directions `5,5,1` and is not all-parallel. The orbit theorem is unchanged.
+
+Write `U_g=K_8-J_g`. Factorable badness is exactly
+
+$$
+\tau(U_g)\le2
+\quad\text{or}\quad
+U_g\cong C_5.
+$$
+
+Thus the static factorable bad cores are marked two-apex cores and one pentagon core. There are exactly one hundred marked two-apex types; the reported eighty-eight unmarked isomorphism types remain computational evidence.
+
+An ideal target pivot raises vertex-cover number by at most one. Exact two-cover cores and the pentagon admit an abstract target escape, while one-star cores are ideal one-pivot traps. This is target dynamics, not a theorem that a required source support cycle exists.
+
+## 9. Full-dual obstruction and certificate boundary
+
+The flower `J_5` packet supplies, conditional on its displayed finite dual certificate, a full dual containing `K_3\vee C_5`. The human target argument then proves non-homomorphism to `\mathscr A_5`.
+
+The explicit flow, reduced fibre, dual graphs, face lengths, and neighbourhood counts remain certificate data. This example shows that `K_6` is not a complete full-dual obstruction language.
+
+## 10. Assurance and provenance
+
+Programme B3 source:
+
+`proof-development/affine-cdc-rigour-v1@d806168bb579dbc13f267f44f631e07de909b706`.
+
+State retained:
+
+`READY-FOR-CURATOR / PROVENANCE-REPAIRED`.
+
+The valid recovered clique-link, capacity, and eight-vertex packets remain valid theorem sources. Earlier erroneous provenance allegations in draft B3 notes are not controlling. Numerical flower and core counts keep their B8 assurance classes.
+
+This chapter is Curator-integrated authorial mathematics. It is not independent audit, Lean verification, manuscript approval, publication, release, arXiv, or DOI status.

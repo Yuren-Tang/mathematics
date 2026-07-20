@@ -1,232 +1,209 @@
-# Finite laboratories and exact certificates
+# Finite laboratories and certificate assurance
 
-## 1. Role of computation
+## 1. Controlling assurance classes
 
-Exact computation in this programme serves four legitimate purposes:
+Every finite result in the active five-support corpus is classified as one of:
 
-1. verify a finite object completely;
-2. expose a counterexample to an overstrong theorem;
-3. discover a structural invariant later proved generally;
-4. calibrate which mechanisms occur in concrete graphs.
+- `F-PROVED` — independently proved in the mathematical spine;
+- `F-CERT-PUBLIC` — explicit public certificate or checkable finite description;
+- `F-CERT-PRIVATE` — exact public statement/refs with code or notebook on private/recovery branches;
+- `F-CENSUS` — named laboratory calibration, not a universal premise;
+- `CODE-PARTIAL` — incomplete recovered verifier or unavailable assertion;
+- `AFFECTED` — finite data retained but a former inference has been invalidated or narrowed.
 
-It does not replace a general proof. Every result below is classified by its finite scope.
+See `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md` for the controlling cross-unit classification.
 
-## 2. The fixed-flow cube certificate
+## 2. Independently proved finite structures — `F-PROVED`
 
-An explicit cube Fano flow has no compatible five-coordinate slice. For every plane $W\le\mathbf F_2^3$, one component of $G_W$ has odd common outside-colour parity.
+The active theorem spine proves, independently of private computation:
 
-This proves exactly:
+- ten four-terminal states and `640` ordered boundary assignments;
+- standard cap sets;
+- routing-weight coordinates and `P_3\sqcup C_4\sqcup P_3` fixed-route sectors;
+- connectivity under two routing colours;
+- half-cube clique number and exact common-link table;
+- dominating-clique capacity for ranks two through five;
+- `K_8-C_5\not\to\mathscr A_5`;
+- root/co-root counts and the `K_6` triangle/one-factor model;
+- DDD atom triality and unique bad route;
+- rank-one impossibility and rank-two Tait structure;
+- local root-admissibility exclusion sizes `0,1,1,6`;
+- the `q-2` additive-root lower bound and deleted permutation module.
 
-$$
-\boxed{
-\text{one fixed Fano flow may require six indexed supports.}
-}
-$$
+Any computation of these objects is corroboration only.
 
-It does not prove that the underlying graph lacks a five-support cover through another flow or a non-factorable componentwise map.
+## 3. Fixed-flow cube — `F-CERT-PUBLIC`
 
-## 3. The thirty-vertex laboratory
+An explicit Fano flow has no old-colour-factorable five-coordinate slice. It proves only that one fixed flow may require more than five global support indices.
 
-The selected thirty-vertex cubic graph has an explicit proper three-edge-colouring and therefore a three-support cycle double cover. It is graph-level easy.
+It does not show that the graph lacks:
 
-Nevertheless, one chosen Fano flow has a two-state bad gauge fibre, and nearby flows realize exact renewal modules.
+- another successful Fano flow;
+- a componentwise full-dual compression;
+- a five-support cover.
 
-### Exact vertical facts
+## 4. Thirty-vertex laboratory — `F-CENSUS / F-CERT-PRIVATE`
 
-- one-dimensional reduced gauge fibre with clique renewal;
-- universal three-cube modules in several nearby flows;
-- universal six-cube modules with point and line renewal;
-- marked-core occurrence loci matching shortened reserve codes;
-- complete corrected componentwise census.
+The underlying graph is explicitly Tait-colourable and therefore graph-level easy. A selected flow nevertheless has bad fibres and renewal modules.
 
-### Exact horizontal facts
+Exact data include:
 
-Among all nonzero binary-cycle switch pairs, only those with connected support are genuine one-step neighbours. The corrected connected-neighbour population is $2801$.
+- two-state bad gauge fibre;
+- three-cube and six-cube renewal modules;
+- reserve-code and occurrence-locus distributions;
+- corrected componentwise fibre census;
+- `7737` nonzero admissible switch pairs;
+- `2801` connected-support one-step neighbours.
 
-Most connected neighbours possess at least one componentwise-good root lift. The wholly bad neighbours in the displayed census all contain $K_6$, but this is finite neighbourhood evidence, not a universal obstruction theorem.
+The last two populations are different:
 
-### Structural lesson
+- `7737` = all composite same-direction endpoints;
+- `2801` = actual one-edge neighbours.
 
-A bad vertical fibre may sit on a graph with a much smaller cover through another flow. Renewal cubes model poor fixed flows, not graph-level counterexamples.
+No count proves universal escape, trapping, or target completeness.
 
-## 4. Petersen: complete Fano-flow classification
+## 5. Petersen classification — `F-CERT-PRIVATE`
 
-For the Petersen graph:
+For Petersen, the exact finite classification records:
 
-- binary cycle-space dimension: $6$;
-- nowhere-zero Fano flows: $28560$;
-- coordinate-free $GL(3,2)$ flow orbits: $170$;
-- orbits under graph automorphisms and $GL(3,2)$: $5$.
+- `28560` nowhere-zero Fano flows;
+- `170` `GL(3,2)` flow orbits;
+- five combined graph/colour orbits;
+- complete reduced-fibre table;
+- every Fano flow has a componentwise-good lift;
+- connected-cycle flow graph is connected;
+- three surface types.
 
-Every Fano flow spans rank three. The complete reduced-fibre table is:
+This is a complete finite result about Petersen, not a universal theorem or a public-code reproducibility claim.
 
-$$
-\begin{array}{c|c|c}
-\text{fibre size}&\text{good lifts}&\text{flow orbits}\\
-1&1&80\\
-2&2&60\\
-2&1&20\\
-4&3&10.
-\end{array}
-$$
+## 6. Flower `J_5` — `F-CERT-PUBLIC + F-CENSUS`
 
-Hence
+The displayed flow and dual graphs give explicit certificate inputs for:
 
-$$
-\boxed{\mathfrak B(P)=\varnothing.}
-$$
+- one `K_6` obstruction;
+- one `K_6`-free obstruction containing a dominating chromatic core.
 
-Every nowhere-zero Fano flow on Petersen has a componentwise-good lift.
+The short target no-go is theorem-level conditional on the displayed dual subgraph. The `712` connected-neighbour and `528` good-neighbour counts remain census data. The displayed bad flow is not horizontally trapped.
 
-### Surface types
+## 7. Small four-poles — `F-CERT-PRIVATE`
 
-Exactly three reduced surface types occur:
+The exhaustive range through six internal vertices contains:
 
-1. orientable torus with simple dual $K_5$;
-2. Klein bottle with simple dual $K_5$;
-3. projective plane with simple dual $K_6$.
+- thirty connected cap-admissible multigraph classes;
+- eight complete boundary profiles;
+- a full cap set in every realized profile;
+- none of the four abstract mismatch kernels.
 
-The first two are good; the projective-plane state is bad. Mixed fibres contain exactly one projective-plane state and escape under a nontrivial admissible Petrial.
+This proves the finite lower bound of eight internal vertices for a minimal-counterexample shore. It does not prove the universal full-cap theorem. Larger samples are exploratory.
 
-### Horizontal graph
+## 8. Routing and monodromy tables
 
-The connected-cycle switch graph on all $28560$ flows is connected. Thus horizontal connectedness and vertical solubility are distinct facts; Petersen is vertically soluble at every horizontal state.
-
-## 5. Flower snark $J_5$
-
-A displayed Fano flow on the flower snark has a two-state reduced gauge fibre.
-
-### State 1
-
-A nine-vertex dual graph $D_9$ is $K_6$-free but contains
-
-$$
-K_2\vee W_5.
-$$
-
-The common-neighbour graph of a target edge in $\mathscr A_5$ is a three-colourable triangular prism, so $D_9$ cannot map to $\mathscr A_5$.
-
-### State 2
-
-The other dual is $K_7-e$ and contains a $K_6$.
-
-Thus the nonzero gauge word exchanges two distinct obstruction species:
-
-$$
-K_2\vee W_5
-\longleftrightarrow
-K_6.
-$$
-
-### Exact one-step neighbourhood
-
-The centre flow has $712$ connected-cycle neighbours. Exactly $528$ have at least one good reduced lift. The displayed bad flow is therefore not horizontally trapped.
-
-Among the wholly bad neighbours, every $K_6$-free bad lift is isomorphic to the same $D_9$ obstruction. This is a complete one-step finite statement, not a classification of all Fano flows on $J_5$.
-
-## 6. Small four-poles
-
-All connected cap-admissible cubic four-poles through six internal vertices were generated and their complete five-support boundary profiles computed.
-
-- underlying multigraph classes: $30$;
-- complete profile types: $8$;
-- every realized profile contains one full cap set $\mathcal K_i$;
-- none realizes one of the four small abstract mismatch kernels.
-
-This proves the lower bound that a shore in a minimal-counterexample cyclic four-cut has at least eight internal vertices.
-
-Larger exploratory samples show the same eight profiles, but those searches are not exhaustive.
-
-## 7. Routing and monodromy tables
-
-The ten-state routing game was enumerated exactly.
+### Routing kernels — `F-CERT-PRIVATE`
 
 - four minimal disjoint cap-forced Kempe-closed profile pairs;
-- unique safe route for every state/challenge in each kernel;
-- two policy-pair orbits: Type T and Type H;
-- sixteen BBD rainbow monodromies, four of each cycle type $2^21,41,32,5$;
-- four DDD monodromies in the physical DDD triangle;
-- the BBD monodromies generate $S_5$;
-- no common affine $\mathbf F_5$ structure on support names is preserved.
+- unique safe route for every state/challenge;
+- Type T and Type H policy-pair orbits;
+- physical BBD and DDD triangle profiles.
 
-These finite tables motivate the holonomy theory. The general algebraic conclusions are proved separately and do not depend on treating the table as a universal graph classification.
+These are finite inputs to conditional arguments. They do not prove path-pair realizability or global four-pole reduction.
 
-## 8. Atom and route-lock certificates
+### BBD monodromy — `F-CERT-PRIVATE / AFFECTED`
 
-Exact enumeration of ordered root quadruples gives:
+The sixteen BBD monodromies and their cycle types remain valid individual-loop data. They do not prove:
 
-$$
-640\text{ zero-sum states},\qquad
-280\text{ bad states},\qquad
-180\text{ co-root-defect states}.
-$$
+- physical root-preserving groupoid closure;
+- a global translation-kernel theorem;
+- one simultaneous common origin.
 
-Every bad-state/full-challenge row has one bad route and two rootifying crossed routes. Fixed co-root fibres are $K_{2,4}$.
+### DDD monodromy — `F-CERT-PRIVATE`
 
-Two explicit witnesses protect the trust boundary.
+The DDD table remains an exact finite input to the DDD atom and Tait-escape arguments in its stated scope.
 
-### Witness A — no graph two-cut
+## 9. Locked quotient and rank-two sections — `F-CERT-PUBLIC`
 
-A rank-two locked four-pole has all scalar sheets routed as $12\mid34$, but the minimum pair-separating edge cut has size four.
+The locked `K_{2,4}` challenge table supplies the exact finite quotient used by B6.4 and B7. The unique-bad-route theorem itself is independently proved.
 
-### Witness B — nonflat route lock
+The three rank-two planes through the terminal colour have explicit root-triangle sections. Once this table is supplied, the Tait/root escape is theorem-level.
 
-A full-rank locked four-pole has one terminal-colour edge carrying side word $0100$. No closed scalar component can alter it, so
+## 10. Matching-orbit correction
+
+The affine matching orbit sizes remain
 
 $$
-\Omega(c)\ne0.
+28,\qquad168,\qquad224.
 $$
 
-These are counterexamples to two tempting but false shortcuts.
+The correct all-parallel representative is
 
-## 9. Renewal and reserve-code censuses
+$$
+\{01,23,45\}.
+$$
 
-Exact gauge-fibre enumeration identifies:
+The old display `\{05,14,23\}` has directions `5,5,1`. This is a display correction, not a change to the orbit theorem.
 
-- private point cores;
-- $K_4$ reserve lines;
-- $2K_3$ interfaces;
-- shortened reserve-code dimensions;
-- essential quotients after removing invisible directions.
+## 11. Atom and curvature witnesses — `F-CERT-PUBLIC`
 
-The general theorem is the affine occurrence-locus formula. The detailed point/line/cube distributions remain laboratory-specific.
+Two explicit witnesses protect the theorem boundary.
 
-## 10. Defect and $K_6$ local tables
+1. A rank-two locked four-pole has minimum pair-separating cut four. Thus route-lock does not imply a graph two-cut.
+2. A full-rank locked four-pole has nonzero curvature. Thus route-lock does not imply automatic flatness.
 
-Exact finite checks support:
+They do not localize the residual sector.
 
-- the fifteen nonzero vectors of $E_5$ as the fifteen edges of $K_6$;
-- the $20$ triangle and $15$ one-factor zero-sum triples;
-- the six local cubic weight patterns;
-- the fifteen DDD/co-root atoms;
-- the $L(\mathrm{Petersen})$ endpoint transition graph;
-- the $D_8$ and $S_5$ cohomology dimensions;
-- root-fibre tables for the four rainbow monodromy types.
+## 12. Defect/Petersen tables — `AFFECTED`
 
-The accompanying general theorems are proved in the substantive chapters. The computation supplies exact finite verification, not a substitute for those proofs.
+Local `K_6` coefficients, weight patterns, co-root states, and Petersen transition tables remain valid finite geometry.
 
-## 11. Reproducibility boundary
+They cannot support the old nontrivial defect-minimal forest claim because the stated fixed-terminal variation domain contains a zero-defect root cover. A future forest certificate must first identify a valid nontrivial variation slice.
 
-The public packets state the exact finite objects, counts, certificates, and proof status. Private notebook branches contain supporting code and recovery evidence but are not copied wholesale into the public corpus.
+## 13. Orthogonal tables — `AFFECTED`
 
-The recovered combined verifier was incomplete. Its publicly reconstructed modules were rerun successfully; the unavailable historical failing assertion remains classified as `CODE-PARTIAL`.
+Rank-three and rank-four orthogonal root tables remain valid. They do not support the superseded universal `2r`-dimensional hierarchy. The correct universal dimension is `q-2`.
 
-No public theorem may rely solely on hidden notebook state. A finite claim should be supported by at least one of:
+## 14. Renewal and reserve codes — `F-CENSUS / F-CERT-PRIVATE`
 
-- a public explicit certificate;
-- a dependency-free reproducible enumeration description;
-- a separate mathematical proof.
+Point cores, reserve lines, `2K_3` interfaces, shortened code dimensions, and fibre occurrence distributions are graph- and flow-specific data. The general affine occurrence-locus theorem is independent mathematics.
 
-## 12. What the laboratories do not show
+## 15. `CODE-PARTIAL` boundary
+
+The recovered combined verifier was incomplete and one historical failing assertion is unavailable. Publicly reconstructed modules may have been rerun during recovery, but the whole historical verifier is not a public green end-to-end certificate.
+
+No theorem may rely solely on hidden notebook state, unavailable assertions, unexplained raw counts, or a table whose consuming theorem changed scope.
+
+## 16. Minimum metadata
+
+Every finite claim used by the active corpus should retain:
+
+1. exact source commit and path;
+2. finite object and labelling convention;
+3. graph/flow/lift identifier;
+4. enumeration method or code location when available;
+5. raw output and symmetry convention;
+6. explicit witness for existential claims;
+7. consuming theorem;
+8. assurance class;
+9. all scope corrections.
+
+## 17. What finite results do not prove
 
 They do not prove:
 
-- every graph has a good Fano flow;
-- every bad-flow component has a one-step exit;
-- every fixed-flow obstruction is $K_6$-based;
-- every $K_6$-free compatible dual is good;
+- physical BBD groupoid closure;
+- a valid nontrivial defect variation slice;
+- every bad flow has a connected one-step exit;
 - every four-pole contains a full cap profile;
-- every route-locked atom localizes to a bounded factor;
-- the global five-support statement.
+- scalar-sheet cuts are source graph cuts;
+- finite potentials have bounded transfer semantics;
+- the global five-support theorem.
 
-The laboratories identify mechanisms and falsify overstatements. The remaining proof must use the structural theorems extracted from them.
+## 18. Provenance and status
+
+Programme B8 source:
+
+`proof-development/affine-cdc-rigour-v1@989cb002598fd91786029be201c2747c697bb476`.
+
+State retained:
+
+`READY-FOR-CURATOR / ASSURANCE-NORMALIZED`.
+
+B8 is an assurance audit, not independent mathematical review, formal verification, public-code certification, manuscript approval, publication, release, arXiv, or DOI status.
