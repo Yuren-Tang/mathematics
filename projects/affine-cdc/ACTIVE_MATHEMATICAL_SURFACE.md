@@ -1,80 +1,99 @@
 # AffineCDC active mathematical surface
 
-This file identifies the current-best mathematical surface on the Programme A curation candidate.
+This file identifies the current mathematical surface on the Programme B1 curation candidate while preserving the fixed Programme A Audit A candidate.
 
 ## 1. Exact construction line
 
-The candidate is built from:
+- canonical repository base: `main@960c92b7ff231c78b387894149779083060a75eb`;
+- immutable Programme A source: `proof-development/affine-cdc-rigour-v1@8bee16780b549f51e1f29343671a059961ec4172`;
+- fixed Programme A Audit A candidate: `curation/affine-cdc-programme-a-v1@68715fb29bb4b6555e2bc3e089603c5390d01566`;
+- immutable Programme B1 source: `proof-development/affine-cdc-rigour-v1@778b09ac8260192e022f512f24cdef1d04871f37`;
+- Programme B1 candidate branch: `curation/affine-cdc-programme-b1-v1`;
+- exact source splice commit: `35c7a2851f070061175194eef10568c0a456cf8e`.
 
-- canonical base `main@960c92b7ff231c78b387894149779083060a75eb`;
-- immutable Programme A source `proof-development/affine-cdc-rigour-v1@8bee16780b549f51e1f29343671a059961ec4172`;
-- curation branch `curation/affine-cdc-programme-a-v1`.
-
-Only A0–A10 and the Programme A obligation/provenance ledger are integrated. B1 and later proof-development commits are excluded.
+The splice has first parent `68715fb...` and second parent `778b09ac...`. Its tree admits exactly the five B1 dossiers and the immutable B1 checkpoint DAG from the source side.
 
 ## 2. Primary entrypoints
 
 - [`README.md`](README.md) — project entrypoint;
 - [`CURRENT_BEST.md`](CURRENT_BEST.md) — compact mathematical state;
-- [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md) — natural dependency architecture;
-- [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md) — theorem DAG;
-- [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md) — open five-support endpoint.
+- [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md) — controlling architecture;
+- [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md) — Programme A and B1 theorem DAGs;
+- [`FORMAL_STATUS.md`](FORMAL_STATUS.md) — assurance boundaries;
+- [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md) — open global endpoint.
 
-## 3. Complete Cycle Double Cover theorem
+## 3. Fixed Programme A surface
 
-The controlling end-to-end proof surface is:
+The complete Cycle Double Cover proof surface remains:
 
 1. [`complete-cdc/foundations-expansion-and-flow.md`](complete-cdc/foundations-expansion-and-flow.md);
 2. [`complete-cdc/affine-compatibility-and-extraction.md`](complete-cdc/affine-compatibility-and-extraction.md);
 3. [`complete-cdc/collapse-decomposition-and-assembly.md`](complete-cdc/collapse-decomposition-and-assembly.md).
 
-Directory entrypoint: [`complete-cdc/README.md`](complete-cdc/README.md).
+Programme A exact dossiers A0–A10 remain under `proof-development/`. This B1 intake changes no Programme A theorem chapter, assurance file specific to Audit A, or fixed candidate branch.
 
-The natural theorem assumes finite active edge set and no singleton cut and concludes a finite circuit double cover. Loops, parallel edges, disconnected components, isolated vertices, and an arbitrary ambient vertex carrier are allowed.
+## 4. Active Programme B1 surface
 
-Supporting mechanism-level mathematics remains in:
+The preferred integrated B1 theorem is:
 
-- [`core/`](core/);
-- [`reduction/`](reduction/);
-- [`rank-hierarchy/`](rank-hierarchy/);
-- [`tensor/`](tensor/);
-- [`gauge/`](gauge/).
+- [`five-support/b1-object-quantifier-and-scope.md`](five-support/b1-object-quantifier-and-scope.md).
 
-## 4. Programme A source and provenance surface
+Synchronized B1 chapters are:
 
-The exact authorial proof-development material remains active as provenance:
+- [`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md);
+- [`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md);
+- [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
+- [`five-support/README.md`](five-support/README.md).
 
-- `proof-development/AC_PD_A0_FOUNDATIONAL_SEMANTICS.md` through `AC_PD_A10_COMPLETE_CDC_ASSEMBLY.md`;
-- `proof-development/OBLIGATION_DAG.md`.
+B1 control surfaces are:
 
-Control files:
+- [`PROGRAMME_B1_INTEGRATION_MAP.md`](PROGRAMME_B1_INTEGRATION_MAP.md);
+- [`PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md`](PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md);
+- [`PROGRAMME_B1_INTEGRATION_MANIFEST.md`](PROGRAMME_B1_INTEGRATION_MANIFEST.md).
 
-- [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md);
-- [`PROGRAMME_A_ASSURANCE_BOUNDARY.md`](PROGRAMME_A_ASSURANCE_BOUNDARY.md);
-- [`PROGRAMME_A_INTEGRATION_MANIFEST.md`](PROGRAMME_A_INTEGRATION_MANIFEST.md).
+## 5. Exact B1 authorial provenance
 
-The dossiers are source, audit, and repair surfaces. The three integrated chapters are the preferred current reading order.
+The candidate retains exact source blobs for:
 
-## 5. Five-support strengthening
+- `proof-development/AC_PD_B1_1_ROOT_FLOW_TRIANGLE_EQUIVALENCE.md`;
+- `proof-development/AC_PD_B1_2_MATCHING_FOUR_FLOW_EQUIVALENCE.md`;
+- `proof-development/AC_PD_B1_3_FIXED_FLOW_PLANE_CRITERION.md`;
+- `proof-development/AC_PD_B1_4_SURFACE_HALFCUBE_SCOPE.md`;
+- `proof-development/AC_PD_B1_EQUIVALENCE_AND_SCOPE_MAP.md`;
+- the `OBLIGATION_DAG.md` at the immutable B1 checkpoint.
 
-The active five-support corpus remains:
+These dossiers are proof, audit, and repair surfaces. The integrated B1 chapter is the preferred current exposition.
 
-1. [`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md);
-2. [`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md);
-3. [`five-support/gauge-and-reconfiguration.md`](five-support/gauge-and-reconfiguration.md);
-4. [`five-support/cuts-four-poles-and-routing.md`](five-support/cuts-four-poles-and-routing.md);
-5. [`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md);
-6. [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md);
-7. [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
-8. [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
+## 6. B1 scope installed
 
-The global five-support theorem remains open. Programme A does not alter this line.
+The active corpus now distinguishes:
 
-## 6. Historical five-support recovery
+- graph-level existential five-support existence;
+- fixed $(f,W)$ component obstruction;
+- fixed $f$ with variable plane;
+- fixed compatible lift and same-embedding componentwise compression;
+- an external root flow on a prescribed dual, subject to holonomy;
+- the old-colour-factorable quotient $J_g$.
 
-The seventy-eight discovery-order `research/FIVE_CDC_*.md` packets remain retired from the current tip after exact successor mapping and are recoverable from their historical checkpoint.
+It also records the exact support-coordinate/root-label distinction, the missing matching/four-flow datum, and the even-halfcube odd-translation convention.
 
-Their existing control surfaces remain:
+## 7. B2+ exclusion
+
+The candidate does not contain source-side additions for:
+
+- `AC_PD_B2_*`;
+- `AC_PD_B3_*`;
+- later PDL `OBLIGATION_DAG.md` changes;
+- Programme B2 or B3 handoffs;
+- any moving-tip correction after `778b09ac...`.
+
+The previously integrated five-support chapters beyond B1 remain present with their prior corpus status. Their later PDL corrections are not silently consumed or dispositioned here.
+
+## 8. Historical research recovery
+
+The seventy-eight discovery-order `research/FIVE_CDC_*.md` packets remain retired from the current tree after successor mapping and recoverable from the public historical checkpoint.
+
+Existing recovery controls remain:
 
 - [`CHAPTER_PROVENANCE.md`](CHAPTER_PROVENANCE.md);
 - [`MIGRATION_LEDGER.md`](MIGRATION_LEDGER.md);
@@ -82,8 +101,8 @@ Their existing control surfaces remain:
 - [`SOURCE_RECOVERY_AUDIT.md`](SOURCE_RECOVERY_AUDIT.md);
 - [`SUPERSESSION_MAP.md`](SUPERSESSION_MAP.md).
 
-## 7. Assurance boundary
+## 9. Assurance boundary
 
-Programme A is Curator-integrated authorial paper-proof mathematics. It has not passed independent Audit A and is not end-to-end Lean verified.
+Programme A remains fixed for Audit A. Programme B1 is Curator-integrated authorial proof-development mathematics and has not received dedicated independent audit.
 
-No manuscript, peer-review, publication, release, arXiv, DOI, or timestamp status is created. See [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
+Neither Programme A nor B1 is end-to-end Lean verified by this intake. No manuscript, peer-review, publication, release, arXiv, DOI, or timestamp status is created.
