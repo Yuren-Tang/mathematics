@@ -1,25 +1,21 @@
-# AC-PD-B3.1 — half-cube common links and dominating-clique correction
+# AC-PD-B3.1 — quadratic common-link formula and validated dominating-clique capacity
 
-**Proof-development state:** `COMPLETE-DRAFT / MATHEMATICAL-CORRECTION`  
+**Proof-development state:** `COMPLETE-DRAFT / PROVENANCE-REPAIR`  
 **Owner:** `AffineCDC — Proof Development Lead` (`AC-PDL`)  
 **Exact initial corpus base:** `main@960c92b7ff231c78b387894149779083060a75eb`  
-**Affected recovered packets:** `FIVE_CDC_HALFCUBE_COMMON_LINK_REDUCTION_V1.md` and `FIVE_CDC_TARGET_DOMINATING_CLIQUE_CAPACITY_V1.md` at `research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`  
+**Validated controlling packets:** `FIVE_CDC_HALFCUBE_CLIQUE_LINK_CAPACITY_V1.md` and `FIVE_CDC_DOMINATING_CLIQUE_EXACT_CAPACITY_V1.md` at `research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`  
 **Depends on:** B1.4 half-cube target semantics; elementary quadratic and graph-homomorphism theory  
-**Immediate consumers:** B3 finite target no-go/classification packets; B5 interface targets; B9 target-capacity route  
+**Immediate consumers:** B3 finite target classification; B5 interface targets; B9 factorable-target route  
 **External mathematical inputs:** none
 
-## 0. Correction summary
+## 0. Provenance repair
 
-Two recovered target-capacity statements are false as written.
+An earlier version of this dossier incorrectly attributed two false statements to recovered packets named `FIVE_CDC_HALFCUBE_COMMON_LINK_REDUCTION_V1.md` and `FIVE_CDC_TARGET_DOMINATING_CLIQUE_CAPACITY_V1.md`. Those names are not the controlling source packets. The actual packets are the two files named above, and their half-cube link table and exact join theorem are mathematically correct.
 
-1. The common neighbourhood of a clique in a quadratic Cayley graph is **not** generally a translate of the annihilator of the difference span. Even a one-vertex clique is an immediate counterexample: its common neighbourhood is the anisotropic sphere around that vertex, not the whole space.
-2. A graph homomorphism need not be injective outside a dominating clique. Therefore the existence of a homomorphism does **not** imply
-   $$
-   |V(J)|\leq |C|+|\Gamma_H(\phi(C))|.
-   $$
-   Arbitrarily many outside twins may collapse to one common neighbour.
+This repaired unit therefore has two purposes:
 
-This dossier gives the exact replacements.
+1. prove a general quadratic formula that explains the explicit half-cube link table;
+2. independently verify the recovered dominating-clique classification rather than supersede it.
 
 ## 1. Quadratic Cayley target
 
@@ -29,13 +25,7 @@ $$
 B(x,y)=q(x+y)+q(x)+q(y).
 $$
 
-Define the loopless graph
-
-$$
-\mathscr A(E,q)
-$$
-
-on vertex set $E$ by
+Let $\mathscr A(E,q)$ be the loopless graph on $E$ with
 
 $$
 x\sim y
@@ -43,19 +33,7 @@ x\sim y
 q(x+y)=1.
 $$
 
-The five-coordinate half-cube is the case $E=E_5$ with its minus-type quadratic form.
-
-For a vertex set $C$, write
-
-$$
-\Gamma(C)=\bigcap_{c\in C}N(c)
-$$
-
-for its open common neighbourhood.
-
-## 2. Exact clique-difference equations
-
-Let $C\subseteq E$ be a nonempty clique and fix $\alpha\in C$. Put
+For a nonempty clique $C\subseteq E$, fix $\alpha\in C$ and put
 
 $$
 S_C=\{c+\alpha:c\in C\setminus\{\alpha\}\},
@@ -63,266 +41,135 @@ S_C=\{c+\alpha:c\in C\setminus\{\alpha\}\},
 D_C=\operatorname{span}S_C.
 $$
 
-Every $d\in S_C$ is anisotropic because $c$ is adjacent to $\alpha$.
+## 2. Exact common-link formula
 
-### Theorem 2.1 — exact common-link formula
+### Theorem 2.1
 
-A vertex $y=\alpha+z$ lies in $\Gamma(C)$ if and only if
+A vertex $y=\alpha+z$ is adjacent to every member of $C$ if and only if
 
 $$
 \boxed{
 q(z)=1,
 \qquad
-B(z,d)=1\quad\text{for every }d\in S_C.}
+B(z,d)=1\quad(d\in S_C).}
 $$
 
 ### Proof
 
-Adjacency to $\alpha$ is exactly $q(z)=1$. For $c\ne\alpha$, put $d=c+\alpha$. Since $C$ is a clique, $q(d)=1$. Then
+Adjacency to $\alpha$ is $q(z)=1$. For $c\ne\alpha$, let $d=c+\alpha$. Since $C$ is a clique, $q(d)=1$. Therefore
 
 $$
-q(y+c)=q(z+d)=q(z)+q(d)+B(z,d)=B(z,d).
+q(y+c)=q(z+d)=q(z)+q(d)+B(z,d)=B(z,d),
 $$
 
-Thus adjacency to $c$ is exactly $B(z,d)=1$. $\square$
+once $q(z)=1$. Thus adjacency to $c$ is exactly $B(z,d)=1$. $\square$
 
-The common link is therefore a quadratic slice of an affine linear system, not merely an affine subspace.
+### Corollary 2.2
 
-## 3. Linear consistency and the residual quadratic slice
-
-The equations
+The linear equations $B(z,d)=1$ are consistent exactly when the assignment $d\mapsto1$ on $S_C$ respects every linear dependence. If $z_0$ is one solution, then
 
 $$
-B(z,d)=1
-\qquad(d\in S_C)
+\Gamma(C)
+=
+\alpha+
+\{z\in z_0+D_C^\perp:q(z)=1\}.
 $$
 
-are consistent exactly when the assignment $d\mapsto1$ on the generating set $S_C$ respects every linear dependence.
+Thus a common link is a quadratic slice of an affine linear coset. The recovered half-cube packets do not replace this slice by a bare annihilator; instead they compute the slice explicitly in the five-coordinate target.
 
-### Proposition 3.1
+## 3. Half-cube clique links
 
-The following are equivalent.
-
-1. The linear equations $B(z,d)=1$ for $d\in S_C$ have a solution.
-2. For every finite subset $T\subseteq S_C$ with
-   $$
-   \sum_{d\in T}d=0,
-   $$
-   one has $|T|$ even.
-3. The rule $d\mapsto1$ extends to a linear functional
-   $$
-   \ell_C:D_C\to\mathbf F_2.
-   $$
-
-If these conditions hold and $z_0$ is one solution, the full linear solution set is
+Let $\mathscr A_5$ be the even half-cube. Translation and coordinate permutation act transitively on cliques of each size $1\le r\le5$. Evaluating Theorem 2.1 on the canonical cliques
 
 $$
-L_C=z_0+D_C^\perp.
+Q_r\subseteq\{0,12,13,14,15\}
+$$
+
+gives
+
+$$
+\begin{array}{c|c|c}
+r&\operatorname{Lk}(Q_r)&\chi\\
+\hline
+1&J(5,2)=L(K_5)&5\\
+2&K_3\square K_2&3\\
+3&K_2\sqcup K_1&2\\
+4&K_1&1\\
+5&\varnothing&0.
+\end{array}
+$$
+
+These are exactly the link types and chromatic numbers stated and proved in `FIVE_CDC_HALFCUBE_CLIQUE_LINK_CAPACITY_V1.md`.
+
+## 4. Exact dominating-clique reduction
+
+Let $J,H$ be finite simple loopless graphs and suppose
+
+$$
+J=K_r\vee R.
+$$
+
+### Theorem 4.1
+
+There is a homomorphism $J\to H$ if and only if there are an $r$-clique $Q\subseteq H$ and a homomorphism
+
+$$
+R\longrightarrow H[\Gamma_H(Q)].
 $$
 
 ### Proof
 
-This is the standard consistency criterion for assigning values to a spanning family. If $z_0$ solves the equations, every other solution differs by a vector annihilating $D_C$, and every such difference preserves the equations. $\square$
+A homomorphism is injective on the source clique and maps it to an $r$-clique $Q$. Every remainder vertex is adjacent to all clique vertices, so its image lies in the common link. Conversely, combine a clique bijection with a homomorphism into the common link. $\square$
 
-### Corollary 3.2 — corrected common-link reduction
+Applying the half-cube link table yields the recovered exact theorem.
 
-If the linear system is inconsistent, then $\Gamma(C)=\varnothing$. If it is consistent, then
+### Theorem 4.2 — validated half-cube capacity
+
+For every finite loopless graph $R$ and every $2\le r\le5$,
 
 $$
 \boxed{
-\Gamma(C)=
-\alpha+
-\{z\in z_0+D_C^\perp:q(z)=1\}.}
+K_r\vee R\longrightarrow\mathscr A_5
+\quad\Longleftrightarrow\quad
+\chi(R)\le5-r.}
 $$
-
-Thus common-link size and structure depend on the restriction of $q$ to the affine coset $z_0+D_C^\perp$, not only on $\dim D_C$.
-
-## 4. Immediate counterexamples to the false annihilator formula
-
-### Singleton clique
-
-For $C=\{\alpha\}$, one has $D_C=0$. The false formula gives
-
-$$
-\alpha+D_C^\perp=E,
-$$
-
-whereas the true common neighbourhood is
-
-$$
-N(\alpha)=\alpha+\{z:q(z)=1\}.
-$$
-
-Unless every nonzero vector is anisotropic and zero is somehow removed, these sets are different; in the half-cube they are dramatically different.
-
-### Two-vertex clique
-
-If $C=\{\alpha,c\}$ and $d=c+\alpha$, then
-
-$$
-\Gamma(C)=
-\alpha+\{z:q(z)=1,\ B(z,d)=1\}.
-$$
-
-The false annihilator condition $B(z,d)=0$ has the opposite linear parity.
-
-Therefore the recovered formula cannot be repaired by a minor convention change.
-
-## 5. Exact dominating-clique homomorphism theorem
-
-Let $J,H$ be finite simple loopless graphs and let $C\subseteq V(J)$ be a clique such that every vertex of $J-C$ is adjacent to every vertex of $C$. Call $C$ a dominating clique in this strong sense.
-
-### Theorem 5.1 — exact reduction
-
-There is a graph homomorphism
-
-$$
-\phi:J\to H
-$$
-
-if and only if there exist:
-
-1. a clique $C'\subseteq V(H)$ with $|C'|=|C|$;
-2. a bijection $\phi_C:C\to C'$;
-3. a graph homomorphism
-   $$
-   \theta:J-C\to H[\Gamma_H(C')].
-   $$
 
 ### Proof
 
-Suppose $\phi:J\to H$. Since $H$ has no loops, adjacent vertices cannot have the same image; hence $\phi|_C$ is injective and its image $C'$ is a clique of the same cardinality. Every $v\in J-C$ is adjacent to every member of $C$, so $\phi(v)$ is adjacent to every member of $C'$. Therefore the restriction of $\phi$ maps $J-C$ into the induced common-link graph and is a homomorphism.
+The forward implication follows because the relevant common link has chromatic number $5-r$. Conversely, that link contains a clique $K_{5-r}$; a $(5-r)$-colouring gives $R\to K_{5-r}$ and hence a map into the link. $\square$
 
-Conversely, combine $\phi_C$ and $\theta$. Edges within $C$ map to edges of $C'$, edges within $J-C$ are preserved by $\theta$, and every cross edge maps to an edge because every point of $\Gamma_H(C')$ is adjacent to every point of $C'$. $\square$
-
-This theorem replaces the false cardinality capacity statement.
-
-## 6. Correct consequences
-
-### Corollary 6.1 — chromatic and clique capacity
-
-If $J\to H$ and $C$ is a dominating clique, then for some $|C|$-clique $C'$ of $H$,
+For $r=1$, the exact statement is instead
 
 $$
-J-C\to H[\Gamma_H(C')].
+K_1\vee R\to\mathscr A_5
+\quad\Longleftrightarrow\quad
+R\to L(K_5),
 $$
 
-Consequently
+so chromatic number alone does not classify the five-chromatic boundary.
+
+## 5. General cardinality warning
+
+A general homomorphism need not be injective on $R$, so Theorem 4.1 does not imply a vertex-count bound
 
 $$
-\chi(J-C)
-\leq
-\chi(H[\Gamma_H(C')]),
+|V(J)|\le r+|\Gamma_H(Q)|.
 $$
 
-and
+That inequality is valid only for injective maps on the remainder. This is a general warning, not a correction to the recovered half-cube capacity packets, which use chromatic homomorphism capacity rather than remainder cardinality.
 
-$$
-\omega(J-C)
-\leq
-\omega(H[\Gamma_H(C')]).
-$$
+## 6. Validated downstream consequences
 
-These are homomorphism invariants; vertex cardinality is not.
+The following recovered results survive this audit.
 
-### Corollary 6.2 — complete remainder
+1. $K_6\not\to\mathscr A_5$, because $\omega(\mathscr A_5)=5$.
+2. $K_3\vee C_{2m+1}\not\to\mathscr A_5$, because the triangle link is bipartite.
+3. $K_2\vee R\not\to\mathscr A_5$ exactly when $\chi(R)\ge4$.
+4. The flower-snark core $K_3\vee C_5$ has a short valid common-link obstruction.
+5. The rank-one target remains the finer homomorphism problem $R\to L(K_5)$.
 
-If $J-C$ is a clique of size $s$, then $H$ contains a clique of size $|C|+s$.
+All conclusions remain target-graph statements. A quotient calculation for $J_g$ does not automatically classify the full dual $T_g^{(1)}$; B1.4's scope boundary remains controlling.
 
-### Proof
+## 7. Completion assessment
 
-Its image is an $s$-clique in the common link of $C'$, hence is jointly complete with $C'$. $\square$
-
-### Corollary 6.3 — empty common link
-
-If every $|C|$-clique of $H$ has empty common link and $J-C$ is nonempty, then no homomorphism $J\to H$ exists.
-
-### Corollary 6.4 — injective version
-
-If one separately requires $\phi$ to be injective on $J-C$, then
-
-$$
-|V(J)|
-\leq
-|C|+|\Gamma_H(C')|.
-$$
-
-Thus the recovered cardinality theorem is valid for embeddings, not arbitrary graph homomorphisms.
-
-## 7. Counterexample to the false cardinality theorem
-
-Let
-
-$$
-J=K_{1,n}
-$$
-
-with centre $C=\{c\}$, and let $H=K_2$. The centre is a dominating one-clique, and every star admits a homomorphism to $K_2$ by sending all leaves to the other target vertex. Yet the common link of the image of $c$ has one vertex, while
-
-$$
-|V(J)|=n+1
-$$
-
-is arbitrarily large. Hence no cardinality bound of the recovered form can follow from homomorphism existence.
-
-## 8. Consequences for existing finite target packets
-
-### Direct $K_6$ no-go remains valid
-
-The packet `FIVE_CDC_K6_TARGET_NO_GO_V1.md` proves directly that the half-cube contains no $K_6$, equivalently a standard $K_5$ has empty common link. Since
-
-$$
-K_6-K_5=K_1,
-$$
-
-Corollary 6.3 recovers the no-homomorphism statement. Its explicit five-colouring of $K_8-C_5$ remains a valid homomorphism witness. This result does not depend on the false vertex-count bound.
-
-### $K_8-C_5$ classification requires certificate audit, not automatic rejection
-
-The exact brute-force classification packet for maps
-
-$$
-K_8-C_5\to\mathscr A_5
-$$
-
-is a finite certificate claim and does not become false merely because the general capacity theorem is false. It must be checked against its own exhaustive search and corrected witness table.
-
-### Any cardinality-only no-go requires re-audit
-
-A target impossibility derived only from
-
-$$
-|V(J)|>|C|+|\Gamma_H(C')|
-$$
-
-for a noninjective homomorphism problem is invalid. Such packets must be repaired using Theorem 5.1, chromatic/clique capacity, holonomy, or a direct finite certificate.
-
-## 9. Target-capacity replacement
-
-For the half-cube target, the correct dominating-clique workflow is:
-
-1. enumerate target cliques $C'$ of the required size up to automorphism;
-2. compute the exact induced common-link graph using Theorem 2.1;
-3. test whether
-   $$
-   J-C\to\mathscr A_5[\Gamma(C')];
-   $$
-4. use chromatic, clique, or exact homomorphism obstructions inside the common link;
-5. invoke cardinality only for embeddings or otherwise injective subproblems.
-
-The residual common link is a smaller quadratic-affine target and may still be tractable, but its reduction is quadratic, not merely orthogonal-linear.
-
-## 10. Curator correction requirement
-
-Before B3 target material is promoted:
-
-1. mark `FIVE_CDC_HALFCUBE_COMMON_LINK_REDUCTION_V1.md` as `SUPERSEDED / FALSE FORMULA`;
-2. mark the homomorphism cardinality theorem in `FIVE_CDC_TARGET_DOMINATING_CLIQUE_CAPACITY_V1.md` as false, retaining only its injective/embedding variant;
-3. install Theorems 2.1 and 5.1 as the active replacements;
-4. re-audit downstream no-go packets by proof type;
-5. preserve direct finite classifications and direct clique no-go arguments when independently valid;
-6. prevent any full-dual conclusion from a quotient target calculation without the B1.4 scope bridge.
-
-## 11. Completion assessment
-
-`AC-PD-B3.1` is `COMPLETE-DRAFT / MATHEMATICAL-CORRECTION`. The next active unit is B3.2: audit the direct $K_6$ no-go and the exact $K_8-C_5$ homomorphism classification, reconstruct their corrected witness tables, and classify precisely what they prove about old-colour quotients versus full dual triangulations.
+`AC-PD-B3.1` is `COMPLETE-DRAFT / PROVENANCE-REPAIR`. It validates the controlling recovered link and capacity packets and supplies a more general quadratic derivation. No source packet is marked false by this unit.
