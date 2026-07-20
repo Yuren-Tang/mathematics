@@ -2,262 +2,190 @@
 
 ## 1. Purpose
 
-The public research surface contains many exact reformulations discovered at different stages. Their value is not that one must choose a single winner. Different formulations expose different operations:
+The five-support corpus contains many useful formulations. Programme B1 separates three classes:
 
-- root geometry exposes local triangles;
-- quadratic and Schur equations expose linear correction;
-- stresses expose dual certificates;
-- surfaces expose componentwise support freedom;
-- gauge codes expose affine arrangements;
-- four-pole states expose gluing;
-- holonomy exposes composition failure.
+1. graph-level witness equivalences proved in B1;
+2. fixed-flow or fixed-lift equivalences whose quantifiers must be retained;
+3. later B2+ formulations whose exact arrow status is not yet consumed by this intake.
 
-This chapter records which formulations are genuinely equivalent, which are only sufficient subroutes, and which proof families should remain independently recoverable.
+Different proof families remain recoverable because they expose different operations, but shared vocabulary does not by itself prove equivalence.
 
-## 2. Global equivalence package
+## 2. B1 graph-level equivalence package
 
-The following are equivalent for a finite cubic graph $G$.
+For a finite loopless cubic multigraph $G$, the following are equivalent.
 
 1. An indexed five-support even double cover.
 2. A root-valued flow
    $$
    E(G)\to R_5\subset E_5.
    $$
-3. A labelling of source edges by edges of $K_5$ such that every cubic vertex maps to a triangle.
-4. A cycle-continuous/cographic map into the $K_5$ triangle geometry.
-5. A matching together with a nowhere-zero $\mathbf F_2^2$ flow on the matching complement, with the corresponding boundary conditions.
-6. A solution of the quadratic cycle equation in the chosen binary coordinates.
+3. A $K_5$-triangle edge labelling.
+4. Exact matching/four-flow data: even supports $B,D$, matching $M=B\cap D$, and a nowhere-zero $\mathbf F_2^2$ flow on $G-M$.
+5. Equivalently, an even support $B$, matching $M\subseteq B$, nowhere-zero four-flow on $G-M$, and even $M$-endpoint parity in every component of $G-B$.
+6. Existence of a Fano flow $f$ and plane $W$ with empty component-obstruction profile.
+7. Existence of a cycle-face embedding $S$ whose full dual graph admits a homomorphism
+   $$
+   T_S^{(1)}\to\mathscr A_5.
+   $$
 
-These formulations describe the final five-support object itself.
+All auxiliary data are existential at graph level. These arrows do not preserve a previously fixed flow, plane, root lift, or surface.
 
-## 3. Projection and lifting package
+## 3. Matching/four-flow correction
 
-A compatible eight-support root lift projects to a Fano flow. Conversely, every cubic Fano flow has a compatible eight-support lift by the rank-three affine theorem.
+A fixed support-coordinate inverse image is an even support. A fixed root-label inverse image is a matching.
 
-Fixing a five-coordinate slice or quotient gives equivalent obstruction presentations:
+Bare matching plus four-flow is not a complete converse. The missing datum is either:
 
-1. singular-line quotient lifting;
-2. component parity on $G_W$;
-3. equal outside-colour cut parity;
-4. Eulerian colour classes in the contracted quotient;
-5. boundary of a Schur product;
-6. pairing with relative stresses;
-7. Fourier character obstruction;
-8. affine-subspace arrangement avoidance.
+- the second even support $D$ with $M=B\cap D$; or
+- the explicit component endpoint-parity/$T$-join condition.
 
-These are complete only after the projection/slice has been fixed. They do not by themselves exhaust the componentwise surface criterion.
+Any concise formulation must include one of these equivalent data packages.
 
-## 4. The direct geometric proof family
+## 4. Fixed-flow package
 
-The most economical proof of the fixed-plane criterion is the colour-cut argument.
+Fix a Fano flow $f$ and plane $W$. Let $G_W$ be the subgraph of $W$-valued edges. For every component $K$ of $G_W$, the four outside-colour cut parities are equal.
 
-- Contract each $W$-component.
-- The four outside colours form one affine $W$-plane.
-- Their only binary relation is the total sum.
-- Hence their degree-parity vector at a quotient vertex is $0000$ or $1111$.
-- The affine lifting obstruction is exactly this common bit.
+The following are equivalent for this fixed $(f,W)$:
 
-Advantages:
+1. a global five-coordinate slice;
+2. a distinguished even support $D$;
+3. the matching endpoint $T$-join condition;
+4. vanishing of one outside-colour cut parity;
+5. vanishing of all outside-colour cut parities;
+6. Eulerian outside-colour classes after contraction;
+7. vanishing of the local affine component obstruction.
 
-- coordinate-free after choosing $W$;
-- no local-family enumeration;
-- gives explicit cut certificates;
-- interacts directly with cycle switches and graph decomposition.
+For a prescribed $f$, factorable success means that some plane profile is empty. Failure for this fixed flow is not failure of the graph.
 
-This should be the default proof in a general exposition.
+## 5. Fixed-lift surface package
 
-## 5. The singular-fibre proof family
+Fix a compatible root lift $g$. It determines a properly face-coloured cycle-face surface $S_g$, its full dual triangular cellulation $T_g$, and the old-colour quotient $J_g$.
 
-The singular quotient treats every edge as a finite root fibre and every cubic vertex as a local relation. Component parity is the holonomy of this finite local system.
-
-Advantages:
-
-- extends naturally to monodromy quotients $1+\pi$;
-- explains empty edge fibres, empty vertex relations, and component holonomy uniformly;
-- is the correct language for the Type H rainbow branch.
-
-This proof family should remain independent because it supplies the later local-to-global obstruction stack.
-
-## 6. The quadratic/Schur proof family
-
-Choose cycle coordinates $x,y$. The root condition becomes a quadratic relation, and the obstruction is the boundary of
+The exact same-embedding equivalence is:
 
 $$
-x*y.
-$$
-
-Advantages:
-
-- makes fixed-direction correction linear after differentiation;
-- gives exact images for admissible cycle switches;
-- interfaces with code theory, tensor products, and cographic quotients;
-- isolates the nonlinear part in one Schur word.
-
-The Schur complex is a useful computational and algebraic presentation. It should not replace the affine or surface object as the conceptual centre.
-
-## 7. The stress/Fourier proof family
-
-Dualizing the affine lifting map gives equilibrium stresses. A bad slice has a stress evaluating nontrivially on the distinguished affine class.
-
-Fourier expansion over the affine choice torsor separates:
-
-- the uniform orbit average;
-- nontrivial characters supported by relative stresses.
-
-The Fourier-zero term is the orbit-average argument; low-weight stress characters give the first nonuniform corrections. Möbius inversion on affine-subspace intersections supplies a Fourier-free count.
-
-Advantages:
-
-- proves counting and density statements;
-- detects when local controllability is enough;
-- provides exact dual certificates;
-- connects to the existing tensor/stress corpus.
-
-Limit:
-
-- it does not solve the source composition problem merely by showing that one finite arrangement is sparse.
-
-## 8. The orthogonal-group proof family
-
-The universal compatible lift belongs to the anisotropic orbit of a plus-type quadratic space. The five-support object is the root orbit of a minus-type four-space.
-
-Advantages:
-
-- explains the support counts $28$ and $10$;
-- identifies the five-support problem as orthogonal rank reduction;
-- unifies the $K_8$ and $K_5$ triangle complexes;
-- clarifies why local triangles persist under projection.
-
-This is the clean invariant overview. Coordinate proofs remain necessary for component parity and switch effects.
-
-## 9. The surface/half-cube proof family
-
-The root lift produces a coloured cycle-face surface and dual triangulation. A five-support cover is a graph homomorphism
-
-$$
+\text{componentwise compression of the face components of }g
+\Longleftrightarrow
 T_g^{(1)}\to\mathscr A_5.
 $$
 
-Advantages:
+This does not say that every external five-support cover integrates on the prescribed surface. An externally supplied root flow is a dual potential exactly when all dual cycle holonomies vanish.
 
-- retains individual support-cycle components;
-- exposes partial Petrials and orientability;
-- gives target-link obstruction theory;
-- converts marked certificates into exact source face circuits.
-
-The global-colour quotient $J_g$ is a strict factorable subroute. Any proof using only $J_g$ must state that restriction.
-
-## 10. The finite-interface proof family
-
-Restrict a cover to a cut and classify its boundary trace.
-
-- three-edge cuts have a unique local support law and glue directly;
-- four-edge cuts have the ten-state alphabet;
-- cap forcing, Kempe closure, and routing weights reduce possible disjoint shore profiles;
-- routing automata expose unique-linkage and holonomy mechanisms.
-
-Advantages:
-
-- produces valid inductive and replacement interfaces;
-- separates local algebra from graph transfer;
-- supplies the language needed to turn defect localisation into a global proof.
-
-This is the proof family most directly tied to the remaining closure gap.
-
-## 11. The holonomy/cohomology proof family
-
-Boundary loops lift to affine actions in
-
-$$
-(Z_1(P)\otimes E_5)\rtimes S_5.
-$$
-
-Cyclic norms, root-fibre local systems, $S_5$ cohomology, and the exceptional $D_8$ class organize the residual Type H branch.
-
-Advantages:
-
-- distinguishes support-name monodromy from genuine interior obstruction;
-- eliminates the BBD pure-translation branch by root rigidity;
-- produces one canonical defect flow;
-- identifies the precise one-bit DDD exception.
-
-Limit:
-
-- cohomology vanishing gives an ambient origin, not automatically a root-valued or composition-safe graph replacement.
-
-## 12. Sufficient templates that are not equivalences
-
-The following statements provide useful sufficient routes only.
-
-### 12.1 Global-index-factorable compression
+The quotient criterion
 
 $$
 J_g\to\mathscr A_5
 $$
 
-implies five supports, but the converse fails at the fixed-lift level because $T_g$ has componentwise freedom.
+classifies only maps constant on old-colour fibres. It is a strict factorable subroute.
 
-### 12.2 Unused three-matching
+## 6. Half-cube parity convention
 
-Three disjoint unused root labels imply factorable compression. This is not a necessary condition.
+If $\mathscr A_5$ denotes the even component, singleton words $\varepsilon_i$ are not vertices. Embed the five colours by choosing an odd word $t$ and using
 
-### 12.3 Affine-plane $K_4$ residues
+$$
+t+\varepsilon_i\in E_5.
+$$
 
-Vanishing of one of seven plane residues produces an unused affine-plane $K_4$. These tests do not exhaust all maps $T_g\to\mathscr A_5$.
+Alternatively, name the odd component explicitly.
 
-### 12.4 Orientable good lift
+## 7. Safe fixed-data implication hierarchy
 
-An orientable five-support cover produces a nowhere-zero $\mathbf Z_5$ flow. Nonorientable five-support covers remain valid for the five-support problem.
+For corresponding fixed flow and fixed lift:
 
-### 12.5 Ideal target pivot
+$$
+\text{global five-point slice}
+\Longrightarrow
+J_g\to\mathscr A_5
+\Longrightarrow
+T_g^{(1)}\to\mathscr A_5
+\Longrightarrow
+\text{five-support cover}.
+$$
 
-Abstract target-side pivots escape every cover-number-two or pentagon quotient core. Source realizability is a separate condition.
+No converse is automatic for the same fixed data.
 
-## 13. Negative results that control proof choice
+## 8. B2 formulation queue
 
-Any future proof must respect the following exact boundaries.
+Programme B1 does not close the full arrows involving:
 
-1. A fixed Fano flow may require six supports.
-2. There is no universal homomorphism $K_8\to K_5$ or universal source-independent compression.
-3. $J_g$ is not the complete fixed-lift object.
-4. $K_6$-free does not imply a half-cube map, even for compatible duals.
-5. A bad fixed-flow fibre does not imply a bad graph.
-6. A disconnected binary-cycle switch is not one reconfiguration edge.
-7. Route-lock does not imply a graph two-cut.
-8. Route-lock does not imply flatness.
-9. Rank-two route-lock is not residual; it has Tait escape.
-10. Repeated Petersen transport state does not imply a replaceable strip.
-11. Boundary monodromy alone is not an obstruction; interior action matters.
-12. Exact finite census does not establish universal realizability or completeness.
+- cycle-continuous or cographic maps;
+- quadratic-cycle equations;
+- Schur-product equations;
+- singular quotient lifting;
+- orthogonal rank reduction;
+- Fourier and stress duality.
 
-## 14. Recommended exposition choices
+Programme B2 must classify each arrow as one of:
 
-For the main narrative:
+1. full witness equivalence;
+2. equivalence after fixed data are named;
+3. quotient or projection with lost lift data;
+4. dual obstruction criterion;
+5. finite or computational evidence.
 
-1. state root-flow equivalence first;
-2. introduce the universal eight-support lift and fixed-plane colour-cut criterion;
-3. pass immediately to the surface/dual criterion;
-4. distinguish vertical gauge from horizontal flow motion;
-5. introduce source interfaces before finite laboratories;
-6. use holonomy only after the four-pole routing reduction;
-7. end with the atom curvature/localisation problem.
+Until that classification is integrated, these formulations remain valuable proof families but are not all entries in the B1 graph-level equivalence box.
 
-For appendices or independent companion notes:
+## 9. Direct colour-cut proof family
 
-- orthogonal-group comparison;
-- Schur/tensor complexes;
-- Fourier and Möbius arrangements;
-- orientation transgression and five-flow extraction;
-- exhaustive laboratory tables;
-- monodromy coordinate enumerations.
+The fixed-plane criterion has a short geometric proof.
 
-## 15. Preservation rule
+- Contract every $W$-component.
+- The four outside colours form one affine $W$-plane.
+- Their only nonzero binary relation is their total sum.
+- Hence the four colour-degree parities at each quotient vertex are either $0000$ or $1111$.
+- The affine component obstruction is this common bit.
 
-Equivalent proofs should not be erased when one becomes the preferred exposition. The source packets remain exact historical and priority records. The corpus records:
+This is the preferred proof of the fixed-$(f,W)$ theorem.
 
-- the preferred proof for readability;
-- the alternate proof's mathematical role;
-- the precise equivalence or implication;
-- its assurance and computation boundary.
+## 10. Singular-fibre proof family
 
-This avoids both proof loss and false inflation of one coordinate presentation into the theorem's natural object.
+The singular quotient treats every edge as a finite root fibre and every cubic vertex as a local relation. It is natural for later monodromy and Type H analysis.
+
+Its use in B1 is limited to the same fixed-plane component obstruction. Broader equivalence claims await B2.
+
+## 11. Quadratic and Schur proof family
+
+Cycle coordinates and Schur products expose nonlinear correction and switch images. They are important algebraic and computational tools.
+
+Programme B1 does not assert that every displayed quadratic or Schur equation retains the full five-support witness. The reconstruction and lost-data boundary are B2 obligations.
+
+## 12. Stress and Fourier proof family
+
+Dual stresses provide obstruction certificates; Fourier and Möbius methods organize counts over affine choice spaces.
+
+These tools do not solve the graph-level composition problem merely by showing that one finite arrangement is sparse. Their exact equivalence or dual-only status belongs to B2.
+
+## 13. Orthogonal proof family
+
+The universal eight-support lift belongs to a plus-type quadratic space, while the five-support root set lies in a minus-type four-space. This is the clean invariant rank-reduction viewpoint.
+
+It does not remove the need to track fixed-flow, fixed-lift, component, and holonomy quantifiers.
+
+## 14. Surface and half-cube proof family
+
+The full dual retains individual support-cycle components and therefore exposes componentwise freedom, partial Petrials, target links, and marked source circuits.
+
+The old-colour quotient is useful only after the factorability restriction is stated.
+
+## 15. Finite-interface and holonomy families
+
+Cut traces, four-pole states, routing automata, affine holonomy, and defect flows belong to later B3–B7 layers. They remain active mathematical material but are not consumed as B1 equivalences.
+
+## 16. Sufficient templates that are not equivalences
+
+The following remain useful sufficient routes:
+
+- a global-index-factorable map $J_g\to\mathscr A_5$;
+- an unused three-matching of old root labels;
+- vanishing of an affine-plane residue;
+- an orientable good lift;
+- an abstract target pivot whose source realization is separately proved.
+
+No one of these is necessary at fixed lift or graph level.
+
+## 17. Preservation and assurance
+
+The exact B1 dossiers remain under `proof-development/`. Recovered source packets remain public provenance and priority records.
+
+B1 curation is substantive mathematical integration, not independent audit, Lean formalization, manuscript approval, publication, release, arXiv, or DOI action. The global five-support theorem remains open.
