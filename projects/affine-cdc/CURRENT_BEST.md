@@ -44,20 +44,19 @@ The active backbone includes:
 - BBD origin, `K_6` completion, defect forests, Petersen transport, DDD triality, unique bad route, and rank-two escape;
 - full-rank curvature/common-cut duality and flat-potential equivalence;
 - odd witness circuits and the singleton/transition/quartic trichotomy;
-- unbounded abstract quartic designs and their symplectic form;
-- quotient Tait phase, the affine sheet plane, Kempe differences, and aligned/crossed signatures;
-- connected pairwise marked transition skeletons;
-- the canonical `O^-(4,2)` terminal nucleus, intrinsic `E_5/K_5` geometry, one-dimensional curvature carrier, and exact split-or-peel recursion;
-- bounded `K_6` defect geometry for split terminal distributions;
-- canonical `S_4`-equivariant transport between successive nuclei and the fixed pairwise marked shell;
-- finite elementary scalar-interval transfer, backtrack caps, periodic cells, and rigid Kempe ladders;
-- the physical `g`-component transition quotient `\Gamma_g`;
-- the canonical route-capped `4`-regular flag-line graph;
+- unbounded abstract quartic designs, the canonical terminal nucleus, bounded split gadgets, and strict peel recursion;
+- quotient Tait phase, affine sheet/Kempe structure, marked transition skeletons, and finite elementary interval normal forms;
+- the physical `g`-component quotient `\Gamma_g`;
+- the canonical route-capped flag-line carrier;
 - touch-shadow closure and the bounded two-transition cap residue;
-- exact IAS classification of loop, parallel, twin, and pendant cap degenerations;
-- the general minimal two-marker cocycle decomposition theorem.
+- IAS local-degeneration classification;
+- minimal coupled/separated cocycle completion;
+- cocircuit cut-rank and split-or-prime mechanism;
+- the natural-transversal physical projection;
+- the exact physical cycle--cut sequence;
+- the symmetric Lagrangian response form on the physical cycle space.
 
-## 4. Controlling negative boundaries and corrections
+## 4. Controlling corrections and negative boundaries
 
 The following are false or unsupported:
 
@@ -68,14 +67,11 @@ The following are false or unsupported:
 - repeated Petersen state alone gives a replaceable strip;
 - finite census proves universal closure;
 - quartic near-resolution and rank axioms bound `k`;
-- consecutive witness edges on a scalar circuit are necessarily consecutive full `g`-edges;
-- the natural `S_4` symmetry of the sheet-indexed terminal nucleus is canonically the support-label `D_8` stabiliser of a DDD one-factor.
+- consecutive witness edges are necessarily consecutive full `g`-edges;
+- sheet `S_4`, terminal-route symmetry, and the DDD support-label `D_8` are canonically the same group action;
+- cocircuit minimality forces the natural physical projection to be one connected graph circuit.
 
-The last two corrections are essential.
-
-A quartic block has four marked witness arcs, but each arc may pass through arbitrarily many edges of `E_g\setminus\eta`. The cap/cell/ladder theorems apply to elementary non-`g` paths between consecutive full `g` incidences. Whole witness arcs are transition walks in `\Gamma_g`.
-
-The four sheets are indexed by `\Lambda_g\cong AG(2,2)` and have natural affine symmetry `AGL(2,2)\cong S_4`. The physical terminal-route symmetry and the DDD support-label one-factor stabiliser are separate objects. Constructing a comparison map is part of the open theorem.
+The cube certificate gives an explicit cocircuit whose physical projection is two disjoint four-cycles.
 
 ## 5. Sharp nonflat endpoint
 
@@ -91,111 +87,116 @@ is a curvature-odd circuit of the closed-component incidence matroid. Exactly on
 2. one closed scalar component meets `\eta` in two edges, giving a marked transition pair;
 3. `|\eta|=4k+1`, giving a quartic near-resolution core.
 
-For a quartic core:
+The quartic incidence branch has strict abstract progress: bounded root-exposed split or canonical peel `k\mapsto k-1`. The remaining obstruction is physical composition.
 
-- abstract incidence is unbounded for all `k`;
-- the four whole-sheet sums span a canonical minus-type four-space;
-- a split terminal distribution is a bounded equality/one-factor/root-triangle coefficient gadget;
-- an all-concentrated design peels canonically from level `k` to `k-1`;
-- successive nuclei and curvature carriers are canonically `S_4`-equivariantly identified.
+## 6. Four coordinated physical carriers
 
-## 6. Three coordinated physical carriers
+### 6.1 `g`-component quotient
 
-### 6.1 Physical cut carrier
+Contract the components of `Q-E_g` to obtain `\Gamma_g`. Every internal quotient cut lifts exactly to a `g`-coloured cut in `Q`, with parity determined by the number of terminal flags on the shore.
 
-Delete the `g`-edges and contract each connected component. The result is an even-total-degree four-pole `\Gamma_g` whose edges are the `g`-edges and whose four scalar sheets give four transition systems.
+### 6.2 Route-capped isotropic carrier
 
-Every internal quotient cut lifts exactly to a `g`-coloured cut in the original four-pole:
-
-$$
-\delta^{\mathrm{int}}_{\Gamma_g}(\mathcal U)
-=
-\delta^{\mathrm{int}}_Q(X_\mathcal U).
-$$
-
-Its parity is
-
-$$
-|\delta^{\mathrm{int}}(\mathcal U)|
-\equiv t(\mathcal U)\pmod2,
-$$
-
-where `t(\mathcal U)` is the number of original terminal flags on that shore.
-
-### 6.2 Standard `4`-regular carrier
-
-Close terminals according to `12\mid34` and take the flag-line graph
+Close the terminals according to `12\mid34` and put
 
 $$
 F=\mathcal L(\widehat Q).
 $$
 
-Every scalar even subgraph gives a canonical circuit partition of the same `4`-regular graph. The four sheets are four transition transversals, with exact local transition distributions determined by the edge colour and aligned/crossed endpoint type.
-
-### 6.3 Touch and isotropic carrier
-
-For each sheet, every selected scalar circuit has one distinguished line-graph circuit and one shadow circuit. The selected touch subgraph is a disjoint union of dipoles. Hence even intersection with a closed scalar circuit automatically kills both distinguished and shadow boundary.
-
-Adding the two fixed route-cap edges closes every scalar common cut to an ordinary touch cycle. Summing the four cap-completed transition supports cancels every internal `g`-edge transition and leaves exactly
+The four scalar sheets are four transition transversals. Shadow closure and the two route caps compress any nonflat witness to
 
 $$
 R=\{r_p,r_q\},
 $$
 
-one cross transition at each of the two cap vertices.
+one cross transition at each cap vertex.
 
-Thus all unbounded witness support has disappeared from the four-sheet residue.
+### 6.3 Minimal completion and cut-rank
 
-## 7. Minimal full completion
+Apart from loop/parallel/twin/pendant local cases, an inclusion-minimal full completion of `R` is exactly:
 
-The bare residue is not a full cocycle because every IAS cocycle meets each vertex triple in zero or two elements.
+- one coupled cap-to-cap cocircuit; or
+- two disjoint one-cap cocircuits with disjoint isotropic vertex supports.
 
-If a residue transition is a loop, there is an immediate one-element degeneration. Otherwise a full cocycle containing both residue transitions always exists by elementary binary linear algebra.
+For a cocircuit `D` with vertex support `L(D)`,
 
-Choose an inclusion-minimal such cocycle `C`. Exactly one of:
+$$
+r(D)=|L(D)|+\rho(L(D)),
+\qquad
+n(D)=|L(D)|-\rho(L(D)),
+$$
 
-1. **coupled:** `C` is one cocircuit containing both cap residues;
-2. **separated:**
-   $$
-   C=D_p\sqcup D_q,
-   $$
-   where `D_p,D_q` are cocircuits carrying one residue each.
+so interlacement cut-rank gives the exact disconnected/split/prime parameter.
 
-In the separated case the isotropic vertex supports of `D_p` and `D_q` are disjoint, because every nonzero cocycle meets a vertex triple in two elements and two disjoint two-subsets cannot occupy one triple.
+### 6.4 Physical cycle--cut response
 
-Before this dichotomy, all completions supported only at the cap triples have already been classified: they occur exactly in loop, parallel, twin, or pendant interlacement configurations.
+The canonical local-transition transversal has circuit partition equal to the vertex triangles of `\widehat Q`; its touch-graph is `\widehat Q`. Therefore every full cocycle has a physical cycle projection.
 
-## 8. Exact current frontier
-
-The central theorem is now a physical projection theorem for the minimal completion:
+More strongly,
 
 $$
 \boxed{
-\text{bounded two-cap residue}
-\Longrightarrow
-\begin{cases}
-\text{two disjoint one-cap cocircuits},\\
-\text{one coupled cap-to-cap cocircuit}
-\end{cases}
-\Longrightarrow
-\begin{cases}
-\text{terminal-even separator / serial composition in }\Gamma_g,\\
-\text{alternate route and root escape},\\
-\text{or a comparison with the physical DDD class.}
-\end{cases}}
+0\to\operatorname{Cut}(\widehat Q)
+\to\operatorname{Cocycle}(M_\tau(F))
+\to\operatorname{Cycle}(\widehat Q)\to0.
+}
 $$
 
-The separated branch should project to two independent terminal interfaces. Only the coupled branch can carry an irreducible two-ended obstruction.
+Choose one ordering of the two cross transitions at each edge and write a cocycle word as
 
-The full-rank flat branch remains separate: its eight-state potential still needs a finite physical interface. Wider downstream bridges remain defect-forest pruning, four-pole transfer, and horizontal bad-flow escape/decomposition.
+$$
+(z,a,z+a).
+$$
 
-## 9. Source and assurance state
+The cocycle space is Lagrangian, and the extension is controlled by a symmetric bilinear response form
 
-The active line uses the completed migration
+$$
+\mathcal B_{\widehat Q}:
+\operatorname{Cycle}(\widehat Q)^2\to\mathbf F_2
+$$
 
-`960c92b7ff231c78b387894149779083060a75eb`
+through
 
-and later Research Lead commits on `research/affine-cdc-five-cdc-v1`. The seventy-eight discovery-order packets are retired from the current tip but recoverable from ancestry.
+$$
+a\cdot z'=\mathcal B_{\widehat Q}(z,z')
+\qquad
+\forall z'\in\operatorname{Cycle}(\widehat Q).
+$$
+
+Changing cross labels adds only a diagonal gauge form.
+
+## 7. Closed and residual response branches
+
+The zero-cycle branch is now physical:
+
+$$
+\boxed{z=0\Longrightarrow\text{a bond of }\widehat Q.}
+$$
+
+- in the coupled case, the bond contains both cap edges and yields a terminal-even separator;
+- in a separated one-cap case, it yields a one-ended physical bond.
+
+Thus the only potentially irreducible branch is
+
+$$
+\boxed{
+\text{coupled prime cap cocircuit}
++
+z\ne0
++
+ a\bmod\operatorname{Cut}=\mathcal B(z,-)
++
+\text{locked cap response}.
+}
+$$
+
+The next theorem must exploit the special response form forced by the common `\mathbf F_2^3` flow, four affine scalar sheets, Kempe systems, endpoint selectors, and `\Gamma_g`. It must yield a physical separator/transition two-sum, crossed route and root escape, bounded replacement/horizontal switch, or a genuine comparison with the DDD support-label class.
+
+## 8. Wider open lines
+
+The full-rank flat branch still needs a finite potential interface. Downstream open bridges remain defect-forest pruning, four-pole transfer and gluing, horizontal bad-flow escape/decomposition, and target-certificate completion only where source composition requires it.
+
+## 9. Assurance state
 
 Current-best inclusion does not add Lean verification, independent review, peer review, manuscript approval, release, DOI, arXiv, or publication status.
 
