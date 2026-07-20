@@ -4,13 +4,14 @@
 **Standing issue:** `Yuren-Tang/research-workbench#37`  
 **Owned branch:** `proof-development/affine-cdc-rigour-v1`  
 **Exact initial baseline:** `main@960c92b7ff231c78b387894149779083060a75eb`  
-**Programme state:** persistent; Programme A and B1–B8 are `READY-FOR-CURATOR`; B9 is `BLOCKED-FRONTIER / CORRECTED-ASSEMBLY`
+**Programme state:** persistent; Programme A is `READY-FOR-CURATOR / AUDIT-A-REPAIRED`; B1–B8 are `READY-FOR-CURATOR`; B9 is `BLOCKED-FRONTIER / CORRECTED-ASSEMBLY`
 
 ## 1. Completed checkpoints
 
 | Programme | State | Immutable checkpoint | Closed layer |
 |---|---|---|---|
 | `A` | `READY-FOR-CURATOR` | `8bee16780b549f51e1f29343671a059961ec4172` | complete finite-active-edge CDC theorem spine |
+| `A / Audit A repair` | `READY-FOR-CURATOR / EXPLICITNESS-REPAIRED` | `06bce656dcf5bfd6491ec08f51a702ea56d2470d` | Seymour multigraph convention; full A4 converse algebra; old Tutte route made non-controlling |
 | `B1` | `READY-FOR-CURATOR` | `778b09ac8260192e022f512f24cdef1d04871f37` | root-flow/fixed-plane/fixed-lift equivalences |
 | `B2` | `READY-FOR-CURATOR / CORRECTION` | `d62974704d6dac77aaa00275a595fedf7f70cfd2` | witness hierarchy and orthogonal correction |
 | `B3` | `READY-FOR-CURATOR / PROVENANCE-REPAIRED` | `d806168bb579dbc13f267f44f631e07de909b706` | target/full-dual/factorable scope |
@@ -20,7 +21,25 @@
 | `B7` | `READY-FOR-CURATOR / AC-RL-GAPS / GLOBAL-OPEN` | `164f7655f9ec7c0e0a73d49303cf66230fb26487` | route-lock rank, curvature, exact localisation gaps |
 | `B8` | `READY-FOR-CURATOR / ASSURANCE-NORMALIZED` | `989cb002598fd91786029be201c2747c697bb476` | finite-certificate and code/reproducibility ledger |
 
-## 2. B9 corrected assembly
+## 2. Programme A Audit A repair epoch
+
+The bounded repair intake in research-workbench issue #37 comment `5019649863` is complete at
+
+`06bce656dcf5bfd6491ec08f51a702ea56d2470d`.
+
+The controlling repair overlay is
+
+`AC_PD_A_AUDIT_A_EXPLICITNESS_REPAIRS.md`.
+
+It closes exactly three non-blocking exposition defects:
+
+1. the Seymour six-flow input is explicitly a finite connected loopless multigraph theorem with parallel edges permitted, extended componentwise to the A3 input class;
+2. the reverse direction of the A4 local-family classification is reconstructed by a complete affine-line intersection argument, including uniqueness;
+3. the Tutte route retained in the old outer-shell companion is classified as a historical alternative and not a dependency of the controlling A3 proof.
+
+No Programme A theorem statement or proof obligation is reopened. No five-support frontier arrow is changed.
+
+## 3. B9 corrected assembly
 
 `AC-PD-B9` is fixed at the current branch checkpoint as
 
@@ -38,7 +57,7 @@ Loops can be inserted into two fixed support occurrences; port-cycle collapse pr
 
 It does **not** prove the cubic five-support theorem.
 
-## 3. Exact unresolved obligations
+## 4. Exact unresolved obligations
 
 1. `AC-RL-BBD-GROUPOID-CLOSURE`;
 2. `AC-RL-BBD-VARIATION-SLICE`;
@@ -49,7 +68,7 @@ It does **not** prove the cubic five-support theorem.
 
 The first two concern the corrected BBD route. The last four are the corrected DDD/four-pole source-localisation route. Finite certificates close none of them.
 
-## 4. Minimal sufficient future packages
+## 5. Minimal sufficient future packages
 
 Either of the following would close the global strengthening.
 
@@ -58,7 +77,7 @@ Either of the following would close the global strengthening.
 
 A mixed escape/decomposition theorem also suffices.
 
-## 5. Persistent-role state
+## 6. Persistent-role state
 
 AC-PDL remains active for:
 
