@@ -4,180 +4,175 @@ This file records the exact theorem boundary on the active corpus. It is not an 
 
 ## 1. Closed route-locked layers
 
-Within their stated scopes, the active line now closes:
+Within their stated scopes, the active line closes:
 
 - full-rank curvature/common-cut duality and flat-potential equivalence;
-- support-minimal odd-circuit localisation;
-- singleton/transition/quartic trichotomy;
-- unbounded abstract quartic designs and their symplectic form;
-- quotient Tait-phase representation and affine sheet/Kempe relations;
-- connected pairwise marked transition skeletons;
-- canonical `O^-(4,2)` terminal nucleus, intrinsic `E_5/K_5`, and one-dimensional curvature carrier;
-- exact split-or-peel recursion and bounded `K_6` coefficient gadgets;
-- canonical `S_4`-equivariant nucleus transport and pairwise marked shell;
-- elementary scalar transfer, caps, periodic cells, and Kempe ladders;
-- physical `g`-component transition quotient `\Gamma_g` and exact internal-cut lifting;
-- canonical route-capped `4`-regular line-graph carrier;
-- touch-shadow decomposition and automatic complementary-boundary closure;
-- the bounded two-transition cap residue;
-- IAS loop/parallel/twin/pendant cap classification;
-- existence and coupled/separated decomposition of minimal full cap-cocycle completions.
+- support-minimal odd-circuit localisation and singleton/transition/quartic trichotomy;
+- unbounded quartic designs, canonical `O^-(4,2)` nucleus, bounded split gadgets, and strict peel recursion;
+- quotient Tait phase, affine sheet/Kempe relations, marked transition skeletons, and finite elementary interval normal forms;
+- physical `g`-component quotient `\Gamma_g` and exact internal-cut lifting;
+- canonical route-capped flag-line carrier;
+- touch-shadow closure and the bounded two-transition cap residue;
+- IAS loop/parallel/twin/pendant local classification;
+- existence and coupled/separated decomposition of minimal cap completions;
+- cocircuit local-set and cut-rank formulas;
+- canonical natural-transversal projection to `\widehat Q`;
+- the cycle--cut exact sequence and symmetric physical response form.
 
 The global five-support theorem remains open.
 
-## 2. Nonflat localisation
+## 2. Trust-boundary corrections
 
-For the locked full-rank nonflat flow, choose a support-minimal witness
-
-$$
-\eta\subseteq E_g.
-$$
-
-It is a curvature-odd circuit of the closed-component incidence matroid and has exactly one form:
-
-1. singleton enriched atom;
-2. a closed scalar component meets `\eta` in two edges;
-3. quartic core `|\eta|=4k+1`.
-
-A scalar-common cut need not be a cut in the original four-pole. The exact full-rank singleton certificate proves this.
-
-## 3. Quartic incidence progress and symmetry correction
-
-Every quartic design contains a canonical nondegenerate minus-type four-space
+The four sheet labels have natural symmetry
 
 $$
-S=\langle1_X+e_0,\ldots,1_X+e_3\rangle.
+AGL(2,2)\cong S_4.
 $$
 
-Its five singular points and ten roots form intrinsic `E_5/K_5` geometry. Curvature is carried by
+This is not canonically the terminal-route group or the support-label `D_8` stabiliser of a DDD one-factor. A graph-level comparison map is open.
+
+Also, cocircuit minimality does not force one connected physical cycle projection. The exact cube certificate has projection equal to two disjoint four-cycles.
+
+## 3. Bounded residue and minimal completion
+
+Every nonflat common-cut witness compresses in the route-capped transition matroid to
 
 $$
-S/s_\infty^\perp\cong\mathbf F_2.
+R=\{r_p,r_q\},
 $$
 
-Terminal distribution yields:
+one cross transition at each cap vertex.
 
-- `3`: co-root equality transport;
-- `2+1`: one `K_6` perfect-matching vertex;
-- `1+1+1`: a perfect-matching vertex followed by a root triangle.
+The bare residue is not a full cocycle. Apart from a loop degeneration, a full completion exists. An inclusion-minimal completion is exactly:
 
-Hence every quartic core satisfies
+1. one coupled cocircuit containing both residues; or
+2. two disjoint cocircuits carrying one residue each, with disjoint isotropic vertex supports.
 
-$$
-\boxed{
-\text{bounded root-exposed split}
-\quad\text{or}\quad
-\text{canonical nucleus peel }k\mapsto k-1.
-}
-$$
+Completions confined to the two cap triples occur only through loop, parallel, twin, or pendant interlacement configurations.
 
-The natural symmetry of the four sheet labels is `AGL(2,2)\cong S_4`. It is not canonically identical to either the terminal-route stabiliser or the support-label `D_8` stabiliser of a DDD one-factor. A comparison map remains part of the open graph-level theorem.
-
-## 4. Scope correction for scalar intervals
-
-A scalar circuit block may contain additional `g`-edges outside `\eta`. Therefore its four marked witness edges determine four witness arcs, not necessarily four non-`g` intervals.
-
-An elementary scalar interval lies between consecutive full `g` incidences. Such an interval has:
-
-- one of eighteen quotient transfer states;
-- telescoping side-output sum;
-- either a bounded backtrack cap or a periodic triangle-cell chain;
-- rigid three-Kempe ladder wiring in the periodic case.
-
-A witness arc may concatenate arbitrarily many elementary intervals separated by edges of `E_g\setminus\eta`.
-
-## 5. Physical cut carrier: `\Gamma_g`
-
-Delete all `g`-edges and contract each remaining connected component. The quotient `\Gamma_g` is an even-total-degree four-pole whose edges are the `g`-edges and whose four scalar sheets give four transition systems.
-
-Every internal quotient cut lifts exactly:
+For any cocircuit `D` with vertex support `L(D)`,
 
 $$
-\delta^{\mathrm{int}}_{\Gamma_g}(\mathcal U)
-=
-\delta^{\mathrm{int}}_Q(X_\mathcal U).
+r(D)=|L(D)|+\rho(L(D)),
+\qquad
+n(D)=|L(D)|-\rho(L(D)).
 $$
 
-The correct parity law is
+Thus cut-rank zero is disconnected, cut-rank one is a graph split, and only cut-rank at least two is prime.
 
-$$
-|\delta^{\mathrm{int}}(\mathcal U)|
-\equiv t(\mathcal U)\pmod2,
-$$
+## 4. Canonical physical projection
 
-where `t(\mathcal U)` counts original terminal flags on the shore. Thus terminal-free and two-terminal shores have even internal boundary.
-
-## 6. Standard `4`-regular carrier
-
-Close the terminals according to the locked route `12\mid34` and take the flag-line graph
+Let
 
 $$
 F=\mathcal L(\widehat Q).
 $$
 
-Every scalar even subgraph gives a canonical circuit partition of this common `4`-regular graph. The four sheets are four transition transversals of one transition matroid.
+The local transition at every line vertex gives a canonical transversal. Its circuit partition consists of the vertex triangles of `\widehat Q`, and its touch-graph is canonically `\widehat Q`.
 
-At every edge of `\widehat Q`, the four transition choices obey the unified local law:
+Therefore every full transition-matroid cocycle projects to a physical cycle vector of `\widehat Q`.
 
-- non-`g` aligned: `2+2+0`;
-- non-`g` crossed: `2+1+1`;
-- `g` aligned: all four use one cross transition;
-- `g` crossed: two use each cross transition.
-
-## 7. Touch closure and bounded residue
-
-For one scalar even subgraph, every scalar circuit gives one distinguished circuit and one shadow circuit in the line-graph partition. Selected touch edges form dipoles between the two. Therefore even intersection at a scalar component kills both distinguished and shadow boundary.
-
-The two fixed route caps close every scalar common cut to an ordinary touch cycle. Summing the four cap-completed transition-support vectors cancels every internal `g`-edge transition and leaves
-
-$$
-\boxed{R=\{r_p,r_q\},}
-$$
-
-one cross transition at each cap vertex.
-
-The complementary-boundary problem is therefore closed. The size and location of the original witness no longer appear in the four-sheet residue.
-
-## 8. Full cocycle completion
-
-Every full IAS cocycle meets each vertex triple in zero or two elements, so `R` is not itself a cocycle.
-
-If a selected residue transition is a loop, there is an immediate one-element degeneration. Otherwise a cocycle containing both elements exists by binary linear algebra.
-
-Choose an inclusion-minimal such cocycle `C`. Exactly one of:
-
-1. **coupled:** `C` is one cocircuit containing both cap residues;
-2. **separated:**
-   $$
-   C=D_p\sqcup D_q,
-   $$
-   where `D_p,D_q` are disjoint cocircuits, each carrying one cap residue.
-
-In the separated case their isotropic vertex supports are disjoint.
-
-All completions confined to the two cap triples are already classified: they occur only through loop, parallel, twin, or pendant interlacement configurations.
-
-## 9. Immediate theorem target
-
-The primary frontier is now:
+More strongly,
 
 $$
 \boxed{
-\text{minimal cap-cocycle completion}
-\Longrightarrow
-\begin{cases}
-\text{terminal-even separator / serial composition in }\Gamma_g,\\
-\text{alternate route and root escape},\\
-\text{or a graph-level comparison with the DDD class.}
-\end{cases}}
+0\longrightarrow\operatorname{Cut}(\widehat Q)
+\longrightarrow\operatorname{Cocycle}(M_\tau(F))
+\longrightarrow\operatorname{Cycle}(\widehat Q)
+\longrightarrow0.
+}
 $$
 
-The two branches should be treated separately.
+The kernel is explicit: a graph cut is sent to the cocycle containing both cross transitions at exactly the cut edges.
 
-- **Separated branch:** project two disjoint one-cap cocircuits to two independent terminal interfaces or a proper separator.
-- **Coupled branch:** use its local-set/cut-rank structure. Low cut-rank should force an isotropic split; only a prime coupled carrier can remain a candidate for an irreducible DDD-type obstruction.
+## 5. Physical response form
 
-## 10. Secondary open lines
+Order the two cross transitions at each edge and write every cocycle triple as
+
+$$
+(z_e,a_e,z_e+a_e).
+$$
+
+The full cocycle code is Lagrangian in
+
+$$
+\mathbf F_2^{E(\widehat Q)}\oplus\mathbf F_2^{E(\widehat Q)}.
+$$
+
+Its first projection is the physical cycle space, its kernel is the cut space, and it is determined by a symmetric bilinear form
+
+$$
+\mathcal B_{\widehat Q}:
+\operatorname{Cycle}(\widehat Q)^2\to\mathbf F_2
+$$
+
+through
+
+$$
+\boxed{
+(z,a)\text{ is a full cocycle}
+\iff
+z\in\operatorname{Cycle}(\widehat Q),
+\quad
+a\cdot z'=\mathcal B_{\widehat Q}(z,z')
+\ \forall z'.
+}
+$$
+
+Changing the ordering of the two cross transitions adds only a coordinate-diagonal gauge form.
+
+The two prescribed cap residues are two affine coordinate conditions on this response code.
+
+## 6. Closed physical branch
+
+If the physical cycle projection is zero, then the cocycle lies in the cut kernel.
+
+For a cocircuit:
+
+$$
+\boxed{z=0\Longrightarrow\text{a physical bond of }\widehat Q.}
+$$
+
+- A coupled zero-projection cocircuit exposes a bond containing both cap edges; after uncapping, it is a terminal-even physical separator.
+- A separated zero-projection one-cap cocircuit exposes a one-ended physical bond.
+
+Thus zero projection is no longer an irreducible isotropic branch.
+
+## 7. Exact primary frontier
+
+The only potentially irreducible nonflat branch is
+
+$$
+\boxed{
+\text{coupled prime cap cocircuit}
++
+z\ne0
++
+a\bmod\operatorname{Cut}=\mathcal B(z,-)
++
+\text{locked cap response}.
+}
+$$
+
+The next theorem must determine the special response form forced by:
+
+- the common nowhere-zero `\mathbf F_2^3` flow;
+- the four affine scalar sheets;
+- the three quotient Kempe systems;
+- aligned/crossed endpoint selectors;
+- the fixed `12\mid34` route;
+- the physical quotient `\Gamma_g`.
+
+It must yield one of:
+
+1. a physical separator or transition two-sum;
+2. a crossed four-terminal route and root escape;
+3. a bounded replacement or horizontal Fano-flow switch;
+4. a uniquely constrained prime response class with a genuine map to the DDD support-label cocycle.
+
+The separated nonzero-projection branch should first be treated as two edge-disjoint physical cycle/join certificates.
+
+## 8. Secondary open lines
 
 After this primary bridge:
 
@@ -188,6 +183,6 @@ After this primary bridge:
 - prove horizontal escape/decomposition;
 - enlarge target certificates only where required.
 
-## 11. Status
+## 9. Status
 
 No active source proves the global five-support theorem. No Lean, independent-review, peer-review, merge, release, arXiv, DOI, or publication status is implied.
