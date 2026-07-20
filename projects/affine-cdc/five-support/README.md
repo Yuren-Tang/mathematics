@@ -15,60 +15,61 @@ Its seventy-eight `research/FIVE_CDC_*.md` packets are retired from the current 
 3. [`gauge-and-reconfiguration.md`](gauge-and-reconfiguration.md) — gauge torsors, partial Petrials, support pivots, connected-cycle flow motion, switch laws, and two-level dynamics.
 4. [`cuts-four-poles-and-routing.md`](cuts-four-poles-and-routing.md) — three-cut gluing, ten-state four-edge interface, cap forcing, Kempe pairing, routing weights, and Type T/Type H reduction.
 5. [`holonomy-defects-and-atoms.md`](holonomy-defects-and-atoms.md) — affine holonomy, Tait resolution, BBD origin, defect forests, Petersen transport, route-locked atoms, curvature, and flat potentials.
-6. [`common-cut-circuit-localisation.md`](common-cut-circuit-localisation.md) — scalar-component incidence, odd witness circuits, the physical-cut counterexample, and singleton/transition/quartic localisation.
-7. [`quartic-witness-designs.md`](quartic-witness-designs.md) — unbounded abstract quartic cores and the symplectic cross-intersection formulation.
-8. [`route-locked-quotient-phase.md`](route-locked-quotient-phase.md) — quotient Tait flow, binary phase, affine sheet plane, Kempe differences, and aligned/crossed endpoint signatures.
-9. [`quartic-transition-skeletons.md`](quartic-transition-skeletons.md) — connected pairwise sheet-incidence graphs, terminal Euler trails, exact cycle rank, and marked ribbon skeletons.
-10. [`quartic-terminal-nucleus.md`](quartic-terminal-nucleus.md) — the canonical `O^-(4,2)` terminal nucleus, intrinsic `E_5/K_5`, curvature carrier, block projections, symmetry correction, and split-or-peel recursion.
-11. [`quartic-terminal-defect-geometry.md`](quartic-terminal-defect-geometry.md) — projected sheet conservation and bounded equality/one-factor/root-triangle coefficient gadgets.
-12. [`quartic-nucleus-transport.md`](quartic-nucleus-transport.md) — canonical `S_4`-equivariant isometry between successive nuclei, diagonal singular gluing, curvature transport, and the marked shell.
-13. [`scalar-interval-transfer.md`](scalar-interval-transfer.md) — elementary `g`-to-`g` intervals, telescoping side output, eighteen transfer states, and algebraic backtrack reduction.
-14. [`scalar-interval-caps-and-cells.md`](scalar-interval-caps-and-cells.md) — physical backtrack caps and periodic three-turn cells for elementary intervals.
-15. [`periodic-kempe-ladders.md`](periodic-kempe-ladders.md) — rigid simultaneous three-Kempe wiring inside periodic elementary intervals.
-16. [`g-component-transition-quotient.md`](g-component-transition-quotient.md) — the physical quotient obtained by contracting `Q-E_g`, four transition systems, common cuts, exact cut lifting, and terminal-sensitive parity.
-17. [`route-capped-line-graph-carrier.md`](route-capped-line-graph-carrier.md) — the canonical route-capped `4`-regular flag-line graph, four scalar circuit partitions, and unified transition law.
-18. [`relative-touch-homology.md`](relative-touch-homology.md) — the initial relative-cycle formulation and its superseding shadow-closure correction.
-19. [`touch-shadows-and-cap-residue.md`](touch-shadows-and-cap-residue.md) — distinguished/shadow circuit pairs, automatic complementary-boundary closure, cap completion, and the bounded two-transition residue.
-20. [`cap-residue-isotropic-completion.md`](cap-residue-isotropic-completion.md) — even triple law and complete IAS classification of loop, parallel, twin, and pendant local cap degenerations.
-21. [`minimal-cap-cocycle-decomposition.md`](minimal-cap-cocycle-decomposition.md) — existence of full completion and the coupled/separated minimal-cocycle dichotomy.
-22. [`cocircuit-cutrank-mechanism.md`](cocircuit-cutrank-mechanism.md) — local-set support, cocircuit rank/nullity, and the exact interlacement cut-rank split-or-prime parameter.
-23. [`natural-transversal-physical-projection.md`](natural-transversal-physical-projection.md) — the canonical local transversal, touch-graph `\widehat Q`, and physical cycle/join projection of cap cocircuits.
-24. [`natural-transversal-cycle-cut-exact-sequence.md`](natural-transversal-cycle-cut-exact-sequence.md) — the cut-kernel theorem and exact cycle--cut short exact sequence.
-25. [`physical-cycle-cut-response-form.md`](physical-cycle-cut-response-form.md) — the Lagrangian cocycle code and symmetric response form on the physical cycle space.
-26. [`cube-multicycle-cocircuit-certificate.md`](cube-multicycle-cocircuit-certificate.md) — exact finite counterexample to the overstrong single-projected-circuit lemma.
-27. [`cap-residue-symmetry-correction.md`](cap-residue-symmetry-correction.md) — separation of sheet `S_4`, terminal-route coordinates, and DDD support-label `D_8`.
-28. [`frontier-localisation.md`](frontier-localisation.md) — exact remaining physical response/composition frontier.
-29. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md) — preferred and independent proof families, exact equivalences, templates, and negative boundaries.
-30. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md) — exact finite computations, counterexamples, certificates, and evidentiary scope.
+6. [`common-cut-circuit-localisation.md`](common-cut-circuit-localisation.md) — scalar-component incidence, odd witness circuits, and singleton/transition/quartic localisation.
+7. [`quartic-witness-designs.md`](quartic-witness-designs.md) — unbounded abstract quartic cores and symplectic cross-intersection.
+8. [`route-locked-quotient-phase.md`](route-locked-quotient-phase.md) — quotient Tait flow, binary phase, affine sheet plane, Kempe differences, and endpoint signatures.
+9. [`quartic-transition-skeletons.md`](quartic-transition-skeletons.md) — connected pairwise marked ribbon skeletons.
+10. [`quartic-terminal-nucleus.md`](quartic-terminal-nucleus.md) — canonical `O^-(4,2)` nucleus, curvature carrier, symmetry correction, and split-or-peel recursion.
+11. [`quartic-terminal-defect-geometry.md`](quartic-terminal-defect-geometry.md) — bounded equality/one-factor/root-triangle coefficient gadgets.
+12. [`quartic-nucleus-transport.md`](quartic-nucleus-transport.md) — successive-nucleus transport and marked shell.
+13. [`scalar-interval-transfer.md`](scalar-interval-transfer.md), [`scalar-interval-caps-and-cells.md`](scalar-interval-caps-and-cells.md), and [`periodic-kempe-ladders.md`](periodic-kempe-ladders.md) — finite elementary interval and ladder normal forms.
+14. [`g-component-transition-quotient.md`](g-component-transition-quotient.md) — physical quotient `\Gamma_g`, transition systems, exact cut lifting, and terminal parity.
+15. [`route-capped-line-graph-carrier.md`](route-capped-line-graph-carrier.md) — the canonical route-capped `4`-regular carrier.
+16. [`relative-touch-homology.md`](relative-touch-homology.md) and [`touch-shadows-and-cap-residue.md`](touch-shadows-and-cap-residue.md) — relative formulation, shadow correction, cap closure, and the bounded two-transition residue.
+17. [`cap-residue-isotropic-completion.md`](cap-residue-isotropic-completion.md), [`minimal-cap-cocycle-decomposition.md`](minimal-cap-cocycle-decomposition.md), and [`cocircuit-cutrank-mechanism.md`](cocircuit-cutrank-mechanism.md) — local degenerations, coupled/separated completion, and split-or-prime cut-rank.
+18. [`natural-transversal-physical-projection.md`](natural-transversal-physical-projection.md) and [`natural-transversal-cycle-cut-exact-sequence.md`](natural-transversal-cycle-cut-exact-sequence.md) — canonical projection to `\widehat Q` and the exact cycle--cut sequence.
+19. [`physical-cycle-cut-response-form.md`](physical-cycle-cut-response-form.md) — the Lagrangian physical response code.
+20. [`ribbon-intersection-response.md`](ribbon-intersection-response.md) — response as mod-two ribbon intersection; radical, Euler genus, orientability, and Petrial law.
+21. [`gauge-radicalisation-duality.md`](gauge-radicalisation-duality.md) — exact admissible radicalisation and persistent odd-intersection duality.
+22. [`persistent-intersection-hyperbolic-flow.md`](persistent-intersection-hyperbolic-flow.md) — Schur-dual words as hyperbolic-flow norm supports and the dual-rank hierarchy.
+23. [`rank-one-persistent-interval-localisation.md`](rank-one-persistent-interval-localisation.md) — rank-one reduction to one odd scalar circuit or interval.
+24. [`rank-two-tait-permutation-localisation.md`](rank-two-tait-permutation-localisation.md) — rank-two reduction to one odd closed or defect-to-defect carrier.
+25. [`cube-multicycle-cocircuit-certificate.md`](cube-multicycle-cocircuit-certificate.md) — exact negative certificate against a single projected circuit.
+26. [`cap-residue-symmetry-correction.md`](cap-residue-symmetry-correction.md) — separation of sheet `S_4`, terminal-route coordinates, and DDD support-label `D_8`.
+27. [`frontier-localisation.md`](frontier-localisation.md) — exact remaining rank-three/composition frontier.
+28. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md) and [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md) — alternate proof families and finite evidence.
 
 ## Scope
 
-The five-support programme strengthens, but does not replace, the complete paper-level Cycle Double Cover spine in the parent project. No global five-support theorem is claimed.
-
-The controlling fixed-lift criterion is
+The programme strengthens, but does not replace, the complete paper-level Cycle Double Cover spine. No global five-support theorem is claimed. The controlling fixed-lift criterion remains
 
 $$
 T_g^{(1)}\longrightarrow\mathscr A_5,
 $$
 
-not merely the global-colour quotient criterion `J_g -> A_5`.
+not merely the factorable quotient through `J_g`.
 
-The sharp nonflat endpoint now has four coordinated descriptions.
+The nonflat endpoint now has a physical topological and code-theoretic normal form.
 
-1. **Incidence carrier.** Every quartic design has a canonical minus-type terminal nucleus. A split sheet projects to a bounded `K_6` coefficient gadget; an all-concentrated design peels to a smaller design. The natural sheet symmetry is `S_4`; comparison with physical terminal-route and DDD support-label symmetries is open.
-2. **Physical cut carrier.** Contracting the components of `Q-E_g` gives an even-total-degree four-pole `\Gamma_g`; every internal quotient cut lifts exactly to a `g`-coloured cut in `Q`.
-3. **Isotropic carrier.** The route-capped flag-line graph carries the four scalar partitions. Shadow closure compresses every nonflat witness to one transition at each cap; minimal completion is coupled or separated, and cocircuit cut-rank gives the split-or-prime parameter.
-4. **Physical cycle--cut response.** The natural transversal has touch-graph `\widehat Q`. Full cocycles fit into
+1. Every common-cut witness compresses to a two-transition cap residue.
+2. Minimal completion is coupled or separated; cut-rank separates disconnected, split, and prime carriers.
+3. The natural transversal gives
    $$
    0\to\operatorname{Cut}(\widehat Q)
    \to\operatorname{Cocycle}(M_\tau)
-   \to\operatorname{Cycle}(\widehat Q)\to0,
+   \to\operatorname{Cycle}(\widehat Q)\to0.
    $$
-   governed by a symmetric response form `\mathcal B_{\widehat Q}`. Zero physical-cycle projection is already a true bond; the residual prime branch has a nonzero cycle response word with the locked cap constraints.
+4. The resulting response form is the ribbon-surface mod-two intersection pairing. Its radical is boundary homology and its rank is Euler genus.
+5. Admissible gauge/Petrial motion radicalises a response cycle exactly when one explicit linear equation is solvable. Failure gives physical cycles `z,z'` with odd intersection and
+   $$
+   z\odot z'\in\mathcal B_f^\perp
+   =\mathcal C(G)*\mathcal F_f.
+   $$
+6. This common-edge word is the norm support of a dual-valued hyperbolic flow. Dual ranks one and two are localised respectively to scalar intervals/circuits and defect-to-defect paths/circuits.
 
-The central missing theorem is now a **response-form composition theorem**: use the common Fano flow, four affine sheets, Kempe systems, and `\Gamma_g` to reduce every nonzero prime response word to a physical separator, crossed route/root escape, bounded replacement, or the uniquely comparable DDD support-label class.
+The first genuinely unlocalised branch is now **dual rank three**, together with composition of the already localised rank-one and rank-two carriers. The likely final comparison target is the physical DDD support-label class, but no identification is claimed.
 
-The flat-potential, defect-forest, four-pole, and horizontal bad-flow transfer problems remain open.
+The flat-potential, defect-forest, four-pole, and horizontal bad-flow transfer problems remain open downstream.
 
 ## Reliability
 
