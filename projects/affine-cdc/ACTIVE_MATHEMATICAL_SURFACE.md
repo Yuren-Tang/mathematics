@@ -1,48 +1,63 @@
 # AffineCDC active mathematical surface
 
-This file identifies the current-best mathematical surface produced by `AC-CORPUS-01`. It distinguishes active mathematics from historical source packets, assurance projections, and recoverable Git history.
+This file identifies the current-best mathematical surface on the Programme A curation candidate.
 
 ## 1. Exact construction line
 
-The active surface is built on:
+The candidate is built from:
 
-- canonical ancestor `main@749e0579581fcc838685138b3582f4de306b8e72`;
-- public five-support checkpoint `dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`;
-- accepted outer-shell source `0927011177cabac20f06a57fa5e57476d6f13dee`;
-- integration base `7a166d2eb5642ec967f640323488e49f1c2ad5d4`;
-- curation branch `curation/affine-cdc-natural-mathematical-corpus-v1`.
+- canonical base `main@960c92b7ff231c78b387894149779083060a75eb`;
+- immutable Programme A source `proof-development/affine-cdc-rigour-v1@8bee16780b549f51e1f29343671a059961ec4172`;
+- curation branch `curation/affine-cdc-programme-a-v1`.
 
-The source checkpoint remains an ancestor. Retirement from the current tree does not remove source history or priority.
+Only A0–A10 and the Programme A obligation/provenance ledger are integrated. B1 and later proof-development commits are excluded.
 
 ## 2. Primary entrypoints
 
-- [`README.md`](README.md) — project entrypoint and two theorem lines;
-- [`CURRENT_BEST.md`](CURRENT_BEST.md) — compact current mathematical state;
+- [`README.md`](README.md) — project entrypoint;
+- [`CURRENT_BEST.md`](CURRENT_BEST.md) — compact mathematical state;
 - [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md) — natural dependency architecture;
-- [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md) — theorem and obligation graph;
-- [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md) — exact open endpoint.
+- [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md) — theorem DAG;
+- [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md) — open five-support endpoint.
 
-## 3. Complete Cycle Double Cover spine
+## 3. Complete Cycle Double Cover theorem
 
-The active complete-result line consists of:
+The controlling end-to-end proof surface is:
 
-- [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md);
-- [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md);
-- [`reduction/outer-shell-and-binary-flow.md`](reduction/outer-shell-and-binary-flow.md);
-- [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md).
+1. [`complete-cdc/foundations-expansion-and-flow.md`](complete-cdc/foundations-expansion-and-flow.md);
+2. [`complete-cdc/affine-compatibility-and-extraction.md`](complete-cdc/affine-compatibility-and-extraction.md);
+3. [`complete-cdc/collapse-decomposition-and-assembly.md`](complete-cdc/collapse-decomposition-and-assembly.md).
 
-Supporting current mathematics remains in:
+Directory entrypoint: [`complete-cdc/README.md`](complete-cdc/README.md).
 
+The natural theorem assumes finite active edge set and no singleton cut and concludes a finite circuit double cover. Loops, parallel edges, disconnected components, isolated vertices, and an arbitrary ambient vertex carrier are allowed.
+
+Supporting mechanism-level mathematics remains in:
+
+- [`core/`](core/);
+- [`reduction/`](reduction/);
 - [`rank-hierarchy/`](rank-hierarchy/);
-- [`reduction/incidence-to-tensor-complex.md`](reduction/incidence-to-tensor-complex.md);
 - [`tensor/`](tensor/);
 - [`gauge/`](gauge/).
 
-The natural theorem allows loops and finite active edge set. The present Lean declaration remains an earlier loopless ambient-finite checkpoint.
+## 4. Programme A source and provenance surface
 
-## 4. Five-support strengthening
+The exact authorial proof-development material remains active as provenance:
 
-The active five-support corpus is exactly:
+- `proof-development/AC_PD_A0_FOUNDATIONAL_SEMANTICS.md` through `AC_PD_A10_COMPLETE_CDC_ASSEMBLY.md`;
+- `proof-development/OBLIGATION_DAG.md`.
+
+Control files:
+
+- [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md);
+- [`PROGRAMME_A_ASSURANCE_BOUNDARY.md`](PROGRAMME_A_ASSURANCE_BOUNDARY.md);
+- [`PROGRAMME_A_INTEGRATION_MANIFEST.md`](PROGRAMME_A_INTEGRATION_MANIFEST.md).
+
+The dossiers are source, audit, and repair surfaces. The three integrated chapters are the preferred current reading order.
+
+## 5. Five-support strengthening
+
+The active five-support corpus remains:
 
 1. [`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md);
 2. [`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md);
@@ -53,31 +68,22 @@ The active five-support corpus is exactly:
 7. [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
 8. [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
 
-The global five-support theorem remains open. The controlling fixed-lift object is the full dual triangulation `T_g`, not only the factorable quotient `J_g`.
+The global five-support theorem remains open. Programme A does not alter this line.
 
-## 5. Provenance and reliability control
+## 6. Historical five-support recovery
 
-- [`CHAPTER_PROVENANCE.md`](CHAPTER_PROVENANCE.md) — source packets and proof-family provenance by active chapter;
-- [`MIGRATION_LEDGER.md`](MIGRATION_LEDGER.md) — source-to-successor map;
-- [`SUPERSESSION_MAP.md`](SUPERSESSION_MAP.md) — corrections and narrowed scope;
-- [`RETIRED_SOURCE_CLASSIFICATION.md`](RETIRED_SOURCE_CLASSIFICATION.md) — classification of source packets retired from the current tip;
-- [`SOURCE_RECOVERY_AUDIT.md`](SOURCE_RECOVERY_AUDIT.md) — ancestry, recovery commands, and no-loss checks;
-- [`FORMAL_STATUS.md`](FORMAL_STATUS.md) — theorem, finite, open, formal, and review boundaries;
-- [`RECONSTRUCTION_MANIFEST.md`](RECONSTRUCTION_MANIFEST.md) — final reconstruction and pruning manifest.
+The seventy-eight discovery-order `research/FIVE_CDC_*.md` packets remain retired from the current tip after exact successor mapping and are recoverable from their historical checkpoint.
 
-## 6. Projection surfaces
+Their existing control surfaces remain:
 
-[`PUBLICATION_PROGRAM.md`](PUBLICATION_PROGRAM.md) is a publication-planning projection from the mathematics. It does not control theorem truth, current-best inclusion, formal status, or authorization to publish.
+- [`CHAPTER_PROVENANCE.md`](CHAPTER_PROVENANCE.md);
+- [`MIGRATION_LEDGER.md`](MIGRATION_LEDGER.md);
+- [`RETIRED_SOURCE_CLASSIFICATION.md`](RETIRED_SOURCE_CLASSIFICATION.md);
+- [`SOURCE_RECOVERY_AUDIT.md`](SOURCE_RECOVERY_AUDIT.md);
+- [`SUPERSESSION_MAP.md`](SUPERSESSION_MAP.md).
 
-## 7. Retired current-tree material
+## 7. Assurance boundary
 
-The following are not part of the active tip:
+Programme A is Curator-integrated authorial paper-proof mathematics. It has not passed independent Audit A and is not end-to-end Lean verified.
 
-- the seventy-eight discovery-order `research/FIVE_CDC_*.md` packets, after exact successor mapping;
-- `BASELINE_MANIFEST.md`, which described the earlier temporary integration state.
-
-They remain recoverable through ordinary Git ancestry. Their retirement means only that a current reader should use the synthesized corpus and provenance maps rather than replay discovery chronology.
-
-## 8. Assurance boundary
-
-Current-best inclusion records the best public mathematical synthesis supported by the named sources. It does not create independent review, Lean verification, peer review, manuscript approval, release, arXiv, DOI, or publication status.
+No manuscript, peer-review, publication, release, arXiv, DOI, or timestamp status is created. See [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
