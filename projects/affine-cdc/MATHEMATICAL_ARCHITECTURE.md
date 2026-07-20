@@ -1,12 +1,12 @@
 # AffineCDC mathematical architecture
 
-This file separates the complete Cycle Double Cover theorem from the open five-support strengthening and identifies the current controlling proof interfaces.
+This file separates the complete Cycle Double Cover theorem from the open five-support strengthening and records the controlling Programme A, B1, and B2 interfaces.
 
 ## 1. Three scopes
 
 1. **Affine compatibility core** — rank-three compatible affine families on finite loopless cubic graphs with nowhere-zero binary flow.
 2. **Complete CDC theorem** — the Programme A finite-active multigraph theorem, including loops, collapse, decomposition, and exact occurrence multiplicity.
-3. **Five-support strengthening** — existence of five indexed even supports, equivalently a root-valued $E_5$ flow.
+3. **Five-support strengthening** — existence of five indexed even supports, equivalently an anisotropic root flow in the ten-root orbit of $O^-(4,2)$.
 
 Scope 3 remains open and is not used in Scope 2.
 
@@ -37,58 +37,133 @@ Programme A remains the fixed Audit A candidate at
 
 `curation/affine-cdc-programme-a-v1@68715fb29bb4b6555e2bc3e089603c5390d01566`.
 
-This B1 descendant does not modify that branch or its audit target.
+## 3. Programme B1 object and quantifier layer
 
-## 3. Programme B1 root object
+For a finite loopless cubic multigraph $G$, graph-level five-support existence is equivalent to:
 
-For a finite loopless cubic multigraph $G$, the following graph-level existence data are equivalent:
-
-- five indexed even supports with exact double coverage;
-- an $R_5$-valued $E_5$ flow;
+- an $R_5$-valued flow;
 - a $K_5$-triangle edge labelling;
 - exact matching/four-flow data $(B,D,M,w)$;
-- the equivalent component $T$-join formulation;
-- existence of a Fano flow and plane with empty component-obstruction profile;
-- existence of a cycle-face embedding whose full dual maps to the even half-cube.
+- the component $T$-join form;
+- existential Fano-flow/plane data with empty obstruction profile;
+- an existential cycle-face embedding whose full dual maps to the even half-cube.
 
 All auxiliary data are existential at graph level.
 
+B1 also separates:
+
+- fixed $(f,W)$ component obstruction;
+- fixed $f$ with variable plane;
+- fixed compatible lift and same-embedding componentwise compression;
+- prescribed-dual holonomy;
+- old-colour-factorable compression through $J_g$.
+
 The preferred B1 chapter is [`five-support/b1-object-quantifier-and-scope.md`](five-support/b1-object-quantifier-and-scope.md).
 
-## 4. Matching/four-flow boundary
+## 4. Programme B2 mother witness
 
-A fixed support-coordinate inverse image is an even support. A fixed root-label inverse image is a matching.
-
-The exact converse requires:
+Put
 
 $$
-B,D\text{ even},\qquad M=B\cap D\text{ a matching},
+H_5=\left\{z\in\mathbf F_2^5:\sum_i z_i=0\right\},
+\qquad
+q_5(z)=\sum_{i<j}z_iz_j.
 $$
 
-and a nowhere-zero $\mathbf F_2^2$ flow on $G-M$.
+The ten anisotropic vectors of this minus-type four-space are exactly the weight-two roots $R_5$.
 
-Equivalently, replace $D$ by even $M$-endpoint parity in every component of $G-B$. Bare matching plus four-flow is insufficient.
+The full graph-level witness hierarchy is:
 
-## 5. Fixed Fano flow and plane
+```text
+five indexed supports
+↔ R₅-valued flow
+↔ K₅-triangle labelling
+↔ anisotropic O⁻(4,2) flow
+↔ quadratic cycle solution (b,d,x,y)
+↔ cycle-continuous edge map M(G) → M*(K₅).
+```
 
-Fix a nowhere-zero Fano flow $f$ and a plane $W$. Let $G_W$ be the subgraph of $W$-valued edges.
+The coordinate reconstruction is
 
-For every component $K$ of $G_W$, the four outside-colour cut parities are equal. Their common bit is the component obstruction $\chi_W(K)$.
+$$
+\Phi(b,d,x,y)
+=(b,d,b+d+y,b+d+x,b+d+x+y),
+$$
 
-For fixed $(f,W)$, the following are equivalent:
+with equation
 
-- a global five-coordinate slice;
-- the distinguished even support;
-- the matching endpoint $T$-join condition;
-- vanishing of one or all outside-colour cut parities;
-- Eulerian outside-colour classes after contraction;
-- vanishing of the local affine component obstruction.
+$$
+b*d=(\mathbf1+x)*(\mathbf1+y).
+$$
 
-For fixed $f$, factorable success requires some plane with empty profile. A prescribed flow may fail; this does not imply that the graph fails.
+The cographic map means only an edge map whose inverse image sends target binary cycles, equivalently cuts of $K_5$, to source binary cycles.
 
-## 6. Fixed lift and full dual
+## 5. Fixed singular quotient and Schur layer
 
-A compatible root lift $g$ is equivalent to a properly face-coloured cycle-face surface $S_g$ and its properly vertex-coloured full dual triangular cellulation $T_g$.
+Fix a four-dimensional minus-type space $(H,q)$, a nonzero singular vector $k$, and a quotient Fano flow in
+
+$$
+\Gamma=H/\langle k\rangle.
+$$
+
+The following are equivalent for the retained fixed data:
+
+- anisotropic lifting;
+- vanishing kernel-line component defect;
+- B1 fixed-plane colour-cut obstruction;
+- existence of the eliminated cycle word $d$;
+- the Schur condition $x*y\in\mathcal C(Q_b)$.
+
+When nonempty, the lifts form a torsor under the cycle space of the plane subgraph.
+
+This is a fixed-data equivalence. The quotient flow, kernel or plane, contracted graph, and lift torsor are load-bearing. A boundary word alone is not a graph-level witness.
+
+## 6. Stress and Fourier dual layers
+
+For a fixed evaluation map, relative stresses are the orthogonal complement of the attainable code. They give an exact Fredholm alternative for a prescribed target.
+
+For an allowed set $A$ in one fixed orbit,
+
+$$
+|\mathcal C_F\cap A|
+=
+\frac{|\mathcal C_F|}{|Q_F|}
+\sum_{y\in\mathcal C_F^\perp}\widehat{\mathbf1_A}(y).
+$$
+
+The nonzero frequencies are relative stresses.
+
+- a positive count proves existence in the fixed orbit;
+- an explicit lift still requires a codeword and primal preimage;
+- a zero count is aggregate spectral cancellation and need not produce one separating stress.
+
+Stress and Fourier data are exact dual/ counting interfaces, not independent source witnesses.
+
+## 7. Correct universal additive root module
+
+The retired universal packet claimed that the complete graph on $2^r$ support points has a canonical additive anisotropic-root model of dimension $2r$. The formula is type-invalid without a chosen self-duality, and the theorem is impossible for $r\ge4$.
+
+Triangle addition forces point potentials whose Gram matrix has rank $q-2$. Therefore
+
+$$
+\dim V\ge q-2.
+$$
+
+The correct universal module is
+
+$$
+\overline E_I
+=
+\left\{z\in\mathbf F_2^I:\sum_i z_i=0\right\}/\langle\mathbf1_I\rangle,
+$$
+
+with dimension $q-2$, quadratic form $q_I([z])=\operatorname{wt}(z)/2\pmod2$, and roots $[\varepsilon_a+\varepsilon_b]$.
+
+The eight-support $O^+(6,2)$ realization is exceptional because $8-2=6=2\cdot3$. There is no universal $O^+(2r,2)$ tower.
+
+## 8. Fixed lift and full dual
+
+A compatible root lift $g$ is equivalent to a properly face-coloured cycle-face surface $S_g$ and its full dual triangular cellulation $T_g$.
 
 The exact fixed-lift statement is:
 
@@ -98,71 +173,37 @@ $$
 T_g^{(1)}\to\mathscr A_5.
 $$
 
-This does not classify arbitrary five-support covers on $G$ relative to the prescribed surface.
+An external root flow integrates on a prescribed dual exactly when its sum vanishes on every dual cycle. The quotient $J_g$ classifies only maps constant on old-colour fibres.
 
-## 7. Prescribed-surface holonomy
+## 9. Controlling B1 corrections
 
-An externally supplied root flow integrates to a potential on a fixed dual graph if and only if its sum vanishes on every dual cycle.
+1. Support-coordinate inverse images are even; root-label inverse images are matchings.
+2. Matching plus four-flow requires the second support or component $T$-join datum.
+3. Fixed-$g$ compression is same-embedding componentwise compression.
+4. Prescribed-surface integration requires zero dual holonomy.
+5. $J_g$ is only the old-colour-factorable subclass.
+6. Singleton words require an odd translation in the even half-cube.
 
-Local conservation checks triangular dual faces only. Residual dual holonomy may remain.
+## 10. Wider Programme B architecture
 
-## 8. Old-colour factorability
+The remaining dependency order is:
 
-The old-colour map gives
+1. B3 surface/target correction and capacity layer;
+2. B4 vertical and horizontal reconfiguration;
+3. B5 cuts, four-poles, and routing;
+4. B6 holonomy, defects, and atoms;
+5. B7 localization consequences;
+6. B8 finite certificates;
+7. B9 global assembly, still blocked at the genuine localization/composition frontier.
 
-$$
-T_g^{(1)}\to J_g.
-$$
+Programme B2 consumes no B3+ checkpoint.
 
-A half-cube map factors through $J_g$ exactly when it is constant on all face components carrying the same old support index.
-
-Thus $J_g\to\mathscr A_5$ classifies only global-index-factorable compression. It is not the complete fixed-lift object.
-
-## 9. Even-halfcube convention
-
-If $\mathscr A_5$ denotes the even component, singleton words are not vertices. Choose one odd word $t$ and use
-
-$$
-t+\varepsilon_i\in E_5.
-$$
-
-Alternatively, name the odd component explicitly.
-
-## 10. Safe fixed-data hierarchy
-
-For corresponding fixed flow and lift:
-
-```text
-global five-point slice
-→ J_g → 𝒜₅
-→ T_g^(1) → 𝒜₅
-→ five-support cover.
-```
-
-The converses need not hold at the same fixed data.
-
-## 11. Boundary with B2 and later programmes
-
-B1 closes the root object and quantifier layer. It does not consume the B2 singular/quadratic/Schur/cographic/orthogonal/Fourier dossiers or B3 target-correction dossiers.
-
-Later formulations must be classified as full witness equivalences, fixed-data equivalences, quotients with lost lift data, dual obstructions, or evidence before entering the graph-level equivalence box.
-
-The wider five-support architecture remains:
-
-1. B1 root object and quantifiers;
-2. B2 equivalent-formulation classification;
-3. B3 surface/target construction and correction layer;
-4. gauge and horizontal reconfiguration;
-5. cuts, four-poles, and routing;
-6. holonomy, defects, and atoms;
-7. localization/composition frontier;
-8. finite certificates.
-
-## 12. Provenance and assurance
+## 11. Provenance and assurance
 
 - Programme A map: [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md);
 - Programme B1 map: [`PROGRAMME_B1_INTEGRATION_MAP.md`](PROGRAMME_B1_INTEGRATION_MAP.md);
-- B1 quantifier control: [`PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md`](PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md);
+- Programme B2 map: [`PROGRAMME_B2_INTEGRATION_MAP.md`](PROGRAMME_B2_INTEGRATION_MAP.md);
+- B2 witness control: [`PROGRAMME_B2_WITNESS_SCOPE.md`](PROGRAMME_B2_WITNESS_SCOPE.md);
 - exact authorial dossiers: [`proof-development/`](proof-development/).
 
-Programme A and B1 are integrated authorial mathematics. This does not create independent-review, Lean, manuscript, peer-review, publication, release, arXiv, DOI, or timestamp status.
+Programme A, B1, and B2 are integrated authorial mathematics in their stated scopes. This does not create independent-review, Lean, manuscript, peer-review, publication, release, arXiv, DOI, novelty, or timestamp status.
