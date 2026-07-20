@@ -6,11 +6,9 @@ This ledger classifies the seventy-eight public five-support source packets reti
 **Historical path:** `projects/affine-cdc/research/`  
 **Retirement meaning:** absent from the current tree, fully recoverable through ordinary Git ancestry, and replaced for current reading by the named corpus and provenance maps.
 
-Retirement is not rejection. A packet may contain a valid theorem, independent proof, counterexample, finite certificate, correction, or priority record. The classification below states why its source file no longer needs to remain as a parallel current-tree exposition.
+Retirement is not ordinarily rejection. A packet may contain a valid theorem, independent proof, counterexample, finite certificate, correction, or priority record. One packet is now separately classified as containing a false theorem and is retained only as historical provenance.
 
-## 1. Controlling theorem or mechanism absorbed — 39
-
-The mathematical content of these packets is integrated into the substantive active chapters.
+## 1. Controlling theorem or mechanism absorbed — 38
 
 - `FIVE_CDC_ADMISSIBLE_SWITCH_IMAGE_V1.md`
 - `FIVE_CDC_ANISOTROPIC_RANK_FOUR_FLOW_V1.md`
@@ -49,12 +47,9 @@ The mathematical content of these packets is integrated into the substantive act
 - `FIVE_CDC_SUPPORT_CYCLE_PIVOT_AND_FLOW_RECONFIGURATION_V1.md`
 - `FIVE_CDC_TYPE_H_LOCAL_TO_GLOBAL_HOLONOMY_STACK_V1.md`
 - `FIVE_CDC_TYPE_H_TAIT_ESCAPE_V1.md`
-- `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`
 - `FIVE_CDC_UNUSED_MATCHING_COMPRESSION_V1.md`
 
 ## 2. Independent proof or representation preserved by role — 10
-
-These packets supplied genuinely useful alternative proofs or projections. Their mathematical role is retained in `five-support/equivalent-formulations-and-proof-families.md` and the substantive destination chapters.
 
 - `FIVE_CDC_AFFINE_SUBSPACE_ARRANGEMENT_SIEVE_V1.md`
 - `FIVE_CDC_FLOW_TENSION_FINITE_STATE_V1.md`
@@ -67,9 +62,9 @@ These packets supplied genuinely useful alternative proofs or projections. Their
 - `FIVE_CDC_SWITCH_INCIDENCE_GRAPH_V1.md`
 - `FIVE_CDC_TAIT_TUTTE_STRUCTURE_BRIDGE_V1.md`
 
-## 3. Exact finite theorem, witness, or certificate preserved — 18
+These packets retain useful alternate proof roles in the active B2 hierarchy and later mechanism chapters.
 
-The active finite-laboratory chapter retains the exact result, count, witness role, and limitation. The original packet remains recoverable for detailed historical tables and computation narration.
+## 3. Exact finite theorem, witness, or certificate preserved — 18
 
 - `FIVE_CDC_AFFINE_PLANE_K4_RESIDUE_V1.md`
 - `FIVE_CDC_COMPONENTWISE_DUAL_CENSUS_V1.md`
@@ -92,8 +87,6 @@ The active finite-laboratory chapter retains the exact result, count, witness ro
 
 ## 4. Controlling correction or negative boundary absorbed — 10
 
-These packets prevent overstatement. Their controlling correction is retained in the substantive chapters and `SUPERSESSION_MAP.md`.
-
 - `FIVE_CDC_CAP_KEMPE_PAIRING_ALIGNMENT_V1.md`
 - `FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_ERRATUM_V1.md`
 - `FIVE_CDC_COMPONENTWISE_PROGRAMME_CHECKPOINT_V1.md`
@@ -109,19 +102,36 @@ These packets prevent overstatement. Their controlling correction is retained in
 
 - `FIVE_CDC_MECHANISM_CLOSURE_MAP_V1.md`
 
-Its theorem/finite/open distinctions and obligations are distributed across the active architecture and frontier chapter. Retaining it as a parallel current summary would reintroduce discovery-order drift.
+Its obligations are distributed across the active dependency architecture and frontier chapter.
 
-## 6. Accounting
+## 6. Superseded false theorem retained as history — 1
+
+- `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`
+
+Classification:
+
+`RETIRED / SUPERSEDED / FALSE THEOREM / HISTORICAL PROVENANCE`.
+
+The packet's universal $2r$-dimensional theorem is false for $r\ge4$, and its displayed map is type-invalid without an additional self-duality. The active replacement is Programme B2.3:
+
+- dimension lower bound $\dim V\ge q-2$;
+- deleted permutation module of dimension $q-2$;
+- exceptional eight-support $O^+(6,2)$ model;
+- no universal $O^+(2r,2)$ tower.
+
+The packet may be recovered to inspect discovery history and the failed claim, but it must not be cited as active theorem authority.
+
+## 7. Accounting
 
 The classes are disjoint and exhaustive:
 
 $$
-39+10+18+10+1=78.
+38+10+18+10+1+1=78.
 $$
 
-The preliminary migration ledger omitted `FIVE_CDC_SUPPORT_CYCLE_PIVOT_AND_FLOW_RECONFIGURATION_V1.md`; this final classification restores it and assigns it to the controlling gauge/horizontal theorem layer.
+The earlier preliminary migration omission of `FIVE_CDC_SUPPORT_CYCLE_PIVOT_AND_FLOW_RECONFIGURATION_V1.md` remains corrected.
 
-## 7. Recovery
+## 8. Recovery
 
 For any listed `FILE`:
 
@@ -129,4 +139,4 @@ For any listed `FILE`:
 git show dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c:projects/affine-cdc/research/FILE
 ```
 
-The checkpoint is an ancestor of the final candidate. No source branch, commit, or public history is deleted or rewritten.
+The checkpoint remains in public Git history. No source branch, commit, or history is deleted or rewritten.
