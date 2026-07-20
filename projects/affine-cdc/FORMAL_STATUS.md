@@ -1,6 +1,6 @@
 # Formalization and reliability boundary
 
-This file separates current mathematical inclusion, authorial proof completion, independent audit, machine verification, manuscript projection, peer review, publication, release, arXiv, and DOI status.
+This file separates current mathematical inclusion, authorial proof completion, independent audit, machine verification, manuscript projection, peer review, publication, release, arXiv, DOI, and novelty status.
 
 ## 1. Programme A complete theorem
 
@@ -16,7 +16,7 @@ Fixed Audit A candidate:
 
 `curation/affine-cdc-programme-a-v1@68715fb29bb4b6555e2bc3e089603c5390d01566`.
 
-This B1 intake does not modify that branch or change its audit status.
+Programme B descendants do not modify that branch or change its audit status.
 
 ## 2. Programme B1 status
 
@@ -24,62 +24,86 @@ Exact immutable B1 source:
 
 `proof-development/affine-cdc-rigour-v1@778b09ac8260192e022f512f24cdef1d04871f37`.
 
-Integrated B1 scope:
+Integrated B1 scope includes:
 
-- B1.1 root-flow/$K_5$-triangle equivalence: `COMPLETE-DRAFT`;
-- B1.2 exact matching/four-flow theorem: `COMPLETE-DRAFT / CORPUS-CORRECTION`;
-- B1.3 fixed-flow/fixed-plane criterion: `COMPLETE-DRAFT`;
-- B1.4 surface/halfcube scope: `COMPLETE-DRAFT / SCOPE-CORRECTION`;
-- B1 aggregate: Curator-integrated authorial proof layer.
+- root-flow/$K_5$-triangle equivalence;
+- exact matching/four-flow theorem;
+- fixed-flow/fixed-plane criterion;
+- root-lift/surface and fixed-lift scope;
+- prescribed-dual holonomy;
+- old-colour quotient factorability;
+- even-halfcube parity correction.
 
-The preferred integrated chapter is [`five-support/b1-object-quantifier-and-scope.md`](five-support/b1-object-quantifier-and-scope.md). Exact provenance is in [`PROGRAMME_B1_INTEGRATION_MAP.md`](PROGRAMME_B1_INTEGRATION_MAP.md).
+B1 is Curator-integrated authorial proof-development mathematics. It is not independently audited or machine-checked end to end.
 
-These statuses do not mean independently audited or machine-checked.
+## 3. Programme B2 status
 
-## 3. B1 theorem boundary
+Exact immutable B2 source:
 
-Programme B1 proves exact graph-level equivalences among:
+`proof-development/affine-cdc-rigour-v1@d62974704d6dac77aaa00275a595fedf7f70cfd2`.
+
+Integrated B2 units:
+
+- B2.1 anisotropic, singular, quadratic, and Schur hierarchy: `COMPLETE-DRAFT`;
+- B2.2 cographic cycle-continuity: `COMPLETE-DRAFT / TERMINOLOGY-BOUNDARY`;
+- B2.3 orthogonal root-module correction: `COMPLETE-DRAFT / MATHEMATICAL-CORRECTION`;
+- B2.4 stress/Fourier duality: `COMPLETE-DRAFT / WITNESS-SCOPE`;
+- B2 aggregate: Curator-integrated authorial formulation/witness layer.
+
+The preferred integrated chapter is [`five-support/b2-formulation-and-witness-hierarchy.md`](five-support/b2-formulation-and-witness-hierarchy.md). Exact provenance is in [`PROGRAMME_B2_INTEGRATION_MAP.md`](PROGRAMME_B2_INTEGRATION_MAP.md).
+
+## 4. B2 theorem boundary
+
+Complete graph-level witness equivalences:
 
 - five indexed even supports;
-- root-valued $E_5$ flows;
+- $R_5$-valued flows;
 - $K_5$-triangle labellings;
-- exact matching/four-flow data;
-- existential Fano-flow/plane empty-profile data;
-- existential cycle-face surfaces whose full dual maps to the even half-cube.
+- anisotropic $O^-(4,2)$ flows;
+- complete quadratic cycle solutions $(b,d,x,y)$;
+- exactly defined cographic cycle-continuous edge maps to $M^*(K_5)$.
 
-It also proves the exact fixed-data statements for:
+Complete fixed-data equivalences, only with the quotient data and lift torsor retained:
 
-- a fixed pair $(f,W)$;
-- a fixed Fano flow with variable plane;
-- a fixed compatible root lift and its same-embedding componentwise compression;
-- integration of an external root flow on a prescribed dual subject to zero holonomy;
-- the old-colour-factorable quotient.
+- singular-line anisotropic lifting;
+- component lift-defect vanishing;
+- fixed-plane colour-cut obstruction;
+- existence of the eliminated cycle word $d$;
+- the Schur quotient condition.
 
-The global five-support theorem for all graphs remains open.
+Exact dual/counting results:
 
-## 4. Six B1 corrections
+- Fredholm duality via relative stresses for a prescribed target;
+- finite Fourier counting for a fixed affine orbit and allowed set.
 
-The active corpus now records:
+Stress and Fourier data do not by themselves constitute graph-level source witnesses.
 
-1. support-coordinate inverse images are even; root-label inverse images are matchings;
-2. bare matching plus four-flow is insufficient without $(B,D)$ or component $T$-join data;
-3. fixed-$g$ half-cube equivalence concerns componentwise compression of the same embedding;
-4. external covers require zero dual holonomy on a prescribed surface;
-5. $J_g$ classifies only old-colour-factorable compression;
-6. singleton words require an odd translation when the target is the even half-cube.
+## 5. Mathematical correction status
 
-## 5. Boundary with B2+
+The recovered packet
 
-This intake consumes no B2, B3, or later moving-branch mathematics.
+`FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`
 
-In particular, it does not integrate or disposition:
+is classified as:
 
-- singular/quadratic/Schur/cographic/orthogonal/Fourier dossiers;
-- later target-link or finite-certificate corrections;
-- later obligation-ledger modifications;
-- Programme B2/B3 handoffs.
+`RETIRED / SUPERSEDED / FALSE THEOREM / HISTORICAL PROVENANCE`.
 
-Any broader equivalence claim remains subject to a separate exact checkpoint and Curator intake.
+It is not part of the active theorem family.
+
+The defects are mathematical, not merely expository:
+
+1. its displayed evaluation map is type-invalid without an added self-duality;
+2. the asserted universal $2r$-dimensional additive-root model is impossible for $r\ge4$.
+
+The controlling replacement proves:
+
+$$
+\dim V\ge q-2
+$$
+
+for additive anisotropic roots of $K_q$ with triangle addition, and constructs the deleted permutation module of dimension $q-2$.
+
+The eight-support $O^+(6,2)$ model remains valid and is exceptional. The five-support $O^-(4,2)$ model remains valid. No universal $O^+(2r,2)$ tower is asserted.
 
 ## 6. Machine-checked anchor
 
@@ -87,29 +111,41 @@ The companion checkpoint
 
 `Yuren-Tang/affine-cdc:main@ebd7098a7a8b824e8c0a511d3c71f61705672aa8`
 
-machine-checks substantial internal slices of the rank-three AffineCDC machinery, including local families, gluing, indexed dart supports, exact two-point coverage, and a cubic-flow CDC result.
+machine-checks substantial internal slices of the rank-three AffineCDC machinery.
 
-It does not end-to-end verify Programme A or the integrated B1 graph/fixed-flow/fixed-lift package.
+It does not end-to-end verify Programme A, B1, or B2. In particular, this intake does not claim Lean verification of:
 
-No Lean repository was changed by this intake.
+- the B2 quadratic/cographic equivalence package;
+- the singular/Schur fixed-data reconstruction;
+- the $q-2$ dimension lower bound or deleted permutation module;
+- the stress/Fourier witness-scope statements.
+
+No Lean repository was changed.
 
 ## 7. Independent-review status
 
-Programme A is fixed for Audit A, but this intake does not perform or complete that audit.
+Programme A remains fixed for Audit A. Programme B1 and B2 have not received dedicated independent line-by-line audits.
 
-Programme B1 has not received a dedicated independent line-by-line audit. Priority B1 review targets include:
+Priority B2 review targets include:
 
-1. mutual inverse root-flow/support construction;
-2. matching/four-flow reconstruction and the component $T$-join criterion;
-3. common outside-colour parity and fixed-plane equivalence;
-4. root-lift/surface construction with support-cycle components;
-5. prescribed-dual path-independence/holonomy criterion;
-6. full-dual versus old-colour quotient factorization;
-7. even-component half-cube parity adapter.
+1. the coordinate isomorphism $\Phi$ and edgewise anisotropy equation;
+2. the singular fibre multiplicities and lift-torsor reconstruction;
+3. contraction to $Q_b$ and the Schur boundary equivalence;
+4. the exact inverse-cycle convention for the cographic edge map;
+5. the Gram-rank proof of the $q-2$ lower bound;
+6. descent and nondegeneracy properties of the deleted permutation quadratic module;
+7. Fredholm transpose identifications and endpoint-choice independence;
+8. Fourier normalization, product factorization, and primal-witness recovery.
 
 These are assurance targets, not known defects.
 
-## 8. Current source surfaces
+## 8. B3+ exclusion
+
+This intake consumes no B3, B4, B5, or later moving-branch mathematics. It does not disposition target-capacity corrections, reconfiguration, cut/routing, defect, atom, or localization claims.
+
+The global five-support theorem remains open.
+
+## 9. Current source surfaces
 
 Programme A:
 
@@ -120,31 +156,36 @@ Programme A:
 Programme B1:
 
 - [`five-support/b1-object-quantifier-and-scope.md`](five-support/b1-object-quantifier-and-scope.md);
-- [`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md);
-- [`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md);
-- [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
-- [`PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md`](PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md);
+- [`PROGRAMME_B1_INTEGRATION_MAP.md`](PROGRAMME_B1_INTEGRATION_MAP.md);
 - exact B1 dossiers under `proof-development/`.
 
-## 9. Publication and release status
+Programme B2:
+
+- [`five-support/b2-formulation-and-witness-hierarchy.md`](five-support/b2-formulation-and-witness-hierarchy.md);
+- [`PROGRAMME_B2_INTEGRATION_MAP.md`](PROGRAMME_B2_INTEGRATION_MAP.md);
+- [`PROGRAMME_B2_WITNESS_SCOPE.md`](PROGRAMME_B2_WITNESS_SCOPE.md);
+- exact B2 dossiers under `proof-development/`.
+
+## 10. Publication and release status
 
 This intake did not:
 
 - edit or approve a manuscript;
-- establish novelty relative to literature;
+- establish literature novelty;
 - authorize arXiv or journal submission;
 - create a release or tag;
 - modify a DOI or Zenodo record;
 - implement a timestamp or priority-attestation workflow.
 
-## 10. Reliability rules
+## 11. Reliability rules
 
 1. Curator integration does not equal independent audit.
 2. Natural reformulation does not inherit Lean status without checked bridges.
 3. Exact finite computation does not prove a universal theorem.
-4. Graph-level existential statements do not preserve fixed flow, lift, or surface data.
-5. Failure for one fixed flow is not failure for the graph.
-6. Same-embedding compression is not arbitrary cover existence on a prescribed surface.
-7. Local triangular conservation does not imply zero global dual holonomy.
-8. The old-colour quotient is not the full dual.
-9. Current-best inclusion, Director acceptance, independent audit, Lean verification, manuscript approval, peer review, publication, release, and DOI status are separate axes.
+4. Graph-level witnesses and fixed-data solvability criteria must not be conflated.
+5. A quotient boundary word does not reconstruct the eliminated lift coordinate.
+6. Relative stresses are dual dependencies, not source witnesses.
+7. Positive Fourier count proves existence but does not exhibit a primal lift.
+8. Zero Fourier count need not produce one separating stress.
+9. The false universal orthogonal theorem may not be cited as active mathematics.
+10. Current-best inclusion, Director acceptance, independent audit, Lean verification, manuscript approval, peer review, publication, release, arXiv, DOI, novelty, and timestamp status are separate axes.
