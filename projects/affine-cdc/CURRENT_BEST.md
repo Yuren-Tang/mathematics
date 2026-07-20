@@ -1,96 +1,114 @@
 # AffineCDC current mathematical state
 
-## 1. Complete result line
+## 1. Complete Cycle Double Cover line
 
 Programme A supplies a complete authorial paper-proof of:
 
 > Every multigraph with finite active edge set and no singleton cut has a finite circuit double cover.
 
-Equivalently, no nonloop active edge is a bridge. The theorem allows loops, parallel edge objects, disconnected components, isolated vertices, and an arbitrary ambient vertex carrier.
+The fixed Audit A candidate is
 
-The exact proof chain is:
+`curation/affine-cdc-programme-a-v1@68715fb29bb4b6555e2bc3e089603c5390d01566`.
 
-1. intrinsic multigraph, cut, circuit, and indexed-occurrence semantics;
-2. exact loop deletion;
-3. finite loopless cubic port-cycle expansion;
-4. nowhere-zero `F₂³` flow;
-5. affine pair complex and rank-three characteristic-torsor compatibility;
-6. graph/dart indexed even-support extraction;
-7. loopless vertex-to-cut parity bridge;
-8. cut-even collapse with exact occurrence transport;
-9. one terminating circuit decomposition downstairs;
-10. exact two-occurrence loop reinsertion.
+This B1 intake descends from that exact candidate and does not modify it. The controlling complete-theorem proof remains under [`complete-cdc/`](complete-cdc/).
 
-The controlling proof chapters are under [`complete-cdc/`](complete-cdc/).
-
-## 2. Logical source boundary
-
-Seymour’s nowhere-zero six-flow theorem is the sole external non-elementary logical input.
-
-Programme A proves equal-order finite-abelian-group transport internally by:
-
-- spanning-forest flow-kernel counting;
-- inclusion–exclusion for nowhere-zero flows;
-- transport from `Z/8Z` to `F₂³` by equality of group order.
-
-Tutte’s theorem is historical provenance and no longer an unresolved logical source gate.
-
-## 3. Load-bearing clarifications
-
-1. Circuit characterization and finite circuit decomposition are distinct interfaces.
-2. Intrinsic half-edge boundary parity is loop-aware; once-per-edge vertex parity is loopless only.
-3. The pair complex captures compatibility but not graph/dart/indexed-support semantics.
-4. Collapse transports cut-even supports and occurrence multiplicity, not circuits.
-5. Equal support values at distinct indices remain separate occurrences.
-6. The natural hypotheses do not include connectedness, simplicity, looplessness, ambient-vertex finiteness, or absence of isolated vertices.
-
-## 4. Programme A source state
+## 2. Programme A source and assurance
 
 - canonical base: `main@960c92b7ff231c78b387894149779083060a75eb`;
-- immutable source: `proof-development/affine-cdc-rigour-v1@8bee16780b549f51e1f29343671a059961ec4172`;
-- integrated scope: A0–A10 and Programme A obligation/provenance ledger;
-- excluded scope: B1 checkpoint `778b09ac8260192e022f512f24cdef1d04871f37` and every later PDL commit.
+- immutable Programme A source: `8bee16780b549f51e1f29343671a059961ec4172`;
+- fixed Audit A candidate: `68715fb29bb4b6555e2bc3e089603c5390d01566`.
 
-The exact dossiers remain in `proof-development/` as authorial provenance. See [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md).
+Programme A is Curator-integrated authorial paper-proof mathematics. Audit A, end-to-end Lean verification, manuscript approval, peer review, publication, release, arXiv, DOI, and timestamp status remain separate.
 
-## 5. Five-support strengthening
+## 3. Programme B1 integrated object layer
 
-The open strengthening asks for five indexed even supports, equivalently a root-valued flow into the ten roots of `E₅`.
+Exact immutable B1 source:
 
-The complete fixed-lift object is the full cycle-face dual triangulation; the global support-colour quotient gives only the factorable subroute.
+`proof-development/affine-cdc-rigour-v1@778b09ac8260192e022f512f24cdef1d04871f37`.
 
-The global five-support theorem remains open. Programme A makes no claim about Programme B mathematics.
+Programme B1 closes the root object and quantifier layer for finite loopless cubic multigraphs. At graph level the following existence statements are equivalent:
 
-## 6. Five-support durable blocks and frontier
+1. five indexed even supports with exact double coverage;
+2. an $R_5$-valued $E_5$ flow;
+3. a $K_5$-triangle edge labelling;
+4. exact matching/four-flow data $(B,D,M,w)$;
+5. the equivalent component $T$-join formulation;
+6. existence of a Fano flow and plane with empty component-obstruction profile;
+7. existence of a cycle-face embedding whose full dual maps to the even half-cube.
 
-The active corpus records mature root-flow, surface, gauge, reconfiguration, four-pole, holonomy, defect, and atom results. Controlling negative boundaries remain:
+All auxiliary flow, plane, lift, and surface data in this graph-level equivalence are existential.
 
-- a fixed Fano flow may fail to admit five supports;
-- the colour quotient is not the complete fixed-lift object;
-- `K₆`-free does not imply a half-cube map;
-- a bad fixed-flow fibre does not imply a bad graph;
-- arbitrary binary-cycle switches are not single horizontal adjacencies;
-- route-lock implies neither a graph two-cut nor automatic flatness;
-- finite census does not prove universal closure.
+Preferred B1 reading:
 
-The sharp endpoint remains localization and composition of full-rank route-locked defects. See [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md).
+- [`five-support/b1-object-quantifier-and-scope.md`](five-support/b1-object-quantifier-and-scope.md);
+- [`PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md`](PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md);
+- [`PROGRAMME_B1_INTEGRATION_MAP.md`](PROGRAMME_B1_INTEGRATION_MAP.md).
 
-## 7. Assurance state
+## 4. Six controlling B1 corrections
 
-Programme A is:
+1. A fixed support-coordinate inverse image is an even support; a fixed root-label inverse image is a matching.
+2. Bare matching plus nowhere-zero four-flow is insufficient; exact $(B,D)$ or component endpoint-parity/$T$-join data are required.
+3. For fixed $g$, the biconditional with $T_g^{(1)}\to\mathscr A_5$ means componentwise compression of the same cycle-face embedding.
+4. An externally chosen root flow integrates on a prescribed dual exactly when all dual cycle holonomies vanish.
+5. $J_g\to\mathscr A_5$ classifies only maps constant on old-colour fibres, not all full-dual maps.
+6. Singleton words lie in the odd half-cube component; an odd translation is required when $\mathscr A_5$ denotes the even component.
 
-`CURATOR-INTEGRATED / AUTHORIAL PAPER-PROOF COMPLETE`.
+## 5. Fixed-flow and fixed-lift boundaries
 
-It is not yet independently audited and is not end-to-end Lean verified. No manuscript, peer-review, publication, release, arXiv, DOI, or timestamp status is created.
+For fixed $(f,W)$, the five-coordinate slice criterion is equivalent to the distinguished-support, component $T$-join, outside-colour cut-parity, quotient Eulerianity, and local affine-obstruction forms.
 
-See [`PROGRAMME_A_ASSURANCE_BOUNDARY.md`](PROGRAMME_A_ASSURANCE_BOUNDARY.md) and [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
+For fixed $f$, success means that **some** plane profile is empty. A prescribed flow may fail without making the graph a counterexample.
 
-## 8. Reading order
+For fixed compatible lift $g$, a full-dual map classifies componentwise relabelling of the same embedding. An arbitrary external cover may fail to integrate on that prescribed dual because of residual holonomy.
+
+The safe fixed-data implication chain is
+
+$$
+\text{global five-point slice}
+\Longrightarrow
+J_g\to\mathscr A_5
+\Longrightarrow
+T_g^{(1)}\to\mathscr A_5
+\Longrightarrow
+\text{five-support cover}.
+$$
+
+No converse is asserted for the same fixed $(f,g)$.
+
+## 6. Boundary with B2 and later work
+
+This candidate consumes no B2, B3, or later moving-branch mathematics.
+
+Not yet integrated from proof development:
+
+- singular/quadratic/Schur/cographic/orthogonal/Fourier formulation dossiers;
+- target-link and finite-certificate corrections;
+- later obligation-ledger changes;
+- Programme B2/B3 handoffs.
+
+The global five-support theorem remains open. Programme B2 must classify each later formulation as a full witness equivalence, fixed-data equivalence, quotient with lost lift data, dual obstruction, or evidence.
+
+## 7. Wider five-support frontier
+
+The previously integrated corpus continues to contain gauge, reconfiguration, cut, four-pole, holonomy, defect, atom, and localization mathematics with its prior theorem/evidence classifications.
+
+The sharp frontier remains graph-level localization and composition of full-rank route-locked defects. B1 does not claim universal closure or promote finite certificates to proof.
+
+## 8. Assurance state
+
+Programme B1 is:
+
+`CURATOR-INTEGRATED / AUTHORIAL B1 PROOF LAYER COMPLETE`.
+
+It has not received dedicated independent audit and is not end-to-end Lean verified. No manuscript, peer-review, publication, release, arXiv, DOI, or timestamp status is created.
+
+## 9. Reading order
 
 - complete theorem: [`complete-cdc/README.md`](complete-cdc/README.md);
+- B1 object and quantifiers: [`five-support/b1-object-quantifier-and-scope.md`](five-support/b1-object-quantifier-and-scope.md);
+- B1 exact map: [`PROGRAMME_B1_INTEGRATION_MAP.md`](PROGRAMME_B1_INTEGRATION_MAP.md);
+- theorem DAG: [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md);
 - architecture: [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md);
-- theorem graph: [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md);
-- exact Programme A map: [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md);
-- active surface: [`ACTIVE_MATHEMATICAL_SURFACE.md`](ACTIVE_MATHEMATICAL_SURFACE.md);
 - five-support corpus: [`five-support/README.md`](five-support/README.md);
-- exact frontier: [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md).
+- frontier: [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md);
+- assurance: [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
