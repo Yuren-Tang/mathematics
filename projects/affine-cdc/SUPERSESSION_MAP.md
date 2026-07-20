@@ -1,338 +1,177 @@
 # AffineCDC supersession and correction ledger
 
-This ledger records which formulations control the reconstructed corpus. Supersession means that a broader interpretation, count, endpoint, or status has been replaced. It does not erase valid lemmas, finite certificates, discovery history, or priority records in the source file.
+This ledger records which formulations control the current corpus. Supersession replaces an overbroad theorem, interpretation, count, endpoint, or status. It does not erase valid narrower lemmas, finite certificates, discovery history, or priority records.
 
 ## 1. Corpus-level control
 
-| Earlier control surface | Controlling surface | Effect |
+| Earlier surface | Controlling surface | Effect |
 |---|---|---|
-| Flat chronological `research/FIVE_CDC_*.md` reading path | [`five-support/README.md`](five-support/README.md) and reconstructed chapters | Research packets remain exact sources; they no longer determine exposition order. |
-| Rolling baseline navigation only | [`README.md`](README.md), [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md), [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md) | Replaces filing/indexing with substantive theorem-driven corpus. |
-| Preliminary frontier summary | [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md) and [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md) | Sharpens the endpoint to localisation/composition. |
-| Preliminary source map | [`MIGRATION_LEDGER.md`](MIGRATION_LEDGER.md) | Maps every public packet to a substantive destination. |
+| flat chronological research-packet reading | `five-support/README.md` and active chapters | packets remain recoverable but no longer control exposition order |
+| rolling baseline navigation | `README.md`, architecture, theorem map | theorem-driven corpus replaces filing-only navigation |
+| preliminary frontier summary | `FRONTIER_STATUS.md` and `frontier-localisation.md` | endpoint sharpened to localization/composition |
+| preliminary migration map | `MIGRATION_LEDGER.md` | all 78 packets have a destination or supersession class |
 
-## 2. Complete CDC shell provenance
+## 2. Programme A complete theorem
 
-The accepted outer-shell MP2 source remains
+The Programme A finite-active no-singleton-cut theorem and its assurance boundary control the complete CDC line. Earlier outer-shell packets remain provenance; no Programme B intake changes Audit A or the fixed Programme A candidate.
 
-`0927011177cabac20f06a57fa5e57476d6f13dee`.
+## 3. B1 support-coordinate and matching correction
 
-It controls:
+Earlier compression conflated two inverse images.
 
-- `reduction/outer-shell-and-binary-flow.md`;
-- the corresponding additions to `FORMAL_STATUS.md`;
-- the corresponding Paper A boundary in `PUBLICATION_PROGRAM.md`.
+Controlling distinction:
 
-Earlier M1/M2, adaptive-ordering, binary-eight-flow, and MP1 sources remain frozen provenance. MP2 is content-controlling for this corpus. No `main` movement is implied.
+- fixed support-coordinate inverse image: even support;
+- fixed root-label inverse image: matching;
+- matching plus four-flow converse: requires the second even support or component $T$-join datum.
 
-## 3. Global-colour quotient to full componentwise dual
+## 4. B1 fixed-lift and quotient correction
 
-### Earlier broad statement
-
-A fixed root lift compresses to five supports if and only if
+Earlier broad statement:
 
 $$
-J_g\to\mathscr A_5.
+J_g\to\mathscr A_5
 $$
 
-### Controlling statement
+was treated as the complete fixed-lift criterion.
+
+Controlling hierarchy:
 
 $$
-\boxed{
-T_g^{(1)}\to\mathscr A_5.
-}
+T_g^{(1)}\to\mathscr A_5
 $$
 
-The $J_g$ theorem classifies only maps factoring through the old eight support colours:
+classifies componentwise compression of the same embedding, while
 
 $$
-T_g^{(1)}\to J_g\to\mathscr A_5.
+T_g^{(1)}\to J_g\to\mathscr A_5
 $$
 
-Controlling sources:
+is only the old-colour-factorable subroute.
 
-- `FIVE_CDC_HALFCUBE_SCOPE_CORRECTION_V1.md`;
-- `FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_V1.md`;
-- `FIVE_CDC_COMPONENTWISE_PROGRAMME_CHECKPOINT_V1.md`.
+An external root flow integrates on a prescribed dual only when every dual cycle has zero holonomy.
 
-The exact $K_6/K_8-C_5$ graph classification, unused-matching theorem, defect-core quotient, and ideal-pivot results remain valid in their factorable scope.
+## 5. B1 half-cube parity correction
 
-## 4. Coloured-surface witness erratum
+Singleton words lie in the odd half-cube component. When $\mathscr A_5$ denotes the even component, choose an odd word $t$ and use $t+\varepsilon_i$.
 
-The malformed witness display in `FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_V1.md` is corrected by
+## 6. B2 formulation classification
 
-`FIVE_CDC_COLORED_SURFACE_DUAL_HALFCUBE_ERRATUM_V1.md`.
+Earlier synthesis listed singular, quadratic, Schur, cographic, orthogonal, stress, and Fourier descriptions together without uniform witness accounting.
 
-Only the table is superseded. The surface correspondence and componentwise theorem remain controlling.
+Controlling classification:
 
-## 5. Binary-cycle switches to connected-cycle adjacency
+- full graph-level witnesses: supports, roots, $K_5$ triangles, anisotropic $O^-(4,2)$ flows, complete quadratic solutions, and exactly defined cographic edge maps;
+- fixed-data criteria: singular quotient, component defect, colour-cut parity, eliminated coordinate, and Schur quotient;
+- dual/counting layers: relative stresses and Fourier intersection counts;
+- target models: valid dimension-specific orthogonal modules.
 
-### Earlier broad language
+A formulation enters the graph-level equivalence box only with an explicit reconstruction map.
 
-All `7737` nonzero binary-cycle switch pairs in the thirty-vertex laboratory were called adjacent.
+## 7. Universal orthogonal-root theorem — false
 
-### Controlling distinction
+### Superseded claim
 
-- connected support: one reconfiguration edge;
-- disconnected support: commuting composition/path.
+`FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` asserted a canonical additive anisotropic-root representation of all pairs of the $2^r$ points of $\mathbf F_2^r$ in dimension $2r$.
 
-Exactly `2801` pairs have connected support. Componentwise outcome counts must be read from the corrected census.
+### Mathematical defects
 
-Controlling source:
-`FIVE_CDC_HALFCUBE_SCOPE_CORRECTION_V1.md`.
+1. Its displayed map treats a vector as a canonical functional in $\Gamma^*$; this is type-invalid without an additional self-duality.
+2. Triangle addition forces a point-potential representation whose Gram matrix has rank $q-2$ for $q=2^r$.
+3. Therefore dimension $2r$ is impossible for every $r\ge4$.
 
-## 6. Factorable census to componentwise census
+### Controlling replacement
 
-The old `3453/3060/1224` and connected `1245/1133/423` counts concern factorable goodness.
+Every additive anisotropic representation of $K_q$ satisfying
 
-The controlling componentwise counts are:
+$$
+r_{ab}+r_{bc}+r_{ca}=0
+$$
 
-- all `7737`: `1121/2128/4488` none/some/all;
-- connected `2801`: `360/783/1658` none/some/all.
+obeys
 
-Controlling source:
-`FIVE_CDC_COMPONENTWISE_PROGRAMME_CHECKPOINT_V1.md`.
+$$
+\boxed{\dim V\ge q-2.}
+$$
 
-## 7. Clique-only obstruction to deeper target links
+The deleted permutation module
 
-### Overstrong inference
+$$
+\overline E_I
+=
+\left\{z\in\mathbf F_2^I:\sum_i z_i=0\right\}/\langle\mathbf1_I\rangle
+$$
 
-Every bad compatible dual is detected by a $K_6$.
+has dimension $q-2$, quadratic form $q_I([z])=\operatorname{wt}(z)/2\pmod2$, and roots $[\varepsilon_a+\varepsilon_b]$. It attains the lower bound.
 
-### Controlling boundary
+The eight-support $O^+(6,2)$ model is exceptional because $8-2=6$. It is not the first member of a universal $O^+(2r,2)$ tower.
 
-- $K_6$ is the first visible clique obstruction;
-- $K_6$-free does not imply a half-cube map in general;
-- the flower $J_5$ realizes a compatible $K_6$-free obstruction containing $K_2\vee W_5$.
+### Source classification
 
-Controlling sources:
+`RETIRED / SUPERSEDED / FALSE THEOREM / HISTORICAL PROVENANCE`.
 
-- `FIVE_CDC_K6_FREE_HALFCUBE_WARNING_V1.md`;
-- `FIVE_CDC_FLOWER_J5_MIXED_CORE_OBSTRUCTION_V1.md`;
-- `FIVE_CDC_DOMINATING_CLIQUE_EXACT_CAPACITY_V1.md`.
+The packet must not be cited as active theorem authority. Any later theorem depending essentially on it requires a fresh audit.
 
-The thirty-vertex observation that every residual bad neighbour contains $K_6$ remains an exact finite statement only.
+## 8. Fixed lift, fixed flow, and graph-level quantifiers
 
-## 8. Fixed lift, fixed flow, and graph-level obstruction
-
-### Overstrong inference
-
-A closed bad gauge fibre or renewal cube is a graph-level obstruction atom.
-
-### Controlling quantifiers
+Controlling levels:
 
 1. one bad lift;
 2. one wholly bad fixed-flow fibre;
-3. graph-level failure only if every nowhere-zero Fano flow is wholly bad.
+3. graph-level failure only if every admissible flow/lift route fails.
 
-The thirty-vertex graph is explicitly three-edge-colourable despite large bad fixed-flow modules. Petersen has no bad Fano flow. The flower $J_5$ displayed bad flow has many one-step exits.
+A fixed-flow certificate is not a graph counterexample. Graph-level equivalences quantify existentially over auxiliary flow, plane, lift, and embedding data.
 
-Controlling sources:
+## 9. Binary-cycle switch scope
 
-- `FIVE_CDC_FIXED_FLOW_GRAPH_LEVEL_SEPARATION_V1.md`;
-- `FIVE_CDC_PETERSEN_ALL_FANO_FLOWS_V1.md`;
-- `FIVE_CDC_HORIZONTAL_RENEWAL_NEIGHBOURHOOD_V1.md`.
+Connected support gives one reconfiguration edge. Disconnected support gives a commuting composition/path, not one adjacency. Finite counts must use the corrected connected/disconnected distinction.
 
-## 9. Fixed-flow five-support hope to the cube certificate
+## 10. Factorable and componentwise censuses
 
-The statement
+Factorable `J_g` counts and full componentwise `T_g` counts classify different objects. Neither may be substituted for the other.
 
-> every fixed nowhere-zero Fano flow admits a compatible five-support lift
+## 11. Clique-only target obstruction — false
 
-is false. `FIVE_CDC_FIXED_FLOW_REDUCTION_V1.md` gives an explicit cube flow requiring six indexed supports.
+$K_6$ is the first visible clique obstruction, but $K_6$-free does not imply a half-cube map. Compatible deeper target-link obstructions remain possible.
 
-The graph-level statement survives because the Fano flow and componentwise lift may change.
+## 12. Source-independent compression — false
 
-## 10. Source-independent compression to source-dependent homomorphism
+There is no universal map $K_8\to K_5$ depending only on old support names. Controlling routes use the actual used-label graph, the full dual, and source-dependent gauge or flow motion.
 
-There is no universal map $K_8\to K_5$ and no compression rule depending only on the eight old support names.
+## 13. Individual core destruction versus arrangement renewal
 
-Controlling replacement:
+Destroying each marked obstruction separately does not imply a good state exists. Occurrence loci are affine subspaces and may cover the whole gauge torsor.
 
-- use the actual used-label graph $J_g$ for factorable compression;
-- use the full dual $T_g$ for the complete same-embedding problem;
-- allow gauge/Petrial and horizontal flow motion.
+## 14. Route-lock corrections
 
-Controlling sources:
+Controlling boundaries:
 
-- `FIVE_CDC_NO_UNIVERSAL_K8_TO_K5_COMPRESSION_V1.md`;
-- `FIVE_CDC_SOURCE_DEPENDENT_HALFCUBE_COMPRESSION_V1.md`;
-- componentwise scope correction.
+- route-lock does not imply a graph two-edge cut;
+- rank two has a Tait escape and is not residual;
+- route-lock does not imply flatness;
+- full rank splits into nonzero-curvature common-cut witnesses and zero-curvature affine potentials.
 
-## 11. Static factorable cores to the two-level state space
+## 15. BBD/DDD global synthesis
 
-The two-apex/pentagon defect-core classification and ideal-pivot depth theorem remain exact for the factorable quotient $J_g$.
+For the BBD family, per-loop alternatives are superseded by root rigidity, vanishing $S_5$ cohomology, one common ambient origin, and one canonical defect flow.
 
-They are no longer the complete fixed-lift obstruction theory. The controlling architecture uses:
+The DDD subgroup retains a separate one-bit exception.
 
-- full dual triangulations;
-- marked componentwise obstruction cores;
-- vertical gauge arrangements;
-- horizontal Fano-flow motion.
+## 16. Type H correction
 
-The one-star ideal trap remains a useful target-side dynamical model, not the universal graph frontier.
+The unrestricted tension universe is subordinate to the genuine three-switch physical flow. The root-linearizable zero-norm Type H branch is eliminated through Tait resolution and profile escape.
 
-## 12. Individual clique destruction to arrangement renewal
+## 17. Defect-strip correction
 
-### Earlier hope
+Raw co-root strips are sharpened by the variational induced-forest theorem and Petersen transducer with side-root output. Repeated transport state alone does not imply a replaceable strip.
 
-If every marked $K_6$ can be destroyed by some gauge word, the fibre contains a $K_6$-free state.
+## 18. Assurance non-supersession
 
-### Controlling theorem
-
-Each marked core occurs on an affine subspace. Individual exposure does not prevent the collection of occurrence subspaces from covering the whole gauge torsor.
-
-The thirty-vertex two-state fibre is an exact clique-renewal example.
-
-Controlling sources:
-
-- `FIVE_CDC_FACE_TRANSITION_OBSTRUCTION_ARRANGEMENT_V1.md`;
-- `FIVE_CDC_K6_ESCAPE_OR_FROZEN_CYCLE_CERTIFICATE_V1.md`.
-
-## 13. Arbitrary route search to unique-bad-route reduction
-
-A nondegenerate co-root atom has one co-root and two root resolutions. For every full challenge, the original atom pairing is the unique route that remains bad.
-
-Thus the route problem is:
-
-- some crossed route occurs, giving root resolution; or
-- all routes lock to the original pairing.
-
-Controlling sources:
-
-- `FIVE_CDC_DDD_ATOM_RESOLUTION_TRIALITY_V1.md`;
-- `FIVE_CDC_ATOM_ROUTE_LOCK_CURVATURE_V1.md`;
-- `FIVE_CDC_ATOM_ROUTE_LOCK_FANO_CURVATURE_V1.md`.
-
-## 14. Route-lock to graph two-cut: false
-
-Explicit rank-two locked four-poles have minimum pair-separating cut four.
-
-Therefore
-
-$$
-\text{route-lock}\not\Rightarrow\text{graph two-edge separation}.
-$$
-
-Controlling sources:
-
-- route-lock packets;
-- `FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md`.
-
-## 15. Rank-drop branch to Tait escape
-
-The earlier route-lock trichotomy retained an unresolved rank-drop sector.
-
-Controlling theorem:
-
-- rank one is impossible;
-- rank two is a Tait three-edge-colouring;
-- a root-triangle section produces boundary-state escape.
-
-Source:
-`FIVE_CDC_ROUTE_LOCK_RANK_TWO_TAIT_ESCAPE_V1.md`.
-
-Only full rank remains.
-
-## 16. Automatic flatness to the curvature dichotomy
-
-### Overstrong hope
-
-Universal route-lock forces a common affine side potential.
-
-### Controlling result
-
-There is an explicit full-rank nonflat witness with
-
-$$
-\Omega(c)\ne0.
-$$
-
-The correct dichotomy is:
-
-- $\Omega=0$: affine potential;
-- $\Omega\ne0$: common-cut dual certificate with odd terminal parity.
-
-Controlling sources:
-
-- `FIVE_CDC_FULL_RANK_CURVATURE_DUAL_CERTIFICATE_V1.md`;
-- `FIVE_CDC_CONTEXT_LIMIT_RECOVERY_VERIFICATION_V1.md`;
-- `FIVE_CDC_ATOM_ROUTE_LOCK_FANO_CURVATURE_V1.md`.
-
-## 17. Per-loop Type H alternatives to the global BBD flow
-
-Earlier Type H analysis treated each lifted loop through its norm, uncovered edges, and missed vertices.
-
-For the BBD family, the controlling synthesis is stronger:
-
-- the physical translation kernel is zero by root rigidity;
-- $H^1(S_5,E_5)=0$;
-- all loops share one unique ambient origin;
-- one canonical $E_5$ flow controls the residual defects.
-
-Source:
-`FIVE_CDC_BBD_GLOBAL_HOLONOMY_AND_K6_DEFECT_STRIPS_V1.md`.
-
-The DDD subgroup remains a separate $H^1(D_8,E_5)\cong\mathbf F_2$ exception.
-
-## 18. Abstract tension universe to the genuine switch flow
-
-The general root-admissible affine-line system admits four-valued tension obstructions. A physical rainbow loop has a special three-switch word with first and third coefficients equal.
-
-Controlling reduction:
-
-$$
-\text{loop word}
-\to
-\text{two-dimensional switch flow}
-\to
-\text{root-fibre lift}
-\to
-\text{Tait resolution}.
-$$
-
-Sources:
-
-- `FIVE_CDC_RAINBOW_SWITCH_FLOW_TAIT_RESOLUTION_V1.md`;
-- `FIVE_CDC_GENUINE_RAINBOW_PATH_FAMILY_REDUCTION_V1.md`.
-
-The unrestricted tension examples remain trust-boundary warnings, not main-branch mechanisms without a physical realization.
-
-## 19. Zero-norm soluble Type H branch to profile escape
-
-A zero-norm root-linearizable rainbow loop admits a Tait resolution. The Tait challenge coincidence contradicts the deterministic BBD triangle policy, while a DDD triangle immediately gains a $B_i$ state.
-
-Therefore the root-linearizable zero-norm Type H branch is eliminated.
-
-Controlling source:
-`FIVE_CDC_TYPE_H_TAIT_ESCAPE_V1.md`.
-
-## 20. Raw defect strips to the variational forest
-
-The first BBD synthesis gives zero networks and co-root paths/cycles. The variational minimization sharpens the complete defect support to an induced forest and gives exact cycle inequalities and boundary size.
-
-Controlling source:
-`FIVE_CDC_DEFECT_MINIMAL_FOREST_PETERSEN_TRANSPORT_V1.md`.
-
-The earlier strip theorem remains the canonical-flow precursor.
-
-## 21. Petersen state repetition to enriched transport
-
-A co-root strip is not merely a walk in $L(\mathrm{Petersen})$. Every turn emits a side-root label and may attach different root components.
-
-Therefore repeated endpoint state does not imply pumping or deletion. The controlling semantic object is the state walk plus side-root output and attached interface data.
-
-## 22. Preliminary baseline navigation to reconstructed chapters
-
-The preliminary `CURRENT_BEST.md`, `FRONTIER_STATUS.md`, and `SUPERSESSION_MAP.md` were intentionally broad navigation aids. They are superseded by the reconstructed versions on this branch and the substantive `five-support/` corpus.
-
-## 23. Assurance non-supersession
-
-No mathematical correction in this ledger changes:
+No correction in this ledger upgrades:
 
 - Lean status;
 - independent-review status;
-- peer-review or publication status;
-- release, DOI, or arXiv status.
+- manuscript or peer-review status;
+- publication, release, arXiv, DOI, novelty, or timestamp status.
 
 See [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
