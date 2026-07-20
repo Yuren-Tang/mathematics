@@ -1,6 +1,6 @@
 # AffineCDC theorem dependency map
 
-This map separates the complete Cycle Double Cover theorem from the open five-support strengthening.
+This map separates the complete Cycle Double Cover theorem from the open five-support strengthening and records the exact B1 object/quantifier layer.
 
 ## 1. Complete theorem DAG
 
@@ -18,108 +18,15 @@ A0 + A8 ── A9  terminating finite circuit decomposition
 A1 + A2 + A3 + A4 + A5 + A6 + A7 + A8 + A9 ── A10 final theorem
 ```
 
-The preferred integrated chapters are:
+Preferred integrated chapters:
 
 - [`complete-cdc/foundations-expansion-and-flow.md`](complete-cdc/foundations-expansion-and-flow.md): A0–A3;
 - [`complete-cdc/affine-compatibility-and-extraction.md`](complete-cdc/affine-compatibility-and-extraction.md): A4–A7;
 - [`complete-cdc/collapse-decomposition-and-assembly.md`](complete-cdc/collapse-decomposition-and-assembly.md): A8–A10.
 
-The exact unit checkpoints and source destinations are in [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md).
+Exact Programme A provenance is in [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md).
 
-## 2. Foundational outputs
-
-A0 exports:
-
-- finite-active multigraph and active-vertex reduction;
-- singleton cut/bridge equivalence;
-- intrinsic half-edge boundary parity;
-- cut-even/boundary-even equivalence;
-- circuit characterization;
-- indexed and multiset occurrence semantics;
-- componentwise and degenerate cases.
-
-A1 exports exact equivalence between a graph and its loopless core at the level of cuts, core circuits, CDC existence, and forced singleton-loop occurrences.
-
-## 3. Expansion and flow outputs
-
-A2 exports:
-
-- finite loopless cubic expansion `H`;
-- collapse map `π` and injective original-edge lift `λ`;
-- internal/external edge partition;
-- degree-two parallel fibres;
-- component correspondence and exact size formulae;
-- no-singleton-cut preservation;
-- cut pullback `δ_H(π⁻¹(S)) = λ(δ_G(S))`.
-
-A3 consumes Seymour’s six-flow theorem and proves:
-
-- literal six-to-eight range inclusion;
-- modular reduction to `Z/8Z`;
-- flow-kernel cardinality by spanning forests;
-- nowhere-zero flow count by inclusion–exclusion;
-- equal-order transfer to `F₂³`;
-- exact loopless characteristic-two orientation adapter.
-
-Only Seymour is an external non-elementary logical input.
-
-## 4. Affine compatibility outputs
-
-A4 constructs:
-
-- edge quotient planes `Q_e`;
-- incidence space `E_f`;
-- local torsor `κ+L_vert`;
-- edge diagonal `L_edge`;
-- pair complex `P_f`;
-- obstruction class `[κ]`;
-- quotient equation `δ_fm=c_f`;
-- equilibrium-stress criterion.
-
-A5 proves:
-
-- canonical anisotropic quadratic forms on rank-three quotients;
-- local Fano Lagrangians;
-- local families as characteristic torsors;
-- total singularity of the edge diagonal;
-- characteristic-torsor intersection;
-- automatic global compatibility.
-
-The pair complex captures compatibility but does not replace retained graph/dart data.
-
-## 5. Support extraction and parity outputs
-
-A6 uses the compatible edge lines and retained graph/dart pairing to produce an `F₂³`-indexed family `(F_s)` with:
-
-- local once-per-edge vertex parity;
-- exact edge occurrence multiplicity two;
-- retained empty and repeated support occurrences.
-
-A7 proves on loopless graphs:
-
-`once-per-edge vertex-even ⇔ intrinsic boundary-even ⇔ cut-even`.
-
-The adapter is intentionally not extended to loops.
-
-## 6. Collapse and decomposition outputs
-
-A8 projects each support through `λ` and proves:
-
-- memberwise cut-evenness downstairs;
-- exact original-edge occurrence transport;
-- harmless empty and repeated images;
-- no assertion that circuits project to circuits.
-
-A9 proves:
-
-- every finite cut-even support contains a circuit;
-- strict-cardinality terminating decomposition;
-- exact edgewise `0/1` count within one support;
-- global occurrence preservation after concatenating indexed decompositions.
-
-## 7. Final theorem
-
-A10 assembles:
+## 2. Complete-theorem output chain
 
 ```text
 finite-active no-singleton-cut multigraph
@@ -133,20 +40,148 @@ finite-active no-singleton-cut multigraph
 → circuit double cover after loop reinsertion
 ```
 
-The output is a finite indexed family, equivalently a finite multiset, of circuits covering every active edge object exactly twice.
+Seymour’s six-flow theorem is the sole external non-elementary logical input. Programme A proves the order-eight group-flow transport internally.
 
-## 8. Assurance dependencies
+## 3. Programme B1 graph-level equivalence DAG
 
-The proof states are authorial:
+For a finite loopless cubic multigraph $G$:
 
-- A0–A9: `COMPLETE-DRAFT`;
-- A10 aggregate: `READY-FOR-CURATOR` at the immutable source checkpoint;
-- integrated candidate: Curator-integrated authorial paper-proof.
+```text
+B1.1  five indexed even supports
+  ↔   R₅-valued E₅ flow
+  ↔   K₅-triangle edge labelling
 
-Independent audit, Lean verification, manuscript acceptance, peer review, release, arXiv, DOI, and publication are separate axes. See [`PROGRAMME_A_ASSURANCE_BOUNDARY.md`](PROGRAMME_A_ASSURANCE_BOUNDARY.md).
+B1.2  above object
+  ↔   even supports B,D + matching M=B∩D + nowhere-zero F₂²-flow on G−M
+  ↔   even B + matching M⊆B + four-flow on G−M
+       + even M-endpoint parity in every component of G−B
 
-## 9. Five-support dependency tree
+B1.3  above object
+  ↔   ∃ Fano flow f and plane W with empty component-obstruction profile
 
-The global five-support theorem remains open. Its current active corpus begins with root-flow equivalences, then passes through surfaces, gauge/reconfiguration, four-pole routing, holonomy/defects, and localization/composition.
+B1.4  above object
+  ↔   ∃ cycle-face embedding S with T_S^(1) → 𝒜₅
+```
 
-Programme B1 and later proof-development checkpoints are not consumed by Programme A. The active five-support dependency details remain in [`five-support/README.md`](five-support/README.md) and [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md).
+All auxiliary data in this box are existential. The graph-level arrows do not preserve a previously fixed flow, plane, lift, or embedding.
+
+## 4. B1 fixed-flow DAG
+
+Fix a nowhere-zero Fano flow $f$ and a plane $W$. Let $G_W$ be the $W$-valued subgraph and let $\chi_W(K)$ be the common outside-colour cut parity of a component $K$.
+
+```text
+fixed (f,W) global five-coordinate slice
+↔ even support D with B_W∩D=M_a
+↔ even M_a-endpoint parity in every component of G_W
+↔ one outside-colour parity vanishes on every component
+↔ all outside-colour parities vanish on every component
+↔ outside-colour classes are Eulerian after contraction
+↔ local affine component obstruction Ω_W vanishes
+```
+
+For fixed $f$:
+
+```text
+factorable five-coordinate lift above f
+↔ ∃ plane W with 𝔒_f(W)=∅.
+```
+
+This criterion may fail for a prescribed flow. Such failure is not a graph-level counterexample.
+
+## 5. B1 fixed-lift and prescribed-surface DAG
+
+Fix a compatible root lift $g$.
+
+```text
+compatible root lift g
+↔ properly face-coloured cycle-face surface S_g
+↔ properly vertex-coloured full dual triangulation T_g
+```
+
+The exact fixed-lift biconditional is:
+
+```text
+componentwise compression of the same face components
+↔ T_g^(1) → 𝒜₅.
+```
+
+For an externally supplied root flow $\lambda$ on the prescribed dual:
+
+```text
+λ integrates to a dual potential
+↔ every dual cycle has zero λ-holonomy.
+```
+
+Triangular-face conservation alone is insufficient.
+
+## 6. Full dual versus old-colour quotient
+
+The old support-colour map gives
+
+```text
+T_g^(1) → J_g.
+```
+
+A half-cube map factors through $J_g$ exactly when it is constant on all face components carrying the same old support index.
+
+```text
+J_g → 𝒜₅
+= old-colour-factorable subclass only.
+```
+
+It is not the complete fixed-lift criterion.
+
+## 7. Half-cube parity adapter
+
+If $\mathscr A_5$ denotes the even half-cube, singleton words $\varepsilon_i$ are not vertices. Choose one odd word $t$ and use
+
+$$
+t+\varepsilon_i\in E_5.
+$$
+
+The pairwise differences remain the roots $\varepsilon_i+\varepsilon_j$.
+
+## 8. Safe fixed-data implication hierarchy
+
+For corresponding fixed flow and lift:
+
+```text
+global five-point slice
+→ J_g → 𝒜₅
+→ T_g^(1) → 𝒜₅
+→ five-support cover.
+```
+
+The converses need not hold for the same fixed data.
+
+## 9. Six B1 corrections
+
+1. A support-coordinate inverse image is even; a root-label inverse image is a matching.
+2. Bare matching plus four-flow is insufficient; $(B,D)$ or component $T$-join data are required.
+3. The fixed-$g$ biconditional concerns componentwise compression of the same embedding.
+4. An external cover integrates on a prescribed dual only after zero dual holonomy is proved.
+5. $J_g$ classifies only old-colour-factorable compression.
+6. Singleton words require an odd translation when the target is the even half-cube.
+
+## 10. Boundary with B2+
+
+Programme B1 closes the root object, matching/four-flow, fixed-plane, fixed-lift, surface, holonomy, quotient-scope, and parity layers.
+
+It does not consume or close the later dossiers for:
+
+- singular, quadratic, Schur, cographic, orthogonal, or Fourier/stress formulations;
+- target link and finite-certificate corrections;
+- gauge/reconfiguration closure;
+- four-pole, defect, atom, or localization theorems.
+
+These remain B2+ obligations and must be integrated from separately named immutable checkpoints.
+
+## 11. Exact provenance and assurance
+
+- Programme A source: `8bee16780b549f51e1f29343671a059961ec4172`;
+- Programme A candidate: `68715fb29bb4b6555e2bc3e089603c5390d01566`;
+- Programme B1 source: `778b09ac8260192e022f512f24cdef1d04871f37`;
+- B1 exact map: [`PROGRAMME_B1_INTEGRATION_MAP.md`](PROGRAMME_B1_INTEGRATION_MAP.md);
+- quantifier control: [`PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md`](PROGRAMME_B1_QUANTIFIER_BOUNDARIES.md).
+
+Programme A and B1 are integrated authorial mathematics. Independent audit, Lean verification, manuscript acceptance, peer review, publication, release, arXiv, DOI, and timestamp status remain separate axes.
