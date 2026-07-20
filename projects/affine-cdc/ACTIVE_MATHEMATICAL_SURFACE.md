@@ -19,118 +19,108 @@ Retired discovery packets remain recoverable in Git ancestry; they are not the c
 
 - [`README.md`](README.md);
 - [`CURRENT_BEST.md`](CURRENT_BEST.md);
-- [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md);
 - [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md);
 - [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md);
-- [`five-support/README.md`](five-support/README.md).
+- [`five-support/README.md`](five-support/README.md);
+- [`CHAPTER_PROVENANCE.md`](CHAPTER_PROVENANCE.md).
 
 ## 3. Complete CDC spine
 
-The paper-level Cycle Double Cover line is contained in:
-
-- [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md);
-- [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md);
-- [`reduction/outer-shell-and-binary-flow.md`](reduction/outer-shell-and-binary-flow.md);
-- [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md).
-
-The natural theorem allows loops and finite active edge set. The present Lean declaration remains an earlier loopless ambient-finite checkpoint.
+The paper-level Cycle Double Cover line is contained in the active core and reduction chapters. The natural theorem allows loops and finite active edge set. The present Lean declaration remains an earlier loopless ambient-finite checkpoint.
 
 ## 4. Active five-support extension
 
-The ordered active surface is listed in [`five-support/README.md`](five-support/README.md). The latest route-locked chain closes:
+The ordered current reading surface is listed in [`five-support/README.md`](five-support/README.md). The latest route-locked chain closes:
 
-- common-cut circuit localisation and the singleton/transition/quartic trichotomy;
-- unbounded quartic designs, canonical terminal nucleus, bounded split gadgets, and strict peel recursion;
-- quotient Tait phase, Kempe differences, marked transition skeletons, elementary intervals, and periodic ladders;
-- the physical `g`-component quotient `\Gamma_g`;
-- the route-capped `4`-regular flag-line carrier;
-- touch-shadow closure and the bounded two-transition cap residue;
-- IAS local degenerations, minimal coupled/separated completion, cocircuit cut-rank, and the symmetry correction;
-- the natural-transversal physical projection;
-- the exact physical cycle--cut sequence and its symmetric Lagrangian response form.
+- common-cut circuit localisation and quartic split-or-peel;
+- quotient Tait/Kempe physical enrichment;
+- `g`-component quotient `\Gamma_g`;
+- route-capped transition carrier and touch-shadow closure;
+- bounded cap residue, coupled/separated completion, and cut-rank;
+- natural projection and cycle--cut exact sequence;
+- Lagrangian physical response form;
+- response as ribbon-surface mod-two intersection;
+- boundary radical, Euler genus, orientability, and partial Petrial law;
+- gauge-radicalisation and persistent-intersection duality;
+- hyperbolic dual-flow norm representation;
+- dual-rank-one scalar interval localisation;
+- dual-rank-two Tait-permutation defect localisation.
 
-The global five-support theorem remains open. The controlling fixed-lift object is `T_g^{(1)}`, not merely the factorable quotient `J_g`.
+The global five-support theorem remains open. The controlling fixed-lift object is `T_g^{(1)}`, not merely `J_g`.
 
-## 5. Correct nonflat architecture
+## 5. Current mechanism
 
-At incidence level, quartic designs have natural sheet symmetry
-
-$$
-AGL(2,2)\cong S_4.
-$$
-
-This is distinct from both the terminal-route coordinate group and the support-label `D_8` stabiliser of a DDD one-factor. Their comparison is open.
-
-At physical level the relevant objects are now:
-
-1. **Cut carrier `\Gamma_g`.** Internal quotient cuts lift exactly to `g`-coloured cuts of the original four-pole.
-2. **Isotropic carrier `F=\mathcal L(\widehat Q)`.** Every nonflat witness compresses to one cross transition at each route-cap vertex.
-3. **Minimal cap completion.** Apart from local loop/parallel/twin/pendant cases, the residue completes either to one coupled cocircuit or two disjoint one-cap cocircuits.
-4. **Physical natural transversal.** Its circuit partition consists of the vertex triangles of `\widehat Q`, and its touch-graph is canonically `\widehat Q`.
-5. **Cycle--cut response.** Full cocycles fit into
-   $$
-   0\to\operatorname{Cut}(\widehat Q)
-   \to\operatorname{Cocycle}(M_\tau(F))
-   \to\operatorname{Cycle}(\widehat Q)\to0.
-   $$
-   The extension is governed, up to cross-label diagonal gauge, by a symmetric response form `\mathcal B_{\widehat Q}` on the physical cycle space.
-
-## 6. Exact frontier
-
-Write a cap cocycle in local/cross coordinates as
+For a prime cap response write
 
 $$
 (z,a,z+a).
 $$
 
-Then
+The response form is a ribbon intersection pairing
 
 $$
-z\in\operatorname{Cycle}(\widehat Q),
-\qquad
- a\bmod\operatorname{Cut}(\widehat Q)
- =\mathcal B_{\widehat Q}(z,-).
+\mathcal B:
+\operatorname{Cycle}(\widehat Q)^2\to\mathbf F_2.
 $$
 
-The zero-cycle branch is closed structurally:
+An admissible gauge word `\lambda` changes it by
 
 $$
-\boxed{z=0\Longrightarrow\text{a physical bond of }\widehat Q.}
+\sum_e\lambda_ez_ez'_e.
 $$
 
-For the coupled residue this bond contains both cap edges and yields a terminal-even separator; for a separated one-cap residue it yields a one-ended physical bond.
-
-The only potentially irreducible branch is therefore
+Failure to radicalise `z` is equivalent to the existence of another physical cycle `z'` with
 
 $$
 \boxed{
-\text{coupled prime cap cocircuit}
-+
-z\ne0
-+
-\text{locked terminal response}.
+\mathcal B(z,z')=1,
+\qquad
+w=z\odot z'\in\mathcal B_f^\perp.
 }
 $$
 
-The next theorem must use the common Fano flow, four affine scalar sheets, Kempe systems, endpoint selectors, and `\Gamma_g` to turn every such response word into:
+The active Schur theorem gives
 
-- a physical separator or transition two-sum;
-- a crossed route and root escape;
-- a bounded replacement or horizontal switch;
-- or a genuine comparison with the DDD support-label class.
+$$
+\mathcal B_f^\perp
+=
+\mathcal C(G)*\mathcal F_f,
+$$
 
-The cube certificate shows that cocircuit minimality alone does not force `z` to be one connected physical circuit.
+so
 
-## 7. Reliability and provenance
+$$
+w_e=\langle u(e),f(e)\rangle
+$$
 
-See:
+for a dual-valued flow `u:E\to\Gamma^*`. The word `w` is the quadratic norm support of the hyperbolic flow `(f,u)`.
 
-- [`CHAPTER_PROVENANCE.md`](CHAPTER_PROVENANCE.md);
-- [`MIGRATION_LEDGER.md`](MIGRATION_LEDGER.md);
-- [`SUPERSESSION_MAP.md`](SUPERSESSION_MAP.md);
-- [`RETIRED_SOURCE_CLASSIFICATION.md`](RETIRED_SOURCE_CLASSIFICATION.md);
-- [`SOURCE_RECOVERY_AUDIT.md`](SOURCE_RECOVERY_AUDIT.md);
-- [`FORMAL_STATUS.md`](FORMAL_STATUS.md);
-- [`RECONSTRUCTION_MANIFEST.md`](RECONSTRUCTION_MANIFEST.md).
+## 6. Exact frontier
+
+The minimum span dimension of `u(E)` gives dual rank `1`, `2`, or `3`.
+
+- **Rank one is localised:** one odd scalar circuit or one odd marked scalar interval.
+- **Rank two is localised:** one odd closed norm circuit or one odd path whose endpoints lie at a Fano colour matching or the auxiliary four-flow zero locus.
+- **Rank three remains unlocalised:** a full-rank hyperbolic norm carrier with locked cap response.
+
+Thus the first genuinely new-math endpoint is
+
+$$
+\boxed{
+\text{dual rank three hyperbolic carrier}
++
+\text{prime coupled cap response}
++
+\text{locked route}.
+}
+$$
+
+In parallel, the rank-one and rank-two carriers need composition-safe replacements or horizontal switches.
+
+The next theorem must yield a physical separator, bounded handle, connected-cycle switch, or a genuine map to the DDD support-label class.
+
+## 7. Trust and reliability
+
+Sheet `S_4`, terminal-route coordinates, and DDD support-label `D_8` remain distinct until an explicit comparison map is proved. The response/gauge interface assumes common edge-band side identifications; universal route-capped compatibility remains open.
 
 Current-best inclusion does not create independent review, Lean verification, peer review, manuscript approval, release, arXiv, DOI, or publication status.
