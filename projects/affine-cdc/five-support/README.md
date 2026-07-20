@@ -31,9 +31,15 @@ Its seventy-eight `research/FIVE_CDC_*.md` packets are retired from the current 
 19. [`touch-shadows-and-cap-residue.md`](touch-shadows-and-cap-residue.md) — distinguished/shadow circuit pairs, automatic complementary-boundary closure, cap completion, and the bounded two-transition residue.
 20. [`cap-residue-isotropic-completion.md`](cap-residue-isotropic-completion.md) — even triple law and complete IAS classification of loop, parallel, twin, and pendant local cap degenerations.
 21. [`minimal-cap-cocycle-decomposition.md`](minimal-cap-cocycle-decomposition.md) — existence of full completion and the coupled/separated minimal-cocycle dichotomy.
-22. [`frontier-localisation.md`](frontier-localisation.md) — exact remaining physical projection/composition frontier.
-23. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md) — preferred and independent proof families, exact equivalences, templates, and negative boundaries.
-24. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md) — exact finite computations, counterexamples, certificates, and evidentiary scope.
+22. [`cocircuit-cutrank-mechanism.md`](cocircuit-cutrank-mechanism.md) — local-set support, cocircuit rank/nullity, and the exact interlacement cut-rank split-or-prime parameter.
+23. [`natural-transversal-physical-projection.md`](natural-transversal-physical-projection.md) — the canonical local transversal, touch-graph `\widehat Q`, and physical cycle/join projection of cap cocircuits.
+24. [`natural-transversal-cycle-cut-exact-sequence.md`](natural-transversal-cycle-cut-exact-sequence.md) — the cut-kernel theorem and exact cycle--cut short exact sequence.
+25. [`physical-cycle-cut-response-form.md`](physical-cycle-cut-response-form.md) — the Lagrangian cocycle code and symmetric response form on the physical cycle space.
+26. [`cube-multicycle-cocircuit-certificate.md`](cube-multicycle-cocircuit-certificate.md) — exact finite counterexample to the overstrong single-projected-circuit lemma.
+27. [`cap-residue-symmetry-correction.md`](cap-residue-symmetry-correction.md) — separation of sheet `S_4`, terminal-route coordinates, and DDD support-label `D_8`.
+28. [`frontier-localisation.md`](frontier-localisation.md) — exact remaining physical response/composition frontier.
+29. [`equivalent-formulations-and-proof-families.md`](equivalent-formulations-and-proof-families.md) — preferred and independent proof families, exact equivalences, templates, and negative boundaries.
+30. [`finite-laboratories-and-certificates.md`](finite-laboratories-and-certificates.md) — exact finite computations, counterexamples, certificates, and evidentiary scope.
 
 ## Scope
 
@@ -47,15 +53,20 @@ $$
 
 not merely the global-colour quotient criterion `J_g -> A_5`.
 
-The sharp nonflat frontier now has three coordinated carriers.
+The sharp nonflat endpoint now has four coordinated descriptions.
 
 1. **Incidence carrier.** Every quartic design has a canonical minus-type terminal nucleus. A split sheet projects to a bounded `K_6` coefficient gadget; an all-concentrated design peels to a smaller design. The natural sheet symmetry is `S_4`; comparison with physical terminal-route and DDD support-label symmetries is open.
-2. **Physical cut carrier.** Contracting the connected components of `Q-E_g` gives an even-total-degree four-pole `\Gamma_g` with four physically realised transition systems. Every internal quotient cut lifts exactly to a `g`-coloured cut in `Q`.
-3. **Standard isotropic carrier.** Closing the terminals according to `12\mid34` and taking the flag-line graph gives one canonical `4`-regular graph carrying all four scalar partitions. Shadow closure and the two route caps compress every nonflat witness to one transition at each cap vertex.
+2. **Physical cut carrier.** Contracting the components of `Q-E_g` gives an even-total-degree four-pole `\Gamma_g`; every internal quotient cut lifts exactly to a `g`-coloured cut in `Q`.
+3. **Isotropic carrier.** The route-capped flag-line graph carries the four scalar partitions. Shadow closure compresses every nonflat witness to one transition at each cap; minimal completion is coupled or separated, and cocircuit cut-rank gives the split-or-prime parameter.
+4. **Physical cycle--cut response.** The natural transversal has touch-graph `\widehat Q`. Full cocycles fit into
+   $$
+   0\to\operatorname{Cut}(\widehat Q)
+   \to\operatorname{Cocycle}(M_\tau)
+   \to\operatorname{Cycle}(\widehat Q)\to0,
+   $$
+   governed by a symmetric response form `\mathcal B_{\widehat Q}`. Zero physical-cycle projection is already a true bond; the residual prime branch has a nonzero cycle response word with the locked cap constraints.
 
-The bare two-transition residue is not a full cocycle. Apart from loop/parallel/twin/pendant degenerations, an inclusion-minimal completion is either one coupled cap-to-cap cocircuit or two disjoint one-cap cocircuits with disjoint vertex supports.
-
-The central missing theorem is a physical projection theorem: the separated branch must yield independent terminal interfaces or a separator, while the coupled branch must yield an isotropic split, alternate route/root escape, or the graph-level comparison with the DDD class.
+The central missing theorem is now a **response-form composition theorem**: use the common Fano flow, four affine sheets, Kempe systems, and `\Gamma_g` to reduce every nonzero prime response word to a physical separator, crossed route/root escape, bounded replacement, or the uniquely comparable DDD support-label class.
 
 The flat-potential, defect-forest, four-pole, and horizontal bad-flow transfer problems remain open.
 
