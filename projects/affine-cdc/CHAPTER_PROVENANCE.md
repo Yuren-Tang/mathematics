@@ -1,12 +1,20 @@
 # AffineCDC chapter provenance
 
-## 1. Recovery authority
+## 1. Unified recovery authority
 
-Historical five-support packets remain recoverable from
+Programme A:
+
+- immutable A0–A10 source `8bee16780b549f51e1f29343671a059961ec4172`;
+- original Curator candidate `68715fb29bb4b6555e2bc3e089603c5390d01566`;
+- Independent Audit A `2fac31f4e76c819dd42a179a2772501c50ee93ad`;
+- immutable repair checkpoint `06bce656dcf5bfd6491ec08f51a702ea56d2470d`;
+- exact repair dossier `proof-development/AC_PD_A_AUDIT_A_EXPLICITNESS_REPAIRS.md`.
+
+Five-support historical packets remain recoverable from
 
 `research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`.
 
-Proof-development B3–B8 dossiers remain exact at:
+B3–B8 dossiers remain exact at:
 
 - B3 `d806168bb579dbc13f267f44f631e07de909b706`;
 - B4 `345074690b7a8658c1208ae84f10d709f8b74bcf`;
@@ -15,141 +23,78 @@ Proof-development B3–B8 dossiers remain exact at:
 - B7 `164f7655f9ec7c0e0a73d49303cf66230fb26487`;
 - B8 `989cb002598fd91786029be201c2747c697bb476`.
 
-A source name identifies provenance, not necessarily current controlling theorem status.
+A source name records provenance, not automatically current theorem or assurance status.
 
-## 2. `five-support/surfaces-and-halfcube.md`
+## 2. Programme A controlling chapters
 
-### Controlling sources
+### `complete-cdc/foundations-expansion-and-flow.md`
 
-- cycle-face/full-dual surface packets and B1.4;
-- `FIVE_CDC_HALFCUBE_CLIQUE_LINK_CAPACITY_V1.md`;
-- `FIVE_CDC_DOMINATING_CLIQUE_EXACT_CAPACITY_V1.md`;
-- `FIVE_CDC_HALFCUBE_SUBGRAPH_CLASSIFICATION_V1.md`;
-- source-dependent factorable compression packets;
-- unused-matching compression and orbit packets;
-- factorable bad-core and ideal-pivot packets;
-- componentwise scope correction;
-- B3.1–B3.3 and the B3 scope map.
+Controls A0–A3 foundations, loops, expansion, and binary-flow architecture.
 
-### Current roles
+The exact Seymour graph-class clarification is controlled by `complete-cdc/audit-a-explicitness-repairs.md`, §2: finite connected loopless multigraphs, parallel edges permitted, applied componentwise.
 
-- clique links/capacity: valid target-graph theorems;
-- eight-vertex criterion: valid old-colour-factorable theorem;
+### `complete-cdc/affine-compatibility-and-extraction.md`
+
+Controls A4–A7 pair complex, rank-three compatibility, graph/dart extraction, and exact indexed multiplicity.
+
+The complete converse from an arbitrary even local line family to a unique deleted point is controlled by the repair chapter §3.
+
+### `complete-cdc/collapse-decomposition-and-assembly.md`
+
+Controls A8–A10 collapse, circuit decomposition, loop reinsertion, and final theorem assembly. No repair changes this chapter.
+
+### `reduction/outer-shell-and-binary-flow.md`
+
+Useful historical/mechanism companion. Its §§4.1–4.2 Tutte-based derivation is non-controlling. See `reduction/OUTER_SHELL_HISTORICAL_ROUTE_NOTICE.md` and repair chapter §4.
+
+## 3. Programme A assurance provenance
+
+Independent Audit A verified the original theorem spine subject to named Seymour input and three non-blocking explicitness repairs. The repair checkpoint closes those items authorially without theorem change. Unified curation integrates them but does not constitute a second independent re-audit.
+
+## 4. B3 target chapter
+
+`five-support/surfaces-and-halfcube.md` is controlled by B1.4, the valid half-cube link/capacity/eight-vertex packets, factorable compression/core packets, and B3.1–B3.3.
+
+Current roles:
+
+- target links/capacity: theorem;
+- eight-vertex criterion: old-colour-factorable theorem;
 - unused-root/core/pivot: factorable theorem family;
 - flower full-dual no-go: theorem conditional on explicit dual certificate;
-- numerical neighbourhood/core counts: certificate axis.
+- numerical data: certificate axis.
 
-### Correction
+The all-parallel representative is $\{01,23,45\}$; orbit sizes $28,168,224$ remain unchanged.
 
-`FIVE_CDC_UNUSED_MATCHING_ORBITS_V1.md` remains valid except for one displayed representative. The controlling all-parallel representative is `\{01,23,45\}`; orbit sizes `28,168,224` remain unchanged.
+## 5. B4 motion chapter
 
-## 3. `five-support/gauge-and-reconfiguration.md`
+`five-support/gauge-and-reconfiguration.md` is controlled by the gauge/Petrial, support-pivot, flow-switch, harmonic-quotient, and B4 dossiers.
 
-### Controlling sources
+Vertical torsors, connected-switch decomposition, support pivots, new-fibre recomputation, and internal/external endpoint formulas are theorem-level. `7737`, `2801`, ranks, surface counts, and outcomes remain certificate data.
 
-- gauge as piecewise root translation;
-- gauge/partial-Petrial correspondence;
-- support-cycle pivot and flow reconfiguration;
-- harmonic quotient surgery;
-- admissible switch image;
-- internal/external switch dichotomy;
-- B4.1–B4.3 and B4 reconfiguration map.
+## 6. B5 interface chapter
 
-### Current roles
+`five-support/cuts-four-poles-and-routing.md` is controlled by three-cut, boundary-signature, cap, Kempe, routing, census, and B5 dossiers.
 
-- vertical torsor and partial Petrials: theorem;
-- connected-cycle switch decomposition: theorem;
-- support pivot and used-root update: theorem;
-- new-fibre recomputation: theorem-level scope correction;
-- internal/external endpoint formulas: theorem;
-- `7737`/`2801`, ranks, surface counts, and neighbour outcomes: certificate axis.
+Local law, gluing, cap forcing, pairing alignment, routing weights, and uniform-routing elimination are theorem-level. Residual kernels, policies, Type T/H classification, monodromy, and small census remain finite/certificate material. Full-cap containment and source realization remain open.
 
-## 4. `five-support/cuts-four-poles-and-routing.md`
+## 7. B6/B7 corrected chapters
 
-### Controlling sources
+`five-support/holonomy-defects-and-atoms.md` and `five-support/frontier-localisation.md` retain individual holonomy, root-fibre/Tait, DDD atom, route-lock, rank, and curvature theorems.
 
-- three-cut reduction;
-- four-edge boundary signatures;
-- cap forcing;
-- Kempe pairing alignment;
-- routing weights and holonomy dichotomy;
-- small four-pole census;
-- B5.1–B5.3 and B5 map.
+Conditional/superseded roles:
 
-### Current roles
+- unconditional BBD simultaneous origin is replaced by a conditional chain requiring `AC-RL-BBD-GROUPOID-CLOSURE`;
+- the nontrivial fixed-terminal defect forest is removed pending `AC-RL-BBD-VARIATION-SLICE`;
+- local $K_6$/Petersen geometry remains usable only when a defect strip is independently supplied.
 
-- local law, gluing, cap forcing, pairing alignment, routing weights, uniform-routing elimination: theorem;
-- four mismatch kernels, policies, Type T/H classification, monodromy, and small census: finite/certificate layer;
-- full-cap containment and residual source realization: open.
+The four further localization returns remain exact.
 
-## 5. `five-support/holonomy-defects-and-atoms.md`
+## 8. B8 finite assurance
 
-### Controlling sources
+`five-support/finite-laboratories-and-certificates.md` and `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md` classify finite inputs as `F-PROVED`, `F-CERT-PUBLIC`, `F-CERT-PRIVATE`, `F-CENSUS`, `CODE-PARTIAL`, or `AFFECTED`.
 
-- individual affine holonomy and root-admissibility packets;
-- genuine rainbow path-family correction;
-- Tait-resolution and Type H escape packets;
-- DDD atom/triality/route-lock packets;
-- B6.1–B6.4 and B6 map;
-- B7.1–B7.2 and B7 map.
+B8 does not upgrade reproducibility or independent-review status.
 
-### Unconditional current roles
+## 9. Historical recovery and exclusions
 
-- individual-loop norm and cyclic classification;
-- root-fibre local system;
-- genuine switch-flow and Tait equivalence;
-- Type H soluble-branch escape;
-- DDD atom triality and unique bad route;
-- rank-one/rank-two escape;
-- full-rank curvature and flat-potential equivalence.
-
-### Conditional or superseded roles
-
-`FIVE_CDC_BBD_GLOBAL_HOLONOMY_AND_K6_DEFECT_STRIPS_V1.md` and related synthesis packets no longer control an unconditional simultaneous-origin theorem. That chain is conditional on `AC-RL-BBD-GROUPOID-CLOSURE`.
-
-`FIVE_CDC_DEFECT_MINIMAL_FOREST_PETERSEN_TRANSPORT_V1.md` does not control a nontrivial active forest theorem on the stated fixed-terminal variation domain. The forest conclusion is superseded pending `AC-RL-BBD-VARIATION-SLICE`. Local `K_6`/Petersen geometry remains conditional mathematics when a defect strip is independently supplied.
-
-## 6. `five-support/frontier-localisation.md`
-
-Controlling open returns:
-
-- `AC-RL-BBD-GROUPOID-CLOSURE`;
-- `AC-RL-BBD-VARIATION-SLICE`;
-- `AC-RL-TYPE-T-SERIALISATION`;
-- `AC-RL-FLAT-POTENTIAL-INTERFACE`;
-- `AC-RL-COMMON-CUT-LOCALISATION`;
-- `AC-RL-TYPE-H-COMMON-WITNESS`.
-
-The frontier chapter is controlled by B6/B7 corrections and does not use the former unconditional BBD/forest chain.
-
-## 7. `five-support/finite-laboratories-and-certificates.md`
-
-Controlling source:
-
-- B8 assurance ledger plus exact historical packets and named finite refs.
-
-Current roles are classified as `F-PROVED`, `F-CERT-PUBLIC`, `F-CERT-PRIVATE`, `F-CENSUS`, `CODE-PARTIAL`, or `AFFECTED`.
-
-Correction propagation:
-
-- BBD monodromies do not imply groupoid closure;
-- defect/Petersen tables do not repair the variation-domain defect;
-- orthogonal finite tables do not support the false `2r` hierarchy;
-- `7737` and `2801` are different switch populations;
-- the all-parallel matching display is corrected.
-
-## 8. `five-support/equivalent-formulations-and-proof-families.md`
-
-This chapter retains independent roles for singular, quadratic, Schur, cographic, stress/Fourier, surface, interface, holonomy, and projection methods. It does not override the controlling B3–B8 scope and correction layers.
-
-## 9. Historical classification and recovery
-
-Retired source files remain absent from the active tree but recoverable through ordinary Git ancestry. A packet can remain valuable provenance while its theorem status is narrowed, made conditional, or superseded.
-
-For any retired `FILE`:
-
-```text
-git show dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c:projects/affine-cdc/research/FILE
-```
-
-See `SOURCE_RECOVERY_AUDIT.md`, `RETIRED_SOURCE_CLASSIFICATION.md`, and `SUPERSESSION_MAP.md`.
+Retired research packets remain recoverable through ordinary Git ancestry. B9, later PDL DAG/handoffs, and AC-RL working-ahead commits are not part of this unified candidate.

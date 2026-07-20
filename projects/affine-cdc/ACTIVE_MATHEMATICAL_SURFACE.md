@@ -1,15 +1,16 @@
 # AffineCDC active mathematical surface
 
-## 1. Exact construction
+## 1. Exact unified construction
 
 - canonical `main`: `960c92b7ff231c78b387894149779083060a75eb`;
-- fixed Programme A Audit A candidate: `68715fb29bb4b6555e2bc3e089603c5390d01566`;
-- fixed B1 candidate: `4d7b9c74ea4377a58e219a7c6c3cb569a8229276`;
-- exact B2 base: `08b662ecc31848456b9904f4d5b85c3801d090a1`;
-- B3–B8 branch: `curation/affine-cdc-programme-b3-b8-v1`;
-- exact seven-parent source splice: `4dadc7add4743d7da63e28d93806c8d76529c07b`.
+- accepted B1–B8 base: `curation/affine-cdc-programme-b3-b8-v1@0100895d57aab7d21153c580fa9bdc45fafc832e`;
+- Programme A original source: `8bee16780b549f51e1f29343671a059961ec4172`;
+- Independent Audit A: `2fac31f4e76c819dd42a179a2772501c50ee93ad`;
+- Programme A repair source: `06bce656dcf5bfd6491ec08f51a702ea56d2470d`;
+- unified branch: `curation/affine-cdc-programme-a-b1-b8-unified-v1`;
+- exact repair splice: `a35da6ba6e4908c70f970f3cadf5fcf4b582dae4`.
 
-The splice imports twenty-one exact B3–B8 dossiers and the B8 checkpoint obligation DAG. It excludes routing handoffs and B9+ moving-branch work.
+The splice adds only the exact Programme A repair overlay dossier. B9, later PDL DAG/handoffs, and AC-RL working-ahead files are excluded.
 
 ## 2. Primary entrypoints
 
@@ -18,111 +19,72 @@ The splice imports twenty-one exact B3–B8 dossiers and the B8 checkpoint oblig
 - `MATHEMATICAL_ARCHITECTURE.md`;
 - `THEOREM_DEPENDENCY_MAP.md`;
 - `FORMAL_STATUS.md`;
-- `five-support/README.md`;
-- `PROGRAMME_B3_B8_INTEGRATION_MAP.md`;
-- `PROGRAMME_B3_B8_STATUS_AND_GAPS.md`;
-- `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md`.
+- `AC_UNIFIED_INTEGRATION_MAP.md`;
+- `AC_UNIFIED_ASSURANCE_BOUNDARY.md`.
 
-## 3. Fixed Programme A surface
+## 3. Programme A surface
 
-The complete CDC proof remains under `complete-cdc/`. No Programme A proof chapter or fixed candidate ref is changed by B3–B8.
+Controlling reading:
 
-## 4. B1/B2 foundations retained
+1. `complete-cdc/foundations-expansion-and-flow.md`;
+2. `complete-cdc/audit-a-explicitness-repairs.md`;
+3. `complete-cdc/affine-compatibility-and-extraction.md`;
+4. `complete-cdc/collapse-decomposition-and-assembly.md`.
 
-Active foundation chapters:
+The repair chapter controls:
+
+- the exact Seymour loopless-multigraph convention, with parallel edges and componentwise assembly;
+- the full A4 reverse local-family proof;
+- the non-controlling historical status of the old Tutte route.
+
+The original A0–A10 dossiers remain immutable and recoverable. The exact repair dossier is retained under `proof-development/`.
+
+## 4. Programme A assurance surface
+
+The original theorem spine passed Independent Audit A with named Seymour input and three non-blocking explicitness repairs. Those repairs are closed and integrated without theorem change. The repaired prose is not separately re-audited.
+
+## 5. B1/B2 surface
 
 - `five-support/b1-object-quantifier-and-scope.md`;
 - `five-support/b2-formulation-and-witness-hierarchy.md`;
 - `five-support/root-flow-lifting.md`;
 - `five-support/equivalent-formulations-and-proof-families.md`.
 
-They continue to control object, quantifier, witness, fixed-data, dual, and orthogonal-correction semantics.
+These retain object, quantifier, witness, fixed-data, dual, and orthogonal-correction semantics unchanged.
 
-## 5. B3 target surface
+## 6. B3–B5 surface
 
-Controlling chapter:
+- B3 target/full-dual/factorable control: `five-support/surfaces-and-halfcube.md`;
+- B4 vertical/horizontal motion: `five-support/gauge-and-reconfiguration.md`;
+- B5 cuts/four-poles/routing: `five-support/cuts-four-poles-and-routing.md`.
 
-- `five-support/surfaces-and-halfcube.md`.
+All accepted theorem/certificate and scope distinctions remain unchanged.
 
-It controls:
-
-- full dual versus old-colour quotient;
-- common-link and target-capacity theorems;
-- exact eight-vertex factorable classification;
-- unused-matching/core theory;
-- matching display correction;
-- conditional flower full-dual obstruction;
-- theorem/certificate separation.
-
-## 6. B4 motion surface
-
-Controlling chapter:
-
-- `five-support/gauge-and-reconfiguration.md`.
-
-It controls:
-
-- exact vertical torsor and disconnected reduction;
-- gauge/Petrial correspondence;
-- connected versus disconnected horizontal motion;
-- support pivots;
-- new-fibre recomputation;
-- internal composite correction versus connected neighbours;
-- external reslicing;
-- `7737`/`2801` scope separation.
-
-## 7. B5 interface surface
-
-Controlling chapter:
-
-- `five-support/cuts-four-poles-and-routing.md`.
-
-It controls the theorem-level three/four-cut interface and retains residual kernels, Type T/H policies, monodromy, and small censuses on the finite-certificate axis.
-
-## 8. B6/B7 corrected surface
-
-Controlling chapters:
+## 7. B6/B7 corrected surface
 
 - `five-support/holonomy-defects-and-atoms.md`;
 - `five-support/frontier-localisation.md`.
 
-The active theorem layer retains individual holonomy, root fibres, Tait escape, DDD atoms, route lock, rank, and curvature.
+BBD simultaneous origin remains conditional on `AC-RL-BBD-GROUPOID-CLOSURE`; the nontrivial defect forest remains removed pending `AC-RL-BBD-VARIATION-SLICE`.
 
-The active correction layer states:
+The four localization gaps remain:
 
-- BBD simultaneous origin is conditional on `AC-RL-BBD-GROUPOID-CLOSURE`;
-- the nontrivial defect forest is not an active theorem pending `AC-RL-BBD-VARIATION-SLICE`.
-
-The four B7 localization gaps remain exact and visible.
-
-## 9. B8 assurance surface
-
-Controlling chapter and ledger:
-
-- `five-support/finite-laboratories-and-certificates.md`;
-- `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md`.
-
-All finite results carry one of the six assurance classes. `CODE-PARTIAL` remains non-load-bearing.
-
-## 10. Exact authorial provenance
-
-The candidate retains exact source blobs for all B3–B8 dossiers and the B8 DAG. They remain proof, audit, and repair surfaces under `proof-development/`; the integrated chapters are the preferred current reading path.
-
-## 11. Six exact open returns
-
-- `AC-RL-BBD-GROUPOID-CLOSURE`;
-- `AC-RL-BBD-VARIATION-SLICE`;
 - `AC-RL-TYPE-T-SERIALISATION`;
 - `AC-RL-FLAT-POTENTIAL-INTERFACE`;
 - `AC-RL-COMMON-CUT-LOCALISATION`;
 - `AC-RL-TYPE-H-COMMON-WITNESS`.
 
-## 12. Historical recovery
+## 8. B8 assurance surface
 
-The seventy-eight discovery-order research packets remain retired and recoverable from `dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`. Existing migration and source-recovery controls remain active. B3–B8 changes current theorem/scope/assurance interpretation, not historical recoverability.
+- `five-support/finite-laboratories-and-certificates.md`;
+- `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md`.
 
-## 13. Assurance boundary
+The six finite-result classes and all correction propagation remain unchanged. `CODE-PARTIAL` is non-load-bearing.
 
-Programme A remains fixed for Audit A. B1–B7 are Curator-integrated authorial mathematics in stated scopes; B8 is assurance normalization. The global five-support theorem remains open.
+## 9. Excluded frontier
 
-No independent-audit, Lean, manuscript, peer-review, publication, release, arXiv, DOI, novelty, or timestamp status is created.
+B9 and AC-RL working-ahead hyperbolic/rank-three material are outside this candidate. The global five-support theorem remains open.
+
+## 10. Assurance boundary
+
+Programme A has passed Audit A; B1–B8 remain pending dedicated Audit B. This alignment adds no end-to-end Lean, manuscript, peer-review, publication, release, arXiv, DOI, novelty, timestamp, or canonical `main` status.

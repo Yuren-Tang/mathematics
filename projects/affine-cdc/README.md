@@ -2,25 +2,47 @@
 
 AffineCDC studies affine incidence geometry above nowhere-zero binary flows, its complete Cycle Double Cover consequence, and the stronger open problem of compressing compatible covers to five indexed supports.
 
-## 1. Complete Cycle Double Cover theorem
+## 1. Unified current candidate
 
-Programme A integrates a complete authorial paper-proof:
+Branch:
+
+`curation/affine-cdc-programme-a-b1-b8-unified-v1`.
+
+Fixed inputs:
+
+- accepted B1–B8 candidate `0100895d57aab7d21153c580fa9bdc45fafc832e`;
+- Programme A repair checkpoint `06bce656dcf5bfd6491ec08f51a702ea56d2470d`;
+- exact repair splice `a35da6ba6e4908c70f970f3cadf5fcf4b582dae4`.
+
+This candidate aligns Programme A and B1–B8 without consuming B9 or AC-RL working-ahead material.
+
+## 2. Complete Cycle Double Cover theorem
+
+Programme A proves:
 
 > Every multigraph with finite active edge set and no singleton cut has a finite circuit double cover.
 
-Fixed Audit A candidate:
+The original Programme A candidate `68715fb29bb4b6555e2bc3e089603c5390d01566` passed Independent Audit A at `2fac31f4e76c819dd42a179a2772501c50ee93ad`.
 
-`curation/affine-cdc-programme-a-v1@68715fb29bb4b6555e2bc3e089603c5390d01566`.
+Audit result:
 
-Read `complete-cdc/README.md` and the three controlling Programme A chapters.
+`VERIFIED SUBJECT TO NAMED EXTERNAL THEOREMS / NON-BLOCKING EXPLICITNESS REPAIRS`.
 
-## 2. Five-support programme
+The three explicitness/source repairs are now closed and integrated without theorem change:
+
+1. exact Seymour multigraph convention;
+2. complete A4 reverse local-family proof;
+3. old Tutte route historical and non-controlling.
+
+Read `complete-cdc/README.md` and `complete-cdc/audit-a-explicitness-repairs.md`.
+
+## 3. Five-support programme
 
 For finite loopless cubic multigraphs, five-support existence has exact root, triangle, matching/four-flow, Fano-plane, surface, anisotropic, quadratic, and cographic formulations. Singular/Schur criteria retain fixed data; stress/Fourier are dual/counting layers.
 
 The global five-support theorem remains open.
 
-Preferred reading order:
+Preferred reading:
 
 1. `five-support/b1-object-quantifier-and-scope.md`;
 2. `five-support/b2-formulation-and-witness-hierarchy.md`;
@@ -31,82 +53,41 @@ Preferred reading order:
 7. `five-support/frontier-localisation.md`;
 8. `five-support/finite-laboratories-and-certificates.md`.
 
-## 3. Current B3–B8 integration
+## 4. Controlling B distinctions
 
-Exact base:
-
-`curation/affine-cdc-programme-b2-v1@08b662ecc31848456b9904f4d5b85c3801d090a1`.
-
-Exact B3–B8 source splice:
-
-`4dadc7add4743d7da63e28d93806c8d76529c07b`.
-
-The integrated source checkpoints are:
-
-- B3 `d806168bb579dbc13f267f44f631e07de909b706`;
-- B4 `345074690b7a8658c1208ae84f10d709f8b74bcf`;
-- B5 `274970ef9c56cafdbfceeed3c0cc08238d3dfd40`;
-- B6 `404f7511f16d1225e066a91842a57e2084943c72`;
-- B7 `164f7655f9ec7c0e0a73d49303cf66230fb26487`;
-- B8 `989cb002598fd91786029be201c2747c697bb476`.
-
-See:
-
-- `PROGRAMME_B3_B8_INTEGRATION_MAP.md`;
-- `PROGRAMME_B3_B8_STATUS_AND_GAPS.md`;
-- `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md`;
-- `PROGRAMME_B3_B8_INTEGRATION_MANIFEST.md`.
-
-## 4. Controlling B3/B4/B5 distinctions
-
-- `T_g^{(1)}→𝒜₅` is componentwise same-embedding compression;
-- `J_g→𝒜₅` is only old-colour-factorable compression;
-- factorable failure is not full-dual failure;
-- the all-parallel matching representative is `{01,23,45}`;
-- one horizontal edge has connected switch support;
-- disconnected switch support gives a path;
-- `7737` composite endpoints and `2801` one-step neighbours remain separate;
+- $T_g^{(1)}\to\mathscr A_5$ is componentwise same-embedding compression;
+- $J_g\to\mathscr A_5$ is only old-colour-factorable compression;
+- connected switch support gives one horizontal edge; disconnected support gives a path;
+- `7737` composite endpoints and `2801` one-step neighbours remain distinct;
 - cap forcing is not full-cap containment;
-- abstract routing transitions require source path-pair realization.
+- finite routing transitions require source path-pair realization;
+- BBD common origin is conditional on `AC-RL-BBD-GROUPOID-CLOSURE`;
+- the nontrivial defect forest is removed pending `AC-RL-BBD-VARIATION-SLICE`.
 
-## 5. B6 correction and B7 frontier
-
-The active corpus retains individual-loop holonomy, root-fibre/Tait escape, DDD atom triality, unique route-lock, rank escape, and curvature duality.
-
-It does not retain as unconditional theorems:
-
-- BBD simultaneous common origin;
-- the nontrivial fixed-terminal defect-minimal forest.
-
-Exact BBD gaps:
-
-- `AC-RL-BBD-GROUPOID-CLOSURE`;
-- `AC-RL-BBD-VARIATION-SLICE`.
-
-Exact localization gaps:
+The four further localization gaps are:
 
 - `AC-RL-TYPE-T-SERIALISATION`;
 - `AC-RL-FLAT-POTENTIAL-INTERFACE`;
 - `AC-RL-COMMON-CUT-LOCALISATION`;
 - `AC-RL-TYPE-H-COMMON-WITNESS`.
 
-## 6. Finite assurance
+## 5. Finite assurance
 
-Finite results are classified as `F-PROVED`, `F-CERT-PUBLIC`, `F-CERT-PRIVATE`, `F-CENSUS`, `CODE-PARTIAL`, or `AFFECTED`.
+Finite results retain the classes `F-PROVED`, `F-CERT-PUBLIC`, `F-CERT-PRIVATE`, `F-CENSUS`, `CODE-PARTIAL`, and `AFFECTED`. B8 is assurance normalization, not independent review or public-code certification.
 
-B8 is assurance normalization, not independent review or public-code certification.
+## 6. Project controls
 
-## 7. Project control
+- `ACTIVE_MATHEMATICAL_SURFACE.md`;
+- `CURRENT_BEST.md`;
+- `MATHEMATICAL_ARCHITECTURE.md`;
+- `THEOREM_DEPENDENCY_MAP.md`;
+- `FORMAL_STATUS.md`;
+- `AC_UNIFIED_INTEGRATION_MAP.md`;
+- `AC_UNIFIED_ASSURANCE_BOUNDARY.md`;
+- `CHAPTER_PROVENANCE.md`;
+- `SUPERSESSION_MAP.md`;
+- `FRONTIER_STATUS.md`.
 
-- `ACTIVE_MATHEMATICAL_SURFACE.md` — active tree;
-- `CURRENT_BEST.md` — compact state;
-- `MATHEMATICAL_ARCHITECTURE.md` — controlling architecture;
-- `THEOREM_DEPENDENCY_MAP.md` — proof and obligation DAG;
-- `FORMAL_STATUS.md` — assurance boundaries;
-- `CHAPTER_PROVENANCE.md` — source roles;
-- `SUPERSESSION_MAP.md` — controlling corrections;
-- `FRONTIER_STATUS.md` — project frontier summary.
+## 7. Assurance
 
-## 8. Assurance
-
-Programme A and B1–B7 are Curator-integrated authorial mathematics in their stated scopes; B8 is Curator-integrated assurance normalization. This intake does not complete independent audit, end-to-end Lean verification, manuscript review, publication, release, arXiv, DOI, novelty, or timestamp work.
+Programme A’s original spine has passed Independent Audit A; the closed repaired prose is integrated but not separately re-audited. B1–B8 have not yet received dedicated Audit B. No end-to-end Lean, manuscript, peer-review, publication, release, arXiv, DOI, novelty, timestamp, or canonical `main` status is created.

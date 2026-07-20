@@ -1,120 +1,80 @@
 # Programme A assurance boundary
 
-## 1. Current status
+## 1. Theorem status
 
-The integrated Programme A theorem spine is:
-
-`CURATOR-INTEGRATED / AUTHORIAL PAPER-PROOF COMPLETE`
-
-This means:
-
-- A0–A10 form a coherent end-to-end mathematical proof package;
-- the Curator has integrated them into the natural current-best corpus;
-- exact source ancestry and unit provenance are preserved;
-- mathematical scope, quantifiers, multiplicity, and boundary cases have been aligned.
-
-It does not mean:
-
-- independent review passed;
-- end-to-end Lean verification;
-- manuscript acceptance or publication readiness;
-- peer review, release, arXiv, DOI, or priority-attestation action.
-
-## 2. Theorem scope
-
-The integrated theorem states:
+Programme A supplies a complete authorial paper proof of:
 
 > Every multigraph with finite active edge set and no singleton cut has a finite circuit double cover.
 
-Equivalent bridge language may say that no nonloop active edge is a bridge. The cut formulation is controlling because it is the exact hypothesis used by intrinsic parity and collapse.
+The theorem permits loops, parallel edge objects, disconnected components, isolated vertices, and an arbitrary ambient vertex carrier; only the active edge set must be finite.
 
-The theorem allows:
+## 2. Independent Audit A
 
-- loops;
-- parallel edge objects;
-- disconnected edge-bearing components;
-- isolated vertices;
-- an arbitrary ambient vertex carrier.
+The fixed original candidate
 
-The proof requires only that the active edge set is finite.
+`curation/affine-cdc-programme-a-v1@68715fb29bb4b6555e2bc3e089603c5390d01566`
 
-## 3. Logical external input
+was independently audited at
 
-The sole external non-elementary logical theorem is Seymour’s nowhere-zero six-flow theorem.
+`audit/affine-cdc-complete-cdc-spine-v1@2fac31f4e76c819dd42a179a2772501c50ee93ad`.
 
-The following are internal Programme A results rather than external black boxes:
+Result:
 
-- finite-abelian-group flow-kernel cardinality;
-- inclusion–exclusion count for nowhere-zero flows;
-- equal-order transport from `Z/8Z` to `F₂³`;
-- all graph, cut, circuit, collapse, affine, quadratic, support, and multiplicity lemmas.
+`VERIFIED SUBJECT TO NAMED EXTERNAL THEOREMS / NON-BLOCKING EXPLICITNESS REPAIRS`.
 
-Tutte’s equal-order theorem is historical provenance only. A missing primary-page pinpoint for Tutte is not a logical blocker for this candidate.
+Audit A found no theorem repair, source block, or genuine frontier gap.
 
-## 4. Lean boundary
+## 3. Closed explicitness repairs
 
-The companion checkpoint
+The immutable repair checkpoint is
+
+`proof-development/affine-cdc-rigour-v1@06bce656dcf5bfd6491ec08f51a702ea56d2470d`.
+
+It closes exactly:
+
+1. the explicit Seymour loopless-multigraph convention, including parallel edges and componentwise assembly;
+2. the full reverse reconstruction of arbitrary even local affine line families;
+3. the historical/non-controlling classification of the old Tutte route.
+
+Classification:
+
+`CLOSED / EXPOSITORY-REPAIR / NO-THEOREM-CHANGE / NO-NEW-MATHEMATICS`.
+
+The repaired passages are Curator-integrated in the unified candidate. This does not claim a second independent re-audit of the repaired prose.
+
+## 4. Logical external input
+
+Seymour’s nowhere-zero six-flow theorem is the sole non-elementary external logical input.
+
+The following are internal:
+
+- flow-kernel cardinality over finite abelian groups;
+- inclusion–exclusion for nowhere-zero flows;
+- equal-order transport from $\mathbf Z/8\mathbf Z$ to $\mathbf F_2^3$;
+- affine compatibility, graph/dart extraction, collapse, decomposition, and multiplicity arguments.
+
+Tutte’s equal-order theorem is provenance only.
+
+## 5. Formalization boundary
+
+The Lean anchor
 
 `Yuren-Tang/affine-cdc:main@ebd7098a7a8b824e8c0a511d3c71f61705672aa8`
 
-machine-checks substantial internal mathematics, including local affine-family classification, original-form rank-three compatibility, dart gluing, indexed support construction, exact double coverage, and a cubic-flow CDC result.
-
-The following integrated interfaces are not thereby checked end to end:
-
-- finite-active multigraph semantics with loops and arbitrary ambient vertex carrier;
-- the exact port-cycle expansion and collapse package used here;
-- the internal equal-order flow-count proof in this organization;
-- the invariant pair-complex and characteristic-torsor assembly;
-- the even-cover-first collapse factorization;
-- final circuit decomposition, loop reinsertion, and natural theorem assembly.
-
-No Lean repository was modified by this intake.
-
-## 5. Independent-review boundary
-
-No dedicated independent audit has yet reviewed the integrated candidate.
-
-Audit A should test at least:
-
-1. external-edge alternate-path lifting through arbitrary port-cycle fibres;
-2. the spanning-forest flow-kernel count and inclusion–exclusion;
-3. local affine-family completeness and quotient identification;
-4. the Fano cross-pairing and characteristic-torsor intersection theorem;
-5. graph/dart support descent and exact indexed multiplicity;
-6. loopless set-incidence to intrinsic cut-parity conversion;
-7. pulled-back-cut collapse and repeated projected occurrences;
-8. terminating circuit decomposition and loop/core witness normalization.
-
-These are review targets, not known defects.
+checks substantial internal slices, but not the complete natural theorem end to end. No Lean repository is modified by this alignment.
 
 ## 6. Manuscript and publication boundary
 
-This integration does not:
+This alignment does not edit or approve a manuscript, establish novelty, authorize submission, create a release or tag, or change arXiv, DOI, peer-review, publication, or timestamp status.
 
-- edit Paper A;
-- assert literature novelty;
-- approve title, authorship, disclosures, or submission language;
-- authorize arXiv or journal submission;
-- create a release or tag;
-- modify a DOI or Zenodo record.
+## 7. Programme B separation
 
-A later manuscript worker should consume only an AC-DIR-dispositioned mathematical candidate and must not silently repair mathematics inside the manuscript branch.
+Programme A neither consumes nor changes B1–B8. The global five-support theorem remains open. B1–B8 retain their own authorial/correction/assurance states and pending Audit B boundary.
 
-## 7. Five-support separation
+## 8. Current classification
 
-Programme A proves the complete Cycle Double Cover theorem spine. It does not consume or alter Programme B1 or any later five-support mathematics.
+Programme A in the unified candidate is:
 
-No Programme A conclusion upgrades, confirms, corrects, or supersedes any five-support theorem or certificate. Later B intakes remain separate exact-SHA work units.
+`CURATOR-INTEGRATED / AUTHORIAL PAPER-PROOF COMPLETE / INDEPENDENT AUDIT A PASSED WITH NAMED EXTERNAL INPUT / THREE NON-BLOCKING REPAIRS CLOSED`.
 
-## 8. Repair routing
-
-If independent audit, Lean, or manuscript projection finds a mathematical defect:
-
-- a bounded proof/interface defect returns to AC-PDL as a repair unit;
-- a genuine new-mathematics gap returns to AC-RL only when it cannot be resolved from existing sources;
-- assurance or exposition defects do not silently change theorem truth;
-- any scope or acceptance decision belongs to AC-DIR.
-
-## 9. Current conclusion
-
-The candidate is suitable for AC-DIR mathematical disposition and, if accepted as the next fixed corpus state, for retargeting independent Audit A. It is not independently certified before that audit.
+The repaired prose is not separately re-audited, the theorem is not end-to-end Lean-verified, and the unified branch is not canonical `main`.

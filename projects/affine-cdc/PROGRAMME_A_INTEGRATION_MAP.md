@@ -1,106 +1,96 @@
 # Programme A integration and provenance map
 
-## 1. Exact intake
+## 1. Original authorial intake
 
-- canonical base: `main@960c92b7ff231c78b387894149779083060a75eb`;
-- immutable source: `proof-development/affine-cdc-rigour-v1@8bee16780b549f51e1f29343671a059961ec4172`;
-- writable branch: `curation/affine-cdc-programme-a-v1`;
-- consumed scope: A0–A10 and the Programme A part of `proof-development/OBLIGATION_DAG.md`;
-- excluded scope: B1 and every later proof-development commit.
+- canonical baseline: `main@960c92b7ff231c78b387894149779083060a75eb`;
+- immutable A0–A10 source: `proof-development/affine-cdc-rigour-v1@8bee16780b549f51e1f29343671a059961ec4172`;
+- original Curator candidate: `curation/affine-cdc-programme-a-v1@68715fb29bb4b6555e2bc3e089603c5390d01566`.
 
-The source checkpoint is seventeen commits ahead of the canonical base and zero behind. Its file delta consists only of the eleven A0–A10 dossiers and `OBLIGATION_DAG.md`.
+The original source consists of A0–A10 and the Programme A obligation snapshot. It remains exactly recoverable.
 
-## 2. Integration architecture
+## 2. Original chapter architecture
 
-| Active destination | Integrated source units | Mathematical role |
+| Active destination | Source units | Role |
 |---|---|---|
-| `complete-cdc/foundations-expansion-and-flow.md` | A0, A1, A2, A3 | Natural multigraph/circuit/multiplicity semantics; loop normalization; port-cycle expansion; Seymour boundary; internal equal-order flow transport. |
-| `complete-cdc/affine-compatibility-and-extraction.md` | A4, A5, A6, A7 | Pair complex and equivalent obstructions; quadratic Fano compatibility; retained graph/dart extraction; exact loopless parity bridge. |
-| `complete-cdc/collapse-decomposition-and-assembly.md` | A8, A9, A10 | Cut-even collapse; occurrence transport; terminating circuit decomposition; final theorem and boundary cases. |
-| `complete-cdc/README.md` | A10, obligation DAG | Natural reading order, theorem headline, logical source boundary, and assurance warning. |
+| `complete-cdc/foundations-expansion-and-flow.md` | A0–A3 | finite-active multigraph semantics, loops, expansion, Seymour boundary, internal equal-order transport |
+| `complete-cdc/affine-compatibility-and-extraction.md` | A4–A7 | pair complex, rank-three compatibility, graph/dart extraction, exact indexed multiplicity |
+| `complete-cdc/collapse-decomposition-and-assembly.md` | A8–A10 | cut-even collapse, occurrence transport, circuit decomposition, final theorem |
+| `complete-cdc/README.md` | A10 and control ledgers | theorem headline, reading order, source and assurance boundary |
 
-Existing specialized chapters under `core/` and `reduction/` remain useful mechanism-level companions. Programme A supplies the controlling end-to-end proof spine and exact dependency closure.
+## 3. Independent Audit A
 
-## 3. Exact unit ledger
+- audit branch: `audit/affine-cdc-complete-cdc-spine-v1@2fac31f4e76c819dd42a179a2772501c50ee93ad`;
+- result: `VERIFIED SUBJECT TO NAMED EXTERNAL THEOREMS / NON-BLOCKING EXPLICITNESS REPAIRS`;
+- theorem repair: none;
+- source block: none;
+- genuine new-mathematics gap: none.
 
-| Unit | Authorial state | Exact checkpoint | Active destination |
-|---|---|---|---|
-| A0 | `COMPLETE-DRAFT` | `0d8c9102fa117e5f58b5d1617f3fae782c164097` | foundations chapter §§1–3 |
-| A1 | `COMPLETE-DRAFT` | `b193d55461040a6b6b7692e4f24e91d88c97a663` | foundations chapter §4; assembly chapter §8 step 2 and step 11 |
-| A2 | `COMPLETE-DRAFT` | `7c271c41f9d442ddb14034fb40b730fcc61c83a5` | foundations chapter §5; assembly chapter §2 |
-| A3 | `COMPLETE-DRAFT` | `6817896a301157db886f7c016866748a9161d15f` | foundations chapter §6; assembly chapter §10 |
-| A4 | `COMPLETE-DRAFT` | `93bd8019099f0fa10ee53928681167f81506c407` | affine chapter §§1–4 |
-| A5 | `COMPLETE-DRAFT` | `6ce41bd87b5700346c572f701c40c8ac6f374e3f` | affine chapter §§5–7 |
-| A6 | `COMPLETE-DRAFT` | `f953619d6fda7105fef406892530496c7d72178a` | affine chapter §§8–9 |
-| A7 | `COMPLETE-DRAFT` | `b0755c3b95939482c6e223c24e4d8327c53f02e8` | affine chapter §10 |
-| A8 | `COMPLETE-DRAFT` | `d9718c6204d4f11aa853ee2f6e350d5c08444820` | assembly chapter §§1–4 |
-| A9 | `COMPLETE-DRAFT` | `400404e5413dfc933668aa0ec152010bae5a742c` | assembly chapter §§5–7 |
-| A10 | `READY-FOR-CURATOR` | `143538ef0fc9518ce877a42fa422d57cb6e3ce8a` | assembly chapter §§8–12 and all root control surfaces |
+Audit A returned exactly three explicitness/source-status items.
 
-The immutable aggregate checkpoint is `8bee16780b549f51e1f29343671a059961ec4172`.
+## 4. Repair overlay
 
-## 4. Source retention
+- immutable repair checkpoint: `proof-development/affine-cdc-rigour-v1@06bce656dcf5bfd6491ec08f51a702ea56d2470d`;
+- exact repair dossier: `proof-development/AC_PD_A_AUDIT_A_EXPLICITNESS_REPAIRS.md`;
+- classification: `EXPOSITORY-REPAIR / NO-THEOREM-CHANGE / NO-NEW-MATHEMATICS`;
+- unified repair splice: `a35da6ba6e4908c70f970f3cadf5fcf4b582dae4`.
 
-The exact source files remain present under `projects/affine-cdc/proof-development/`:
+| Audit item | Original passage | Controlling integrated projection |
+|---|---|---|
+| exact Seymour graph convention | A3 external theorem and componentwise application | `complete-cdc/audit-a-explicitness-repairs.md`, §2 |
+| complete reverse local-family proof | A4 Proposition 4.2 converse | `complete-cdc/audit-a-explicitness-repairs.md`, §3 |
+| old Tutte-route status | `reduction/outer-shell-and-binary-flow.md`, §§4.1–4.2 | repair chapter §4 and `reduction/OUTER_SHELL_HISTORICAL_ROUTE_NOTICE.md` |
 
-- `AC_PD_A0_FOUNDATIONAL_SEMANTICS.md`;
-- `AC_PD_A1_LOOP_DELETION_AND_REINSERTION.md`;
-- `AC_PD_A2_PORT_CYCLE_EXPANSION.md`;
-- `AC_PD_A3_BINARY_EIGHT_FLOW_BOUNDARY.md`;
-- `AC_PD_A4_AFFINE_PAIR_COMPLEX.md`;
-- `AC_PD_A5_RANK_THREE_FANO_COMPATIBILITY.md`;
-- `AC_PD_A6_GRAPH_LEVEL_EVEN_SUPPORT_EXTRACTION.md`;
-- `AC_PD_A7_VERTEX_BOUNDARY_CUT_PARITY_BRIDGE.md`;
-- `AC_PD_A8_COLLAPSE_EVEN_COVER.md`;
-- `AC_PD_A9_FINITE_CIRCUIT_DECOMPOSITION.md`;
-- `AC_PD_A10_COMPLETE_CDC_ASSEMBLY.md`;
-- `OBLIGATION_DAG.md`.
+The A3 and A4 dossiers remain immutable. The repair dossier is a controlling overlay for the named passages rather than a rewrite of the authorial record.
 
-They are retained because they are the exact authorial proof-development record, contain intermediate theorem numbering and local verification details, and form the recovery surface for later audit, PDL repair, Lean projection, and manuscript work.
+## 5. Exact repaired content
 
-They are no longer the preferred reading order for the current corpus. The three integrated chapters are controlling for exposition and dependency architecture.
+### Seymour boundary
 
-## 5. Material corrections integrated
+The external theorem is used for a finite connected loopless multigraph, with parallel edge objects allowed and no isthmus. It is applied independently to all edge-bearing components. Isolated vertices and the empty graph are inert; loops were removed by A1.
 
-1. Circuit semantics and characterization belong to A0; finite decomposition belongs to A9.
-2. Intrinsic half-edge boundary parity is the natural loop-aware notion; once-per-edge incidence parity is loopless only.
-3. The pair complex is the complete compatibility object but does not retain graph/dart/indexed-support semantics.
-4. Equal-order finite-group flow transport is internally proved; Tutte is provenance, not a logical gate.
-5. Collapse preserves cut-even supports and indexed occurrence multiplicity, not circuits.
-6. Equal support values at distinct indices remain distinct occurrences.
-7. The natural theorem assumes only finite active edge set and no singleton cut; connectedness, simplicity, looplessness, finite ambient vertex carrier, and absence of isolated vertices are unnecessary.
+### A4 converse
 
-## 6. External-source map
+For directions $h_1+h_2+h_3=0$, every even triple of affine lines has unique pairwise intersections $x_{12},x_{13},x_{23}$. With
 
-### Logical input
+$$
+m=x_{12}+h_3,
+$$
 
-P. D. Seymour, “Nowhere-zero 6-flows”, Journal of Combinatorial Theory, Series B 30 (1981), 130–135, DOI `10.1016/0095-8956(81)90058-7`.
+the lines are uniquely
 
-It is used only to obtain a componentwise nowhere-zero integral six-flow on the finite loopless no-isthmus expansion.
+$$
+\{m+h_2,m+h_3\},\quad
+\{m+h_1,m+h_3\},\quad
+\{m+h_1,m+h_2\}.
+$$
 
-### Historical provenance
+Thus every even local family is uniquely $\Phi_v(m)$.
 
-Tutte’s equal-order group-flow theory explains the classical context, but Programme A proves the required counting and transport statement internally. Exact Tutte page localization is therefore a bibliographic refinement, not an unclosed proof obligation.
+### Tutte route
 
-### Formal anchor
+The controlling route is Seymour six-flow, literal eight-flow inclusion, reduction modulo eight, and internal equal-order transport. The older Tutte-based companion remains historical provenance only.
 
-`Yuren-Tang/affine-cdc:main@ebd7098a7a8b824e8c0a511d3c71f61705672aa8`
+## 6. Logical dependency
 
-This checkpoint machine-checks substantial internal slices but not the integrated natural theorem end to end.
+The theorem dependency remains:
 
-## 7. B1 exclusion audit
+```text
+A0/A1/A2
+→ A3: Seymour six-flow + internal order-eight transport
+→ A4/A5: affine pair complex and rank-three compatibility
+→ A6/A7: indexed support extraction and parity
+→ A8/A9: collapse and circuit decomposition
+→ A10: complete CDC theorem.
+```
 
-The next Programme B checkpoint is `778b09ac8260192e022f512f24cdef1d04871f37`, strictly later than `8bee1678...`.
+Seymour is the sole non-elementary external logical theorem. No new premise is introduced by the repairs.
 
-No B1 theorem, correction, source, file, or later live-branch commit is used in the active Programme A chapters or control files. The B1 section visible in the source `OBLIGATION_DAG.md` is retained as immutable branch-context provenance only and is not part of the integrated mathematical dependency graph.
+## 7. Assurance state
 
-## 8. Downstream use
+The original theorem spine has passed Independent Audit A. The three repair items are closed authorially and Curator-integrated. Their integration does not itself constitute a second independent re-audit.
 
-Subject to AC-DIR disposition, this candidate is the natural fixed input for:
+No Lean, manuscript, peer-review, publication, release, arXiv, DOI, novelty, or timestamp state is created.
 
-- independent Audit A;
-- later PDL repair units triggered by that audit;
-- later Lean implementation from the same accepted interfaces;
-- later Paper A revision from the same accepted mathematics.
+## 8. Programme B separation
 
-None of those downstream statuses is conferred by this integration.
+The unified candidate retains the accepted B1–B8 corpus but Programme A does not depend on it. The repair overlay alters no B theorem, correction, certificate, assurance class, or frontier obligation. B9 and AC-RL working-ahead mathematics remain excluded.
