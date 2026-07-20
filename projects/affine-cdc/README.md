@@ -1,63 +1,51 @@
 # AffineCDC
 
-AffineCDC studies affine incidence geometry attached to nowhere-zero binary flows, its complete Cycle Double Cover consequence, and the stronger open problem of compressing the compatible cover to five indexed supports.
+AffineCDC studies affine incidence geometry attached to nowhere-zero binary flows, its complete Cycle Double Cover consequence, and the stronger open problem of compressing compatible covers to five indexed supports.
 
 The active current-best surface is listed in [`ACTIVE_MATHEMATICAL_SURFACE.md`](ACTIVE_MATHEMATICAL_SURFACE.md).
 
-## 1. Complete Cycle Double Cover spine
+## 1. Complete Cycle Double Cover theorem
 
-The paper-level mathematical chain is:
+Programme A integrates a complete authorial paper-proof of:
 
-$$
-oxed{
-egin{array}{c}
-	ext{bridgeless multigraph with finite active edge set}\
-\downarrow\;	ext{delete loops}\
-	ext{finite loopless bridgeless core}\
-\downarrow\
-	ext{cubic expansion with nowhere-zero }\mathbf F_2^3	ext{ flow}\
-\downarrow\
-	ext{rank-three affine compatibility}\
-\downarrow\
-	ext{graph-level multiset even double cover}\
-\downarrow\
-	ext{cut-even collapse transport}\
-\downarrow\
-	ext{one circuit decomposition and loop reinsertion}\
-\downarrow\
-	ext{cycle double cover.}
-\end{array}}
-$$
+> Every multigraph with finite active edge set and no singleton cut has a finite circuit double cover.
 
-The natural external theorem is:
+Equivalently, no nonloop active edge is a bridge. Loops, parallel edge objects, disconnected components, isolated vertices, and an arbitrary ambient vertex carrier are allowed.
 
-> Every multigraph with finite active edge set and no bridges has a cycle double cover.
+The proof chain is:
 
-Loops are allowed; a singleton loop is a cut-even circuit. The companion Lean declaration remains an earlier loopless ambient-finite checkpoint and is not yet the final theorem.
+```text
+finite-active multigraph with no singleton cut
+→ exact loop deletion
+→ finite loopless cubic port-cycle expansion
+→ nowhere-zero F₂³ flow
+→ affine pair complex and rank-three compatibility
+→ graph-level indexed even supports
+→ intrinsic cut-even collapse
+→ one finite circuit decomposition
+→ exact loop reinsertion
+→ circuit double cover
+```
 
-Start with:
+Read the controlling Programme A proof in this order:
 
-- [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md);
-- [`core/affine-incidence-and-obstruction.md`](core/affine-incidence-and-obstruction.md);
-- [`core/rank-three-fano-compatibility.md`](core/rank-three-fano-compatibility.md);
-- [`reduction/outer-shell-and-binary-flow.md`](reduction/outer-shell-and-binary-flow.md);
-- [`reduction/even-cover-and-collapse.md`](reduction/even-cover-and-collapse.md).
+1. [`complete-cdc/foundations-expansion-and-flow.md`](complete-cdc/foundations-expansion-and-flow.md);
+2. [`complete-cdc/affine-compatibility-and-extraction.md`](complete-cdc/affine-compatibility-and-extraction.md);
+3. [`complete-cdc/collapse-decomposition-and-assembly.md`](complete-cdc/collapse-decomposition-and-assembly.md).
+
+The exact A0–A10 authorial dossiers and obligation DAG remain under [`proof-development/`](proof-development/) as provenance and repair surfaces. See [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md).
+
+The sole external non-elementary logical input is Seymour’s nowhere-zero six-flow theorem. Equal-order finite-group flow transport is proved internally; Tutte’s theorem is historical provenance rather than an unresolved logical premise.
 
 ## 2. Five-support strengthening
 
 An indexed five-support cover is equivalently a root-valued flow
 
-$$
-E(G)\longrightarrow R_5\subset E_5.
-$$
+`E(G) → R₅ ⊂ E₅`.
 
-Above a Fano flow, the rank-three theorem always gives a compatible eight-support root lift. The strengthening asks whether some flow and compatible lift have a cycle-face dual triangulation admitting
+Above a Fano flow, rank-three compatibility always gives a compatible eight-support root lift. The complete fixed-lift target asks for a homomorphism from the full cycle-face dual triangulation to the five-coordinate half-cube. The older quotient criterion through the global support-colour graph is only the factorable subroute.
 
-$$
-oxed{T_g^{(1)}\longrightarrow\mathscr A_5.}
-$$
-
-The older quotient criterion `J_g -> A_5` describes only global-index-factorable maps. The global five-support theorem remains open.
+The global five-support theorem remains open.
 
 Read:
 
@@ -70,9 +58,11 @@ Read:
 7. [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md);
 8. [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
 
-## 3. Current frontier
+Programme B1 and later proof-development checkpoints are not consumed by the present Programme A intake.
 
-The local algebra, target geometry, gauge structure, finite interfaces, and principal finite laboratories are largely classified. The sharp endpoint is graph-level localisation and composition of full-rank route-locked defects.
+## 3. Current five-support frontier
+
+The sharp endpoint is graph-level localization and composition of full-rank route-locked defects.
 
 - nonzero curvature gives a support-minimal common-cut witness with odd terminal parity;
 - zero curvature gives an eight-state affine potential;
@@ -80,25 +70,21 @@ The local algebra, target geometry, gauge structure, finite interfaces, and prin
 
 See [`FRONTIER_STATUS.md`](FRONTIER_STATUS.md).
 
-## 4. Provenance, retirement, and recovery
+## 4. Provenance and control
 
-The seventy-eight discovery-order `research/FIVE_CDC_*.md` packets were read at exact checkpoint
+- [`MATHEMATICAL_ARCHITECTURE.md`](MATHEMATICAL_ARCHITECTURE.md) — natural project architecture;
+- [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md) — theorem and obligation graph;
+- [`CURRENT_BEST.md`](CURRENT_BEST.md) — compact mathematical state;
+- [`PROGRAMME_A_INTEGRATION_MAP.md`](PROGRAMME_A_INTEGRATION_MAP.md) — exact A0–A10 checkpoint and destination map;
+- [`PROGRAMME_A_ASSURANCE_BOUNDARY.md`](PROGRAMME_A_ASSURANCE_BOUNDARY.md) — proof, audit, Lean, and publication boundaries;
+- [`PROGRAMME_A_INTEGRATION_MANIFEST.md`](PROGRAMME_A_INTEGRATION_MANIFEST.md) — exact intake and isolation manifest;
+- [`CHAPTER_PROVENANCE.md`](CHAPTER_PROVENANCE.md) — five-support chapter provenance;
+- [`MIGRATION_LEDGER.md`](MIGRATION_LEDGER.md) — retired five-support source migration;
+- [`SUPERSESSION_MAP.md`](SUPERSESSION_MAP.md) — controlling corrections;
+- [`FORMAL_STATUS.md`](FORMAL_STATUS.md) — global assurance boundary.
 
-`dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`.
+## 5. Assurance
 
-After substantive migration they are retired from the current tip. Their public commits, priority, bodies, counterexamples, and finite certificates remain recoverable through ordinary Git ancestry.
+Programme A is Curator-integrated authorial mathematics. It has not yet passed its dedicated independent audit and is not end-to-end Lean verified.
 
-- [`CHAPTER_PROVENANCE.md`](CHAPTER_PROVENANCE.md) — source packets by active chapter;
-- [`MIGRATION_LEDGER.md`](MIGRATION_LEDGER.md) — source-to-successor transfer;
-- [`RETIRED_SOURCE_CLASSIFICATION.md`](RETIRED_SOURCE_CLASSIFICATION.md) — exhaustive 78-file retirement classification;
-- [`SOURCE_RECOVERY_AUDIT.md`](SOURCE_RECOVERY_AUDIT.md) — exact ancestry and recovery commands;
-- [`SUPERSESSION_MAP.md`](SUPERSESSION_MAP.md) — controlling corrections and negative boundaries.
-
-## 5. Reliability and audit
-
-- [`CURRENT_BEST.md`](CURRENT_BEST.md) — compact current mathematical state;
-- [`THEOREM_DEPENDENCY_MAP.md`](THEOREM_DEPENDENCY_MAP.md) — dependency graph;
-- [`FORMAL_STATUS.md`](FORMAL_STATUS.md) — theorem, finite, open, formal, and review boundaries;
-- [`RECONSTRUCTION_MANIFEST.md`](RECONSTRUCTION_MANIFEST.md) — final reconstruction and no-loss manifest.
-
-Current-best inclusion does not create Lean, independent-review, peer-review, manuscript, publication, release, arXiv, or DOI status.
+Current-best inclusion does not create manuscript, peer-review, publication, release, arXiv, DOI, or timestamp status.
