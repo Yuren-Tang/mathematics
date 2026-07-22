@@ -1,332 +1,319 @@
-# AC-PD-B2.3 — correction of the universal orthogonal root-module claim
+# AC-PD-B2.3 — additive root-module correction and source-fidelity repair
 
-**Proof-development state:** `COMPLETE-DRAFT / MATHEMATICAL-CORRECTION`  
+**Proof-development state:** `COMPLETE-DRAFT / MATHEMATICAL-CORRECTION / SOURCE-FIDELITY-REPAIRED`  
 **Owner:** `AffineCDC — Proof Development Lead` (`AC-PDL`)  
 **Exact initial corpus base:** `main@960c92b7ff231c78b387894149779083060a75eb`  
-**Affected recovered packet:** `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` at `research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`  
-**Affected integrated chapter:** `five-support/equivalent-formulations-and-proof-families.md`, universal orthogonal hierarchy discussion  
+**Controlling repair intake:** `Yuren-Tang/research-workbench#37`, comment `5028845743`  
+**Source-audit trigger:** `AC-AUDIT-B@110f014c551d4ce0f109ca5559d234ddb124d8f1`  
+**Corrected attribution:** `SOURCE-UNRECONSTRUCTED / INFERRED-EXTRAPOLATION`; not a theorem of `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`  
+**Valid recovered packet:** `research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c:projects/affine-cdc/research/FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`, blob `2043ada9d28789ecc5f4f0028e62133f37835bc1`, introduced by `a172b2acb13fc0b042ecb099a08b9631ab1db59a`  
 **Depends on:** B1.1 and elementary quadratic linear algebra  
-**Immediate consumers:** B2 orthogonal hierarchy; B3 target geometry; future Curator repair  
+**Immediate consumers:** B2 orthogonal hierarchy; B8 assurance/source classification; Curator correction cycle  
 **External mathematical inputs:** none
 
-## 0. Correction summary
+## 0. Corrected result and attribution boundary
 
-The recovered packet claims a rank-free construction in
+This unit proves a sharp mathematical obstruction to the following **source-unreconstructed extrapolated claim**:
 
-$$
-V=\Gamma\oplus\Gamma^*,
-\qquad
-\dim V=2r,
-$$
+> for every `r`, all unordered pairs of the `2^r` points of
+> `Γ=F_2^r` admit an additive anisotropic-root representation in a canonical
+> quadratic space of dimension `2r`, informally written as
+> `Γ⊕Γ*`, with a purported formula `d_h(a)=([a],ev_a)`, and forming a universal
+> `O^+(2r,2)` tower.
 
-encoding all unordered pairs of the $2^r$ points of $\Gamma=\mathbf F_2^r$ as anisotropic roots and preserving the triangle relation.
+No exact committed theorem source for that claim was found in the bounded source search recorded in §1. In particular, it is **not** contained in the named packet `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`. The earlier wording of this dossier, the B2 map, and the original B2 Curator handoff incorrectly charged that valid rank-three packet with a different proposition.
 
-This claim is false for every $r\geq4$.
+The mathematical correction remains valid and unchanged:
 
-There are two independent defects.
+1. the displayed formula is not canonically type-correct, because `a∈Γ` determines an element of `Γ**`, not of `Γ*`, absent an additional chosen self-duality;
+2. more decisively, every additive anisotropic representation of `K_q` with the triangle law has ambient dimension at least `q-2`;
+3. for `q=2^r`, a `2r`-dimensional model is impossible for every `r≥4`;
+4. the correct universal additive root module is the deleted permutation module of dimension `q-2`;
+5. rank three is exceptional because `2^3-2=6=2·3`.
 
-1. The displayed formula
-   $$
-   d_h(a)=([a],\operatorname{ev}_a)
-   $$
-   is not type-correct: a vector $a\in\Gamma$ canonically defines an evaluation element of $\Gamma^{**}$, not a functional in $\Gamma^*$. No canonical map $\Gamma\to\Gamma^*$ exists without additional structure.
-2. More decisively, no alternative construction in dimension $2r$ can satisfy the required additive triangle law once $r\geq4$. A sharp dimension lower bound is $2^r-2$.
+The correction therefore targets an **inferred hierarchy or uncommitted draft**, not the recovered packet. This is a source/provenance repair, not a weakening of the `q-2` theorem or deleted permutation module.
 
-The correct universal additive root module is the deleted permutation module of dimension $2^r-2$. The exceptional equality
+## 1. Bounded source-forensics result
 
-$$
-2^3-2=2\cdot3=6
-$$
+### 1.1 Exact search population
 
-explains why the rank-three eight-support theory fits $O^+(6,2)$; it does not extend as a $2r$-dimensional rank-free hierarchy.
+The search covered the complete committed AffineCDC source boundary relevant to the claim:
 
-## 1. Abstract additive root representation
+- the historical canonical/rank-hierarchy line through `main@960c92b7ff231c78b387894149779083060a75eb`, including the all-rank transgression and dual-Fano residue chapter introduced by `79e6a7ae12293c06f853e1b4f0291ea88d99a88e`;
+- the complete five-support source interval from `main@749e0579581fcc838685138b3582f4de306b8e72` to `research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`, consisting of eighty-two source commits and seventy-eight packet files;
+- the exact named packet blob `2043ada9d28789ecc5f4f0028e62133f37835bc1` and its introducing commit `a172b2acb13fc0b042ecb099a08b9631ab1db59a`;
+- all plausible orthogonal, anisotropic, singular-quotient, root-flow, rank-four, universal-module, and rank-hierarchy packets identified by the source inventory;
+- the Programme B2 authorial dossiers, B2 map and handoff, B8 assurance ledger, fixed Curator candidate, and Audit B claim/source ledgers;
+- repository-history searches for the distinctive signatures `Γ⊕Γ*`, `d_h(a)`, `ev_a`, `2r`, `O^+(2r,2)`, “universal orthogonal”, “root module”, “rank hierarchy”, and semantically equivalent complete-graph root claims.
 
-Let $I$ be a finite set of cardinality $q\geq3$. An **additive root representation** of the complete graph on $I$ in a quadratic space $(V,Q)$ is a map
+### 1.2 What the exact named packet proves
 
-$$
+The named packet fixes `Γ=F_2^3` and proves:
+
+- the even-weight eight-coordinate module `H_8`;
+- the extended-Hamming kernel and moment map `μ:H_8→Γ`;
+- the quotient `V_8=H_8/⟨1⟩`, a six-dimensional plus-type quadratic space;
+- the Hamming Lagrangian and the exact sequence `0→L→V_8→Γ→0`;
+- the twenty-eight weight-two roots as the anisotropic vectors of `O^+(6,2)`;
+- the equivalence between compatible rank-three AffineCDC families and anisotropic root lifts;
+- five-coordinate subspaces, their ten roots, four-dimensional minus-type geometry `O^-(4,2)`, and omitted-triple orthogonality.
+
+It contains no arbitrary-rank `Γ⊕Γ*` model, no formula `d_h(a)=([a],ev_a)`, and no universal `O^+(2r,2)` tower.
+
+### 1.3 What the genuine all-rank hierarchy proves
+
+The historical all-rank transgression/residue line proves support-polynomial, degree-lowering Fano transgression, affine level-set, parity, stress, and dual-residue identities for `Γ=F_2^r`. It explicitly identifies rank three as the unique balanced quadratic-Lagrangian point. It does not encode all pairs of `2^r` support indices as anisotropic roots in dimension `2r`.
+
+Thus “all-rank hierarchy” and “universal complete-root orthogonal tower” are different claims. Conflating them explains the inferred extrapolation but does not provide a source for it.
+
+### 1.4 Source conclusion
+
+No exact committed source of the arbitrary-rank tower was recovered within the complete boundary above. The first committed text located that displays the formula while treating it as a prior theorem is the Programme B2.3 correction layer itself, preserved in the original B2 checkpoint `d62974704d6dac77aaa00275a595fedf7f70cfd2`; no earlier theorem-bearing commit, path, or blob was found.
+
+Accordingly the exact source classification is:
+
+`SOURCE-UNRECONSTRUCTED / INFERRED-EXTRAPOLATION OR UNCOMMITTED DRAFT / MATHEMATICALLY REFUTED BY B2.3`.
+
+This is not `BLOCKED-SOURCE`, because the controlling intake explicitly permits this classification when no committed source exists and the mathematical correction is self-contained.
+
+## 2. Abstract additive root representation
+
+Let `I` be a finite set of cardinality `q≥3`. An **additive root representation** of the complete graph on `I` in a quadratic space `(V,Q)` is a map
+
+\[
 r:\binom I2\longrightarrow V
-$$
+\]
 
 such that:
 
-1. every root is anisotropic:
-   $$
-   Q(r_{ab})=1;
-   $$
+1. every root is anisotropic, `Q(r_{ab})=1`;
 2. every target triangle satisfies
-   $$
+   \[
    r_{ab}+r_{bc}+r_{ca}=0
-   $$
-   for distinct $a,b,c\in I$.
+   \]
+   for distinct `a,b,c∈I`.
 
-This is exactly the structure needed to turn local $K_I$ triangles into vector-flow conservation by edgewise root addition.
+This is exactly the structure needed to turn local `K_I` triangles into vector-flow conservation by edgewise root addition.
 
-## 2. Triangle relations force point potentials
+## 3. Triangle relations force point potentials
 
-Fix a base point $0\in I$ and define
+Fix a base point `0∈I` and define
 
-$$
+\[
 p_0=0,
 \qquad
 p_a=r_{0a}\quad(a\ne0).
-$$
+\]
 
-### Lemma 2.1
+### Lemma 3.1
 
-For every distinct $a,b\in I$,
+For every distinct `a,b∈I`,
 
-$$
+\[
 \boxed{r_{ab}=p_a+p_b.}
-$$
+\]
 
 ### Proof
 
-Apply the triangle relation to $0,a,b$:
+Apply the triangle relation to `0,a,b`:
 
-$$
+\[
 r_{0a}+r_{ab}+r_{b0}=0.
-$$
+\]
 
-Since the edge is unordered, $r_{b0}=r_{0b}$, giving the formula. $\square$
+Since the edge is unordered, `r_{b0}=r_{0b}`, giving the formula. ∎
 
-Thus every additive root representation is a difference representation of $q$ point potentials.
+Thus every additive root representation is a difference representation of `q` point potentials.
 
-## 3. Sharp dimension lower bound
+## 4. Sharp dimension lower bound
 
-Let $B$ be the polar form of $Q$.
+Let `B` be the polar form of `Q`. For `a≠0`,
 
-For $a\ne0$,
-
-$$
+\[
 Q(p_a)=Q(r_{0a})=1.
-$$
+\]
 
-For distinct nonzero $a,b$,
+For distinct nonzero `a,b`,
 
-$$
+\[
 1=Q(r_{ab})=Q(p_a+p_b)
 =Q(p_a)+Q(p_b)+B(p_a,p_b)
 =B(p_a,p_b).
-$$
+\]
 
-Therefore the Gram matrix of the $q-1$ vectors $(p_a)_{a\ne0}$ is
+Therefore the Gram matrix of the `q-1` vectors `(p_a)_{a≠0}` is
 
-$$
+\[
 A=J+I,
-$$
+\]
 
 with zero diagonal and one in every off-diagonal entry.
 
-### Lemma 3.1 — rank of the off-diagonal matrix
+### Lemma 4.1 — rank of the off-diagonal matrix
 
-If $q$ is even, then $q-1$ is odd and
+If `q` is even, then
 
-$$
-\operatorname{rank}_{\mathbf F_2}(J+I)=q-2.
-$$
+\[
+\operatorname{rank}_{F_2}(J+I)=q-2.
+\]
 
 ### Proof
 
-Let $n=q-1$ and let $x\in\mathbf F_2^n$. Then
+Put `n=q-1`, which is odd. For `x∈F_2^n`,
 
-$$
+\[
 (J+I)x=(\sum_i x_i)\mathbf1+x.
-$$
+\]
 
-If this is zero, then $x=(\sum_i x_i)\mathbf1$. The zero vector is a solution. Since $n$ is odd, the all-one vector also satisfies the equation, and these are the only possibilities. Thus the kernel is one-dimensional and the rank is $n-1=q-2$. $\square$
+The kernel consists exactly of `0` and `1`, so it is one-dimensional and the rank is `n-1=q-2`. ∎
 
-### Theorem 3.2 — additive root dimension bound
+### Theorem 4.2 — additive root dimension bound
 
-For even $q$, every additive root representation of $K_q$ satisfies
+For even `q`, every additive root representation of `K_q` satisfies
 
-$$
-\boxed{\dim V\geq q-2.}
-$$
+\[
+\boxed{\dim V\ge q-2.}
+\]
 
 ### Proof
 
-The rank of the Gram matrix of vectors in $V$ cannot exceed $\dim V$. Lemma 3.1 gives Gram rank $q-2$. $\square$
+The rank of a Gram matrix of vectors in `V` cannot exceed `dim V`. Apply Lemma 4.1. ∎
 
-### Corollary 3.3 — impossibility of the claimed $2r$ hierarchy
+### Corollary 4.3 — impossibility of a universal `2r` tower
 
-For $q=2^r$, a $2r$-dimensional additive root representation can exist only if
+For `q=2^r`, a `2r`-dimensional additive root representation can exist only if
 
-$$
-2r\geq2^r-2.
-$$
+\[
+2r\ge2^r-2.
+\]
 
-This fails for every $r\geq4$; already
+This fails for every `r≥4`; already `8<14` when `r=4`. Hence no reformulation of the source-unreconstructed extrapolation can satisfy the required triangle-addition law in dimension `2r` for all ranks.
 
-$$
-8<14
-$$
+## 5. The correct deleted permutation module
 
-when $r=4$.
+Let `I` have even cardinality `q=2^r`, `r≥2`. In `F_2^I`, define
 
-Hence the recovered rank-free theorem is mathematically impossible, independent of its displayed formula.
-
-## 4. The correct deleted permutation module
-
-Let $I$ have even cardinality $q=2^r$ with $r\geq2$. In the permutation space $\mathbf F_2^I$, define the even-weight subspace
-
-$$
-E_I=
-\left\{z:\sum_{i\in I}z_i=0\right\}.
-$$
-
-The all-one word $\mathbf1_I$ belongs to $E_I$. Put
-
-$$
+\[
+E_I=\{z:\sum_{i∈I}z_i=0\},
+\qquad
 \overline E_I=E_I/\langle\mathbf1_I\rangle.
-$$
+\]
 
 Then
 
-$$
+\[
 \dim\overline E_I=q-2.
-$$
+\]
 
-For an even-weight representative $z$, define
+For an even-weight representative `z`, define
 
-$$
-q_I(z)=\frac{\operatorname{wt}(z)}2\pmod2.
-$$
+\[
+q_I([z])=\frac{\operatorname{wt}(z)}2\pmod2.
+\]
 
-### Lemma 4.1 — descent of the quadratic form
+### Lemma 5.1 — descent
 
-The function $q_I$ descends to a well-defined quadratic form on $\overline E_I$.
+The function `q_I` is a well-defined quadratic form on `\overline E_I`.
 
 ### Proof
 
-The polar form on $E_I$ is the standard dot product. The all-one word lies in its radical because every $z\in E_I$ has even weight.
+The all-one word lies in the radical of the dot product on `E_I`. Replacing `z` by `z+1_I` complements its support, and
 
-Replacing $z$ by $z+\mathbf1_I$ complements its support, so
-
-$$
+\[
 q_I(z+\mathbf1_I)-q_I(z)
-=\frac q2-\operatorname{wt}(z)\pmod2.
-$$
+=\frac q2-\operatorname{wt}(z)\pmod2=0
+\]
 
-Here $q/2=2^{r-1}$ is even for $r\geq2$, and $\operatorname{wt}(z)$ is even. Thus the difference is zero. $\square$
+because `q/2` and `wt(z)` are even for `r≥2`. ∎
 
-### Proposition 4.2 — canonical complete-graph roots
+### Proposition 5.2 — canonical complete-graph roots
 
-For distinct $a,b\in I$, let
+For distinct `a,b∈I`, put
 
-$$
-\rho_{ab}=[\varepsilon_a+\varepsilon_b]
-\in\overline E_I.
-$$
+\[
+\rho_{ab}=[\varepsilon_a+\varepsilon_b]\in\overline E_I.
+\]
 
 Then:
 
-1. $q_I(\rho_{ab})=1$;
-2. for distinct $a,b,c$,
-   $$
-   \rho_{ab}+\rho_{bc}+\rho_{ca}=0;
-   $$
-3. the roots span $\overline E_I$;
-4. the dimension $q-2$ attains Theorem 3.2's lower bound.
+1. `q_I(ρ_{ab})=1`;
+2. `ρ_{ab}+ρ_{bc}+ρ_{ca}=0` for distinct `a,b,c`;
+3. the roots span `\overline E_I`;
+4. the dimension `q-2` attains Theorem 4.2's lower bound.
 
 ### Proof
 
-The representative has weight two, proving anisotropy. The triangle sum cancels every coordinate twice. Differences of basis vectors span the even-weight space, and quotienting by $\mathbf1_I$ gives the stated span. $\square$
+The representative has weight two, giving anisotropy. The triangle sum cancels every coordinate twice. Basis differences span the even-weight subspace, and quotienting by `1_I` gives the claimed span. ∎
 
-This is the correct universal additive root module for the complete graph on $2^r$ support indices.
+This is the correct universal additive root module for the complete graph on `2^r` support indices.
 
-## 5. Exceptional rank three
+## 6. Exceptional rank three and five supports
 
-When $q=8$,
+For `q=8`,
 
-$$
+\[
 \dim\overline E_I=6=2r.
-$$
+\]
 
-The quadratic space is the familiar plus-type six-space $O^+(6,2)$. It has exactly twenty-eight anisotropic vectors, equal to
-
-$$
-\binom82=28,
-$$
-
-so the complete-graph roots exhaust the anisotropic orbit. This is the exceptional orthogonal realization used by the eight-support AffineCDC core.
-
-When $q=16$, the correct additive module has dimension fourteen, not eight. The root set has $120$ elements but no eight-dimensional quadratic space can carry it with the triangle-addition law.
-
-Thus the valid hierarchy is:
-
-$$
-\text{rank-three eight supports}
-\longleftrightarrow
-O^+(6,2)\text{ anisotropic roots},
-$$
-
-not
-
-$$
-2^r\text{ supports}
-\longleftrightarrow
-O^+(2r,2)\text{ anisotropic roots}
-$$
-
-for arbitrary $r$.
-
-## 6. Relation to the five-support target
+The quadratic space is the plus-type six-space `O^+(6,2)`, and its twenty-eight anisotropic vectors are exactly the twenty-eight complete-graph roots. This is the exact rank-three/eight-support model proved by the historical packet.
 
 For five support indices, the even-weight space
 
-$$
-H_5=\{z\in\mathbf F_2^5:\sum z_i=0\}
-$$
+\[
+H_5=\{z∈F_2^5:\sum z_i=0\}
+\]
 
-already has dimension four because the all-one word has odd weight and does not lie in it. Its ten weight-two roots exhaust the anisotropic orbit of $O^-(4,2)$. This is the B2.1 five-support mother space.
+has dimension four. Its ten weight-two roots are the anisotropic orbit of `O^-(4,2)`. The five-support problem is therefore the exceptional orthogonal reduction
 
-The eight-to-five problem is therefore the exceptional orthogonal reduction
-
-$$
+\[
 O^+(6,2)\text{ root flow}
 \rightsquigarrow
-O^-(4,2)\text{ root flow}.
-$$
+O^-(4,2)\text{ root flow},
+\]
 
-It is not the first step of a universal $O^+(2r,2)$ tower.
+not the first step of a universal `O^+(2r,2)` tower.
 
-## 7. What remains valid from the affected packet
+## 7. Restored provenance of the named packet
 
-The packet's broad conceptual lesson remains useful in corrected form:
+The packet `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` must be retained as a valid theorem-level historical source in its exact scope:
 
-- support pairs are naturally root vectors;
-- local triangle compatibility is additive root conservation;
-- orthogonal geometry organizes the exceptional eight- and five-support targets;
-- quotient and residue constructions can reduce rank when their kernel and lift data are explicit.
+1. `H_8`, the Hamming kernel, moment map, and six-dimensional quotient;
+2. rank-three AffineCDC root-lift equivalence;
+3. the `O^+(6,2)` anisotropic complete-root realization;
+4. five-coordinate `O^-(4,2)` slices and their singular extensions;
+5. omitted-triple anisotropic-plane orthogonality;
+6. the exact eight-to-five orthogonal compression formulation.
 
-The following claims must be withdrawn or rewritten:
+It must **not** be classified in toto as `FALSE THEOREM / HISTORICAL ONLY`, and its valid conclusions must not be prohibited from citation.
 
-1. the type-incorrect formula $d_h(a)=([a],\operatorname{ev}_a)$;
-2. the canonical $2r$-dimensional universal construction;
-3. the rank-free automatic affine compatibility theorem based on that construction;
-4. the assertion that the rank-three core is merely the first case of this $2r$ hierarchy.
+The separate source-unreconstructed extrapolation is classified as mathematically false by Theorem 4.2 and Proposition 5.2. These two classifications must remain separate.
 
-Any separate rank-reduction theorem in a genuine orthogonal space must be re-audited independently; it cannot cite the false universal construction as its parent.
+## 8. Corrected consequences for the proof DAG
 
-## 8. Consequences for the active proof DAG
+- B2.3 remains complete as a mathematical correction.
+- The `q-2` lower bound and deleted permutation module remain controlling and unchanged.
+- The named historical packet is restored as valid rank-three/eight-support and five-slice provenance.
+- No committed parent theorem for the arbitrary-rank tower is asserted.
+- The genuine all-rank transgression/residue hierarchy remains valid in its own support-polynomial and stress-residue scope.
+- Any hoped-for higher-rank small-dimensional complete-root model is a new research question.
+- The global five-support theorem remains open and no B9 frontier obligation changes.
 
-- B2.3 is closed as a correction unit, not as confirmation of the integrated hierarchy.
-- The valid rank-three $O^+(6,2)$ and rank-four $O^-(4,2)$ targets remain intact.
-- B2's remaining orthogonal work must concern the specific exceptional reduction $6\to4$, singular quotients, residues, and retained lift data.
-- No new mathematical invention is required to repair the false universal claim; the correct lower bound and permutation module are now proved.
-- Any hoped-for higher-rank small-dimensional analogue is a new research question and must not be treated as an existing theorem.
+## 9. Required Curator propagation repair
 
-## 9. Curator correction requirement
+A replacement candidate must correct every propagated statement that:
 
-Before Programme B orthogonal material is promoted:
+1. attributes `Γ⊕Γ*`, `d_h(a)=([a],ev_a)`, or a universal `O^+(2r,2)` tower to the named packet;
+2. classifies that packet in toto as false, superseded, or history-only;
+3. suppresses its valid rank-three/eight-support or five-slice source role;
+4. presents the exhaustive seventy-eight-packet disposition as source-faithful while retaining that misclassification;
+5. computes the source-class partition from the misclassified packet.
 
-1. remove the universal $\Gamma\oplus\Gamma^*$ theorem from the active theorem layer;
-2. replace it with the deleted permutation module and dimension lower bound;
-3. mark rank three as exceptional;
-4. reclassify later orthogonal-rank-reduction packets by their actual fixed dimension and hypotheses;
-5. preserve the affected packet only as historical provenance with a superseded/false-theorem warning.
+The complete propagation matrix and exact destination list are supplied in `AC_PD_B2_3_SOURCE_FIDELITY_REPAIR.md` and the dedicated Curator handoff.
 
 ## 10. Completion assessment
 
-`AC-PD-B2.3` is `COMPLETE-DRAFT / MATHEMATICAL-CORRECTION`. The next active unit is B2.4: audit the stress and Fourier duals as solvability criteria for fixed root-lift equations, proving their equivalence to the primal obstruction while determining exactly which transforms preserve the full witness and which retain only obstruction data.
+`AC-PD-B2.3` is
+
+`COMPLETE-DRAFT / MATHEMATICAL-CORRECTION / SOURCE-FIDELITY-REPAIRED`.
+
+The repair changes provenance and supersession classification only. It does not modify the fixed candidate, audit branch, Curator branch, `main`, public issue #2, Lean, manuscript, release, publication, arXiv, DOI, tag, or Research Lead surfaces.
