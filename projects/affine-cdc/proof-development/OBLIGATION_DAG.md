@@ -4,7 +4,7 @@
 **Standing issue:** `Yuren-Tang/research-workbench#37`  
 **Owned branch:** `proof-development/affine-cdc-rigour-v1`  
 **Exact initial baseline:** `main@960c92b7ff231c78b387894149779083060a75eb`  
-**Programme state:** persistent; Programme A is `READY-FOR-CURATOR / AUDIT-A-REPAIRED`; B1, B3–B7 are `READY-FOR-CURATOR`; B2/B8 are `READY-FOR-CURATOR / SOURCE-FIDELITY-REPAIRED`; B9 is `BLOCKED-FRONTIER / CORRECTED-ASSEMBLY`
+**Programme state:** persistent; Programme A is `READY-FOR-CURATOR / AUDIT-A-REPAIRED`; B1, B3–B7 are `READY-FOR-CURATOR`; B2/B8 are `READY-FOR-CURATOR / SOURCE-FIDELITY-REPAIRED`; B9 is `BLOCKED-FRONTIER / CORRECTED-ASSEMBLY`; OR1 is `READY-FOR-CURATOR / FIXED-FIBRE CLASSIFICATION COMPLETE / GLOBAL OPEN`
 
 ## 1. Completed checkpoints
 
@@ -21,6 +21,7 @@
 | `B6` | `READY-FOR-CURATOR / CORRECTION / AC-RL-GAPS` | `404f7511f16d1225e066a91842a57e2084943c72` | individual holonomy, Tait escape, DDD atoms; BBD corrections |
 | `B7` | `READY-FOR-CURATOR / AC-RL-GAPS / GLOBAL-OPEN` | `164f7655f9ec7c0e0a73d49303cf66230fb26487` | route-lock rank, curvature, exact localisation gaps |
 | `B8` | `READY-FOR-CURATOR / ASSURANCE-NORMALIZED` | `989cb002598fd91786029be201c2747c697bb476` | finite-certificate and code/reproducibility ledger, controlled by later source-fidelity addendum |
+| `OR1` | `READY-FOR-CURATOR / COUNTEREXAMPLE / GLOBAL-OPEN` | `9dc0b3a5c906e51f8f1816e00b85f7aa2a744b1b` | cycle-face reconstruction; fixed-lift orientation class; gauge law; fixed-fibre quotient and duality; exact `K_4`; enriched oriented collapse |
 
 ## 2. Programme A Audit A repair epoch
 
@@ -55,7 +56,7 @@ Controlling files:
 
 Exact conclusions:
 
-1. no committed source was recovered for the arbitrary-rank `Γ⊕Γ* / d_h(a) / O^+(2r,2)` tower;
+1. no committed source was recovered for the arbitrary-rank `Gamma+Gamma* / d_h(a) / O^+(2r,2)` tower;
 2. it is classified as `SOURCE-UNRECONSTRUCTED / INFERRED-EXTRAPOLATION OR UNCOMMITTED DRAFT`;
 3. the sharp `q-2` theorem and deleted permutation module remain unchanged;
 4. `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` is restored as valid rank-three/eight-support `O^+(6,2)` and five-slice `O^-(4,2)` provenance;
@@ -66,7 +67,54 @@ Exact conclusions:
 
 This is not a new-mathematics or global-frontier repair. B1, B3–B7, B9 and Programme A are unchanged.
 
-## 4. B9 corrected assembly
+## 4. OR1 orientation-obstruction epoch
+
+The AC-DIR priority insert in issue #37 comment `5049496439` was consumed at the safe proof-unit boundary
+
+`9ce8de5ca5b7b41e139be4c94572de7725446046`.
+
+AC-PDL selected direct execution because the branch was exactly at the previous coherent handoff with no moving proof unit. No child worker or branch was created.
+
+The authorial mathematical checkpoint is
+
+`9dc0b3a5c906e51f8f1816e00b85f7aa2a744b1b`.
+
+Controlling files:
+
+- `AC_PD_OR1_1_SURFACE_AND_ORIENTATION_CLASS.md`;
+- `AC_PD_OR1_2_GAUGE_FIBRE_AND_DUALITY.md`;
+- `AC_PD_OR1_3_K4_AND_OUTER_SHELL_TRANSPORT.md`;
+- `AC_PD_OR1_ORIENTATION_OBSTRUCTION_MAP.md`.
+
+Exact closed results:
+
+1. checked dart/support/rotation data reconstruct the indexed cycle-face surface;
+2. a fixed lift has an intrinsic class
+   \[
+   omega(g)=[w(g)]\in C^1(G)/Cut(G),
+   \]
+   vanishing exactly for an orientable surface and an oriented face CDC;
+3. gauge translation obeys
+   \[
+   w(g^k)=w(g)+Lambda_f(k)
+   \]
+   for transported local orientations;
+4. the base-independent fixed-fibre obstruction is
+   \[
+   Omega_f\in C^1(G)/(Cut(G)+B_f);
+   \]
+5. orientable labelled lifts form the empty set or one coset of `ker Lambda_or`;
+6. orientable-lift existence has the exact dual criterion against
+   \[
+   Stress_or(f)=Z_1(G)\cap B_f^perp;
+   \]
+7. the explicit `K_4` fibre contains both a projective-plane lift and a tetrahedral-sphere lift, refuting per-lift automaticity;
+8. the current support-only outer shell loses orientation data, but an enriched projection of directed face occurrences through collapse followed by direction-preserving trail decomposition yields an oriented CDC downstairs;
+9. singleton loops may be reinserted in two opposite dart directions under the stated multigraph convention.
+
+Issue #49 remains a triggering audit source, not accepted mathematics. OR1 is authorial and neither independently audited nor Lean-formalized end to end.
+
+## 5. B9 corrected assembly
 
 `AC-PD-B9` remains
 
@@ -82,7 +130,7 @@ It proves the five-support outer reduction
 
 Loops can be inserted into two fixed support occurrences; port-cycle collapse preserves all five indexed supports and exact edge multiplicity. It does **not** prove the cubic five-support theorem.
 
-## 5. Exact unresolved obligations
+## 6. Exact unresolved five-support obligations
 
 1. `AC-RL-BBD-GROUPOID-CLOSURE`;
 2. `AC-RL-BBD-VARIATION-SLICE`;
@@ -91,18 +139,35 @@ Loops can be inserted into two fixed support occurrences; port-cycle collapse pr
 5. `AC-RL-COMMON-CUT-LOCALISATION`;
 6. `AC-RL-TYPE-H-COMMON-WITNESS`.
 
-The first two concern the corrected BBD route. The last four concern the corrected DDD/four-pole source-localisation route. Finite certificates and the B2/B8 source repair close none of them.
+The first two concern the corrected BBD route. The last four concern the corrected DDD/four-pole source-localisation route. OR1 closes none of them.
 
-## 6. Minimal sufficient future packages
+## 7. Exact unresolved orientation obligations
 
-Either of the following would close the global strengthening.
+### `AC-RL-OR-FIXED-FIBRE-VANISHING`
+
+Determine whether `Omega_f=0` for every nowhere-zero rank-three flow on every finite bridgeless cubic multigraph, or construct an exact fixed-fibre counterexample.
+
+### `AC-RL-OR-GRAPH-EXISTENCE`
+
+If fixed-fibre vanishing fails, determine whether every finite bridgeless cubic multigraph admits some rank-three flow `f` with `Omega_f=0`.
+
+These are genuine new-mathematics questions. OR1 proves the obstruction theory, not either universal vanishing statement.
+
+## 8. Minimal sufficient future packages
+
+For five supports, either of the following would close the global strengthening.
 
 - **Escape:** every bridgeless cubic graph has some Fano flow/root lift with full dual mapping to `A_5`.
 - **Decomposition:** every persistent bad cubic state yields a strictly smaller labelled interface decomposition whose profiles glue.
 
-A mixed escape/decomposition theorem also suffices.
+For oriented CDC through the AffineCDC route, it is sufficient to prove:
 
-## 7. Persistent-role state
+- every cubic expansion admits a flow `f` with `Omega_f=0`; or
+- the stronger fixed-fibre theorem `Omega_f=0` for every `f`.
+
+The enriched oriented-collapse theorem then supplies the outer transport.
+
+## 9. Persistent-role state
 
 AC-PDL remains active for:
 
@@ -111,4 +176,4 @@ AC-PDL remains active for:
 - theorem-DAG maintenance;
 - new mature proof checkpoints.
 
-Without such input, B9 remains blocked rather than declared complete or abandoned.
+Without such input, B9 and the two orientation existence questions remain open rather than declared complete or abandoned.
