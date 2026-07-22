@@ -51,7 +51,7 @@ F^+ = \{s,y\},
 
 so they are adjacent in the line graph `L(P)` and share the Petersen vertex `s`.
 
-The vertex `s` has exactly three Petersen neighbours. Write `z` for the third neighbour distinct from `x,y`. The Petersen transport theorem identifies `z` with the side-root emitted at this turn.
+The vertex `s` has exactly three Petersen neighbours. Write `z` for the third neighbour distinct from `x,y`. The Petersen transport theorem identifies `z` with the side root emitted at this turn.
 
 ### Definition 1.1 — transition pivot
 
@@ -304,7 +304,7 @@ The edges of this walk are exactly the DDD switch states.
 
 A pivot-skeleton segment with no repeated pivot has at most ten pivot vertices and at most nine DDD switch states.
 
-If a pivot repeats, the intervening coefficient obstruction contains a closed Petersen subwalk. Choosing a shortest repeated-pivot segment localises the coefficient skeleton to a simple Petersen cycle of bounded size.
+If a pivot repeats, the intervening coefficient obstruction contains a closed Petersen walk of length at most ten after choosing a shortest repeated-pivot segment. Such a shortest closed walk has no repeated internal pivot; it is either an immediate backtrack along one Petersen edge or a simple Petersen cycle.
 
 This bound concerns the coefficient skeleton only. External attached components may still carry unbounded graph-side semantics.
 
