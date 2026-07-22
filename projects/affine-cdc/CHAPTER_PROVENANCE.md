@@ -23,8 +23,9 @@ B3–B8 dossiers remain exact at:
 
 OR1:
 
-- authorial checkpoint `9dc0b3a5c906e51f8f1816e00b85f7aa2a744b1b`;
+- authorial mathematical checkpoint `9dc0b3a5c906e51f8f1816e00b85f7aa2a744b1b`;
 - DAG registration metadata `29657f08253df87baa37ad09c88cce25904c189a`;
+- finalized Curator handoff packaging `9cb286bf53459d32b629d3532387ec322745fae6`;
 - checked Lean reconstruction boundary `Yuren-Tang/affine-cdc@ebd7098a7a8b824e8c0a511d3c71f61705672aa8`.
 
 A source name records provenance, not automatically current theorem or assurance status.
@@ -99,7 +100,18 @@ Controls:
 - `THEOREM_DEPENDENCY_MAP.md`;
 - `FRONTIER_STATUS.md`.
 
-The packet-named `PROGRAMME_OR1_CURATOR_HANDOFF.md` does not exist at either exact OR1 ref. The four dossiers and DAG registration provide a complete recoverable handoff. The missing file is recorded as `AC-PDL-OR1-HANDOFF-FILE-MISSING / PACKAGING DEFECT / NON-BLOCKING`.
+`PROGRAMME_OR1_CURATOR_HANDOFF.md` is retained at exact packaging commit `9cb286bf53459d32b629d3532387ec322745fae6`. It confirms:
+
+- the authorial checkpoint `9dc0b3a...`;
+- DAG registration `29657f...`;
+- the four included OR1 dossiers;
+- the exact accepted theorem package;
+- two Research Lead obligations;
+- recommended Curator destinations;
+- eight success-test distinctions;
+- exclusions and assurance discipline.
+
+It is a handoff/control record, not a new theorem source.
 
 ## 5. OR1 assurance provenance
 
@@ -136,4 +148,4 @@ The packet-named `PROGRAMME_OR1_CURATOR_HANDOFF.md` does not exist at either exa
 
 ## 11. Historical recovery and exclusions
 
-Retired research packets remain recoverable through ordinary Git ancestry. B9, unrelated PDL source-fidelity deltas, later DAG/handoffs beyond the named registration, and AC-RL working-ahead commits are not part of this candidate.
+Retired research packets remain recoverable through ordinary Git ancestry. B9, unrelated PDL source-fidelity deltas, PDL work after the finalized OR1 handoff, and AC-RL working-ahead commits are not part of this candidate.
