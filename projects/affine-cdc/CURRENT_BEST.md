@@ -1,22 +1,20 @@
 # AffineCDC current mathematical state
 
-## 1. Unified construction
+## 1. Current integrated candidate
 
-Current unified candidate branch:
+Current candidate branch:
 
-`curation/affine-cdc-programme-a-b1-b8-unified-v1`.
+`curation/affine-cdc-orientation-obstruction-v1`.
 
-It is based exactly on the accepted B1–B8 candidate
+Exact base:
 
-`0100895d57aab7d21153c580fa9bdc45fafc832e`
+`curation/affine-cdc-programme-a-b1-b8-unified-v1@ec765cd03271abd3588ec36faec3d53d0f8aa03b`.
 
-and the Programme A repair checkpoint
+OR1 source:
 
-`06bce656dcf5bfd6491ec08f51a702ea56d2470d`.
+`proof-development/affine-cdc-rigour-v1@9dc0b3a5c906e51f8f1816e00b85f7aa2a744b1b`.
 
-The exact repair source splice is
-
-`a35da6ba6e4908c70f970f3cadf5fcf4b582dae4`.
+The candidate preserves Programme A and B1--B8 and adds the orientation-obstruction layer only.
 
 ## 2. Complete CDC line
 
@@ -28,7 +26,7 @@ The original candidate `68715fb29bb4b6555e2bc3e089603c5390d01566` passed Indepen
 
 `VERIFIED SUBJECT TO NAMED EXTERNAL THEOREMS / NON-BLOCKING EXPLICITNESS REPAIRS`.
 
-The three explicitness repairs are now closed and integrated:
+The three explicitness repairs are closed and integrated:
 
 1. exact Seymour loopless-multigraph convention, parallel edges permitted, componentwise assembly explicit;
 2. complete A4 reverse local-family reconstruction;
@@ -36,90 +34,119 @@ The three explicitness repairs are now closed and integrated:
 
 They change no theorem or dependency. Seymour remains the sole non-elementary external logical input. The repaired prose has not been separately re-audited.
 
-## 3. Five-support object and witness hierarchy
+## 3. Orientation refinement of compatible lifts
+
+For a finite loopless cubic multigraph $G$, a nowhere-zero rank-three flow $f$, and one compatible labelled lift $g$:
+
+1. the retained indexed support occurrences together with $\operatorname{partner}$, $\sigma$, and $\rho$ reconstruct a closed cellular cycle-face surface $S_g$;
+2. choosing vertex-disc orientations gives $w(g)\in C^1(G)$, well defined modulo cuts;
+3. the fixed-lift class is
+   $$
+   \omega(g)=[w(g)]\in C^1(G)/\operatorname{Cut}(G);
+   $$
+4. $S_g$ is orientable exactly when $\omega(g)=0$, equivalently when the retained face occurrences traverse every edge once in each direction.
+
+This criterion uses retained face occurrences, not a generic decomposition of the underlying supports.
+
+## 4. Fixed-flow fibre classification
+
+The compatible labelled lifts above fixed $f$ form a torsor under $H_f^0$. The gauge map
+
+$$
+\Lambda_f:H_f^0\to C^1(G)
+$$
+
+has image $\mathcal B_f$ and obeys
+
+$$
+w(g^k)=w(g)+\Lambda_f(k)
+$$
+
+for transported local orientations.
+
+The base-independent fibre obstruction is
+
+$$
+\Omega_f\in C^1(G)/(\operatorname{Cut}(G)+\mathcal B_f).
+$$
+
+The fibre contains an orientable lift exactly when $\Omega_f=0$.
+
+- labelled orientable lifts are empty or one coset of $\ker\Lambda_{\mathrm{or}}$;
+- unlabelled orientable Petrial words are empty or one coset of $\mathcal B_f\cap\operatorname{Cut}(G)$.
+
+These are different quotients. Likewise, $\omega(g)$ and $\Omega_f$ are different obstruction classes.
+
+The dual orientation stress is
+
+$$
+\operatorname{Stress}_{\mathrm{or}}(f)
+=Z_1(G)\cap\mathcal B_f^\perp.
+$$
+
+It tests orientability within an already compatible fibre and is not the Programme A compatibility stress.
+
+## 5. Exact $K_4$ boundary
+
+For the standard $K_4$ Fano flow, one compatible lift has three Hamiltonian four-cycle faces and gives the projective plane; another lift in the same fixed-flow fibre has four triangular faces and gives the tetrahedral sphere.
+
+Therefore:
+
+- per-lift automatic orientability is false;
+- the gauge action genuinely changes $\omega(g)$;
+- this example is not a fixed-fibre counterexample, because the sphere lift shows $\Omega_f=0$.
+
+## 6. Oriented outer-shell transport
+
+The existing Programme A support-only collapse retains cut parity and exact multiplicity but discards directed face occurrences, partner maps, and rotations before generic undirected decomposition. It proves no oriented witness.
+
+An enriched route does hold:
+
+```text
+oriented retained face circuits upstairs
+→ project lifted directed edges through collapse
+→ directed closed trails downstairs
+→ direction-preserving trail decomposition
+→ oriented CDC downstairs.
+```
+
+Deleted loops are reinserted as two singleton loop occurrences in opposite dart directions.
+
+The unresolved theorem is orientable-lift existence, not collapse transport.
+
+## 7. Five-support object and witness hierarchy
 
 For finite loopless cubic multigraphs, five indexed even supports are equivalent to root flows, $K_5$ triangle labellings, exact matching/four-flow data, existential Fano-flow/plane data, existential cycle-face surfaces with a full-dual map to $\mathscr A_5$, anisotropic $O^-(4,2)$ flows, quadratic cycle solutions, and cographic cycle-continuous edge maps.
 
 Singular/Schur formulations are fixed-data criteria. Stress/Fourier are dual solvability/counting layers. The false universal $2r$ orthogonal theorem remains superseded by the $q-2$ deleted-permutation-module theorem.
 
-## 4. B3 target layer
+## 8. B3--B8 retained state
 
-The active hierarchy is
+- B3 retains the full-dual/factorable hierarchy, exact target links, capacity, eight-vertex factorable classification, unused-matching/core theory, and conditional flower obstruction. The correct all-parallel matching is $\{01,23,45\}$.
+- B4 retains the $H_f^0$ torsor, gauge/Petrial motion, connected/composite switch distinction, support pivots, and new-fibre recomputation.
+- B5 retains cubic local law, three-cut gluing, ten four-pole states, profile intersection, cap forcing, pairing alignment, routing weights, and uniform-routing elimination.
+- B6 retains individual holonomy, root-fibre/Tait, Type H soluble escape, and DDD atom theorems. BBD common origin is conditional on `AC-RL-BBD-GROUPOID-CLOSURE`; the nontrivial defect forest is removed pending `AC-RL-BBD-VARIATION-SLICE`.
+- B7 retains rank-one impossibility, rank-two Tait escape, and the full-rank flat/nonflat curvature dichotomy. Source localization and composition remain open.
+- B8 retains the finite assurance classes without upgrading audit or reproducibility.
 
-$$
-J_g\to\mathscr A_5
-\Longrightarrow
-T_g^{(1)}\to\mathscr A_5
-\Longrightarrow
-\text{five-support cover}.
-$$
+## 9. Exact open obligations
 
-$J_g$ is only the old-colour-factorable quotient. B3 retains the exact common-link and capacity theorems, eight-vertex factorable classification, unused-matching/core theory, and conditional flower full-dual obstruction.
+### Five-support frontier
 
-The correct all-parallel matching representative is $\{01,23,45\}$; orbit sizes $28,168,224$ are unchanged.
-
-## 5. B4 motion layer
-
-- fixed-flow lifts form an $H_f^0$ torsor;
-- the reduced gauge code is $H_f^0/\Gamma^{\pi_0(G)}$;
-- gauge bits are accessible partial Petrials;
-- one horizontal edge is one connected-cycle switch;
-- disconnected cycle words give commuting paths;
-- a support pivot supplies one explicit lift and preserves the uncoloured embedding;
-- the new fibre must be recomputed;
-- internal correction is a composite fixed-quotient linear problem;
-- external correction is quotient reslicing.
-
-The `7737` composite-endpoint and `2801` connected-neighbour populations remain distinct.
-
-## 6. B5 interface layer
-
-Theorem-level: cubic local law, cyclic three-cut gluing, ten four-pole states and `640` ordered assignments, exact profile-intersection gluing, cap forcing, Kempe path-pairing alignment, routing weights, and uniform-routing elimination.
-
-Open: full-cap containment, residual-kernel realization/elimination, Type T serialization, and Type H common-witness/composition.
-
-## 7. B6 correction and retained theorems
-
-Retained unconditionally:
-
-- individual-loop holonomy and cyclic norm;
-- genuine path-family switch flow;
-- root-fibre section problem;
-- root lifting iff Tait resolution;
-- Type H soluble zero-norm escape;
-- DDD atom triality and unique bad route;
-- local $K_6$/Petersen geometry when a defect strip is independently supplied.
-
-Corrected:
-
-- BBD simultaneous common origin is conditional on `AC-RL-BBD-GROUPOID-CLOSURE`;
-- the nontrivial defect-minimal forest is removed pending `AC-RL-BBD-VARIATION-SLICE`.
-
-## 8. B7 rank and curvature
-
-- rank one is impossible;
-- rank two is a Tait/root-triangle escape;
-- full rank has an exact flat/nonflat curvature dichotomy;
-- flatness gives an eight-state affine potential;
-- nonflatness gives a common scalar-sheet cut with odd terminal parity.
-
-The scalar-sheet cut is not yet a source graph cut, and the potential is not yet a bounded interface.
-
-The remaining four localization returns are:
-
+- `AC-RL-BBD-GROUPOID-CLOSURE`;
+- `AC-RL-BBD-VARIATION-SLICE`;
 - `AC-RL-TYPE-T-SERIALISATION`;
 - `AC-RL-FLAT-POTENTIAL-INTERFACE`;
 - `AC-RL-COMMON-CUT-LOCALISATION`;
 - `AC-RL-TYPE-H-COMMON-WITNESS`.
 
-Together with the two BBD gaps, six exact obligations control the frontier.
+### Orientation frontier
 
-## 9. B8 assurance
+- `AC-RL-OR-FIXED-FIBRE-VANISHING`;
+- `AC-RL-OR-GRAPH-EXISTENCE`.
 
-Finite claims remain classified as `F-PROVED`, `F-CERT-PUBLIC`, `F-CERT-PRIVATE`, `F-CENSUS`, `CODE-PARTIAL`, or `AFFECTED`. B8 is assurance normalization, not independent review or a reproducibility upgrade.
+The two frontiers are distinct. The global five-support theorem and global oriented-existence theorem remain open.
 
-## 10. Global status
+## 10. Assurance
 
-The global five-support theorem remains open. B9 and AC-RL working-ahead material are not consumed by this unified candidate.
-
-Programme A has passed Audit A; B1–B8 have not yet received held Audit B. No end-to-end Lean, manuscript, publication, release, arXiv, DOI, novelty, or timestamp status is created.
+Programme A's original theorem spine passed Audit A; its repairs are integrated but not separately re-audited. B1--B8 remain pending dedicated Audit B. OR1 is an authorial proof package integrated by the Curator and ready for an independent fixed-corpus audit. The Lean checkpoint verifies retained dart/rotation ingredients and support-level extraction only, not the obstruction theory or enriched oriented collapse. No manuscript, publication, release, arXiv, DOI, novelty, timestamp, or canonical `main` status is created.
