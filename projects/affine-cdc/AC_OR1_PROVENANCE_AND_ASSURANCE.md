@@ -6,7 +6,7 @@
 
 `curation/affine-cdc-programme-a-b1-b8-unified-v1@ec765cd03271abd3588ec36faec3d53d0f8aa03b`.
 
-### Authorial proof-development source
+### Authorial mathematical checkpoint
 
 `proof-development/affine-cdc-rigour-v1@9dc0b3a5c906e51f8f1816e00b85f7aa2a744b1b`.
 
@@ -20,6 +20,14 @@ Controlling OR1 files:
 ### Dependency registration
 
 `29657f08253df87baa37ad09c88cce25904c189a` changes the PDL obligation DAG after the mathematical checkpoint. It is consumed only as dependency/frontier metadata.
+
+### Finalized Curator handoff
+
+`proof-development/affine-cdc-rigour-v1@9cb286bf53459d32b629d3532387ec322745fae6` adds
+
+`projects/affine-cdc/proof-development/PROGRAMME_OR1_CURATOR_HANDOFF.md`.
+
+This packaging commit confirms the included files, accepted theorem package, two exact Research Lead obligations, recommended destinations, eight Curator success tests, and exclusions. It introduces no mathematical theorem beyond `9dc0b3a...`.
 
 ### Checked reconstruction boundary
 
@@ -37,7 +45,7 @@ Issue #49 is retained only as the trigger that caused AC-PDL to reconstruct the 
 | $\Lambda_f$, gauge law, $\Omega_f$, torsor/coset, orientation stress | `orientation/fixed-fibre-gauge-and-duality.md` |
 | exact $K_4$, support-only loss, enriched collapse, loops | `orientation/k4-and-oriented-collapse.md` |
 | dependency and open frontier | `AC_OR1_DEPENDENCY_AND_FRONTIER_MAP.md` |
-| source intake and TeX correction | `AC_OR1_INTEGRATION_MAP.md` |
+| source intake, handoff and TeX correction | `AC_OR1_INTEGRATION_MAP.md` |
 
 ## 3. Assurance classes
 
@@ -96,11 +104,9 @@ The $K_4$ result is a direct finite proof, not a code census:
 
 It refutes only per-lift automaticity. Since $g_1$ is orientable, the same example proves $\Omega_f=0$ rather than nonvanishing.
 
-## 5. Source/rendering defect
+## 5. Source/rendering boundary
 
-The named `PROGRAMME_OR1_CURATOR_HANDOFF.md` file is absent from the exact mathematical checkpoint and DAG registration ref. The complete epoch remains recoverable from the four dossiers and registration diff.
-
-This is returned to AC-PDL as a non-blocking packaging defect.
+The finalized handoff is a packaging/control surface downstream of the mathematical checkpoint and DAG registration. It is consumed as explicitly requested and does not authorize later moving PDL work.
 
 The malformed control character in PDL OR1.2 Corollary 5.1 is corrected in the canonical successor. It changes no mathematical statement.
 
