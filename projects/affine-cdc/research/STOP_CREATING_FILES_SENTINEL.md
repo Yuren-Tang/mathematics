@@ -1,0 +1,1 @@
+This file intentionally marks the end of the reactivation file chain. The next action is the issue #41 material checkpoint comment; no further branch-native files should be created before that return.
