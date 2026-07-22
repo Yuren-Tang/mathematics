@@ -2,99 +2,85 @@
 
 ## 1. Unified recovery authority
 
-Programme A:
+Programme A sources and assurance remain:
 
-- immutable A0–A10 source `8bee16780b549f51e1f29343671a059961ec4172`;
-- original Curator candidate `68715fb29bb4b6555e2bc3e089603c5390d01566`;
+- A0–A10 source `8bee16780b549f51e1f29343671a059961ec4172`;
+- original candidate `68715fb29bb4b6555e2bc3e089603c5390d01566`;
 - Independent Audit A `2fac31f4e76c819dd42a179a2772501c50ee93ad`;
-- immutable repair checkpoint `06bce656dcf5bfd6491ec08f51a702ea56d2470d`;
-- exact repair dossier `proof-development/AC_PD_A_AUDIT_A_EXPLICITNESS_REPAIRS.md`.
+- explicitness-repair checkpoint `06bce656dcf5bfd6491ec08f51a702ea56d2470d`.
 
 Five-support historical packets remain recoverable from
 
 `research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`.
 
-B3–B8 dossiers remain exact at:
+The B2/B8 source-fidelity repair is
 
-- B3 `d806168bb579dbc13f267f44f631e07de909b706`;
-- B4 `345074690b7a8658c1208ae84f10d709f8b74bcf`;
-- B5 `274970ef9c56cafdbfceeed3c0cc08238d3dfd40`;
-- B6 `404f7511f16d1225e066a91842a57e2084943c72`;
-- B7 `164f7655f9ec7c0e0a73d49303cf66230fb26487`;
-- B8 `989cb002598fd91786029be201c2747c697bb476`.
+`proof-development/affine-cdc-rigour-v1@9ce8de5ca5b7b41e139be4c94572de7725446046`.
 
 A source name records provenance, not automatically current theorem or assurance status.
 
 ## 2. Programme A controlling chapters
 
-### `complete-cdc/foundations-expansion-and-flow.md`
+- `complete-cdc/foundations-expansion-and-flow.md`: A0–A3 foundations, loops, expansion, and binary-flow architecture;
+- `complete-cdc/affine-compatibility-and-extraction.md`: A4–A7 pair complex, rank-three compatibility, extraction, and indexed multiplicity;
+- `complete-cdc/collapse-decomposition-and-assembly.md`: A8–A10 collapse, circuit decomposition, loop reinsertion, and final theorem;
+- `complete-cdc/audit-a-explicitness-repairs.md`: Seymour convention, complete A4 converse, and historical status of the old Tutte route.
 
-Controls A0–A3 foundations, loops, expansion, and binary-flow architecture.
+Programme A is unchanged by the B2/B8 source-fidelity pass.
 
-The exact Seymour graph-class clarification is controlled by `complete-cdc/audit-a-explicitness-repairs.md`, §2: finite connected loopless multigraphs, parallel edges permitted, applied componentwise.
+## 3. B1/B2 source roles
 
-### `complete-cdc/affine-compatibility-and-extraction.md`
+The B1 object/quantifier surface remains controlled by its exact B1 dossiers and `five-support/b1-object-quantifier-and-scope.md`.
 
-Controls A4–A7 pair complex, rank-three compatibility, graph/dart extraction, and exact indexed multiplicity.
+The B2 witness/correction surface is controlled by:
 
-The complete converse from an arbitrary even local line family to a unique deleted point is controlled by the repair chapter §3.
+- B2.1 singular/quadratic/Schur equivalence;
+- B2.2 cographic cycle continuity;
+- source-fidelity-repaired B2.3;
+- B2.4 Fourier/stress duality;
+- the corrected B2 formulation map;
+- `five-support/b2-formulation-and-witness-hierarchy.md`;
+- `five-support/root-flow-lifting.md`;
+- `five-support/equivalent-formulations-and-proof-families.md`.
 
-### `complete-cdc/collapse-decomposition-and-assembly.md`
+### Exact orthogonal packet role
 
-Controls A8–A10 collapse, circuit decomposition, loop reinsertion, and final theorem assembly. No repair changes this chapter.
+`FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`, blob `2043ada9d28789ecc5f4f0028e62133f37835bc1`, is theorem-level historical provenance for the fixed rank-three/eight-support $O^+(6,2)$ construction and five-coordinate $O^-(4,2)$ slices.
 
-### `reduction/outer-shell-and-binary-flow.md`
+It is not packet-wide false, history-only, or the source of an arbitrary-rank tower.
 
-Useful historical/mechanism companion. Its §§4.1–4.2 Tutte-based derivation is non-controlling. See `reduction/OUTER_SHELL_HISTORICAL_ROUTE_NOTICE.md` and repair chapter §4.
+### Separate proposition record
 
-## 3. Programme A assurance provenance
+The alleged arbitrary-rank $\Gamma\oplus\Gamma^*$ / $d_h(a)$ / $O^+(2r,2)$ complete-root tower has no recovered committed source. It is recorded separately as
 
-Independent Audit A verified the original theorem spine subject to named Seymour input and three non-blocking explicitness repairs. The repair checkpoint closes those items authorially without theorem change. Unified curation integrates them but does not constitute a second independent re-audit.
+`SOURCE-UNRECONSTRUCTED / INFERRED-EXTRAPOLATION OR UNCOMMITTED DRAFT / MATHEMATICALLY REFUTED BY B2.3`.
 
-## 4. B3 target chapter
+B2.3 controls the $q-2$ lower bound, deleted permutation module, and rank-three exceptionality.
 
-`five-support/surfaces-and-halfcube.md` is controlled by B1.4, the valid half-cube link/capacity/eight-vertex packets, factorable compression/core packets, and B3.1–B3.3.
+## 4. B3–B7 chapter provenance
 
-Current roles:
+- B3 target layer → `five-support/surfaces-and-halfcube.md`;
+- B4 motion layer → `five-support/gauge-and-reconfiguration.md`;
+- B5 interface layer → `five-support/cuts-four-poles-and-routing.md`;
+- B6 corrected holonomy/atom layer → `five-support/holonomy-defects-and-atoms.md`;
+- B7 rank/curvature/localization layer → `five-support/frontier-localisation.md`.
 
-- target links/capacity: theorem;
-- eight-vertex criterion: old-colour-factorable theorem;
-- unused-root/core/pivot: factorable theorem family;
-- flower full-dual no-go: theorem conditional on explicit dual certificate;
-- numerical data: certificate axis.
+Their fixed theorem, correction, certificate, and open-frontier roles are unchanged. BBD simultaneous origin remains conditional on `AC-RL-BBD-GROUPOID-CLOSURE`; a nontrivial defect forest remains pending `AC-RL-BBD-VARIATION-SLICE`; the four B7 localization returns remain open.
 
-The all-parallel representative is $\{01,23,45\}$; orbit sizes $28,168,224$ remain unchanged.
+## 5. B8 finite assurance provenance
 
-## 5. B4 motion chapter
-
-`five-support/gauge-and-reconfiguration.md` is controlled by the gauge/Petrial, support-pivot, flow-switch, harmonic-quotient, and B4 dossiers.
-
-Vertical torsors, connected-switch decomposition, support pivots, new-fibre recomputation, and internal/external endpoint formulas are theorem-level. `7737`, `2801`, ranks, surface counts, and outcomes remain certificate data.
-
-## 6. B5 interface chapter
-
-`five-support/cuts-four-poles-and-routing.md` is controlled by three-cut, boundary-signature, cap, Kempe, routing, census, and B5 dossiers.
-
-Local law, gluing, cap forcing, pairing alignment, routing weights, and uniform-routing elimination are theorem-level. Residual kernels, policies, Type T/H classification, monodromy, and small census remain finite/certificate material. Full-cap containment and source realization remain open.
-
-## 7. B6/B7 corrected chapters
-
-`five-support/holonomy-defects-and-atoms.md` and `five-support/frontier-localisation.md` retain individual holonomy, root-fibre/Tait, DDD atom, route-lock, rank, and curvature theorems.
-
-Conditional/superseded roles:
-
-- unconditional BBD simultaneous origin is replaced by a conditional chain requiring `AC-RL-BBD-GROUPOID-CLOSURE`;
-- the nontrivial fixed-terminal defect forest is removed pending `AC-RL-BBD-VARIATION-SLICE`;
-- local $K_6$/Petersen geometry remains usable only when a defect strip is independently supplied.
-
-The four further localization returns remain exact.
-
-## 8. B8 finite assurance
-
-`five-support/finite-laboratories-and-certificates.md` and `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md` classify finite inputs as `F-PROVED`, `F-CERT-PUBLIC`, `F-CERT-PRIVATE`, `F-CENSUS`, `CODE-PARTIAL`, or `AFFECTED`.
+`five-support/finite-laboratories-and-certificates.md` and `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md` control the six assurance classes. The source-fidelity addendum restores the fixed-dimensional packet’s theorem-level role and places the unreconstructed extrapolation outside the packet assurance population.
 
 B8 does not upgrade reproducibility or independent-review status.
 
-## 9. Historical recovery and exclusions
+## 6. Packet accounting and recovery
 
-Retired research packets remain recoverable through ordinary Git ancestry. B9, later PDL DAG/handoffs, and AC-RL working-ahead commits are not part of this unified candidate.
+The exact packet partition is
+
+$$
+39+10+18+10+1=78.
+$$
+
+The named orthogonal packet belongs to the thirty-nine controlling theorem/mechanism packets. The non-packet extrapolation is outside the equation.
+
+Retired packets remain recoverable through ordinary Git ancestry. B9, later moving PDL/RL mathematics, and downstream Lean/manuscript work are excluded from this correction candidate.

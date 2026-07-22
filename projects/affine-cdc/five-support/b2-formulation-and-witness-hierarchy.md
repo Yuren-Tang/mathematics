@@ -40,11 +40,7 @@ The following are canonically equivalent.
 2. An $R_5$-valued flow.
 3. A $K_5$-triangle edge labelling.
 4. An anisotropic flow in $(H_5,q_5)\cong O^-(4,2)$.
-5. Cycle words
-   $$
-   b,d,x,y\in\mathcal C(G)
-   $$
-   satisfying
+5. Cycle words $b,d,x,y\in\mathcal C(G)$ satisfying
    $$
    \boxed{b*d=(\mathbf1+x)*(\mathbf1+y).}
    $$
@@ -57,8 +53,7 @@ The following are canonically equivalent.
 The explicit coordinate isomorphism is
 
 $$
-\Phi(b,d,x,y)
-=(b,d,b+d+y,b+d+x,b+d+x+y).
+\Phi(b,d,x,y)=(b,d,b+d+y,b+d+x,b+d+x+y).
 $$
 
 The five support words are the five coordinates of $\Phi(b,d,x,y)$. The quadratic equation says edgewise that the resulting word has weight two.
@@ -75,13 +70,7 @@ $$
 W_k=k^\perp/\langle k\rangle.
 $$
 
-Fix a nowhere-zero Fano flow
-
-$$
-f:E(G)\to\Gamma\setminus\{0\}.
-$$
-
-Every class in $W_k\setminus\{0\}$ has two anisotropic lifts differing by $k$; every class outside $W_k$ has one anisotropic lift. Choosing preliminary lifts produces a vertex defect word $\eta$. Changing a lift on a $W_k$-edge adds $k$ at both endpoints.
+Fix a nowhere-zero Fano flow $f:E(G)\to\Gamma\setminus\{0\}$. Every class in $W_k\setminus\{0\}$ has two anisotropic lifts differing by $k$; every class outside $W_k$ has one anisotropic lift. Choosing preliminary lifts produces a vertex defect word $\eta$. Changing a lift on a $W_k$-edge adds $k$ at both endpoints.
 
 Therefore the following are equivalent for the fixed quotient data.
 
@@ -131,9 +120,7 @@ $$
 t-q_F(g)\in\mathcal C_F,
 $$
 
-if and only if every relative stress annihilates its displacement. This is an exact Fredholm alternative.
-
-When the criterion holds, one still needs a primal preimage under $\rho_F$ to reconstruct the translated lift. Relative stresses are dual dependencies, not source witnesses.
+if and only if every relative stress annihilates its displacement. This is an exact Fredholm alternative. When the criterion holds, one still needs a primal preimage under $\rho_F$ to reconstruct the translated lift. Relative stresses are dual dependencies, not source witnesses.
 
 ## 7. Exact Fourier count
 
@@ -143,30 +130,41 @@ $$
 |\mathcal C_F\cap A|
 =
 \frac{|\mathcal C_F|}{|Q_F|}
-\sum_{y\in\mathcal C_F^\perp}
-\widehat{\mathbf1_A}(y).
+\sum_{y\in\mathcal C_F^\perp}\widehat{\mathbf1_A}(y).
 $$
 
 The nonzero frequencies are relative stresses. The zero frequency is the exact uniform main term; it is not a probabilistic independence assumption.
 
-A positive count proves existence in the fixed affine orbit. An explicit witness still requires:
+A positive count proves existence in the fixed affine orbit. An explicit witness still requires a codeword, a primal preimage, the translated lift, and B1 root-flow/support reconstruction. A zero count gives an aggregate Fourier cancellation identity and need not yield one separating stress for a nonlinear product set. Finite weight enumerators and cancellation tables remain exact finite evidence unless a uniform theorem is separately proved.
 
-1. a codeword $c\in\mathcal C_F\cap A$;
-2. a primal preimage $k$ with $\rho_F(k)=c$;
-3. the translated lift $g^k$;
-4. B1 root-flow/support reconstruction.
+## 8. Orthogonal source fidelity and mathematical correction
 
-A zero count gives an aggregate Fourier cancellation identity. It does not generally yield one separating stress for a nonlinear product set.
+### 8.1 Exact historical packet
 
-Finite weight enumerators and cancellation tables remain exact finite evidence unless a uniform theorem is separately proved.
+The recovered packet
 
-## 8. Correction of the universal orthogonal hierarchy
+`FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`
 
-The retired packet `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` asserted a canonical additive anisotropic-root model for the complete graph on $2^r$ support points in dimension $2r$. That theorem is false for every $r\ge4$.
+at blob `2043ada9d28789ecc5f4f0028e62133f37835bc1` is a valid theorem-level historical source in the following exact scope:
 
-The displayed formula is also type-invalid: a vector $a\in\Gamma$ canonically gives an element of $\Gamma^{**}$, not a functional in $\Gamma^*$, absent a separately chosen self-duality.
+- the eight-coordinate even-weight module $H_8$;
+- the Hamming kernel and moment map;
+- the six-dimensional plus-type quotient $O^+(6,2)$;
+- its twenty-eight anisotropic roots;
+- rank-three AffineCDC root lifts;
+- five-coordinate $O^-(4,2)$ slices and omitted-triple orthogonality.
 
-### 8.1 Sharp lower bound
+It fixes the rank-three/eight-support setting. It contains no arbitrary-rank $\Gamma\oplus\Gamma^*$ construction, no formula $d_h(a)=([a],\operatorname{ev}_a)$, and no universal $O^+(2r,2)$ tower.
+
+### 8.2 Separate unreconstructed extrapolation
+
+The alleged arbitrary-rank tower is classified separately as
+
+`SOURCE-UNRECONSTRUCTED / INFERRED-EXTRAPOLATION OR UNCOMMITTED DRAFT / MATHEMATICALLY REFUTED BY B2.3`.
+
+It is not one of the seventy-eight recovered packets and receives no packet assurance class. The displayed formula is not canonically type-correct: $a\in\Gamma$ canonically gives an element of $\Gamma^{**}$, not of $\Gamma^*$, absent an additional chosen self-duality.
+
+### 8.3 Sharp lower bound
 
 Let $I$ have even cardinality $q$, and suppose roots $r_{ab}$ in a quadratic space satisfy
 
@@ -184,15 +182,13 @@ $$
 
 For $q=2^r$, dimension $2r$ is impossible from $r=4$ onward.
 
-### 8.2 Correct universal module
+### 8.4 Correct universal module and exceptional dimensions
 
 The correct universal additive root module is
 
 $$
-\overline E_I
-=
-\left\{z\in\mathbf F_2^I:\sum_i z_i=0\right\}
-/\langle\mathbf1_I\rangle,
+\overline E_I=
+\left\{z\in\mathbf F_2^I:\sum_i z_i=0\right\}/\langle\mathbf1_I\rangle,
 $$
 
 of dimension $q-2$, with
@@ -201,21 +197,13 @@ $$
 q_I([z])=\frac{\operatorname{wt}(z)}2\pmod2.
 $$
 
-The roots
-
-$$
-[\varepsilon_a+\varepsilon_b]
-$$
-
-are anisotropic, satisfy every triangle relation, span the module, and attain the lower bound.
-
-### 8.3 Exceptional dimensions
+The roots $[\varepsilon_a+\varepsilon_b]$ are anisotropic, satisfy every triangle relation, span the module, and attain the lower bound.
 
 - Five supports use the four-dimensional minus space $O^-(4,2)$.
 - Eight supports use the six-dimensional plus space $O^+(6,2)$ because $8-2=6=2\cdot3$.
-- The eight-support realization is exceptional. It is not the first member of a universal $O^+(2r,2)$ tower.
+- Rank three is exceptional; the valid packet is not the first member of a universal $O^+(2r,2)$ tower.
 
-The false packet remains recoverable only as historical provenance marked `SUPERSEDED / FALSE THEOREM`. Any later claim depending essentially on that hierarchy requires a fresh mathematical audit.
+The genuine all-rank transgression/residue hierarchy remains valid and distinct. It does not imply a complete-root $2r$ tower.
 
 ## 9. Classification table
 
@@ -233,8 +221,10 @@ The false packet remains recoverable only as historical provenance marked `SUPER
 | Fourier spectrum/count | fixed orbit and allowed set | existence/count only | exhibit codeword and preimage |
 | deleted permutation module | universal target model | target data only | choose a root-valued source flow |
 
-## 10. Boundary with later programmes
+## 10. Provenance and later-programme boundary
 
-Programme B2 does not consume B3 target corrections, B4 reconfiguration, B5 separator/routing, or later defect/frontier work. It does not prove the global five-support theorem.
+The controlling source-fidelity repair is
 
-The exact authorial dossiers are retained under `proof-development/`. This integration does not create independent-review, Lean, manuscript, publication, release, arXiv, DOI, or novelty status.
+`proof-development/affine-cdc-rigour-v1@9ce8de5ca5b7b41e139be4c94572de7725446046`.
+
+Programme B2 does not consume B3 target corrections, B4 reconfiguration, B5 separator/routing, B6/B7 defect/frontier work, or B9. It does not prove the global five-support theorem. This curation preserves Programme A, B1, and B3–B8 mathematics and creates no independent-review, Lean, manuscript, publication, release, arXiv, DOI, or novelty status.

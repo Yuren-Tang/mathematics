@@ -1,16 +1,13 @@
 # AffineCDC active mathematical surface
 
-## 1. Exact unified construction
+## 1. Exact construction
 
-- canonical `main`: `960c92b7ff231c78b387894149779083060a75eb`;
-- accepted B1–B8 base: `curation/affine-cdc-programme-b3-b8-v1@0100895d57aab7d21153c580fa9bdc45fafc832e`;
-- Programme A original source: `8bee16780b549f51e1f29343671a059961ec4172`;
-- Independent Audit A: `2fac31f4e76c819dd42a179a2772501c50ee93ad`;
-- Programme A repair source: `06bce656dcf5bfd6491ec08f51a702ea56d2470d`;
-- unified branch: `curation/affine-cdc-programme-a-b1-b8-unified-v1`;
-- exact repair splice: `a35da6ba6e4908c70f970f3cadf5fcf4b582dae4`.
+- immutable comparison base: `curation/affine-cdc-programme-a-b1-b8-unified-v1@ec765cd03271abd3588ec36faec3d53d0f8aa03b`;
+- authorial source-fidelity input: `proof-development/affine-cdc-rigour-v1@9ce8de5ca5b7b41e139be4c94572de7725446046`;
+- replacement branch: `curation/affine-cdc-programme-a-b1-b8-source-fidelity-v1`;
+- exact source splice: `344bf612d5d4231d954cb57fad15d93aa55d27d5`.
 
-The splice adds only the exact Programme A repair overlay dossier. B9, later PDL DAG/handoffs, and AC-RL working-ahead files are excluded.
+The splice imports only four substantive B2/B8 source-fidelity dossiers. It excludes PDL DAG/handoffs, B9, and later moving RL/PDL mathematics.
 
 ## 2. Primary entrypoints
 
@@ -19,72 +16,55 @@ The splice adds only the exact Programme A repair overlay dossier. B9, later PDL
 - `MATHEMATICAL_ARCHITECTURE.md`;
 - `THEOREM_DEPENDENCY_MAP.md`;
 - `FORMAL_STATUS.md`;
-- `AC_UNIFIED_INTEGRATION_MAP.md`;
-- `AC_UNIFIED_ASSURANCE_BOUNDARY.md`.
+- `five-support/README.md`;
+- `AC_CUR_B2_B8_SOURCE_FIDELITY_INTEGRATION_MAP.md`;
+- `AC_CUR_B2_B8_SOURCE_FIDELITY_ASSURANCE_LEDGER.md`;
+- `AC_CUR_B2_B8_SOURCE_FIDELITY_MIGRATION_AUDIT.md`.
 
-## 3. Programme A surface
+## 3. Programme A and B1
 
-Controlling reading:
+Programme A’s complete CDC theorem, Audit A status, and explicitness repairs are unchanged. B1 object and quantifier boundaries are unchanged.
 
-1. `complete-cdc/foundations-expansion-and-flow.md`;
-2. `complete-cdc/audit-a-explicitness-repairs.md`;
-3. `complete-cdc/affine-compatibility-and-extraction.md`;
-4. `complete-cdc/collapse-decomposition-and-assembly.md`.
+## 4. B2 controlling surface
 
-The repair chapter controls:
-
-- the exact Seymour loopless-multigraph convention, with parallel edges and componentwise assembly;
-- the full A4 reverse local-family proof;
-- the non-controlling historical status of the old Tutte route.
-
-The original A0–A10 dossiers remain immutable and recoverable. The exact repair dossier is retained under `proof-development/`.
-
-## 4. Programme A assurance surface
-
-The original theorem spine passed Independent Audit A with named Seymour input and three non-blocking explicitness repairs. Those repairs are closed and integrated without theorem change. The repaired prose is not separately re-audited.
-
-## 5. B1/B2 surface
-
-- `five-support/b1-object-quantifier-and-scope.md`;
 - `five-support/b2-formulation-and-witness-hierarchy.md`;
 - `five-support/root-flow-lifting.md`;
-- `five-support/equivalent-formulations-and-proof-families.md`.
+- `five-support/equivalent-formulations-and-proof-families.md`;
+- source-fidelity-repaired B2.3 and formulation map under `proof-development/`.
 
-These retain object, quantifier, witness, fixed-data, dual, and orthogonal-correction semantics unchanged.
+Controlling distinctions:
 
-## 6. B3–B5 surface
+1. the exact historical packet is a theorem-level source for rank-three/eight-support $O^+(6,2)$ and five-coordinate $O^-(4,2)$ mathematics;
+2. the arbitrary-rank $\Gamma\oplus\Gamma^*$ / $d_h(a)$ / $O^+(2r,2)$ tower is a separate source-unreconstructed non-packet proposition;
+3. the $q-2$ theorem, deleted permutation module, and rank-three exceptionality remain active.
 
-- B3 target/full-dual/factorable control: `five-support/surfaces-and-halfcube.md`;
-- B4 vertical/horizontal motion: `five-support/gauge-and-reconfiguration.md`;
-- B5 cuts/four-poles/routing: `five-support/cuts-four-poles-and-routing.md`.
+## 5. B3–B7 preserved surfaces
 
-All accepted theorem/certificate and scope distinctions remain unchanged.
+The B3 target, B4 motion, B5 interface, B6 corrected holonomy/atom, and B7 rank/curvature/localization chapters are unchanged in mathematical content.
 
-## 7. B6/B7 corrected surface
+BBD simultaneous origin remains conditional on `AC-RL-BBD-GROUPOID-CLOSURE`; the nontrivial defect forest remains pending `AC-RL-BBD-VARIATION-SLICE`; the four B7 localization obligations remain open.
 
-- `five-support/holonomy-defects-and-atoms.md`;
-- `five-support/frontier-localisation.md`.
+## 6. B8 assurance surface
 
-BBD simultaneous origin remains conditional on `AC-RL-BBD-GROUPOID-CLOSURE`; the nontrivial defect forest remains removed pending `AC-RL-BBD-VARIATION-SLICE`.
+- `five-support/finite-laboratories-and-certificates.md`;
+- `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md`;
+- `proof-development/AC_PD_B8_SOURCE_FIDELITY_ADDENDUM.md`.
 
-The four localization gaps remain:
+The fixed-dimensional packet’s finite results retain their exact proof/certificate classes. The non-packet extrapolation receives no packet assurance class. The packet partition is
 
+$$
+39+10+18+10+1=78.
+$$
+
+## 7. Six exact open returns
+
+- `AC-RL-BBD-GROUPOID-CLOSURE`;
+- `AC-RL-BBD-VARIATION-SLICE`;
 - `AC-RL-TYPE-T-SERIALISATION`;
 - `AC-RL-FLAT-POTENTIAL-INTERFACE`;
 - `AC-RL-COMMON-CUT-LOCALISATION`;
 - `AC-RL-TYPE-H-COMMON-WITNESS`.
 
-## 8. B8 assurance surface
+## 8. Assurance and exclusions
 
-- `five-support/finite-laboratories-and-certificates.md`;
-- `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md`.
-
-The six finite-result classes and all correction propagation remain unchanged. `CODE-PARTIAL` is non-load-bearing.
-
-## 9. Excluded frontier
-
-B9 and AC-RL working-ahead hyperbolic/rank-three material are outside this candidate. The global five-support theorem remains open.
-
-## 10. Assurance boundary
-
-Programme A has passed Audit A; B1–B8 remain pending dedicated Audit B. This alignment adds no end-to-end Lean, manuscript, peer-review, publication, release, arXiv, DOI, novelty, timestamp, or canonical `main` status.
+The global five-support theorem remains open. B9 remains outside the candidate. This replacement is not independent re-audit, Lean verification, manuscript approval, publication, release, arXiv, DOI, novelty, timestamp, or canonical movement. All immutable comparison branches and `main` remain untouched.

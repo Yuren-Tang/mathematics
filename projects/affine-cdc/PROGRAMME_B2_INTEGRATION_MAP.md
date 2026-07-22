@@ -1,78 +1,61 @@
 # Programme B2 integration and provenance map
 
-## 1. Exact controls
+## 1. Historical controls
 
-- authoritative intake: `Yuren-Tang/research-workbench#24`, comment `5019218548`;
-- integration base: `curation/affine-cdc-programme-b1-v1@4d7b9c74ea4377a58e219a7c6c3cb569a8229276`;
-- immutable source: `proof-development/affine-cdc-rigour-v1@d62974704d6dac77aaa00275a595fedf7f70cfd2`;
-- writable branch: `curation/affine-cdc-programme-b2-v1`;
-- exact source splice: `9799d8a657cb43ed5d896d53ef16c50fc79c4e1e`.
+Original B2 integration:
 
-The source splice has two parents, in order:
+- intake: issue #24 comment `5019218548`;
+- base: `curation/affine-cdc-programme-b1-v1@4d7b9c74ea4377a58e219a7c6c3cb569a8229276`;
+- source: `proof-development/affine-cdc-rigour-v1@d62974704d6dac77aaa00275a595fedf7f70cfd2`;
+- branch: `curation/affine-cdc-programme-b2-v1`;
+- source splice: `9799d8a657cb43ed5d896d53ef16c50fc79c4e1e`.
 
-1. the exact B1 integration base;
-2. the immutable B2 source checkpoint.
+The original graph-level, fixed-data, stress/Fourier, and $q-2$ mathematical integrations remain valid.
 
-Its tree imports only the five B2 proof dossiers and the checkpoint `OBLIGATION_DAG.md`.
+## 2. Source-fidelity repair
 
-## 2. Unit-to-destination map
+The controlling attribution repair is
 
-| Unit | Exact source path | Active destination | Controlling output |
-|---|---|---|---|
-| B2.1 | `proof-development/AC_PD_B2_1_SINGULAR_QUADRATIC_SCHUR_EQUIVALENCE.md` | `five-support/b2-formulation-and-witness-hierarchy.md`; `five-support/root-flow-lifting.md` | anisotropic mother flow; quadratic full witness; singular/Schur fixed-data equivalence |
-| B2.2 | `proof-development/AC_PD_B2_2_COGRAPHIC_CYCLE_CONTINUITY.md` | `five-support/b2-formulation-and-witness-hierarchy.md`; `five-support/equivalent-formulations-and-proof-families.md` | exact inverse-cycle edge-map definition and graph-level equivalence |
-| B2.3 | `proof-development/AC_PD_B2_3_ORTHOGONAL_ROOT_MODULE_CORRECTION.md` | `five-support/b2-formulation-and-witness-hierarchy.md`; `SUPERSESSION_MAP.md`; source ledgers | false universal theorem withdrawn; $q-2$ lower bound; deleted permutation module; rank-three exception |
-| B2.4 | `proof-development/AC_PD_B2_4_FOURIER_STRESS_DUALITY.md` | `five-support/b2-formulation-and-witness-hierarchy.md`; `five-support/equivalent-formulations-and-proof-families.md` | Fredholm duality; exact Fourier count; primal-witness boundary |
-| B2 aggregate | `proof-development/AC_PD_B2_FORMULATION_AND_WITNESS_MAP.md` | `THEOREM_DEPENDENCY_MAP.md`; `MATHEMATICAL_ARCHITECTURE.md`; `FORMAL_STATUS.md` | full witness/fixed-data/dual hierarchy |
-| checkpoint ledger | `proof-development/OBLIGATION_DAG.md` | retained unchanged as authorial provenance | B2 state and B3 transition at the immutable source |
+`proof-development/affine-cdc-rigour-v1@9ce8de5ca5b7b41e139be4c94572de7725446046`.
 
-## 3. Recovered public-source provenance
+The earlier B2 map incorrectly attributed the arbitrary-rank $\Gamma\oplus\Gamma^*$ / $d_h(a)$ / $O^+(2r,2)$ proposition to `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`.
 
-The B2 dossiers audit and reconstruct mathematics from the retired public checkpoint
+Corrected mapping:
 
-`research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`.
+| Object | Source role |
+|---|---|
+| named orthogonal packet, blob `2043ada9d28789ecc5f4f0028e62133f37835bc1` | theorem-level rank-three/eight-support $O^+(6,2)$ and five-coordinate $O^-(4,2)$ provenance |
+| arbitrary-rank complete-root tower | no recovered packet; source-unreconstructed extrapolation or uncommitted draft |
+| B2.3 | $q-2$ lower bound, deleted permutation module, impossibility for $r\ge4$, rank-three exceptionality |
+| all-rank transgression/residue line | valid distinct rank-dependent hierarchy, not a complete-root tower |
 
-Principal packets:
+## 3. Unit-to-destination map
 
-- `FIVE_CDC_ANISOTROPIC_RANK_FOUR_FLOW_V1.md`;
-- `FIVE_CDC_SINGULAR_QUOTIENT_LIFT_V1.md`;
-- `FIVE_CDC_QUADRATIC_CYCLE_EQUATION_V1.md`;
-- `FIVE_CDC_SCHUR_QUOTIENT_CRITERION_V1.md`;
-- `FIVE_CDC_K5_COGRAPHIC_MAP_V1.md`;
-- `FIVE_CDC_ROOT_LIFT_FOURIER_STRESS_DUALITY_V1.md`;
-- `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`.
-
-The last packet is retained only as historical provenance. Its universal theorem is false and is superseded by B2.3.
+| Unit | Active destination | Controlling output |
+|---|---|---|
+| B2.1 | B2 hierarchy; root-flow chapter | singular/quadratic/Schur fixed-data equivalence |
+| B2.2 | B2 hierarchy; proof-family chapter | exact cographic cycle-continuous formulation |
+| source-fidelity-repaired B2.3 | B2 hierarchy; root-flow; provenance/supersession ledgers | source/proposition separation plus $q-2$ correction |
+| B2.4 | B2 hierarchy; proof-family chapter | Fredholm duality, Fourier count, primal-witness boundary |
+| corrected B2 aggregate map | dependency, architecture, status | full witness/fixed-data/dual hierarchy |
+| B8 addendum | finite-assurance chapter and ledger | fixed-dimensional packet assurance plus non-packet extrapolation class |
 
 ## 4. Reconstruction maps
 
-The graph-level full-witness arrows carry explicit inverse data:
+Full graph-level witness arrows retain explicit inverse data among supports, root flows, anisotropic $H_5$ flows, quadratic coordinates through $\Phi$, and cographic target-star preimages.
 
-- support family ↔ coordinate root flow;
-- root flow ↔ anisotropic $H_5$ flow;
-- anisotropic flow ↔ quadratic cycle coordinates through $\Phi$;
-- support family ↔ cographic edge map through support-pair labels and target-star preimages.
+Fixed-data arrows retain the quotient Fano flow, singular line/plane, quotient graph, incidence solve, and lift torsor. Dual layers require a primal target and preimage.
 
-The fixed-data arrows require:
+## 5. Packet accounting
 
-- the quotient Fano flow;
-- the singular kernel line or plane;
-- the contracted quotient graph;
-- the incidence equation or eliminated coordinate;
-- the lift torsor.
+The corrected historical packet partition is
 
-The dual layers require a primal target and preimage before a lift is reconstructed.
+$$
+39+10+18+10+1=78.
+$$
 
-## 5. Excluded material
+The named orthogonal packet is in the theorem/mechanism class. The unreconstructed extrapolation is outside the packet population.
 
-The intake does not consume:
+## 6. Exclusions and assurance
 
-- any `AC_PD_B3_*` dossier;
-- any `AC_PD_B4_*` or later dossier;
-- later `OBLIGATION_DAG.md` revisions;
-- Programme B2/B3/B4/B5 handoffs as mathematical source;
-- any moving-branch commit after `d62974704d6dac77aaa00275a595fedf7f70cfd2`.
-
-## 6. Assurance
-
-The B2 source units are complete authorial proofs for the stated equivalences and correction. Curator integration is not independent audit, Lean verification, manuscript acceptance, peer review, publication, release, arXiv, DOI, or novelty determination.
+B3–B8 mathematics is preserved; B9 and later moving PDL/RL material are excluded. This replacement does not independently re-audit B2, move canonical refs, change Lean/manuscript/publication status, or prove the global five-support theorem.

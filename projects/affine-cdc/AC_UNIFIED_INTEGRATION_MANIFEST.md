@@ -1,52 +1,25 @@
-# AC-UNIFIED-01 integration manifest
+# AC-UNIFIED integration manifest — source-fidelity superseded
 
-## Exact refs
+## 1. Historical object
 
-- packet: `Yuren-Tang/research-workbench#24`, comment `5024901875`;
-- fixed base: `0100895d57aab7d21153c580fa9bdc45fafc832e`;
-- fixed Programme A repair source: `06bce656dcf5bfd6491ec08f51a702ea56d2470d`;
-- branch: `curation/affine-cdc-programme-a-b1-b8-unified-v1`;
-- repair splice: `a35da6ba6e4908c70f970f3cadf5fcf4b582dae4`.
+The unified candidate `ec765cd03271abd3588ec36faec3d53d0f8aa03b` remains an immutable history-preserving comparison object combining Programme A repairs with B1–B8.
 
-## Imported source
+## 2. Defect and correction
 
-The splice imports exactly one source path:
+Audit B found one material migration/provenance defect: an arbitrary-rank orthogonal-root proposition was assigned to a historical packet that does not contain it.
 
-`projects/affine-cdc/proof-development/AC_PD_A_AUDIT_A_EXPLICITNESS_REPAIRS.md`
+The authorial correction is `9ce8de5ca5b7b41e139be4c94572de7725446046`; the replacement Curator branch is `curation/affine-cdc-programme-a-b1-b8-source-fidelity-v1` from exact base `ec765cd...`.
 
-with exact blob identity from the immutable repair checkpoint.
+The corrected source boundary restores the packet’s fixed-dimensional theorem role, records the arbitrary-rank tower as a source-unreconstructed non-packet extrapolation, and retains the $q-2$ theorem and deleted permutation module.
 
-No repair handoff, later DAG, B9 dossier, B9 handoff, or RL working-ahead file is imported.
+## 3. Packet accounting
 
-## Active alignment
+The exact packet partition is $39+10+18+10+1=78$. The named packet is among the thirty-nine theorem/mechanism packets. The extrapolation is outside the packet population.
 
-The Curator projects the overlay into:
+## 4. Preserved state
 
-- `complete-cdc/audit-a-explicitness-repairs.md`;
-- `reduction/OUTER_SHELL_HISTORICAL_ROUTE_NOTICE.md`;
-- Programme A reading, provenance, dependency, assurance, and unified control surfaces.
+Programme A, B1, B3–B8 mathematics, the six frontier obligations, B9 exclusion, and the open global five-support theorem remain unchanged.
 
-The three repairs are:
+## 5. Assurance gate
 
-1. exact Seymour loopless-multigraph convention with parallel edges and componentwise assembly;
-2. complete reverse reconstruction of every even local line family from a unique deleted point;
-3. historical/non-controlling classification of the old Tutte route.
-
-## Preserved mathematics
-
-- Programme A theorem statement and proof dependency are unchanged;
-- B1–B8 theorem, correction, frontier, and assurance content is unchanged;
-- the six open five-support obligations are unchanged;
-- the global five-support theorem remains open.
-
-## Preserved assurance boundaries
-
-- Programme A’s original spine retains the accepted Audit A result;
-- the repaired prose is integrated but not independently re-audited;
-- B1–B8 remain pending Audit B;
-- no end-to-end Lean or manuscript status is added;
-- no canonical, publication, release, arXiv, DOI, novelty, or timestamp action occurs.
-
-## Final-candidate rule
-
-The exact final candidate SHA is recorded only after source, exclusion, ancestry, status, and repository-isolation audits complete.
+This manifest does not rewrite the historical unified object. It points to the source-fidelity replacement, which must undergo separate independent re-audit before any canonical control point. No Lean, manuscript, publication, release, arXiv, DOI, tag, or `main` movement is authorized.

@@ -1,79 +1,37 @@
-# AC-UNIFIED-01 assurance boundary
+# AC-UNIFIED assurance boundary — source-fidelity corrected
 
-## 1. Unified candidate classification
+## 1. Programme A
 
-The unified candidate is:
+Programme A’s original theorem spine passed Independent Audit A subject to the named Seymour input and three non-blocking explicitness repairs. The repairs are integrated and closed without theorem change. This B2/B8 correction does not reopen Programme A.
 
-`CURATOR-INTEGRATED / PROGRAMME A INDEPENDENTLY AUDITED WITH CLOSED NON-BLOCKING REPAIRS / B1–B8 CORRECTION-AWARE / FIVE-SUPPORT GLOBAL THEOREM OPEN`.
+## 2. B1–B8
 
-This classification has separate axes.
+B1 and B3–B7 retain their fixed unified theorem/correction/frontier states. B8 retains its six assurance classes.
 
-## 2. Programme A
+B2/B8 source fidelity is corrected as follows:
 
-Programme A supplies a complete authorial paper proof of:
+- the named orthogonal packet is theorem-level fixed-dimensional provenance;
+- the arbitrary-rank tower is a source-unreconstructed non-packet extrapolation or uncommitted draft;
+- B2.3’s $q-2$ lower bound, deleted permutation module, and rank-three exceptionality remain authorial theorems;
+- fixed-dimensional finite checks retain their actual B8 classes;
+- packet accounting is $39+10+18+10+1=78$.
 
-> Every multigraph with finite active edge set and no singleton cut has a finite circuit double cover.
+## 3. Independent-review status
 
-The theorem spine was independently audited at
+The fixed unified object `ec765cd...` remains the immutable object audited by Audit B, which returned `MATERIAL THEOREM OR MIGRATION DEFECT` for source migration/provenance.
 
-`audit/affine-cdc-complete-cdc-spine-v1@2fac31f4e76c819dd42a179a2772501c50ee93ad`.
+The PDL repair and Curator replacement are authorial/corpus corrections, not the separately bounded source-fidelity re-audit required by AC-DIR.
 
-Audit result:
+## 4. Lean, manuscript, and publication
 
-`VERIFIED SUBJECT TO NAMED EXTERNAL THEOREMS / NON-BLOCKING EXPLICITNESS REPAIRS`.
+No end-to-end Lean verification is created. Paper A consumes Programme A only and is mathematically unaffected. No manuscript approval, peer review, publication, release, arXiv, DOI, novelty, timestamp, tag, or canonical `main` status is changed.
 
-The three returned items—Seymour’s exact multigraph convention, the complete A4 reverse reconstruction, and the non-controlling status of the older Tutte route—were closed authorially at
+## 5. Frontier
 
-`proof-development/affine-cdc-rigour-v1@06bce656dcf5bfd6491ec08f51a702ea56d2470d`
+The global five-support theorem remains open. The six exact AC-RL obligations and B9 blocked/excluded status remain unchanged.
 
-and integrated here as expository/source repairs. They change no theorem, hypothesis, conclusion, or dependency. The repaired prose has not received a second independent re-audit.
+## 6. Current classification
 
-Seymour’s nowhere-zero six-flow theorem remains the sole non-elementary external logical input.
+The replacement candidate is
 
-## 3. Programme B1–B8
-
-B1–B8 retain exactly the accepted base status:
-
-`CURATOR-INTEGRATED / B3–B5 AUTHORIAL THEOREM LAYERS / B6 CORRECTION INSTALLED / B7 GLOBAL COMPOSITION OPEN / B8 ASSURANCE NORMALIZED`.
-
-B1–B8 have not yet received the held dedicated Audit B. B8 assurance normalization is not independent mathematical review.
-
-The global five-support theorem remains open.
-
-## 4. Formalization
-
-The Lean anchor remains
-
-`Yuren-Tang/affine-cdc:main@ebd7098a7a8b824e8c0a511d3c71f61705672aa8`.
-
-It checks substantial internal slices, not the complete natural Programme A theorem or B1–B8 end to end. This alignment modifies no Lean repository and creates no additional machine-checked status.
-
-## 5. Manuscript and publication
-
-This alignment does not:
-
-- edit or approve Paper A;
-- determine novelty or literature completeness;
-- authorize submission;
-- create a release or tag;
-- move arXiv or DOI records;
-- create a priority or publication timestamp.
-
-Lean and Paper A may consume a Director-dispositioned unified candidate later; no projection is performed here.
-
-## 6. Canonical status
-
-The unified branch is a fixed Curator candidate, not `main`. Canonical movement requires a separate owner control point. No public-history rewrite, force-push, release, or canonical promotion is implied.
-
-## 7. Open mathematics
-
-The six B9/AC-RL obligations remain unchanged:
-
-- `AC-RL-BBD-GROUPOID-CLOSURE`;
-- `AC-RL-BBD-VARIATION-SLICE`;
-- `AC-RL-TYPE-T-SERIALISATION`;
-- `AC-RL-FLAT-POTENTIAL-INTERFACE`;
-- `AC-RL-COMMON-CUT-LOCALISATION`;
-- `AC-RL-TYPE-H-COMMON-WITNESS`.
-
-They are mathematical frontier obligations, not defects in Programme A and not closed by this alignment.
+`CURATOR-INTEGRATED / B2-B8 SOURCE-FIDELITY CORRECTED / MATHEMATICS PRESERVED / INDEPENDENT RE-AUDIT REQUIRED`.

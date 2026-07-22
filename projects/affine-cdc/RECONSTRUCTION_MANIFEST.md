@@ -1,134 +1,47 @@
-# AffineCDC corpus reconstruction and finalization manifest
+# AffineCDC corpus reconstruction manifest
 
-This manifest records `AC-CORPUS-01`, a one-time substantive reconstruction and autonomous finalization of the public AffineCDC mathematical corpus.
+## 1. Historical reconstruction
 
-## 1. Exact authority and workspace
+`AC-CORPUS-01` reconstructed the public AffineCDC corpus from the source checkpoint
 
-- repository: `Yuren-Tang/mathematics`;
-- canonical ancestor: `main@749e0579581fcc838685138b3582f4de306b8e72`;
-- accepted outer-shell source: `0927011177cabac20f06a57fa5e57476d6f13dee`;
-- public five-support checkpoint: `dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`;
-- exact curation base: `7a166d2eb5642ec967f640323488e49f1c2ad5d4`;
-- curation branch: `curation/affine-cdc-natural-mathematical-corpus-v1`;
-- autonomous-finalization start: `5368b5e34513e97691504a7d5cca3fb6eae93a93`.
+`research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`.
 
-The exact final branch SHA is recorded in the authoritative `[RETURN AC-CORPUS-01]` comment in `Yuren-Tang/research-workbench` issue #24. A commit cannot contain its own SHA without circularity.
+It organized mathematics by natural objects and dependencies, preserved distinct proof and finite-evidence roles, retired discovery-order packet bodies from the active tree, and retained exact Git recovery.
 
-## 2. Work completed
+## 2. Source-fidelity correction to the historical manifest
 
-The unit:
+Audit B later identified one migration/provenance defect in the fixed unified candidate: an arbitrary-rank orthogonal-root proposition had been attributed to the wrong historical packet.
 
-1. read the complete relevant public mathematical surface;
-2. reconstructed the corpus by natural objects and dependencies rather than discovery chronology;
-3. selected preferred proofs while preserving independently useful alternatives;
-4. separated theorem-level arguments, exact finite results, counterexamples, corrections, and open boundaries;
-5. established chapter-level provenance;
-6. mapped all source packets to active successors;
-7. retired fully absorbed historical packets from the current tip;
-8. retired the obsolete temporary baseline manifest;
-9. repaired migration, supersession, reliability, and active-surface control files;
-10. performed source-recovery and no-loss audits.
+The controlling repair is
 
-This was not a filing-only pass, manuscript pass, formalization pass, release, or publication action.
+`proof-development/affine-cdc-rigour-v1@9ce8de5ca5b7b41e139be4c94572de7725446046`.
 
-## 3. Public source surface
+The corrected reconstruction statement is:
 
-The five-support source line contributes:
+- all seventy-eight packet bodies and chronology were recovered correctly;
+- one packet-to-proposition classification was not source-faithful;
+- `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`, blob `2043ada9d28789ecc5f4f0028e62133f37835bc1`, is a valid fixed-dimensional theorem source;
+- the arbitrary-rank $\Gamma\oplus\Gamma^*$ / $d_h(a)$ / $O^+(2r,2)$ tower is a separate source-unreconstructed extrapolation or uncommitted draft;
+- B2.3 refutes that extrapolation and supplies the $q-2$ lower bound and deleted permutation module.
 
-- `82` public source commits;
-- `78` public `projects/affine-cdc/research/FIVE_CDC_*.md` files;
-- theorem packets, alternative proof families, finite computations, counterexamples, errata, scope corrections, and open programmes.
+This correction does not reopen the rest of the reconstruction.
 
-The source checkpoint is an exact ancestor of the integration base and final curation branch. Private notebook branches were used only as mapped computation/recovery provenance described by public packets; hidden state was not used as theorem authority.
+## 3. Active mathematical architecture
 
-## 4. Active mathematical architecture
+The complete CDC theorem remains separate from the open five-support strengthening. The active five-support corpus is ordered through:
 
-The complete CDC spine remains separate from the open five-support strengthening.
+1. exact B1 objects and quantifiers;
+2. B2 witnesses, fixed-data criteria, source-fidelity-repaired orthogonal correction, and dual layers;
+3. B3 targets;
+4. B4 motion;
+5. B5 interfaces;
+6. B6 corrected holonomy/atom layer;
+7. B7 localization frontier;
+8. B8 finite assurance.
 
-The active five-support corpus is ordered as:
+## 4. Corrected source-class accounting
 
-1. root-valued flows and lifting;
-2. cycle-face surfaces and half-cube target;
-3. gauge/Petrial and horizontal reconfiguration;
-4. cuts, four-poles, and routing;
-5. interior holonomy, defects, and atoms;
-6. localisation/composition frontier;
-7. equivalent formulations and proof families;
-8. finite laboratories and exact certificates.
-
-See [`ACTIVE_MATHEMATICAL_SURFACE.md`](ACTIVE_MATHEMATICAL_SURFACE.md).
-
-## 5. Files created by reconstruction/finalization
-
-### Primary five-support corpus
-
-- `five-support/README.md`;
-- `five-support/root-flow-lifting.md`;
-- `five-support/surfaces-and-halfcube.md`;
-- `five-support/gauge-and-reconfiguration.md`;
-- `five-support/cuts-four-poles-and-routing.md`;
-- `five-support/holonomy-defects-and-atoms.md`;
-- `five-support/frontier-localisation.md`;
-- `five-support/equivalent-formulations-and-proof-families.md`;
-- `five-support/finite-laboratories-and-certificates.md`.
-
-### Architecture, provenance, and audit
-
-- `THEOREM_DEPENDENCY_MAP.md`;
-- `ACTIVE_MATHEMATICAL_SURFACE.md`;
-- `CHAPTER_PROVENANCE.md`;
-- `RETIRED_SOURCE_CLASSIFICATION.md`;
-- `SOURCE_RECOVERY_AUDIT.md`;
-- this manifest.
-
-## 6. Controlling files rewritten
-
-- `README.md`;
-- `MATHEMATICAL_ARCHITECTURE.md`;
-- `CURRENT_BEST.md`;
-- `FRONTIER_STATUS.md`;
-- `SUPERSESSION_MAP.md`;
-- `MIGRATION_LEDGER.md`;
-- `FORMAL_STATUS.md`;
-- `five-support/README.md`.
-
-The current versions control the curation branch. Historical versions remain in Git history.
-
-## 7. Mathematical synthesis decisions
-
-The reconstruction makes explicit that:
-
-1. the affine pair complex is the compatibility centre;
-2. the complete CDC theorem is independent of the open five-support strengthening;
-3. the natural five-support object is a root-valued `E_5` flow;
-4. the complete fixed-lift target is the full dual triangulation `T_g`, not only `J_g`;
-5. vertical gauge/Petrial and horizontal Fano-flow motion are distinct;
-6. marked finite certificates occur on affine cosets, while arrangement coverage and source composition are separate problems;
-7. three-edge cuts are reducible and four-edge cuts carry a ten-state transfer geometry;
-8. Type H boundary monodromy matters through its interior affine/root-fibre lift;
-9. BBD per-loop alternatives are controlled by one canonical defect flow, while DDD retains a one-bit exception;
-10. the sharp frontier is full-rank atom localisation and composition, not further unrestricted census.
-
-## 8. Proof and evidence preservation
-
-The active corpus preserves:
-
-- preferred colour-cut and geometric proofs;
-- singular-fibre/local-system proofs;
-- quadratic, Schur, stress/Fourier, and Möbius formulations;
-- cographic and orthogonal-group representations;
-- surface, finite-interface, and holonomy proof families;
-- exact Petersen, flower, renewal, four-pole, routing, monodromy, atom, and cohomology results;
-- explicit no-two-cut and nonflat counterexamples;
-- errata, scope corrections, negative boundaries, and `CODE-PARTIAL` recovery status.
-
-Exact packet-to-chapter provenance is in [`CHAPTER_PROVENANCE.md`](CHAPTER_PROVENANCE.md).
-
-## 9. Current-tree retirement
-
-All seventy-eight `research/FIVE_CDC_*.md` packets are retired from the current branch tip after migration.
-
-The disjoint classification is:
+The seventy-eight packet files are partitioned as:
 
 - 39 controlling theorem or mechanism packets;
 - 10 independent proof or representation packets;
@@ -136,89 +49,28 @@ The disjoint classification is:
 - 10 controlling correction or negative-boundary packets;
 - 1 discovery-order programme synthesis.
 
-Thus:
+Thus
 
 $$
 39+10+18+10+1=78.
 $$
 
-The obsolete `BASELINE_MANIFEST.md` is also retired. It described the temporary `AC-BASELINE-01` state and is superseded by the active-surface, recovery, and reconstruction manifests.
+The named orthogonal packet is one of the thirty-nine theorem/mechanism packets by its exact rank-three/eight-support and five-slice contents. The source-unreconstructed extrapolation is not a packet and is not counted.
 
-Retirement is branch-local current-tree pruning. No source branch, ancestor commit, priority record, or public history is deleted or rewritten.
+## 5. Preserved proof and evidence roles
 
-## 10. Ledger repair
+The active corpus continues to preserve the preferred colour-cut and geometric proofs; singular, Schur, quadratic, cographic, stress/Fourier, surface, interface, and holonomy proof families; finite Petersen, flower, renewal, four-pole, routing, monodromy, atom, and curvature results; explicit negative witnesses; and the `CODE-PARTIAL` boundary.
 
-The preliminary migration ledger claimed all seventy-eight packets were named but omitted:
+The exact fixed-dimensional orthogonal packet is restored to these preserved roles. No valid result is invalidated merely because it shares a packet with the source name formerly misused for a different proposition.
 
-`FIVE_CDC_SUPPORT_CYCLE_PIVOT_AND_FLOW_RECONFIGURATION_V1.md`.
+## 6. Recovery and historical audit status
 
-Finalization restored this source to the chapter provenance, migration map, retirement classification, and exact count. Its mathematics is integrated into `five-support/gauge-and-reconfiguration.md`.
+Every retired packet remains recoverable by exact `git show`, `git restore`, and source-history commands recorded in `SOURCE_RECOVERY_AUDIT.md`. The historical reconstruction’s broad no-loss conclusion remains valid after correcting its source-classification claim.
 
-## 11. Source-recovery audit
+Earlier manifests and final-audit files are historical records of their own checkpoints. Where they repeat the false attribution, the source-fidelity correction and current ledgers supersede that statement without erasing the historical record from Git.
 
-Direct comparison verifies:
+## 7. Explicit boundaries
 
-- `dad218dd...` is the exact merge base and ancestor of `7a166d2...`;
-- the source checkpoint contains exactly seventy-eight research files;
-- every retired path has a named successor;
-- every source body can be recovered by one exact `git show` or `git restore` command;
-- discovery chronology is recoverable by `git log -- projects/affine-cdc/research`;
-- no force-push, rebase, squash, branch deletion, or public-history rewrite is involved.
+This source-fidelity correction does not change Programme A, B1, B3–B8 mathematics, the six exact frontier obligations, B9 exclusion, or the open status of the global five-support theorem. It does not move `main`, fixed candidates, audit branches, PDL/RL branches, Lean, manuscripts, release, publication, arXiv, DOI, or tags.
 
-See [`SOURCE_RECOVERY_AUDIT.md`](SOURCE_RECOVERY_AUDIT.md).
-
-## 12. Mathematical consistency audit
-
-No irreconcilable controlling contradiction was found. Apparent conflicts resolve by scope, quantifier, correction, or supersession, including:
-
-- `J_g` versus `T_g`;
-- clique evidence versus compatible `K_6`-free obstruction;
-- bad lift versus bad fixed flow versus bad graph;
-- arbitrary binary-cycle versus connected-cycle adjacency;
-- route-lock versus graph cut or flatness;
-- abstract tension systems versus genuine three-path switch flows;
-- per-loop alternatives versus the BBD common-flow synthesis;
-- repeated transport state versus enriched replacement semantics.
-
-## 13. Link and syntax audit
-
-- active entrypoint links close on current files;
-- provenance and recovery links do not depend on retired paths;
-- new and rewritten mathematical Markdown uses `$...$` and `$$...$$`;
-- source filenames are used as provenance labels, not live links;
-- no claim was introduced solely from a filename, private notebook, or hidden reasoning.
-
-## 14. Reliability audit
-
-The corpus explicitly separates:
-
-- theorem-level public arguments;
-- exact finite computational results;
-- counterexamples and corrections;
-- substantial reductions with named gaps;
-- open global bridges;
-- independent review, Lean, manuscript, peer-review, release, and publication axes.
-
-This is a Curator synthesis and self-audit, not independent mathematical review.
-
-## 15. Explicit non-actions
-
-This unit did not:
-
-- move `main`;
-- modify the live research branch;
-- delete or rename any branch;
-- rewrite public history;
-- modify Lean or a manuscript;
-- authorize arXiv or publication;
-- create a release or tag;
-- modify a DOI or Zenodo record;
-- upgrade theorem or assurance status.
-
-## 16. Proposed relation to `main`
-
-The final candidate is intended to be a history-preserving descendant of `main@749e057...`, carrying both source lines and the reconstructed current-best tree.
-
-Subject to the final exact comparison and owner authorization, the recommended canonical action is a **fast-forward of `main` to the final curation SHA**. No squash, rebase, or source-history rewrite is recommended.
-
-Default-branch movement is not performed or authorized by this manifest.
+The replacement candidate is a Curator correction, not an independent acceptance. AC-DIR must issue a separately bounded B2/B8 source-fidelity re-audit before any later canonical control point.

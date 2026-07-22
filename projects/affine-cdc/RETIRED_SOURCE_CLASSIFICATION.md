@@ -1,14 +1,14 @@
 # AffineCDC retired-source classification
 
-This ledger classifies the seventy-eight public five-support source packets retired from the current branch tip after substantive migration.
+This ledger classifies the seventy-eight public five-support source packets retired from the active tree after substantive migration.
 
 **Exact source checkpoint:** `dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`  
 **Historical path:** `projects/affine-cdc/research/`  
-**Retirement meaning:** absent from the current tree, fully recoverable through ordinary Git ancestry, and replaced for current reading by the named corpus and provenance maps.
+**Source-fidelity repair:** `proof-development/affine-cdc-rigour-v1@9ce8de5ca5b7b41e139be4c94572de7725446046`
 
-Retirement is not ordinarily rejection. A packet may contain a valid theorem, independent proof, counterexample, finite certificate, correction, or priority record. One packet is now separately classified as containing a false theorem and is retained only as historical provenance.
+Retirement means absent from the current tree, fully recoverable through ordinary Git ancestry, and replaced for current reading by named corpus and provenance maps. Retirement is not rejection.
 
-## 1. Controlling theorem or mechanism absorbed — 38
+## 1. Controlling theorem or mechanism absorbed — 39
 
 - `FIVE_CDC_ADMISSIBLE_SWITCH_IMAGE_V1.md`
 - `FIVE_CDC_ANISOTROPIC_RANK_FOUR_FLOW_V1.md`
@@ -47,7 +47,10 @@ Retirement is not ordinarily rejection. A packet may contain a valid theorem, in
 - `FIVE_CDC_SUPPORT_CYCLE_PIVOT_AND_FLOW_RECONFIGURATION_V1.md`
 - `FIVE_CDC_TYPE_H_LOCAL_TO_GLOBAL_HOLONOMY_STACK_V1.md`
 - `FIVE_CDC_TYPE_H_TAIT_ESCAPE_V1.md`
+- `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`
 - `FIVE_CDC_UNUSED_MATCHING_COMPRESSION_V1.md`
+
+The orthogonal packet is placed here by its actual theorem-level fixed-dimensional contents: $H_8$, Hamming kernel and moment map, $O^+(6,2)$, twenty-eight roots, rank-three lifts, and five-coordinate $O^-(4,2)$ slices. It is not classified in toto as false or history-only.
 
 ## 2. Independent proof or representation preserved by role — 10
 
@@ -61,8 +64,6 @@ Retirement is not ordinarily rejection. A packet may contain a valid theorem, in
 - `FIVE_CDC_SINGULAR_QUOTIENT_LIFT_V1.md`
 - `FIVE_CDC_SWITCH_INCIDENCE_GRAPH_V1.md`
 - `FIVE_CDC_TAIT_TUTTE_STRUCTURE_BRIDGE_V1.md`
-
-These packets retain useful alternate proof roles in the active B2 hierarchy and later mechanism chapters.
 
 ## 3. Exact finite theorem, witness, or certificate preserved — 18
 
@@ -102,34 +103,34 @@ These packets retain useful alternate proof roles in the active B2 hierarchy and
 
 - `FIVE_CDC_MECHANISM_CLOSURE_MAP_V1.md`
 
-Its obligations are distributed across the active dependency architecture and frontier chapter.
+## 6. Separate non-packet correction record
 
-## 6. Superseded false theorem retained as history — 1
+The arbitrary-rank proposition informally described by
 
-- `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`
+$$
+\Gamma\oplus\Gamma^*,\qquad d_h(a)=([a],\operatorname{ev}_a),\qquad O^+(2r,2)
+$$
 
-Classification:
+is not a recovered packet and is not counted above. Its classification is
 
-`RETIRED / SUPERSEDED / FALSE THEOREM / HISTORICAL PROVENANCE`.
+`SOURCE-UNRECONSTRUCTED / INFERRED-EXTRAPOLATION OR UNCOMMITTED DRAFT / MATHEMATICALLY REFUTED BY B2.3`.
 
-The packet's universal $2r$-dimensional theorem is false for $r\ge4$, and its displayed map is type-invalid without an additional self-duality. The active replacement is Programme B2.3:
+The active mathematical replacement is:
 
-- dimension lower bound $\dim V\ge q-2$;
-- deleted permutation module of dimension $q-2$;
-- exceptional eight-support $O^+(6,2)$ model;
-- no universal $O^+(2r,2)$ tower.
-
-The packet may be recovered to inspect discovery history and the failed claim, but it must not be cited as active theorem authority.
+- $\dim V\ge q-2$;
+- the deleted permutation module of dimension $q-2$;
+- rank-three exceptionality;
+- no universal $O^+(2r,2)$ complete-root tower.
 
 ## 7. Accounting
 
-The classes are disjoint and exhaustive:
+The packet classes are disjoint and exhaustive:
 
 $$
-38+10+18+10+1+1=78.
+39+10+18+10+1=78.
 $$
 
-The earlier preliminary migration omission of `FIVE_CDC_SUPPORT_CYCLE_PIVOT_AND_FLOW_RECONFIGURATION_V1.md` remains corrected.
+The non-packet extrapolation is outside this equation.
 
 ## 8. Recovery
 

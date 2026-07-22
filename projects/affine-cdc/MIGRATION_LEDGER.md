@@ -1,155 +1,86 @@
 # AffineCDC source-to-corpus migration ledger
 
-This ledger records migration of the complete public five-support checkpoint
+## 1. Exact source population
+
+The public five-support checkpoint
 
 `research/affine-cdc-five-cdc-v1@dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`
 
-into the natural current-best corpus, together with later B1 and B2 proof-development corrections.
+contains eighty-two source commits and exactly seventy-eight packet files under `projects/affine-cdc/research/`. Every packet has an exact path, recoverable body, current mathematical role, and assurance classification.
 
-## 1. Migration state
+## 2. B1, B2 and source-fidelity overlays
 
-The public checkpoint contains seventy-eight files under `projects/affine-cdc/research/`. Every file has:
-
-- an exact historical path and ancestor commit;
-- a named active successor, finite role, negative boundary, or supersession class;
-- a recovery command;
-- an assurance classification.
-
-The source packets are retired from the active tip. Git history remains the source and priority archive.
-
-## 2. B1 and B2 proof-development overlays
-
-Exact later proof checkpoints:
+Exact later proof-development checkpoints:
 
 - B1: `778b09ac8260192e022f512f24cdef1d04871f37`;
-- B2: `d62974704d6dac77aaa00275a595fedf7f70cfd2`.
+- original B2: `d62974704d6dac77aaa00275a595fedf7f70cfd2`;
+- B2/B8 source-fidelity repair: `9ce8de5ca5b7b41e139be4c94572de7725446046`.
 
-B1 repairs object and quantifier scope. B2 installs the formulation/witness hierarchy and a mathematical correction to the universal orthogonal packet.
+B1 repairs object and quantifier scope. B2 supplies the complete witness hierarchy and the $q-2$ mathematical correction. The later source-fidelity overlay repairs the attribution of the proposition refuted by B2.3.
 
 ## 3. Root flow and complete witnesses
 
 Primary successors:
 
-- [`five-support/b1-object-quantifier-and-scope.md`](five-support/b1-object-quantifier-and-scope.md);
-- [`five-support/b2-formulation-and-witness-hierarchy.md`](five-support/b2-formulation-and-witness-hierarchy.md);
-- [`five-support/root-flow-lifting.md`](five-support/root-flow-lifting.md).
+- `five-support/b1-object-quantifier-and-scope.md`;
+- `five-support/b2-formulation-and-witness-hierarchy.md`;
+- `five-support/root-flow-lifting.md`.
 
-Integrated mathematics:
+They integrate root-valued $E_5$ flows, $K_5$ triangles, matching/four-flow data, anisotropic $O^-(4,2)$ flows, quadratic and cographic full witnesses, fixed-plane and singular/Schur criteria, stress/Fourier duality, and exact witness boundaries.
 
-- root-valued $E_5$ flows and local $K_5$ triangles;
-- exact matching/four-flow and component $T$-join formulations;
-- anisotropic $O^-(4,2)$ mother flow;
-- complete quadratic cycle equation;
-- exactly defined cographic cycle-continuous edge map;
-- fixed-plane colour-cut criterion;
-- fixed singular quotient and Schur solvability;
-- stress/Fourier duality with exact witness scope;
-- fixed-flow cube negative certificate;
-- unused-matching and affine-plane sufficient templates.
+## 4. Orthogonal source and correction separation
 
-## 4. Orthogonal correction and migration
+### Valid recovered packet
 
-The previously migrated phrase “universal plus-type compatible root lifts” was overbroad.
+`FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`, blob `2043ada9d28789ecc5f4f0028e62133f37835bc1`, migrates as a controlling theorem/mechanism packet in its exact fixed-dimensional scope:
 
-The valid active statements are:
+- $H_8$, Hamming kernel, and moment map;
+- six-dimensional $O^+(6,2)$ and twenty-eight roots;
+- rank-three compatible root lifts;
+- five-coordinate $O^-(4,2)$ slices and omitted-triple orthogonality.
 
-- five supports use $O^-(4,2)$;
-- eight supports use the exceptional complete-root model $O^+(6,2)$;
-- every additive complete-graph root model with triangle addition has dimension at least $q-2$;
-- the deleted permutation module of dimension $q-2$ is the correct universal model.
+It is not mapped to a packet-wide false-theorem class.
 
-`FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` is mapped to:
+### Separate unreconstructed proposition
 
-`RETIRED / SUPERSEDED / FALSE THEOREM / HISTORICAL PROVENANCE`.
+No exact committed source was recovered for the arbitrary-rank $\Gamma\oplus\Gamma^*$ / $d_h(a)$ / $O^+(2r,2)$ tower. It is a non-packet provenance record:
 
-It is not an absorbed controlling theorem. Its failed universal $2r$ claim and type-invalid formula are replaced by Programme B2.3.
+`SOURCE-UNRECONSTRUCTED / INFERRED-EXTRAPOLATION OR UNCOMMITTED DRAFT / MATHEMATICALLY REFUTED BY B2.3`.
 
-## 5. Surface and target geometry
+It is replaced mathematically by the sharp bound $\dim V\ge q-2$, the deleted permutation module, rank-three exceptionality, and the denial of a universal $2r$ complete-root tower.
 
-Primary successor: [`five-support/surfaces-and-halfcube.md`](five-support/surfaces-and-halfcube.md).
+The genuine all-rank transgression/residue hierarchy remains valid and distinct.
 
-Integrated mathematics:
+## 5. Later chapter migration
 
-- cycle-face surface and full dual triangulation;
-- same-embedding componentwise target $T_g^{(1)}\to\mathscr A_5$;
-- prescribed-dual holonomy criterion;
-- factorable quotient $J_g\to\mathscr A_5$ in narrowed scope;
-- even-halfcube parity correction;
-- target links, marked cores, and finite target certificates in their prior scopes.
+- surface and target geometry → `five-support/surfaces-and-halfcube.md`;
+- gauge and horizontal motion → `five-support/gauge-and-reconfiguration.md`;
+- cuts, four-poles, and routing → `five-support/cuts-four-poles-and-routing.md`;
+- holonomy, defects, and atoms → `five-support/holonomy-defects-and-atoms.md`;
+- independent proof families → `five-support/equivalent-formulations-and-proof-families.md`;
+- finite evidence and assurance → `five-support/finite-laboratories-and-certificates.md`;
+- open localisation/composition → `five-support/frontier-localisation.md`.
 
-## 6. Gauge and horizontal reconfiguration
+All B3–B8 theorem, correction, certificate, and frontier statuses remain as fixed in the unified base.
 
-Primary successor: [`five-support/gauge-and-reconfiguration.md`](five-support/gauge-and-reconfiguration.md).
+## 6. Corrected packet accounting
 
-Integrated mathematics includes gauge/Petrial motion, affine occurrence loci, support-cycle pivots, connected-cycle flow reconfiguration, switch image, internal correction/external reslicing, and fixed-lift/fixed-flow/graph-level separation.
-
-The source `FIVE_CDC_SUPPORT_CYCLE_PIVOT_AND_FLOW_RECONFIGURATION_V1.md`, omitted from the preliminary ledger, remains explicitly restored here.
-
-## 7. Cuts, four-poles, and routing
-
-Primary successor: [`five-support/cuts-four-poles-and-routing.md`](five-support/cuts-four-poles-and-routing.md).
-
-Integrated mathematics includes three-cut gluing, ten four-edge states, cap forcing, Kempe closure, path-pairing alignment, routing weights, uniform-routing elimination, and Type T/Type H reduction.
-
-Finite profile counts remain finite statements.
-
-## 8. Holonomy, defects, and atoms
-
-Primary successor: [`five-support/holonomy-defects-and-atoms.md`](five-support/holonomy-defects-and-atoms.md).
-
-Integrated mathematics includes rainbow coordinates, interior holonomy, root-fibre lifting, Tait resolution, BBD common origin and canonical defect flow, defect forests, Petersen transport, DDD triality, rank-two escape, and full-rank curvature/flat-potential alternatives.
-
-## 9. Independent proof families
-
-Primary successor: [`five-support/equivalent-formulations-and-proof-families.md`](five-support/equivalent-formulations-and-proof-families.md).
-
-Preserved roles include:
-
-- singular/local-system proof;
-- quadratic and Schur proof;
-- cographic formulation;
-- corrected orthogonal formulation;
-- stress/Fourier and Möbius-arrangement proof;
-- surface/half-cube proof;
-- finite-interface proof;
-- holonomy/cohomology proof;
-- orientation and five-flow projections.
-
-A preferred exposition does not erase these mechanisms. The false universal theorem is not preserved as a proof family.
-
-## 10. Finite laboratories and certificates
-
-Primary successor: [`five-support/finite-laboratories-and-certificates.md`](five-support/finite-laboratories-and-certificates.md).
-
-Current value includes fixed-flow cube certificates, thirty-vertex renewal counts, Petersen classification, flower mixed-core obstruction, small-four-pole census, routing/monodromy/atom/root-fibre tables, and explicit negative witnesses.
-
-Finite Fourier enumerators and cancellation tables remain finite evidence unless a uniform estimate is separately proved.
-
-## 11. Frontier and open boundaries
-
-Primary successor: [`five-support/frontier-localisation.md`](five-support/frontier-localisation.md).
-
-The open frontier includes localization, flat-potential interfaces, defect-forest pruning, Type T decomposition, residual Type H reduction, four-pole realizability, horizontal escape, and target-library completion.
-
-Programme B2 does not solve the global five-support theorem.
-
-## 12. Classification and accounting
-
-The exhaustive retirement classes are:
+The exact packet partition is
 
 $$
-38\text{ theorem/mechanism}
+39\text{ theorem/mechanism}
 +10\text{ alternate proof}
 +18\text{ finite}
 +10\text{ correction}
-+1\text{ programme synthesis}
-+1\text{ superseded false theorem}
++1\text{ synthesis}
 =78.
 $$
 
-See [`RETIRED_SOURCE_CLASSIFICATION.md`](RETIRED_SOURCE_CLASSIFICATION.md).
+The named orthogonal packet is one of the thirty-nine theorem/mechanism packets. The source-unreconstructed extrapolation is not a packet and is outside the count.
 
-## 13. Recovery
+See `RETIRED_SOURCE_CLASSIFICATION.md` and `AC_CUR_B2_B8_SOURCE_FIDELITY_MIGRATION_AUDIT.md`.
+
+## 7. Recovery and assurance
 
 For any retired `FILE`:
 
@@ -157,15 +88,6 @@ For any retired `FILE`:
 git show dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c:projects/affine-cdc/research/FILE
 ```
 
-Historical recovery does not restore active theorem authority to superseded claims.
+Historical recovery does not restore authority to a superseded proposition, and failure to recover a proposition does not invalidate a different theorem actually present in a packet.
 
-## 14. Assurance boundary
-
-Migration, correction, and retirement do not upgrade:
-
-- independent-review status;
-- Lean or other formal status;
-- manuscript or peer-review status;
-- publication, release, arXiv, DOI, novelty, or timestamp status.
-
-See [`FORMAL_STATUS.md`](FORMAL_STATUS.md).
+Migration, correction, and retirement do not upgrade independent review, Lean, manuscript, publication, release, arXiv, DOI, novelty, or timestamp status. Programme A, B1, B3–B8, the six frontier obligations, B9 exclusion, and the open global five-support theorem are unchanged.

@@ -2,22 +2,32 @@
 
 ## 1. Unit states
 
-The combined intake preserves six distinct internal states.
-
-| Unit | Curator treatment | What is complete | What remains open or conditional |
+| Unit | Curator treatment | Complete | Open or conditional |
 |---|---|---|---|
-| B3 | integrated with provenance repair | target links, capacity, eight-vertex factorable classification, target-scope hierarchy | no promotion from `J_g` to full dual; finite flower data remain certificates |
-| B4 | integrated, frontier explicit | vertical gauge/Petrial mechanics, connected switches, pivots, transport laws | universal vertical/horizontal escape and monotone compression remain open |
-| B5 | integrated, frontier localized | three/four-cut interface theorems, routing coordinates, uniform-routing elimination | full-cap theorem, realizability of residual kernels, Type T/H resolution remain open |
-| B6 | positive theorems integrated; two claims corrected | one-loop holonomy, root fibres, Tait escape, DDD triality, unique bad route | BBD simultaneous origin conditional; nontrivial defect forest removed pending valid variation slice |
-| B7 | positive rank/curvature theorems integrated | rank-one/rank-two elimination; full-rank flat/nonflat dichotomy | graph localization and composition are open |
-| B8 | assurance normalization integrated | finite-result classification and correction propagation | no mathematical independent review or reproducibility upgrade |
+| B3 | integrated | target links, capacity, factorable classification, scope hierarchy | no promotion from $J_g$ to full dual; finite flower data remain certificates |
+| B4 | integrated | gauge/Petrial mechanics, connected switches, pivots, transport laws | universal escape and monotone compression open |
+| B5 | integrated | three/four-cut interfaces, routing coordinates, uniform-routing elimination | full-cap theorem, residual realizability, Type T/H resolution open |
+| B6 | corrected | individual holonomy, root fibres, Tait escape, DDD triality, unique bad route | simultaneous origin conditional; nontrivial forest removed pending valid slice |
+| B7 | integrated | rank-one/rank-two elimination; full-rank flat/nonflat dichotomy | graph localization and composition open |
+| B8 | assurance normalized | finite-result classification and correction propagation | no independent review or reproducibility upgrade |
 
-No unit is represented as proving the global five-support theorem.
+No unit proves the global five-support theorem.
 
-## 2. B3 scope hierarchy
+## 2. B2/B8 source-fidelity synchronization
 
-For fixed compatible lift `g`:
+The B3–B8 state is read over the corrected B2 source boundary:
+
+- the exact orthogonal packet, blob `2043ada9d28789ecc5f4f0028e62133f37835bc1`, is theorem-level provenance for fixed rank-three/eight-support and five-slice mathematics;
+- the arbitrary-rank $\Gamma\oplus\Gamma^*$ / $d_h(a)$ / $O^+(2r,2)$ tower is a separate non-packet source-unreconstructed extrapolation, refuted by B2.3;
+- the $q-2$ lower bound and deleted permutation module remain active;
+- B8 finite classes attach to actual fixed-dimensional results and do not classify the non-packet extrapolation as a packet;
+- packet accounting is $39+10+18+10+1=78$.
+
+This synchronization changes no B3–B7 theorem or gap.
+
+## 3. B3 scope
+
+For fixed compatible lift $g$,
 
 $$
 J_g\to\mathscr A_5
@@ -27,146 +37,41 @@ T_g^{(1)}\to\mathscr A_5
 \text{five-support cover}.
 $$
 
-The first implication uses the canonical quotient `T_g^{(1)}\to J_g`. Its converse fails in general.
+$J_g$ is the old-colour quotient; $T_g^{(1)}$ retains full componentwise dual data. Factorable failure is not full-dual failure. The all-parallel representative is $\{01,23,45\}$; orbit sizes remain $28,168,224$.
 
-- `T_g^{(1)}` retains individual support-cycle components.
-- `J_g` identifies every component carrying the same old support index.
-- unused-root graphs, two-apex/pentagon cores, matching orbits, and ideal pivots are factorable objects.
-- common-link theorems apply to arbitrary target graphs, including full duals.
+## 4. B4 motion
 
-The corrected all-parallel matching representative is `\{01,23,45\}`. Only the display changes; the three orbit sizes remain `28,168,224`.
+Labelled lifts above fixed $f$ form an $H_f^0$ torsor with reduced code $H_f^0/\Gamma^{\pi_0(G)}$. One horizontal edge is one connected-cycle switch. Disconnected switch support gives a path. A pivot supplies one lift and the new fibre must be recomputed. Linear endpoint images classify composite endpoints, not automatically neighbours.
 
-## 3. B4 motion hierarchy
+## 5. B5 interfaces
 
-For a fixed flow `f`, labelled root lifts form a torsor under
+The active chain remains local support law, three-cut gluing, ten labelled four-pole states, profile intersection, cap forcing, Kempe pairing alignment, routing sectors, and uniform-routing elimination. Cap forcing is not full-cap containment; abstract transitions are not source path realization.
 
-$$
-H_f^0=\{k:V(G)\to\Gamma:k_u+k_v\in\langle f(e)\rangle\text{ for every }e=uv\}.
-$$
+## 6. B6 correction
 
-The reduced gauge code is
+Unconditional: individual-loop norm, root-fibre local system, genuine path-family switch flow, Tait resolution, soluble Type H escape, DDD triality, unique bad route, and local defect geometry under an independently supplied strip.
 
-$$
-\mathcal B_f\cong H_f^0/\Gamma^{\pi_0(G)}.
-$$
+Conditional: physical BBD groupoid closure and simultaneous origin require `AC-RL-BBD-GROUPOID-CLOSURE`.
 
-The motion classes are:
+Withdrawn: the fixed-terminal variation domain contains a zero-defect root cover, so a nontrivial defect forest requires `AC-RL-BBD-VARIATION-SLICE`.
 
-| Motion | Flow | Uncoloured embedding | Exact meaning |
-|---|---|---|---|
-| gauge / partial Petrial | fixed | may change | one vertical torsor translation |
-| support-cycle pivot | changes | fixed | one connected horizontal edge with explicit new lift |
-| general connected switch | changes | not canonically transported | one horizontal edge; solve the new lift fibre |
-| disconnected switch word | sequence of changes | sequence | commuting path of connected moves |
+## 7. B7 rank/curvature boundary
 
-Internal fixed-plane correction is linear only for the composite same-direction endpoint set. Connected-neighbour images need not be linear. External correction is quotient reslicing; `B'\supseteq M` likewise ranges over composite endpoints, with connected symmetric difference required for one adjacency.
+Rank one is impossible. Rank two gives a Tait/root-triangle escape. Full rank has curvature $\Omega$: $\Omega=0$ gives an eight-state affine potential, while $\Omega\ne0$ gives a common scalar-sheet cut with odd terminal parity.
 
-## 4. B5 interface hierarchy
+This is not yet a source-graph cut, bounded/connected support, composition-safe factor, or bounded transfer theorem.
 
-The theorem-level source interface is:
-
-```text
-cubic local support law
-→ cyclic three-cut gluing
-→ ten labelled-terminal four-pole states
-→ exact profile-intersection gluing
-→ cap forcing
-→ Kempe path-pairing alignment
-→ routing-weight sectors
-→ uniform-routing elimination.
-```
-
-Cap forcing proves only
-
-$$
-\Sigma(P)\cap\mathcal K_i\ne\varnothing
-$$
-
-for each `i`; it does not prove `\mathcal K_i\subseteq\Sigma(P)`.
-
-The four abstract mismatch kernels and Type T/Type H policies are finite state classifications. An abstract state transition becomes a source theorem only after the required terminal path pairing is realized.
-
-## 5. B6 correction boundary
-
-### Unconditional
-
-- cyclic affine norm and individual-loop classification;
-- root-fibre local system;
-- genuine three-path switch-flow formula;
-- root lifting iff Tait resolution;
-- Type H soluble zero-norm escape;
-- DDD atom triality and unique bad route;
-- local `K_6`/Petersen geometry under an independently supplied defect strip.
-
-### Conditional
-
-The following chain is not active unconditionally:
-
-```text
-physical BBD loops close as a root-preserving groupoid
-→ pure translation kernel is meaningful globally
-→ simultaneous common origin
-→ canonical common E_5 flow.
-```
-
-Its missing premise is `AC-RL-BBD-GROUPOID-CLOSURE`.
-
-### Withdrawn from active theorem layer
-
-The minimization over all fixed-terminal `E_5` flows contains the original root-valued cover. Its defect number is zero. Therefore that domain cannot yield a nontrivial defect-minimal forest. A replacement requires `AC-RL-BBD-VARIATION-SLICE`.
-
-Finite local defect patterns and Petersen transport tables remain valid conditional geometry; they do not repair the variation-domain defect.
-
-## 6. B7 theorem and localization boundary
-
-The universally route-locked quotient has:
-
-- no rank-one sector;
-- a rank-two Tait/root-triangle escape;
-- a full-rank curvature class `\Omega(c)`.
-
-For full rank:
-
-$$
-\Omega(c)=0
-\Longleftrightarrow
-\text{eight-state affine potential with the exact edge law}.
-$$
-
-If `\Omega(c)\ne0`, there is a common terminal-colour edge set that is a cut in all four scalar sheets and has odd terminal parity.
-
-This does not yet prove:
-
-- a cut in the original source four-pole;
-- bounded or connected support;
-- a DDD/Whitney/transition-matroid factor;
-- identification with the physical `D_8` class;
-- bounded transfer semantics for potential fibres.
-
-## 7. Six exact AC-RL gaps
-
-### BBD correction gaps
+## 8. Six exact AC-RL gaps
 
 - `AC-RL-BBD-GROUPOID-CLOSURE`;
-- `AC-RL-BBD-VARIATION-SLICE`.
-
-### Localization/composition gaps
-
+- `AC-RL-BBD-VARIATION-SLICE`;
 - `AC-RL-TYPE-T-SERIALISATION`;
 - `AC-RL-FLAT-POTENTIAL-INTERFACE`;
 - `AC-RL-COMMON-CUT-LOCALISATION`;
 - `AC-RL-TYPE-H-COMMON-WITNESS`.
 
-These are the controlling open returns. Broad phrases such as “defect pruning” or “localization remains” are explanatory only and do not replace the exact identifiers.
+## 9. Global endpoint and assurance
 
-## 8. Global endpoint
+The open endpoint is conversion of persistent bad data into a good state or strict source progress. A finite target census, scalar-sheet cut, or finite potential range alone is insufficient.
 
-The open endpoint is:
-
-$$
-\text{persistent vertically and horizontally bad data}
-\Longrightarrow
-\text{strict source progress or a good state}.
-$$
-
-Strict source progress must be a smaller separator, bounded replaceable interface, composition-safe factor, or another explicit decreasing/gluing mechanism. A finite target census, scalar-sheet cut, or finite potential range alone is insufficient.
+This source-fidelity pass does not change B9 exclusion, independent-review, Lean, manuscript, publication, release, arXiv, DOI, or canonical status.

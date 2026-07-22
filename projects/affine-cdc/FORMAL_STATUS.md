@@ -1,71 +1,38 @@
 # Formalization and reliability boundary
 
-## 1. Programme A theorem and audit
+## 1. Programme A
 
-Programme A authorially proves the complete CDC theorem. The original fixed candidate is
+Programme A authorially proves the complete CDC theorem. Its original spine passed Independent Audit A subject to the named Seymour input and three non-blocking explicitness repairs. Those repairs are integrated and closed without theorem change. No end-to-end Lean status is inferred.
 
-`curation/affine-cdc-programme-a-v1@68715fb29bb4b6555e2bc3e089603c5390d01566`.
+## 2. B1/B2
 
-Independent Audit A is retained at
+B1 controls exact objects and quantifiers. B2 controls the complete witness hierarchy, fixed-data singular/Schur criteria, stress/Fourier scope, and the additive-root correction.
 
-`audit/affine-cdc-complete-cdc-spine-v1@2fac31f4e76c819dd42a179a2772501c50ee93ad`
+The source-fidelity-repaired B2 classification is:
 
-with result
+- `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`, blob `2043ada9d28789ecc5f4f0028e62133f37835bc1`: theorem-level historical source for fixed rank-three/eight-support $O^+(6,2)$ and five-coordinate $O^-(4,2)$ mathematics;
+- arbitrary-rank $\Gamma\oplus\Gamma^*$ / $d_h(a)$ / $O^+(2r,2)$ tower: `SOURCE-UNRECONSTRUCTED / INFERRED-EXTRAPOLATION OR UNCOMMITTED DRAFT / MATHEMATICALLY REFUTED BY B2.3`, outside the packet population;
+- $q-2$ lower bound, deleted permutation module, rank-three exceptionality, and the five-support $O^-(4,2)$ model: retained authorial theorems.
 
-`VERIFIED SUBJECT TO NAMED EXTERNAL THEOREMS / NON-BLOCKING EXPLICITNESS REPAIRS`.
+## 3. B3–B8
 
-The three returned items are closed at repair checkpoint
+B3 target results, B4 motion laws, B5 interfaces, B6 corrected holonomy/atom results, B7 rank/curvature results, and B8 finite-assurance classes retain their fixed unified status. No mathematical theorem or frontier obligation changes in this pass.
 
-`06bce656dcf5bfd6491ec08f51a702ea56d2470d`
+## 4. Packet accounting and source assurance
 
-as `EXPOSITORY-REPAIR / NO-THEOREM-CHANGE / NO-NEW-MATHEMATICS` and are integrated in this unified candidate. The repaired prose has not been separately independently re-audited.
+The recovered packet population remains exactly seventy-eight:
 
-Seymour’s nowhere-zero six-flow theorem remains the sole non-elementary external logical input.
+$$
+39+10+18+10+1=78.
+$$
 
-## 2. Programme A repair boundaries
+All packet bodies are Git-recoverable. Source-classification fidelity is corrected by this candidate. The unreconstructed extrapolation is not a packet and has no packet assurance class.
 
-- A3 now explicitly uses finite connected loopless multigraphs, permits parallel edge objects, and assembles flows componentwise.
-- A4 now has a complete reverse reconstruction of every even local line family from a unique deleted point.
-- `reduction/outer-shell-and-binary-flow.md`, §§4.1–4.2, is historical provenance only; A3’s internal equal-order transport is controlling.
+The authorial PDL repair and Curator integration are not the separately bounded source-fidelity re-audit required by AC-DIR.
 
-No theorem, hypothesis, conclusion, or dependency changes.
+## 5. Machine-checked anchor
 
-## 3. Programme B1–B8
-
-B1 and B2 retain their exact object, quantifier, witness, fixed-data, stress/Fourier, and orthogonal-correction roles.
-
-B3 retains authorial target theorems and full-dual/factorable scope separation.
-
-B4 retains complete vertical/horizontal motion laws in stated scope; global escape remains open.
-
-B5 retains theorem-level interface results and finite routing/census boundaries.
-
-B6 retains positive holonomy/root-fibre/Tait/DDD results, with:
-
-- BBD common origin conditional on `AC-RL-BBD-GROUPOID-CLOSURE`;
-- nontrivial defect forest removed pending `AC-RL-BBD-VARIATION-SLICE`.
-
-B7 retains rank/curvature theorems; global source localization and composition remain open.
-
-B8 remains assurance normalization, not independent review or formal verification.
-
-## 4. Machine-checked anchor
-
-The Lean anchor remains
-
-`Yuren-Tang/affine-cdc:main@ebd7098a7a8b824e8c0a511d3c71f61705672aa8`.
-
-It machine-checks substantial internal slices, but neither Programme A nor B1–B8 is end-to-end Lean verified. No Lean repository is modified by this alignment.
-
-## 5. Independent-review axes
-
-- Programme A original theorem spine: Independent Audit A completed.
-- Programme A repaired prose: integrated, not separately re-audited.
-- B1–B8: no completed dedicated Audit B yet.
-- B8 assurance normalization: not independent mathematical review.
-- Curator integration never converts an authorial state into an audited state by itself.
-
-Priority Audit B boundaries remain full-dual/factorable scope, connected/composite switching, path-pair realizability, B6 correction, B7 localization, and B8 certificate metadata.
+The companion Lean repository continues to machine-check substantial internal AffineCDC slices. This pass modifies no Lean repository and makes no claim that Programme A or B1–B8 is end-to-end formalized.
 
 ## 6. Six exact open obligations
 
@@ -76,23 +43,19 @@ Priority Audit B boundaries remain full-dual/factorable scope, connected/composi
 - `AC-RL-COMMON-CUT-LOCALISATION`;
 - `AC-RL-TYPE-H-COMMON-WITNESS`.
 
-They are five-support frontier obligations, not Programme A defects.
+They remain mathematical frontier returns, not assurance defects.
 
 ## 7. Reliability rules
 
-1. $J_g$ is not the full dual.
-2. Composite switch images are not connected-neighbour sets.
-3. A support pivot does not transport the whole new fibre.
-4. Cap forcing is not full-cap containment.
-5. Finite routing transitions are not path realizability.
-6. Individual BBD loops do not imply physical groupoid closure.
-7. A variation domain containing the root cover cannot produce a nontrivial defect minimum.
-8. Scalar-sheet cuts are not source graph cuts without comparison.
-9. Finite potential range is not bounded interface semantics.
-10. Finite census does not supply a missing global proof.
-11. `CODE-PARTIAL` is non-load-bearing.
-12. Current-best inclusion, Director acceptance, independent audit, Lean, manuscript, publication, release, arXiv, and DOI are separate axes.
+1. A source filename does not determine a proposition’s content.
+2. Failure to reconstruct one proposition does not invalidate a different theorem actually present in a packet.
+3. The exact packet is fixed-dimensional; the extrapolated tower is non-packet.
+4. The $q-2$ theorem and deleted permutation module remain load-bearing.
+5. Curator integration does not equal independent audit.
+6. B8 assurance normalization does not equal public-code reproducibility.
+7. `CODE-PARTIAL` remains non-load-bearing.
+8. Current-best inclusion, Director disposition, independent audit, Lean, manuscript, publication, release, arXiv, and DOI are separate axes.
 
-## 8. Publication and canonical boundary
+## 8. Publication and release boundary
 
-This unified candidate does not move `main`, edit or approve a manuscript, establish novelty, authorize submission, create a release/tag, or change arXiv/DOI/publication status. The global five-support theorem remains open.
+This pass does not approve or edit a manuscript, establish novelty, authorize submission, create a release or tag, change arXiv or DOI records, or move canonical `main`. The global five-support theorem remains open; B9 and later moving mathematics are excluded.

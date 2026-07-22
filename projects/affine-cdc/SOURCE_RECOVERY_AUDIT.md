@@ -1,130 +1,91 @@
-# AffineCDC source-recovery and no-loss audit
-
-This audit verifies that current-tree retirement of the five-support discovery packets does not lose mathematical source, public priority, ancestry, or recoverability.
+# AffineCDC source-recovery and source-fidelity audit
 
 ## 1. Exact source lineage
 
-The public five-support checkpoint is:
+The public five-support checkpoint is
 
 `dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c`.
 
-The integration base is:
+The source interval from `main@749e0579581fcc838685138b3582f4de306b8e72` contains exactly eighty-two commits and seventy-eight packet files under `projects/affine-cdc/research/`. Every packet body remains recoverable through ordinary Git history.
 
-`7a166d2eb5642ec967f640323488e49f1c2ad5d4`.
+## 2. Recovery completeness versus classification fidelity
 
-Direct comparison verifies that the integration base is eight commits ahead of the checkpoint and zero commits behind. The merge base is exactly `dad218dd...`. Therefore every checkpoint commit and blob is an ancestor of the curation branch.
+Two distinct claims are controlled separately.
 
-The canonical default ancestor remains:
+1. **Git/body recovery completeness:** all seventy-eight packet files, their exact paths, blobs, and chronology are recoverable.
+2. **Source-classification fidelity:** the packet-to-theorem attribution must match the actual body of each packet.
 
-`main@749e0579581fcc838685138b3582f4de306b8e72`.
+Audit B found that the fixed unified candidate satisfied the first claim but not the second for the orthogonal-root packet. The present replacement corrects that migration defect.
 
-The accepted outer-shell source remains:
+## 3. Corrected packet placement
 
-`0927011177cabac20f06a57fa5e57476d6f13dee`.
+The packet
 
-## 2. Exact source population
+`FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`
 
-Comparing `main@749e057...` with `dad218dd...` yields exactly:
+at blob `2043ada9d28789ecc5f4f0028e62133f37835bc1` is a theorem-level fixed-dimensional source for $H_8$, the Hamming kernel and moment map, $O^+(6,2)$, twenty-eight roots, rank-three compatible lifts, and five-coordinate $O^-(4,2)$ slices. It is one of the thirty-nine controlling theorem/mechanism packets.
 
-- `82` source commits;
-- `78` added files under `projects/affine-cdc/research/`;
-- no source-file deletion or rename inside that checkpoint line.
+It contains no arbitrary-rank $\Gamma\oplus\Gamma^*$ model, no $d_h(a)=([a],\operatorname{ev}_a)$ formula, and no universal $O^+(2r,2)$ tower.
 
-The complete seventy-eight-file population is enumerated in [`RETIRED_SOURCE_CLASSIFICATION.md`](RETIRED_SOURCE_CLASSIFICATION.md). Its class count is:
+## 4. Separate source-unreconstructed proposition
+
+No earlier exact committed source was recovered for the arbitrary-rank tower. Its classification is
+
+`SOURCE-UNRECONSTRUCTED / INFERRED-EXTRAPOLATION OR UNCOMMITTED DRAFT / MATHEMATICALLY REFUTED BY B2.3`.
+
+It is not one of the seventy-eight packets. The first recoverable committed text displaying it as an earlier theorem is the original PDL B2.3 correction layer; that does not retroactively place it in the historical packet population.
+
+The mathematical correction remains self-contained:
+
+- $\dim V\ge q-2$;
+- deleted permutation module of dimension $q-2$;
+- impossibility of a $2r$ complete-root model for $r\ge4$;
+- rank-three exceptionality.
+
+## 5. Exact packet accounting
+
+After packet-by-packet placement, the classes are
 
 $$
 39+10+18+10+1=78.
 $$
 
-The final audit corrected one preliminary ledger omission:
+The extrapolation is outside the equation. The alternative partitions that counted the named packet as a false-theorem packet are superseded.
 
-`FIVE_CDC_SUPPORT_CYCLE_PIVOT_AND_FLOW_RECONFIGURATION_V1.md`.
+## 6. Recovery procedures
 
-It is now mapped to `five-support/gauge-and-reconfiguration.md` and included in the retired-source accounting.
-
-## 3. Recovery procedures
-
-### Recover one source body
+Recover one source body:
 
 ```text
 git show dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c:projects/affine-cdc/research/FILE
 ```
 
-### Restore one packet into a worktree without rewriting history
+Restore one packet into a worktree without rewriting history:
 
 ```text
 git restore --source=dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c -- projects/affine-cdc/research/FILE
 ```
 
-### Inspect the complete historical source surface
+Inspect the complete source surface:
 
 ```text
 git ls-tree -r --name-only dad218dd18ed05d1b7cb730c2dc2431b4db5ec9c projects/affine-cdc/research
 ```
 
-### Recover discovery chronology
+Recover chronology:
 
 ```text
 git log --reverse -- projects/affine-cdc/research
 ```
 
-### Compare a retired packet with its active successor
+## 7. No-loss criteria
 
-Use `git show` at `dad218dd...` for the packet and the final curation SHA for the successor chapter named in [`CHAPTER_PROVENANCE.md`](CHAPTER_PROVENANCE.md).
+A packet is retired only after its exact source is known, its current role is named, independent proof/certificate/correction value is preserved, assurance is not silently upgraded, and its body remains recoverable. All seventy-eight packets satisfy these criteria under the corrected classification.
 
-These are ordinary read or branch-local restore operations. No force-push, rebase, public-history rewrite, branch deletion, release, or DOI action is required.
+The non-packet extrapolation is handled honestly as an unreconstructed proposition rather than being assigned to an unrelated source packet.
 
-## 4. No-loss criteria
+## 8. Scope and assurance conclusion
 
-A source packet is retired only after all of the following hold:
+The active tree may omit the seventy-eight packet bodies without source or priority loss, subject to the corrected provenance ledgers. This source-fidelity correction preserves Programme A, B1, B3–B8, all six frontier obligations, B9 exclusion, and the open global five-support theorem.
 
-1. its exact commit and path are known;
-2. the checkpoint containing it is an ancestor of the candidate;
-3. its current mathematical role has a named successor;
-4. independent proof value, finite evidence, counterexample, correction, or open boundary is preserved in the active corpus;
-5. assurance status is not silently upgraded;
-6. the source body remains recoverable with one exact Git command.
-
-All seventy-eight packets satisfy these criteria.
-
-## 5. Current-value preservation
-
-The active corpus retains:
-
-- controlling definitions and theorem statements;
-- preferred proofs and proof syntheses;
-- independent singular, Schur, stress/Fourier, cographic, surface, interface, and holonomy proof families;
-- exact finite counts used by the theory;
-- explicit counterexample roles and negative boundaries;
-- the BBD/DDD distinction and the current localisation frontier;
-- the incomplete-verifier `CODE-PARTIAL` boundary.
-
-What leaves the current tip is duplicate discovery-order exposition, superseded partial synthesis, and packet-local repetition.
-
-## 6. Control-file recovery
-
-`BASELINE_MANIFEST.md` is also retired from the current tip. It records the temporary `AC-BASELINE-01` integration state and is superseded by:
-
-- [`RECONSTRUCTION_MANIFEST.md`](RECONSTRUCTION_MANIFEST.md);
-- [`ACTIVE_MATHEMATICAL_SURFACE.md`](ACTIVE_MATHEMATICAL_SURFACE.md);
-- this recovery audit.
-
-Its exact historical body remains recoverable from any ancestor containing it, including `7a166d2eb5642ec967f640323488e49f1c2ad5d4`.
-
-## 7. Source branches and default branch
-
-This finalization does not move or delete:
-
-- `main`;
-- `research/affine-cdc-five-cdc-v1`;
-- the outer-shell source branch;
-- the integration branch;
-- any historical commit or tag.
-
-Current-tree deletion affects only the dedicated curation branch. Default-branch movement remains an owner-authorized operation.
-
-## 8. Recovery conclusion
-
-The candidate is history-preserving and source-complete. The active tree may therefore omit the seventy-eight packets and obsolete baseline manifest without mathematical or priority loss.
-
-The final authoritative return records the exact candidate SHA and verifies its relationship to `main` and the source checkpoint.
+The corrected candidate must undergo the separately bounded B2/B8 source-fidelity re-audit required by AC-DIR. No canonical movement, independent acceptance, Lean, manuscript, publication, release, arXiv, DOI, or tag status follows from this audit.

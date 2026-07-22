@@ -1,125 +1,62 @@
 # AffineCDC current mathematical state
 
-## 1. Unified construction
+## 1. Programme A
 
-Current unified candidate branch:
+Programme A supplies a complete authorial paper proof of the Cycle Double Cover theorem. Its theorem, Audit A disposition, and three closed explicitness repairs are unchanged by this pass.
 
-`curation/affine-cdc-programme-a-b1-b8-unified-v1`.
+## 2. Five-support witness hierarchy
 
-It is based exactly on the accepted B1–B8 candidate
+For finite loopless cubic multigraphs, five-support existence is equivalent to $R_5$ root flows, $K_5$ triangles, exact matching/four-flow data, anisotropic $O^-(4,2)$ flows, quadratic cycle solutions, and cographic cycle-continuous maps. Singular/Schur descriptions are fixed-data criteria; stress/Fourier are dual/counting layers.
 
-`0100895d57aab7d21153c580fa9bdc45fafc832e`
+The global five-support theorem remains open.
 
-and the Programme A repair checkpoint
+## 3. B2 source-fidelity correction
 
-`06bce656dcf5bfd6491ec08f51a702ea56d2470d`.
+The exact historical packet `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`, blob `2043ada9d28789ecc5f4f0028e62133f37835bc1`, is valid theorem-level provenance for the fixed rank-three/eight-support $O^+(6,2)$ model and five-coordinate $O^-(4,2)$ slices.
 
-The exact repair source splice is
+It does not contain the arbitrary-rank $\Gamma\oplus\Gamma^*$ / $d_h(a)$ / $O^+(2r,2)$ tower.
 
-`a35da6ba6e4908c70f970f3cadf5fcf4b582dae4`.
+That tower is a separate non-packet proposition classified as
 
-## 2. Complete CDC line
+`SOURCE-UNRECONSTRUCTED / INFERRED-EXTRAPOLATION OR UNCOMMITTED DRAFT / MATHEMATICALLY REFUTED BY B2.3`.
 
-Programme A proves:
+The following remain active and unchanged:
 
-> Every multigraph with finite active edge set and no singleton cut has a finite circuit double cover.
+- $\dim V\ge q-2$;
+- deleted permutation module of dimension $q-2$;
+- impossibility of a $2r$ complete-root model for $r\ge4$;
+- rank-three exceptionality;
+- exact five-support $O^-(4,2)$ geometry.
 
-The original candidate `68715fb29bb4b6555e2bc3e089603c5390d01566` passed Independent Audit A at `2fac31f4e76c819dd42a179a2772501c50ee93ad`, with result
+The genuine all-rank transgression/residue hierarchy remains valid and distinct.
 
-`VERIFIED SUBJECT TO NAMED EXTERNAL THEOREMS / NON-BLOCKING EXPLICITNESS REPAIRS`.
+## 4. Corrected source accounting
 
-The three explicitness repairs are now closed and integrated:
-
-1. exact Seymour loopless-multigraph convention, parallel edges permitted, componentwise assembly explicit;
-2. complete A4 reverse local-family reconstruction;
-3. old Tutte route historical and non-controlling.
-
-They change no theorem or dependency. Seymour remains the sole non-elementary external logical input. The repaired prose has not been separately re-audited.
-
-## 3. Five-support object and witness hierarchy
-
-For finite loopless cubic multigraphs, five indexed even supports are equivalent to root flows, $K_5$ triangle labellings, exact matching/four-flow data, existential Fano-flow/plane data, existential cycle-face surfaces with a full-dual map to $\mathscr A_5$, anisotropic $O^-(4,2)$ flows, quadratic cycle solutions, and cographic cycle-continuous edge maps.
-
-Singular/Schur formulations are fixed-data criteria. Stress/Fourier are dual solvability/counting layers. The false universal $2r$ orthogonal theorem remains superseded by the $q-2$ deleted-permutation-module theorem.
-
-## 4. B3 target layer
-
-The active hierarchy is
+The seventy-eight recovered packets are partitioned as
 
 $$
-J_g\to\mathscr A_5
-\Longrightarrow
-T_g^{(1)}\to\mathscr A_5
-\Longrightarrow
-\text{five-support cover}.
+39+10+18+10+1=78.
 $$
 
-$J_g$ is only the old-colour-factorable quotient. B3 retains the exact common-link and capacity theorems, eight-vertex factorable classification, unused-matching/core theory, and conditional flower full-dual obstruction.
+The orthogonal packet belongs to the thirty-nine theorem/mechanism packets. The source-unreconstructed extrapolation is outside the packet population.
 
-The correct all-parallel matching representative is $\{01,23,45\}$; orbit sizes $28,168,224$ are unchanged.
+## 5. B3–B8 state preserved
 
-## 5. B4 motion layer
+- B3 target and factorability distinctions: unchanged;
+- B4 connected/composite motion distinctions: unchanged;
+- B5 interface theorem/certificate boundary: unchanged;
+- B6 groupoid and variation corrections: unchanged;
+- B7 rank/curvature theorems and global-composition boundary: unchanged;
+- B8 assurance classes: unchanged except for corrected source attribution and packet placement.
 
-- fixed-flow lifts form an $H_f^0$ torsor;
-- the reduced gauge code is $H_f^0/\Gamma^{\pi_0(G)}$;
-- gauge bits are accessible partial Petrials;
-- one horizontal edge is one connected-cycle switch;
-- disconnected cycle words give commuting paths;
-- a support pivot supplies one explicit lift and preserves the uncoloured embedding;
-- the new fibre must be recomputed;
-- internal correction is a composite fixed-quotient linear problem;
-- external correction is quotient reslicing.
+## 6. Exact frontier
 
-The `7737` composite-endpoint and `2801` connected-neighbour populations remain distinct.
+The six open AC-RL obligations remain unchanged. B9 remains excluded and blocked on localization/composition.
 
-## 6. B5 interface layer
+## 7. Assurance state
 
-Theorem-level: cubic local law, cyclic three-cut gluing, ten four-pole states and `640` ordered assignments, exact profile-intersection gluing, cap forcing, Kempe path-pairing alignment, routing weights, and uniform-routing elimination.
+This candidate is
 
-Open: full-cap containment, residual-kernel realization/elimination, Type T serialization, and Type H common-witness/composition.
+`CURATOR-INTEGRATED / B2-B8 SOURCE-FIDELITY CORRECTED / MATHEMATICS PRESERVED / RE-AUDIT REQUIRED`.
 
-## 7. B6 correction and retained theorems
-
-Retained unconditionally:
-
-- individual-loop holonomy and cyclic norm;
-- genuine path-family switch flow;
-- root-fibre section problem;
-- root lifting iff Tait resolution;
-- Type H soluble zero-norm escape;
-- DDD atom triality and unique bad route;
-- local $K_6$/Petersen geometry when a defect strip is independently supplied.
-
-Corrected:
-
-- BBD simultaneous common origin is conditional on `AC-RL-BBD-GROUPOID-CLOSURE`;
-- the nontrivial defect-minimal forest is removed pending `AC-RL-BBD-VARIATION-SLICE`.
-
-## 8. B7 rank and curvature
-
-- rank one is impossible;
-- rank two is a Tait/root-triangle escape;
-- full rank has an exact flat/nonflat curvature dichotomy;
-- flatness gives an eight-state affine potential;
-- nonflatness gives a common scalar-sheet cut with odd terminal parity.
-
-The scalar-sheet cut is not yet a source graph cut, and the potential is not yet a bounded interface.
-
-The remaining four localization returns are:
-
-- `AC-RL-TYPE-T-SERIALISATION`;
-- `AC-RL-FLAT-POTENTIAL-INTERFACE`;
-- `AC-RL-COMMON-CUT-LOCALISATION`;
-- `AC-RL-TYPE-H-COMMON-WITNESS`.
-
-Together with the two BBD gaps, six exact obligations control the frontier.
-
-## 9. B8 assurance
-
-Finite claims remain classified as `F-PROVED`, `F-CERT-PUBLIC`, `F-CERT-PRIVATE`, `F-CENSUS`, `CODE-PARTIAL`, or `AFFECTED`. B8 is assurance normalization, not independent review or a reproducibility upgrade.
-
-## 10. Global status
-
-The global five-support theorem remains open. B9 and AC-RL working-ahead material are not consumed by this unified candidate.
-
-Programme A has passed Audit A; B1–B8 have not yet received held Audit B. No end-to-end Lean, manuscript, publication, release, arXiv, DOI, novelty, or timestamp status is created.
+It is not independent acceptance, end-to-end Lean verification, manuscript approval, publication, release, arXiv, DOI, novelty, timestamp, or canonical movement.
