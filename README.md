@@ -17,6 +17,14 @@ is not a claim of peer review or final correctness.
   [mathematical architecture](projects/affine-cdc/MATHEMATICAL_ARCHITECTURE.md),
   not the chronological research notes.
 
+- [Erdős 306](projects/erdos-306/README.md) — the current-best architecture for
+  representing positive rationals with squarefree reduced denominator by
+  reciprocals of distinct squarefree semiprimes. It separates the immutable
+  Rosser–Schoenfeld-based Lean release, the preferred PNT/Abel human provider,
+  the finite Fourier/control mechanism, exact finite certificates, and the
+  manuscript-consumer boundary. Start with its
+  [mathematical architecture](projects/erdos-306/MATHEMATICAL_ARCHITECTURE.md).
+
 ## Repository organization
 
 - `projects/` — material that belongs to a coherent mathematical project;
