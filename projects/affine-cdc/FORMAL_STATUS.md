@@ -24,9 +24,17 @@ B3 retains authorial target theorems and full-dual/factorable scope separation. 
 
 ## 3. OR1 authorial state
 
-Exact PDL source:
+Exact mathematical checkpoint:
 
 `proof-development/affine-cdc-rigour-v1@9dc0b3a5c906e51f8f1816e00b85f7aa2a744b1b`.
+
+DAG registration:
+
+`29657f08253df87baa37ad09c88cce25904c189a`.
+
+Finalized handoff packaging:
+
+`proof-development/affine-cdc-rigour-v1@9cb286bf53459d32b629d3532387ec322745fae6`.
 
 Integrated authorial theorems:
 
@@ -134,9 +142,9 @@ The orientation obligations are global existence questions, not defects in the f
 17. Support-only collapse does not retain an orientation witness.
 18. Authorial proof, Curator integration, independent audit, Lean, manuscript, publication, release, arXiv, and DOI are separate axes.
 
-## 8. Packaging defect
+## 8. Handoff status
 
-The intake-named `PROGRAMME_OR1_CURATOR_HANDOFF.md` is absent from the exact PDL checkpoint and DAG registration ref. The four OR1 dossiers and registration metadata are complete enough for integration. This is a non-blocking PDL packaging defect, not a theorem or assurance upgrade.
+The finalized handoff file exists at packaging commit `9cb286bf53459d32b629d3532387ec322745fae6`. It confirms the exact authorial checkpoint, DAG registration, included files, assurance discipline, destinations, eight Curator success tests, and exclusions. It adds no mathematical theorem and does not authorize later moving PDL work.
 
 ## 9. Publication and canonical boundary
 
