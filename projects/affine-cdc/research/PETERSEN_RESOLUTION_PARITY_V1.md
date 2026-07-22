@@ -1,17 +1,18 @@
 # Petersen resolution parity and the canonical DDD double cover
 
-## Research dossier v1
+## Research dossier v2 — affine-class correction integrated
 
 **Role:** `AffineCDC — Research Lead` (`AC-RL`)  
 **Workspace:** `Yuren-Tang/mathematics:research/affine-cdc-five-cdc-v1`  
-**Exact parent head:** `096b15e6fdd692c1344889fc65d6b34c2206d1c6`  
+**Original parent head:** `096b15e6fdd692c1344889fc65d6b34c2206d1c6`  
+**Correction parent:** `projects/affine-cdc/research/DDD_DIHEDRAL_REFLECTION_CLASS_V1.md`  
 **Parents:**
 
 - `projects/affine-cdc/research/PETERSEN_PIVOT_RESOLUTION_V1.md`;
 - `projects/affine-cdc/research/PETERSEN_BACKTRACK_TYPE_T_REDUCTION_V1.md`;
 - `projects/affine-cdc/research/PETERSEN_CYCLE_MONODROMY_V1.md`.
 
-**Status:** exact canonical resolution-double-cover and parity-holonomy theorem for every reduced Petersen pivot skeleton; identification with the physical affine `D8` cohomology class remains open.  
+**Status:** exact canonical resolution-double-cover and parity-holonomy theorem for every reduced Petersen pivot skeleton. Resolution parity is a linear endpoint-action invariant and does not detect the physical affine `D8` cohomology class.  
 **Not implied:** canonical acceptance, independent audit, Lean verification, manuscript readiness, graph-side replacement, or the global five-support theorem.
 
 ---
@@ -35,7 +36,7 @@ Suppose the pivot skeleton traverses `F` from pivot `s` to pivot `t`.
 - the constant-`s` run on the left forces resolution `t`;
 - the constant-`t` run on the right forces resolution `s`.
 
-Thus traversal across the switch exchanges the two elements of `E_F`.
+Thus passing from the left-shore demand to the right-shore demand exchanges the two elements of `E_F`.
 
 ### Definition 1.1 — local resolution flip
 
@@ -57,17 +58,17 @@ Let
 \gamma=(s_0,F_1,s_1,\ldots,F_k,s_k)
 \]
 
-be a pivot skeleton. Its resolution transport is the composite of the `k` local flips.
+be a pivot skeleton. Use one abstract bit to distinguish the two shore-demand sheets. Traversing each DDD switch toggles that bit.
 
 ### Theorem 2.1 — parity law
 
-The resolution transport of `gamma` is
+The resolution-sheet transport of `gamma` is
 
 \[
 \boxed{
 \operatorname{Hol}_{\mathrm{res}}(\gamma)
 =
-(-1)^k\in C_2.
+|\gamma|\pmod2.
 }
 \]
 
@@ -78,7 +79,7 @@ Equivalently:
 
 ### Proof
 
-Every switch contributes the unique nontrivial permutation of a two-point resolution fibre. Their composite is trivial exactly when the number of factors is even. ∎
+Each switch contributes the unique nontrivial permutation of a two-point shore-demand fibre. Their composite is trivial exactly when the number of factors is even. ∎
 
 ### Corollary 2.2 — Type-T invariance
 
@@ -96,14 +97,13 @@ The resolution parity depends only on the reduced pivot skeleton.
 
 ## 3. The canonical double cover
 
-Assign one bit to the two resolution sheets. Traversing any Petersen switch edge toggles the bit.
+Assign one bit to the two resolution sheets. Traversing any Petersen pivot edge toggles the bit.
 
-This defines the canonical bipartite double cover of the Petersen pivot graph:
+This defines the canonical bipartite double cover
 
 \[
 \widetilde P_{\mathrm{res}}
-=
-P\times\mathbf F_2,
+=P\times\mathbf F_2,
 \]
 
 with
@@ -117,11 +117,9 @@ with
 
 A pivot walk lifts to a closed walk in `P_res` if and only if it has even length.
 
-An odd pivot cycle exchanges the two resolution sheets and cannot carry a globally consistent choice of DDD root resolution.
+An odd pivot cycle exchanges the two resolution sheets and cannot carry a globally consistent choice of shore-demand sheet.
 
-### Interpretation
-
-The obstruction is not the ordinary state repetition of `L(P)`. It is the nontrivial holonomy of the resolution double cover after all rank-two runs have been collapsed.
+This is a statement about the two crossed root resolutions and their linear transport. It does not yet choose or classify an affine `E5` translation.
 
 ---
 
@@ -139,7 +137,7 @@ Let `F_0` be the initial DDD/Petersen-edge state of a simple pivot cycle.
 1. If `|C|` is even, `Pi(C)=1` fixes both elements of `E_(F_0)`.
 2. If `|C|` is odd, `Pi(C)` stabilises `F_0` setwise and exchanges its two Petersen endpoints.
 
-Thus the action of the full support monodromy on the two root resolutions of `F_0` is exactly
+Thus
 
 \[
 \boxed{
@@ -153,11 +151,11 @@ Thus the action of the full support monodromy on the two root resolutions of `F_
 
 The even case is immediate from identity monodromy.
 
-In the odd case, `Pi(C)` is a four-cycle fixing one support index. Since the state walk closes, it stabilises `F_0`. A four-cycle cannot fix separately the two disjoint root endpoints of `F_0`; it exchanges them as the two opposite pairs of its invariant square matching. This is the nontrivial permutation of `E_(F_0)`. ∎
+In the odd case, `Pi(C)` is a four-cycle fixing one support index. Since the state walk closes, it stabilises `F_0`. Its invariant DDD matching consists of the two opposite pairs of the four-cycle; the rotation exchanges those two root endpoints. ∎
 
 ---
 
-## 5. The linear shadow of the DDD affine class
+## 5. Separation from the affine `D8` class
 
 The DDD stabiliser satisfies
 
@@ -165,69 +163,93 @@ The DDD stabiliser satisfies
 H^1(D_8,E_5)\cong\mathbf F_2.
 \]
 
-The resolution parity theorem supplies a canonical graph-level `C2` holonomy:
+However, the unique nonzero affine class is reflection-supported.
+
+Let `R ~= C4` be the rotation subgroup generated by the type-`41` monodromy of an odd Petersen cycle. Then
 
 \[
-\chi_{\mathrm{res}}:\pi_1(P)\to\mathbf F_2,
-\qquad
-\chi_{\mathrm{res}}(\gamma)=|\gamma|\pmod2.
+H^1(R,E_5)=0,
 \]
 
-It is nonzero because the Petersen graph has five-cycles.
+and inflation-restriction gives
 
-### Exact relation proved here
+\[
+H^1(D_8,E_5)
+\cong
+H^1(D_8/R,E_5^R).
+\]
 
-On every simple odd core, the type-`41` support monodromy acts nontrivially on the two DDD root resolutions, and this action is exactly `chi_res`.
+For the invariant DDD state `F={infinity i,X,Y}`,
 
-### Boundary not crossed
+\[
+E_5^R=\langle q_i\rangle,
+\qquad q_i=\mathbf1+e_i.
+\]
 
-The physical affine DDD class contains translation/side-root data in `E5`, whereas `chi_res` records only the permutation of the two root resolutions. Hence:
+After canonical normalisation, the nonzero affine class is zero on every rotation and equals `q_i` on every reflection.
+
+### Theorem 5.1 — rotation blindness
+
+The odd resolution-sheet exchange of a Petersen five- or nine-cycle is the linear endpoint action of its order-four rotation. It occurs for both the trivial and nontrivial affine `D8` classes.
+
+Therefore
 
 \[
 \boxed{
 \chi_{\mathrm{res}}
-\text{ is a canonical linear shadow and candidate detector, not yet an identification of the affine }H^1\text{ class.}
+\text{ is not a detector of the nonzero affine }H^1(D_8,E_5)\text{ class.}
 }
 \]
 
-To prove equality one must compute the physical affine cocycle on one odd bounded core and show that its nonzero class maps to the resolution-sheet exchange.
+A single odd cycle computation cannot distinguish the two affine classes.
 
 ---
 
 ## 6. Consequences for localisation
 
-### Corollary 6.1 — exact Type-T / DDD parity split
+### Corollary 6.1 — exact Type-T / resolution-parity split
 
 After cancelling all Type-T backtracks:
 
 - an even closed reduced skeleton has trivial resolution holonomy and belongs to the identity-return/flat-composition branch;
-- an odd closed reduced skeleton has nontrivial resolution holonomy and contains a bounded DDD core whose support monodromy exchanges the two root resolutions.
+- an odd closed reduced skeleton has nontrivial resolution holonomy and contains a bounded DDD core whose support rotation exchanges the two root resolutions.
 
-### Corollary 6.2 — no hidden third branch
+### Corollary 6.2 — affine data remain independent
 
-At the resolution-sheet level, every reduced closed core is completely classified by one bit. Any further obstruction must lie in:
+At the resolution-sheet level, every reduced closed core is classified by one parity bit. Further obstruction data lie in:
 
-1. physical affine translation/side semantics within the even branch;
-2. the lift of the nontrivial resolution bit to the unique DDD affine class within the odd branch;
+1. physical affine translation/side semantics;
+2. the reflection-supported `D8` class;
 3. graph-side four-pole composition.
+
+The odd parity bit alone does not decide item 2.
 
 ---
 
-## 7. Next bounded calibration
+## 7. Correct bounded calibration
 
-Choose one explicit Petersen five-cycle. Compute the complete physical side-root/full-frame affine cocycle around it. The target theorem is:
+Choose one explicit Petersen five-cycle with invariant DDD state `F` and rotation `rho`.
+
+A correct affine calibration requires a compatible reflection `sigma` stabilising the same state. This may be realised by comparing the five-cycle with a reflected or reversed physical realisation, or by a separate bounded DDD reflection loop.
+
+First change affine origin so that
 
 \[
-\boxed{
-\text{five-cycle resolution flip}
-\Longleftrightarrow
-\text{nontrivial physical }D_8\text{ affine class}.
-}
+c(\rho)=0.
 \]
 
-Because all Petersen five-cycles form one `S5` orbit, one successful equivariant calibration closes the odd simple-core identification.
+Then the complete `D8` affine class is determined by
 
-The even six-cycle then supplies the smallest identity-return calibration for the flat branch.
+\[
+\boxed{c(\sigma)\in\{0,q_i\}.}
+\]
+
+- `0` is the trivial class;
+- `q_i` is the unique nontrivial class.
+
+If no compatible physical reflection exists, that failure must be returned as a root-fibre defect, route obstruction, smaller separator, or bounded DDD interface.
+
+The even six-cycle remains the smallest simple identity-return calibration for the separate flat branch.
 
 ---
 
@@ -235,17 +257,18 @@ The even six-cycle then supplies the smallest identity-return calibration for th
 
 ### Exact here
 
-- every DDD switch traverses the nontrivial involution of its two root resolutions;
-- resolution holonomy equals pivot-skeleton length parity;
-- Type-T backtrack cancellation preserves resolution holonomy;
-- the canonical resolution double cover and its lifting criterion;
+- every DDD switch exchanges its two shore-demand resolutions;
+- resolution holonomy equals reduced pivot-skeleton length parity;
+- Type-T backtrack cancellation preserves resolution parity;
+- the canonical resolution double cover and lifting criterion;
 - agreement between resolution parity and the endpoint action of simple-cycle support monodromy;
-- nontriviality of the odd-core resolution class.
+- rotation blindness of the affine `D8` class;
+- the need for a rotation-plus-reflection calibration pair.
 
 ### Still open
 
-- equality with the physical affine `D8` cohomology class;
-- calculation of the five-cycle affine cocycle;
+- physical realisation of a bounded reflection comparison;
+- computation of its reflection translation `0` or `q_i`;
 - even-core flat displacement;
 - source-graph contraction and separator transfer;
 - strict global descent, horizontal induction, and the global five-support theorem.
