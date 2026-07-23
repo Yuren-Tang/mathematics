@@ -1,0 +1,252 @@
+# A central-mark cancellation consumes the mark before the lower-order call
+
+## Research Lead mark-consuming pop theorem v1
+
+**Role:** `AffineCDC — Research Lead` (`AC-RL`)  
+**Workspace:** `Yuren-Tang/mathematics:research/affine-cdc-five-cdc-v1`
+
+**Parents:**
+
+- `WELD_MARK_EQUAL_FACE_OVERLAP_V1.md`;
+- `ROOT_VALUED_ALTERNATIVE_INVERSE_CANCELLATION_INSERTION_V1.md`;
+- `DOUBLED_DISJOINT_THREE_VERTEX_BORROWING_DICHOTOMY_V1.md`;
+- `NESTED_STACK_FIRST_EXIT_SCOPE_CORRECTION_V1.md`;
+- `FINITE_CALL_CUT_LOCAL_ATTRACTOR_RANK_V1.md`.
+
+**Status:** exact source and continuation semantics for the sole equal-face overlap which destroys an active weld lineage. If a marked edge is the central edge of a genuine forward `2--0` cancellation, both ordered incidences of that mark are deleted before the lower-order child is launched. The stored parent/child continuation therefore has one fewer active mark. When the lower-order child returns, inverse insertion may create a new central edge, but that edge is determined from the four surviving output incidences and is not a descendant of the deleted central mark. The old mark is not duplicated or silently restored. Every return row resumes with the smaller mark count and with either a root-valued expansion, a root-valued alternative expansion, or one standard missing-index atom.
+
+This supplies the concrete Type-V transition required by the corrected suspended stack. It does not assert pointwise recovery of the consumed edge.
+
+---
+
+## 1. Central equal-face coordinates
+
+Let two adjacent cubic vertices carry the same root triangle
+
+\[
+(p,q,r),
+\qquad
+r=p+q.
+\]
+
+The central edge is
+
+\[
+e=uv
+\]
+
+with root `r`. Its four external incidences are
+
+\[
+p_L,q_L,p_R,q_R.
+\]
+
+Forward equal-face cancellation deletes:
+
+- the vertices `u,v`;
+- the central edge `e`;
+- both ordered incidences of `e`.
+
+It reconnects
+
+\[
+p_L\sim p_R,
+\qquad
+q_L\sim q_R
+\]
+
+into two lower-order output edges of roots `p,q`.
+
+Assume `e` carries one active ordered weld-edge lineage.
+
+---
+
+## 2. The mark is consumed at the forward move
+
+An edge mark consists of the two ordered incidences of that edge. Neither central incidence survives the cancellation. The output edges contain only the external `p` and `q` incidences.
+
+### Lemma 2.1 — no canonical descendant central mark
+
+There is no output incidence which is the continuation of either incidence of `e`.
+
+### Proof
+
+The cancellation map is defined only on the four external incidences. It pairs the two `p` incidences and the two `q` incidences. The central half-edges terminate at the deleted vertices and are absent from the output boundary. ∎
+
+Hence the active mark count changes before any lower-order solve:
+
+\[
+\boxed{a' = a-1.}
+\]
+
+All other external ordered marks transport by the canonical reconnection theorem.
+
+---
+
+## 3. Suspension before the child call
+
+In the call-cut local graph, cross the concrete forward cancellation and stop at a suspension terminal.
+
+The suspension records:
+
+- the lower-order output graph;
+- the four ordered output incidences;
+- the surviving active marks;
+- cap, route and support data;
+- the already decreased mark count `a-1`.
+
+Only then launch the lower-order child.
+
+### Proposition 3.1 — strict pre-push progress
+
+The central-mark cancellation consumes a strict parent/child local coordinate before the push:
+
+\[
+\boxed{a-1<a.}
+\]
+
+Thus the phase change to `suspended` and the arbitrary lower-order child data occur after an earlier numerical decrease.
+
+---
+
+## 4. Return from the lower-order child
+
+Let the actual returned roots on the two output edges be
+
+\[
+p',q'.
+\]
+
+Evaluate inverse insertion by the complete source table.
+
+### Root-success row
+
+If `p',q'` are distinct intersecting, insert the equal-face pair with central root
+
+\[
+r'=p'+q'.
+\]
+
+### Equality row
+
+If `p'=q'`, use the direct root-valued alternative inverse insertion after one adjacent borrow.
+
+### Good disjoint row
+
+If `p'\perp q'` and the borrowing index is good, use the direct root-valued alternative insertion.
+
+### Missing-index row
+
+If the unique missing-index case occurs, resume with one normalized
+
+\[
+(Q_i,Q_j,ij)
+\]
+
+transport atom at the expanded order.
+
+Bounded loop/parallel or separator identifications remain accepted category exits.
+
+---
+
+## 5. A new central edge is not the old mark
+
+In every inverse insertion row, any newly created central edge is determined by the current four output incidences and current returned roots.
+
+The deleted mark `e` had no surviving incidence. Therefore creation of a new central edge does not supply a lineage map from the old marked incidences.
+
+### Theorem 5.1 — no mark resurrection
+
+After every successful, alternative or missing-index return:
+
+\[
+\boxed{a_{\rm resumed}=a-1.}
+\]
+
+The returned topology may contain a central edge in the same local position, but it is unmarked unless a separate current incidence rule marks it for a new obligation. No such new mark is generated by the inverse move itself.
+
+This is a statement about active continuation marks, not about abstract historical recognition of a topological edge.
+
+---
+
+## 6. Suspended-pop transition
+
+Use the corrected frame phase
+
+\[
+\mathrm{suspended}>\mathrm{active}.
+\]
+
+The complete transition is:
+
+1. forward cancellation deletes the central mark and lowers `a`;
+2. store the smaller-mark continuation in suspended phase;
+3. solve the lower-order child;
+4. apply one row of Section 4;
+5. pop the child and reactivate the same smaller-mark continuation;
+6. initialize the finite call-cut rank of the returned root/atom state.
+
+### Theorem 6.1 — mark-consuming pop descent
+
+In the corrected frame key
+
+\[
+(N,m,a,b,\phi,r),
+\]
+
+a central-mark cancellation transition is strict:
+
+- the push is dominated by `a -> a-1`;
+- the pop is dominated by `suspended -> active`;
+- the active cleanup rank may be reinitialized within its fixed finite bound.
+
+No child history length is compared with a parent prefix.
+
+---
+
+## 7. What happens when all weld marks are consumed
+
+If repeated genuine central cancellations reduce the active mark count to zero, the frame no longer carries a pointwise inverse-weld constraint.
+
+It does not disappear automatically. It becomes an ordinary unmarked root/token contextual state on the current labelled topology and is routed by:
+
+- the target topology arborescence;
+- the finite call-cut attractor rank;
+- the established route/profile/bounded/separator exits.
+
+Thus mark exhaustion is not declared a theorem endpoint; it removes one relative constraint and returns the state to the ordinary contextual scheduler.
+
+---
+
+## 8. Source-category safety
+
+Forward cancellation is one of the admitted source moves. On return:
+
+- root and alternative insertions are connected cubic local trees with the prescribed exterior incidences;
+- every root-valued connected output is bridgeless by the nonzero-flow bridge lemma;
+- the missing-index row is the established one-token source state;
+- degenerate exterior identifications are accepted bounded/category exits.
+
+No extra graph category is introduced by forgetting the consumed mark.
+
+---
+
+## 9. Assurance boundary
+
+### Exact here
+
+- deletion of both incidences of a central marked edge;
+- strict decrease of active mark count before child launch;
+- canonical survival of every external mark;
+- complete inverse-return table after the child;
+- absence of automatic mark resurrection;
+- suspended successful/alternative/atom pop with smaller mark count;
+- reduction of the zero-mark case to the ordinary contextual scheduler.
+
+### Not claimed
+
+- pointwise identity of a recreated central edge with the deleted mark;
+- arbitrary history compression;
+- PDL reconstruction or independent audit;
+- complete corrected stack assembly, R2.7, cap restoration or universal five-CDC;
+- Lean verification, manuscript integration, curation, release or publication.
