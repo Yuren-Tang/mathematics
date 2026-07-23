@@ -1,6 +1,6 @@
 # Root-normalized contextual transfer with periodic endpoint discharge
 
-## Research Lead master theorem v5.1 — repaired R2.7 assembly
+## Research Lead master theorem v5.2 — repaired R2.7 assembly
 
 **Role:** `AffineCDC — Research Lead` (`AC-RL`)  
 **Workspace:** `Yuren-Tang/mathematics:research/affine-cdc-five-cdc-v1`
@@ -9,7 +9,7 @@
 
 - `ROOT_NORMALIZED_CONTEXTUAL_TRANSFER_MASTER_V4.md`;
 - `CONTEXTUAL_TRANSFER_REPAIR_FRONTIER_V2.md` as an open-frontier description;
-- v5.0 of this file;
+- v5.0--v5.1 of this file;
 - every earlier contextual master which treated an equal-face cancellation as an automatically completed lower-order recursive exit;
 - every earlier fixed-order argument which erased internal closed tracks but did not discharge an unresolved outer endpoint.
 
@@ -22,13 +22,14 @@
 - oriented odd pivot-closed exclusion;
 - `PTOLEMY_CLOSED_DEFECT_TRACK_ERASURE_V1.md`;
 - `OPEN_TRACK_ROOT_STRIP_ENDPOINT_SCOPE_CORRECTION_V1.md` together with the retained local theorem in `PETERSEN_OPEN_TRACK_ROOT_STRIP_REPLACEMENT_V1.md`;
-- `PERIODIC_OUTER_ENDPOINT_ROOT_SEAM_DISCHARGE_V1.md` v1.1.
+- `PERIODIC_OUTER_ENDPOINT_ROOT_SEAM_DISCHARGE_V1.md` v1.2;
+- `TARGET_TOPOLOGY_ARBORESCENCE_FIXED_ORDER_V1.md`.
 
 **Status:** `COMPLETE AUTHORIAL R2.7 CANDIDATE / PDL RECONSTRUCTION AND INDEPENDENT ASSURANCE REQUIRED`.
 
 Every original inverse step is crossed once. A forward equal-face cancellation is not used as a recursive lower-order exit: its smaller graph is only a common contraction witness. Under the returned flow, the inverse step is immediately normalized at predecessor order to the original root insertion, a root-valued alternative insertion, or one missing-index co-root discrepancy state.
 
-At fixed original-prefix level, choose once and for all a finite ordinary topology arborescence rooted at the required original topology. A fully root-valued state attempts only its unique parent flip. Root success strictly lowers topology-tree distance; failure produces the sole persistent singular type, one nonbranching co-root track. Internal closed tracks erase, normalized-endpoint open tracks erase, and repeated unresolved outer endpoints discharge by the marked root-seam theorem. Hence the finite canonical macro-state graph has no nonterminal sink strongly connected component. Contextual transfer is well founded on the finite original-history prefix, without graph-order induction and without arbitrary-flow inverse weld.
+At fixed original-prefix level, choose a finite ordinary topology arborescence rooted at the required original topology. A fully root-valued state attempts only its unique parent flip. Root success strictly lowers topology-tree distance; failure produces the sole persistent singular type, one nonbranching co-root track. Internal closed tracks erase, normalized-endpoint open tracks erase, and a repeated unresolved outer endpoint closes to a root-valued history cylinder whose legal `1`-skeleton contains a root crosscut. Cutting there replaces the periodic episode by a fully root-valued rectangle. Hence the finite canonical macro-state graph has no nonterminal sink strongly connected component. Contextual transfer is well founded on the finite original-history prefix, without graph-order induction and without arbitrary-flow inverse weld.
 
 This file is not PDL acceptance, independent audit, curation, Lean verification, manuscript integration, release, arXiv, DOI, peer review, publication, or a declaration that the universal five-CDC theorem is established.
 
@@ -159,42 +160,36 @@ No normalized transfer state is lower-order merely because the original step was
 
 ---
 
-## 4. Finite topology universe and target arborescence
+## 4. Target topology arborescence
 
 Fix one prefix level `ell`, target topology `C_ell` and target order `N`.
 
-Let `T_(N,ell)` be the finite set of labelled predecessor-order source topologies which can occur after the local macros of Section 3 and the established relative `2--2` comparisons, with the fixed exterior incidence universe retained.
+By `TARGET_TOPOLOGY_ARBORESCENCE_FIXED_ORDER_V1.md`, every nonexit order-restoring output lies in the same finite ordinary labelled `2--2` topology component as `C_ell`.
 
-Every alternative insertion lies in the same ordinary `2--2` topology component as the required original insertion: on the borrowed five-leaf region the two three-vertex trees are joined by the displayed pentagon path. Likewise every normalized critical-overlap topology is joined to its target by its finite local Ptolemy comparison.
-
-Choose a spanning tree of each relevant ordinary topology component and orient it toward the required target `C_ell`. Write
-
-\[
-p(T)
-\]
-
-for the unique parent of a non-target topology `T`, and
+Choose a spanning tree of that component rooted at `C_ell`. For every non-target topology `T`, let `p(T)` be its parent and let
 
 \[
 d_{\rm top}(T)
 \]
 
-for its tree distance to `C_ell`.
+be its tree distance to `C_ell`.
 
 ### Target-directed rule
 
-If the current state is fully root-valued and its topology is not `C_ell`, attempt only the single `2--2` comparison
+If the current state is fully root-valued and its topology is not `C_ell`, attempt only
 
 \[
 T\longrightarrow p(T).
 \]
 
-- If the forced new central value is a root, perform the move and strictly lower `d_top`.
-- If it is zero, use the local alternative root NNI and record the resulting same-order discrepancy.
-- If it is a co-root, enter the normalized one-track grammar.
-- If category or route data exits, leave immediately.
+- Root success performs the parent move and lowers `d_top` by one.
+- Zero uses the local alternative root normalization.
+- Co-root enters the one-track grammar.
+- Category or route failure exits.
 
-This removes arbitrary root-flip wandering from the global scheduler. A cycle consisting only of successful root moves is impossible because `d_top` strictly decreases.
+The arborescence is ordinary and uncoloured. It does not assert that every parent edge is root-admissible. A non-root parent edge is exactly the event which creates the singular locus.
+
+Consequently a directed scheduling cycle cannot consist solely of successful root-valued moves.
 
 ---
 
@@ -208,9 +203,9 @@ Let
 
 be the complete normalized states at fixed `N,ell`, with transitions generated only by:
 
-1. the target-directed rule of Section 4;
+1. the target-directed parent rule;
 2. one local first-failure normalization macro;
-3. full-labelled co-root track transport and its constant-pivot/backtrack normalization;
+3. full-labelled co-root transport and constant-pivot/backtrack normalization;
 4. accepted route/profile, bounded or separator exits;
 5. one finite continuation episode at an unresolved outer endpoint.
 
@@ -228,11 +223,11 @@ At fixed finite order there are finitely many labelled cubic multigraph topologi
 
 History words are transition witnesses, not state coordinates. Two occurrences with the same complete current data are the same normalized state even if reached by different histories. ∎
 
-All raw `2--0` excursions have already been absorbed into predecessor-order macros. Hence every directed cycle in the nonexit part of `S_(N,ell)`:
+All raw `2--0` excursions have already been absorbed into predecessor-order macros. Hence every directed nonexit cycle:
 
-- cannot consist only of successful root moves, by strict decrease of `d_top`;
-- therefore contains at least one normalized co-root singular track;
-- and is represented by a fixed-order full-state history cylinder.
+- cannot consist only of root successes, by strict decrease of `d_top`;
+- contains at least one normalized co-root singular component;
+- is represented by a fixed-order full-state history cylinder.
 
 ---
 
@@ -302,17 +297,16 @@ E\in\mathcal E_{N,\ell}
 
 returns to itself through a nonexit episode.
 
-By `PERIODIC_OUTER_ENDPOINT_ROOT_SEAM_DISCHARGE_V1.md` v1.1:
+By `PERIODIC_OUTER_ENDPOINT_ROOT_SEAM_DISCHARGE_V1.md` v1.2:
 
 1. identify the equal endpoint collars and form a fixed-order history cylinder;
-2. retain the return seam as a marked transverse position;
-3. reduce closed singular cores disjoint from the mark, strictly lowering closed-track complexity;
-4. when the marked position is met, obtain an explicit root seam from a constant-pivot root section, source-faithful backtrack normalization or `C6/C8` canonicalisation movie;
-5. cut at the root seam;
-6. the residual track now has root-normalized endpoint sides;
-7. erase it by Theorem 6.2.
+2. the outer-reaching co-root arc closes to one internal full-state singular component;
+3. erase that complete component by the closed-track theorem, obtaining a finite connected root-valued history cylinder with the same two boundary histories;
+4. the cylinder's legal root-history `1`-skeleton is connected;
+5. choose a shortest `1`-skeleton path between the boundary vertex sets; it is a genuine root-valued crosscut;
+6. cut the root cylinder along that crosscut.
 
-The resulting rectangle preserves the long histories and complete exterior context, but replaces two unresolved occurrences of `E` by root-valued short sides.
+The result is a fully root-valued rectangle with the same long histories and complete exterior context, but with root-valued short sides instead of the two unresolved copies of `E`.
 
 ### Theorem 8.1 — no neutral endpoint cycle
 
@@ -320,7 +314,7 @@ A boundary-minimal normalized continuation diagram contains no repeated unresolv
 
 ### Proof
 
-Let `U(D)` count unresolved outer endpoint occurrences. The marked close--reduce--cut--strip replacement preserves global input and accepted output, introduces no unresolved endpoint and removes two occurrences. Hence
+Let `U(D)` count unresolved endpoint occurrences. The root-cylinder cut replacement preserves global input and accepted output, introduces no unresolved endpoint and removes two occurrences. Hence
 
 \[
 U(D')\le U(D)-2,
@@ -336,7 +330,7 @@ Every reachable endpoint state has a finite path to cap rootification, route/pro
 
 If a reachable sink strongly connected component of the finite endpoint graph had no exit, it would contain a directed cycle. Concatenating the cycle gives a repeated complete endpoint episode, contradicting Theorem 8.1. ∎
 
-This is an existence-of-exit theorem, not a claim that every arbitrary nondeterministic choice terminates.
+This proves existence of an exit path, not termination of every arbitrary nondeterministic choice.
 
 ---
 
@@ -356,11 +350,11 @@ At fixed `N,ell`, every complete normalized macro state has a finite source-fait
 
 Every vertex of a finite directed graph reaches some sink strongly connected component. Let `K` be a reachable sink SCC of the canonical macro graph.
 
-- If every transition in `K` is a successful target-directed root move, `d_top` strictly decreases around a directed cycle, impossible.
+- A cycle consisting only of successful target-directed root moves is impossible because `d_top` strictly decreases.
 - Otherwise a cycle in `K` contains a co-root singular component.
 - An internal closed component is erased by Theorem 6.1.
 - An open component with normalized endpoints is erased by Theorem 6.2.
-- A component meeting an unresolved outer endpoint is discharged by Theorem 8.2.
+- A component meeting an unresolved endpoint is discharged by Theorem 8.2.
 
 Each case contradicts a nonterminal sink SCC. Hence every reachable sink is terminal, proving the existence of a finite path to the displayed outcomes. ∎
 
@@ -375,7 +369,7 @@ At `ell>0`:
 3. discharge the fixed-prefix discrepancy by Theorem 9.1;
 4. continue with the next original step or leave through an accepted exit.
 
-### Theorem 10.1 — root-normalized contextual transfer v5.1
+### Theorem 10.1 — root-normalized contextual transfer v5.2
 
 Every cap-compatible terminal root state on `C_m` transfers through the finite mixed Pachner/cancellation history to a cap-compatible root state on `C_0`, or leaves through an accepted route/profile, bounded direct/theta, or separator/category exit.
 
@@ -398,7 +392,7 @@ The invalid macro was
 \text{cancel}\to N-2\to\text{arbitrary lower-order flow}\to\text{inverse weld}\to N\text{ token}.
 \]
 
-The v5.1 proof never performs it. Under the actual returned flow:
+The v5.2 proof never performs it. Under the actual returned flow:
 
 \[
 \begin{array}{c|c}
@@ -427,7 +421,7 @@ The sole unbounded row is consumed at the same prefix level by the closed/open/p
 - target-topology arborescence excluding pure-root scheduling loops;
 - internal closed-track erasure;
 - normalized-endpoint open-strip erasure;
-- marked periodic endpoint root-seam discharge;
+- periodic root-cylinder crosscut discharge;
 - exclusion of every nonterminal fixed-prefix sink SCC;
 - contextual transfer without graph-order recursion.
 
@@ -437,11 +431,12 @@ PDL must reconstruct independently:
 
 1. full-labelled forced-backbone exhaustiveness;
 2. distinguished-cap-block transport and odd pivot-closed exclusion;
-3. source-faithful immediate-backtrack normalization;
+3. source-faithful immediate-backtrack normalization as used by closed-track erasure;
 4. `C6/C8` root-annulus and open-strip canonicalisations;
-5. the marked-seam periodic discharge;
-6. finite normalized state semantics and the topology arborescence;
-7. the branch table and fixed-order endpoint condition.
+5. fixed-order closure of periodic endpoint episodes;
+6. the root-cylinder `1`-skeleton crosscut lemma;
+7. finite normalized state semantics and the topology arborescence;
+8. the branch table and fixed-order endpoint condition.
 
 An independent auditor must then verify the assembled dependency graph and every imported source theorem.
 
