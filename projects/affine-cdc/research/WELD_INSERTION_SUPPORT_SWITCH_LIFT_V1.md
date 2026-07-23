@@ -1,296 +1,281 @@
-# Support-pair switches lift through one weld insertion with at most one atom
+# Support-pair switches lift through raw insertion with at most one atom
 
-## Research Lead innermost-bubble local theorem v1
+## Research Lead innermost-bubble local theorem v2
 
 **Role:** `AffineCDC — Research Lead` (`AC-RL`)  
 **Workspace:** `Yuren-Tang/mathematics:research/affine-cdc-five-cdc-v1`
+
+**Supersedes:** v1 of this file.
 
 **Parents:**
 
 - `WELD_RELATION_FIRST_EXIT_V1.md`;
 - `WELD_MARK_EQUAL_FACE_OVERLAP_V1.md`;
-- `ROOT_VALUED_ALTERNATIVE_INVERSE_CANCELLATION_INSERTION_V1.md`;
-- the support-pair identity `A_h=F_i triangle F_j`.
+- the support-pair identity `A_h=F_i triangle F_j`;
+- the raw insertion equation `x=p+q`.
 
-**Status:** exact source-level lift of one ordinary support-pair component switch through an inserted equal-face weld. If the switch changes neither marked output edge, it commutes. If it changes one marked edge and the other is not eligible for that channel, the switch lifts root-valuedly by routing the channel through the inserted central edge. If both marked roots are eligible, simultaneous switching lifts root-valuedly; one-sided switching lifts to a predecessor-order `E_5` flow with exactly one non-root central edge, zero or co-root according to the known equality/DDD table. No second defect occurs.
+**Status:** exact source-level lift of one ordinary support-pair component switch through a raw two-edge insertion, without assuming that the inserted central value is a root. Let the two marked lower-order edges carry roots `p,q`, and insert two cubic vertices with central `E_5` value `x=p+q`. The expanded state has at most one non-root edge, namely the central edge. If a lower-order channel component switch changes the marked edges with indicators `delta_p,delta_q`, lift its inherited edge set and add the inserted central edge exactly when `delta_p xor delta_q=1`. The lifted correction is even, preserves the flow equations, and changes the central value to the new raw sum
+
+\[
+(p+\delta_p h)+(q+\delta_q h).
+\]
+
+All noncentral edges remain roots. Hence every lower support-pair switch lifts to a predecessor-order history cell with at most one atom, for all `A/B/C` marked-pair relations.
 
 ---
 
-## 1. Inserted weld and channel parity
+## 1. Raw insertion
 
-Let two edges of a root-valued lower-order graph carry a weld-admissible pair
+Let `H` carry a root-valued flow `lambda`, and let two distinguished edges `e_p,e_q` have root values
 
 \[
-p,q\in R_5,
+p,q\in R_5.
+\]
+
+Split both edges, insert two cubic vertices and join them by one central edge. Assign
+
+\[
+\boxed{x=p+q\in E_5}
+\]
+
+to the central edge.
+
+At both inserted vertices the incident values are
+
+\[
+(p,q,x),
 \qquad
-p\ne q,
-\qquad
-p+q=r\in R_5.
+p+q+x=0.
 \]
 
-Insert two equal root triangles
-
-\[
-(p,q,r)
-\]
-
-on the two edges. Denote the expanded graph by `I(H)`.
-
-Fix a root switch direction
-
-\[
-h=ij.
-\]
-
-For a root `x`, write
-
-\[
-\epsilon_h(x)=1
-\]
-
-when
-
-\[
-x+h\in R_5,
-\]
-
-equivalently when `x` contains exactly one endpoint of `h`.
-
-This is linear mod two on support indicators, so
-
-\[
-\boxed{
-\epsilon_h(r)=\epsilon_h(p)+\epsilon_h(q)\pmod2.
-}
-\]
-
-At each inserted cubic vertex the eligible-edge degree is therefore even.
-
----
-
-## 2. Neither marked edge switched
-
-Let `Z` be one component of the lower-order channel graph
-
-\[
-A_h(H)=F_i\triangle F_j.
-\]
-
-If neither marked edge lies in `Z`, the same component is present unchanged in `I(H)` and is disjoint from the inserted pair.
-
-Switching `Z` commutes strictly with insertion.
-
----
-
-## 3. Exactly one marked edge eligible
-
-Assume the `p` edge lies in `Z` and
-
-\[
-\epsilon_h(p)=1,
-\qquad
-\epsilon_h(q)=0.
-\]
-
-Then
-
-\[
-\epsilon_h(r)=1.
-\]
-
-In the expanded graph, replace the occurrence of the lower-order `p` edge in `Z` by the three-edge path
-
-\[
-p_L-r-p_R
-\]
-
-through the two inserted vertices. Let the resulting edge set be `widehat Z`.
-
-### Lemma 3.1
-
-`widehat Z` is one component of the expanded channel graph `A_h(I(H))`.
-
-### Proof
-
-Every old vertex has the same channel degree as in `Z`. At each inserted vertex exactly the incident `p` half-edge and the central `r` edge are eligible, so the path continues uniquely through the insertion. The `q` half-edges are not eligible. ∎
-
-Switching `widehat Z` changes
-
-\[
-p\mapsto p+h,
-\qquad
-r\mapsto r+h,
-\]
-
-and leaves `q` fixed. All three values
-
-\[
-p+h,\ q,\ r+h
-\]
-
-are roots and satisfy
-
-\[
-(p+h)+q=r+h.
-\]
-
-Thus both inserted vertices remain equal root triangles.
-
-### Theorem 3.2 — one-eligible root lift
-
-A lower-order component switch containing exactly one marked edge, while the other marked root is not channel-eligible, lifts to one ordinary root-valued support-pair switch on the expanded graph.
-
-The transported marked pair remains in the `B` orbit.
-
----
-
-## 4. Both marked roots eligible
-
-Assume
-
-\[
-\epsilon_h(p)=\epsilon_h(q)=1.
-\]
-
-Then
-
-\[
-\epsilon_h(r)=0.
-\]
-
-At each inserted vertex the two eligible external half-edges are the `p` and `q` half-edges; the central `r` edge is not in the root channel.
-
-### 4.1 Both marked edges in one lower component
-
-If one lower-order component `Z` contains both marked edges, remove those two edge interiors. Its remaining portions reconnect at the inserted vertices by pairing the eligible `p` and `q` half-edges.
-
-The inherited edge set in `I(H)` is an even union of one or two root-channel circuits. Switch every resulting circuit. Then
-
-\[
-p\mapsto p+h,
-\qquad
-q\mapsto q+h,
-\qquad
-r\mapsto r.
-\]
-
-The inserted triangles remain root-valued because
-
-\[
-(p+h)+(q+h)=p+q=r.
-\]
-
-### 4.2 Marked edges in different components, both switched
-
-Let `Z_p,Z_q` be the two lower components. Their inherited expanded edge union is even: at each inserted vertex one `p` and one `q` half-edge occur. Switch its circuit components. The same root-valued formula results.
-
-### Theorem 4.1 — simultaneous root lift
-
-Whenever a lower-order switch changes both channel-eligible marked edges, the switch lifts root-valuedly through the insertion, even if expansion merges or splits their channel components.
-
-The weld pair remains in `B`.
-
----
-
-## 5. One-sided switch with both marked roots eligible
-
-Assume `p,q` are both eligible but lie in different lower-order channel components. Switch only the component `Z_p` containing the `p` edge.
-
-In the expanded graph form `widetilde Z_p` by:
-
-1. retaining every inherited edge of `Z_p`;
-2. retaining both split `p` half-edges;
-3. adding the central edge of value `r`;
-4. retaining no `q` half-edge.
-
-At every old vertex `widetilde Z_p` has even degree. At each inserted vertex it contains exactly the `p` half-edge and the central edge. Thus it is an even source subgraph.
-
-Add `h` to every edge of `widetilde Z_p`.
-
-### Theorem 5.1 — one-atom one-sided lift
-
-The resulting assignment is an `E_5` flow on the same predecessor-order source graph. Every edge remains root-valued except possibly the inserted central edge, whose value becomes
-
-\[
-\boxed{r+h.}
-\]
-
-The marked values become
-
-\[
-(p+h,q).
-\]
-
-At each inserted vertex conservation is
-
-\[
-(p+h)+q+(r+h)=0.
-\]
-
-### Exact non-root type
-
-For a weld triangle `p,q,r=p+q`, the common eligible channels for `p,q` are:
-
-- `h=r`, giving
-  \[
-  r+h=0;
-  \]
-- two roots disjoint from `r`, giving
-  \[
-  r+h=Q_k
-  \]
-  for one co-root.
-
-Therefore the one-sided lift produces exactly the known equality or doubled-disjoint first-exit atom. It creates no second defect.
-
-The symmetric statement holds when only the `q` component is switched.
-
----
-
-## 6. Complete switch-lift table
-
-For one lower-order support-pair component switch relative to one inserted weld:
+Thus the expanded assignment is an `E_5` flow. Every edge is root-valued except possibly the central edge:
 
 \[
 \begin{array}{c|c}
-\text{marked interaction}&\text{predecessor-order lift}\\
+\text{relation of }p,q&x=p+q\\
 \hline
-\text{neither marked edge}&\text{strict root commutation}\\
-\text{one eligible, other ineligible}&\text{root switch through the central edge}\\
-\text{both eligible, both switched}&\text{root simultaneous lift}\\
-\text{both eligible, one switched}&\text{one zero/co-root central atom}.
+p=q&0\\
+p\sim q&\text{root}\\
+p\perp q&\text{co-root}.
 \end{array}
 \]
 
-There is no additional source or coefficient branch.
+Call this raw expanded state
+
+\[
+I(H,\lambda;e_p,e_q).
+\]
 
 ---
 
-## 7. Relation to the first-`B`-exit theorem
+## 2. One lower support-pair switch
 
-The coefficient theorem `WELD_RELATION_FIRST_EXIT_V1.md` states that one-sided common-channel switching changes a `B` pair to `A` or `C`.
+Fix a root direction
 
-The present theorem supplies its missing source realisation:
+\[
+h=ij
+\]
 
-- the expanded predecessor-order graph is unchanged topologically;
-- the lower switched component lifts together with the inserted central edge;
-- the only failed root is the central insertion edge;
-- its value is exactly the zero/co-root forced by the returned marked pair.
+and one connected component
 
-Thus a first `B`-exit caused by a support-pair switch is a genuine one-atom history cell, not merely a coefficient comparison.
+\[
+Z\subseteq A_h(H)=F_i\triangle F_j.
+\]
+
+Switch `Z`, obtaining the lower-order root flow
+
+\[
+\lambda'=\lambda+h1_Z.
+\]
+
+Let
+
+\[
+\delta_p=1_{e_p\in Z},
+\qquad
+\delta_q=1_{e_q\in Z}.
+\]
+
+The returned marked roots are
+
+\[
+p'=p+\delta_p h,
+\qquad
+q'=q+\delta_q h.
+\]
+
+Because `Z` is a root channel component, every toggled lower-order edge remains a root.
+
+---
+
+## 3. Lifted correction subgraph
+
+Construct an edge set
+
+\[
+\widehat Z\subseteq E(I(H))
+\]
+
+as follows.
+
+1. Retain every edge of `Z` not equal to a marked edge.
+2. If `delta_p=1`, retain both split half-edges descended from `e_p`.
+3. If `delta_q=1`, retain both split half-edges descended from `e_q`.
+4. Retain the inserted central edge exactly when
+   \[
+   \delta_p\oplus\delta_q=1.
+   \]
+
+### Lemma 3.1 — evenness
+
+`widehat Z` is an even subgraph of the expanded source.
+
+### Proof
+
+At every old vertex, replacing a marked edge by its incident half-edge preserves the degree contributed by `Z`, so the degree remains even.
+
+At either inserted vertex, the number of selected incident edges is
+
+\[
+\delta_p+\delta_q+(\delta_p\oplus\delta_q),
+\]
+
+which is even. ∎
+
+Add `h` to every edge of `widehat Z`.
+
+---
+
+## 4. Exact lifted output
+
+Every inherited noncentral edge in `widehat Z` is an edge of the lower channel component and changes to the root prescribed by `lambda'`.
+
+The marked half-edge values become
+
+\[
+p'=p+\delta_p h,
+\qquad
+q'=q+\delta_q h.
+\]
+
+The central value becomes
+
+\[
+\begin{aligned}
+x'
+&=x+(\delta_p\oplus\delta_q)h\\
+&=p+q+(\delta_p+\delta_q)h\\
+&=(p+\delta_p h)+(q+\delta_q h)\\
+&=p'+q'.
+\end{aligned}
+\]
+
+Thus both inserted vertex equations remain valid.
+
+### Theorem 4.1 — universal raw switch lift
+
+The lifted assignment is exactly the raw insertion
+
+\[
+\boxed{I(H,\lambda';e_p,e_q).}
+\]
+
+Every noncentral edge is root-valued. The central edge is the only possible zero/co-root atom.
+
+No assumption on the initial relation of `p,q` is required.
+
+---
+
+## 5. Relation-specific consequences
+
+### Neither or both marked edges switched
+
+If
+
+\[
+\delta_p=\delta_q,
+\]
+
+the central edge is not toggled. Its value remains
+
+\[
+x'=x.
+\]
+
+This includes:
+
+- strict commutation when neither mark lies in `Z`;
+- simultaneous switching when both lie in one component.
+
+### Exactly one marked edge switched
+
+If
+
+\[
+\delta_p\oplus\delta_q=1,
+\]
+
+the central edge is toggled by `h` and becomes the new pair sum.
+
+If the initial pair is weld-admissible and both roots are common-channel eligible, then:
+
+- `h=p+q` gives `x'=0`;
+- the other two one-sided common channels give one co-root.
+
+This recovers the equality/DDD first-exit table.
+
+If only one marked root is channel-eligible, the new pair remains intersecting and `x'` is a root; the lifted correction is an ordinary root-valued switch passing through the central edge.
+
+---
+
+## 6. Component splitting and merging are harmless
+
+In the root-valued `B` case, expanding the two marked edges may merge two lower channel components or split one component into two circuits. The controlling object is not one expanded connected component but the even edge set `widehat Z`.
+
+Every finite even subgraph of a cubic graph is a disjoint union of circuits. When all values on `widehat Z` are channel-eligible, its circuit components may be switched successively and give the same result.
+
+In a one-sided common-channel exit, the central edge is not root-channel eligible; the operation is instead the displayed `E_5` one-atom correction. Evenness still proves the vertex equations.
+
+---
+
+## 7. Complete source-lift table
+
+For every lower root support-pair component switch:
+
+\[
+\boxed{
+I(H,\lambda;e_p,e_q)
+\longrightarrow
+I(H,\lambda';e_p,e_q)
+}
+\]
+
+is realised on the same predecessor-order topology by adding `h` on `widehat Z`.
+
+The central relation may move among
+
+\[
+A\leftrightarrow B\leftrightarrow C,
+\]
+
+but the expanded state always has at most one non-root edge.
+
+There is no new defect alphabet and no dependence on root/Kempe connectivity between unrelated flows.
 
 ---
 
 ## 8. Consequence for one innermost bubble
 
-For an innermost lower-order history consisting of root-valued `2--2` moves and support-pair component switches:
+Raw insertion is functorial for every support-pair switch:
 
-- disjoint/exterior flips lift strictly;
-- generic active-diagonal flips lift by the central source movies;
-- adjacent active-diagonal flips lift in three root NNIs;
-- support-pair switches lift root-valuedly or with one first-exit atom.
+- input lower state `lambda` lifts to one predecessor-order state with at most one central atom;
+- the switch lifts by one even correction cell;
+- output is the raw insertion of `lambda'`;
+- no second atom appears.
 
-The remaining burden is global assembly of these local lifts into one predecessor-order strip and disposition of any first atom relative to the rest of the lower-order history.
+Together with the complete root-flip source movies, this supplies local predecessor-order lifts for every edge of a lower history generated by root `2--2` moves and support-pair component switches.
+
+The remaining task is the global strip assembly and the treatment of any other terminal recolouring primitive not generated by these moves.
 
 ---
 
@@ -298,17 +283,18 @@ The remaining burden is global assembly of these local lifts into one predecesso
 
 ### Exact here
 
-- channel-parity identity at the inserted vertices;
-- strict root lift when neither mark or only one eligible mark is involved;
-- simultaneous root lift when both eligible marks switch;
-- explicit even correction subgraph for a one-sided common-channel switch;
-- exactly one zero/co-root central atom;
-- complete support-switch source-lift table.
+- raw insertion for arbitrary `A/B/C` marked relation;
+- parity formula for the lifted correction edge set;
+- exact central-value update;
+- at most one central atom;
+- component merging/splitting independence;
+- universal support-switch source lift.
 
 ### Not claimed
 
-- root/Kempe connectivity of arbitrary flows;
-- complete innermost-bubble strip assembly;
-- nested variable-order episode compression;
+- that arbitrary root flows are connected by support switches;
+- lifting of an unspecified terminal recolouring not presented as a move history;
+- complete innermost-bubble compression;
+- nested variable-order compression;
 - R2.7 closure, cap restoration or global five-support closure;
 - PDL reconstruction, audit, Lean, manuscript, curation, release or publication.
