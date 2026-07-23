@@ -1,189 +1,159 @@
-# AC-PD-5CDC EQ-RETURN 2 — partial root-flow extension and `R_5`-connectedness target
+# AC-PD-5CDC EQ-RETURN 2 — partial root-flow extension reconnaissance and shortcut quarantine
 
 **Owner:** `AffineCDC — Proof Development Lead` (`AC-PDL`)  
-**State:** `RESEARCH TARGET / PRECEDENT-ALIGNED / NOT PROVED`.
+**State:** `EXACT REFORMULATION / GENERIC REPAIR RETIRED / PRECEDENT NOTE RETAINED`.
 
 ---
 
-## 1. Why the marked-weld problem is a partial-flow problem
+## 1. The single-constraint partial-flow formulation
 
-Cutting the two reconnecting edges after an equal-face cancellation gives four marked semiedges with boundary word
+Cutting the two reconnecting edges after an equal-face cancellation gives four marked semiedges. Inverse insertion is possible whenever the two current edge roots form the orbit
 
 \[
-W=(z,z,w,w),
-\qquad z\ne w,
-\qquad z+w\in R_5.
+B=\{(z,w):z\ne w,\ |z\cap w|=1\}.
 \]
 
-The return theorem asks for an `R_5`-valued flow on the lower-order relative context extending this admissible prescribed boundary, up to one global support permutation.
+Thus, for one lower-order graph `H` and two distinguished edges `e,f`, the following are equivalent.
 
-This is not merely ordinary root-flow existence. It is a partial root-flow extension problem.
+1. Some root flow on `H` has `(lambda(e),lambda(f)) in B`.
+2. Cutting `e,f` gives a four-pole extending some ordered word `(z,z,w,w)` in the `B` orbit.
+3. The two-mark relative context is orbit-relatively `R_5`-extendable for the weld relation.
+
+This equivalence is exact for the **single weld constraint**.
 
 ---
 
-## 2. A root-orbit analogue of group connectivity
+## 2. Why this does not close cancellation return
 
-Let
+A lower-order contextual call must satisfy at least two logically different requirements.
+
+1. **Weld requirement:** the two reconnecting edges lie in `B`.
+2. **Outer terminal requirement:** the returned state is compatible with the outer cap/profile/route obligation.
+
+Separate nonemptiness does not imply simultaneous nonemptiness.
+
+Exact SAT enumeration on `K_(3,3)` gives:
+
+- every unordered edge pair is individually `B`-attainable;
+- there are eighty-one unordered pairs of individually attainable `B` constraints which no single root flow realizes simultaneously.
+
+The triangular prism gives eighteen analogous incompatible pairs of individually attainable constraints.
+
+Therefore no graph-independent Helly or support-permutation argument may infer
 
 \[
-E_5=\mathbf F_2^5,
-\qquad
-R_5=\{x\in E_5:\operatorname{wt}(x)=2\}.
+\Sigma_{B}(e,f)\ne\varnothing,
+\quad
+\Sigma_{\rm outer}\ne\varnothing
+\Longrightarrow
+\Sigma_B(e,f)\cap\Sigma_{\rm outer}\ne\varnothing.
 \]
 
-### Definition 2.1 — relative `R_5`-extendability
+A global support permutation preserves relation type but cannot force two disjoint profile subsets to meet.
 
-A finite cubic multipole `P` with prescribed semiedge word `b` is `R_5`-extendable if there exists a Kirchhoff flow
+---
+
+## 3. Retired shortcut
+
+The following proposed macro-step is not controlling:
+
+1. discard the inherited post-cancellation flow;
+2. invoke ordinary lower-order root-flow existence;
+3. choose another flow satisfying the weld pair;
+4. independently choose an outer cap-compatible terminal;
+5. identify the two choices.
+
+Step 5 is unjustified.
+
+Accordingly the former Target 6.1, even if proved as a generic single-pair theorem, would not by itself imply marked-weld return.
+
+---
+
+## 4. What remains useful
+
+### Partial-flow precedent
+
+Hong-Jian Lai's partial nowhere-zero `4`-flow extension theorem, group-connectivity theory, and recent flow-critical work remain structurally relevant precedents. They show how prescribed local flow data may lead to:
+
+- extension;
+- finite exceptional contractions;
+- connectivity-dependent obstruction classes.
+
+They cannot be imported because the admissible set here is the nonlinear weight-two orbit
 
 \[
-\lambda:E(P)\cup\partial P\to R_5
+R_5\subset E_5\setminus\{0\}.
 \]
 
-whose restriction to the ordered semiedges is `b`.
+### Single-pair reconnaissance
 
-### Definition 2.2 — orbit-relative extendability
+Generic two-edge `B` attainability remains useful for:
 
-If only the global `S_5` orbit of `b` is prescribed, `P` is orbit-relatively `R_5`-extendable when it extends some `\pi b`, `\pi\in S_5`.
+- finite base classification;
+- source reductions such as triangle contraction;
+- testing proposed obstruction theorems;
+- identifying when componentwise support relabelling is sufficient.
 
-The marked weld requires the orbit-relative extension of one ordered adjacent-pair word `(z,z,w,w)`.
-
----
-
-## 3. Exact relation with the prime two-edge target
-
-Let `H` be the lower-order connected cubic graph and let `e,f` be the two reconnecting edges. Cut their interiors to obtain a four-pole `P_(e,f)`.
-
-Then the following are equivalent.
-
-1. `H` has a root flow with `lambda(e),lambda(f)` distinct and intersecting.
-2. `P_(e,f)` extends an ordered word `(z,z,w,w)` with `z,w` distinct and intersecting.
-3. `P_(e,f)` is orbit-relatively `R_5`-extendable for the marked-weld orbit.
-
-Thus Repair C is exactly the two-mark instance of relative `R_5`-extendability.
+It is not the controlling global repair.
 
 ---
 
-## 4. Closest established precedent
+## 5. Controlling inherited-flow formulation
 
-### Partial nowhere-zero `4`-flow extension
+The canonical equal-face cancellation produces a **particular inherited root flow** on the lower-order graph for which the reconnecting pair already lies in `B`.
 
-Hong-Jian Lai, *Extending a partial nowhere-zero 4-flow*, Journal of Graph Theory 30 (1999), 277--288, DOI
+The correct return problem is:
 
-`10.1002/(SICI)1097-0118(199904)30:4<277::AID-JGT3>3.0.CO;2-D`.
+> deform this inherited `B` flow along a specified finite lower-order cap-return history while tracking the ordered marked incidences and the outer terminal obligation.
 
-The theorem has the structurally relevant form:
+Exactly one of the following may occur.
 
-- prescribe a partial nowhere-zero group flow on an edge cut;
-- under strong spanning-tree/collapsibility hypotheses, extend it to the whole graph;
-- otherwise contract to a finite list of exceptional configurations.
+1. The pair remains in `B` and the intended inverse weld succeeds.
+2. At the first `B` exit the pair becomes equal or disjoint, producing one ordinary zero/co-root atom on a strict shorter history prefix.
+3. A route/profile event solves the outer cap before the weld relation is lost.
+4. A source separator isolates the constraints and permits componentwise relabelling.
+5. A marked central edge is consumed by a lower-order cancellation and enters the nested-frame mechanism.
 
-This strongly resembles the required prime/bounded dichotomy.
-
-### Flow-critical and prescribed-local-flow work
-
-A. S. Árnadóttir, Z. Dvořák, B. Lidický, B. Moore, E. Smith-Roberge and R. Šámal, *Flow-critical graphs*, arXiv:2502.01451, revised 2026.
-
-This work extends prescribed local nowhere-zero `3`-flow results under high connectivity and studies minimal obstructions to partial-flow extension.
-
-### Group connectivity
-
-Jaeger--Linial--Payan--Tarsi group connectivity and its later developments establish choosability-style extension results for unrestricted nonzero values in sufficiently large abelian groups.
+This is the inherited-flow relative path theorem of the current RL frontier.
 
 ---
 
-## 5. Why these theorems cannot be imported
+## 6. Relation to the PDL stack theorem
 
-The present codomain restriction is nonlinear:
+`AC_PD_5CDC_EQ_RETURN_5_NESTED_STACK_ORDER.md` proves abstract well-foundedness once every cancellation push stores a strictly smaller parent continuation and every failed `B` pop returns to a strict shorter prefix.
+
+Thus the remaining concrete burden is not generic partial-flow extension. It is:
 
 \[
-\lambda(e)\in R_5,
+\boxed{
+\text{continuation-normalized local progress for the inherited marked return history}.}
 \]
 
-not merely
-
-\[
-\lambda(e)\in E_5\setminus\{0\}.
-\]
-
-A general `E_5` group flow may use weight-one, weight-three, weight-four or weight-five values. Group connectivity therefore does not imply root-orbit connectivity.
-
-Likewise an ordinary nowhere-zero `4`-flow theorem concerns the three nonzero elements of `\mathbf F_2^2`, all of which form one admissible orbit; in `E_5`, the ten roots are only one subset of the thirty-one nonzero elements.
-
-The external results supply proof architecture and exception philosophy, not the missing theorem.
+The first-`B`-exit and ordered-incidence overlap dossiers supply the local transition alphabet; the mixed-state local rank remains to be verified.
 
 ---
 
-## 6. Proposed prime theorem
+## 7. Exact status
 
-### Target 6.1 — prime partial root-flow extension
+### Retained
 
-Let `P` be the four-pole obtained by cutting two distinguished edges of a connected root-soluble cubic graph in the prime branch after accepted bounded and small-cut reductions. Then `P` is orbit-relatively `R_5`-extendable for the adjacent-pair word, or the marked instance exposes an accepted separator/bounded contraction.
+- equivalence between a single weld constraint and two-edge `B` attainability;
+- partial-flow literature and analogy;
+- finite pair-flexibility reconnaissance;
+- triangle/bounded source reductions.
 
-Equivalently, some root flow gives the two distinguished edges distinct intersecting values.
+### Retired as a global repair
 
-The finite scout shows that the bounded exceptions are necessary and that the target holds for all edge pairs in Petersen, Möbius--Kantor, Heawood, Pappus and Desargues.
+- generic prime two-edge flexibility as sufficient for `MWR`;
+- separate-selection plus support-permutation arguments;
+- any inference from individual profile nonemptiness to simultaneous attainability.
 
----
+### Live
 
-## 7. Candidate proof architecture
+- inherited canonical `B` flow;
+- first-`B`-exit strict prefix;
+- ordered-incidence transport through `2--0` overlaps;
+- nested continuation stack;
+- route-aware relative return.
 
-A precedent-aligned proof should have three layers.
-
-### Layer A — root-Kempe separation
-
-Starting from any root flow:
-
-- if a relevant support-pair cycle separates the marked edges, switch it and reach the adjacent orbit;
-- otherwise obtain a two-edge full-channel lock.
-
-### Layer B — contractible/prime dichotomy
-
-Show that a full-channel lock either:
-
-- contracts to a finite bounded rooted configuration;
-- exposes a small edge cut or transition sum;
-- or induces an `R_5`-connected prime core.
-
-### Layer C — prime extension
-
-On the prime core, prove one of:
-
-- a root-valued cycle correction separates the marks;
-- an octahedral antipodal correction reaches a separating Kempe state;
-- the rigid connected-cycle root geometry forces a bounded carrier or separator.
-
-This is the root-orbit analogue of partial group-flow extension.
-
----
-
-## 8. Relation to `MWR`
-
-If Target 6.1 is proved at every lower target order, then after a canonical cancellation:
-
-1. solve the lower-order graph by the inductive theorem;
-2. apply prime partial root-flow extension to the two marked reconnecting edges;
-3. obtain the adjacent root orbit, or an accepted bounded/separator exit;
-4. globally relabel to the stored weld word;
-5. reinsert the equal-face pair root-valuedly.
-
-This closes cancellation re-entry without extruding the exact edge names through the whole prior history.
-
-Thus Target 6.1 is potentially narrower than full arbitrary-frozen-boundary `MWR`.
-
----
-
-## 9. Trust boundary
-
-### Exact here
-
-- equivalence between marked weld and two-edge adjacent-orbit extension;
-- distinction between `R_5`-extendability and ordinary group connectivity;
-- relevance and nonapplicability of partial-flow extension precedents;
-- precise prime theorem and proof architecture.
-
-### Not proved
-
-- prime partial root-flow extension;
-- finite exceptional-contraction classification;
-- marked-weld return;
-- global contextual return or five-CDC.
+No marked-weld return, cap restoration or universal five-CDC theorem is claimed.
