@@ -1,6 +1,6 @@
 # Periodic outer endpoints supply their own root-valued seam
 
-## Research Lead periodic-discharge theorem v1
+## Research Lead periodic-discharge theorem v1.1
 
 **Role:** `AffineCDC — Research Lead` (`AC-RL`)  
 **Workspace:** `Yuren-Tang/mathematics:research/affine-cdc-five-cdc-v1`
@@ -13,9 +13,11 @@
 - `OPEN_TRACK_ROOT_STRIP_ENDPOINT_SCOPE_CORRECTION_V1.md`;
 - continuation-normalized endpoint finiteness from the full-state contextual graph.
 
-**Status:** exact diagrammatic discharge of the periodic outer-endpoint branch isolated in `CONTEXTUAL_TRANSFER_REPAIR_FRONTIER_V2.md`. If one unresolved complete outer endpoint state returns to itself, close the intervening episode to a history cylinder, erase its closed singular component by the established root-annulus theorem, and cut the resulting root cylinder along the original return seam. The cut is a genuine root-valued history meridian. It replaces the two unresolved endpoint sides by root-normalized sides and strictly lowers the number of unresolved outer endpoint occurrences. Therefore a minimal continuation diagram has no repeated unresolved endpoint state. Since the normalized endpoint state space is finite, every continuation reaches a root/profile/route/bounded/separator exit.
+**Correction from v1:** an arbitrary topological subdivision of a root annulus does not automatically create new source states or legal root-history edges. The root seam is instead obtained by a **marked-seam closed-track reduction** using only the explicit source-faithful constant-pivot, backtrack and `C6/C8` canonicalisation movies. Once the marked seam is root-normalized, cutting the cylinder turns the remaining singular component into an open track with root-normalized endpoints, so the corrected open-strip theorem applies.
 
-This theorem closes **Target 4.1 — periodic outer-endpoint discharge** at the Research Lead authorial level, conditional only on the parent full-labelled track and annulus theorems. It does not by itself certify the complete R2.7 master, PDL reconstruction, audit, Lean verification, manuscript integration, release, or the global five-support theorem.
+**Status:** exact diagrammatic discharge of the periodic outer-endpoint branch isolated in `CONTEXTUAL_TRANSFER_REPAIR_FRONTIER_V2.md`. If one unresolved complete outer endpoint state returns to itself, close the intervening episode to a history cylinder and mark the return seam. Reduce the closed singular component until the marked seam is met by an explicit root section or root-annulus cell. This supplies a genuine root-valued source-history seam. Cut there and erase the remaining open track by the normalized-endpoint strip theorem. The two unresolved endpoint sides are replaced by root-normalized sides, strictly lowering the number of unresolved outer endpoint occurrences. Therefore a minimal continuation diagram has no repeated unresolved endpoint state. Since the normalized endpoint state space is finite, every continuation reaches a root/profile/route/bounded/separator exit.
+
+This theorem closes **Target 4.1 — periodic outer-endpoint discharge** at the Research Lead authorial level, conditional only on the parent full-labelled track, source-faithful normalization, annulus and open-strip theorems. It does not by itself certify the complete R2.7 master, PDL reconstruction, audit, Lean verification, manuscript integration, release, or the global five-support theorem.
 
 ---
 
@@ -39,7 +41,7 @@ A **normalized unresolved outer endpoint state** records:
 6. the ordered cap shore and route orientation;
 7. all bounded category flags needed by the next finite equality/DDD episode.
 
-Consumed history words are not retained as new state coordinates. They are transition data. Thus, at fixed finite `C_0`, the normalized endpoint state set
+Consumed history words are transition data, not new state coordinates. Thus, at fixed finite `C_0`, the normalized endpoint state set
 
 \[
 \mathcal E(C_0)
@@ -101,68 +103,101 @@ The identified arc becomes one closed nonbranching full-state singular component
 \widehat\gamma_E.
 \]
 
-### Lemma 2.1 — collar closure is an interior closed track
+The identified endpoint collar determines one marked transverse seam
 
-After shrinking the endpoint collars before identification, `\widehat\gamma_E` has a two-sided annular regular neighbourhood in the history cylinder. It is therefore an internal closed singular component in the sense of `PTOLEMY_CLOSED_DEFECT_TRACK_ERASURE_V1.md`.
+\[
+\eta_E
+\]
+
+through the corresponding point of `\widehat\gamma_E`.
+
+### Lemma 2.1 — collar closure is an interior marked closed track
+
+After shrinking the endpoint collars before identification, `\widehat\gamma_E` has a two-sided annular regular neighbourhood in the history cylinder, and `\eta_E` is a marked local transverse class through that neighbourhood. Hence `\widehat\gamma_E` is an internal closed singular component in the sense of `PTOLEMY_CLOSED_DEFECT_TRACK_ERASURE_V1.md`, with one distinguished seam position.
 
 ### Proof
 
-The complete endpoint identification matches the two one-sided local germs of the co-root track, not merely the coefficient label. Gluing the collars joins the two terminal half-edges of the singular locus into one degree-two point. The two root-valued sides also glue in order. Hence the closed component has a product neighbourhood `S^1 times (-epsilon,epsilon)` after the standard cell subdivision. ∎
+The complete endpoint identification matches the two one-sided local germs of the co-root track, not merely the coefficient label. Gluing the collars joins the two terminal half-edges of the singular locus into one degree-two point. The two root-valued sides also glue in order. Hence the closed component has a product neighbourhood `S^1 times (-epsilon,epsilon)`. The image of the endpoint collar supplies the marked transverse class `\eta_E`. ∎
 
 ---
 
-## 3. Erasing the periodic closed component
+## 3. Marked-seam closed-track reduction
 
-Apply the closed-track theorem to `\widehat\gamma_E`.
+The ordinary closed-track theorem minimizes the number and total length of closed singular components. For periodic discharge, retain the marked seam position `\eta_E` throughout that reduction.
 
-The full-state reduction gives exactly the established alternatives:
-
-1. no pivot change: the unique side-preserving root section removes the component;
-2. immediate pivot backtracks: source-faithful normalized deletion;
-3. odd reduced core `C5/C9`: impossible by the oriented cap character;
-4. even reduced core `C6/C8`: root-annulus replacement.
-
-Iterating the strict closed-track complexity reduction removes the complete component. We obtain a singularity-free root-valued history cylinder
+Let
 
 \[
-\widehat{\mathcal R}^{\root}_E
+\mathfrak C_\eta
 \]
 
-with the same labelled two-sided exterior history as `\widehat{\mathcal R}_E`.
+be the closed-track complexity of the component containing `\eta_E`, together with its number of normalized singular edges. Apply the established source-faithful reductions.
 
-No equal-face cancellation, arbitrary lower-order flow choice or inverse-weld selection is used.
+### Case 3.1 — the marked point lies in a constant-pivot run
 
----
+The unique side-preserving nonpivot root section rootifies the complete run. At the marked position it gives an explicit legal root-valued history path between the two root sides. This is the required root seam.
 
-## 4. Root meridians in a root history cylinder
+### Case 3.2 — the marked point lies in an immediate pivot backtrack
 
-The root-annulus replacement is not merely an abstract homotopy class. It is assembled from finitely many root-preserving relative NNIs and identity history subdivisions.
+The normalized Type-T backtrack deletion is source-faithful and fixes all exterior side attachments. Applying it to the marked `abba` unit gives an explicit root-valued local replacement across the marked position. This is the required root seam.
 
-### Lemma 4.1 — root seam lemma
+### Case 3.3 — a selected simple core is disjoint from the marked point
 
-After a finite cellular subdivision, the homotopy class of the original endpoint-identification seam contains a transverse edge path
+Resolve constant-pivot decorations and delete backtracks as in the closed-track theorem. Choose one shortest simple Petersen core.
+
+- Odd `C5/C9` is impossible by the oriented cap character.
+- Even `C6/C8` has the established root-annulus replacement.
+
+If the chosen core is disjoint from `\eta_E`, perform the replacement while retaining the marked collar pointwise. The closed-track complexity strictly decreases and the marked singular point survives on the remaining component.
+
+Repeat.
+
+### Case 3.4 — the selected even core contains the marked point
+
+For a `C6` cell at the marked position, both root sides are explicitly one of the root cross topology and the canonical star, and each canonicalises to the same star by at most one relative root NNI. The concatenation
+
+\[
+X^-\rightsquigarrow S^\star\leftsquigarrow X^+
+\]
+
+is therefore a genuine root-valued source-history path across the marked position.
+
+For `C8`, use the seam-compatible two-`C6` filling; the factor containing the marked position supplies the same explicit root path while the other factor is held relative to the common rooted seam data.
+
+This is the required root seam.
+
+### Theorem 3.1 — marked root-seam theorem
+
+The marked-seam reduction terminates and supplies a genuine root-valued source-history path
 
 \[
 \sigma_E
 \]
 
-joining the two boundary histories of `\widehat{\mathcal R}^{\root}_E`, such that every source state and every history edge along `\sigma_E` is root-valued.
-
-The path fixes the complete exterior incidence, cap-block, route and side-root data.
+across the original return seam.
 
 ### Proof
 
-The constructed replacement is a finite root-valued history cylinder. Subdivide each root NNI cell so that a chosen transverse meridian lies in the one-skeleton. Every vertex of the subdivided cylinder is one of the source states in the root canonicalisation movies, and every edge is a root-preserving NNI or identity step. Exterior data are fixed cellwise by the parent annulus theorem. ∎
+Every reduction disjoint from the marked point strictly lowers finite closed-track complexity. Therefore such reductions cannot continue indefinitely. If the marked component disappears, its final removal necessarily meets the marked point and falls under Cases 3.1, 3.2 or 3.4. Odd marked cores are impossible. In every remaining marked case, the parent local theorem supplies an explicit path made only of root-preserving relative NNIs, unique root sections and identity history steps. No artificial barycentric source state is introduced. ∎
 
-This lemma does **not** assert that all canonical charts form one simultaneous cubic source graph. `\sigma_E` is a one-dimensional history path through the two-dimensional cylinder.
+The path `\sigma_E` fixes the complete exterior incidence, cap block, route and side-root data.
 
 ---
 
-## 5. Close--erase--cut
+## 4. Cut at the root seam
 
-Cut `\widehat{\mathcal R}^{\root}_E` along `\sigma_E`.
+Cut `\widehat{\mathcal R}_E` along the explicit root seam `\sigma_E`.
 
-The cut cylinder is a finite root-valued history rectangle
+Any singular part of the original closed component not already removed becomes an open nonbranching co-root track. Its two short endpoint sides are now the two root-valued copies of `\sigma_E`. Therefore both endpoints are Type 1 root-normalized endpoints in the sense of `OPEN_TRACK_ROOT_STRIP_ENDPOINT_SCOPE_CORRECTION_V1.md`.
+
+Apply the retained open-strip theorem. It replaces the remaining open track by a root-valued history rectangle fixing:
+
+- the two long root histories;
+- both copies of `\sigma_E`;
+- every exterior source incidence;
+- the cap block, route and side attachments.
+
+The result is a finite singularity-free root-valued history rectangle
 
 \[
 \mathcal R_E^{\root}
@@ -171,13 +206,11 @@ The cut cylinder is a finite root-valued history rectangle
 with:
 
 1. the same two long labelled histories as the original tubular neighbourhood of `\gamma_E`;
-2. two copies of the root-valued meridian `\sigma_E` as its short sides;
-3. the same exterior source incidences, cap block, route and side attachments;
+2. two root-valued short sides supplied by `\sigma_E`;
+3. the same complete exterior contextual data;
 4. no zero or co-root state.
 
-Thus the periodic co-root episode is replaced by a root-valued rectangle. The original unresolved short sides labelled by `E` are absent.
-
-### Theorem 5.1 — periodic endpoint root-seam discharge
+### Theorem 4.1 — close--reduce--cut--strip discharge
 
 A repeated normalized unresolved outer endpoint state admits a source-faithful diagrammatic replacement which removes the complete intervening co-root track and replaces both endpoint occurrences by root-normalized history sides.
 
@@ -185,7 +218,7 @@ In particular, recurrence of the same complete endpoint state is not a terminal 
 
 ---
 
-## 6. Strict boundary complexity
+## 5. Strict boundary complexity
 
 For a finite contextual continuation diagram `D`, let
 
@@ -204,7 +237,7 @@ ordered lexicographically, where:
 - `s(D)` is the number of normalized singular-track edges;
 - `A(D)` is the number of history cells.
 
-The close--erase--cut replacement changes no global starting or accepted terminal data and introduces no new unresolved endpoint side. It replaces two occurrences of `E` by root-valued copies of `\sigma_E`. Hence
+The close--reduce--cut--strip replacement changes no global starting or accepted terminal data and introduces no new unresolved endpoint side. It replaces two occurrences of `E` by root-valued copies of `\sigma_E`. Hence
 
 \[
 \boxed{
@@ -214,17 +247,17 @@ U(D')\le U(D)-2.
 
 Cell count may increase; it is irrelevant because the first coordinate strictly decreases.
 
-### Corollary 6.1 — no periodic endpoint in a boundary-minimal lift
+### Corollary 5.1 — no periodic endpoint in a boundary-minimal lift
 
 A contextual continuation diagram minimal in `\mathfrak B` contains no repeated normalized unresolved endpoint state.
 
 ---
 
-## 7. Finite endpoint discharge
+## 6. Finite endpoint discharge
 
 Consider the finite directed graph on `\mathcal E(C_0)` whose nonexit edges are finite continuation episodes.
 
-Suppose a reachable sink strongly connected component contains no accepted exit. It contains a directed cycle. Concatenating that cycle gives a repeated endpoint episode, contrary to Corollary 6.1.
+Suppose a reachable sink strongly connected component contains no accepted exit. It contains a directed cycle. Concatenating that cycle gives a repeated endpoint episode, contrary to Corollary 5.1.
 
 Therefore every reachable endpoint state has a finite path to one of:
 
@@ -238,22 +271,23 @@ Therefore every reachable endpoint state has a finite path to one of:
 }
 \]
 
-### Theorem 7.1 — periodic outer-endpoint discharge
+### Theorem 6.1 — periodic outer-endpoint discharge
 
 The periodic branch in `CONTEXTUAL_TRANSFER_REPAIR_FRONTIER_V2.md`, Target 4.1, cannot support an unbounded continuation. Every normalized unresolved outer endpoint is discharged after finitely many episodes.
 
 The proof uses:
 
 - finite normalized endpoint state;
-- closed-track root-annulus erasure;
-- the root seam lemma;
+- marked-seam closed-track reduction;
+- the explicit root seam supplied by the source movies;
+- normalized-endpoint open-strip replacement;
 - strict decrease of unresolved endpoint occurrences.
 
 It does not use arbitrary-flow inverse weld, generic Kempe connectivity or target-order descent.
 
 ---
 
-## 8. Consequence for the R2.7 frontier
+## 7. Consequence for the R2.7 frontier
 
 At the Research Lead authorial level, the previously isolated unbounded endpoint is now consumed:
 
@@ -261,7 +295,7 @@ At the Research Lead authorial level, the previously isolated unbounded endpoint
 \boxed{
 \text{periodic outer endpoint}
 \Longrightarrow
-\text{root seam}
+\text{marked root seam}
 \Longrightarrow
 \text{strict boundary progress}.
 }
@@ -271,21 +305,22 @@ A complete R2.7 theorem still requires one fresh assembly pass checking that:
 
 1. every nonperiodic endpoint alternative is exactly one already accepted root/route/bounded/separator exit;
 2. the normalized endpoint graph retains all physical source and cap data;
-3. the parent closed-track and annulus theorems are imported with their full hypotheses;
+3. the parent closed-track, source-faithful backtrack, annulus and open-strip theorems are imported with their full hypotheses;
 4. the final contextual-transfer statement does not revive any superseded cancellation shortcut.
 
-PDL must reconstruct and independently verify the close--erase--cut seam argument before any completion classification is promoted.
+PDL must reconstruct and independently verify the marked-seam argument before any completion classification is promoted.
 
 ---
 
-## 9. Assurance boundary
+## 8. Assurance boundary
 
 ### Exact here
 
-- closure of a repeated complete endpoint episode to an internal full-state track by collar identification;
-- applicability of closed-track erasure to the resulting cylinder;
-- existence of a root-valued transverse meridian in the constructed root history cylinder;
-- cutting the cylinder to a root-valued rectangle;
+- closure of a repeated complete endpoint episode to an internal marked full-state track by collar identification;
+- marked-relative reduction of the closed component;
+- extraction of a genuine root seam from an explicit constant-run, source-faithful backtrack or `C6/C8` canonicalisation movie;
+- cutting at that seam;
+- application of the corrected root-strip theorem to the residual open track;
 - strict decrease of unresolved endpoint occurrences;
 - exclusion of nonexit cycles in the finite normalized endpoint graph;
 - authorial closure of the periodic endpoint branch.
@@ -293,9 +328,11 @@ PDL must reconstruct and independently verify the close--erase--cut seam argumen
 ### Imported authorial mathematics
 
 - full-state nonbranching track identification;
-- constant-pivot and source-faithful backtrack normalization;
+- constant-pivot root sections;
+- source-faithful backtrack normalization;
 - odd pivot-closed exclusion;
 - `C6/C8` root-annulus replacement;
+- normalized-endpoint open-strip replacement;
 - normalized finite endpoint-state semantics.
 
 ### Not claimed
