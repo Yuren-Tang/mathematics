@@ -1,10 +1,11 @@
 # Equality and DDD carriers share one discrete-Morse termination theorem
 
-## Research Lead mechanism compression v1
+## Research Lead mechanism compression v1.1
 
 **Role:** `AffineCDC — Research Lead` (`AC-RL`)  
 **Workspace:** `Yuren-Tang/mathematics:research/affine-cdc-five-cdc-v1`  
-**Exact parent head:** `4e51227611a0cb9cecdacf41021ad88c62207dc6`.
+**Original parent head:** `4e51227611a0cb9cecdacf41021ad88c62207dc6`.  
+**v1.1 sharpening:** equality needs coefficient `1`, not the conservative coefficient `7`.
 
 **Parents:**
 
@@ -93,11 +94,23 @@ E=\sum_v\nu(\Delta_v),
 \Phi=\sum_v\phi(\Delta_v).
 \]
 
-Define instead the positive triangle weight
+The exact thirty-pair flip census has the stronger property:
 
 \[
 \boxed{
-w_Z(T)=7\nu(T)+\phi(T)+1.
+\Delta E<0
+\Longrightarrow
+\Delta\Phi\le0
+}
+\]
+
+for every flip oriented to the lexicographically lower side. The secondary function `Phi` is used only on the `E`-neutral involutions.
+
+Define the positive triangle weight
+
+\[
+\boxed{
+w_Z(T)=\nu(T)+\phi(T)+1.
 }
 \]
 
@@ -108,7 +121,7 @@ Its complete table is
 \begin{array}{c|cccccccccc}
 T&123&124&125&134&135&145&234&235&245&345\\
 \hline
-w_Z(T)&22&23&25&15&15&15&15&15&15&1.
+w_Z(T)&4&5&7&3&3&3&3&3&3&1.
 \end{array}}
 \]
 
@@ -122,27 +135,19 @@ For a root-labelled equality carrier `R`, put
 
 ### Lemma 2.1 — every equality-selected flip lowers `M_Z`
 
-If a selected flip lowers `E`, then
-
-\[
-\Delta E\le-1.
-\]
-
-A flip changes only two triangle types, and each `phi` value lies in `{0,1,3}`. Hence
-
-\[
-\Delta\Phi\le6.
-\]
-
-Therefore
+If a selected flip lowers `E`, then it does not increase `Phi`, so
 
 \[
 \Delta\mathcal M_Z
-=7\Delta E+\Delta\Phi
-\le-7+6<0.
+=
+\Delta E+\Delta\Phi<0.
 \]
 
-If the flip is `E`-neutral, it is oriented precisely to lower `Phi`, so it also lowers `M_Z`.
+If the flip is `E`-neutral, it is oriented precisely to lower `Phi`, and again
+
+\[
+\Delta\mathcal M_Z<0.
+\]
 
 The constant `+1` cancels across every `2--2` flip and does not affect its orientation.
 
@@ -154,13 +159,13 @@ Equal-face cancellation removes two vertices of the same positive weight. Theref
 \Delta\mathcal M_Z=-2w_Z(T)<0.
 \]
 
-This includes the complementary triangle `345`, whose old `(E,Phi)` contribution was zero: now
+This includes the complementary triangle `345`, whose old `(E,Phi)` contribution was zero:
 
 \[
 w_Z(345)=1.
 \]
 
-Thus the vertex-count coordinate is absorbed into one positive scalar potential.
+Thus all three old coordinates are absorbed into one positive scalar potential.
 
 ---
 
@@ -212,7 +217,13 @@ For a DDD carrier `R`, put
 
 ### Lemma 3.1 — DDD flips and cancellations lower `M_D`
 
-A selected DDD flip strictly lowers the old sum `Omega=sum omega`, while preserving vertex number. It therefore strictly lowers `M_D`.
+A selected DDD flip strictly lowers the old sum
+
+\[
+\Omega=\sum_v\omega(\Delta_v)
+\]
+
+while preserving vertex number. It therefore strictly lowers `M_D`.
 
 An equal-face cancellation removes two vertices of positive weight and hence strictly lowers `M_D`, including triangle types with `omega=0`.
 
@@ -280,11 +291,11 @@ The distinction between them survives only in the local weight table and boundar
 
 ## 6. Architectural consequence
 
-The singular-confluence package should consume one theorem named, for example,
+The singular-confluence package should consume one theorem:
 
 > **Singular carrier termination theorem.** Every nonempty equality or DDD carrier admits a root-valued `2--2` move or equal-face `2--0` cancellation decreasing a positive additive triangle Morse function.
 
-The proof may contain two short finite-certificate subsections:
+The proof needs only two finite-certificate subsections:
 
 - Type Z table `w_Z`;
 - Type D table `w_D`.
@@ -309,11 +320,15 @@ PDL should verify:
 
 1. the complete `30`-pair equality flip census;
 2. the equality no-local-minimum boundary elimination;
-3. the bound `Delta Phi <= 6` and scalarisation by coefficient `7`;
-4. the complete `30`-pair DDD flip census;
-5. the DDD no-local-minimum boundary elimination;
-6. positivity and support-permutation covariance of both tables;
-7. strict decrease under every cancellation.
+3. the sharpened finite fact
+   \[
+   \Delta E<0\Rightarrow\Delta\Phi\le0;
+   \]
+4. the scalar equality table `w_Z`;
+5. the complete `30`-pair DDD flip census;
+6. the DDD no-local-minimum boundary elimination;
+7. positivity and support-permutation covariance of both tables;
+8. strict decrease under every cancellation.
 
 The resulting theorem supplies the termination hypothesis of singular contextual confluence.
 
@@ -323,7 +338,7 @@ The resulting theorem supplies the termination hypothesis of singular contextual
 
 ### Exact authorial addition
 
-- equality lexicographic potential scalarises to `M_Z`;
+- equality lexicographic potential scalarises to `M_Z` with coefficient `1`;
 - DDD lexicographic potential scalarises to `M_D`;
 - both are instances of one positive additive triangle-Morse theorem.
 
