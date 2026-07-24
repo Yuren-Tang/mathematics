@@ -2,67 +2,67 @@
 
 ## 1. Statement and reduction level
 
-The global target is the at-most-five-member cycle double cover theorem for finite bridgeless multigraphs.
+The global target is the at-most-five-member cycle double cover theorem for finite bridgeless multigraphs. The independently accepted outer shell reduces it conditionally to the cubic $R_5$ root-flow theorem.
 
-The independently accepted outer shell reduces this to a cubic theorem:
+## 2. Assurance-aware dependency table
 
-> Every finite loopless bridgeless cubic multigraph has five indexed even supports covering each edge twice.
-
-On a cubic graph this is equivalent to an $R_5$ root flow.
-
-## 2. Dependency table
-
-| Stage | Mathematical statement | Exact source | Assurance |
+| Stage | Statement | Exact source | Current assurance |
 |---|---|---|---|
-| root-flow semantics | five indexed supports $\leftrightarrow R_5$ flow and support triangles | base B1/B2; PDL R0 `1f57422...` | independently accepted |
-| structural reduction | one selected edge admits a smaller connected loopless bridgeless cross closure | PDL R1 `1f57422...` | independently accepted |
-| local finite core | ten boundary states, $640$ ordered assignments, route tables and equality/DDD finite potentials | PDL R2.1/R2.2 `1f57422...` | independently accepted |
-| forward history | root NNIs reach route/category output or first cancellation with a stored prefix | RL v7/v9 at `02b374...` | authorial candidate |
-| actual lower target | solve the literal smaller target and perform one inverse pop | first-cancellation files at `02b374...` | authorial candidate |
-| prescribed-parent state | record source topology, target topology, darts, cap, route, category, marks and prefix | prescribed-parent interface at `02b374...` | authorial candidate |
-| inverse table | root direct; co-root and zero become fixed-channel return problems | v9 index and singular-row files at `02b374...` | authorial candidate |
-| component chain | contract a witnessed channel-component path by ordinary root NNIs | component-chain theorem at `02b374...` | authorial; #80/#81 active |
-| stored-prefix return | fixed-order normalization and seam/run history returns to the original target | v7.2/v9 files at `02b374...` | authorial with independently checked subunits |
-| induction | one true order drop plus same-order return closes the cubic candidate | v9 DAG at `02b374...` | authorial candidate |
-| outer shell | expansion/collapse/loops transport cubic theorem to general multigraphs | PDL outer shell `1f57422...`, audit `a94c4021...` | independently accepted conditionally |
+| root-flow semantics | five supports $\leftrightarrow R_5$ flow/support triangles | base B1/B2; PDL R0 `1f57422...` | independently accepted |
+| structural reduction | one selected edge admits a smaller category-safe cross closure | PDL R1 `1f57422...` | independently accepted |
+| local finite core | ten boundary states, `640` assignments, route and Morse tables | PDL R2.1/R2.2; audit `00b4b376...` | independently accepted |
+| forward history | root NNIs reach an exit or first cancellation with stored prefix | RL `02b374...` | authorial candidate |
+| actual lower target/pop | solve the actual smaller target and pop once | RL `02b374...` | authorial candidate |
+| prescribed-parent state | retain topology, darts, cap, route, category, marks and prefix | RL `02b374...` | authorial candidate |
+| local inverse rows | root direct; local co-root/zero tables and models | audits `53be22a0...`, `a4f20f05...` | mixed: local units accepted, universal totality open |
+| general component chain | contract a rooted-carrier quotient path | RL `02b374...`, PDL `e36ba22...` | **failed material scope** under audit `a4f20f05...` |
+| stored-prefix return | fixed-order seams/runs return a realized parent | v7.2; audit `492eea3e...` | authorial with accepted local subunits |
+| ordinary induction | one order drop plus singular-parent return | v9 DAG | blocked by failed chain theorem |
+| outer shell | cubic theorem implies general finite-bridgeless theorem | PDL `1f57422...`, audit `a94c4021...` | independently accepted conditionally |
 
-## 3. Root-NNI move
+## 3. The broken arrow
 
-An ordinary root NNI acts on two adjacent root triangles sharing a central root. The opposite diagonal is permitted only when the two new triangles remain root triangles. Equal endpoint triangles have two topological pairings; the component-chain candidate uses the root-valued branch, never an undeclared zero branch.
+The written component-chain theorem selects two distinguished terminal paths $P_0,P_1$ but does not require them to be the only terminal path components. Its proof classifies an internal chain node only as an inactive singleton or a closed channel component.
 
-Every load-bearing move must specify:
+The audit witness has a third terminal path $X_1$ internally:
 
-- old and new source topology;
-- all four exterior dart lineages;
-- central root;
-- cap and route effect;
-- graph category after the move.
+```text
+P_0 -- 3-8:14 -- X_1 -- 9-14:23 -- P_1.
+```
 
-## 4. Why the first cancellation is special
+The first root NNI splits the old $P_0$ terminal darts between two channel components, so no inherited $P_0'$ exists. Thus local root arithmetic and physical edge labels do not establish the global inherited-chain assertion.
 
-The forward history is used only until the first equal-face cancellation. The smaller graph produced at that point is the actual target of the one lower-order call. After solving it, the proof performs one inverse pop.
+Authority:
 
-The pop output need not already be the literal predecessor graph. It carries a target field and is normalized at fixed order before the next stored source NNI is inverted.
+`audit/affine-cdc-component-chain-v1@a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`.
 
-This distinction blocks the old fixed-boundary reinsertion shortcut.
+## 4. Retained local component-chain mathematics
 
-## 5. Singular inverse-parent rows
+Independently checked:
 
-The local inverse table has three qualitatively different rows.
+- channel degree `0/2` and unique inactive triangle;
+- all active/inactive local rows;
+- all distinct/equal active/active root alternatives;
+- final two-path matching table;
+- co-root `6-7` route-changing model;
+- zero-parent Heawood `H_35` model.
 
-1. **Root row:** distinct intersecting lower roots give a root-valued literal insertion.
-2. **Co-root row $(4,2,2)$:** use a fixed physical channel and the two marked arcs.
-3. **Zero row $(0,2,2)$:** use $H_{35}$ and two terminal paths; after a matching change, align the crossed sheet and use one channel switch.
+These results may be consumed only after a theorem supplies the relevant two-terminal geometry.
 
-The old co-root proof selected an arbitrary equal face and was refuted. The v9 proposal selects a physical connector between the actual marked arcs/paths.
+## 5. First cancellation and literal parent discipline
 
-## 6. Current theorem endpoint
+The forward history stops at the first cancellation, calls the actual smaller target once, and pops once. The returned state may carry a target field rather than already equal the predecessor topology. Any repaired proof must retain literal parent topology, stable darts, cap, route/category and stored prefix through the singular-parent return.
 
-The source at `02b374...` presents a complete authorial ordinary-induction candidate. The corpus does not promote it because:
+## 6. Current open replacement
 
-- PDL reconstruction #80 has not returned;
-- independent review #81 has not returned;
-- the chain theorem is the new load-bearing totality provider;
-- old candidate audits found material gaps in other formulations.
+A future proof must establish one of:
 
-Reviewers should judge each arrow, not the aesthetic coherence of the diagram.
+```text
+application-specific exactly-two-terminal-path geometry
+or
+generalized contraction through internal terminal paths
+or
+another source-faithful singular-parent return.
+```
+
+Only after this arrow is independently verified can stored-prefix return and ordinary induction be reconsidered. The general outer shell remains a valid conditional suffix.
