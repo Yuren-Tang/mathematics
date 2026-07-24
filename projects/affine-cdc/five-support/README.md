@@ -1,69 +1,115 @@
 # Five-support strengthening
 
-The global five-support theorem remains open. This directory is the active current-best mathematical corpus.
+## 1. Current status
 
-## 1. Reading order
+The global five-support theorem remains open at independent-assurance level.
 
-1. `b1-object-quantifier-and-scope.md` — root object and exact quantifiers;
-2. `b2-formulation-and-witness-hierarchy.md` — graph witnesses, fixed-data criteria, dual layers, and source-fidelity-repaired orthogonal correction;
+This directory now separates:
+
+- stable formulation/compression mathematics inherited from the source-fidelity base;
+- independently supported one-cross prefix/suffix units;
+- the v9 complete authorial component-chain candidate;
+- active frontiers and counterexamples.
+
+## 2. Reading order
+
+### Stable foundation
+
+1. `b1-object-quantifier-and-scope.md` — exact object and quantifiers;
+2. `b2-formulation-and-witness-hierarchy.md` — witness hierarchy and source-fidelity-repaired orthogonal correction;
 3. `root-flow-lifting.md` — root/triangle/lifting architecture;
-4. `surfaces-and-halfcube.md` — full dual, old-colour quotient, targets, and factorable cores;
-5. `gauge-and-reconfiguration.md` — vertical torsors, Petrials, connected switches, pivots, and transport;
-6. `cuts-four-poles-and-routing.md` — cuts, interfaces, gluing, caps, pairing, and routing;
-7. `holonomy-defects-and-atoms.md` — individual holonomy, BBD correction, DDD atoms, rank, and curvature;
-8. `frontier-localisation.md` — six exact AC-RL gaps and the open composition endpoint;
-9. `finite-laboratories-and-certificates.md` — B8 assurance classes and source-fidelity synchronization;
-10. `equivalent-formulations-and-proof-families.md` — alternate proof roles and implication boundaries.
+4. `equivalent-formulations-and-proof-families.md` — alternate representations and implication boundaries.
 
-## 2. B2 source-fidelity rules
+### Current proof line
 
-- `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`, blob `2043ada9d28789ecc5f4f0028e62133f37835bc1`, is a valid theorem-level historical source for fixed rank-three/eight-support $O^+(6,2)$ and five-coordinate $O^-(4,2)$ mathematics;
-- it contains no arbitrary-rank $\Gamma\oplus\Gamma^*$ / $d_h(a)$ / $O^+(2r,2)$ tower;
-- that tower is a separate `SOURCE-UNRECONSTRUCTED / INFERRED-EXTRAPOLATION OR UNCOMMITTED DRAFT` proposition, mathematically refuted by B2.3;
-- $\dim V\ge q-2$, the deleted permutation module, and rank-three exceptionality remain active;
-- the genuine all-rank transgression/residue hierarchy remains valid and distinct;
-- the packet partition is $39+10+18+10+1=78$; the extrapolation is not a packet.
+5. `current-proof-spine.md` — exact theorem/source/assurance/defect/consumer for every arrow;
+6. `component-chain-candidate.md` — fixed-channel theorem, co-root and zero-parent corollaries, #80/#81 challenge surface;
+7. `authorial-candidate-and-frontier.md` — current global status and exact receivers.
 
-## 3. B3 target rules
+### Existing B3--B8 theory
 
-- full dual: $T_g^{(1)}\to\mathscr A_5$;
-- factorable quotient: $J_g\to\mathscr A_5$;
-- $J_g$ failure does not imply full-dual failure;
-- unused-root/core/ideal-pivot results are factorable unless separately stated;
-- the all-parallel matching representative is $\{01,23,45\}$.
+8. `surfaces-and-halfcube.md`;
+9. `gauge-and-reconfiguration.md`;
+10. `cuts-four-poles-and-routing.md`;
+11. `holonomy-defects-and-atoms.md`;
+12. `frontier-localisation.md`;
+13. `finite-laboratories-and-certificates.md`.
 
-## 4. B4 motion rules
+B3--B8 mathematics is preserved and is not overwritten by the one-cross route.
 
-One horizontal edge has connected switch support; disconnected support gives a path. A support pivot supplies one new lift, not the whole fibre. New fibres must be recomputed. Internal and external linear descriptions classify composite endpoints; connected adjacency is additional. `7737` and `2801` remain different populations.
+## 3. Source-fidelity invariants
 
-## 5. B5 interface rules
+- the fixed-dimensional orthogonal packet remains theorem/mechanism provenance;
+- it does not contain a universal arbitrary-rank `2r` tower;
+- the separate unreconstructed tower is superseded by the `q-2` theorem and deleted permutation module;
+- the all-rank residue hierarchy remains distinct;
+- packet accounting is exactly
+  $$39+10+18+10+1=78;$$
+- B8 classes remain `F-PROVED`, `F-CERT-PUBLIC`, `F-CERT-PRIVATE`, `F-CENSUS`, `CODE-PARTIAL`, `AFFECTED`.
 
-Terminal labels are retained through gluing. Cap forcing gives intersection with every cap set, not full-cap containment. Abstract transitions are separate from source terminal-path realization. Residual kernels, Type T/H policies, monodromies, and small censuses remain finite results.
+Independent source-fidelity audit: `ea8ec33d...`.
 
-## 6. B6/B7 correction rules
+## 4. Independently supported one-cross units
 
-Individual-loop holonomy is not simultaneous BBD group closure. Simultaneous origin is conditional on `AC-RL-BBD-GROUPOID-CLOSURE`. A nontrivial defect forest remains pending `AC-RL-BBD-VARIATION-SLICE`. Rank-two escape and full-rank curvature remain active. Scalar-sheet cuts are not source cuts, and finite potential range is not bounded interface semantics.
+From the old fixed candidate and its independent audits:
 
-Further exact returns:
+- root-flow semantics;
+- one-cross structural reduction;
+- finite boundary/route core;
+- finite equality/DDD Morse data;
+- repaired finite seam table and ordered genealogy subunits;
+- general finite-bridgeless outer shell, conditional on the cubic theorem.
 
-- `AC-RL-TYPE-T-SERIALISATION`;
-- `AC-RL-FLAT-POTENTIAL-INTERFACE`;
-- `AC-RL-COMMON-CUT-LOCALISATION`;
-- `AC-RL-TYPE-H-COMMON-WITNESS`.
+The old R2.3/R2.4, return rank and cap assembly were not accepted.
 
-## 7. B8 assurance rules
+## 5. v9 authorial candidate
 
-Finite claims retain one of `F-PROVED`, `F-CERT-PUBLIC`, `F-CERT-PRIVATE`, `F-CENSUS`, `CODE-PARTIAL`, or `AFFECTED`. The fixed-dimensional orthogonal packet’s valid results retain their actual classes. The non-packet extrapolation receives no packet assurance class.
+Frozen source:
 
-## 8. Exact controls
+`research/affine-cdc-five-cdc-v1@02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`.
 
-- `../AC_CUR_B2_B8_SOURCE_FIDELITY_INTEGRATION_MAP.md`;
-- `../AC_CUR_B2_B8_SOURCE_FIDELITY_ASSURANCE_LEDGER.md`;
-- `../AC_CUR_B2_B8_SOURCE_FIDELITY_MIGRATION_AUDIT.md`;
-- `../PROGRAMME_B3_B8_STATUS_AND_GAPS.md`.
+Current status:
 
-The exact dossiers remain under `../proof-development/` with source blob identity.
+`RL-AUTHORIAL / COMPLETE CANDIDATE / PDL #80 ACTIVE / AUDIT #81 ACTIVE`.
 
-## 9. Historical recovery and assurance
+The component-chain theorem is not accepted merely because the RL proof DAG closes.
 
-The seventy-eight discovery-order packets remain recoverable through Git history. This correction is Curator integration, not independent re-audit, Lean verification, manuscript approval, publication, release, arXiv, DOI, novelty, timestamp, or canonical movement.
+## 6. Permanent negative rules
+
+Do not use:
+
+- boundary equivalence as literal parent reinsertion;
+- arbitrary terminal recolouring;
+- generic accepted-exit flags without consumers;
+- horizontal-only SCC progress;
+- old no-sink/distance ranks;
+- local `Omega` shift as exterior-orbit control;
+- arbitrary equal-face `Xi` totality;
+- co-root as a substitute for zero-parent;
+- track erasure as progress;
+- generic root-flow connectivity;
+- global C6/C8 state or generic marked-weld shortcuts.
+
+Full details: `../COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`.
+
+## 7. B3--B8 rules retained
+
+- full dual is not old-colour quotient;
+- connected switch support is one edge, disconnected support a path;
+- `7737` composite endpoints are not `2801` neighbours;
+- a pivot gives one lift, not a fibre;
+- cap forcing is not full-cap containment;
+- routing transitions require source realization;
+- BBD and localisation obligations remain open exactly as named.
+
+## 8. External review
+
+The review-facing packet begins at `../external-review/ENTRYPOINT.md`.
+
+## 9. Assurance boundary
+
+The current line is:
+
+`INDEPENDENTLY SUPPORTED FOUNDATION AND CONDITIONAL OUTER SHELL / COMPLETE V9 AUTHORIAL MIDDLE / COMPONENT-CHAIN REVIEW ACTIVE / GLOBAL FIVE-SUPPORT THEOREM OPEN`.
+
+No Lean, manuscript, release, publication, arXiv, DOI or `main` status is created.
