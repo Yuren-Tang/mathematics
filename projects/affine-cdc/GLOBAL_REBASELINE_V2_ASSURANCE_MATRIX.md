@@ -5,88 +5,89 @@
 | Code | Meaning |
 |---|---|
 | `I-VERIFIED` | independently accepted in the exact stated scope |
-| `I-VERIFIED-REPAIR` | independently accepted subject to a named local repair already represented here |
-| `I-NEGATIVE` | independently established counterexample, scope correction or failure of inference |
-| `II-RL` | complete Research Lead authorial candidate, not independently accepted |
-| `II-PDL` | proof-development candidate or reconstruction, not independently accepted |
-| `III-OPEN` | exact missing implication or active falsification target |
+| `I-VERIFIED-REPAIR` | independently accepted subject to a represented local repair |
+| `I-NEGATIVE` | independently established counterexample, scope failure or invalid inference |
+| `II-CANDIDATE` | authorial/proof-development candidate, not independently accepted |
+| `II-FAILED` | exact failed candidate retained for provenance and repair |
+| `III-OPEN` | exact missing implication or active falsification/repair target |
 | `IV-POINTER` | projection/governance reference only |
 
-File presence, branch ancestry, author role and agreement between dossiers do not assign an assurance code.
+File presence, ancestry and producer labels do not assign assurance.
 
-## 2. Stable mathematics
+## 2. Independently supported mathematics
 
 | Mathematical unit | Exact authority | Class | Current use |
 |---|---|---|---|
-| Programme A ordinary CDC theorem | source-fidelity base `f4d6f801...`, Audit A retained there | `I-VERIFIED-REPAIR` | independent complete-CDC line; not evidence for five supports |
-| B2/B8 source-fidelity repair | `audit/...source-fidelity...@ea8ec33...` | `I-VERIFIED` | packet/proposition separation, `q-2`, accounting, B8 fidelity |
-| five-support/root-flow semantics, R0 | old candidate `1f57422...`, core audit `00b4b376...` | `I-VERIFIED` | definitions and cubic root-flow semantics |
-| one-cross structural reduction, R1 | same audit | `I-VERIFIED` | reduction to one selected smaller cross |
-| boundary/route finite core, R2.1 | same audit | `I-VERIFIED` | ten states, `640` boundaries, route tables and intersections |
-| finite Morse data, R2.2 | same audit | `I-VERIFIED` | equality/DDD local descent certificates only |
-| seam finite table and local gluing ingredients | return audit `492eea3e...` | `I-VERIFIED-REPAIR` | usable only with active-diagonal mark lineage; not a global return theorem |
-| ordered genealogy and legal switch-pop scope | return audit `492eea3e...`, Unit I | `I-VERIFIED` | exact lineage subinterface in its chosen execution |
-| general finite-bridgeless outer shell | shell audit `a94c4021...`, Unit L | `I-VERIFIED` | conditional lift from a cubic five-support theorem |
-| OR1 fixed-lift/fixed-fibre obstruction | candidate `e6af564...`, audit `6c20cead...` | `I-VERIFIED-REPAIR` | orientation refinement after D1--D6; global oriented existence open |
-| `Xi` frame/invariance/six strict rows | audit `53be22a0...` | `I-VERIFIED` | conditional arithmetic shortcut only |
-| same-arc equal-face witness | audit `53be22a0...` | `I-NEGATIVE` | permanently forbids arbitrary-equal-face totality |
+| Programme A ordinary CDC | base `f4d6f801...`, retained Audit A | `I-VERIFIED-REPAIR` | complete ordinary-CDC line only |
+| B2/B8 source fidelity | `ea8ec33d...` | `I-VERIFIED` | source/proposition separation, `q-2`, accounting and B8 fidelity |
+| R0 root-flow semantics | `1f57422...`, audit `00b4b376...` | `I-VERIFIED` | definitions and cubic root-flow semantics |
+| R1 one-cross reduction | audit `00b4b376...` | `I-VERIFIED` | structural reduction |
+| R2.1 boundary/route core | audit `00b4b376...` | `I-VERIFIED` | ten states, `640` boundaries and route tables |
+| R2.2 finite Morse data | audit `00b4b376...` | `I-VERIFIED` | local equality/DDD certificates only |
+| seam tables/local gluing | audit `492eea3e...` | `I-VERIFIED-REPAIR` | active-diagonal lineage required |
+| ordered genealogy/switch-pop scope | audit `492eea3e...` | `I-VERIFIED` | exact local lineage interface |
+| general multigraph outer shell | audit `a94c4021...` | `I-VERIFIED` | conditional on a cubic five-support theorem |
+| OR1 obstruction packet | `e6af564...`, audit `6c20cead...` | `I-VERIFIED-REPAIR` | orientation refinement after D1--D6 |
+| `Xi` frame/invariance/six strict rows | audit `53be22a0...` | `I-VERIFIED` | conditional co-root arithmetic |
+| `Xi` same-arc witness | audit `53be22a0...` | `I-NEGATIVE` | forbids arbitrary-equal-face totality |
+| channel parity and unique inactive triangle | audit `a4f20f05...` | `I-VERIFIED` | local component-chain foundation |
+| active/inactive rows | audit `a4f20f05...` | `I-VERIFIED` | all six canonical and 24 ordered continuation cases |
+| active/active root rows | audit `a4f20f05...` | `I-VERIFIED` | six distinct and nine equal-endpoint root alternatives |
+| final-terminal local table | audit `a4f20f05...` | `I-VERIFIED` | 84 ordered configurations; 42 per crossed matching, zero preserve old matching |
+| co-root `6-7` movie | audit `a4f20f05...` | `I-VERIFIED` | exact positive model, not universal totality |
+| zero-parent Heawood `H_35` movie | audit `a4f20f05...` | `I-VERIFIED` | exact positive model, not universal totality |
+| third-terminal-path witness | audit `a4f20f05...` | `I-NEGATIVE` | refutes general written chain scope |
 
-## 3. Current authorial proof spine
+## 3. Candidate and failed-candidate surface
 
-| Arrow | Principal exact source | Class | Known boundary |
+| Object | Exact source | Class | Current boundary |
 |---|---|---|---|
-| forward root-NNI history | `ROOT_NORMALIZED_CONTEXTUAL_TRANSFER_MASTER_V7_FIRST_CANCELLATION_RETURN.md` and v7.2 addendum at `02b374...` | `II-RL` | seam/run normalization still depends on exact full-state interfaces |
-| actual smaller target and one inverse pop | `FIRST_CANCELLATION_SINGLE_POP_TARGET_TOPOLOGY_SCOPE_CORRECTION_V1.md` at `02b374...` | `II-RL` | pop yields a state with a target field, not automatically the literal parent topology |
-| complete prescribed-parent state | `PURE_NNI_PRESCRIBED_PARENT_STATE_INTERFACE_NORMAL_FORM_V1.md` at `02b374...` | `II-RL` | must retain literal topology, darts, caps, route, category, prefix |
-| root/co-root/zero inverse table | v9 DAG and the two chain corollary files at `02b374...` | `II-RL` | zero row was omitted by older candidates; both singular rows depend on component chain |
-| component-chain return | `FIXED_CHANNEL_COMPONENT_CHAIN_ROOT_NNI_THEOREM_V1.md` at `02b374...` | `II-RL` | #80 reconstruction and #81 audit active |
-| stored-prefix return | v7.2 state-walk package plus v9 integration index | `II-RL` | no use of track erasure as progress or SCC distance |
-| ordinary induction | `ONE_CROSS_PROOF_DAG_AND_SUPERSESSION_INDEX_V9_COMPONENT_CHAIN_REPAIR.md` | `II-RL` | complete RL candidate only; no accepted global theorem |
+| forward root-NNI history | RL `02b374...` | `II-CANDIDATE` | full-state integration not independently accepted |
+| actual target and one inverse pop | RL `02b374...` | `II-CANDIDATE` | target field is not literal parent topology |
+| complete prescribed-parent state | RL `02b374...` | `II-CANDIDATE` | all fields require literal transport |
+| general component-chain theorem | RL `02b374...`; PDL `e36ba22...` | `II-FAILED` | third terminal path may occur internally and destroy distinguished-path inheritance |
+| universal co-root chain corollary | same | `II-FAILED` as derived universal claim | local two-arc movie survives; totality unproved |
+| universal zero-parent chain corollary | same | `II-FAILED` as derived universal claim | exact Heawood model survives; totality unproved |
+| full v9 ordinary induction | same | `II-FAILED` as end-to-end candidate | blocked by the controlling chain theorem |
+| old PDL full draft | `1f57422...` | `II-FAILED` | material core, return-rank and cap gaps |
 
-## 4. Failed or superseded candidates
+The PDL reconstruction `e36ba22...` is a complete proof-development candidate, not independent repair of the audited scope failure.
 
-| Candidate | Exact independent finding | Current class |
+## 4. Independent negative findings
+
+| Refuted claim | Exact authority | Class |
 |---|---|---|
-| PDL full draft `1f57422...` | core audit `00b4b376...`, return audit `492eea3e...`, shell audit `a94c4021...` found material gaps | superseded old candidate, not Tier II active |
-| R2.3 missing-index entrance | `00b4b376...` blocked proof | `I-NEGATIVE` against old completeness claim |
-| R2.4 physical six-port promotion | `00b4b376...` blocked proof | `I-NEGATIVE` against old completeness claim |
-| resolved-relation/no-sink rank | `492eea3e...` supplied finite countermodels to the inference | `I-NEGATIVE` |
-| cap direct-terminal inherited-flow continuity | `a94c4021...`, K-01 | `I-NEGATIVE` |
-| generic accepted-exit consumption | `a94c4021...`, K-02 | `I-NEGATIVE` |
-| arbitrary equal-face `Xi` totality | `53be22a0...` exact Heawood witness | `I-NEGATIVE` |
-
-Later authorial repairs may address an old defect, but they do not retroactively change the old audit classification.
+| old R2.3 missing-index completion | `00b4b376...` | `I-NEGATIVE` |
+| old R2.4 physical promotion | `00b4b376...` | `I-NEGATIVE` |
+| old no-sink/rank inference | `492eea3e...` | `I-NEGATIVE` |
+| inherited-flow direct-terminal continuity | `a94c4021...` | `I-NEGATIVE` |
+| automatic generic-exit consumption | `a94c4021...` | `I-NEGATIVE` |
+| arbitrary equal-face `Xi` totality | `53be22a0...` | `I-NEGATIVE` |
+| general component-chain theorem in written rooted-carrier scope | `a4f20f05...` | `I-NEGATIVE` |
 
 ## 5. Current active obligations
 
-| Obligation | Exact receiver/state | Class |
+| Obligation | Exact state | Class |
 |---|---|---|
-| component-chain source reconstruction | issue #80, PDL from `fee97446...` consuming `02b374...` | `III-OPEN` |
-| focused chain audit | issue #81, frozen source `02b374...` | `III-OPEN` |
-| inherited shortest-chain connectors | #80 D / #81 D | `III-OPEN` |
-| final terminal-matching change | #80 E / #81 E | `III-OPEN` |
-| co-root marked-arc corollary | #80/#81 F | `III-OPEN` |
-| zero-parent terminal-path corollary | #80/#81 G | `III-OPEN` |
-| complete inverse table and induction integration | #80 end-to-end scope | `III-OPEN` |
-| six older BBD/localisation obligations | source-fidelity base controls | `III-OPEN`, separate five-support programme line |
-| OR1 fixed-fibre/global oriented existence | `AC-RL-OR-FIXED-FIBRE-VANISHING`, `AC-RL-OR-GRAPH-EXISTENCE` | `III-OPEN`, separate orientation line |
+| `AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION` | new controlling interface after audit `a4f20f05...` | `III-OPEN` |
+| application-specific exactly-two-terminal-path theorem | prove for both co-root and zero-parent carriers | `III-OPEN` |
+| generalized chain through internal terminal paths | preserve distinguished terminal darts or give a new rank | `III-OPEN` |
+| universal co-root prescribed-parent return | local movie verified, totality open | `III-OPEN` |
+| universal zero-parent prescribed-parent return | local model verified, totality open | `III-OPEN` |
+| end-to-end inverse table and ordinary induction | blocked by chain scope | `III-OPEN` |
+| six BBD/localisation obligations | source-fidelity base | `III-OPEN` |
+| two OR1 existence obligations | OR1 frontier | `III-OPEN` |
 
 ## 6. Projection status
 
 | Surface | Exact role | Class |
 |---|---|---|
-| `Yuren-Tang/affine-cdc:main@ebd7098...` | partial Lean reconstruction anchor | `IV-POINTER` |
-| PDL branches | authorial reconstruction workspaces | `IV-POINTER` unless exact theorem separately classified |
-| RL branches | authorial discovery workspaces | `IV-POINTER` unless exact theorem separately classified |
-| audit branches | evidence for named scopes only | `IV-POINTER` outside those scopes |
-| Paper A/manuscript branches | projection, not theorem authority | `IV-POINTER` |
-| workbench issues | lifecycle/control records, not proof authority | `IV-POINTER` |
+| `Yuren-Tang/affine-cdc:main@ebd7098...` | partial Lean anchor | `IV-POINTER` |
+| RL/PDL branches | discovery and reconstruction | `IV-POINTER` outside exact classified claims |
+| audit branches | evidence for named fixed scopes | `IV-POINTER` outside those scopes |
+| manuscript/Paper A | projection only | `IV-POINTER` |
+| workbench issues | lifecycle/control records | `IV-POINTER` |
 
 ## 7. Global status
 
-The strongest current statement is:
-
-- substantial independently assured local and structural mathematics exists;
-- the v9 component-chain line is a coherent complete authorial candidate;
-- its load-bearing new interface is undergoing PDL reconstruction and independent audit;
-- the universal five-support/five-CDC theorem is not independently accepted.
+Substantial independently assured mathematics and local component-chain arithmetic remain. The general chain theorem failed independent audit because its scope omitted possible additional terminal path components. The universal five-support theorem is therefore an active frontier, not an accepted or live complete candidate.
