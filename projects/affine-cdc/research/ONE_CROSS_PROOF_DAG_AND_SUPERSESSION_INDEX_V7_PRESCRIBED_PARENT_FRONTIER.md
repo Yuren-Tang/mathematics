@@ -4,7 +4,7 @@
 
 **Role:** `AffineCDC — Research Lead` (`AC-RL`)  
 **Workspace:** `Yuren-Tang/mathematics:research/affine-cdc-five-cdc-v1`  
-**Exact parent head:** `5c2349cd19c5c8f289f7ebe5d51ecf96fb9f38e6`  
+**Exact controlling predecessor:** `5c2349cd19c5c8f289f7ebe5d51ecf96fb9f38e6`  
 **Issue:** `Yuren-Tang/research-workbench#74`.
 
 **Supersedes for controlling status:**
