@@ -1,190 +1,112 @@
 # AffineCDC theorem and obligation dependency map
 
-## 1. Assurance notation
+Notation: `[I]` independently supported; `[II]` authorial/failed candidate; `[III]` open; `[NEG]` refuted inference.
 
-- `[I]` independently supported in exact scope;
-- `[I/R]` independently supported after named local repair;
-- `[II]` authorial candidate;
-- `[III]` open implication or active falsification target;
-- `[NEG]` active counterexample/supersession boundary.
-
-## 2. Programme A ordinary CDC DAG
+## 1. Programme A
 
 ```text
-A0 finite-active multigraph semantics [I]
-├─ A1 loop deletion/reinsertion [I]
-└─ A2 port-cycle cubic expansion/collapse datum [I]
-   └─ A3 Seymour six-flow + internal order-eight transport [I/R]
-      └─ A4 local affine family classification [I/R]
-         └─ A5 rank-three compatibility [I]
-            └─ A6 indexed dart/support extraction [I]
-A0 + A6 → A7 parity bridge [I]
-A2 + A6 + A7 → A8 cut-even collapse [I]
-A0 + A8 → A9 circuit decomposition [I]
-A1–A9 → A10 complete ordinary CDC [I/R].
+A0 foundations [I]
+→ loop deletion / cubic expansion / six-flow transport [I]
+→ affine compatibility and indexed supports [I]
+→ cut-even collapse and decomposition [I]
+→ complete ordinary CDC [I].
 ```
 
-This line is independent of the five-support theorem.
+## 2. B1--B8
 
-## 3. B1--B8 formulation and compression DAG
+The formulation, target, motion, interface, holonomy, localisation and assurance DAGs remain as on source-fidelity base `f4d6f801...`. The sharp `q-2` correction is `[I]`; the arbitrary-rank `2r` tower is `[NEG]`.
+
+## 3. Independently supported one-cross prefix
 
 ```text
-five indexed supports
-↔ R5 root flow
-↔ K5 support triangles
-↔ matching/four-flow data
-↔ existential Fano/plane data
-↔ cycle-face/full-dual data
-↔ anisotropic O-(4,2) flow
-↔ quadratic cycle solution
-↔ cographic cycle-continuous map.
+S0 root-flow semantics [I]
+→ S1 one-cross reduction [I]
+→ S2 boundary/route core [I]
+→ S3 local Morse data [I].
 ```
 
-Source-fidelity overlay:
+Old R2.3/R2.4, old no-sink rank and old cap assembly remain blocked/negative.
+
+## 4. v9 candidate DAG and break
 
 ```text
-fixed-dimensional H8/O+(6,2)/five-slice packet [I]
-+ B2.3 dimension lower bound [I]
-→ q-2 deleted permutation module [I]
-→ no universal 2r tower for r≥4 [I].
+S3
+→ V1 forward root-NNI history [II]
+→ V2 actual cancellation/target/pop [II]
+→ V3 complete prescribed-parent state [II]
+→ V4 local root/co-root/zero data [mixed]
+→ V5 general component-chain theorem [NEG in written scope]
+╳ V6 universal singular-parent return [III]
+╳ V7 stored-prefix integration [III]
+╳ V8 ordinary induction [III]
+→ L conditional general outer shell [I conditional].
 ```
 
-The source-unreconstructed tower is `[NEG]` and outside the 78-packet count.
+The cross at V5 is controlled by audit `a4f20f05...`.
 
-B3--B8 target, motion, interface, holonomy, localisation and assurance DAGs remain as on the source-fidelity base. Their six Research Lead obligations remain open.
-
-## 4. Independently supported five-support prefix
+## 5. Component-channel local DAG
 
 ```text
-S0 five-support/root-flow semantics [I]
-→ S1 one-cross structural reduction [I]
-→ S2 boundary-route finite core [I]
-→ S3 equality/DDD finite Morse data [I].
+C0 channel parity / unique inactive triangle [I]
+→ C1 active-inactive local rows [I]
+→ C2 active-active local rows [I]
+→ C3 final two-terminal matching table [I]
+→ C4 explicit co-root and zero-parent models [I as models].
 ```
 
-Old candidate continuation:
+The invalid general arrow was:
 
 ```text
-S3 → old R2.3 [BLOCKED]
-   → old R2.4 [BLOCKED]
-   → old finite resolved relation/no-sink [NEG]
-   → old cap assembly [BLOCKED].
+two distinguished terminal paths
+→ every internal chain node inactive or closed
+→ inherited distinguished terminal paths after every contraction.
 ```
 
-The old PDL complete draft is not an active theorem DAG.
+A third terminal path refutes this implication.
 
-## 5. Current v9 authorial DAG
+## 6. Exact open replacement DAG
 
 ```text
-S3 local finite core [I]
-→ V1 complete forward root-NNI prefix [II]
-→ V2 first equal-face cancellation [II]
-→ V3 actual smaller target and lower root flow [II]
-→ V4 one inverse pop with target field [II]
-→ V5 complete prescribed-parent state [II]
-→ V6 inverse-parent table
-   ├─ root row [II; locally direct]
-   ├─ co-root row [II]
-   └─ zero row [II]
-→ V7 fixed-channel component-chain theorem [II]
-→ V8 literal singular-parent realization [II]
-→ V9 fixed-order target normalization and stored-prefix return [II]
-→ V10 ordinary strong induction [II]
-→ L general multigraph outer shell [I conditional]
-→ five-support / 5-CDC theorem [II candidate only].
+AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION [III]
+├─ prove application-specific exactly two terminal paths
+├─ or generalize contraction through internal terminal paths
+└─ or replace the return mechanism
+→ universal co-root return [III]
+→ universal zero-parent return [III]
+→ complete inverse table [III]
+→ stored-prefix return in the global proof [III]
+→ ordinary induction [III]
+→ consume conditional outer shell.
 ```
 
-## 6. Component-chain internal DAG
+## 7. Permanent guards
+
+Forbidden arrows include:
 
 ```text
-C0 channel parity and unique inactive triangle [II]
-→ C1 physical quotient with component/singleton nodes [II]
-→ C2 quotient connectivity from carrier connectivity [II]
-→ C3 choose shortest witnessed terminal-to-terminal path [II]
-→ C4 active/inactive root-NNI absorption [II]
-→ C5 active/active root-NNI contraction [II]
-→ C6 inherit all later physical connectors [III highest risk]
-→ C7 final connector changes terminal matching [III highest risk]
-→ C8 co-root marked-arc return [III under #80/#81]
-→ C9 zero-parent terminal-path return [III under #80/#81]
-→ C10 full inverse table and induction integration [III under #80].
+same boundary ⇒ literal parent [NEG]
+terminal existence ⇒ inherited-flow return [NEG]
+finite/SCC relation ⇒ progress [NEG]
+local Omega ⇒ exterior orbit control [NEG]
+arbitrary equal face ⇒ Xi totality [NEG]
+co-root ⇒ zero row [NEG]
+track erasure ⇒ target progress [NEG]
+local switch lift ⇒ global connectivity [NEG]
+two distinguished terminal paths ⇒ no third terminal path [NEG].
 ```
 
-Issues #80 and #81 determine whether C0--C10 become independently supported, require bounded repair or fail materially.
+## 8. OR1
 
-## 7. Negative dependency guards
+The fixed-lift/fixed-fibre obstruction DAG is independently supported subject to D1--D6. Its two global existence obligations remain `[III]`.
 
-The following arrows are forbidden:
+## 9. Consumers
 
-```text
-same boundary ⇒ literal parent                    [NEG]
-existential terminal flow ⇒ inherited-flow return [NEG]
-finite relation ⇒ no terminal-free sink            [NEG]
-SCC recurrence ⇒ source progress                    [NEG]
-local Omega decrease ⇒ exterior orbit decrease      [NEG]
-arbitrary equal face ⇒ Xi strict step               [NEG]
-co-root row ⇒ zero-parent row                        [NEG]
-track erasure ⇒ target progress                      [NEG]
-local switch lift ⇒ global root-flow connectivity   [NEG]
-compatible annular charts ⇒ one contextual state    [NEG]
-outer boundary preservation ⇒ internal weld return  [NEG].
-```
+- a future RL/PDL repair consumes the exact third-terminal witness and local tables;
+- a new independent auditor verifies the repaired scope;
+- an integration auditor reviews this mixed-assurance corpus;
+- AC-DIR/Owner alone dispose canonical status;
+- Lean/manuscript roles consume only a selected fixed checkpoint.
 
-Exact witnesses and replacements are in `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`.
+## 10. Global classification
 
-## 8. Stored-prefix return sub-DAG
-
-```text
-R6a full-state run/switch decomposition [II]
-→ R6b constant-pivot physical root sections [I/R local]
-→ R6c root seam at each genuine switch [I/R local]
-→ R6d active-diagonal mark lineage [I/R]
-→ R6e literal endpoint gluing [II]
-→ R6f closed/open/periodic state-walk replacement [II]
-→ R6g exact target parent reached [II]
-→ R6h cross next stored source NNI [II].
-```
-
-The independent return audit accepted key finite/local parts but did not accept the old global rank.
-
-## 9. Outer-shell DAG
-
-```text
-cubic five-support theorem
-→ one common five-index family on each cubic expansion [I conditional]
-→ cut-even memberwise collapse [I]
-→ exact multiplicity-two preservation [I]
-→ componentwise common index set [I]
-→ loop reinsertion into two fixed supports [I]
-→ finite bridgeless multigraph 5-CDC [I conditional].
-```
-
-## 10. OR1 orientation DAG
-
-```text
-compatible lift + retained partner/rotation data [I/R]
-→ cycle-face surface and fixed-lift class omega(g) [I/R]
-→ gauge/Petrial law [I/R]
-→ fixed-fibre class Omega_f [I/R]
-→ labelled torsor / Petrial-word coset [I/R]
-→ orientation-stress criterion [I/R]
-→ enriched oriented collapse [I/R].
-```
-
-Open:
-
-- `AC-RL-OR-FIXED-FIBRE-VANISHING`;
-- `AC-RL-OR-GRAPH-EXISTENCE`.
-
-## 11. Current consumers
-
-| Node | Consumer |
-|---|---|
-| C0--C10 | #80 PDL reconstruction and #81 independent audit |
-| whole mixed-assurance tree | future independent integration audit |
-| accepted exact checkpoint | AC-DIR/Owner canonical disposition |
-| selected mathematical checkpoint | separate Lean/manuscript roles |
-
-## 12. Global classification
-
-The DAG has one traceable authority line, but not one uniform assurance class. The universal five-support endpoint remains `AUTHORIAL CANDIDATE / REVIEW ACTIVE`, not `[I]`.
+The dependency line is traceable but broken at universal terminal-component exhaustion. The five-support endpoint is open.
