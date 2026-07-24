@@ -1,240 +1,328 @@
-# AC-PD-5CDC — v7.3 proof DAG, supersession and current status
+# AC-PD-5CDC — v7.4 component-chain proof DAG and status
 
 **Owner:** `AffineCDC — Proof Development Lead` (`AC-PDL`)  
 **PDL branch:** `proof-development/affine-cdc-rigour-v1`  
-**Frozen Research Lead input:** `research/affine-cdc-five-cdc-v1@212d789a5967813e7277fb3e269060926c99cb0e`  
-**Classification:** `V7.3 XI REPAIR RECONSTRUCTED / BLOCKED-PROOF AT ZERO PRESCRIBED-PARENT RETURN`.
+**Frozen RL source:** `research/affine-cdc-five-cdc-v1@02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`  
+**Permanent negative audit:** `audit/affine-cdc-xi-co-root-v1@53be22a0f65b85068b11e5f781579618967db9dd`  
+**Classification:** `V7.4 COMPLETE PROOF-DEVELOPMENT CANDIDATE / READY FOR NEW INDEPENDENT FULL AUDIT / NOT AN ACCEPTED THEOREM`.
 
-The old fixed candidate
-
-`proof-development/affine-cdc-rigour-v1@1f57422e0e415d8902d56eb294183815c0a0b640`
-
-remains blocked by the accepted independent audits in issues #68, #69 and #70.
-The v6/v6.1 mixed-order route is not a complete proof draft and is not
-controlling.
+The old v6/v6.1 candidate `1f57422...` remains blocked.  The v7.3 claim that
+`Xi` alone gives co-root totality is also withdrawn: audit #78 produced a valid
+same-arc equal-face counterexample.  The new totality theorem for both singular
+inverse-parent fibres is the physical component-chain theorem.
 
 ---
 
-## 1. Controlling ordinary-induction spine
+## 1. Controlling proof DAG
 
 ```text
-R0 root-flow / five-support equivalence
+R0 root-flow / indexed five-support equivalence
         |
-R1 valid smaller cross closure
+R1 one valid connected loopless bridgeless cross closure (order N-2)
         |
-R2.1 boundary and fixed route
+R2.1 exact boundary / ten states / fixed physical route
         |
-R2.2 target-synchronised root-NNI prefix
+R2.2 target-synchronised forward root-NNI prefix
         |
 route/category terminal OR first equal-face cancellation
         |
-actual smaller target cap closure
+actual smaller target cap closure (order N-2)
         |
-lower ordinary P on that target
+one arbitrary lower target root flow
         |
-one arbitrary-flow inverse pop
+one inverse pop
         |
-root / one co-root atom / exact terminal
+root state / one standard co-root atom / exact terminal
         |
-pure fixed-order inverse-prefix return
+one-atom state-walk, run, seam and backtrack coherence
         |
-ordinary strong induction P_N
+complete root-valued prescribed-parent state
         |
-accepted general-graph outer shell
+        +---------------- root parent
+        |                     |
+        |             literal stored root NNI
+        |
+        +---------------- co-root / DDD (4,2,2)
+        |                     |
+        |             Phase-B nonlocked consumer
+        |                     |
+        |             cut two marked H_h edges
+        |                     |
+        |        witnessed marked-arc component chain
+        |                     |
+        |       final matching change / separation
+        |                     |
+        |          K_i or switch + literal parent
+        |
+        +---------------- zero parent (0,2,2)
+                              |
+                        fixed physical H_h
+                              |
+                  remove active-cell interiors
+                              |
+             witnessed terminal-path component chain
+                              |
+                    crossed outside matching
+                              |
+             crossed-sheet alignment + one switch
+                              |
+                  literal parent central root h
+                              |
+                 lower stored-prefix length
+                              |
+                  ordinary strong induction
+                              |
+               cubic five-support candidate
+                              |
+             accepted conditional outer shell
+                              |
+             finite bridgeless five-CDC candidate
 ```
 
-Exactly one graph-order descent is controlling: the first cancellation.  Every
-later repair must remain at predecessor order and use root `2--2` NNIs, legal
-closed support switches, one-atom coherence macros and exact terminals.
+Exactly one principal order-lowering event occurs at the first cancellation
+target.  Every inverse-parent repair after the pop is same-order and terminates
+by a finite inherited physical connector list.
 
 ---
 
-## 2. Reconstructed units
+## 2. Retained audited/reconstructed units
 
-| Unit | State | Controlling PDL result |
+| Unit | Status | Controlling source |
 |---|---|---|
-| `R0` | retained audited input | root-valued `E_5` flow = five indexed even supports on loopless cubic graphs |
-| `R1` | accepted by prior audit | one valid connected loopless bridgeless cross closure of order `N-2`; theta base |
-| `R2.1` | accepted by prior audit | 640 boundaries, ten states, exact `J_i/K_i`, fixed-route rows |
-| `R2.2` | accepted/retargeted | equality/DDD potential descent to route/category exit or first equal face |
-| synchronized prefix | complete draft | pure root-NNI prefix with parallel-target category test |
-| first-cancellation target | complete draft | actual target closure of order `N-2`, or exact parent cut/bounded branch |
-| arbitrary-flow pop | complete draft | intersecting/equality/good-disjoint/missing-index rows source-level |
-| missing-index source normalization | complete draft | explicit three-vertex two-co-root object reduced to one standard atom |
-| state-walk coherence | complete draft | one-token nonbranching, maximal runs, six-port seams, two-seam backtracks, literal gluing |
-| co-root Phase B | complete draft | every nonlocked `(4,2,2)` state gives literal parent/K_i/terminal |
-| fixed-channel `Xi` | complete draft | transported `H_14` frame, whole-component invariance, six strict rows, four equal macros, bad-free contradiction |
-| co-root all-index SCC exclusion | complete draft | no terminal-free complete DDD-lock SCC; literal co-root parent reinsertion |
-| terminal census | complete draft in stated scope | exact route, `2/3/4`-cut, bounded and outer-shell consumers |
-| outer shell | accepted by issue #70 | cubic five-support implies finite bridgeless 5-CDC |
-
-Fresh finite checks in this epoch:
-
-- `tau_14` orbit table and all ten `xi` invariance assertions;
-- all six distinct-neighbour rows, each with unique root opposite pairing and
-  `Delta Xi=-2`;
-- all four equal-neighbour macros, with one root branch placement and one
-  forbidden zero/co-root placement;
-- Heawood zero-parent category witness: all three labelled topologies connected,
-  simple, bridgeless and free of cyclic cuts of size at most four.
+| R0 root-flow equivalence | retained exact | indexed five even supports = root-valued `E_5` flow |
+| R1 valid cross | prior audit accept | one connected loopless bridgeless cross closure; theta base |
+| R2.1 boundary/fixed route | prior audit accept | 640 boundaries, ten states, exact `J_i/K_i` rows |
+| R2.2 forward descent | retained | equality/DDD current-flow descent to first cancellation or exit |
+| synchronized prefix | PDL complete draft | v7.2 target-synchronised pure root-NNI prefix |
+| actual smaller target | PDL complete draft | exact cap closure/order and cut/bounded alternatives |
+| arbitrary-flow single pop | PDL complete draft | intersecting/equality/good-disjoint/missing-index rows |
+| one-atom coherence | PDL complete draft | nonbranching state walk, maximal runs, seams, two-seam backtracks |
+| Phase-B horizontal consumer | PDL complete draft | all nonlocked co-root states give parent/route/terminal |
+| terminal census | PDL complete draft | exact cap, route, cyclic `2/3/4` cut and bounded consumers |
+| general outer shell | independently accepted conditional implication | cubic five-support -> finite bridgeless 5-CDC |
 
 ---
 
-## 3. The repaired v7.2 blocker
+## 3. New v7.4 load-bearing unit
 
-The former blocker used
+### `FC-COMPONENT-CHAIN-ROOT-NNI`
+
+For one fixed physical channel `H_h`:
+
+1. every source vertex has channel degree zero or two;
+2. the unique inactive triangle is `[5]\setminus h`;
+3. the connected physical quotient has nodes for channel components and
+   individual inactive vertices, with stable nonchannel physical edges as
+   witnessed quotient edges;
+4. one active/inactive root NNI absorbs an inactive singleton;
+5. one active/active root NNI or equal root branch swap absorbs a closed cycle;
+6. one initially selected shortest simple connector chain is retained literally;
+7. every nonterminal move deletes its first stable connector;
+8. the final connector between two distinguished terminal paths changes their
+   ordered terminal matching.
+
+Controlling PDL files:
+
+- `AC_PD_V7_4_COMPONENT_CHAIN_THEOREM_RECONSTRUCTION.md`;
+- `AC_PD_V7_4_COMPONENT_CHAIN_ROW_AND_DART_TABLES.md`;
+- `AC_PD_V7_4_INHERITED_CHAIN_AND_FINAL_MATCHING.md`.
+
+### Exact falsification-point dispositions
+
+- inactive entry/exit at one modified singleton: handled by stable next-dart
+  inheritance;
+- next connector after absorption: unchanged stable edge/root and still
+  nonchannel;
+- active-cycle entry/exit at one modified vertex: impossible because an active
+  cubic vertex has exactly one nonchannel incidence;
+- equal final branch swap preserving matching: impossible for two distinct
+  named terminal components;
+- chain shortening by recomputed distance: not used; rank is remaining length of
+  one inherited connector list.
+
+---
+
+## 4. Co-root/DDD fibre after audit #78
+
+### Permanent negative boundary
+
+The Heawood equal bad face `9-14:23` remains a counterexample to:
+
+> arbitrary equal bad face => route exit or one-sided component after zero/one
+> branch swap.
+
+The old arbitrary-equal-face theorem and unconditional `Xi` totality are false
+and retired.
+
+### Repaired theorem
+
+Cut the two actual marked `H_h` edges.  Their common component becomes two
+marked terminal arcs.  Contract a physical component chain between those arcs.
+The final connector gives either:
+
+- the separated marked-edge matching, hence a separating rescue channel; or
+- the opposite common-cycle route, hence `K_i`/cap-compatible progress.
+
+Apply the existing Phase-B consumer.
+
+In the audit Heawood graph, stable edge `6-7:23` is the direct connector.  The
+root NNI
 
 \[
-(A,B,C,D)=(12,34,13,24)
+123+234\to124+134,
+\qquad23\to14
 \]
 
-with prescribed parent central value `Q_5` and crossed roots `23,14`.  The new
-fixed-channel theorem genuinely repairs this co-root case:
+changes route `(1,2)|(3,6)` to `(1,3)|(2,6)` while preserving the graph category.
 
-1. use all-index Phase B to consume every separating channel;
-2. in a complete DDD full-channel lock choose one physical rescue support;
-3. transport it to `H_14`;
-4. use the switch-invariant integer
-   \[
-   \Xi=\sum_v\xi(\Delta_v);
-   \]
-5. every nonabsorbing macro lowers `Xi` by exactly two;
-6. finite descent ends at literal parent, `K_i`, or a named terminal.
+Controlling file:
 
-The old conclusion “track erasure alone realizes the target side” remains
-false and retired.  The co-root repair works because legal support switches and
-ambient root NNIs change the complete boundary data under a proved strict rank.
+`AC_PD_V7_4_CO_ROOT_COMPONENT_CHAIN_COROLLARY.md`.
 
-Controlling files:
-
-- `AC_PD_5CDC_V7_3_FIXED_CHANNEL_XI_RECONSTRUCTION.md`;
-- `AC_PD_5CDC_V7_3_CO_ROOT_PRESCRIBED_PARENT_RETURN.md`.
+`Xi` frame/invariance/six strict rows remain valid optional arithmetic, but no
+`Xi` source-selection or totality claim is controlling.
 
 ---
 
-## 4. Unique current blocker
+## 5. Zero-parent fibre
 
-### `FC-PURE-NNI-ZERO-PARENT-ESCAPE`
-
-The inverse root-NNI table also contains a zero row.  Let `a,b` be distinct
-intersecting roots and take
+Normalize
 
 \[
-(A,B,C,D)=(a,a,b,b).
+(A,B,C,D)=(13,13,23,23),\qquad h=35.
 \]
 
-For the prescribed parent `AB|CD`, the central value is zero; both crossed
-pairings have central root `a+b`.  The two root crossed states are exchanged by
-a reversible root NNI, while the literal parent remains nonroot.
+A disconnected active-cell complement is a bridge/two-cut/bounded output.  In
+a connected residual lock, the outside matching is `AB|CD`, giving terminal
+paths `A--B` and `C--D`.  Contract a physical component chain between them.
+The final connector exposes `AC|BD` or `AD|BC`.
 
-Concrete normal form:
+Align the active crossed root sheet, switch one closed `H_35` component, and
+perform the literal parent NNI with central root `35`.
+
+The complete Heawood movie was independently reconstructed:
+
+```text
+remote branch swap at stable edge 13-14
+    -> H_35 components Z_0,Z_1
+    -> switch Z_0 by 35
+    -> active word (15,13,25,23)
+    -> literal AB|CD parent NNI, central root 35.
+```
+
+Every intermediate graph is connected, simple, cubic and bridgeless; cyclic
+edge-connectivity is `6,5,5,5` for the four displayed stages.
+
+Controlling file:
+
+`AC_PD_V7_4_ZERO_PARENT_COMPONENT_CHAIN_COROLLARY.md`.
+
+---
+
+## 6. Complete inverse-parent table
+
+The sum of two roots has weight `0,2` or `4`, so the table is exhaustive:
+
+| value | disposition |
+|---|---|
+| root | literal stored root NNI |
+| co-root | marked-arc component chain + Phase-B consumer |
+| zero | terminal-path component chain + alignment + one switch + literal parent |
+| route/category | exact existing consumer |
+
+There is no unresolved fourth row.
+
+Controlling integration file:
+
+`AC_PD_V7_4_COMPLETE_INVERSE_PARENT_AND_INDUCTION.md`.
+
+---
+
+## 7. Ordinary induction closure
+
+The fixed-order return uses the nested structural measures:
+
+1. graph order for actual smaller targets;
+2. number of stored source NNIs remaining;
+3. remaining connector count in the currently inherited component chain.
+
+No same-order root-solubility call occurs.  After each literal parent return the
+stored-prefix length falls.  Therefore the ordinary induction
 
 \[
-(13,13,23,23),
-\qquad
-\text{crossed central root }12,
-\qquad
-\text{parent central value }0.
+P_{<N}\Longrightarrow P_N
 \]
 
-This row is not:
+is closed at PDL proof-development level with no known internal gap.
 
-- inverse-cancellation quadruple equality;
-- a co-root atom;
-- an `H_14` DDD frame;
-- an automatic category terminal.
-
-The five-leaf borrowing theorem does not apply, and the equality current-flow
-potential uses actual `2--0` cancellation.  “Use the other crossed root NNI”
-keeps the source root-valued but does not realize the stored predecessor.
-
-A Heawood root-flow occurrence at edge `4-5` supplies a complete
-category-safe ambient witness: the current root topology, other crossed root
-topology and prescribed zero topology are all connected simple bridgeless
-cubic graphs with no cyclic `2/3/4` cut.  Thus a new route/support/rank theorem
-is required.
-
-Controlling obstruction dossier:
-
-`AC_PD_5CDC_V7_3_ZERO_PARENT_REINSERTION_OBSTRUCTION.md`.
+The resulting cubic five-support and general bridgeless five-CDC statements are
+complete proof-development candidates, not independently accepted theorems.
 
 ---
 
-## 5. Conditional downstream units
+## 8. Antecedent and novelty control
 
-The following remain conditional on `FC-PURE-NNI-ZERO-PARENT-ESCAPE`:
+Controlling ledger:
 
-1. pure fixed-order return through every stored prefix edge;
-2. exhaustiveness of the terminal census for every inverse-NNI row;
-3. ordinary strong-induction closure `P_{<N} => P_N`;
-4. the cubic five-support theorem;
-5. application of the accepted general-graph outer shell.
+`AC_PD_V7_4_COMPONENT_CHAIN_ANTECEDENT_AND_NOVELTY_LEDGER.md`.
 
-There is no accepted `rho_atom`, topology-tree distance or finite-SCC rank for
-the zero cycle.
+It finds no prior theorem with the same quantifiers.  Retained antecedents
+supply local root NNI arithmetic, labelled dart contracts, one-atom strip
+coherence and terminal consumers.  Historical strip, annulus, Pachner and raw-
+insertion machinery does not supply physical component-chain totality.
 
 ---
 
-## 6. Supersession ledger
+## 9. Supersession ledger
 
-### Retired as controlling mathematics
+### Permanently retired as controlling totality
 
-1. witnessed mixed-order `Q_N/P_N` induction;
-2. arbitrary child-history weld lifts;
-3. nested bubbles and variable-order compression;
-4. suspended ancestor marks as a global recursion rank;
-5. resolved-call graph `M_N` and distance `d_N`;
-6. terminal-frame or outermost-child unwind;
-7. target-boundary wording as proof of target realization;
-8. the quarantined `Omega` plateau-orbit transport inequality;
-9. orbit minima or finite-state distance before reachability;
-10. R2.5 odd-core exclusion, shortest Petersen cores and `C6/C8` annuli as
-    critical dependencies;
-11. Type-T graph contraction and abstract `abba` deletion;
-12. any classification of `1f57422...` as a complete proof draft;
-13. the v8 RL inference that a co-root-only theorem closes the complete
-    root/zero/co-root inverse-parent table.
+1. v6/v6.1 mixed-order `Q_N/P_N` architecture;
+2. `M_N`, `d_N`, nested bubbles and terminal frames;
+3. target-boundary wording as proof of target realization;
+4. track erasure/periodic crosscut as parent progress;
+5. finite-state or SCC distance without reachability;
+6. arbitrary-equal-face route-or-split;
+7. `Omega` orbit-minimum proof;
+8. `Xi` as unconditional source selector or totality rank;
+9. unconditional at-most-`N` `Xi` macro bound;
+10. generic root/NNI connectivity;
+11. equality cancellation during fixed-order return.
 
-### Retained but noncontrolling stronger mathematics
+### Retained only in exact limited scopes
 
-- R2.5 orientation and odd-core results;
-- bounded `C6/C8` movies;
-- genealogy and bubble-lift calculations;
-- the old `Omega` local tables where independently valid;
-- equality and DDD mixed-surgery potentials;
-- the accepted outer shell, conditional on the cubic theorem.
+- `Xi` frame, whole-component invariance and six strict rows;
+- equality/DDD Pachner potentials for forward current-flow descent;
+- constant-pivot runs, seams and strip gluing for one-atom coherence;
+- raw-insertion genealogy as historical labelled-dart mathematics;
+- equality annulus/carrier reductions as noncontrolling topology.
 
-### Retained on the current critical path
+### New controlling totality
 
-- audited R0/R1/R2.1/R2.2;
-- first-cancellation target synchronization;
-- actual smaller target and arbitrary-flow single pop;
-- source-level first-failure and one-atom coherence;
-- state-walk seams, runs and backtracks;
-- all-index Phase B support-channel object;
-- fixed-channel `Xi` co-root escape;
-- explicit terminal consumers.
+- physical fixed-channel quotient;
+- active/inactive absorption;
+- active/active cycle contraction;
+- inherited stable connector chain;
+- final ordered matching change;
+- co-root and zero-parent component-chain corollaries.
 
 ---
 
-## 7. Current exact classification
+## 10. Current exact classification
 
 \[
 \boxed{
 \begin{array}{c}
-\text{v7.2 first-cancellation and single-pop chain: reconstructed}\\
-+\ \text{state-walk/seam/run layer: reconstructed}\\
-+\ \text{v7.3 co-root Xi repair: reconstructed}\\
-+\ \text{terminal census: reconstructed}\\
+\text{first cancellation / actual target / single pop: reconstructed}\\
++\ \text{one-atom state-walk coherence: reconstructed}\\
++\ \text{component-chain source theorem: reconstructed}\\
++\ \text{co-root prescribed-parent fibre: reconstructed}\\
++\ \text{zero-parent prescribed-parent fibre: reconstructed}\\
++\ \text{complete inverse table and ordinary induction: reconstructed}\\
 \hline
-\text{zero prescribed-parent return: BLOCKED-PROOF}.
+\text{NO KNOWN PDL GAP / READY FOR NEW INDEPENDENT V7.4 AUDIT.}
 \end{array}}
 \]
 
-Therefore the branch is:
-
-- **not** `COMPLETE-DRAFT`;
-- **not** ready for independent full-theorem audit;
-- ready for focused audit of the `Xi` repair and the zero-parent diagnosis;
-- not canonical, Lean-verified, manuscript-ready, release-ready, or a public
-  five-CDC theorem.
+This status does not authorize canonical movement, Lean theorem status,
+manuscript integration, release, arXiv, DOI, peer-review or publication claims.
