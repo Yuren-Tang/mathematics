@@ -1,8 +1,8 @@
 # AC-CORPUS-V2 active tree manifest
 
-## 1. Canonical reading surface on this branch
+## 1. Canonical reading surface
 
-### Project entry and status
+### Entry and status
 
 1. `README.md`
 2. `CURRENT_BEST.md`
@@ -22,7 +22,7 @@
 13. `CROSS_REPOSITORY_AUTHORITY_MAP.md`
 14. `GLOBAL_REBASELINE_V2_FINAL_AUDIT.md`
 
-### Active five-support spine
+### Five-support spine
 
 15. `five-support/README.md`
 16. `five-support/b1-object-quantifier-and-scope.md`
@@ -34,23 +34,7 @@
 22. `five-support/finite-laboratories-and-certificates.md`
 23. `five-support/equivalent-formulations-and-proof-families.md`
 
-The B3--B8 thematic chapters remain active background mathematics and are not overwritten by the one-cross candidate:
-
-- `five-support/surfaces-and-halfcube.md`;
-- `five-support/gauge-and-reconfiguration.md`;
-- `five-support/cuts-four-poles-and-routing.md`;
-- `five-support/holonomy-defects-and-atoms.md`;
-- `five-support/frontier-localisation.md`.
-
-### OR1 orientation refinement
-
-The independently audited OR1 mathematics is represented in the global controls and read through exact pointers to:
-
-- candidate `e6af5645107d0f21ac6c262c63a1db5dab8f0fd1`;
-- audit `6c20cead05bd12b1027c349c4f259b117d8e0861`;
-- repairs `OR1-D1`--`OR1-D6`.
-
-It is not copied wholesale because it lives on a different fixed candidate tree.
+The B3--B8 thematic chapters remain active and unchanged.
 
 ### External-review packet
 
@@ -62,52 +46,38 @@ It is not copied wholesale because it lives on a different fixed candidate tree.
 29. `external-review/QUESTIONS_FOR_EXTERNAL_REVIEWERS.md`
 30. `external-review/REPOSITORY_AND_BRANCH_AUTHORITY_MAP.md`
 
-## 2. Preserved source-fidelity controls
+The packet now seeks a repair of terminal-component exhaustion; it does not present the failed theorem as open unreviewed mathematics.
 
-The following remain controlling and are not weakened:
+## 2. Exact external statuses
 
-- `AC_CUR_B2_B8_SOURCE_FIDELITY_INTEGRATION_MAP.md`;
-- `AC_CUR_B2_B8_SOURCE_FIDELITY_ASSURANCE_LEDGER.md`;
-- `AC_CUR_B2_B8_SOURCE_FIDELITY_MIGRATION_AUDIT.md`;
-- `AC_CUR_B2_B8_SOURCE_FIDELITY_FINAL_AUDIT.md`;
-- `MIGRATION_LEDGER.md`;
-- `RETIRED_SOURCE_CLASSIFICATION.md`;
-- `CHAPTER_PROVENANCE.md`;
-- `SUPERSESSION_MAP.md`;
-- `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md`.
+- source-fidelity audit: `ea8ec33d49294ac31a53f46aed7a62c7b9b81908`;
+- OR1 candidate/audit: `e6af564...` / `6c20cead...`;
+- v9 RL source: `02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`;
+- PDL reconstruction: `e36ba22f09e3a9fc6358f3b03615f8fde6c00d96`;
+- component-chain audit: `a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`;
+- `Xi` audit: `53be22a0f65b85068b11e5f781579618967db9dd`.
 
-Packet accounting remains exactly `39+10+18+10+1=78`.
+The RL/PDL general chain theorem is a failed candidate; local rows/models and the counterexample are Tier I.
 
-## 3. Authority of historical files
+## 3. Preserved source-fidelity controls
 
-Research, PDL and audit files not copied to this tree remain recoverable by exact SHA. Their status is controlled by the migration, antecedent, supersession and assurance ledgers, not by directory presence.
+All AC-CUR B2/B8 control files, migration/provenance/supersession maps and the B8 assurance ledger remain controlling. Packet accounting remains `39+10+18+10+1=78`.
 
-An old source may remain useful as:
+## 4. Historical authority
 
-- an exact theorem in narrower scope;
-- a finite certificate;
-- a counterexample;
-- a failed candidate;
-- a historical proof family;
-- a source of notation or mechanism.
+Uncopied research, PDL and audit files remain recoverable by exact SHA. A historical file may be a narrow theorem, finite certificate, counterexample, failed candidate, alternate proof or notation source. None of these roles automatically gives current load-bearing authority.
 
-None of these roles automatically gives current load-bearing authority.
-
-## 4. Explicit exclusions
+## 5. Explicit exclusions
 
 This branch does not import:
 
-- the full RL research tree at `02b374...`;
-- the full PDL tree at `fee97446...` or any later #80 return;
-- the old PDL complete draft tree at `1f57422...`;
-- any complete audit branch;
-- the Lean repository;
-- Paper A or other manuscript trees;
-- root-lift scout or moving AC-RL work beyond exact frozen refs;
-- B9 working-ahead packets as accepted global mathematics.
+- full RL `02b374...`;
+- full PDL start or return trees `fee97446...` / `e36ba22...`;
+- old PDL `1f57422...`;
+- any audit tree, including `a4f20f05...`;
+- Lean, Paper A/manuscript, root-lift scout or moving AC-RL work;
+- B9 working-ahead material as accepted mathematics.
 
-It also does not treat `projects/affine-cdc/research/**` chronology as the active mathematical chapter order.
+## 6. One-writer/append-only state
 
-## 5. One-writer and append-only state
-
-Only `curation/affine-cdc-global-rebaseline-v2` is writable for this intake. Source, audit, RL, PDL, Lean, manuscript and `main` refs remain read-only. No rebase, squash, force-push, history rewrite, branch deletion or canonical movement is used.
+Only `curation/affine-cdc-global-rebaseline-v2` is written. No rebase, squash, force-push, history rewrite, branch deletion, merge or canonical movement is used.
