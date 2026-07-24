@@ -1,124 +1,140 @@
-# Component-chain review packet
+# Component-chain failure and repair packet
 
-## 1. Frozen source
+## 1. Exact sources
 
-Review exactly:
+- RL theorem source: `research/affine-cdc-five-cdc-v1@02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`;
+- PDL reconstruction: `proof-development/affine-cdc-rigour-v1@e36ba22f09e3a9fc6358f3b03615f8fde6c00d96`;
+- independent audit: `audit/affine-cdc-component-chain-v1@a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`;
+- permanent earlier `Xi` audit: `53be22a0f65b85068b11e5f781579618967db9dd`.
 
-`Yuren-Tang/mathematics:research/affine-cdc-five-cdc-v1@02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`.
+The general theorem is a failed candidate, not an open unreviewed proposal.
 
-Primary files:
+## 2. Failed scope
 
-1. `FIXED_CHANNEL_COMPONENT_CHAIN_ROOT_NNI_THEOREM_V1.md`;
-2. `CO_ROOT_XI_EQUAL_NEIGHBOUR_AUDIT_CORRECTION_AND_CHAIN_REPAIR_V1.md`;
-3. `PURE_NNI_ZERO_PARENT_ESCAPE_MASTER_THEOREM_V1.md`;
-4. `ONE_CROSS_PROOF_DAG_AND_SUPERSESSION_INDEX_V9_COMPONENT_CHAIN_REPAIR.md`.
+The source chooses distinguished terminal paths $P_0,P_1$ and a shortest quotient chain between them. It handles an internal node only when it is:
 
-Permanent negative audit:
+- an inactive singleton; or
+- a closed channel component.
 
-`Yuren-Tang/mathematics:audit/affine-cdc-xi-co-root-v1@53be22a0f65b85068b11e5f781579618967db9dd`.
+It omits the possibility of another terminal path component internally.
 
-## 2. The proposed theorem
+## 3. Exact audit witness
 
-For one fixed support pair $h=ab$, let $H_h=F_a\triangle F_b$. Channel components and inactive vertices form a connected physical quotient. A shortest witnessed path between two distinguished channel paths is contracted one edge at a time by ordinary root NNIs. The final connector changes the terminal matching.
+```text
+h=14
+cut channel edges: 1-14:13, 10-11:12, 13-14:12
 
-The proposed rank is the length of one retained physical path, not the distance in a finite state graph.
+P_0={1,2,3,4,5,6,11}
+X_1={7,8,9,10,12,13}
+P_1={14}
 
-## 3. Local tables to verify
+chain:
+P_0 -- 3-8:14 -- X_1 -- 9-14:23 -- P_1.
+```
 
-### Unique inactive triangle
+Here $X_1$ is a third terminal path. The first root NNI
 
-A cubic support triangle has channel degree zero exactly when it is $[5]\setminus h$; every other triangle has degree two.
+```text
+134+124 -> 234+123, central 14 -> 23
+retain 2-3@3, 8-9@8
+move 7-8@8 -> 3, 3-4@3 -> 8
+```
 
-### Active/inactive row
+splits the old $P_0$ terminal darts between two $H_{14}$ components. No inherited $P_0'$ remains.
 
-If an active triangle and the inactive triangle share a non-channel root, the opposite root NNI should make both vertices active and extend the selected channel passage through the formerly inactive vertex.
+Finite enumeration:
 
-Check:
+```text
+18 non-cut central edges
+36 labelled root-NNI movies
+36 category-safe outputs
+0 inherited length-1 chains for the original terminal pairs.
+```
 
-- all support-index cases, not only the displayed $H_{35}$ normal form;
-- new central root meets $h$ once;
-- the two non-channel frontier roots remain stable;
-- later quotient connectors remain attached to the enlarged component.
+Digest:
 
-### Active/active row
+`d24c63ab56320803b9c795ac08389674b6f67edf89dc5c4ef9a729c5436a3e61`.
 
-At a physical non-channel edge between active components, the root alternative should cross-connect local $H_h$ passages. Check separately:
+## 4. Independently retained local core
 
-- distinct endpoint triangles;
-- equal endpoint triangles and the choice of the root branch;
-- path-cycle merge;
-- cycle-cycle merge;
-- terminal-path matching change;
-- loops, parallel quotient edges and category outputs.
+Audit `a4f20f05...` verified:
 
-## 4. Quotient and inheritance
+- channel degree `0/2` and unique inactive triangle;
+- six active/inactive rows and twenty-four ordered continuation cases;
+- six distinct active/active rows;
+- nine equal-endpoint root branch swaps;
+- eighty-four final two-terminal configurations, with forty-two per crossed matching and zero preserving the old matching;
+- co-root `6-7` route-changing model;
+- zero-parent Heawood `H_35` model.
 
-The quotient includes inactive vertices as singleton nodes. This is essential: collapsing only nontrivial channel components can make a physical path disappear.
+Local-row digest:
 
-For a selected shortest path
+`75ed977851a944f2cd80577e629a2f6936da5dfce49ad9d5a9e0e82c8b2494d4`.
 
-$$
-X_0,X_1,\ldots,X_\ell,
-$$
+Aggregate digest:
 
-verify that after contracting $X_0X_1$ the specific edges witnessing
+`2353b22b111c9dd47319b2c14637c08d93ae2f4eac10605a00f29c5f46842fe8`.
 
-$$
-X_1X_2,\ldots,X_{\ell-1}X_\ell
-$$
+## 5. Exact repair alternatives
 
-still exist with the claimed endpoint components and stable identities. Existence of some new shortest path is insufficient for strict descent of the retained witness.
+### Repair A — application-specific terminal exhaustion
 
-## 5. Final matching
+Prove for both co-root and zero-parent carriers:
 
-When $\ell=1$, the connector joins the two distinguished paths. Verify that the root NNI changes the perfect matching of their four terminal ends rather than:
+- exactly two terminal path components occur;
+- every other nontrivial channel component is closed;
+- all inactive vertices are singleton quotient nodes;
+- every selected connector avoids splitting the distinguished terminal darts.
 
-- preserving it;
-- joining two ends of one path;
-- creating one common path with the same marked cyclic order;
-- producing a zero/non-root central value;
-- triggering an unrecorded graph-category failure.
+### Repair B — generalized internal-terminal contraction
 
-## 6. Co-root challenge
+Allow an internal terminal path and prove a move/rank that:
 
-The old theorem failed because an equal face could have both marked edges on the same outside arc.
+- preserves the identities of $P_0,P_1$;
+- does not split their terminal dart sets;
+- updates or eliminates the internal terminal path;
+- retains a strictly shorter physical witness;
+- preserves cap, route, category, parent and prefix fields.
 
-The new theorem must use the actual marked arcs. In the frozen Heawood witness:
+### Repair C — alternative return mechanism
 
-- unproductive equal face: `9-14:23`;
-- proposed productive connector: `6-7:23`;
-- proposed root NNI: `123+234 -> 124+134`;
-- proposed route change: `(1,2)|(3,6) -> (1,3)|(2,6)`.
+Give a different literal source history for both singular fibres, without arbitrary equal-face, generic-connectivity, SCC-distance or lower-flow shortcuts.
 
-Independently verify all stable darts, root labels, graph category, cap disjointness and route order.
+## 6. Co-root review target
 
-## 7. Zero-parent challenge
+The explicit `6-7:23` movie is valid locally and changes
 
-Normalize to `(13,13,23,23)` and $H_{35}$. Verify:
+```text
+(1,2)|(3,6) -> (1,3)|(2,6).
+```
 
-1. category-safe carrier connectivity after deleting the active cell;
-2. initial full-lock matching `AB|CD`;
-3. chain contraction to a crossed matching;
-4. alignment of the active crossed root sheet;
-5. exactly one legal closed $H_{35}$ switch;
-6. active word `(15,13,25,23)` up to the stated symmetry;
-7. central root $35$ on the literal parent NNI;
-8. preservation of target topology, cap, route, darts and stored prefix.
+A repair must prove that every category-safe co-root carrier reaches an equivalent two-arc geometry or another named terminal. One positive Heawood movie is not totality.
 
-## 8. Integration challenge
+## 7. Zero-parent review target
 
-Even if the standalone chain theorem is correct, test whether its outputs match the complete prescribed-parent state expected by the stored-prefix consumer. In particular:
+The exact `H_35` Heawood movie is valid locally. A repair must prove that every zero-parent carrier reaches the required two-terminal crossed matching, or give a different universal route. The old direct-terminal inherited-flow shortcut remains forbidden.
 
-- are all category exits explicitly consumed?
-- can a chain move change the selected cap or active parent cell?
-- can support labels or missing-index data migrate?
-- does the chain rank interact with the target-topology rank without reset?
-- after the literal parent NNI, is the next stored source move exactly the one claimed?
+## 8. Integration requirements
 
-## 9. Acceptable review outcomes
+Any repaired theorem must supply exact maps for:
 
-1. `INDEPENDENTLY SUPPORTED COMPONENT` with exact scope and dependencies;
-2. `BOUNDED REPAIR REQUIRED` with the smallest corrected statement and witness maps;
-3. `MATERIAL FAILURE` with a complete source state and the precise broken implication.
+- distinguished terminal dart sets;
+- physical connector ancestry;
+- source/target topology;
+- support labels and stable darts;
+- cap and route/profile;
+- graph category and every terminal output;
+- stored prefix and next inverse source move.
 
-A broad statement that the mechanism is plausible is not a useful outcome.
+## 9. Required future verdicts
+
+A new reviewer should return separately:
+
+1. repaired standalone chain/return theorem;
+2. universal co-root corollary;
+3. universal zero-parent corollary;
+4. complete inverse-table integration;
+5. ordinary induction;
+6. compatibility with the accepted outer shell.
+
+The old general theorem may not be restored by adding prose unless the exact third-terminal-path witness is excluded or handled.
