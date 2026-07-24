@@ -2,31 +2,24 @@
 
 ## 1. Current status
 
-The global five-support theorem remains open at independent-assurance level.
-
-This directory now separates:
-
-- stable formulation/compression mathematics inherited from the source-fidelity base;
-- independently supported one-cross prefix/suffix units;
-- the v9 complete authorial component-chain candidate;
-- active frontiers and counterexamples.
+The global five-support theorem remains open. The v9 general component-chain theorem has been independently refuted in its written scope.
 
 ## 2. Reading order
 
 ### Stable foundation
 
-1. `b1-object-quantifier-and-scope.md` — exact object and quantifiers;
-2. `b2-formulation-and-witness-hierarchy.md` — witness hierarchy and source-fidelity-repaired orthogonal correction;
-3. `root-flow-lifting.md` — root/triangle/lifting architecture;
-4. `equivalent-formulations-and-proof-families.md` — alternate representations and implication boundaries.
+1. `b1-object-quantifier-and-scope.md`;
+2. `b2-formulation-and-witness-hierarchy.md`;
+3. `root-flow-lifting.md`;
+4. `equivalent-formulations-and-proof-families.md`.
 
-### Current proof line
+### Current proof/frontier line
 
-5. `current-proof-spine.md` — exact theorem/source/assurance/defect/consumer for every arrow;
-6. `component-chain-candidate.md` — fixed-channel theorem, co-root and zero-parent corollaries, #80/#81 challenge surface;
-7. `authorial-candidate-and-frontier.md` — current global status and exact receivers.
+5. `current-proof-spine.md`;
+6. `component-chain-candidate.md` — failed theorem, retained local core and exact counterexample;
+7. `authorial-candidate-and-frontier.md` — active terminal-exhaustion interface.
 
-### Existing B3--B8 theory
+### B3--B8 background
 
 8. `surfaces-and-halfcube.md`;
 9. `gauge-and-reconfiguration.md`;
@@ -35,81 +28,45 @@ This directory now separates:
 12. `frontier-localisation.md`;
 13. `finite-laboratories-and-certificates.md`.
 
-B3--B8 mathematics is preserved and is not overwritten by the one-cross route.
-
-## 3. Source-fidelity invariants
-
-- the fixed-dimensional orthogonal packet remains theorem/mechanism provenance;
-- it does not contain a universal arbitrary-rank `2r` tower;
-- the separate unreconstructed tower is superseded by the `q-2` theorem and deleted permutation module;
-- the all-rank residue hierarchy remains distinct;
-- packet accounting is exactly
-  $$39+10+18+10+1=78;$$
-- B8 classes remain `F-PROVED`, `F-CERT-PUBLIC`, `F-CERT-PRIVATE`, `F-CENSUS`, `CODE-PARTIAL`, `AFFECTED`.
-
-Independent source-fidelity audit: `ea8ec33d...`.
-
-## 4. Independently supported one-cross units
-
-From the old fixed candidate and its independent audits:
+## 3. Independently supported units
 
 - root-flow semantics;
-- one-cross structural reduction;
-- finite boundary/route core;
-- finite equality/DDD Morse data;
-- repaired finite seam table and ordered genealogy subunits;
-- general finite-bridgeless outer shell, conditional on the cubic theorem.
+- one-cross reduction;
+- finite boundary/route and Morse data;
+- selected repaired seams/genealogy;
+- channel local rows and final two-terminal matching table;
+- explicit co-root and zero-parent models;
+- conditional general outer shell;
+- all permanent counterexamples.
 
-The old R2.3/R2.4, return rank and cap assembly were not accepted.
+## 4. Failed theorem
 
-## 5. v9 authorial candidate
+Sources:
 
-Frozen source:
+- RL `02b374...`;
+- PDL `e36ba22...`;
+- audit `a4f20f05...`.
 
-`research/affine-cdc-five-cdc-v1@02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`.
+The theorem failed because a third terminal path can occur internally. The first contraction can split a distinguished terminal path, invalidating inherited-chain descent.
 
-Current status:
+## 5. Active frontier
 
-`RL-AUTHORIAL / COMPLETE CANDIDATE / PDL #80 ACTIVE / AUDIT #81 ACTIVE`.
+`AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION`.
 
-The component-chain theorem is not accepted merely because the RL proof DAG closes.
+A repair must establish exactly-two-terminal application geometry, handle internal terminal paths, or supply another literal return.
 
-## 6. Permanent negative rules
+## 6. Source-fidelity and B3--B8 preservation
 
-Do not use:
+The exact `39+10+18+10+1=78` packet accounting, `q-2` correction, B8 classes and all B3--B8 scope distinctions remain unchanged. The failed one-cross theorem erases none of them.
 
-- boundary equivalence as literal parent reinsertion;
-- arbitrary terminal recolouring;
-- generic accepted-exit flags without consumers;
-- horizontal-only SCC progress;
-- old no-sink/distance ranks;
-- local `Omega` shift as exterior-orbit control;
-- arbitrary equal-face `Xi` totality;
-- co-root as a substitute for zero-parent;
-- track erasure as progress;
-- generic root-flow connectivity;
-- global C6/C8 state or generic marked-weld shortcuts.
+## 7. Permanent guards
 
-Full details: `../COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`.
-
-## 7. B3--B8 rules retained
-
-- full dual is not old-colour quotient;
-- connected switch support is one edge, disconnected support a path;
-- `7737` composite endpoints are not `2801` neighbours;
-- a pivot gives one lift, not a fibre;
-- cap forcing is not full-cap containment;
-- routing transitions require source realization;
-- BBD and localisation obligations remain open exactly as named.
+Do not use fixed-boundary reinsertion, arbitrary recolouring, generic exit consumption, SCC/no-sink distance, exterior-orbit `Omega`, arbitrary-equal-face `Xi`, zero-parent omission, track-erasure progress, generic connectivity, global C6/C8 state, generic marked-weld return or unproved terminal-path exhaustion.
 
 ## 8. External review
 
-The review-facing packet begins at `../external-review/ENTRYPOINT.md`.
+Start at `../external-review/ENTRYPOINT.md`.
 
 ## 9. Assurance boundary
 
-The current line is:
-
-`INDEPENDENTLY SUPPORTED FOUNDATION AND CONDITIONAL OUTER SHELL / COMPLETE V9 AUTHORIAL MIDDLE / COMPONENT-CHAIN REVIEW ACTIVE / GLOBAL FIVE-SUPPORT THEOREM OPEN`.
-
-No Lean, manuscript, release, publication, arXiv, DOI or `main` status is created.
+`INDEPENDENT FOUNDATION AND LOCAL TABLES / GENERAL COMPONENT-CHAIN THEOREM FAILED / UNIVERSAL SINGULAR-PARENT RETURN OPEN / GLOBAL FIVE-SUPPORT OPEN`.
