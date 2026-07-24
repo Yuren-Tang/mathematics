@@ -1,93 +1,182 @@
 # AffineCDC mathematical architecture
 
-## 1. Project scopes
+## 1. Four mathematical lines
 
-1. affine compatibility above nowhere-zero binary flows;
-2. Programme A complete Cycle Double Cover theorem;
-3. the stronger open five-support problem.
+AffineCDC now has four distinct mathematical lines.
 
-Programme A is complete at paper level. The five-support strengthening remains open and is not used in Programme A.
+1. **Affine compatibility and ordinary CDC** — Programme A, independently audited in exact scope.
+2. **Five-support formulations and compression theory** — B1--B8, source-fidelity repaired, with the global theorem open.
+3. **One-cross ordinary-induction candidate** — the v9 authorial line whose new middle is the fixed-channel component-chain theorem.
+4. **Orientation refinement** — OR1 fixed-lift/fixed-fibre obstruction theory, independently verified subject to D1--D6, with global oriented existence open.
 
-## 2. Exact source-fidelity replacement
+No line inherits the assurance of another.
 
-This candidate descends from the fixed unified object
+## 2. Assurance architecture
 
-`curation/affine-cdc-programme-a-b1-b8-unified-v1@ec765cd03271abd3588ec36faec3d53d0f8aa03b`
+### Tier I
 
-and consumes only the authorial B2/B8 source-fidelity repair
+Independently supported theorem units, finite certificates, scope corrections and negative results.
 
-`proof-development/affine-cdc-rigour-v1@9ce8de5ca5b7b41e139be4c94572de7725446046`.
+### Tier II
 
-It preserves Programme A, B1, B3–B8 mathematics and excludes B9 and later moving RL/PDL material.
+Authorial complete candidates at exact frozen refs, especially the v9 chain line at `02b374...`.
+
+### Tier III
+
+Exact open arrows, active falsification surfaces and current receivers, especially #80/#81.
+
+### Tier IV
+
+Read-only Lean, manuscript, workbench, audit, release and DOI pointers.
+
+The assurance matrix is `GLOBAL_REBASELINE_V2_ASSURANCE_MATRIX.md`.
 
 ## 3. Programme A
 
-Controlling theorem:
+The controlling theorem is:
 
 > Every multigraph with finite active edge set and no singleton cut has a finite circuit double cover.
 
-The proof chain remains finite-active semantics, loop deletion, cubic expansion, Seymour six-flow, internal order-eight transport, affine compatibility, indexed support extraction, collapse, circuit decomposition, and loop reinsertion.
+The proof chain remains:
 
-Audit A’s three explicitness repairs remain closed and change no theorem or dependency.
+```text
+finite-active multigraph semantics
+→ loop deletion
+→ port-cycle cubic expansion
+→ Seymour six-flow and internal order-eight transport
+→ rank-three affine compatibility
+→ indexed even supports
+→ cut-even collapse
+→ circuit decomposition
+→ loop reinsertion.
+```
 
-## 4. B1/B2 foundation
+This theorem does not imply five supports.
 
-B1 controls exact five-support objects and quantifiers. B2 supplies graph-level equivalences with $R_5$ flows, $K_5$ triangles, $O^-(4,2)$ anisotropic flows, quadratic cycle solutions, and cographic cycle-continuous maps; fixed singular/Schur criteria; and stress/Fourier dual layers.
+## 4. B1--B8 foundation and source fidelity
 
-### Orthogonal source fidelity
+B1 gives exact objects and quantifiers. B2 gives the witness hierarchy, singular/quadratic/cographic formulations and the sharp orthogonal correction. B3--B7 organize targets, reconfiguration, interfaces, holonomy/atoms and localisation. B8 controls finite assurance.
 
-The packet `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`, blob `2043ada9d28789ecc5f4f0028e62133f37835bc1`, is valid theorem-level provenance for the fixed rank-three/eight-support $O^+(6,2)$ construction and five-coordinate $O^-(4,2)$ slices.
+The source-fidelity repair preserves:
 
-It is not the source of an arbitrary-rank tower.
+- valid fixed rank-three/eight-support `O+(6,2)` and five-coordinate `O-(4,2)` packet mathematics;
+- separation from the unreconstructed arbitrary-rank `2r` tower;
+- sharp `q-2` replacement and deleted permutation module;
+- packet accounting `39+10+18+10+1=78`;
+- all Programme A/B1/B3--B8 statuses.
 
-The arbitrary-rank $\Gamma\oplus\Gamma^*$ / $d_h(a)$ / $O^+(2r,2)$ proposition is a separate non-packet item:
+Independent verification is at `ea8ec33...`.
 
-`SOURCE-UNRECONSTRUCTED / INFERRED-EXTRAPOLATION OR UNCOMMITTED DRAFT / MATHEMATICALLY REFUTED BY B2.3`.
+## 5. Independently accepted five-support prefix/suffix
 
-The mathematical replacement remains the sharp bound $\dim V\ge q-2$, the deleted permutation module, and rank-three exceptionality. The genuine all-rank transgression/residue hierarchy remains valid and distinct.
+The old full-draft audit epoch independently accepted:
 
-## 5. B3 target hierarchy
+```text
+R0 root-flow semantics
+→ R1 one-cross structural reduction
+→ R2.1 finite boundary/route core
+→ R2.2 finite local Morse data.
+```
 
-For fixed compatible lift $g$,
+It also accepted selected repaired seam/genealogy subinterfaces and the conditional general multigraph outer shell.
+
+It did **not** accept the old R2.3/R2.4 physical core, old contextual-return rank or cap assembly.
+
+## 6. Current one-cross authorial line
+
+The current source-level ontology is:
+
+```text
+definitions and root-flow semantics
+→ structural reduction
+→ local finite core
+→ forward root-NNI history
+→ actual lower target and one inverse pop
+→ complete prescribed-parent state
+→ root/co-root/zero inverse table
+→ fixed-channel component-chain return
+→ stored-prefix return
+→ ordinary induction
+→ general multigraph outer shell.
+```
+
+Exact arrow metadata is in `five-support/current-proof-spine.md`.
+
+## 7. Component-chain layer
+
+For a fixed support channel $H_h$, form a quotient from:
+
+- nontrivial channel components;
+- singleton inactive vertices;
+- physical non-channel connector edges.
+
+Select a shortest **witnessed physical** path between two distinguished channel paths. Ordinary root NNIs are claimed to contract the first connector while retaining the suffix. The last connector changes the terminal matching.
+
+This mechanism is:
+
+`RL-AUTHORIAL / PDL #80 ACTIVE / AUDIT #81 ACTIVE`.
+
+It does not use arbitrary equal-face selection, `Omega` minima, `Xi` totality, generic connectivity, track-erasure rank or SCC distance.
+
+## 8. Stored-prefix and induction layer
+
+After the singular parent is realized, fixed-order target normalization and complete state-walk seam/run replacement return through the stored root-NNI prefix. The candidate uses one actual graph-order drop and ordinary strong induction.
+
+Independently checked local seam/genealogy results are retained, but the full integration remains authorial until the component-chain and every terminal consumer are verified.
+
+## 9. General multigraph outer shell
+
+The outer shell is independently accepted as a conditional theorem:
+
+```text
+cubic five-support theorem
+→ common five-index family on cubic expansions
+→ memberwise cut-even collapse
+→ componentwise assembly
+→ loop reinsertion into two fixed supports
+→ at-most-five-member CDC for finite bridgeless multigraphs.
+```
+
+It supplies no upstream inverse-parent theorem.
+
+## 10. Orientation layer
+
+For a fixed compatible lift $g$:
 
 $$
-J_g\to\mathscr A_5
-\Longrightarrow
-T_g^{(1)}\to\mathscr A_5
-\Longrightarrow
-\text{five-support cover}.
+\omega(g)=[w(g)]\in C^1/\operatorname{Cut}
 $$
 
-$T_g^{(1)}$ is the full componentwise dual; $J_g$ is only the old-colour quotient. B3 target, link, capacity, factorable-core, and conditional flower results are unchanged.
-
-## 6. B4 motion
-
-Vertical lifts form an $H_f^0$ torsor. One horizontal edge is one connected-cycle switch; disconnected support gives a commuting path. A support pivot supplies one explicit lift, and the new fibre must be recomputed. Composite endpoint sets are not automatically one-step-neighbour sets.
-
-## 7. B5 interfaces
-
-The active chain remains cubic local law, cyclic three-cut gluing, ten four-pole states, profile intersection, cap forcing, Kempe alignment, routing weights, and uniform-routing elimination. Full-cap containment and residual source realization remain open.
-
-## 8. B6 correction
-
-Individual-loop holonomy, genuine path families, root-fibre/Tait resolution, Type H soluble escape, DDD triality, and unique bad route remain active. BBD simultaneous origin is conditional on `AC-RL-BBD-GROUPOID-CLOSURE`; a nontrivial defect-minimal forest remains pending `AC-RL-BBD-VARIATION-SLICE`.
-
-## 9. B7 localization frontier
-
-Rank one is impossible; rank two gives a Tait/root-triangle escape; full rank has a flat/nonflat curvature dichotomy. Flatness yields an eight-state potential and nonflatness a common scalar-sheet cut. Source localization and bounded composition remain open under the four exact B7 obligations.
-
-## 10. B8 assurance and packet accounting
-
-Finite results retain `F-PROVED`, `F-CERT-PUBLIC`, `F-CERT-PRIVATE`, `F-CENSUS`, `CODE-PARTIAL`, or `AFFECTED` status.
-
-The corrected packet partition is
+is the fixed-lift orientability class. For fixed flow $f$:
 
 $$
-39+10+18+10+1=78.
+\Omega_f\in C^1/(\operatorname{Cut}+\mathcal B_f)
 $$
 
-The exact orthogonal packet is one of the thirty-nine theorem/mechanism packets. The source-unreconstructed extrapolation is outside the packet population and receives no packet assurance class.
+is the fixed-fibre obstruction. OR1 also gives the orientation-stress dual, exact $K_4$ same-fibre example and enriched oriented collapse.
 
-## 11. Global frontier and assurance
+Assurance: independently verified subject to D1--D6. Global fixed-fibre and graph existence remain open.
 
-The six exact frontier obligations and B9 blocked status are unchanged. This replacement is Curator-integrated authorial correction, not independent re-audit, Lean verification, manuscript approval, publication, release, arXiv, DOI, novelty, timestamp, or canonical movement.
+## 11. Permanent negative architecture
+
+The proof architecture must route around, not forget:
+
+- boundary-equivalent but nonliteral parent insertions;
+- inherited-flow discontinuity;
+- unconsumed exit flags;
+- mixed root/token SCCs;
+- failed abstract no-sink ranks;
+- exterior-component `Omega` defect;
+- same-arc `Xi` witness;
+- zero-parent omission;
+- track-erasure, generic-connectivity, arbitrary-lower-flow, global-annulus and generic-MWR shortcuts.
+
+See `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`.
+
+## 12. Global endpoint
+
+The architecture is complete as a dependency and status system. The theorem endpoint is not complete at independent-assurance level.
+
+Current class:
+
+`MIXED-ASSURANCE ARCHITECTURE / INDEPENDENT PREFIX AND OUTER SHELL / COMPLETE V9 AUTHORIAL MIDDLE / COMPONENT-CHAIN REVIEW ACTIVE / GLOBAL FIVE-SUPPORT OPEN`.
