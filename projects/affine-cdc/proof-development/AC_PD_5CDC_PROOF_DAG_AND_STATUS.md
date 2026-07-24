@@ -1,234 +1,200 @@
-# AC-PD-5CDC — final proof DAG and assurance status
+# AC-PD-5CDC — v7.2 proof DAG, supersession and current status
 
 **Owner:** `AffineCDC — Proof Development Lead` (`AC-PDL`)  
 **PDL branch:** `proof-development/affine-cdc-rigour-v1`  
-**Frozen Research Lead authority consumed:** `research/affine-cdc-five-cdc-v1@71a10f9ba86c1d2b8b7885e78fa9baa303c77818`  
-**Classification:** `COMPLETE-DRAFT / FULL HUMAN PROOF CLOSED AT PDL LEVEL / READY FOR INDEPENDENT AUDIT AND DIR-CURATOR SNAPSHOT INTAKE`.
+**Frozen Research Lead input:** `research/affine-cdc-five-cdc-v1@094ca09f6d3982b785a3f3428d9ec079dbba0855`  
+**Classification:** `V7.2 BOUNDED RECONSTRUCTION / BLOCKED-PROOF AT PURE-NNI TARGET REINSERTION`.
 
-There is no remaining declared mathematical proof gap in the PDL reconstruction.
-This is not independent assurance, canonical acceptance, Lean verification,
-manuscript acceptance, release or publication.
+The old fixed candidate
+
+`proof-development/affine-cdc-rigour-v1@1f57422e0e415d8902d56eb294183815c0a0b640`
+
+is blocked by the accepted independent audits in research-workbench issues
+#68, #69 and #70.  Its v6/v6.1 mixed-order route is not a complete proof draft
+and is not controlling here.
 
 ---
 
-## 1. Headline theorem spine
+## 1. Controlling v7.2 spine
 
 \[
 \begin{array}{c}
-\text{five indexed even supports}\
-\Updownarrow\\
-R_5\text{-valued }E_5\text{ flow on a loopless cubic graph}\
-\Downarrow\ R1\\
-\text{one valid smaller cross closure at every simple edge}\
-\Downarrow\ R2.1-R2.3\\
-\text{finite boundary route + current-flow descent + one-token grammar}\
-\Downarrow\ R2.4\\
-\text{one full-labelled nonbranching physical co-root track}\
-\Downarrow\ R2.6\\
-\text{cellwise root seams + constant-run sections erase every normalized track}\
-\Downarrow\ R2.7\\
-\text{witnessed resolved-call contextual return}\
+R_0\text{ root-flow/five-support equivalence}\\
 \Downarrow\\
-Q_N\text{ witnessed edge extension}\
+R_1\text{ one valid smaller cross closure}\\
 \Downarrow\\
-P_N\text{ cubic root solubility by theta base and vertex induction}\
+R_{2.1}\text{ one-cross boundary and fixed route}\\
 \Downarrow\\
-\text{port-cycle expansion/collapse outer shell}\
+R_{2.2}\text{ route-preserving monotone root-NNI prefix}\\
 \Downarrow\\
-\boxed{\text{every finite bridgeless multigraph has a }5\text{-CDC}.}
+\text{route/category terminal or first equal-face cancellation}\\
+\Downarrow\\
+\text{actual smaller target cap closure}\\
+\Downarrow\ P_{<N}\\
+\text{one arbitrary-flow inverse pop}\\
+\Downarrow\\
+\text{pure fixed-order NNI/one-atom return}\\
+\Downarrow\\
+\text{ordinary strong induction }P_N\\
+\Downarrow\\
+\text{accepted general-graph outer shell}.
 \end{array}
 \]
 
+Exactly one graph-order descent is allowed: the first cancellation.  Everything
+after the pop must remain at predecessor order and use only the pure `2--2`
+fixed-order alphabet.
+
 ---
 
-## 2. Closed proof units
+## 2. Reconstructed units
 
-| Unit | PDL file | Exact state |
+| Unit | State | Controlling PDL file/result |
 |---|---|---|
-| `R0` | controlling Programme B1 equivalence | five indexed even supports, root-valued `E_5` flows, `K_5` triangle labels and anisotropic `O^-(4,2)` flow formulation agree |
-| `R1` | `AC_PD_5CDC_R1_ONE_CROSS_STRUCTURAL_REDUCTION.md` | every simple edge has a connected loopless bridgeless cubic cross closure with exactly two fewer vertices; theta is the no-simple-edge base |
-| `R2.1` | `AC_PD_5CDC_R2_1_BOUNDARY_ROUTE_CERTIFICATE.md` | 640 conserved boundaries; ten states; exact `J_i,K_i`; sixteen route rows; `P_3 sqcup C_4 sqcup P_3`; one selected cross forces immediate cap, separating rescue or one original-cap fixed route |
-| `R2.2` | `AC_PD_5CDC_R2_2_SINGULAR_MORSE_DESCENT.md` | positive equality and DDD current-flow potentials; finite root-NNI/equal-face descent; no hidden local minimum |
-| `R2.3` | `AC_PD_5CDC_R2_3_FIRST_FAILURE_AND_LOCAL_CONFLUENCE.md` | exactly one zero/co-root first failure; immediate zero normalization; bounded critical overlaps; no atom proliferation |
-| `R2.4` | `AC_PD_5CDC_R2_4_FULL_STATE_FORCED_BACKBONE.md` | standard atom/Petersen edge dictionary; unique full-labelled physical pivot walk; constant-run root sections; source-faithful backtrack removal; retained side/cap/route data |
-| `R2.5` | `AC_PD_5CDC_R2_5_ORIENTED_ODD_EXCLUSION.md` | physical cap-block orientation excludes odd pivot-closed `C_5,C_9` and double laps |
-| `R2.6` | `AC_PD_5CDC_R2_6_CELLWISE_TRACK_ERASURE.md` | every genuine pivot-change cell has a local root seam; all residual constant-pivot intervals rootify; literal gluing gives closed/open/periodic track erasure |
-| `R2.7-HW1` | `AC_PD_5CDC_R2_7_MUTUAL_INDUCTION_HISTORY_WITNESS.md`; `...CHILD_CONTEXT_FIDELITY.md` | simultaneous `Q_N/P_N` recursion returns explicit child histories; disconnected cancellation is a cyclic two-cut exit |
-| `R2.7-HW2` | `AC_PD_5CDC_R2_7_FULL_LABELLED_GENEALOGY_GLUING.md` | ordered-dart genealogy; suspended ancestor marks; identity gluing of nested replacements |
-| `R2.7-HW3` | `AC_PD_5CDC_R2_7_FIXED_ORDER_CONSUMER_COMPATIBILITY.md` | support switches occur only as root histories or switch--pop endpoint collars; closed singular cores contain only the proved Ptolemy alphabet |
-| `R2.7` | `AC_PD_5CDC_R2_7_RESOLVED_CALL_CONTEXTUAL_TRANSFER.md` | target-boundary-preserving fixed-order normalization; finite resolved-call relation; no terminal-free sink; rank `(N,d_N)`; original-prefix inverse transfer |
-| R2-to-R1 | `AC_PD_5CDC_R2_TO_R1_CAP_ROUTE_CONSUMER_AUDIT.md` | descendant route states return before original-profile claims; same-matching direct terminal rootifies to theta; one global `S_5` permutation gives labelled cap gluing; `Q_N/P_N` cubic induction closes |
-| outer shell | `AC_PD_5CDC_GENERAL_GRAPH_OUTER_SHELL.md` | finite port-cycle cubic expansion; memberwise cut-even collapse; loops added to two fixed supports; exactly five members retained |
+| `R0` | retained audited input | root-valued `E_5` flow = five indexed even supports on loopless cubic graphs |
+| `R1` | `ACCEPT` from old audit | one valid connected loopless bridgeless cross closure of order `N-2`; theta base |
+| `R2.1` | `ACCEPT` from old audit | 640 boundaries, ten states, exact `J_i/K_i`, fixed-route rows |
+| `R2.2` | `ACCEPT` from old audit and retargeted | positive equality/DDD potentials; no local minimum before an equal-face pair or exit |
+| synchronized prefix | `COMPLETE-DRAFT` | `AC_PD_5CDC_V7_2_FIRST_CANCELLATION_AND_SINGLE_POP.md`: pure root-NNI prefix, parallel target test, route/category stopping |
+| first-cancellation target | `COMPLETE-DRAFT` | disconnected cross gives parent 2/4-cut/bounded; invalid target gives cut <=4/bounded; otherwise actual target order `N-2` |
+| arbitrary-flow pop | `COMPLETE-DRAFT` | all intersecting/equality/good-disjoint/missing-index rows source-level; exact five exterior darts retained |
+| doubled-disjoint missing index | `COMPLETE-DRAFT` | explicit `(Q_1,Q_5,15)` three-vertex object and root NNI `34+Q_5=12` leave exactly one standard `Q_5` atom |
+| narrow R2.4 interface | `COMPLETE-DRAFT` | one atom, two crossed resolutions, complete nonbranching state walk; no shortest-core/route-bit dependency |
+| maximal runs/switches | `COMPLETE-DRAFT` | `AC_PD_5CDC_V7_2_STATE_WALK_CELLWISE_RECONSTRUCTION.md` |
+| six-port seams | `COMPLETE-DRAFT` | all 120 nonbacktracking cells; `(z,z,w,w)` has `(0,2,2)`; literal turn-corolla and dart maps |
+| reduced backtracks | `COMPLETE-DRAFT` | two genuine switch seams plus physical middle constant-run identity strip; no abstract `abba` deletion |
+| closed/normalized-open track erasure | `COMPLETE-DRAFT IN STATED SCOPE` | seam/run identity gluing; supplied periodic endpoint crosscut |
+| terminal census | `COMPLETE-DRAFT` | `AC_PD_5CDC_V7_2_TERMINAL_CENSUS_AND_ORDINARY_INDUCTION_BOUNDARY.md` |
+| outer shell | retained `ACCEPT` from issue #70 | conditional cubic-to-general finite bridgeless 5-CDC implication |
+
+Fresh finite checks:
+
+- doubled-disjoint borrowing: `180 = 120 good + 60 missing-index`;
+- six-port switch cells: `120/120` have distinct intersecting side roots and
+  pairing pattern `(0,2,2)`.
 
 ---
 
-## 3. Shortest controlling dependency route
+## 3. Unique current blocker
 
-The current shortest proof does **not** require extracting a simple Petersen
-cycle and then constructing a global `C6/C8` annulus.
+### `AC-PD-V7.2-PURE-NNI-TARGET-REINSERTION`
 
-After `R2.4`, use the complete physical track directly:
+The fixed-order source proves local one-atom continuation and erasure of a
+**supplied** finite singular track.  It does not prove that the root short side
+produced by a periodic crosscut realizes the prescribed ordinary arborescence
+parent topology.
+
+The minimal witness is
 
 \[
-\boxed{
-\text{local seam at every pivot change}
-+
-\text{constant-run rootification}
-\Longrightarrow
-\text{complete track erasure}.}
+(A,B,C,D)=(12,34,13,24).
 \]
 
-Consequently `R2.5` is a correct independent strengthening and diagnostic
-certificate, but it is not load-bearing for the shortest `R2.6 -> R2.7`
-consumer route.
-
-The old bounded `C6/C8` source movies remain valid local mathematics and may be
-retained for exposition or independent checking; they are no longer required
-to construct one global history section.
-
----
-
-## 4. Exact well-foundedness architecture
-
-### Witnessed recursion
-
-`Q_N` starts from a specified inherited cross flow.  A strict cancellation calls
-`Q_{N-2}` on the inherited child, not bare existence `P_{N-2}`.  The child
-returns a decorated finite history.
-
-### Variable-order compression
-
-Innermost successful calls are replaced by predecessor-order histories using:
-
-- root-NNI generator lifts;
-- immediate `A/C` insertion normalization;
-- switch--pop endpoint collars;
-- suspended central ancestor marks;
-- literal complete-state seam equality.
-
-### Fixed-order theorem
-
-Every discrepancy detour retains the same ordinary target-parent boundary.
-Cellwise track replacement lowers unresolved/singular diagram complexity while
-fixing that boundary.  At zero singular complexity it is a root-valued
-realization of the selected parent topology, so `d_top` strictly decreases.
-This is not an assertion that arbitrary root-valued NNI loops are absent.
-
-### Resolved-call rank
-
-At fixed order form the finite resolved parent relation and saturate it under the
-proved boundary-equivalent macros.  A terminal-free sink cycle would expand,
-compress to fixed order, and become a target-directed recurrence; the fixed-order
-theorem forces strict parent-tree descent and rules it out.  Directed distance
-to the terminal set is the finite rank `d_N`.
-
-The complete strategy terminates by lexicographic induction on
+For the required parent pairing `AB|CD`, the central value is
 
 \[
-(N,d_N),
+12+34=Q_5,
 \]
 
-inside the already decreasing original-history prefix.
+while the two crossed topologies have root values
 
-No child history length, child/parent prefix comparison or permanent mark-count
-decrease is used.
+\[
+12+13=23,
+\qquad
+12+24=14.
+\]
 
----
+Thus a fixed-boundary pure-NNI scheduler may alternate the two root crossed
+states while the prescribed parent pairing remains co-root.  Cellwise erasure
+or a periodic root crosscut supplies a root detour between crossed side
+histories; no frozen theorem identifies that detour with a root state on the
+parent pairing or a state of smaller target distance.
 
-## 5. Exact cap/route terminal alphabet
+Controlling obstruction dossier:
 
-Starting from one selected cross state:
+`AC_PD_5CDC_V7_2_PURE_NNI_TARGET_REINSERTION_OBSTRUCTION.md`.
 
-1. `B_j`: immediate original-cap root insertion;
-2. separating equality/DDD channel: immediate cap rescue;
-3. fixed-route equality/DDD lock: finite current-flow history;
-4. first route change on a descendant: a `K_i` terminal on that descendant,
-   followed by `R2.7` return to the original four-pole;
-5. cross direct matching: root theta terminal;
-6. same direct matching: one zero bridge, crossed `(0,2,2)` resolution to root
-   theta, followed by contextual return;
-7. genuine cancellation: inherited lower `Q` call and resolved parent return;
-8. disconnected cancellation: cyclic two-cut gluing exit;
-9. bounded/separator/category event: declared outer exit.
-
-A support-unordered common state glues only after one global support permutation
-aligns all five terminal traces and hence every labelled terminal root.
+A repair must prove prescribed-parent realization, a strict complete-state
+measure, a target-side relative cellwise theorem, or an exact ambient terminal
+forced by the displayed cycle.
 
 ---
 
-## 6. Superseded controlling claims
+## 4. Conditional units
 
-The final proof does not use any of the following:
+The following statements are valid only after the blocker is closed:
 
-1. cancellation automatically completes an order-`N-2` relative obligation;
-2. an arbitrary lower-order root flow can be inserted back cover-independently;
-3. generic two-edge root-adjacency selection or marked-weld flow selection;
-4. comparison of child history prefix with parent history prefix;
-5. central-mark deletion as a permanent global descent coordinate;
-6. raw support-switch atom cells as interior Ptolemy cells;
-7. finite endpoint order restoration alone as variable-order compression;
-8. a shortest Petersen pivot subcycle treated as a complete physical annulus;
-9. simultaneous canonical stars or one global `C6` history section;
-10. a descendant `K_i` state identified directly with an original-profile state;
-11. a same-matching bridge terminal treated as an immediate original-graph exit;
-12. flows on all three reconnection closures or complete-profile classification.
+1. pure-NNI no-reopening return through the entire stored prefix;
+2. exhaustiveness of the terminal census for every fixed-order execution;
+3. ordinary strong-induction closure `P_{<N} => P_N`;
+4. cubic five-support theorem;
+5. application of the accepted general-graph outer shell.
 
-The old `AC-PD-5CDC-EQ-RETURN / MWR` and prime two-edge flexibility frontier is
-retired from the controlling proof.  Its finite channel algebra and obstruction
-interpretations remain mathematically interesting noncontrolling material.
+No `rho_atom` rank is currently accepted: the v7 no-reopening file names it but
+does not construct a strictly decreasing quantity for the displayed two-state
+cycle.
 
 ---
 
-## 7. Literature/definition boundary
+## 5. Supersession ledger
 
-The standard modern `5-CDC` convention treats a cycle as an even subgraph,
-possibly disconnected, and a `k`-cycle double cover as at most `k` such members.
-Thus the five indexed supports are already a standard `5-CDC`; no memberwise
-circuit decomposition is required.
+### Retired as controlling mathematics
 
-The targeted precedent search found no established theorem supplying the new
-relative contextual-transfer mechanism.  Literature and novelty conclusions
-remain subject to the separate Paper A literature/novelty audit and future
-5-CDC manuscript work.
+1. simultaneous witnessed `Q_N/P_N` induction;
+2. arbitrary lower child-history lifts through a weld;
+3. nested cancellation bubbles and variable-order compression;
+4. suspended ancestor marks as a global recursion device;
+5. resolved-call graph `M_N` and distance `d_N`;
+6. terminal-frame/outermost-child unwind;
+7. child-prefix versus parent-prefix comparisons;
+8. the old claim that target-boundary wording alone makes track erasure realize
+   the selected parent topology;
+9. R2.5 odd `C5/C9` exclusion as a critical dependency;
+10. shortest Petersen-core extraction and `C6/C8` annuli;
+11. Type-T graph contraction or abstract `abba` deletion;
+12. the historical ambient six-port assertion that one of four star matchings
+    must be admitted by the original locked graph;
+13. any classification of `1f57422...` as a complete proof draft.
+
+### Retained but noncontrolling stronger mathematics
+
+- R2.5 orientation/odd-core results;
+- bounded `C6/C8` movies;
+- marked genealogy and bubble-lift calculations;
+- finite channel/profile algebra;
+- the old outer shell, conditional on a cubic theorem.
+
+### Retained on the v7.2 critical path
+
+- audited R0/R1/R2.1/R2.2;
+- source-level first-failure and critical-overlap tables;
+- target-synchronized first-cancellation stopping;
+- actual target category theorem;
+- arbitrary-flow single pop;
+- narrow full-state one-atom track interface;
+- local seams, run identity strips and two-seam backtracks;
+- explicit 2/3/4-cut and bounded consumers.
 
 ---
 
-## 8. Current exact classification
+## 6. Current exact classification
 
 \[
 \boxed{
 \begin{array}{c}
-\text{R0--R1 closed}\
-+\ \text{R2.1--R2.7 closed at PDL complete-draft level}\
-+\ \text{one-cross cap consumer and cubic induction closed}\
-+\ \text{general finite bridgeless outer shell closed}\
+\text{v7.2 through first cancellation and single pop: reconstructed}\\
++\ \text{state-walk/seam/run/backtrack layer: reconstructed}\\
++\ \text{terminal census: reconstructed}\\
 \hline
-\text{complete human proof draft of the finite 5-CDC theorem}.
+\text{pure-NNI prescribed-parent return: BLOCKED-PROOF}.
 \end{array}}
 \]
 
 Therefore the branch is:
 
-- `COMPLETE-DRAFT`;
-- `READY FOR INDEPENDENT ADVERSARIAL AUDIT`;
-- `READY FOR AC-DIR / AC-CORPUS-V2 SNAPSHOT INTAKE`;
-- **not** independently accepted;
-- **not** canonical/Curator authority;
-- **not** Lean-verified;
-- **not** manuscript/release/publication authority.
-
----
-
-## 9. Required next stages
-
-1. Freeze and return the exact PDL snapshot to AC-DIR.
-2. Launch an independent full dependency/source-fidelity audit of the complete
-   proof, with special focus on:
-   - target-boundary preservation in fixed-order track replacement;
-   - resolved-call SCC saturation and rank;
-   - child cap/route fidelity;
-   - direct-terminal zero-to-theta return;
-   - support-count-preserving outer shell.
-3. Curator integrates only after DIR disposition of the audit.
-4. Lean and manuscript programmes require separate authorisation and must not be
-   inferred from this proof-development checkpoint.
+- **not** `COMPLETE-DRAFT`;
+- **not** ready for independent full-theorem audit;
+- ready only for focused independent verification of the reconstructed units and
+  for Research Lead repair of the named blocker;
+- not canonical, Lean-verified, manuscript-ready, release-ready, or a public
+  five-CDC theorem.
