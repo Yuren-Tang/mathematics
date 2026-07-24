@@ -1,13 +1,12 @@
 # AffineCDC active mathematical surface
 
-## 1. Exact construction
+## 1. Exact rebaseline
 
-- immutable comparison base: `curation/affine-cdc-programme-a-b1-b8-unified-v1@ec765cd03271abd3588ec36faec3d53d0f8aa03b`;
-- authorial source-fidelity input: `proof-development/affine-cdc-rigour-v1@9ce8de5ca5b7b41e139be4c94572de7725446046`;
-- replacement branch: `curation/affine-cdc-programme-a-b1-b8-source-fidelity-v1`;
-- exact source splice: `344bf612d5d4231d954cb57fad15d93aa55d27d5`.
-
-The splice imports only four substantive B2/B8 source-fidelity dossiers. It excludes PDL DAG/handoffs, B9, and later moving RL/PDL mathematics.
+- exact base: `curation/affine-cdc-programme-a-b1-b8-source-fidelity-v1@f4d6f801fac69746ca0b2ce9351735a43c79b482`;
+- current branch: `curation/affine-cdc-global-rebaseline-v2`;
+- source-fidelity audit: `ea8ec33d49294ac31a53f46aed7a62c7b9b81908`;
+- v9 authorial source: `02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`;
+- current PDL/audit controls: workbench #80/#81.
 
 ## 2. Primary entrypoints
 
@@ -16,55 +15,85 @@ The splice imports only four substantive B2/B8 source-fidelity dossiers. It excl
 - `MATHEMATICAL_ARCHITECTURE.md`;
 - `THEOREM_DEPENDENCY_MAP.md`;
 - `FORMAL_STATUS.md`;
-- `five-support/README.md`;
-- `AC_CUR_B2_B8_SOURCE_FIDELITY_INTEGRATION_MAP.md`;
-- `AC_CUR_B2_B8_SOURCE_FIDELITY_ASSURANCE_LEDGER.md`;
-- `AC_CUR_B2_B8_SOURCE_FIDELITY_MIGRATION_AUDIT.md`.
+- `GLOBAL_REBASELINE_V2_ASSURANCE_MATRIX.md`;
+- `five-support/current-proof-spine.md`;
+- `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`.
 
-## 3. Programme A and B1
+External reviewers start at `external-review/ENTRYPOINT.md`.
 
-Programme A’s complete CDC theorem, Audit A status, and explicitness repairs are unchanged. B1 object and quantifier boundaries are unchanged.
+## 3. Tier-I surface
 
-## 4. B2 controlling surface
+### Programme A
 
-- `five-support/b2-formulation-and-witness-hierarchy.md`;
-- `five-support/root-flow-lifting.md`;
-- `five-support/equivalent-formulations-and-proof-families.md`;
-- source-fidelity-repaired B2.3 and formulation map under `proof-development/`.
+The complete ordinary CDC theorem remains independently audited in its exact scope, with closed explicitness repairs and no theorem change.
 
-Controlling distinctions:
+### Source fidelity
 
-1. the exact historical packet is a theorem-level source for rank-three/eight-support $O^+(6,2)$ and five-coordinate $O^-(4,2)$ mathematics;
-2. the arbitrary-rank $\Gamma\oplus\Gamma^*$ / $d_h(a)$ / $O^+(2r,2)$ tower is a separate source-unreconstructed non-packet proposition;
-3. the $q-2$ theorem, deleted permutation module, and rank-three exceptionality remain active.
+The B2/B8 repair is independently verified. The valid orthogonal packet remains fixed-dimensional theorem/mechanism provenance. The source-unreconstructed arbitrary-rank tower remains outside the packet count and mathematically superseded by `q-2`.
 
-## 5. B3–B7 preserved surfaces
+### Five-support accepted units
 
-The B3 target, B4 motion, B5 interface, B6 corrected holonomy/atom, and B7 rank/curvature/localization chapters are unchanged in mathematical content.
+Active independent units:
 
-BBD simultaneous origin remains conditional on `AC-RL-BBD-GROUPOID-CLOSURE`; the nontrivial defect forest remains pending `AC-RL-BBD-VARIATION-SLICE`; the four B7 localization obligations remain open.
+- R0 definitions/root-flow semantics;
+- R1 one-cross structural reduction;
+- R2.1 finite boundary-route core;
+- R2.2 finite Morse tables;
+- repaired finite seam and ordered-genealogy subinterfaces;
+- conditional general multigraph outer shell;
+- exact negative results from audits #68--#70 and #78.
 
-## 6. B8 assurance surface
+### OR1
 
-- `five-support/finite-laboratories-and-certificates.md`;
-- `PROGRAMME_B3_B8_ASSURANCE_LEDGER.md`;
-- `proof-development/AC_PD_B8_SOURCE_FIDELITY_ADDENDUM.md`.
+OR1 is active as independently verified subject to D1--D6. It is an orientation refinement, not a proof of global oriented existence.
 
-The fixed-dimensional packet’s finite results retain their exact proof/certificate classes. The non-packet extrapolation receives no packet assurance class. The packet partition is
+## 4. Tier-II surface
 
-$$
-39+10+18+10+1=78.
-$$
+Read:
 
-## 7. Six exact open returns
+- `five-support/current-proof-spine.md`;
+- `five-support/component-chain-candidate.md`;
+- `five-support/authorial-candidate-and-frontier.md`.
 
-- `AC-RL-BBD-GROUPOID-CLOSURE`;
-- `AC-RL-BBD-VARIATION-SLICE`;
-- `AC-RL-TYPE-T-SERIALISATION`;
-- `AC-RL-FLAT-POTENTIAL-INTERFACE`;
-- `AC-RL-COMMON-CUT-LOCALISATION`;
-- `AC-RL-TYPE-H-COMMON-WITNESS`.
+These integrate the frozen v9 RL authorial candidate without copying its source tree. The component-chain theorem and both singular-fibre corollaries remain under active reconstruction/review.
 
-## 8. Assurance and exclusions
+## 5. Tier-III surface
 
-The global five-support theorem remains open. B9 remains outside the candidate. This replacement is not independent re-audit, Lean verification, manuscript approval, publication, release, arXiv, DOI, novelty, timestamp, or canonical movement. All immutable comparison branches and `main` remain untouched.
+- issue #80 PDL reconstruction;
+- issue #81 focused audit;
+- `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`;
+- `COMPONENT_CHAIN_ANTECEDENT_MAP.md`;
+- six BBD/localisation obligations;
+- two OR1 existence obligations.
+
+A future counterexample is added here and propagated through the theorem DAG; it does not erase unrelated Tier-I mathematics.
+
+## 6. Preserved B1--B8 surface
+
+The source-fidelity base remains active for:
+
+- B1 object/quantifier scope;
+- B2 witness hierarchy and orthogonal correction;
+- B3 full-dual/factorable target distinction;
+- B4 vertical/horizontal motion;
+- B5 four-pole/cap/routing interfaces;
+- B6 corrected holonomy/atom theory;
+- B7 rank/curvature/localisation;
+- B8 finite assurance.
+
+The v9 one-cross route is an additional authorial candidate and does not silently supersede every B3--B9 programme obligation.
+
+## 7. Assurance-preserving exclusions
+
+Not active theorem sources merely by presence:
+
+- the old PDL complete draft `1f57422...`;
+- moving RL/PDL tips;
+- B9 working-ahead material;
+- manuscript prose;
+- Lean code outside its exact checked statements;
+- issue comments without exact source/audit refs.
+
+## 8. Global status
+
+`GLOBAL REBASELINE ACTIVE / MIXED ASSURANCE EXPLICIT / COMPONENT-CHAIN STATUS SWITCH OPEN / FIVE-SUPPORT THEOREM NOT INDEPENDENTLY ACCEPTED`.
