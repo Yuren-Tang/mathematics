@@ -1,124 +1,132 @@
-# Authorial five-support candidate and active frontier
+# Five-support failed candidate and active frontier
 
 ## 1. Global theorem status
 
-The desired theorem is:
+The target remains:
 
 > Every finite bridgeless multigraph has a cycle double cover using at most five indexed even subgraphs.
 
-No independently accepted proof is currently recorded.
+No independently accepted proof is recorded.
 
-The active complete candidate is the v9 Research Lead ordinary-induction architecture at
+The v9 RL source `02b37476198e9eaa2b4cd8d2a2edd76782bdcd49` and PDL reconstruction `e36ba22f09e3a9fc6358f3b03615f8fde6c00d96` form a complete failed candidate: the controlling general component-chain theorem has material false scope under audit `a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`.
 
-`research/affine-cdc-five-cdc-v1@02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`.
+## 2. Independently assured prefix, local rows and suffix
 
-It is `AUTHORIAL`, not canonical theorem authority.
-
-## 2. Independently assured prefix and suffix
-
-Independently supported units include:
+Retained Tier-I units include:
 
 - root-flow semantics;
 - one-cross structural reduction;
-- R2.1 boundary and route certificates;
-- R2.2 finite Morse tables;
-- selected R2.6 seam/genealogy subunits in their repaired scope;
-- the general multigraph outer shell, conditional on the cubic theorem;
-- exact negative results from the old audits and the `Xi` audit.
+- R2.1 boundary/route core;
+- R2.2 finite Morse data;
+- selected repaired seam/genealogy subunits;
+- general multigraph outer shell, conditional on a cubic theorem;
+- component-channel parity and the unique inactive triangle;
+- all independently recomputed active/inactive and active/active local rows;
+- all eighty-four final-terminal local configurations;
+- explicit co-root and zero-parent Heawood models;
+- every permanent negative witness.
 
-These do not by themselves close the middle return mechanism.
+These do not close universal singular-parent return.
 
-## 3. Active middle candidate
+## 3. Failed middle interface
 
-The current middle is:
+The candidate middle was:
 
 ```text
 forward root-NNI prefix
 → one actual cancellation
-→ solve the actual smaller target
-→ one inverse pop
+→ actual smaller target and one inverse pop
 → complete prescribed-parent state
 → fixed-channel component chain
 → literal singular-parent return
 → stored-prefix inversion.
 ```
 
-The root row is direct. The co-root and zero rows use the same physical component-chain mechanism with different terminal data.
+The general chain step fails because a shortest path between distinguished terminal paths can contain a third terminal path internally. The proof treats only inactive singleton or closed-cycle internal nodes. In the audit witness, the first root NNI splits the original distinguished terminal darts, so the claimed inherited path ceases to exist.
 
-## 4. Current #80 state
+Consequently:
 
-Issue #80 is the active PDL reconstruction:
+- universal co-root return is open;
+- universal zero-parent return is open;
+- complete inverse-table totality is open;
+- ordinary-induction closure is open.
 
-`[AC-PD-5CDC-V7.4-01] Reconstruct component-chain closure of both inverse-parent fibres`.
+## 4. Exact #80/#81 disposition
 
-Exact controls:
+### #80
 
-- frozen RL source `02b374...`;
-- PDL start `fee97446ee8b99f07740f394e99ef4a2ecc3e40e`;
-- permanent negative audit `53be22a0f65b85068b11e5f781579618967db9dd`.
+PDL returned a complete reconstruction at
 
-Required return includes the channel quotient, every contraction row, inherited path, final matching, both singular-fibre corollaries, parent/cap/prefix maps and end-to-end induction integration.
+`proof-development/affine-cdc-rigour-v1@e36ba22f09e3a9fc6358f3b03615f8fde6c00d96`.
 
-Current state: `ACTIVE / NO RETURN CONSUMED`.
+Status:
 
-## 5. Current #81 state
+`COMPLETE PDL CANDIDATE / NO KNOWN PDL GAP / SUPERSEDED AS CONTROLLING BY MATERIAL INDEPENDENT COUNTEREXAMPLE`.
 
-Issue #81 is the focused independent review of the fixed-channel component-chain theorem at `02b374...`.
+### #81
 
-Current state: `ACTIVE / NO RETURN CONSUMED`.
+Independent audit returned at
 
-It may accept, require bounded repair, or materially reject the candidate. The corpus does not predict its result.
+`audit/affine-cdc-component-chain-v1@a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`.
 
-## 6. Highest-risk interfaces
+Classification:
 
-1. **Inherited path fidelity.** A shortest path selected before the first NNI must remain a literal path of witnessed physical edges after contraction.
-2. **Equal active/active row.** The legal root branch, not the zero branch, must have the claimed component effect.
-3. **Final matching.** The last connector must join different distinguished paths and must change their endpoint pairing.
-4. **Carrier connectivity.** Disconnection after cutting marks or deleting the active cell must yield an exact consumed cut/bounded output.
-5. **Full state.** Stable darts, root labels, cap identity, route/profile, graph category, target parent and prefix must be preserved or explicitly updated.
-6. **Zero-parent alignment.** The crossed sheet, one component switch and central-root parent NNI must fit the actual outside matching.
-7. **Co-root same-arc avoidance.** No arbitrary equal face may be selected; the connector must be determined by the two marked arcs.
-8. **No-reset induction.** Chain progress and fixed-order normalization may not reset the stored source-prefix rank or discard an accepted exit.
+`BLOCKED — MATERIAL GAP OR FALSE SCOPE`.
+
+Counterexample digest:
+
+`d24c63ab56320803b9c795ac08389674b6f67edf89dc5c4ef9a729c5436a3e61`.
+
+## 5. New controlling frontier
+
+### `AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION`
+
+Prove one of:
+
+1. application-specific terminal exhaustion: the co-root and zero-parent carriers have exactly two terminal path components, all others closed;
+2. a generalized contraction theorem through internal terminal paths that preserves distinguished terminal darts;
+3. a different source-faithful singular-parent return.
+
+Any replacement must be stated on a new exact checkpoint and independently audited against the third-terminal-path witness.
+
+## 6. Retained local component-chain results
+
+Audit `a4f20f05...` independently supports:
+
+- parity/inactive classification;
+- active/inactive local arithmetic and continuation tables;
+- distinct/equal active/active root alternatives;
+- final two-path matching table;
+- explicit co-root `6-7` model;
+- explicit zero-parent `H_35` model.
+
+The local tables apply when the relevant two-path geometry has already been proved. They do not establish it.
 
 ## 7. Permanent falsification surface
 
-The current candidate is invalidated if any exact source state exhibits one of:
+Any replacement fails if it permits:
 
-- an inactive vertex that cannot be absorbed by the claimed ordinary root NNI;
-- loss of a later connector after one contraction;
-- an active/active root branch that leaves components unchanged contrary to the table;
-- a final connector that preserves the distinguished matching;
-- a category-safe disconnected carrier not consumed by the terminal ledger;
-- a cap/dart/parent/prefix mismatch after one chain step;
-- a zero-parent crossed matching that cannot be aligned and switched root-valuedly;
-- a co-root same-arc lock surviving the complete connector rule;
-- an unconsumed terminal or a rank reset in the full induction.
+- an unclassified internal terminal path;
+- splitting of a distinguished terminal path after one contraction;
+- reselection of a new shortest chain in place of inherited witness descent;
+- a final connector that does not change the distinguished matching;
+- loss of cap/dart/parent/route/category/prefix data;
+- an unconsumed disconnected carrier or terminal flag.
 
-Every such witness belongs in `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`, whether or not it refutes the five-support conjecture itself.
+## 8. Other programme obligations
 
-## 8. Other active programme obligations
-
-The older BBD/localisation obligations remain distinct:
-
-- `AC-RL-BBD-GROUPOID-CLOSURE`;
-- `AC-RL-BBD-VARIATION-SLICE`;
-- `AC-RL-TYPE-T-SERIALISATION`;
-- `AC-RL-FLAT-POTENTIAL-INTERFACE`;
-- `AC-RL-COMMON-CUT-LOCALISATION`;
-- `AC-RL-TYPE-H-COMMON-WITNESS`.
-
-They belong to the B3--B9 compression programme. The current one-cross v9 candidate offers a different authorial route and does not silently close or erase them.
+The six BBD/localisation obligations remain unchanged, and the two OR1 global orientation obligations remain separate.
 
 ## 9. Next receiver map
 
-| Object | Next receiver | Exact control |
+| Object | Next receiver | Exact input |
 |---|---|---|
-| component-chain proof expansion | AC-PDL | issue #80, start `fee97446...` |
-| focused component-chain truth review | independent auditor | issue #81, source `02b374...` |
-| integrated mixed-assurance corpus | independent integration/fidelity auditor | this branch after Curator return |
-| theorem/canonical disposition | AC-DIR then Owner | after exact audit returns |
-| manuscript or Lean projection | separate roles | only after a fixed mathematical checkpoint is selected |
+| terminal-exhaustion or generalized-chain repair | AC-RL/AC-PDL after Director assignment | failed source `02b374...`, PDL `e36ba22...`, audit `a4f20f05...` |
+| new repair truth review | new independent auditor | exact future repaired checkpoint |
+| mixed-assurance corpus | independent integration auditor | this branch after Curator return |
+| canonical disposition | AC-DIR/Owner | only after repair and audit |
+| Lean/manuscript projection | separate roles | selected fixed mathematics only |
 
 ## 10. Honest current classification
 
-`SUBSTANTIAL INDEPENDENTLY ASSURED PREFIX/SUFFIX / COMPLETE RL AUTHORIAL MIDDLE / COMPONENT-CHAIN REVIEW ACTIVE / GLOBAL FIVE-SUPPORT THEOREM OPEN`.
+`SUBSTANTIAL INDEPENDENTLY ASSURED PREFIX, LOCAL TABLES AND CONDITIONAL OUTER SHELL / GENERAL COMPONENT-CHAIN THEOREM FAILED / SINGULAR-PARENT TOTALITY RESTORED TO ACTIVE FRONTIER / GLOBAL FIVE-SUPPORT THEOREM OPEN`.
