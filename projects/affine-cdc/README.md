@@ -1,8 +1,8 @@
 # AffineCDC global mathematical baseline
 
-## 1. Current branch and purpose
+## 1. Current corpus
 
-Current mixed-assurance corpus candidate:
+Branch:
 
 `curation/affine-cdc-global-rebaseline-v2`.
 
@@ -10,128 +10,77 @@ Exact assured base:
 
 `curation/affine-cdc-programme-a-b1-b8-source-fidelity-v1@f4d6f801fac69746ca0b2ce9351735a43c79b482`.
 
-This branch organizes all current AffineCDC mathematics so that a future counterexample changes one theorem status and its descendants rather than collapsing the historical/provenance structure.
+This branch separates independently supported mathematics, failed/authorial candidates, active frontiers, permanent counterexamples and projection pointers.
 
-It does **not** claim an independently accepted five-support theorem.
-
-## 2. Four assurance tiers
-
-### Tier I — independently assured
+## 2. Tier I — independently assured
 
 - Programme A ordinary CDC theorem with Audit A boundary and closed repairs;
-- B2/B8 source-fidelity repair and packet accounting, independently verified at `ea8ec33d...`;
-- five-support/root-flow semantics, one-cross reduction, boundary/route finite core and finite Morse data accepted by the old core audit;
-- selected seam/genealogy subunits in their independently reviewed scopes;
-- the general finite-bridgeless outer shell, conditional on the cubic theorem;
-- OR1 orientation obstruction after `OR1-D1`--`OR1-D6`;
-- independently verified negative results, especially the `Xi` same-arc counterexample.
+- B2/B8 source-fidelity repair and packet accounting, audit `ea8ec33d...`;
+- R0/R1/R2.1/R2.2 one-cross prefix;
+- selected repaired seam/genealogy subunits;
+- conditional general multigraph outer shell;
+- OR1 after D1--D6;
+- `Xi` local arithmetic and same-arc counterexample;
+- component-channel parity, all local contraction rows, final two-terminal matching table and explicit co-root/zero models verified by audit `a4f20f05...`;
+- third-terminal-path component-chain counterexample.
 
-### Tier II — authorial candidates
+## 3. Failed v9 candidate
 
-The active complete candidate is the v9 fixed-channel component-chain architecture at
+RL source:
 
-`research/affine-cdc-five-cdc-v1@02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`.
+`02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`.
 
-It supplies an authorial line from forward root-NNI history through one actual cancellation, one inverse pop, a complete prescribed-parent state, a root/co-root/zero inverse table, component-chain return, stored-prefix inversion and ordinary induction.
+PDL reconstruction:
 
-It remains `RL-AUTHORIAL`, not accepted theorem authority.
+`e36ba22f09e3a9fc6358f3b03615f8fde6c00d96`.
 
-### Tier III — active frontier and falsification surface
+Independent audit:
 
-- PDL component-chain reconstruction: workbench issue #80, start `fee97446...`;
-- focused independent chain review: issue #81;
-- exact component-chain and integration attack points;
-- permanent counterexamples and scope corrections;
-- the six older BBD/localisation obligations;
-- the two OR1 global orientation-existence obligations.
+`a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`.
 
-### Tier IV — projections and governance pointers
+The general component-chain theorem has material false scope: two distinguished terminal paths need not be the only terminal paths. A third terminal path can occur internally and the first contraction can split the original distinguished terminal darts.
 
-Lean, manuscript, workbench, audit, release, arXiv and DOI surfaces remain read-only pointers and do not determine theorem status.
+Therefore the universal co-root return, zero-parent return, complete inverse table and ordinary induction are not active theorems.
 
-## 3. Current one-line proof spine
+## 4. Active frontier
 
-```text
-definitions and root-flow semantics
-→ structural reduction
-→ local finite core
-→ forward root-NNI history
-→ actual lower target and one inverse pop
-→ complete prescribed-parent state
-→ root/co-root/zero inverse table
-→ component-chain return candidate
-→ stored-prefix return
-→ ordinary induction
-→ general multigraph outer shell
-```
+Controlling interface:
 
-Read `five-support/current-proof-spine.md` for the exact theorem, source, assurance, defect and consumer at every arrow.
+`AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION`.
 
-## 4. Source-fidelity invariants
+A repair must prove:
 
-The B2/B8 repair remains unchanged.
+- application-specific exactly-two-terminal-path geometry; or
+- contraction through internal terminal paths preserving distinguished darts; or
+- an alternative literal source-faithful singular-parent return.
 
-- `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md`, blob `2043ada9d28789ecc5f4f0028e62133f37835bc1`, is a valid fixed-dimensional theorem/mechanism packet;
-- it does not contain the source-unreconstructed arbitrary-rank `Gamma+Gamma* / d_h(a) / O+(2r,2)` tower;
-- that separate proposition is mathematically replaced by the sharp `q-2` dimension theorem and deleted permutation module;
-- the exact packet partition remains
+The six BBD/localisation obligations and two OR1 existence obligations remain separate.
+
+## 5. Source-fidelity invariants
+
+Unchanged:
+
+- valid fixed-dimensional orthogonal packet;
+- separate refuted source-unreconstructed arbitrary-rank tower;
+- sharp `q-2` replacement;
+- packet partition
   $$39+10+18+10+1=78;$$
-- Programme A, B1 and B3--B8 states are not overwritten;
-- B8 assurance classes remain dependency-local.
+- Programme A/B1/B3--B8 status;
+- dependency-local B8 assurance.
 
-## 5. Permanent negative boundaries
+## 6. Reading order
 
-The active corpus permanently records:
+1. `CURRENT_BEST.md`;
+2. `GLOBAL_REBASELINE_V2_ASSURANCE_MATRIX.md`;
+3. `five-support/current-proof-spine.md`;
+4. `five-support/component-chain-candidate.md`;
+5. `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`;
+6. `COMPONENT_CHAIN_ANTECEDENT_MAP.md`.
 
-- fixed-boundary versus literal-parent reinsertion;
-- inherited-flow discontinuity at old direct terminals;
-- unconsumed generic exit flags;
-- mixed root/token SCCs and the failure of horizontal-only progress;
-- failure of the old finite no-sink/distance argument;
-- the exterior-component defect in the local `Omega` shift;
-- the `Xi` same-arc equal-face counterexample;
-- the previously omitted zero-parent `(0,2,2)` row;
-- track-erasure, generic connectivity, arbitrary lower-flow, global `C6/C8` and generic marked-weld shortcuts.
+External reviewers begin at `external-review/ENTRYPOINT.md`.
 
-See `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`.
+## 7. Global status
 
-## 6. Component-chain status
+`MIXED-ASSURANCE GLOBAL BASELINE / GENERAL COMPONENT-CHAIN THEOREM FAILED INDEPENDENT AUDIT / LOCAL ROWS AND MODELS RETAINED / SINGULAR-PARENT TOTALITY ACTIVE FRONTIER / FIVE-SUPPORT THEOREM OPEN`.
 
-The component-chain theorem is explained in `five-support/component-chain-candidate.md` and historically mapped in `COMPONENT_CHAIN_ANTECEDENT_MAP.md`.
-
-Status switch:
-
-- #80/#81 pass → independently supported component at exact returned SHAs;
-- bounded repair → exact repaired source and re-audit;
-- material failure → failed candidate retained, interface restored to Tier III.
-
-The global corpus and external-review packet remain valid in all cases.
-
-## 7. External review
-
-A first-time graph-theory reviewer should begin at:
-
-`external-review/ENTRYPOINT.md`.
-
-That packet contains the theorem goal, root-flow language, proof spine, component-chain statement, all known counterexamples, finite-certificate manifest, priority questions and exact branch authority map.
-
-## 8. Project controls
-
-- `GLOBAL_REBASELINE_V2_INTEGRATION_MAP.md`;
-- `GLOBAL_REBASELINE_V2_ASSURANCE_MATRIX.md`;
-- `GLOBAL_REBASELINE_V2_ACTIVE_TREE_MANIFEST.md`;
-- `GLOBAL_REBASELINE_V2_SOURCE_RECOVERY_AUDIT.md`;
-- `MATHEMATICAL_ARCHITECTURE.md`;
-- `THEOREM_DEPENDENCY_MAP.md`;
-- `FORMAL_STATUS.md`;
-- `COMPONENT_CHAIN_ANTECEDENT_MAP.md`;
-- `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`;
-- `CROSS_REPOSITORY_AUTHORITY_MAP.md`.
-
-## 9. Global status
-
-- ordinary CDC line: independently audited in its exact Programme A scope;
-- five-support prefix/suffix: substantial independently assured mathematics;
-- v9 middle: complete authorial candidate under active reconstruction/review;
-- universal five-support theorem: open at independent-assurance level;
-- `main`, Lean, manuscript, release, tag, arXiv and DOI: unchanged.
+No `main`, Lean, manuscript, release, tag, arXiv or DOI status is created.
