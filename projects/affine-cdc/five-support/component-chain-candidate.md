@@ -1,138 +1,130 @@
-# Fixed-channel component-chain candidate
+# Fixed-channel component-chain — failed general theorem and retained local core
 
-## 1. Status
+## 1. Exact sources and verdict
 
-Exact authorial source:
+Authorial source:
 
-`Yuren-Tang/mathematics:research/affine-cdc-five-cdc-v1@02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`.
+`research/affine-cdc-five-cdc-v1@02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`.
 
-Controlling file:
+PDL reconstruction:
 
-`projects/affine-cdc/research/FIXED_CHANNEL_COMPONENT_CHAIN_ROOT_NNI_THEOREM_V1.md`.
+`proof-development/affine-cdc-rigour-v1@e36ba22f09e3a9fc6358f3b03615f8fde6c00d96`.
 
-Current class:
+Independent audit:
 
-`TIER II / RL-AUTHORIAL / PDL RECONSTRUCTION ACTIVE IN #80 / INDEPENDENT REVIEW ACTIVE IN #81`.
+`audit/affine-cdc-component-chain-v1@a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`.
 
-Nothing in this chapter freezes the final theorem status.
+Verdict:
 
-## 2. Exact object
+`GENERAL COMPONENT-CHAIN THEOREM FAILED / MATERIAL FALSE SCOPE`.
 
-Fix a complete root-valued cubic state and a support pair $h=ab$. Define
+The theorem and its PDL reconstruction remain exact failed candidates and repair provenance. They are not active universal proof components.
 
-$$
-H_h=F_a\triangle F_b.
-$$
+## 2. Retained independently verified local mathematics
 
-Every cubic vertex has $H_h$-degree zero or two. The unique inactive support triangle is
+The audit independently verified:
 
-$$
-I_h=[5]\setminus h.
-$$
+- $H_h$-degree is zero or two at every support triangle;
+- the unique inactive triangle is $I_h=[5]\setminus h$;
+- all six canonical active/inactive root-NNI rows;
+- all twenty-four ordered inactive-continuation configurations;
+- all six distinct active/active rows;
+- all nine equal-endpoint root branch swaps, separated from the zero pairing;
+- all eighty-four ordered final-terminal configurations: forty-two reach each crossed matching and none preserve the old matching;
+- the explicit co-root `6-7` route-changing movie;
+- the exact zero-parent Heawood `H_35` movie.
 
-All other vertices are channel-active.
+These are Tier-I local tables and models. They do not imply universal chain totality.
 
-Let $R$ be the connected physical carrier obtained after cutting the two marked channel edges in the co-root case, or after deleting the active two-vertex cell in the zero-parent case.
+Local-row digest:
 
-The quotient $\mathcal Q_h(R)$ has:
+`75ed977851a944f2cd80577e629a2f6936da5dfce49ad9d5a9e0e82c8b2494d4`.
 
-- one node for each nontrivial connected component of $H_h\cap R$;
-- one singleton node for each $I_h$ vertex;
-- one quotient edge for each physical edge of $R$ outside $H_h$, retaining the exact source edge witness.
+Aggregate recomputation digest:
 
-Physical connectedness of $R$ implies connectedness of $\mathcal Q_h(R)$.
+`2353b22b111c9dd47319b2c14637c08d93ae2f4eac10605a00f29c5f46842fe8`.
 
-## 3. Candidate contraction theorem
+## 3. The failed statement
 
-Choose two distinguished terminal path components $P_0,P_1$ and a shortest simple witnessed quotient path
+The written theorem chooses two distinguished terminal path components $P_0,P_1$ and a shortest witnessed quotient path between them. Its proof handles an internal node only when that node is:
 
-$$
-\mathfrak c=(X_0=P_0,X_1,\ldots,X_\ell=P_1).
-$$
+- one inactive singleton; or
+- one closed channel component.
 
-The candidate rank is the retained physical path length
+It does not require $P_0,P_1$ to be the only terminal path components. A third terminal path may therefore occur internally, outside both proof cases.
 
-$$
-\Lambda_h(\mathfrak c)=\ell.
-$$
+## 4. Exact counterexample
 
-### Inactive first node
+The audit gives a complete labelled Heawood carrier:
 
-If $X_1$ is one inactive vertex, an ordinary root NNI absorbs that vertex into $X_0$. The old channel passage is extended through the vertex, and the next physical quotient edge is claimed to remain available.
+```text
+h=14
+cut channel edges: 1-14:13, 10-11:12, 13-14:12
 
-### Active closed component
+P_0={1,2,3,4,5,6,11}
+X_1={7,8,9,10,12,13}
+P_1={14}
 
-If $X_1$ is a closed $H_h$ component, an active/active root NNI, or in the equal-triangle case the root branch swap, merges it into $X_0$. The later witnessed connectors are claimed to remain available.
+shortest quotient chain:
+P_0 -- 3-8:14 -- X_1 -- 9-14:23 -- P_1.
+```
 
-### Final connector
+Here $X_1$ is a third terminal path.
 
-When $\ell=1$, the physical non-channel edge joins the two distinguished terminal paths. Its root alternative changes their terminal matching.
+At the first connector the root NNI is
 
-Thus every nonterminal step contracts the first retained quotient edge and lowers $\Lambda_h$ by one. The claimed bound is the initial witnessed quotient distance, not a finite-state or SCC distance.
+```text
+134+124 -> 234+123, central 14 -> 23
+retain 2-3@3, 8-9@8
+move 7-8@8 -> 3, 3-4@3 -> 8.
+```
 
-## 4. Co-root corollary
+The original $P_0$ terminal darts are split between two $H_{14}$ components, so no inherited $P_0'$ exists. The claimed retained path rank is destroyed.
 
-In a fixed co-root rescue channel, cut the two marked channel edges. Their common component becomes two marked arcs. The component-chain candidate selects a connector between those actual arcs, not an arbitrary equal face.
+Enumeration:
 
-The final matching change gives either:
+```text
+18 non-cut central edges
+36 labelled root-NNI movies
+36 category-safe outputs
+0 inherited length-1 chains between the original P_0 and P_1 terminal pairs.
+```
 
-- a separating channel, consumed by the established horizontal mechanism; or
-- the opposite marked route, consumed by the cap/route output.
+Counterexample digest:
 
-This is intended to repair the exact same-arc Heawood witness that refuted `Xi` totality.
+`d24c63ab56320803b9c795ac08389674b6f67edf89dc5c4ef9a729c5436a3e61`.
 
-## 5. Zero-parent corollary
+## 5. Consequences for the corollaries
 
-Normalize the equality word to
+### Co-root
 
-$$
-(A,B,C,D)=(13,13,23,23),\qquad h=35.
-$$
+The `Xi` same-arc counterexample remains permanent. The local two-arc arithmetic and the explicit `6-7` movie pass bounded independent checks. No universal co-root return follows because terminal-component exhaustion was not proved.
 
-The residual full lock has two terminal paths $A--B$ and $C--D$ in $H_{35}\cap R$. The candidate changes the outside matching to a crossed matching. One then:
+### Zero parent
 
-1. chooses the crossed root sheet with that matching;
-2. uses at most one active equal-face root branch swap;
-3. switches one closed $H_{35}$ component;
-4. obtains active word $(15,13,25,23)$;
-5. performs the literal parent NNI with central root $35$.
+The exact Heawood `H_35` model and its crossed-matching/switch/parent-NNI interface pass bounded checks. No universal zero-parent return follows from one model.
 
-This is the current authorial repair of the previously omitted zero-parent row.
+### Induction
 
-## 6. Exact nondependencies
+The complete inverse-parent table and ordinary induction remain blocked because both singular universal rows depended on the failed general theorem.
 
-The component-chain candidate does not use:
+## 6. Active replacement obligation
 
-- an arbitrary equal-face route-or-split lemma;
-- `Xi` as a total source selector;
-- the local/exterior `Omega` orbit-minimum argument;
-- a `2--0` cancellation;
-- a lower-order call during fixed-order return;
-- track erasure as target progress;
-- generic root/NNI connectivity;
-- finite-state recurrence or SCC distance;
-- an abstract quotient distance recomputed after each move without inherited witnesses;
-- the old $Q_N,M_N,d_N$ nested-bubble completion route.
+`AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION` asks for one of:
 
-## 7. Required independent checks
+1. prove that every application carrier has exactly two terminal paths and all other nontrivial channel components are closed;
+2. generalize the contraction theorem to internal terminal paths while preserving the distinguished terminal darts and paths;
+3. replace the chain mechanism by another literal source-faithful return.
 
-Issues #80 and #81 control the following questions.
+Every repair must retain the exact third-terminal-path witness and receive a new independent audit.
 
-1. Does channel parity really leave exactly one inactive triangle?
-2. Do all active/inactive rows preserve root-valuedness and the exact stable darts?
-3. In every active/active case, is the claimed root alternative legal, especially for equal endpoint triangles?
-4. After the first contraction, do all later physical connectors inherit literally, rather than merely exist anew?
-5. Does the final connector necessarily change the matching of the distinguished paths?
-6. Are disconnected-carrier cases exhausted by named cut/bounded outputs?
-7. Do cap, route, graph category, parent topology and stored prefix survive each move?
-8. Does the zero-parent crossed-sheet/switch/parent sequence preserve all labels and ordered incidences?
-9. Does the co-root corollary avoid every same-arc form of the audit witness?
-10. Does full inverse-table integration introduce no unranked reset or unconsumed exit?
+## 7. Permanent inference guard
 
-## 8. Status switch
+The following implication is forbidden:
 
-- Both reviews pass: replace this header by exact independently supported SHAs.
-- Bounded repair: retain this source as provenance and point to the repaired statement.
-- Material failure: classify this as a failed candidate and restore component-chain return to the active frontier.
+```text
+two distinguished terminal paths
+⇒ the internal nodes of a shortest chain are only inactive singletons or closed cycles.
+```
 
-The rest of AC-CORPUS-V2 remains valid under all three outcomes.
+Physical connector labels and correct local root arithmetic do not repair a missing global terminal-component hypothesis.
