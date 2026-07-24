@@ -8,109 +8,119 @@
 - ACKs: issue #62 comment `5073559172`, issue #24 comment `5073561089`;
 - writable branch: `curation/affine-cdc-global-rebaseline-v2`;
 - exact assured base: `curation/affine-cdc-programme-a-b1-b8-source-fidelity-v1@f4d6f801fac69746ca0b2ce9351735a43c79b482`;
-- independent source-fidelity audit: `audit/affine-cdc-b2-b8-source-fidelity-reaudit-v1@ea8ec33d49294ac31a53f46aed7a62c7b9b81908`;
-- independently audited OR1 candidate: `curation/affine-cdc-orientation-obstruction-v1@e6af5645107d0f21ac6c262c63a1db5dab8f0fd1`, audit `audit/affine-cdc-orientation-obstruction-v1@6c20cead05bd12b1027c349c4f259b117d8e0861`;
-- frozen v9 Research Lead source: `research/affine-cdc-five-cdc-v1@02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`;
-- active PDL reconstruction start: `proof-development/affine-cdc-rigour-v1@fee97446ee8b99f07740f394e99ef4a2ecc3e40e`, issue #80;
-- active focused independent review: issue #81;
-- permanent co-root negative audit: `audit/affine-cdc-xi-co-root-v1@53be22a0f65b85068b11e5f781579618967db9dd`.
+- source-fidelity audit: `audit/affine-cdc-b2-b8-source-fidelity-reaudit-v1@ea8ec33d49294ac31a53f46aed7a62c7b9b81908`;
+- OR1 candidate/audit: `e6af5645107d0f21ac6c262c63a1db5dab8f0fd1` / `6c20cead05bd12b1027c349c4f259b117d8e0861`;
+- frozen v9 RL source: `research/affine-cdc-five-cdc-v1@02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`;
+- PDL v7.4 reconstruction return: `proof-development/affine-cdc-rigour-v1@e36ba22f09e3a9fc6358f3b03615f8fde6c00d96`;
+- independent component-chain audit: `audit/affine-cdc-component-chain-v1@a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`;
+- permanent `Xi` audit: `audit/affine-cdc-xi-co-root-v1@53be22a0f65b85068b11e5f781579618967db9dd`.
 
 No moving branch is consumed by implication. Every included result is tied to an exact file and SHA.
 
-## 2. Four-tier architecture
+## 2. Four-tier architecture after the status switch
 
 ### Tier I — independently assured
 
-Tier I contains only theorem units, finite certificates, scope corrections and negative results supported by a named independent audit.
+Tier I contains only theorem units, finite certificates, scope corrections and negative results supported by named independent audits.
 
 It includes:
 
-1. Programme A complete ordinary CDC spine with its Audit A boundary and closed explicitness repairs;
-2. B2/B8 source-fidelity repair, packet accounting and dependency-local B8 assurance at `ea8ec33...`;
+1. Programme A ordinary CDC spine with Audit A boundary and closed repairs;
+2. B2/B8 source-fidelity repair, packet accounting and dependency-local assurance at `ea8ec33...`;
 3. OR1 orientation-obstruction theory after `OR1-D1`--`OR1-D6`;
-4. five-support/root-flow semantics, R1 one-cross structural reduction, R2.1 boundary-route tables and R2.2 finite Morse data accepted by `AC-5CDC-AUDIT-CORE-01@00b4b376...`;
-5. independently checked R2.6 finite seam tables and genealogy subunits in the exact scope accepted by `AC-5CDC-AUDIT-RETURN-01@492eea3e...`;
-6. the general finite-bridgeless outer shell accepted by `AC-5CDC-AUDIT-SHELL-01@a94c4021...`;
-7. the retained `Xi` frame, invariance, six strict rows, bad-free contradiction and exact same-arc counterexample at `53be22a0...`.
+4. R0 root-flow semantics, R1 one-cross reduction, R2.1 boundary-route tables and R2.2 finite Morse data accepted by `00b4b376...`;
+5. independently checked seam/genealogy subunits in the exact scope of `492eea3e...`;
+6. the conditional general finite-bridgeless outer shell accepted at `a94c4021...`;
+7. the `Xi` frame/invariance/six strict rows and same-arc counterexample at `53be22a0...`;
+8. component-chain local arithmetic independently recomputed at `a4f20f05...`: channel parity, the unique inactive triangle, all active/inactive rows, all distinct and equal active/active root rows, and all eighty-four final-terminal configurations;
+9. the explicit co-root `6-7` movie and the zero-parent Heawood `H_35` movie, as finite models only;
+10. the third-terminal-path component-chain counterexample and its finite certificate.
 
-Tier I does not contain the universal five-support theorem.
+Tier I does not contain a universal component-chain theorem or the global five-support theorem.
 
-### Tier II — authorial candidates
+### Tier II — authorial and failed candidates
 
-Tier II contains complete authorial proof objects that have not passed the relevant independent review.
+The v9 RL source `02b374...` and the PDL reconstruction `e36ba22...` remain recoverable as complete authorial/proof-development candidates.
 
-The active candidate line is the v9 physical component-chain architecture at `02b374...`, including:
+Their general component-chain theorem is now classified:
 
-- forward pure root-NNI history and one actual cancellation;
-- actual smaller target and one inverse pop;
-- complete prescribed-parent state;
-- root/co-root/zero inverse table;
-- fixed-channel component-chain return;
-- stored-prefix return and ordinary induction synthesis.
+`FAILED CANDIDATE / MATERIAL FALSE SCOPE / HISTORICAL AND REPAIR PROVENANCE`.
 
-These are labelled `RL-AUTHORIAL / PDL-RECONSTRUCTION-ACTIVE / INDEPENDENT-REVIEW-ACTIVE`, not accepted theorems.
+The failure is not a defect in the local root-NNI tables. It is a quantifier/scope failure: the theorem distinguishes two terminal path components but does not require that they are the only terminal paths.
 
-The old PDL complete draft `1f57422...` is retained only as a superseded candidate and audit source. It is not an active Tier-II proof because audits #68--#70 found material gaps and the later `Xi` audit refuted a controlling totality step.
+The old PDL complete draft `1f57422...` remains a separately superseded failed candidate and audit source.
 
 ### Tier III — active frontier and falsification surface
 
-Tier III records exact missing implications and all witnesses capable of invalidating a controlling theorem. Its current centre is:
+The load-bearing interface is restored to the frontier:
 
-- issue #80: source-level reconstruction of component-chain parity, contraction, inheritance, final matching, both singular-fibre corollaries and full induction integration;
-- issue #81: focused adversarial review of the same frozen RL theorem;
-- inherited-connector stability after active/inactive absorption;
-- active/active equal-face use of the root branch rather than the zero branch;
-- strict decrease of one retained physical chain rather than recomputed abstract distance;
-- literal terminal matching, dart, cap, route, category and stored-prefix fidelity;
-- zero-parent crossed-sheet alignment, one support switch and literal parent NNI;
-- exhaustive consumption of every terminal/category output.
+`AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION`.
 
-The permanent negative boundaries are controlled by `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`.
+A successful replacement must prove at least one of:
+
+1. in each co-root and zero-parent application, exactly two terminal path components occur and every other nontrivial channel component is closed;
+2. a generalized contraction theorem permits an internal third terminal path while preserving the distinguished terminal darts and paths;
+3. a different source-faithful return mechanism closes both singular fibres.
+
+The co-root universal corollary, zero-parent universal corollary and end-to-end ordinary induction remain open. The explicit local models are evidence, not totality theorems.
+
+The six BBD/localisation obligations and two OR1 existence obligations remain distinct.
 
 ### Tier IV — projections and governance pointers
 
-Tier IV contains only read-only pointers to:
+Lean, manuscript, workbench, audit, release, arXiv and DOI surfaces remain read-only pointers. No Tier-IV surface determines theorem truth.
 
-- Lean repositories and exact machine-checked boundaries;
-- manuscript branches and projection tasks;
-- workbench issues and role inboxes;
-- independent audit branches;
-- releases, tags, arXiv and DOI records.
+## 3. Exact component-chain audit result
 
-No Tier-IV content is copied into theorem authority.
+The audit found a complete labelled Heawood carrier with three terminal paths:
 
-## 3. Component-chain status switch
+```text
+h=14
+cut edges: 1-14:13, 10-11:12, 13-14:12
+P_0={1,2,3,4,5,6,11}
+X_1={7,8,9,10,12,13}
+P_1={14}
+chain: P_0 -- 3-8:14 -- X_1 -- 9-14:23 -- P_1.
+```
 
-The active corpus must remain valid under all three outcomes.
+The first root NNI splits the old `P_0` terminal darts between two `H_14` components, so the claimed inherited `P_0'` does not exist. Exact enumeration found thirty-six category-safe one-step root movies and zero inherited length-one chains between the original distinguished terminal pairs.
 
-1. **#80 and #81 pass:** replace the Tier-II label by `INDEPENDENTLY SUPPORTED COMPONENT`, using the exact accepted PDL/audit SHAs.
-2. **Bounded repair:** retain the v9 source as provenance, point to the exact repaired PDL SHA and the re-verifying audit SHA, and list the repaired interfaces.
-3. **Material failure:** retain the theorem as a failed candidate, move the component-chain implication back to Tier III, preserve all counterexamples, and keep the external-review packet as the public request for new mathematics.
+Certificate digest:
 
-No result of #80 or #81 is anticipated in this branch.
+`d24c63ab56320803b9c795ac08389674b6f67edf89dc5c4ef9a729c5436a3e61`.
 
-## 4. No-wholesale-import rule
+## 4. Material-failure status switch
 
-This branch does not merge or copy the RL, PDL, audit, Lean or manuscript trees. It synthesizes exact theorem statements, status, provenance, defects and consumer interfaces. Historical bodies remain recoverable at their source SHAs.
+The predeclared switch is now resolved:
 
-## 5. Preserved base invariants
+- the general theorem is retained as a failed candidate;
+- the component-chain interface returns to Tier III;
+- every counterexample and independently verified local subtheorem remains active;
+- the external-review packet is repurposed as a precise request for a repaired terminal-exhaustion theorem or alternative mechanism;
+- no downstream universal corollary or induction theorem is promoted.
+
+## 5. No-wholesale-import rule
+
+This branch does not merge or copy RL, PDL, audit, Lean or manuscript trees. It synthesizes exact theorem statements, audit findings, assurance classes, provenance and consumer interfaces.
+
+## 6. Preserved base invariants
 
 Unchanged from `f4d6f801...`:
 
 - Programme A theorem and Audit A status;
 - B1 object and quantifier scope;
-- B2 source-fidelity repair and the sharp `q-2` replacement;
+- B2 source-fidelity repair and sharp `q-2` replacement;
 - B3--B7 theorem/correction boundaries;
 - B8 assurance vocabulary;
-- packet population and partition
+- packet population
   $$39+10+18+10+1=78;$$
-- exclusion of the source-unreconstructed arbitrary-rank orthogonal extrapolation from the packet count;
+- exclusion of the source-unreconstructed arbitrary-rank extrapolation from the packet count;
 - no `main`, Lean, manuscript, release, tag, arXiv or DOI movement.
 
-## 6. Return target
+## 7. Return target
 
-The bounded return class is:
+The bounded corpus return remains:
 
 `CURATOR-INTEGRATED GLOBAL MATHEMATICAL REBASELINE / MIXED ASSURANCE EXPLICIT / READY FOR INDEPENDENT INTEGRATION AUDIT`.
 
-This means the corpus is audit-ready. It does not mean that the global five-support theorem or the component-chain theorem has been independently accepted.
+This class describes the integrity of the rebaseline, not acceptance of the failed component-chain theorem.
