@@ -1,6 +1,6 @@
 # Level-sensitive terminal collapse and outermost unwind
 
-## Research Lead result-semantics correction v1.1
+## Research Lead result-semantics correction v1.2
 
 **Role:** `AffineCDC — Research Lead` (`AC-RL`)  
 **Workspace:** `Yuren-Tang/mathematics:research/affine-cdc-five-cdc-v1`  
@@ -10,154 +10,176 @@
 
 - simultaneous strong induction `Q_N` then `P_N`;
 - child-context fidelity after root cancellation;
+- witnessed innermost-bubble compression and full-labelled genealogy;
 - the complete inverse-insertion endpoint table;
 - `TARGET_TOPOLOGY_ARBORESCENCE_FIXED_ORDER_V1.md`;
 - the v6.2 cellwise fixed-order no-neutral-recurrence theorem;
 - `ROUTE_CHANGE_TERMINAL_CONTEXTUAL_TRANSFER_V1.md`;
 - `BOUNDED_DIRECT_PAIRING_CAP_TERMINAL_V1.md`;
+- `FULL_DEFECT_TREE_NNI_DESCENT_V1.md`;
 - `GLOBAL_SMALL_CUT_COMPLETION_AND_GLUING_V1.md`;
 - `R2_TO_R1_CAP_RESTORATION_AND_OUTER_SHELL_INTERFACE_V1.md`.
 
 **Corrects:**
 
-- `TERMINAL_UNWIND_FROM_CHILD_SEPARATOR_SOLUTION_V1.md` insofar as it allowed an accepted route/bounded/separator/category label at an intermediate ancestor frame to stop the outward proof;
-- the external result type of `Q_N` in `AC_PD_5CDC_R2_7_MUTUAL_INDUCTION_HISTORY_WITNESS.md` insofar as the subsequent proof of `P_N` treated every accepted exit as though it were already a root flow on the original graph;
-- v1 of this file insofar as it spoke of one top pop followed by a completely unstratified no-call traversal of the whole remaining prefix.
+- `TERMINAL_UNWIND_FROM_CHILD_SEPARATOR_SOLUTION_V1.md` insofar as an intermediate child/ancestor exit was allowed to stop the outer proof;
+- the external result type of `Q_N` insofar as `P_N` later treated a naked accepted exit as a root flow on the original graph;
+- v1 of this file insofar as it did not justify why the remaining parent prefix is fixed-order;
+- v1.1 of this file insofar as it unwound every nested frame separately and thereby failed to record the fixed-order child prefixes lying between successive cancellation frames.
 
-**Status:** exact authorial correction of terminal result semantics. Continuing child results carry witnessed histories. Once any nested branch becomes terminal, the inherited continuation is abandoned. Terminal unwinding then proceeds outward through the finite stored call stack. At each proper lower-order parent level `m<N`, any root/atom/category outcome is replaced, when necessary, by an arbitrary root flow on that exact parent target using the already available ordinary proposition `P_m`. Only the final order-`N` frame cannot use `P_N`; there every result is consumed by the exact cap, route, bounded, or small-cut theorem. Therefore the external proposition `Q_N` returns an actual root flow on its original target, together with either a continuing history certificate or a terminal-unwind certificate. No naked accepted-exit constructor survives.
+**Status:** exact authorial correction of terminal result semantics. Continuing child results carry witnessed histories. If any terminal result occurs at any depth inside the first live order-lowering call of an order-`N` execution, abandon the entire lower-order child execution, including all nested frames and inter-frame prefixes. Invoke the already available ordinary proposition on the exact outermost live child target of order at most `N-2`. Pop only that outermost frame using the actual returned roots. Every earlier completed call in the order-`N` parent prefix already has a continuing witness and is compressed to a fixed-order replacement. The remaining inverse transfer is therefore purely order `N`. Its exact route/bounded/two-cut terminal census is consumed to a root flow on the original graph. No naked accepted-exit constructor survives.
 
-This file does not claim PDL reconstruction, independent assurance, or a global five-CDC theorem.
+No PDL completion, independent assurance, or global five-CDC theorem is claimed.
 
 ---
 
 ## 1. The result-type mismatch
 
-The earlier witnessed proposition had the form
+The earlier proposition had the schematic output
 
 \[
-Q_N(\lambda)
-=
+Q_N(\lambda)=
 \text{witnessed cap return}
 \quad\text{or}\quad
 \text{accepted exit}.
 \]
 
-The proof of ordinary solubility then used
+The proof of ordinary solubility then used `Q_N` as though both branches supplied a root flow on the original graph.
 
-\[
-P_{N-2}+Q_N\Longrightarrow P_N
-\]
-
-as though both outputs supplied a root flow on the original graph.
-
-That coercion is invalid.
+That is false without a consumer.
 
 - A route change on a surgery descendant is only a cap-compatible descendant root state.
-- A child separator need not persist with the same size through reinsertions.
-- A bounded child graph is not literally the ancestor graph.
-- An intermediate category label is not a root flow on the outer target.
-
-The proof needs a level-sensitive consumer.
+- A child separator need not persist through ancestor insertion.
+- A bounded child graph is not the parent graph.
+- An internal category flag is not a theorem endpoint.
 
 ---
 
 ## 2. Correct external proposition
 
-Let `G` be a connected loopless bridgeless cubic target of order at most `N`. Fix one valid selected cross closure and any specified inherited root flow `lambda` on it.
+Let `G=P union cap_i` be a connected loopless bridgeless cubic graph of order at most `N`. Let `G_j=P union E_j` be one valid selected cross closure and let `lambda` be any specified inherited root flow on `G_j`.
 
-### Proposition `Q_N^solve` — witnessed-or-terminally-solved cap restoration
+### Proposition `Q_N^solve`
 
-There exists a root-valued flow on the original cap closure `G`.
+There exists a root-valued `E_5` flow on `G`.
 
-The construction returns one of two certificates.
+The proof certificate is exactly one of:
 
-1. **Continuing witnessed certificate.** A finite decorated source history starts at `lambda` and ends at a cap-compatible root state on the original four-pole.
-2. **Terminal-unwind certificate.** At some descendant depth the inherited continuation is abandoned. The finite stored call stack is then unwound level by level, using lower-order ordinary solubility at every proper ancestor level and an exact terminal theorem at the final order-`N` level, until a root flow on `G` is produced.
+1. **continuing witnessed certificate:** a finite decorated contextual history begins at `lambda` and reaches an original-cap-compatible root state;
+2. **terminal outer-collapse certificate:** one live lower-order child execution is abandoned, the exact outermost live child target is solved by lower-order ordinary existence, its single parent frame is popped source-faithfully, and the already witnessed parent prefix is transferred back at fixed order to a root solution of `G`.
 
-Route/bounded/separator/category labels are internal control values only. They are not external conclusions of `Q_N^solve`.
-
----
-
-## 3. Continuing versus terminal child results
-
-Suppose an order-`m` parent cancellation creates a connected admissible child target `H` of order
-
-\[
-n=m-2
-\]
-
-with inherited root flow `mu` and a stored ordered insertion interface.
-
-### Continuing result
-
-If the child supplies a decorated history beginning at `mu`, use the labelled bubble-compression and source-pop theorems. The parent continuation resumes.
-
-No unrelated child flow may be substituted.
-
-### Terminal result
-
-If any descendant of the child execution reaches a route, bounded, separator, or category terminal, abandon the inherited continuation permanently.
-
-At the outer proof level `N`, every target order occurring inside this child is strictly less than `N`. Hence the simultaneous strong-induction hypotheses already contain the ordinary propositions `P_k` for all those orders.
-
-One may therefore discard the nested terminal execution and choose an arbitrary root flow on the exact child target immediately below the next stored frame.
-
-This use of arbitrary existence is legitimate precisely because the branch will never resume the inherited child search.
+A route/bounded/separator/category token may occur internally but is never an external result.
 
 ---
 
-## 4. The stored call stack
+## 3. The first live order-lowering call
 
-Write the live cancellation frames from inner to outer as
+Run the specified order-`N` inherited-flow strategy.
+
+If no cancellation call is live, every terminal is already an order-`N` terminal and is consumed by Section 8 below.
+
+Otherwise let
 
 \[
-\mathcal F_r,\mathcal F_{r-1},\ldots,\mathcal F_1.
+\mathcal F
 \]
 
-For frame `F_j` let:
+be the first still-live cancellation frame encountered from the order-`N` parent execution. Its data are:
 
-- `H_j` be its child target of order `n_j`;
-- `G_j` be its required parent target of order `n_j+2`;
-- `e_j,f_j` be the two ordered child edge lineages whose insertion restores the labelled parent vertex slots;
-- the frame store all cap, route, incidence, support, side-output, and surviving-mark data.
+- parent cancellation state `C` of order `N`;
+- exact connected loopless bridgeless cubic child target `H` of order `n\le N-2`;
+- inherited child root flow `mu`;
+- ordered child edge lineages `e,f`;
+- labelled parent vertex slots;
+- complete cap, route, support, side-output, incidence, and surviving/suspended-mark boundary data.
 
-The outermost frame has parent order `N`. Every other parent target has order strictly less than `N`.
+Inside the child execution there may be arbitrary nested calls and fixed-order prefixes.
 
-After a terminal event, the proof no longer needs the nested source histories. It needs only:
+### Continuing child outcome
 
-1. one root flow on the current child target;
-2. the next stored frame;
-3. fixed-order restoration to that frame's required parent target.
+If the child returns a decorated history beginning at `mu`, use source-faithful generator lifts and witnessed bubble compression. The parent strategy resumes.
+
+### Terminal child outcome
+
+If any descendant inside that child execution becomes terminal, abandon the whole child execution rooted at `H`.
+
+Discard:
+
+- every nested frame;
+- every inter-frame child prefix;
+- every child route, cut, bounded, or category label;
+- every child-only mark.
+
+Retain only the exact graph `H`, the stored outer frame `F`, and the order-`N` parent prefix preceding `C`.
+
+Since `n<N`, the simultaneous strong-induction hypothesis already contains ordinary solubility `P_n`. Choose one root flow
+
+\[
+\nu:E(H)\to R_5.
+\]
+
+No history from `mu` to `nu` is required because the inherited continuation is abandoned permanently.
+
+### Theorem 3.1 — outermost live child collapse
+
+Every terminal result at arbitrary nested depth inside the first live order-lowering call may be replaced by one arbitrary root flow on that call's exact child target `H`.
+
+There is no need to pop inner frames or transport their terminal data.
 
 ---
 
-## 5. One frame of terminal unwind
+## 4. Why the remaining parent prefix is fixed-order
 
-Assume a root flow
-
-\[
-\nu:E(H_j)\to R_5
-\]
-
-is available on the child target of frame `F_j`.
-
-Put
+Let
 
 \[
-p=\nu(e_j),\qquad q=\nu(f_j).
+\Pi:C_0\rightsquigarrow C
 \]
 
-### 5.1 Actual insertion table
+be the order-`N` parent execution before the live cancellation at `C`.
 
-Evaluate the stored insertion on these actual roots.
+Every order-lowering call occurring strictly before `C` has already returned successfully; otherwise it would be an earlier live frame. Each such completed call therefore has:
 
-- Distinct intersecting `p,q`: original root insertion.
-- Equal `p=q`: direct alternative root insertion.
-- Disjoint with good borrow: direct alternative root insertion.
-- Missing-index case: one normalized `(Q_i,Q_j,ij)` atom.
-- Loop, parallel, insufficient-borrow, or separator identification: an exact category outcome at the parent level.
+- an inherited child history witness;
+- source-faithful generator lifts;
+- complete labelled seam equality;
+- a witnessed fixed-order bubble replacement.
 
-Thus the immediate parent-order result is
+Compress all these completed bubbles innermost-first.
+
+### Lemma 4.1 — fixed-order parent-prefix normal form
+
+The entire parent prefix `Pi` has a complete boundary-equivalent order-`N` replacement whose internal persistent cells are only:
+
+- root `2--2` NNIs;
+- bounded zero/one-atom normalization macros;
+- switch--pop endpoint collars;
+- explicitly suspended surviving ancestor marks;
+- literal complete-state seam gluings.
+
+There is no live lower-order call in this replacement.
+
+This is exactly the normalized FOC supplied by witnessed bubble compression. It is the missing justification in v1.
+
+---
+
+## 5. One actual outer-frame pop
+
+Evaluate the selected lower-order root flow `nu` on the stored lineages:
+
+\[
+p=\nu(e),\qquad q=\nu(f).
+\]
+
+Apply the exact insertion table.
+
+- Distinct intersecting: original root insertion.
+- Equal: direct alternative root insertion.
+- Good disjoint: direct alternative root insertion.
+- Missing index: one normalized `(Q_i,Q_j,ij)` atom.
+- Loop, parallel, insufficient-borrow, or separator identification: exact order-`N` category outcome.
+
+Thus the parent-order output is
 
 \[
 \boxed{
@@ -165,232 +187,214 @@ Thus the immediate parent-order result is
 \quad\text{or}\quad
 \text{one normalized atom}
 \quad\text{or}\quad
-\text{exact parent-level category outcome}.}
+\text{exact order-}N\text{ terminal}.}
 \]
 
-No simultaneous-weld attainability is assumed.
+The actual roots of `nu` are used. No generic weld attainability and no relation between `mu` and `nu` is assumed.
 
-### 5.2 Pure fixed-order restoration
+---
 
-Restore the exact required topology `G_j` using only the fixed-order alphabet:
+## 6. Pure fixed-order transfer through the compressed prefix
 
+Starting at the normalized parent-order output of Section 5, transfer backward through the fixed-order replacement of `Pi`.
+
+Use only:
+
+- the inverse root/zero/co-root `2--2` table;
 - target-rooted ordinary `2--2` arborescence moves;
 - local zero normalization;
 - one-atom first-failure grammar;
 - cellwise pivot-change seams;
 - constant-run identity strips;
-- normalized switch--pop endpoint collars already contained in the frame boundary;
-- periodic root crosscut if a complete fixed-order endpoint repeats.
+- normalized endpoint collars;
+- periodic root crosscut.
 
-No new equal-face cancellation call is opened during this restoration. The only order change is the stored insertion which pops the existing frame.
+No new cancellation call is opened.
 
-Every successful root arborescence edge lowers `d_top`. Every nonroot attempt enters the fixed-order one-atom consumer. The v6.2 no-neutral-recurrence theorem excludes an infinite fixed-order loop.
+Every successful arborescence edge lowers topology distance. Every one-atom recurrence is removed by v6.2. The finite compressed prefix coordinate decreases when a source macro is crossed.
 
-### Lemma 5.1 — one-frame output
+### Theorem 6.1 — fixed-order terminal return
 
-One frame of terminal unwind finitely produces exactly one of:
+The outer-frame pop followed by transfer through the compressed parent prefix finitely yields:
 
-1. a root flow on the required parent target `G_j`;
-2. a cap-compatible root state on a parent-order descendant topology;
-3. an exact bounded, separator, or category outcome at the parent order.
+1. a root flow on the original target `C_0`;
+2. a cap-compatible root state on an order-`N` descendant, which continues through the remaining fixed-order prefix while preserving its ordered `K_i` boundary word;
+3. an exact order-`N` bounded/two-cut/outer-shell terminal.
 
-In Case 2 the boundary roots already lie in the required cap profile. Since all subsequent restoration moves are internal and preserve the ordered boundary word, continue fixed-order restoration rather than treating the descendant state as an external terminal.
+A descendant route change is not a naked endpoint; it is a root state carried to the original topology.
 
 ---
 
-## 6. Proper lower-order parent levels
+## 7. Exact fixed-order category census
 
-Suppose the parent order of frame `F_j` is
+The actual fixed-order sources give a narrower terminal list than the generic word `category` suggests.
+
+### NNI category failure
+
+By `FULL_DEFECT_TREE_NNI_DESCENT_V1.md`, a local NNI in a connected bridgeless cubic graph gives exactly:
+
+1. another connected bridgeless cubic graph;
+2. a two-edge cut in the original graph;
+3. a bounded acyclic or parallel-edge degeneration attached through at most two edges.
+
+### Quadruple equality borrowing
+
+The only bounded exception is the two-vertex singular theta, or a loop/parallel local identification.
+
+### Doubled-disjoint borrowing
+
+Good borrowing rootifies. Missing-index borrowing becomes the standard one-atom transport state. It introduces no new recursive or category row beyond the NNI census.
+
+### Disconnected equal-face cancellation
+
+Child-context fidelity gives an original two-edge cut.
+
+### Direct zero-vertex terminal
+
+Closing by the cap gives bridge plus two loops or the root-soluble theta graph.
+
+### Route change
+
+The exact route table gives a descendant `K_i` root boundary state; fixed-order transfer preserves the ordered boundary word until the original topology is reached.
+
+### Theorem 7.1 — scheduler terminal census
+
+Every terminal produced by the controlling fixed-order scheduler is one of:
+
+- original-cap-compatible root state;
+- cyclic two-cut;
+- bounded acyclic one-/two-vertex shore;
+- theta or parallel local degeneration;
+- loop/bridge/singleton-cut outer-shell case.
+
+Cyclic three- and four-cut theorems remain valid global outer-shell tools but are not required to classify a local fixed-order NNI failure unless an upstream source theorem explicitly returns them.
+
+---
+
+## 8. Outermost consumption
+
+Only order-`N` terminals may end the terminal branch.
+
+- **Original `K_i` root state:** glue the cap.
+- **Cyclic two-cut:** solve the two strictly smaller edge completions by lower `P`, align roots, and glue.
+- **Theta:** use an explicit root triangle.
+- **Parallel local degeneration:** either theta, or the two external third edges form a two-cut; use the preceding cases.
+- **Acyclic low-port shore:** use the exact one-vertex/two-vertex classification.
+- **Loop/bridge/singleton cut:** use loop deletion/reinsertion or the outer-shell decomposition.
+
+If a separately imported outer source theorem returns a cyclic three- or four-cut, use `GLOBAL_SMALL_CUT_COMPLETION_AND_GLUING_V1.md`; those outcomes are also exact lower-order constructions.
+
+### Theorem 8.1 — no naked outer terminal
+
+Every order-`N` terminal produced by the controlling strategy yields a root flow on the original graph.
+
+---
+
+## 9. Termination
+
+Continuing mode is controlled by the resolved-call rank `(N,d_N)` and original-prefix induction.
+
+Terminal mode has no live lower-order call after Theorem 3.1. It is ranked by:
 
 \[
-m<N.
+(\ell,\rho_{\rm fix}),
 \]
 
-The strong-induction hypothesis contains `P_m` for the exact required parent target `G_j`.
+where `ell` is the number of compressed parent-prefix macros still to cross and `rho_fix` is the fixed-order topology/one-atom rank inside the current macro.
 
-### Theorem 6.1 — lower-level reset
+Both are finite and lexicographically decrease.
 
-At a proper lower-order parent level:
+### Theorem 9.1 — terminal outer-collapse termination
 
-- if Lemma 5.1 gives a root flow on `G_j`, retain it;
-- if it gives a descendant cap-compatible state or any bounded/separator/category outcome, abandon that local restoration and invoke `P_m` to choose one root flow on `G_j`.
-
-Then use that root flow as the child solution for the next enclosing frame.
-
-This does not propagate the terminal certificate, route, shore, or cut through the stack. It propagates only an ordinary root flow on the exact graph required by the next stored interface.
-
-The arbitrary replacement is legitimate because the whole branch is already terminal and will never resume its inherited continuation.
+Terminal mode finitely produces a root flow on the original target and never returns to continuing mode.
 
 ---
 
-## 7. Final order-`N` frame
-
-At the outermost frame the required parent target is the original order-`N` graph `G`. The proposition `P_N` is not yet available, so no lower-level reset is allowed.
-
-Apply Lemma 5.1 and consume the result exactly.
-
-### Root flow on `G`
-
-Done.
-
-### Cap-compatible descendant root state
-
-Continue the finite internal fixed-order restoration to the original topology. The ordered boundary root word remains in `K_i`; glue the original cap when `G` is reached.
-
-### Zero-vertex direct matching
-
-Closing by the cap gives either:
-
-- two loops joined by a bridge, consumed by the singleton-cut/loop outer shell; or
-- the root-soluble theta graph with roots `12,13,23`.
-
-### Cyclic two-cut
-
-Complete both shores by one edge, solve the strictly smaller completions by lower `P`, align the completion roots by one support permutation, and glue.
-
-### Cyclic three-cut
-
-Complete each shore by one cubic vertex, solve by lower `P`, align the boundary root triangles, and glue.
-
-### Cyclic four-cut
-
-Use the three strictly smaller cap completions, exact physical profile intersection, and the proved Type-T/Type-H elimination.
-
-### Acyclic low-port shore
-
-Use the exact one-vertex or two-vertex bounded classification.
-
-### Loop, bridge, or singleton cut
-
-Use loop deletion/reinsertion and the already closed outer-shell decomposition.
-
-### Theorem 7.1 — outermost absorption
-
-Every final order-`N` result produces a root flow on the original graph. No uninterpreted terminal constructor remains.
-
-The load-bearing source condition is that every category outcome admitted by the fixed-order scheduler is accompanied by one of the exact outermost dispositions above. A generic word `category-safe` is not sufficient.
-
----
-
-## 8. Finite framewise termination
-
-The terminal unwind is ranked by
-
-\[
-\bigl(r,\rho_{\rm fix}\bigr),
-\]
-
-where:
-
-- `r` is the number of stored frames still to pop;
-- `rho_fix` is the finite fixed-order restoration rank inside the current frame, assembled from target-tree distance and the v6.2 one-atom disposition.
-
-Inside one frame, `rho_fix` terminates. Completing or resetting that parent removes one frame, so `r` decreases by one.
-
-### Theorem 8.1 — terminal stack unwind
-
-A terminal event at arbitrary nested depth yields after finitely many steps a root flow on the original order-`N` target.
-
-No child cut is transported through an insertion. No child history is required after abandonment. No call is opened inside one fixed-order frame restoration. Ordinary existence is invoked only at proper lower-order parent levels.
-
----
-
-## 9. Correct mutual induction
+## 10. Correct mutual induction
 
 Assume `P_n` and `Q_n^solve` for every `n<N`.
 
 ### Prove `Q_N^solve`
 
-Run the specified inherited-flow strategy.
+- Run the specified inherited-flow strategy.
+- Continuing lower calls use the witnessed branch of lower `Q_n^solve` and resume.
+- Any terminal child result triggers Theorem 3.1.
+- Use one actual outer-frame pop, fixed-order parent-prefix transfer, and Theorem 8.1.
 
-- Continuing child histories lift witnessedly and resume.
-- A terminal child result switches irreversibly to the framewise terminal mode.
-- At every proper lower parent level use Theorem 6.1 when needed.
-- At the final order-`N` level use Theorem 7.1.
-
-The continuing mode terminates by the resolved-call rank `(N,d_N)` and original-prefix induction. The terminal mode terminates by Theorem 8.1.
-
-Thus every branch gives a root flow on the original target.
+Every branch gives a root flow on the original target.
 
 ### Prove `P_N`
 
-- If the graph has no simple edge, use the explicit theta flow.
-- Otherwise use R1 to choose a valid smaller cross closure.
-- Use lower `P` to choose the initial inherited root flow on that closure.
-- Apply `Q_N^solve`.
+- Theta is explicit when there is no simple edge.
+- Otherwise R1 supplies a valid smaller cross closure.
+- Lower `P` supplies one inherited root flow on it.
+- `Q_N^solve` supplies a root flow on the original graph.
 
-The implication is now literal: `Q_N^solve` returns a root flow, not an accepted-exit token.
+There is no exit-to-solution coercion.
 
 ---
 
-## 10. Relation to prior files
+## 11. Relation to prior versions
 
 `TERMINAL_UNWIND_FROM_CHILD_SEPARATOR_SOLUTION_V1.md` retains:
 
-- the distinction between continuing witnessed returns and terminal existential branches;
-- legitimate use of lower-order ordinary solubility only after abandonment;
+- the continuing/terminal distinction;
+- legitimate arbitrary lower-order flow selection after abandonment;
 - the actual insertion endpoint table;
-- the warning that cut size need not persist.
+- the warning against cut persistence.
 
-Its statement that an intermediate accepted exit may stop the whole proof is superseded.
+Its intermediate-exit propagation is superseded.
 
-The first version of this file's one-top-pop description is also superseded. The correct procedure is framewise:
+v1.1's framewise algorithm is also superseded. It was unnecessarily strong and did not explicitly account for fixed-order child prefixes between nested frames.
 
-\[
-\text{lower }P
-\to
-\text{actual insertion}
-\to
-\text{pure fixed-order restoration}
-\to
-\text{lower-level reset or outermost absorption}.
-\]
+The controlling rule is:
+
+> abandon the complete outermost live child execution, solve its exact child target by lower `P`, pop its one stored parent frame, compress all earlier completed parent calls, and return through the resulting fixed-order order-`N` prefix.
 
 ---
 
-## 11. PDL reconstruction obligations
+## 12. PDL reconstruction obligations
 
-PDL must verify line by line:
+PDL must verify:
 
-1. the external result of `Q_N` is an actual root flow on the original target;
-2. continuing and terminal modes are disjoint and terminal mode never resumes inherited continuation;
-3. every live frame records an exact child target, required parent target, ordered insertion interface, and complete boundary data;
-4. at every proper parent level `m<N`, `P_m` is already available;
-5. arbitrary root-flow replacement occurs only after abandonment;
-6. every frame pop evaluates the actual roots on the stored lineages;
-7. fixed-order restoration uses no new cancellation call;
-8. v6.2 gives termination for every one-atom fixed-order restoration;
-9. descendant route states are continued as root states until the required topology is reached;
-10. intermediate category outcomes are replaced by `P_m`, not propagated;
-11. the outermost frame has the exact terminal census of Section 7;
-12. every outermost category names a proved cap, theta, low-cut, bounded-shore, or outer-shell theorem;
-13. frame count strictly decreases;
-14. `Q_N^solve -> P_N` contains no hidden exit-to-solution coercion.
+1. the external result of `Q_N` is an actual root flow;
+2. continuing and terminal modes are disjoint;
+3. the first live order-lowering frame and its exact child target are well-defined;
+4. every earlier order-lowering call in the parent prefix has a continuing witness;
+5. those earlier calls compress to the fixed-order alphabet of Lemma 4.1;
+6. lower `P_n` is invoked only after abandonment and on the exact outermost live child target;
+7. the actual roots on the stored lineages are used in the single pop;
+8. the remaining transfer opens no cancellation call;
+9. v6.2 consumes every fixed-order one-atom recurrence;
+10. descendant `K_i` states continue to the original topology;
+11. the scheduler terminal census of Section 7 is complete;
+12. every outer terminal has a named root-solution construction;
+13. terminal rank `(ell,rho_fix)` is well founded;
+14. `Q_N^solve -> P_N` is literal.
 
-Return either a complete-draft theorem or one exact counterexample/interface failure.
+Return either a complete-draft theorem or one exact obstruction.
 
 ---
 
-## 12. Classification and trust boundary
+## 13. Classification and trust boundary
 
 ### Closed at Research Lead authorial level
 
-- identification of the old result-type mismatch;
-- continuing versus terminal mode;
-- abandonment semantics;
-- level-sensitive use of lower-order `P_m`;
-- actual insertion at every stored frame;
-- pure fixed-order frame restoration;
-- intermediate reset without cut/route propagation;
-- outermost exact absorption;
-- finite frame-count termination;
-- corrected `Q_N^solve -> P_N` implication.
+- result-type mismatch and correction;
+- continuing/terminal split;
+- outermost live child collapse;
+- fixed-order parent-prefix compression;
+- one actual source-faithful pop;
+- pure fixed-order terminal return;
+- exact scheduler terminal census;
+- outermost terminal consumption;
+- corrected mutual induction and R2-to-R1 output.
 
 ### Required before promotion
 
-- PDL reconstruction of every frame and terminal interface;
-- integration into the v6/v6.1/v6.2 master;
-- independent audit of the terminal census and full dependency DAG.
+- PDL reconstruction;
+- final integration with v6--v6.3;
+- independent audit of FOC, v6.2, the terminal census, and the complete dependency DAG.
 
 ### Not claimed
 
