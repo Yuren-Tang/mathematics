@@ -1,0 +1,421 @@
+# AC-PD-5CDC R2.7 — resolved-call contextual transfer
+
+**Owner:** `AffineCDC — Proof Development Lead` (`AC-PDL`)  
+**Programme:** compressed five-support proof, global-return unit `R2.7`  
+**Frozen Research Lead input:** `research/affine-cdc-five-cdc-v1@71a10f9ba86c1d2b8b7885e78fa9baa303c77818`  
+**Controls with:** RL `ROOT_NORMALIZED_CONTEXTUAL_TRANSFER_MASTER_V6.md` and `ROOT_NORMALIZED_CONTEXTUAL_TRANSFER_MASTER_V6_1_ADDENDUM.md`  
+**Classification:** `COMPLETE-DRAFT / R2.7 CLOSED AT PDL RECONSTRUCTION LEVEL / INDEPENDENT ASSURANCE REQUIRED`.
+
+This dossier completes the proof-development reconstruction of contextual
+inverse transfer.  It consumes:
+
+- `AC_PD_5CDC_R2_4_FULL_STATE_FORCED_BACKBONE.md`;
+- `AC_PD_5CDC_R2_6_CELLWISE_TRACK_ERASURE.md`;
+- `AC_PD_5CDC_R2_7_MUTUAL_INDUCTION_HISTORY_WITNESS.md`;
+- `AC_PD_5CDC_R2_7_CHILD_CONTEXT_FIDELITY.md`;
+- `AC_PD_5CDC_R2_7_WITNESSED_INNERMOST_BUBBLE_COMPRESSION.md`;
+- `AC_PD_5CDC_R2_7_FULL_LABELLED_GENEALOGY_GLUING.md`;
+- `AC_PD_5CDC_R2_7_FIXED_ORDER_CONSUMER_COMPATIBILITY.md`.
+
+The argument is an existence/strategy proof.  It does not claim termination of
+all arbitrary nondeterministic surgery choices.
+
+---
+
+## 1. Complete contexts and target obligations
+
+Fix one literal labelled context at target vertex order `N`:
+
+- a finite labelled vertex/dart universe;
+- ordered exterior semiedges;
+- one target topology `T_*`;
+- literal roots and at most one normalized co-root atom;
+- both crossed resolutions of that atom;
+- side-root outputs, support transport and rooted attachments;
+- cap matching, distinguished cap block and route orientation;
+- ordered ordinary or suspended marks;
+- bounded, separator, route/profile and terminal flags.
+
+A complete state is finite data on this universe.  History and genealogy words
+are witnesses, not state coordinates.  Hence the state set `S_N` is finite.
+
+Choose once and for all a rooted spanning tree of the ordinary labelled `2--2`
+topology component of `T_*`.  For an ordinary topology `T`, let
+
+\[
+p(T)
+\]
+
+be its parent and let
+
+\[
+d_{\rm top}(T)
+\]
+
+be its tree distance to `T_*`.
+
+A **target-parent obligation** is not merely a root/token coefficient state.  It
+also records the selected ordinary edge
+
+\[
+T\longrightarrow p(T)
+\]
+
+whose relative root realization is being sought.  Every local discrepancy
+normalization retains this target boundary until the obligation succeeds or
+leaves through an accepted exit.
+
+This target-boundary record is the point which prevents a later root-valued
+replacement loop from being confused with arbitrary coloured Pachner
+connectivity.
+
+---
+
+## 2. Exact inverse-step tables
+
+### Inverse root `2--2`
+
+Expose the four exterior roots of the selected ordinary parent move.
+
+- If the forced parent diagonal is a root, perform the parent NNI.
+- If it is zero, use the other crossed root NNI and retain the original parent
+  topology as the target boundary of the discrepancy macro.
+- If it is a co-root, retain one normalized atom with its two crossed root
+  resolutions and the same target boundary.
+- A loop, bounded identification, route/profile change or separator leaves by
+  the declared exit.
+
+The zero/co-root first-failure and critical-overlap tables create at most one
+persistent atom.
+
+### Inverse equal-face cancellation
+
+For actual returned reconnecting roots `a,b`:
+
+- distinct intersecting: original root insertion;
+- `a=b`: root-valued alternative insertion;
+- disjoint with a good borrow: root-valued alternative insertion;
+- missing-index disjoint row: one normalized `(Q_i,Q_j,ij)` atom;
+- loop, parallel, insufficient-borrow or separator identification: accepted
+  bounded/category exit.
+
+The contracted graph is a child call and common contraction witness.  It is not
+an automatically completed lower-order exit.
+
+All outputs live at predecessor order and retain the ordered outer boundary.
+
+---
+
+## 3. Witnessed recursive calls
+
+Use simultaneous strong induction.
+
+### `Q_N`
+
+For every specified inherited root flow on a valid selected cross closure of an
+order-at-most-`N` context, there is either an accepted exit or a finite decorated
+history to a cap-compatible root terminal.
+
+### `P_N`
+
+Every connected loopless bridgeless cubic graph of order at most `N` has a root
+flow.
+
+At one level prove
+
+\[
+Q_N\quad\text{before}\quad P_N.
+\]
+
+A strict equal-face cancellation begins with its inherited output flow.
+`AC_PD_5CDC_R2_7_CHILD_CONTEXT_FIDELITY.md` proves exactly one of:
+
+1. disconnected output exposes a cyclic two-edge-cut gluing exit;
+2. another accepted route/bounded/separator exit occurs;
+3. there is one connected loopless bridgeless cubic child of order two less,
+   carrying the inherited root flow and the restricted complete cap/route data.
+
+Case 3 is a literal `Q_{N-2}` call.  Thus every child returns a finite decorated
+history, not an unrelated existentially chosen root flow.
+
+---
+
+## 4. Source-faithful call compression
+
+A call-free child history is generated by the controlling move alphabet:
+
+- root-valued relative NNIs;
+- support-pair switches in their terminal/rootification normal form;
+- equal-face steps only as nested calls;
+- immediate bounded normalization of `A/C` insertion rows.
+
+Every root NNI has its complete raw-insertion lift.  A terminal support switch
+and its pop form one switch--pop collar; no raw singular support-switch
+correction is used as an interior Ptolemy cell.
+
+For a successful bubble, ordinary ancestor darts are retained pointwise.  A
+central ancestor mark deleted in the raw child is carried as a suspended mark
+on the predecessor-order raw-insertion central darts.  Every local lift
+transports that dart pair, and the returned insertion/borrowing movie hands it
+to the exact returned parent state.
+
+Choose innermost call intervals successively.  Each replacement:
+
+- removes one push/pop pair;
+- preserves the complete outer target-parent boundary;
+- preserves every surviving cap, route, side and mark datum;
+- deletes only call-local auxiliary marks;
+- introduces no new call.
+
+Induction on call count therefore converts every finite nested episode into a
+fixed-order root/one-token comparison with exactly the same complete parent
+boundary.
+
+---
+
+## 5. Fixed-order target-boundary theorem
+
+This is the load-bearing no-recurrence statement.
+
+### Theorem 5.1 — target-directed fixed-order normalization
+
+Let `D` be a fixed-order normalized comparison for one target-parent obligation
+`T -> p(T)`.  Then `D` has a finite source-faithful replacement which either:
+
+1. realizes a root-valued state on the parent topology `p(T)`;
+2. reaches the target/cap-compatible root terminal;
+3. leaves through an accepted route/profile, bounded, theta or separator
+   terminal.
+
+### Proof
+
+All persistent singular states form a finite nonbranching co-root track system.
+The normalized alphabet contains only root-NNI/Ptolemy interior cells and the
+bounded critical-overlap grammar; switch--pop macros occur only at root-valued
+short-side collars.
+
+Choose among comparisons with the same complete target-parent outer boundary
+one minimizing lexicographically:
+
+\[
+\mu(D)=(U,C,S),
+\]
+
+where:
+
+- `U` is the number of unresolved outer-endpoint occurrences;
+- `C` is the number of closed singular components;
+- `S` is the total number of singular one-cells.
+
+The tuple is a finite tuple of nonnegative integers.
+
+#### Repeated unresolved endpoint
+
+At fixed order the complete endpoint alphabet is finite.  If continuation never
+reaches a normalized endpoint or exit, one complete unresolved endpoint repeats.
+Identify its two literal collars.  The resulting closed track is erased by
+`AC_PD_5CDC_R2_6_CELLWISE_TRACK_ERASURE.md`.  A shortest legal root `1`-skeleton
+crosscut cuts the root cylinder back to a rectangle and replaces the two
+unresolved short sides by root-valued short sides.  It strictly lowers `U`,
+contrary to minimality.
+
+Thus every unresolved continuation is finite or exits.
+
+#### Closed component
+
+The cellwise seam theorem places one root seam at each genuine pivot change,
+rootifies all intervening constant-pivot runs and glues by literal complete
+state.  Replacing a closed component lowers `C` and introduces no singular
+component, contrary to minimality.
+
+#### Open component
+
+Its two true endpoints are normalized root short sides, including possible
+switch--pop collars, unless one endpoint is the already excluded unresolved
+outer endpoint.  The cellwise open replacement fixes both long histories and
+both complete short sides and lowers `S`, contrary to minimality.
+
+Consequently a minimal comparison has no singular component and no unresolved
+endpoint.  It is a fully root-valued relative realization of the **same**
+target-parent outer boundary.  Since every replacement fixed the target
+ordinary incidence pattern, its terminal topology is `p(T)`, not an arbitrary
+root topology in the ordinary component.  Hence the parent obligation succeeds
+root-valuedly, unless an accepted terminal was encountered. ∎
+
+### Corollary 5.2 — fixed-order strict progress
+
+At a fully root-valued nonterminal topology `T`, the canonical parent obligation
+terminates and yields either an exit or a root state on `p(T)`.  In the latter
+case
+
+\[
+d_{\rm top}(p(T))=d_{\rm top}(T)-1.
+\]
+
+Thus no target-directed fixed-order nonterminal recurrence exists.
+
+### Scope note
+
+The theorem does not say that every arbitrary root-valued NNI loop is absent.
+It says that the fixed ordinary parent obligation, together with all of its
+source-faithful discrepancy detours, cannot recur neutrally.  This is the exact
+statement required by the target scheduler.
+
+---
+
+## 6. Resolved-call parent relation
+
+Assume every lower target order has already been solved.  On the finite parent
+state set define a directed relation `M_N` saturated under the following finite
+macros:
+
+- one completed fixed-order target-parent obligation from Theorem 5.1;
+- every direct local root/zero/co-root normalization;
+- one selected cancellation, its complete lower-order witnessed solve, its
+  source-faithful innermost compression and its inverse/source pop;
+- accepted terminals.
+
+“Saturated” means that if a displayed boundary-equivalent replacement theorem
+supplies a finite macro between two complete parent states, that endpoint pair
+belongs to the relation.  The vertex set remains finite; witness multiplicity
+is irrelevant.
+
+Every resolved-call edge has a finite expansion by lower-order induction.
+
+### Theorem 6.1 — no nonterminal resolved-call sink
+
+Every reachable sink strongly connected component of `M_N` contains a terminal.
+
+### Proof
+
+Assume a terminal-free sink SCC `K` and choose one directed cycle.  Expand every
+resolved-call edge to its finite witnessed nested execution.  The outer endpoint
+states agree literally.  Eliminate all innermost calls; the result is a
+fixed-order target-directed recurrent comparison with the same complete outer
+boundary.
+
+Apply Theorem 5.1 to every target-parent obligation occurring in this
+comparison.  Each one either exits or produces a root state on its ordinary
+parent topology.  Because `K` is sink and contains no terminal, only parent
+successes are possible.  Along every such success `d_top` decreases by one.
+After finitely many successes the target topology is reached, a terminal in
+`K`, contradiction.  Equivalently, a positive-length target-directed recurrence
+cannot strictly lower and restore the nonnegative tree distance. ∎
+
+The proof uses target-boundary preservation.  Replacing a cycle merely by an
+arbitrary root loop would not prove the theorem and is not the argument here.
+
+---
+
+## 7. Parent rank
+
+Let `X_N` be the terminal set.  Theorem 6.1 implies every reachable state has a
+directed path to `X_N`.  Define
+
+\[
+\boxed{d_N(x)=\operatorname{dist}_{M_N}(x,X_N).}
+\]
+
+At every nonterminal state choose one macro on a shortest path.  For its endpoint
+`y`,
+
+\[
+d_N(y)=d_N(x)-1.
+\]
+
+A fixed-order macro is finite by Theorem 5.1.  A resolved-call macro executes
+only lower target orders and is finite by induction.  Thus induction on
+
+\[
+(N,d_N)
+\]
+
+terminates the complete parent strategy.  Child history length and child-prefix
+coordinates never enter the parent numerical key.
+
+---
+
+## 8. Original-history transfer
+
+Let
+
+\[
+C_0\to C_1\to\cdots\to C_m
+\]
+
+be the finite forward current-flow history and let a cap-compatible terminal
+root state be fixed on `C_m`.
+
+At inverse stage `ell>0`:
+
+1. restore the predecessor incidence pattern of `C_{ell-1}`;
+2. immediately replace the original-prefix coordinate `ell` by `ell-1`;
+3. apply the exact inverse `2--2` or inverse-cancellation table;
+4. normalize the predecessor-order state by the finite `(N,d_N)` strategy;
+5. continue to the next original step or leave by an accepted terminal.
+
+The inner normalization never increases the already consumed original-prefix
+coordinate.
+
+### Theorem 8.1 — contextual inverse transfer
+
+Every cap-compatible terminal root state on `C_m` transfers to a cap-compatible
+root state on `C_0`, or the proof leaves through an established route/profile,
+bounded direct/theta, cyclic two-cut or separator/category branch.
+
+### Proof
+
+Induct on `ell`.  Each predecessor-order normalization is finite by Section 7,
+and every original inverse step is crossed exactly once. ∎
+
+This is `R2.7`.
+
+---
+
+## 9. Supersessions
+
+The controlling proof no longer uses:
+
+- an arbitrary lower-order terminal flow;
+- target-order decrease alone as a completed cancellation return;
+- comparison of child prefix length with a stored parent prefix;
+- generic two-edge flow attainability;
+- permanent central-mark-count descent;
+- a raw support-switch correction as an interior Ptolemy cell;
+- simultaneous canonical stars or a global `C6/C8` history section;
+- a proper Petersen pivot subcycle treated as a complete physical annulus.
+
+The old conditional/overstated readings of contextual masters v1--v5 and the
+old `EQ-RETURN / MWR` frontier are superseded by the witnessed resolved-call
+construction above.
+
+---
+
+## 10. Trust boundary
+
+### Closed at PDL complete-draft level
+
+- exact inverse-step source dispositions;
+- witnessed lower-order recursion;
+- disconnected-child two-cut exit;
+- call-free and nested bubble compression;
+- suspended ancestor marks and literal dart genealogy;
+- normalized support-switch consumer alphabet;
+- source-level closed/open/periodic track erasure;
+- target-boundary preservation through all replacements;
+- no terminal-free resolved-call SCC;
+- finite `d_N` and lexicographic `(N,d_N)` termination;
+- original-prefix contextual inverse transfer.
+
+### Still required downstream
+
+- literal audit of the R2 terminal alphabet against the one-cross cap consumer;
+- reassembly of the simple-edge extension and cubic/outer-shell induction;
+- independent adversarial audit of this complete dependency graph;
+- Curator integration and separate canonical disposition.
+
+### No external status implied
+
+No independently assured universal five-support/five-CDC theorem, Lean theorem,
+manuscript acceptance, release, tag, arXiv, DOI, peer review or publication
+status follows from this dossier alone.
