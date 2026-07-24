@@ -1,6 +1,6 @@
 # AffineCDC current-best mathematical state
 
-## 1. Exact corpus
+## 1. Exact baseline
 
 Current candidate:
 
@@ -10,126 +10,65 @@ Exact base:
 
 `curation/affine-cdc-programme-a-b1-b8-source-fidelity-v1@f4d6f801fac69746ca0b2ce9351735a43c79b482`.
 
-This is the first global baseline that treats accepted mathematics, authorial candidates, open implications, counterexamples and projection pointers as different layers.
+## 2. Independently assured mathematics
 
-## 2. Independently assured state
+- Programme A ordinary CDC theorem in its audited/repaired scope;
+- B2/B8 source fidelity at `ea8ec33d...`;
+- R0 root semantics, R1 reduction, R2.1 finite route core and R2.2 finite Morse data;
+- repaired local seam/genealogy interfaces;
+- conditional general multigraph outer shell;
+- OR1 after D1--D6;
+- `Xi` frame/invariance/six strict rows and same-arc counterexample;
+- channel parity, inactive classification, all local contraction rows and final two-terminal matching table;
+- explicit co-root `6-7` and zero-parent `H_35` models;
+- third-terminal-path component-chain counterexample.
 
-### Programme A
+## 3. Component-chain disposition
 
-The complete ordinary cycle double cover theorem and its Audit A/repair boundary remain unchanged.
+RL source `02b37476198e9eaa2b4cd8d2a2edd76782bdcd49` and PDL reconstruction `e36ba22f09e3a9fc6358f3b03615f8fde6c00d96` remain complete failed candidates.
 
-### B2/B8 source fidelity
+Independent audit `a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57` found material false scope. The theorem does not exclude a third terminal path as an internal chain node. In the Heawood witness, the first NNI splits the original $P_0$ terminal darts and destroys inherited-path descent.
 
-Independent re-audit at
+Counterexample digest:
 
-`ea8ec33d49294ac31a53f46aed7a62c7b9b81908`
+`d24c63ab56320803b9c795ac08389674b6f67edf89dc5c4ef9a729c5436a3e61`.
 
-verified:
+## 4. Exact retained local scope
 
-- the fixed-dimensional orthogonal packet role;
-- separation from the source-unreconstructed arbitrary-rank tower;
-- the sharp `q-2` replacement;
-- packet accounting `39+10+18+10+1=78`;
-- dependency-local B8 assurance;
-- preservation of Programme A, B1 and B3--B8.
+Audit `a4f20f05...` verified:
 
-### Five-support independently accepted units
+- six active/inactive rows and twenty-four ordered continuations;
+- six distinct and nine equal active/active root rows;
+- eighty-four final two-path configurations, with no matching-preserving root alternative;
+- the co-root route-changing model;
+- the zero-parent literal-parent model.
 
-From the old full-draft audit epoch:
+These are local theorems/models. They do not prove terminal-component exhaustion.
 
-- R0 root-flow semantics: accepted;
-- R1 one-cross reduction: accepted;
-- R2.1 finite boundary/route core: accepted;
-- R2.2 finite Morse data: accepted;
-- selected R2.6 seam tables: accepted with explicit mark-lineage repair;
-- ordered genealogy/switch-pop scope: accepted;
-- general finite-bridgeless outer shell: accepted conditionally on the cubic theorem.
+## 5. Active proof frontier
 
-### OR1
+`AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION` requires one of:
 
-The orientation-obstruction candidate is independently verified subject to `OR1-D1`--`OR1-D6`. Fixed-lift and fixed-fibre classifications are supported; global oriented existence remains open.
+1. exactly two terminal paths in every application carrier;
+2. a generalized contraction through internal terminal paths preserving distinguished terminal darts;
+3. another source-faithful singular-parent return.
 
-### Negative results
+Until repaired and independently verified, the universal co-root row, zero row, inverse table and ordinary induction remain open.
 
-The current-best corpus includes independent and authorial exact negatives. Most importantly, the same-arc Heawood witness independently refutes arbitrary-equal-face `Xi` totality.
+## 6. Old candidate status
 
-## 3. Active complete authorial candidate
+The old PDL full draft `1f57422...` remains superseded by its audit results. Its accepted local units and negative findings are retained claim by claim; its complete-theorem label is not.
 
-Frozen source:
+## 7. Parallel programme frontiers
 
-`research/affine-cdc-five-cdc-v1@02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`.
+Unchanged:
 
-The v9 candidate proposes:
+- six BBD/localisation obligations;
+- two OR1 global orientation-existence obligations;
+- all B1--B8 source-fidelity distinctions and B8 classes.
 
-```text
-forward root-NNI history
-→ one actual cancellation
-→ actual smaller target
-→ one inverse pop
-→ complete prescribed-parent state
-→ root/co-root/zero inverse table
-→ fixed-channel component-chain return
-→ stored-prefix return
-→ ordinary strong induction.
-```
+## 8. Strongest current classification
 
-Its new load-bearing theorem contracts one retained physical channel-component chain by ordinary root NNIs and uses the final connector to change a terminal matching.
+`MIXED-ASSURANCE GLOBAL BASELINE / SUBSTANTIAL INDEPENDENTLY ASSURED MATHEMATICS / GENERAL COMPONENT-CHAIN THEOREM FAILED / LOCAL COMPONENT-CHAIN CORE RETAINED / GLOBAL FIVE-SUPPORT THEOREM OPEN`.
 
-Assurance:
-
-`RL-AUTHORIAL / PDL #80 ACTIVE / INDEPENDENT #81 ACTIVE / NOT ACCEPTED`.
-
-## 4. Old complete draft status
-
-The PDL snapshot `1f57422e...` is not current theorem authority.
-
-Independent returns found:
-
-- R2.3 missing-index entrance blocked;
-- R2.4 physical six-port promotion blocked;
-- old contextual-return no-sink/rank blocked, with finite countermodels;
-- cap consumer blocked by inherited-flow discontinuity and unconsumed exits;
-- outer shell accepted;
-- later `Xi` audit refuted a controlling co-root totality implication.
-
-The snapshot remains historical provenance and a source of accepted local units.
-
-## 5. Current frontier
-
-### Component-chain review
-
-- #80: PDL source-level reconstruction from `fee97446...`, consuming RL `02b374...`;
-- #81: focused independent review of the same frozen source.
-
-No result from either issue is frozen here.
-
-### Highest-risk interfaces
-
-- inheritance of later physical connectors after one contraction;
-- complete active/inactive and active/active root-NNI tables;
-- final terminal-matching change;
-- co-root marked-arc and zero-parent terminal-path totality;
-- literal target/cap/dart/route/category/prefix preservation;
-- exhaustive terminal consumption and no rank reset.
-
-### Other programme frontiers
-
-The six BBD/localisation obligations remain open and distinct. OR1 retains two global orientation obligations.
-
-## 6. Current proof-spine classification
-
-| Segment | State |
-|---|---|
-| definitions through local finite core | independently assured in exact scope |
-| forward history through prescribed-parent state | complete RL authorial candidate |
-| component-chain and singular-fibre totality | complete RL authorial candidate under #80/#81 |
-| stored-prefix return and induction synthesis | complete RL authorial candidate with independently checked subunits |
-| general multigraph outer shell | independently assured conditional theorem |
-
-## 7. Global endpoint
-
-The strongest defensible current status is:
-
-`MIXED-ASSURANCE GLOBAL BASELINE / SUBSTANTIAL INDEPENDENTLY ASSURED MATHEMATICS / COMPLETE V9 AUTHORIAL CANDIDATE / COMPONENT-CHAIN REVIEW ACTIVE / FIVE-SUPPORT THEOREM NOT INDEPENDENTLY ACCEPTED`.
-
-No Lean, manuscript, publication, release, arXiv, DOI, novelty, priority or `main` movement follows.
+No Lean, manuscript, publication, release, arXiv, DOI or `main` movement follows.
