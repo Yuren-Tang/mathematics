@@ -1,72 +1,190 @@
 # AffineCDC supersession and correction ledger
 
-Supersession changes current control; it does not erase valid lemmas, finite certificates, discovery history, or priority records.
+Supersession changes current control; it does not erase valid lemmas, finite certificates, discovery history, priority records or exact counterexamples.
 
-## 1. Programme A Audit A repairs
+## 1. Programme A
 
-The Seymour graph convention, complete A4 reverse local-family proof, and historical status of the old Tutte route remain `CLOSED / EXPOSITORY-REPAIR / NO-THEOREM-CHANGE`.
+The Seymour convention, complete A4 converse and noncontrolling old Tutte route remain closed explicitness repairs. Programme A ordinary CDC truth is unchanged.
 
-## 2. Full dual versus old-colour quotient
+## 2. Source-fidelity correction
 
-$T_g^{(1)}\to\mathscr A_5$ classifies componentwise same-embedding compression. $J_g$ is only the old-colour-factorable quotient. Factorable failure is not full-dual failure.
+The fixed-dimensional orthogonal packet is retained as theorem/mechanism provenance. The arbitrary-rank `Gamma+Gamma* / d_h(a) / O+(2r,2)` tower is a separate source-unreconstructed proposition and is superseded by the sharp `q-2` theorem and deleted permutation module.
 
-## 3. Orthogonal source-fidelity correction
+Packet accounting remains
 
-### Retracted attribution
+$$39+10+18+10+1=78.$$
 
-The statement that `FIVE_CDC_UNIVERSAL_ORTHOGONAL_ROOT_LIFT_V1.md` itself asserted a universal arbitrary-rank $2r$ complete-root theorem is superseded and withdrawn.
+Independent verification: `ea8ec33d...`.
 
-### Exact packet retained
+## 3. B3--B8 corrections retained
 
-The packet at blob `2043ada9d28789ecc5f4f0028e62133f37835bc1` remains
+Still controlling:
 
-`RETIRED / THEOREM-LEVEL HISTORICAL SOURCE / EXACT RANK-THREE-EIGHT-SUPPORT AND FIVE-SLICE SCOPE`.
+- full dual is not old-colour quotient;
+- connected switch is one horizontal edge, disconnected support a path;
+- `7737` composite endpoints are not `2801` one-step neighbours;
+- a support pivot supplies one lift, not a whole fibre;
+- cap forcing is not full-cap containment;
+- routing transitions require source realization;
+- BBD simultaneous origin requires `AC-RL-BBD-GROUPOID-CLOSURE`;
+- a nontrivial defect forest requires `AC-RL-BBD-VARIATION-SLICE`;
+- scalar-sheet cuts and finite potentials are not yet source-localised composition theorems.
 
-It controls historical provenance for $H_8$, the Hamming kernel and moment map, $O^+(6,2)$, twenty-eight roots, rank-three compatible lifts, and five-coordinate $O^-(4,2)$ slices.
+## 4. Old PDL complete-draft status superseded
 
-### Separate proposition superseded
+The snapshot
 
-The arbitrary-rank $\Gamma\oplus\Gamma^*$ / $d_h(a)$ / $O^+(2r,2)$ tower is a separate non-packet item:
+`proof-development/affine-cdc-rigour-v1@1f57422e0e415d8902d56eb294183815c0a0b640`
 
-`SOURCE-UNRECONSTRUCTED / INFERRED-EXTRAPOLATION OR UNCOMMITTED DRAFT / MATHEMATICALLY REFUTED BY B2.3`.
+is superseded as an active complete proof.
 
-It is superseded mathematically by:
+Independent audits established:
 
-- $\dim V\ge q-2$;
-- the deleted permutation module of dimension $q-2$;
-- impossibility of dimension $2r$ for $r\ge4$;
-- rank-three exceptionality.
+- R0/R1/R2.1/R2.2 accepted;
+- R2.3 missing-index entrance blocked;
+- R2.4 physical six-port promotion blocked;
+- finite seam/genealogy subunits retained in narrower scope;
+- old resolved-relation/no-sink rank blocked, with finite countermodels;
+- cap inherited-flow and exit-consumer interfaces blocked;
+- general outer shell accepted conditionally.
 
-The genuine all-rank transgression/residue hierarchy remains valid and distinct.
+The full-draft label does not survive these audits.
 
-## 4. B3 target and matching repairs
+## 5. Arbitrary terminal flow superseded
 
-The actual half-cube link, capacity, and eight-vertex packets remain valid. The matching orbit sizes $28,168,224$ remain valid; the all-parallel representative $\{05,14,23\}$ is replaced by $\{01,23,45\}$.
+### Old inference
 
-## 5. Factorable, switch, and interface corrections
+A terminal graph has some root flow, therefore a witnessed contextual call beginning at the inherited flow is complete.
 
-Unused-root/core/ideal-pivot claims remain old-colour-factorable. Connected switch support gives one horizontal edge; disconnected support gives a path. `7737` composite endpoints and `2801` one-step neighbours remain distinct. A support pivot supplies one lift, not the whole new fibre. Cap forcing is not full-cap containment, and abstract routing transitions require source path realization.
+### Supersession
 
-## 6. BBD and defect corrections
+Independent shell audit K-01 refutes the inference. Every active consumer must return from the exact inherited labels by an explicit move history.
 
-Individual-loop affine data remain theorem-level. Simultaneous origin is conditional on `AC-RL-BBD-GROUPOID-CLOSURE`. The original root cover is a zero-defect competitor in the stated variation domain, so a nontrivial defect-minimal forest is not active pending `AC-RL-BBD-VARIATION-SLICE`.
+### Current candidate
 
-## 7. Rank/curvature boundaries
+The v9 prescribed-parent and zero-parent component-chain route is an authorial repair, not yet independently accepted.
 
-Route lock implies neither a graph two-cut nor automatic flatness. Flatness yields an eight-state potential; nonflatness yields a common scalar-sheet cut with odd terminal parity. Source-cut localization and bounded-interface conclusions remain open under the four exact B7 obligations.
+## 6. Fixed-boundary reinsertion superseded
 
-## 8. Corrected packet accounting
+### Old inference
 
-The historical packet population is partitioned as
+Same exterior boundary after inverse insertion means the source already is the literal predecessor parent.
 
-$$
-39+10+18+10+1=78.
-$$
+### Correction
 
-There is no packet-wide false-theorem class. The unreconstructed extrapolation is outside the packet count.
+The pop yields a predecessor-order state with a target topology field. Equality/good-disjoint/missing-index rows may lie on alternative local topologies.
 
-## 9. Assurance non-supersession
+### Replacement
 
-Programme A’s theorem spine and Audit A status, B1 and B3–B8 mathematics, the six frontier obligations, B9 exclusion, Lean, manuscript, publication, release, arXiv, DOI, novelty, timestamp, and canonical `main` status are unchanged.
+Same-order target normalization before crossing the next stored source NNI.
 
-The source-fidelity-repaired candidate requires a separately bounded B2/B8 re-audit. Curator correction is not independent acceptance.
+## 7. Horizontal-only SCC and finite-rank routes superseded
+
+The following are noncontrolling:
+
+- token-only sink-SCC conclusion;
+- horizontal SCC distance as source progress;
+- automatic no-sink in a finite saturated parent relation;
+- `d_N` defined from terminal reachability before terminal reachability is proved;
+- child-prefix, mark-count or nested-bubble rank shortcuts.
+
+Retained local histories and macros remain usable only with a proved physical rank and exact state maps.
+
+The v9 proposal replaces these by one retained physical component-chain path, pending #80/#81.
+
+## 8. `Omega` plateau master superseded
+
+The local two-triangle energy shift does not control the whole exterior switch component or transport orbit minima. The `G_14` witness remains active.
+
+Retained:
+
+- local coefficient rows;
+- strict ambient NNI trichotomy;
+- residual route contradiction;
+- exact source movie.
+
+Not retained:
+
+- unconditional exterior-orbit energy transport;
+- `Omega` minimum as a total selector.
+
+## 9. `Xi` totality superseded
+
+Independent audit `53be22a0...` refutes the universal arbitrary-equal-face route-or-split theorem by the same-arc Heawood witness.
+
+Retained independently:
+
+- frame uniqueness;
+- whole-component `Xi` invariance;
+- six distinct-neighbour strict rows;
+- bad-free contradiction;
+- literal local move contracts.
+
+Current repair candidate:
+
+- select a physical connector between the actual marked arcs and contract a fixed-channel chain;
+- status `RL-AUTHORIAL / #80/#81 ACTIVE`.
+
+## 10. Zero-parent omission superseded
+
+A co-root theorem does not complete the inverse-parent table. The zero word `(13,13,23,23)` and central zero require a separate `(0,2,2)` theorem.
+
+Old arbitrary recolouring, `2--0`, remote equal-face and lower-order shortcuts are noncontrolling.
+
+Current candidate:
+
+- `PURE_NNI_ZERO_PARENT_ESCAPE_MASTER_THEOREM_V1.md@02b374...`;
+- component-chain return plus crossed-sheet alignment, one closed `H_35` switch and literal parent NNI;
+- not independently accepted.
+
+## 11. Track-erasure scope
+
+Valid cellwise seams and constant-run root sections remain. Invalid inference:
+
+`track disappears` therefore `target reached` or `rank strictly decreases`.
+
+Active-central-mark lineage and literal endpoints remain necessary. Track replacement is a stored-prefix consumer, not the component-chain totality theorem.
+
+## 12. C6/C8 and annulus supersession
+
+Local C6/C8 charts, bounded movies and equality-annulus theorems remain optional mathematics.
+
+Not controlling:
+
+- simultaneous global star sections;
+- a compatible annular history as one cubic source state;
+- global annulus/tube filling as the shortest proof route;
+- fixed Tait-response compression as complete root-profile transfer.
+
+## 13. Generic marked-weld return superseded
+
+The inverse weld is root-valued if the exact ordered word `(z,z,w,w)` is preserved. The generic multiply-relative theorem `MWR` was a sufficient target, not a proved theorem.
+
+Current v9 route uses complete prescribed-parent states and concrete channel returns rather than assuming generic weld extrusion.
+
+## 14. Component-chain status
+
+The v9 theorem is the active authorial replacement for the co-root/zero totality interface. It does not supersede negative witnesses until #80/#81 prove that its hypotheses and source maps avoid them.
+
+Status switch:
+
+- pass → independently supported component at exact returned SHAs;
+- bounded repair → repaired exact theorem controls;
+- material failure → theorem retained as failed candidate and interface returns to frontier.
+
+## 15. OR1 repairs
+
+OR1 is independently supported subject to:
+
+- reverse `rho` orbits paired by `sigma` for one geometric face occurrence;
+- Petrial-word coset, not surface-isomorphism classification;
+- local definition of code-theoretic notation;
+- ambient-rank-three wording for `K_4`;
+- explicit once-in-each-direction convention;
+- explicit loop-dart and non-Lean boundary.
+
+These repairs do not prove global oriented existence.
+
+## 16. Assurance non-supersession
+
+No authorial repair retroactively changes an audit result. No Curator integration creates independent review, Lean, manuscript, release, publication, arXiv, DOI, novelty, priority, timestamp or `main` status.
