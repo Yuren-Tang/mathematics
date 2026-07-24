@@ -1,83 +1,78 @@
 # Questions for external reviewers
 
-## 1. Inherited physical-chain fidelity
+## 1. Terminal-component exhaustion in the two applications
 
-Let
+For the co-root marked-arc carrier and the zero-parent terminal-path carrier, prove or refute:
 
-$$
-X_0,X_1,\ldots,X_\ell
-$$
+> the distinguished two terminal paths are the only terminal path components of the relevant fixed channel, and every other nontrivial channel component is closed.
 
-be the selected shortest path in the channel quotient, with each quotient edge represented by one fixed physical non-channel edge.
+Give exact hypotheses on cuts, active-cell deletion, graph category, cap position and stable darts. The known third-terminal-path Heawood witness must either violate a named application hypothesis or remain a counterexample.
 
-After the root NNI contracting $X_0X_1$:
+## 2. Generalized contraction through an internal terminal path
 
-- do the exact representatives of $X_1X_2,\ldots,X_{\ell-1}X_\ell$ survive;
-- are their endpoints still in the claimed successor components;
-- can a local reconnection merge, split or reroute a later component so that the retained path no longer exists;
-- does the proof use inheritance of one path or silently recompute a new shortest path?
+Suppose a shortest quotient chain has an internal terminal path $X_1$. Is there a legal source move or alternative rank that:
 
-A counterexample here would materially defeat the current rank.
+- preserves the identities and terminal dart sets of $P_0,P_1$;
+- does not split either distinguished path;
+- transforms or removes $X_1$;
+- retains a strictly smaller physical witness;
+- preserves cap, route, category, parent and prefix data?
 
-## 2. Active/active local transition and final matching
+The audited first root NNI fails this test. A repair must address the exact witness, not choose a new chain silently.
 
-For every pair of active endpoint triangles joined by a non-channel edge:
+## 3. Universal co-root return
 
-- enumerate the legal NNI pairings;
-- identify which pairing is root-valued;
-- verify its effect on the two local $H_h$ passages;
-- treat equal endpoint triangles without using the zero branch;
-- prove that the last connector between two terminal paths changes their perfect matching.
+The local `6-7:23` Heawood movie is independently verified. Determine whether every category-safe co-root carrier has:
 
-Is there a source configuration in which the root-valued alternative preserves the terminal matching or fails to merge the intended components?
+- exactly the required two-arc geometry;
+- a physical connector leading to separation or the opposite cap-compatible route;
+- an exhaustive named consumer for every disconnected/category outcome.
 
-## 3. Co-root marked-arc totality
+A positive model or the six strict `Xi` rows are insufficient for totality.
 
-The same-arc Heawood witness refutes selection of an arbitrary equal face. Does the full physical quotient construction always provide a finite connector path between the two marked arcs in every category-safe co-root lock?
+## 4. Universal zero-parent return
 
-Check especially:
+The exact `H_35` Heawood movie is independently verified. Determine whether every `(0,2,2)` carrier admits:
 
-- whether cutting the marked edges can create a disconnected carrier not covered by a named terminal;
-- whether inactive vertices or closed channel cycles can shield the arcs;
-- whether the final connector can lie at or cross the active parent cell or cap;
-- whether the route/cap consumer after matching change is literally applicable.
+- a universal crossed-matching step;
+- zero or one legal root-sheet alignment;
+- one closed `H_35` component switch;
+- the literal parent NNI with root `35`;
+- preservation of all inherited labels, darts, cap and prefix.
 
-## 4. Zero-parent terminal-path return
+Look especially for carriers with more than two terminal paths.
 
-In the `(13,13,23,23)` row:
+## 5. Alternative source-faithful return
 
-- is the carrier after deleting the active cell connected under exactly the stated category hypotheses;
-- does the chain always reach a crossed outside matching;
-- can the crossed-sheet alignment be achieved by zero or one legal root branch swap;
-- is the selected `H_35` support component closed and switchable;
-- does the resulting word always admit the literal parent NNI with root `35`;
-- are all exterior darts, support names, cap and stored-prefix maps unchanged?
+Can one bypass component chains entirely while respecting the permanent prohibitions?
 
-A smallest exceptional four-port carrier is particularly valuable.
+A valid alternative may not use:
 
-## 5. End-to-end integration and assurance
+- arbitrary equal-face `Xi` totality;
+- exterior-orbit `Omega` minima;
+- generic root-flow connectivity;
+- SCC/no-sink distance;
+- track erasure as progress;
+- existential lower-flow recolouring;
+- an untraced marked-weld theorem.
 
-Assuming the standalone chain theorem, does the entire ordinary-induction candidate follow without another gap?
+Specify the exact well-founded rank and all return maps.
 
-Audit:
+## 6. End-to-end integration after a repair
 
-- exact output type of every chain/category branch;
-- exhaustive terminal consumption;
-- target-topology normalization after the one pop;
-- active-central-mark lineage in seam/run return;
-- no reset between component-chain length, target distance and stored prefix;
-- one and only one lower-order call;
-- compatibility with the independently accepted general outer shell.
+Only after one singular-parent return is proved, audit:
 
-State separately:
-
-1. the standalone chain verdict;
-2. each co-root/zero corollary verdict;
-3. the full integration verdict.
+- complete root/co-root/zero inverse table;
+- exhaustive category/route/cap consumers;
+- target-topology normalization after the pop;
+- active-mark lineage in seam/run return;
+- no rank reset;
+- exactly one lower-order call;
+- compatibility with the accepted outer shell.
 
 ## Desired response format
 
-For each question return one of:
+For each item return one of:
 
 - `VERIFIED IN EXACT SCOPE`;
 - `VERIFIED SUBJECT TO NAMED LOCAL REPAIR`;
@@ -85,4 +80,4 @@ For each question return one of:
 - `COUNTEREXAMPLE`;
 - `DEPENDENCY NOT ASSURED`.
 
-Name the smallest configuration, exact source lines/files, and any finite certificate required.
+Name the smallest configuration, exact source/ref and any certificate digest.
