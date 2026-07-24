@@ -2,98 +2,77 @@
 
 ## 1. Exact rebaseline
 
-- exact base: `curation/affine-cdc-programme-a-b1-b8-source-fidelity-v1@f4d6f801fac69746ca0b2ce9351735a43c79b482`;
-- current branch: `curation/affine-cdc-global-rebaseline-v2`;
+- branch: `curation/affine-cdc-global-rebaseline-v2`;
+- exact base: `f4d6f801fac69746ca0b2ce9351735a43c79b482`;
 - source-fidelity audit: `ea8ec33d49294ac31a53f46aed7a62c7b9b81908`;
-- v9 authorial source: `02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`;
-- current PDL/audit controls: workbench #80/#81.
+- failed chain source/reconstruction: `02b37476198e9eaa2b4cd8d2a2edd76782bdcd49` / `e36ba22f09e3a9fc6358f3b03615f8fde6c00d96`;
+- controlling chain audit: `a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`.
 
 ## 2. Primary entrypoints
 
 - `README.md`;
 - `CURRENT_BEST.md`;
+- `GLOBAL_REBASELINE_V2_ASSURANCE_MATRIX.md`;
 - `MATHEMATICAL_ARCHITECTURE.md`;
 - `THEOREM_DEPENDENCY_MAP.md`;
-- `FORMAL_STATUS.md`;
-- `GLOBAL_REBASELINE_V2_ASSURANCE_MATRIX.md`;
-- `five-support/current-proof-spine.md`;
-- `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`.
-
-External reviewers start at `external-review/ENTRYPOINT.md`.
-
-## 3. Tier-I surface
-
-### Programme A
-
-The complete ordinary CDC theorem remains independently audited in its exact scope, with closed explicitness repairs and no theorem change.
-
-### Source fidelity
-
-The B2/B8 repair is independently verified. The valid orthogonal packet remains fixed-dimensional theorem/mechanism provenance. The source-unreconstructed arbitrary-rank tower remains outside the packet count and mathematically superseded by `q-2`.
-
-### Five-support accepted units
-
-Active independent units:
-
-- R0 definitions/root-flow semantics;
-- R1 one-cross structural reduction;
-- R2.1 finite boundary-route core;
-- R2.2 finite Morse tables;
-- repaired finite seam and ordered-genealogy subinterfaces;
-- conditional general multigraph outer shell;
-- exact negative results from audits #68--#70 and #78.
-
-### OR1
-
-OR1 is active as independently verified subject to D1--D6. It is an orientation refinement, not a proof of global oriented existence.
-
-## 4. Tier-II surface
-
-Read:
-
 - `five-support/current-proof-spine.md`;
 - `five-support/component-chain-candidate.md`;
-- `five-support/authorial-candidate-and-frontier.md`.
+- `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`.
 
-These integrate the frozen v9 RL authorial candidate without copying its source tree. The component-chain theorem and both singular-fibre corollaries remain under active reconstruction/review.
+## 3. Tier-I active surface
 
-## 5. Tier-III surface
+- Programme A ordinary CDC line;
+- source-fidelity-repaired B1--B8 corpus;
+- audited one-cross prefix and finite core;
+- repaired local seams/genealogy;
+- conditional general outer shell;
+- OR1 after D1--D6;
+- permanent `Xi` and old-candidate negatives;
+- independently recomputed component-channel local rows and final two-path matching table;
+- exact co-root/zero models;
+- third-terminal-path counterexample.
 
-- issue #80 PDL reconstruction;
-- issue #81 focused audit;
-- `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`;
-- `COMPONENT_CHAIN_ANTECEDENT_MAP.md`;
-- six BBD/localisation obligations;
-- two OR1 existence obligations.
+## 4. Failed candidate surface
 
-A future counterexample is added here and propagated through the theorem DAG; it does not erase unrelated Tier-I mathematics.
+The v9 RL theorem and PDL reconstruction remain active only as:
 
-## 6. Preserved B1--B8 surface
+`FAILED CANDIDATE / REPAIR PROVENANCE`.
 
-The source-fidelity base remains active for:
+The general chain, universal co-root/zero corollaries and end-to-end induction are not theorem-level current mathematics.
 
-- B1 object/quantifier scope;
-- B2 witness hierarchy and orthogonal correction;
-- B3 full-dual/factorable target distinction;
-- B4 vertical/horizontal motion;
-- B5 four-pole/cap/routing interfaces;
-- B6 corrected holonomy/atom theory;
-- B7 rank/curvature/localisation;
-- B8 finite assurance.
+## 5. Tier-III active frontier
 
-The v9 one-cross route is an additional authorial candidate and does not silently supersede every B3--B9 programme obligation.
+Controlling implication:
 
-## 7. Assurance-preserving exclusions
+`AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION`.
 
-Not active theorem sources merely by presence:
+Required alternatives:
 
-- the old PDL complete draft `1f57422...`;
+- prove exactly-two-terminal-path application geometry;
+- handle internal terminal paths without losing distinguished darts;
+- replace the component-chain return.
+
+The permanent falsification surface is `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`.
+
+## 6. Preserved B1--B8 and OR1 frontiers
+
+All B3--B8 theorem/correction boundaries and six named Research Lead obligations remain unchanged. OR1 retains two global existence obligations. The failed one-cross theorem closes none of these.
+
+## 7. Tier-IV pointers
+
+Lean, manuscript, workbench, audit, release, arXiv and DOI surfaces are pointers only. The exact Lean anchor remains `Yuren-Tang/affine-cdc:main@ebd7098...`.
+
+## 8. Assurance exclusions
+
+Not active theorem authority merely by existence:
+
+- old PDL complete draft `1f57422...`;
+- v9 RL source or PDL reconstruction;
 - moving RL/PDL tips;
-- B9 working-ahead material;
 - manuscript prose;
-- Lean code outside its exact checked statements;
+- partial Lean implementations;
 - issue comments without exact source/audit refs.
 
-## 8. Global status
+## 9. Global status
 
-`GLOBAL REBASELINE ACTIVE / MIXED ASSURANCE EXPLICIT / COMPONENT-CHAIN STATUS SWITCH OPEN / FIVE-SUPPORT THEOREM NOT INDEPENDENTLY ACCEPTED`.
+`GLOBAL REBASELINE ACTIVE / MIXED ASSURANCE EXPLICIT / GENERAL COMPONENT-CHAIN SCOPE REFUTED / TERMINAL-EXHAUSTION FRONTIER OPEN / FIVE-SUPPORT THEOREM NOT INDEPENDENTLY ACCEPTED`.
