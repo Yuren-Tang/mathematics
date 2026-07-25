@@ -1,0 +1,25 @@
+{
+  "batch_id": "PORT-AC-CONSOLIDATE-01",
+  "source_id": "ac-xi-negative",
+  "source_ref": "Yuren-Tang/mathematics:audit/affine-cdc-xi-co-root-v1@53be22a0f65b85068b11e5f781579618967db9dd",
+  "file_coverage": [
+    "AUDIT_REPORT.md",
+    "finite/local Xi recomputation report",
+    "SOURCE_MOVIE_AND_SCOPE_LEDGER.md"
+  ],
+  "items": [
+    {"source_item":"canonical support frame and literal/current support distinction","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.xi-frame-invariant"]},
+    {"source_item":"tau_14 images and whole-component Xi invariance including cap/exterior vertices","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.xi-frame-invariant"]},
+    {"source_item":"six strict distinct-neighbour rows with Delta Xi=-2","disposition":"attached-computation","units":["math.graph-theory.cycle-covers.xi-six-strict-rows"]},
+    {"source_item":"bad-free route contradiction","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.xi-bad-free-route-contradiction"]},
+    {"source_item":"literal source move interfaces and nonlocked terminal consumers","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.terminal-cut-bounded-consumers","math.graph-theory.cycle-covers.conditional-singular-parent-moves"]},
+    {"source_item":"universal equal-neighbour route-or-split theorem","disposition":"attached-counterexample","units":["math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality"]},
+    {"source_item":"same-arc Heawood source movie at equal face 9-14:23","disposition":"attached-counterexample","units":["math.graph-theory.cycle-covers.xi-same-arc-counterexample"]},
+    {"source_item":"conditional N-step Xi descent bound","disposition":"attached-provenance","units":["math.graph-theory.cycle-covers.xi-six-strict-rows","math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality"]},
+    {"source_item":"smallest same-arc repair surface","disposition":"created-new-unit","units":["math.graph-theory.cycle-covers.xi-same-arc-escape-question"]},
+    {"source_item":"zero-parent row explicitly excluded","disposition":"attached-provenance","units":["math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality","math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion"]},
+    {"source_item":"no candidate/source/canonical mutation","disposition":"non-mathematical-control","units":[]}
+  ],
+  "counts": {"substantive_items":11,"classified":11,"unclassified":0,"remaining_unclassified_source_packets":0},
+  "epistemic_guard":"The audit independently establishes the frame, invariant, strict rows, contradiction, and exact same-arc counterexample. It does not establish Xi totality, a repaired universal escape, zero-parent closure, or five-CDC."
+}
