@@ -1,0 +1,46 @@
+{
+  "view_id": "frontier.five-cdc",
+  "title": "Five-CDC frontier view",
+  "view_type": "frontier",
+  "goal_unit": "math.graph-theory.cycle-covers.five-support-goal",
+  "status": "OPEN / NO ACCEPTED PROOF",
+  "proof_route": [
+    {"unit":"math.graph-theory.cycle-covers.root-boundary-finite-core","status":"established-in-scope"},
+    {"unit":"math.graph-theory.cycle-covers.single-pop-algebra","status":"established-in-scope"},
+    {"unit":"math.graph-theory.cycle-covers.complete-post-pop-state","status":"supported interface"},
+    {"unit":"math.graph-theory.cycle-covers.one-atom-complete-endpoint","status":"OPEN FIRST MISSING EDGE"},
+    {"unit":"math.graph-theory.cycle-covers.inverse-parent-value-trichotomy","status":"established-in-scope downstream"},
+    {"unit":"math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path","status":"established-in-scope downstream"},
+    {"unit":"math.graph-theory.cycle-covers.conditional-singular-parent-moves","status":"established-in-scope conditional downstream"},
+    {"unit":"math.graph-theory.cycle-covers.connector-prefix-no-reset","status":"established-in-scope conditional downstream"},
+    {"unit":"math.graph-theory.cycle-covers.general-multigraph-outer-shell","status":"established-in-scope conditional suffix"}
+  ],
+  "exact_open_questions": [
+    "math.graph-theory.cycle-covers.disjoint-second-failure-avoidance",
+    "math.graph-theory.cycle-covers.single-pop-image-membership",
+    "math.graph-theory.cycle-covers.one-atom-complete-endpoint"
+  ],
+  "permanent_negative_boundaries": [
+    {"counterexample":"math.graph-theory.cycle-covers.disjoint-double-atom-obstruction","refuted":"math.graph-theory.cycle-covers.one-atom-prefix-scheduler","scope":"broad one-atom disjoint commuting step"},
+    {"counterexample":"math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample","refuted":"math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier","scope":"arbitrary rooted carriers"},
+    {"counterexample":"math.graph-theory.cycle-covers.xi-same-arc-counterexample","refuted":"math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality","scope":"arbitrary equal bad face selector"}
+  ],
+  "failed_candidate": "math.graph-theory.cycle-covers.v741-proof-candidate",
+  "assurance_guard": [
+    "The v7.4.1 packet is authorial and independently rejected as incomplete.",
+    "The double-atom and other local counterexamples do not refute the five-CDC conjecture.",
+    "Finite computations support only their exact enumerated scopes.",
+    "Conditional downstream theorems do not bridge the open one-atom endpoint edge."
+  ],
+  "external_review_entry": [
+    "math.graph-theory.cycle-covers.single-pop-image-membership",
+    "math.graph-theory.cycle-covers.disjoint-second-failure-avoidance"
+  ],
+  "legacy_compatibility_paths": [
+    "projects/affine-cdc/five-support/current-proof-spine.md",
+    "projects/affine-cdc/five-support/authorial-candidate-and-frontier.md",
+    "projects/affine-cdc/external-review/ENTRYPOINT.md",
+    "projects/affine-cdc/COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md"
+  ],
+  "nonduplication_rule": "The view is generated from unit IDs and typed relations; legacy files remain source/recovery surfaces during the observation window."
+}
