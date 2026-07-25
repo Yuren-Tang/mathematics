@@ -1,0 +1,359 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "PORT-AC-CONSOLIDATE-01",
+  "item_schema": "registry/schema/mathematical-unit.schema.json",
+  "units": [
+    {
+      "id": "math.graph-theory.cycle-covers.five-support-goal",
+      "title": "Five-support cycle-double-cover goal",
+      "summary": "Every finite bridgeless multigraph is conjectured to have a cycle double cover using at most five indexed even subgraphs; no proof is accepted.",
+      "form": "conjecture",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "v7.4.1 submitted proof candidate only",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+            "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+            "blob": null,
+            "anchor": null,
+            "role": "development"
+          }
+        },
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "refute",
+          "scope": "completeness of the submitted v7.4.1 proof, not the conjecture",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "1e7ee9d14608bfdd3524d588d96bfc3470654686",
+            "path": "audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md",
+            "blob": null,
+            "anchor": null,
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "open",
+      "workflow": "blocked",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+          "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+          "blob": null,
+          "anchor": null,
+          "role": "development"
+        },
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "1e7ee9d14608bfdd3524d588d96bfc3470654686",
+          "path": "audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md",
+          "blob": null,
+          "anchor": null,
+          "role": "review"
+        }
+      ],
+      "relations": [],
+      "views": ["programme.affine-cdc", "frontier.five-cdc"],
+      "notes": ["The full audit explicitly does not give a counterexample to five-CDC."]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.root-boundary-finite-core",
+      "title": "Root-flow and boundary finite core",
+      "summary": "R1 one-cross reduction, root/boundary finite arithmetic, and their exact finite tables survive independent review in their stated scopes.",
+      "form": "theorem",
+      "maturity": "assessed",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"R1 reduction and root/boundary finite arithmetic","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}}],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.single-pop-algebra",
+      "title": "Single-pop algebra and borrowing partition",
+      "summary": "The inverse-pop local algebra and the 180=120+60 borrowing partition are independently reproduced.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"single-pop local algebra and borrowing partition","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.complete-post-pop-state",
+      "title": "Complete post-pop prescribed-parent state interface",
+      "summary": "A complete labelled post-pop state retains source topology, target parent, ordered darts, cap, route, support transport, category, and stored-prefix ancestry.",
+      "form": "definition", "maturity": "assessed", "disposition": "supported", "workflow": "integrated",
+      "assurance": [{"kind":"authorial-argument","effect":"support","scope":"complete post-pop interface normal form","provenance":{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"}},{"kind":"independent-mathematical-review","effect":"support","scope":"complete closed-graph state reading used for application terminal census","provenance":{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.one-atom-identical-support-endpoint",
+      "title": "Identical-support one-atom endpoint",
+      "summary": "When the one co-root atom and next literal source step have identical support, the local move gives an immediate crossed-root endpoint.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"local one-atom critical-overlap scope retained by the full audit","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.one-atom-shared-vertex-macro",
+      "title": "Shared-vertex one-atom C5/C6 macro",
+      "summary": "The one-shared-vertex five-leaf C5/C6 macro, including zero rootification and adjacent two-co-root transient normalization, is retained in its stated local scope.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"local one-atom overlap macro in stated scope","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.one-atom-conditional-disjoint-commutation",
+      "title": "Conditional disjoint one-atom commuting square",
+      "summary": "Disjoint atom/source operations commute only when the literal predecessor is independently root-valued under the returned labels.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"authorial-argument","effect":"support","scope":"conditional disjoint square with explicit root-valued predecessor hypothesis","provenance":{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"}},{"kind":"independent-mathematical-review","effect":"qualify","scope":"unconditional disjoint continuation is false; only the conditional form survives","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.supplied-comparison-run-seam-coherence",
+      "title": "Run/seam coherence for supplied finite one-token comparisons",
+      "summary": "The v7.2 run/seam machinery compiles an already supplied finite one-token comparison; it does not supply arbitrary continuation or target progress.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"coherence for a supplied finite comparison only","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.one-atom-prefix-scheduler",
+      "title": "Prefix-directed one-atom lexicographic scheduler",
+      "summary": "The proposed (L,mu) scheduler claimed unconditional deletion of a disjoint head source step; the double-atom certificate refutes that scope.",
+      "form": "heuristic", "maturity": "assessed", "disposition": "refuted-in-scope", "workflow": "closed",
+      "assurance": [{"kind":"authorial-argument","effect":"support","scope":"withdrawn v1 scheduler proposal","provenance":{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"}},{"kind":"computation","effect":"refute","scope":"disjoint returned labels can make the literal predecessor co-root-valued and create a second persistent atom","provenance":{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"}},{"kind":"independent-mathematical-review","effect":"refute","scope":"universal one-atom continuation needed by the candidate","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.disjoint-double-atom-obstruction",
+      "title": "Disjoint double-atom Heawood obstruction",
+      "summary": "A labelled Heawood state with one co-root atom and a disjoint next literal NNI creates a second persistent co-root atom under returned labels.",
+      "form": "counterexample", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"computation","effect":"refute","scope":"broad one-atom prefix scheduler and complete-state totality on the displayed input class","provenance":{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/ONE_ATOM_DISJOINT_PREFIX_STEP_DOUBLE_ATOM_COUNTERCERTIFICATE_V1.md","blob":null,"anchor":null,"role":"counterexample"},"notes":["certificate digest dd4afccb8578e3ab8e48c33bddaad39e763f18dac398fe8e2d83e80ceeb57aea"]}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/ONE_ATOM_DISJOINT_PREFIX_STEP_DOUBLE_ATOM_COUNTERCERTIFICATE_V1.md","blob":null,"anchor":null,"role":"counterexample"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.disjoint-second-failure-avoidance",
+      "title": "Disjoint second-failure avoidance",
+      "summary": "From one standard co-root atom and a disjoint next source NNI whose predecessor is non-root-valued, produce an exact endpoint/terminal without two persistent atoms, or prove genuine single-pop ancestry excludes the state.",
+      "form": "problem", "maturity": "formulated", "disposition": "open", "workflow": "blocked",
+      "assurance": [{"kind":"authorial-argument","effect":"inconclusive","scope":"smallest exact missing implication after the corrected RL return","provenance":{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.single-pop-image-membership",
+      "title": "Genuine single-pop image membership of the double-atom witness",
+      "summary": "It is unresolved whether the displayed Heawood obstruction lies in the genuine missing-index single-pop image with all required ancestry fields.",
+      "form": "question", "maturity": "captured", "disposition": "open", "workflow": "ready-for-review",
+      "assurance": [{"kind":"authorial-argument","effect":"inconclusive","scope":"ancestry/image-membership alternative in the corrected frontier","provenance":{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"],
+      "notes": ["Captured for external review; no positive or negative disposition is inferred."]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier",
+      "title": "Broad rooted-carrier component-chain claim",
+      "summary": "The broad theorem omitted third terminal paths as internal quotient nodes and is false in that scope.",
+      "form": "claim", "maturity": "assessed", "disposition": "refuted-in-scope", "workflow": "closed",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"refute","scope":"arbitrary rooted carriers with more than two terminal paths","provenance":{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","blob":null,"anchor":null,"role":"counterexample"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","blob":null,"anchor":null,"role":"counterexample"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample",
+      "title": "Third-terminal-path component-chain counterexample",
+      "summary": "The h=14 six-terminal Heawood carrier has a shortest chain through a third terminal path; the first NNI splits the original terminal pair and no inherited length-one chain remains in 36 category-safe outputs.",
+      "form": "counterexample", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-reproduction","effect":"refute","scope":"universal inherited-chain conclusion for arbitrary rooted carriers","provenance":{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","blob":null,"anchor":null,"role":"counterexample"},"notes":["digest d24c63ab56320803b9c795ac08389674b6f67edf89dc5c4ef9a729c5436a3e61"]}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","blob":null,"anchor":null,"role":"counterexample"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.component-chain-local-tables",
+      "title": "Component-chain local contraction and final-matching tables",
+      "summary": "Inactive-singleton and path-plus-closed-cycle contractions, stable connector inheritance, equal/distinct endpoint root rows, and 84 ordered final-matching cases are independently reproduced.",
+      "form": "computation", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-reproduction","effect":"support","scope":"local row/dart and exact two-path final-matching tables","provenance":{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","blob":null,"anchor":null,"role":"counterexample"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","blob":null,"anchor":null,"role":"counterexample"},{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path",
+      "title": "Exact-two-terminal-path component-chain theorem",
+      "summary": "For a connected application carrier with exactly two terminal channel paths and all other nontrivial channel components closed, one fixed connector list contracts to a changed terminal matching without rank reset.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"exact-two-terminal-path hypothesis and retained local rows","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}},{"kind":"independent-mathematical-review","effect":"support","scope":"application carriers satisfy the terminal hypothesis","provenance":{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","blob":null,"anchor":null,"role":"review"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"},{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","blob":null,"anchor":null,"role":"counterexample"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.co-root-terminal-exhaustion",
+      "title": "Co-root application terminal exhaustion",
+      "summary": "Cutting the two nonadjacent marked channel edges in the complete co-root application creates exactly four terminals, exactly two ordered marked arcs, and only closed remaining channel components.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"genuine co-root application scope","provenance":{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","blob":null,"anchor":null,"role":"review"},{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion",
+      "title": "Zero-parent application terminal exhaustion",
+      "summary": "Deleting the active two-vertex zero-parent cell exposes exactly four H_35 branch terminals and exactly two terminal paths; other channel components are closed.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"genuine zero-parent application scope","provenance":{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","blob":null,"anchor":null,"role":"review"},{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.co-root-connector-6-7-model",
+      "title": "Co-root 6-7 route-changing connector model",
+      "summary": "The stable edge 6-7:23 realizes a root NNI changing route (1,2)|(3,6) to (1,3)|(2,6) in the exact Heawood model.",
+      "form": "example", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-reproduction","effect":"support","scope":"one explicit connector between the actual marked arcs; not a universal selector","provenance":{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","blob":null,"anchor":null,"role":"counterexample"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","blob":null,"anchor":null,"role":"counterexample"},{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.zero-parent-h35-model",
+      "title": "Zero-parent H35 Heawood return model",
+      "summary": "The exact Heawood movie reaches a crossed matching, switches one closed H_35 component, obtains (15,13,25,23), and performs the literal parent NNI with root 35.",
+      "form": "example", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-reproduction","effect":"support","scope":"explicit zero-parent model only","provenance":{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","blob":null,"anchor":null,"role":"counterexample"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","blob":null,"anchor":null,"role":"counterexample"},{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.inverse-parent-value-trichotomy",
+      "title": "Inverse-parent value trichotomy",
+      "summary": "The prospective parent central value has support size 0, 2, or 4, giving exactly zero, root, or co-root cases.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"algebraic exhaustiveness of root/co-root/zero table","provenance":{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","blob":null,"anchor":null,"role":"counterexample"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","blob":null,"anchor":null,"role":"counterexample"},{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.conditional-singular-parent-moves",
+      "title": "Conditional co-root and zero prescribed-parent moves",
+      "summary": "Once a complete root-valued prescribed-parent endpoint is reached, the co-root and zero singular-fibre moves return the literal parent or an exact terminal in their audited application scopes.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"conditional on complete root endpoint realization","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.connector-prefix-no-reset",
+      "title": "Connector/prefix no-rank-reset protocol",
+      "summary": "With stored-prefix length L fixed, one application carrier and connector list C are chosen once; each local step lowers C, and only literal parent success lowers L.",
+      "form": "method", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"(L,C) protocol in the exact application domain","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.one-atom-complete-endpoint",
+      "title": "One-atom complete prescribed-parent endpoint",
+      "summary": "The missing load-bearing implication is arbitrary complete one-standard-co-root-atom state after the single pop to finite source-faithful complete root endpoint or exact terminal.",
+      "form": "problem", "maturity": "formulated", "disposition": "open", "workflow": "blocked",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"inconclusive","scope":"identified material missing theorem; no proof supplied","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"},{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","blob":null,"anchor":null,"role":"development"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.v741-proof-candidate",
+      "title": "v7.4.1 five-support proof candidate",
+      "summary": "The PDL packet is author-complete in its own presentation, but the full independent audit rejects completeness because the one-atom endpoint theorem is missing; audited local components remain separately retained.",
+      "form": "proof", "maturity": "assessed", "disposition": "scope-split", "workflow": "closed",
+      "assurance": [{"kind":"authorial-argument","effect":"support","scope":"submitted v7.4.1 end-to-end proof candidate","provenance":{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"}},{"kind":"independent-mathematical-review","effect":"refute","scope":"end-to-end completeness of the submitted candidate","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.terminal-cut-bounded-consumers",
+      "title": "Terminal, cut, and bounded consumers",
+      "summary": "Named K_i/cap, separating-channel, bridge, cyclic cut, low-port, theta, loop, parallel, triangle, and direct-matching consumers are retained in their exact hypotheses.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"named terminal/cut/bounded consumers in stated scopes","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"},{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.general-multigraph-outer-shell",
+      "title": "Conditional general-multigraph outer shell",
+      "summary": "A cubic five-support theorem implies the general finite bridgeless multigraph statement by fixed-index expansion, memberwise cut-even collapse, and loop reinsertion.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"conditional implication only; does not bridge the cubic gap","provenance":{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","blob":null,"anchor":null,"role":"development"},{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.xi-frame-invariant",
+      "title": "Fixed-channel Xi frame and whole-component invariant",
+      "summary": "The canonical support frame, tau_14 transport, and whole-component Xi invariance including cap/exterior vertices are independently verified.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"fixed-channel co-root scope","provenance":{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","blob":null,"anchor":null,"role":"counterexample"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","blob":null,"anchor":null,"role":"counterexample"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.xi-six-strict-rows",
+      "title": "Six strict distinct-neighbour Xi rows",
+      "summary": "All six distinct-neighbour rows have a unique root-valued opposite pairing and Delta Xi=-2.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-reproduction","effect":"support","scope":"six exact local rows","provenance":{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","blob":null,"anchor":null,"role":"counterexample"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","blob":null,"anchor":null,"role":"counterexample"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.xi-bad-free-route-contradiction",
+      "title": "Xi bad-free route contradiction",
+      "summary": "Without the four bad vertex types, an H_14 path from boundary root 12 cannot reach boundary root 34, contradicting the selected full-channel route.",
+      "form": "theorem", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"support","scope":"bad-free trapping argument","provenance":{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","blob":null,"anchor":null,"role":"counterexample"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","blob":null,"anchor":null,"role":"counterexample"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality",
+      "title": "Arbitrary-equal-face Xi totality",
+      "summary": "An arbitrary equal bad face need not change the marked route or split the marked component; the matching-only route-or-split inference is false.",
+      "form": "claim", "maturity": "assessed", "disposition": "refuted-in-scope", "workflow": "closed",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"refute","scope":"universal equal-neighbour source theorem","provenance":{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","blob":null,"anchor":null,"role":"counterexample"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","blob":null,"anchor":null,"role":"counterexample"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.xi-same-arc-counterexample",
+      "title": "Xi same-arc Heawood counterexample",
+      "summary": "In the frozen Heawood flow, equal face 9-14:23 has both marked edges on the same outside arc; the root branch swap preserves the route and all rescue systems remain locked.",
+      "form": "counterexample", "maturity": "assessed", "disposition": "established-in-scope", "workflow": "integrated",
+      "assurance": [{"kind":"independent-reproduction","effect":"refute","scope":"arbitrary-equal-face Xi totality","provenance":{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","blob":null,"anchor":null,"role":"counterexample"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","blob":null,"anchor":null,"role":"counterexample"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"]
+    },
+    {
+      "id": "math.graph-theory.cycle-covers.xi-same-arc-escape-question",
+      "title": "Same-arc equal-face escape question",
+      "summary": "The Xi audit isolated possible repair surfaces for same-arc equal faces; later application-scoped component-chain machinery bypasses the arbitrary-face selector without validating Xi totality.",
+      "form": "question", "maturity": "formulated", "disposition": "superseded", "workflow": "dormant",
+      "assurance": [{"kind":"independent-mathematical-review","effect":"inconclusive","scope":"possible repair surface, not an active theorem","provenance":{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","blob":null,"anchor":null,"role":"counterexample"}}],
+      "provenance": [{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","blob":null,"anchor":null,"role":"counterexample"},{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","blob":null,"anchor":null,"role":"review"}],
+      "relations": [], "views": ["programme.affine-cdc", "frontier.five-cdc"],
+      "notes": ["Retained as historical discovery knowledge rather than an active proof dependency."]
+    }
+  ],
+  "count": 33
+}
