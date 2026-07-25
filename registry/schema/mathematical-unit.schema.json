@@ -1,0 +1,216 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Yuren-Tang/mathematics/registry/schema/mathematical-unit.schema.json",
+  "title": "Natural mathematical unit",
+  "type": "object",
+  "required": [
+    "id",
+    "title",
+    "form",
+    "maturity",
+    "assurance",
+    "disposition",
+    "workflow",
+    "provenance"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^math\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$"
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "summary": {
+      "type": "string"
+    },
+    "form": {
+      "enum": [
+        "concept",
+        "definition",
+        "problem",
+        "question",
+        "conjecture",
+        "claim",
+        "theorem",
+        "construction",
+        "method",
+        "proof",
+        "example",
+        "counterexample",
+        "obstruction",
+        "heuristic",
+        "experiment",
+        "computation",
+        "connection"
+      ]
+    },
+    "maturity": {
+      "enum": [
+        "captured",
+        "formulated",
+        "tested",
+        "proof-sketch",
+        "author-complete",
+        "assessed"
+      ]
+    },
+    "assurance": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evidence"
+      },
+      "default": []
+    },
+    "disposition": {
+      "enum": [
+        "unassessed",
+        "open",
+        "supported",
+        "established-in-scope",
+        "refuted-in-scope",
+        "scope-split",
+        "conflicted",
+        "superseded"
+      ]
+    },
+    "workflow": {
+      "enum": [
+        "captured",
+        "active",
+        "blocked",
+        "ready-for-review",
+        "ready-for-integration",
+        "integrated",
+        "dormant",
+        "closed"
+      ]
+    },
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/provenance"
+      }
+    },
+    "relations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "views": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "$defs": {
+    "evidence": {
+      "type": "object",
+      "required": [
+        "kind",
+        "effect",
+        "scope",
+        "provenance"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "authorial-argument",
+            "computation",
+            "independent-reproduction",
+            "independent-mathematical-review",
+            "formal-kernel-check",
+            "source-fidelity-check",
+            "literature-check",
+            "external-review"
+          ]
+        },
+        "effect": {
+          "enum": [
+            "support",
+            "refute",
+            "qualify",
+            "inconclusive"
+          ]
+        },
+        "scope": {
+          "type": "string",
+          "minLength": 1
+        },
+        "provenance": {
+          "$ref": "#/$defs/provenance"
+        },
+        "assumptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "repository",
+        "commit",
+        "path",
+        "role"
+      ],
+      "properties": {
+        "repository": {
+          "type": "string",
+          "minLength": 1
+        },
+        "commit": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
+        },
+        "path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "blob": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "anchor": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "role": {
+          "enum": [
+            "origin",
+            "development",
+            "review",
+            "counterexample",
+            "formalization",
+            "manuscript",
+            "superseded-source",
+            "curation"
+          ]
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}
