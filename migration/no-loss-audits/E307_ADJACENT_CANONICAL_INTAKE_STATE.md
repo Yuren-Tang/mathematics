@@ -1,8 +1,8 @@
 # E307 adjacent canonical intake — architecture checkpoint
 
-**Workstream:** `E307-ADJACENT-CANONICAL-INTAKE`  
-**Authority:** `Yuren-Tang/research-workbench#15` comment `5080997896`  
-**Base:** `mathematics:main@b047efd5f43386f71dd9d2af1c9d5d531bd03163`  
+**Workstream:** `E307-ADJACENT-CANONICAL-INTAKE`
+**Authority:** `Yuren-Tang/research-workbench#15` comment `5080997896`
+**Base:** `mathematics:main@b047efd5f43386f71dd9d2af1c9d5d531bd03163`
 **Source slice:** `Yuren-Tang/erdos-306@6e2352eeccec3686e9c167cf2cd6c47c152e5560`, classified at `9bbcfae8360bce0871522e295f9aca903f64c780`
 
 ## Fixed architecture
