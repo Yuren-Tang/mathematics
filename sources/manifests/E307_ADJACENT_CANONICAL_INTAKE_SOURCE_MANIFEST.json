@@ -1,0 +1,59 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "E307-ADJACENT-CANONICAL-INTAKE",
+  "state": "architecture-checkpoint",
+  "authority": {
+    "control": "Yuren-Tang/research-workbench#15 comment 5080997896",
+    "writer": "MATH-CUR::local:/root/e307_curator_intake",
+    "branch": "curation/erdos-307-adjacent-v1",
+    "base": "b047efd5f43386f71dd9d2af1c9d5d531bd03163"
+  },
+  "policy": {
+    "mode": "additive-reversible",
+    "wholesale_merge": false,
+    "main_movement": false,
+    "source_repo_mutation": false,
+    "epistemic_upgrade": false,
+    "e307_solved_claim": false,
+    "literature_facet": "bounded-attribution-and-terminology-only"
+  },
+  "sources": [
+    {
+      "source_id": "e307-adjacent-content",
+      "repository": "Yuren-Tang/erdos-306",
+      "ref": "research/e306-frontier-v1",
+      "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+      "role": "development",
+      "frozen": true,
+      "roots": [
+        "research/adjacent-problems",
+        "research/PROGRAMME_STATE_ADDENDUM_2026-07-23_E307_JET_PORT_AND_DIVISOR_REDUCTION.md",
+        "research/PROGRAMME_STATE_ADDENDUM_2026-07-23_E307_PORT_SONDOW_NORM_SYNTHESIS.md",
+        "research/PROGRAMME_STATE_ADDENDUM_2026-07-23_E307_REBOUND_BLOCK_CODE_AND_DEFECT_SPECTRUM.md"
+      ],
+      "itemization_status": "pending-generator-reconstruction",
+      "substantive_item_count": 38,
+      "classification_file": "migration/source-to-unit-map/E307_ADJACENT_CANONICAL_INTAKE_MAP.json"
+    },
+    {
+      "source_id": "e307-rl-classification",
+      "repository": "Yuren-Tang/erdos-306",
+      "ref": "research/e306-frontier-v1",
+      "commit": "9bbcfae8360bce0871522e295f9aca903f64c780",
+      "role": "curation",
+      "frozen": true,
+      "roots": [
+        "research/E306_RL_BOUNDED_CURATION_HANDOFF_2026-07-24.md"
+      ],
+      "itemization_status": "classification-authority",
+      "substantive_item_count": 0,
+      "classification_file": "migration/source-to-unit-map/E307_ADJACENT_CANONICAL_INTAKE_MAP.json"
+    }
+  ],
+  "summary": {
+    "source_packets": 2,
+    "substantive_items": 38,
+    "classified_items": 0,
+    "unclassified_items": 38
+  }
+}
