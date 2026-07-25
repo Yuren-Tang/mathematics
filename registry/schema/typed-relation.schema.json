@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/Yuren-Tang/mathematics/registry/schema/typed-relation.schema.json",
+  "title": "Typed relation between natural mathematical units",
+  "type": "object",
+  "required": ["id", "source", "target", "plane", "type", "provenance"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^rel\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$"},
+    "source": {"type": "string", "pattern": "^math\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$"},
+    "target": {"type": "string", "pattern": "^math\\.[a-z0-9]+(?:[.-][a-z0-9]+)*$"},
+    "plane": {"enum": ["logical", "discovery"]},
+    "type": {"enum": ["depends-on", "uses", "implies", "equivalent-to", "generalizes", "specializes", "refutes", "qualifies", "supersedes", "motivates", "suggests", "analogous-to", "arose-from"]},
+    "scope": {"type": "string"},
+    "status": {"enum": ["asserted-from-source", "curator-mapped", "captured-unreviewed"]},
+    "provenance": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["repository", "commit", "path"],
+        "properties": {
+          "repository": {"type": "string"},
+          "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+          "path": {"type": "string"},
+          "anchor": {"type": ["string", "null"]}
+        }
+      }
+    },
+    "notes": {"type": "array", "items": {"type": "string"}}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"plane": {"const": "logical"}}},
+      "then": {"properties": {"type": {"enum": ["depends-on", "uses", "implies", "equivalent-to", "generalizes", "specializes", "refutes", "qualifies", "supersedes"]}}}
+    },
+    {
+      "if": {"properties": {"plane": {"const": "discovery"}}},
+      "then": {"properties": {"type": {"enum": ["motivates", "suggests", "analogous-to", "arose-from"]}}}
+    }
+  ],
+  "additionalProperties": false
+}
