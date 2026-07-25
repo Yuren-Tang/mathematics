@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "E306-CUR-CANONICAL-INTAKE",
+  "state": "active-itemization",
+  "authority": {
+    "control": "Yuren-Tang/research-workbench#15 comment 5077225976",
+    "writer": "MATH-CUR::local:/root/e306_curator_intake",
+    "branch": "curation/erdos-306-current-best-v2",
+    "base": "19a5e294e00583c930203c1eec68896ccd9d8ed2"
+  },
+  "policy": {
+    "mode": "additive-reversible",
+    "wholesale_merge": false,
+    "main_movement": false,
+    "source_repo_mutation": false,
+    "epistemic_upgrade": false,
+    "e307_activation": false
+  },
+  "sources": [
+    {
+      "source_id": "e306-release-v0.0.3",
+      "repository": "Yuren-Tang/erdos-306",
+      "ref": "refs/tags/v0.0.3",
+      "commit": "4582185de1e0e27416e9362e0cc7943c3d2fb4fe",
+      "role": "formalization",
+      "frozen": true
+    },
+    {
+      "source_id": "e306-dense-one-anchor",
+      "repository": "Yuren-Tang/erdos-306",
+      "ref": "proof-development/e306-one-anchor-v1",
+      "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+      "role": "development",
+      "frozen": true
+    },
+    {
+      "source_id": "e306-dense-one-anchor-audit",
+      "repository": "Yuren-Tang/erdos-306",
+      "ref": "review/e306-one-anchor-proof-audit-v1",
+      "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+      "role": "review",
+      "frozen": true
+    },
+    {
+      "source_id": "e306-multiblock-repaired",
+      "repository": "Yuren-Tang/erdos-306",
+      "ref": "proof-development/e306-rigour-v1",
+      "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+      "role": "development",
+      "frozen": true
+    },
+    {
+      "source_id": "e306-multiblock-audit",
+      "repository": "Yuren-Tang/erdos-306",
+      "ref": "review/e306-paper-first-proof-audit-v1",
+      "commit": "3d1451faf66830bbf38e16047b78dd08d7efa803",
+      "role": "review",
+      "frozen": true
+    },
+    {
+      "source_id": "e306-multiblock-repair-verification",
+      "repository": "Yuren-Tang/erdos-306",
+      "ref": "review/e306-paper-first-repair-verification-v1",
+      "commit": "5c12240e877fb10730508924d0b90ffa8f3a8973",
+      "role": "review",
+      "frozen": true
+    },
+    {
+      "source_id": "e306-sparse-repaired",
+      "repository": "Yuren-Tang/erdos-306",
+      "ref": "proof-development/e306-sparse-anchor-v1",
+      "commit": "3074ca46452a6f3528be588033fe414d5a0c0ef9",
+      "role": "development",
+      "frozen": true
+    },
+    {
+      "source_id": "e306-sparse-audit",
+      "repository": "Yuren-Tang/erdos-306",
+      "ref": "review/e306-sparse-anchor-proof-audit-v1",
+      "commit": "e9547c15b5858f5c456a9b3ffb9d30d1a0d15233",
+      "role": "review",
+      "frozen": true
+    },
+    {
+      "source_id": "e306-sparse-repair-verification",
+      "repository": "Yuren-Tang/erdos-306",
+      "ref": "review/e306-sparse-anchor-repair-verification-v1",
+      "commit": "52463e45fe3ce9ac2d271cea0e0f5e93e6cd5b83",
+      "role": "review",
+      "frozen": true
+    },
+    {
+      "source_id": "e306-aft-authorial",
+      "repository": "Yuren-Tang/erdos-306",
+      "ref": "research/e306-anchor-fibre-transference-v1",
+      "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+      "role": "development",
+      "frozen": true
+    },
+    {
+      "source_id": "e306-rl-classification",
+      "repository": "Yuren-Tang/erdos-306",
+      "ref": "research/e306-frontier-v1",
+      "commit": "9bbcfae8360bce0871522e295f9aca903f64c780",
+      "role": "development",
+      "frozen": true
+    },
+    {
+      "source_id": "e306-old-curation-archival",
+      "repository": "Yuren-Tang/mathematics",
+      "ref": "curation/erdos-306-proof-architecture-v1",
+      "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+      "role": "superseded-source",
+      "frozen": true,
+      "archival_only": true,
+      "merge_prohibited": true
+    }
+  ],
+  "summary": {
+    "source_packets": 12,
+    "itemization_status": "in-progress",
+    "substantive_items": null,
+    "classified_items": null,
+    "unclassified_items": null
+  }
+}
