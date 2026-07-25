@@ -1,0 +1,83 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "PORT-AC-CONSOLIDATE-01",
+  "map_type": "source-to-natural-unit",
+  "unit_schema": "registry/schema/mathematical-unit.schema.json",
+  "relation_schema": "registry/schema/typed-relation.schema.json",
+  "source_manifest": "sources/manifests/PORT_AC_CONSOLIDATE_01_SOURCE_MANIFEST.json",
+  "allowed_dispositions": [
+    "mapped-existing-unit",
+    "created-new-unit",
+    "attached-proof",
+    "attached-example",
+    "attached-computation",
+    "attached-counterexample",
+    "attached-provenance",
+    "duplicate",
+    "superseded-by",
+    "retained-source",
+    "projection-only",
+    "non-mathematical-control",
+    "deferred",
+    "unclassified"
+  ],
+  "entries": [
+    {
+      "source_id": "ac-rl",
+      "source_commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+      "status": "unclassified",
+      "items": [],
+      "recovery_pointer": "Yuren-Tang/mathematics:research/affine-cdc-five-cdc-v1@31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8"
+    },
+    {
+      "source_id": "ac-pdl",
+      "source_commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+      "status": "unclassified",
+      "items": [],
+      "recovery_pointer": "Yuren-Tang/mathematics:proof-development/affine-cdc-rigour-v1@f90a068fbcc81d34850bb53426f4c2efb4cb5388"
+    },
+    {
+      "source_id": "ac-full-audit",
+      "source_commit": "1e7ee9d14608bfdd3524d588d96bfc3470654686",
+      "status": "unclassified",
+      "items": [],
+      "recovery_pointer": "Yuren-Tang/mathematics:audit/affine-cdc-five-cdc-v7-4-1-full-v1@1e7ee9d14608bfdd3524d588d96bfc3470654686"
+    },
+    {
+      "source_id": "ac-terminal-audit",
+      "source_commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+      "status": "unclassified",
+      "items": [],
+      "recovery_pointer": "Yuren-Tang/mathematics:audit/affine-cdc-terminal-exhaustion-v1@c954f2220c082bc3b47821657b7a1164876aeaab"
+    },
+    {
+      "source_id": "ac-component-chain-negative",
+      "source_commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+      "status": "unclassified",
+      "items": [],
+      "recovery_pointer": "Yuren-Tang/mathematics:audit/affine-cdc-component-chain-v1@a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57"
+    },
+    {
+      "source_id": "ac-xi-negative",
+      "source_commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+      "status": "unclassified",
+      "items": [],
+      "recovery_pointer": "Yuren-Tang/mathematics:audit/affine-cdc-xi-co-root-v1@53be22a0f65b85068b11e5f781579618967db9dd"
+    }
+  ],
+  "counts": {
+    "source_packets_total": 6,
+    "source_packets_classified": 0,
+    "source_packets_unclassified": 6,
+    "substantive_items_total": 0,
+    "substantive_items_classified": 0,
+    "substantive_items_unclassified": 0
+  },
+  "invariants": [
+    "Every substantive source item receives exactly one disposition.",
+    "Negative, failed, withdrawn, heuristic, experiment and rough-result material is retained at source strength.",
+    "Logical relations and discovery relations are stored separately.",
+    "No assurance is upgraded by curation.",
+    "Existing project paths remain in place during this additive phase."
+  ]
+}
