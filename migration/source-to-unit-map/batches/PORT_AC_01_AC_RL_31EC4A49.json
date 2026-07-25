@@ -11,20 +11,200 @@
     "withdrawn append-only v1 READY packet retained through exact branch history"
   ],
   "items": [
-    {"source_item":"corrected BLOCKED final disposition","disposition":"attached-provenance","units":["math.graph-theory.cycle-covers.one-atom-complete-endpoint","math.graph-theory.cycle-covers.five-support-goal"]},
-    {"source_item":"withdrawal of v1 READY classification","disposition":"superseded-by","units":["math.graph-theory.cycle-covers.one-atom-prefix-scheduler","math.graph-theory.cycle-covers.v741-proof-candidate"]},
-    {"source_item":"complete post-pop interface normal form","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.complete-post-pop-state"]},
-    {"source_item":"identical-support immediate crossed-root endpoint","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.one-atom-identical-support-endpoint"]},
-    {"source_item":"one-shared-vertex C5/C6 macro, zero rootification, adjacent transient normalization","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.one-atom-shared-vertex-macro"]},
-    {"source_item":"conditional disjoint commuting square with independently root-valued predecessor","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.one-atom-conditional-disjoint-commutation"]},
-    {"source_item":"supplied finite one-token run/seam compilation","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.supplied-comparison-run-seam-coherence"]},
-    {"source_item":"unconditional (L,mu) prefix scheduler","disposition":"attached-counterexample","units":["math.graph-theory.cycle-covers.one-atom-prefix-scheduler"]},
-    {"source_item":"labelled Heawood disjoint double-atom certificate and Python reproduction","disposition":"attached-counterexample","units":["math.graph-theory.cycle-covers.disjoint-double-atom-obstruction"]},
-    {"source_item":"DISJOINT-SECOND-FAILURE-AVOIDANCE frontier","disposition":"created-new-unit","units":["math.graph-theory.cycle-covers.disjoint-second-failure-avoidance"]},
-    {"source_item":"genuine missing-index single-pop image/ancestry alternative","disposition":"created-new-unit","units":["math.graph-theory.cycle-covers.single-pop-image-membership"]},
-    {"source_item":"external-review handoff","disposition":"projection-only","units":["math.graph-theory.cycle-covers.disjoint-second-failure-avoidance","math.graph-theory.cycle-covers.single-pop-image-membership"]},
-    {"source_item":"downstream block of inverse-table entry, stored-prefix return, induction and five-CDC","disposition":"attached-provenance","units":["math.graph-theory.cycle-covers.one-atom-complete-endpoint","math.graph-theory.cycle-covers.five-support-goal"]}
+    {
+      "source_item": "corrected BLOCKED final disposition",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.graph-theory.cycle-covers.one-atom-complete-endpoint",
+        "math.graph-theory.cycle-covers.five-support-goal"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+        "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md",
+        "blob": "0bbf6992b75e25c613227c882255bbd9456273c5",
+        "anchor": "L15-L27"
+      }
+    },
+    {
+      "source_item": "withdrawal of v1 READY classification",
+      "disposition": "superseded-by",
+      "units": [
+        "math.graph-theory.cycle-covers.one-atom-prefix-scheduler",
+        "math.graph-theory.cycle-covers.v741-proof-candidate"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+        "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md",
+        "blob": "0bbf6992b75e25c613227c882255bbd9456273c5",
+        "anchor": "L15-L27"
+      }
+    },
+    {
+      "source_item": "complete post-pop interface normal form",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.complete-post-pop-state"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+        "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_CORRECTION_AND_EXTERNAL_REVIEW_HANDOFF_V1.md",
+        "blob": "8cf1ab5f21e28cbd4fa9697f7f378979ca527e91",
+        "anchor": "L67-L72"
+      }
+    },
+    {
+      "source_item": "identical-support immediate crossed-root endpoint",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.one-atom-identical-support-endpoint"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+        "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_CORRECTION_AND_EXTERNAL_REVIEW_HANDOFF_V1.md",
+        "blob": "8cf1ab5f21e28cbd4fa9697f7f378979ca527e91",
+        "anchor": "L74-L77"
+      }
+    },
+    {
+      "source_item": "one-shared-vertex C5/C6 macro, zero rootification, adjacent transient normalization",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.one-atom-shared-vertex-macro"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+        "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_CORRECTION_AND_EXTERNAL_REVIEW_HANDOFF_V1.md",
+        "blob": "8cf1ab5f21e28cbd4fa9697f7f378979ca527e91",
+        "anchor": "L79-L82"
+      }
+    },
+    {
+      "source_item": "conditional disjoint commuting square with independently root-valued predecessor",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.one-atom-conditional-disjoint-commutation"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+        "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_CORRECTION_AND_EXTERNAL_REVIEW_HANDOFF_V1.md",
+        "blob": "8cf1ab5f21e28cbd4fa9697f7f378979ca527e91",
+        "anchor": "L84-L91"
+      }
+    },
+    {
+      "source_item": "supplied finite one-token run/seam compilation",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.supplied-comparison-run-seam-coherence"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+        "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_CORRECTION_AND_EXTERNAL_REVIEW_HANDOFF_V1.md",
+        "blob": "8cf1ab5f21e28cbd4fa9697f7f378979ca527e91",
+        "anchor": "L93-L97"
+      }
+    },
+    {
+      "source_item": "unconditional (L,mu) prefix scheduler",
+      "disposition": "attached-counterexample",
+      "units": [
+        "math.graph-theory.cycle-covers.one-atom-prefix-scheduler"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+        "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md",
+        "blob": "0bbf6992b75e25c613227c882255bbd9456273c5",
+        "anchor": "L77-L96"
+      }
+    },
+    {
+      "source_item": "labelled Heawood disjoint double-atom certificate and Python reproduction",
+      "disposition": "attached-counterexample",
+      "units": [
+        "math.graph-theory.cycle-covers.disjoint-double-atom-obstruction"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+        "path": "projects/affine-cdc/research/ONE_ATOM_DISJOINT_PREFIX_STEP_DOUBLE_ATOM_COUNTERCERTIFICATE_V1.md",
+        "blob": "3b7dcd08106453f26ea29f75e9ddb69aff8fef9d",
+        "anchor": "L113-L188"
+      }
+    },
+    {
+      "source_item": "DISJOINT-SECOND-FAILURE-AVOIDANCE frontier",
+      "disposition": "created-new-unit",
+      "units": [
+        "math.graph-theory.cycle-covers.disjoint-second-failure-avoidance"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+        "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md",
+        "blob": "0bbf6992b75e25c613227c882255bbd9456273c5",
+        "anchor": "L121-L134"
+      }
+    },
+    {
+      "source_item": "genuine missing-index single-pop image/ancestry alternative",
+      "disposition": "created-new-unit",
+      "units": [
+        "math.graph-theory.cycle-covers.single-pop-image-membership"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+        "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_CORRECTION_AND_EXTERNAL_REVIEW_HANDOFF_V1.md",
+        "blob": "8cf1ab5f21e28cbd4fa9697f7f378979ca527e91",
+        "anchor": "L101-L120"
+      }
+    },
+    {
+      "source_item": "external-review handoff",
+      "disposition": "projection-only",
+      "units": [
+        "math.graph-theory.cycle-covers.disjoint-second-failure-avoidance",
+        "math.graph-theory.cycle-covers.single-pop-image-membership"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+        "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_CORRECTION_AND_EXTERNAL_REVIEW_HANDOFF_V1.md",
+        "blob": "8cf1ab5f21e28cbd4fa9697f7f378979ca527e91",
+        "anchor": "L158-L196"
+      }
+    },
+    {
+      "source_item": "downstream block of inverse-table entry, stored-prefix return, induction and five-CDC",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.graph-theory.cycle-covers.one-atom-complete-endpoint",
+        "math.graph-theory.cycle-covers.five-support-goal",
+        "math.graph-theory.cycle-covers.cubic-five-support-goal"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+        "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md",
+        "blob": "0bbf6992b75e25c613227c882255bbd9456273c5",
+        "anchor": "L150-L165"
+      }
+    }
   ],
-  "counts": {"substantive_items":13,"classified":13,"unclassified":0,"remaining_unclassified_source_packets":5},
-  "epistemic_guard":"The certificate refutes the stated scheduler/input scope; it is not a counterexample to five-CDC, and the image-membership question remains captured/open."
+  "counts": {
+    "substantive_items": 13,
+    "classified": 13,
+    "unclassified": 0,
+    "remaining_unclassified_source_packets": 5
+  },
+  "epistemic_guard": "The certificate refutes the stated scheduler/input scope; it is not a counterexample to five-CDC, and the image-membership question remains captured/open.",
+  "schema_version": "1.1.0"
 }

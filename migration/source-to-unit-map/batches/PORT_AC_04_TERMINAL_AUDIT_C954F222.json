@@ -9,19 +9,185 @@
     "HEAWOOD_WITNESS_APPLICATION_SCOPE_LEDGER.md"
   ],
   "items": [
-    {"source_item":"complete closed cubic source-state interpretation","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.complete-post-pop-state"]},
-    {"source_item":"co-root exact four-terminal/two-arc census","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.co-root-terminal-exhaustion"]},
-    {"source_item":"zero-parent exact four-terminal/two-path census","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion"]},
-    {"source_item":"application-scoped exact-two-terminal-path lemma","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"]},
-    {"source_item":"hidden cap/exterior/route/prefix terminal falsification ledger","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.co-root-terminal-exhaustion","math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion"]},
-    {"source_item":"disconnected carrier bridge/two-cut/bounded consumers","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.terminal-cut-bounded-consumers"]},
-    {"source_item":"#78 same-arc witness remains Xi counterexample, not terminal-exhaustion counterexample","disposition":"attached-counterexample","units":["math.graph-theory.cycle-covers.xi-same-arc-counterexample","math.graph-theory.cycle-covers.co-root-terminal-exhaustion"]},
-    {"source_item":"#81 six-terminal witness remains broad-chain counterexample outside application scope","disposition":"attached-counterexample","units":["math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample","math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier"]},
-    {"source_item":"zero-parent Heawood model classified as model, not universal census proof","disposition":"attached-example","units":["math.graph-theory.cycle-covers.zero-parent-h35-model"]},
-    {"source_item":"authorization for narrowly application-scoped PDL addendum","disposition":"attached-provenance","units":["math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path","math.graph-theory.cycle-covers.v741-proof-candidate"]},
-    {"source_item":"explicit non-promotion of inverse table, induction, cubic theorem and five-CDC","disposition":"attached-provenance","units":["math.graph-theory.cycle-covers.v741-proof-candidate","math.graph-theory.cycle-covers.five-support-goal"]},
-    {"source_item":"no-source-mutation record","disposition":"non-mathematical-control","units":[]}
+    {
+      "source_item": "complete closed cubic source-state interpretation",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.complete-post-pop-state"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+        "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+        "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb",
+        "anchor": "L54-L67"
+      }
+    },
+    {
+      "source_item": "co-root exact four-terminal/two-arc census",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.co-root-terminal-exhaustion"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+        "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+        "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb",
+        "anchor": "L69-L91"
+      }
+    },
+    {
+      "source_item": "zero-parent exact four-terminal/two-path census",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+        "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+        "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb",
+        "anchor": "L93-L118"
+      }
+    },
+    {
+      "source_item": "application-scoped exact-two-terminal-path lemma",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+        "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+        "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb",
+        "anchor": "L120-L136"
+      }
+    },
+    {
+      "source_item": "hidden cap/exterior/route/prefix terminal falsification ledger",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.co-root-terminal-exhaustion",
+        "math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+        "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+        "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb",
+        "anchor": "L154-L169"
+      }
+    },
+    {
+      "source_item": "disconnected carrier bridge/two-cut/bounded consumers",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.terminal-cut-bounded-consumers"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+        "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+        "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb",
+        "anchor": "L154-L169"
+      }
+    },
+    {
+      "source_item": "#78 same-arc witness remains Xi counterexample, not terminal-exhaustion counterexample",
+      "disposition": "attached-counterexample",
+      "units": [
+        "math.graph-theory.cycle-covers.xi-same-arc-counterexample",
+        "math.graph-theory.cycle-covers.co-root-terminal-exhaustion"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+        "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+        "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb",
+        "anchor": "L142-L145"
+      }
+    },
+    {
+      "source_item": "#81 six-terminal witness remains broad-chain counterexample outside application scope",
+      "disposition": "attached-counterexample",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample",
+        "math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+        "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+        "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb",
+        "anchor": "L146-L149"
+      }
+    },
+    {
+      "source_item": "zero-parent Heawood model classified as model, not universal census proof",
+      "disposition": "attached-example",
+      "units": [
+        "math.graph-theory.cycle-covers.zero-parent-h35-model"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+        "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+        "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb",
+        "anchor": "L150-L153"
+      }
+    },
+    {
+      "source_item": "authorization for narrowly application-scoped PDL addendum",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path",
+        "math.graph-theory.cycle-covers.v741-proof-candidate"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+        "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+        "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb",
+        "anchor": "L171-L187"
+      }
+    },
+    {
+      "source_item": "explicit non-promotion of inverse table, induction, cubic theorem and five-CDC",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.graph-theory.cycle-covers.v741-proof-candidate",
+        "math.graph-theory.cycle-covers.five-support-goal",
+        "math.graph-theory.cycle-covers.cubic-five-support-goal"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+        "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+        "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb",
+        "anchor": "L177-L187"
+      }
+    },
+    {
+      "source_item": "no-source-mutation record",
+      "disposition": "non-mathematical-control",
+      "units": [],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+        "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+        "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb",
+        "anchor": "L189-L195"
+      }
+    }
   ],
-  "counts": {"substantive_items":12,"classified":12,"unclassified":0,"remaining_unclassified_source_packets":2},
-  "epistemic_guard":"The audit establishes terminal exhaustion only for the genuine co-root and zero-parent operations. The six-terminal counterexample and the false broad theorem remain fully active outside that scope."
+  "counts": {
+    "substantive_items": 12,
+    "classified": 12,
+    "unclassified": 0,
+    "remaining_unclassified_source_packets": 2
+  },
+  "epistemic_guard": "The audit establishes terminal exhaustion only for the genuine co-root and zero-parent operations. The six-terminal counterexample and the false broad theorem remain fully active outside that scope.",
+  "schema_version": "1.1.0"
 }

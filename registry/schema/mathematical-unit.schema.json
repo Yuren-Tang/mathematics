@@ -170,6 +170,8 @@
         "repository",
         "commit",
         "path",
+        "blob",
+        "anchor",
         "role"
       ],
       "properties": {
@@ -186,16 +188,12 @@
           "minLength": 1
         },
         "blob": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string",
+          "pattern": "^[0-9a-f]{40}$"
         },
         "anchor": {
-          "type": [
-            "string",
-            "null"
-          ]
+          "type": "string",
+          "pattern": "^L[1-9][0-9]*-L[1-9][0-9]*$"
         },
         "role": {
           "enum": [

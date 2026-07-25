@@ -14,24 +14,261 @@
     "AC_PD_V7_4_INHERITED_CHAIN_AND_FINAL_MATCHING.md under exact-two-terminal-path scope"
   ],
   "items": [
-    {"source_item":"FC-EXACT-TWO-TERMINAL-PATH-COMPONENT-CHAIN candidate","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"]},
-    {"source_item":"local inactive-singleton and closed-cycle row/dart tables","disposition":"attached-computation","units":["math.graph-theory.cycle-covers.component-chain-local-tables"]},
-    {"source_item":"ordered final-matching table under exact two paths","disposition":"attached-computation","units":["math.graph-theory.cycle-covers.component-chain-local-tables","math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"]},
-    {"source_item":"co-root application constructor and exactly-two-arc callsite","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.co-root-terminal-exhaustion","math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"]},
-    {"source_item":"zero-parent application constructor and exactly-two-path callsite","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion","math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"]},
-    {"source_item":"co-root 6-7 local model and route consumer","disposition":"attached-example","units":["math.graph-theory.cycle-covers.co-root-connector-6-7-model","math.graph-theory.cycle-covers.terminal-cut-bounded-consumers"]},
-    {"source_item":"zero-parent H35 model and literal parent move","disposition":"attached-example","units":["math.graph-theory.cycle-covers.zero-parent-h35-model","math.graph-theory.cycle-covers.conditional-singular-parent-moves"]},
-    {"source_item":"root/co-root/zero inverse-parent trichotomy","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.inverse-parent-value-trichotomy"]},
-    {"source_item":"conditional co-root and zero prescribed-parent reclosure","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.conditional-singular-parent-moves"]},
-    {"source_item":"(L,C) connector/prefix no-reset protocol","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.connector-prefix-no-reset"]},
-    {"source_item":"complete-state and literal dart/cap/route/parent/prefix contracts","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.complete-post-pop-state"]},
-    {"source_item":"terminal/cut/bounded consumer inventory","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.terminal-cut-bounded-consumers"]},
-    {"source_item":"general multigraph outer-shell implication","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.general-multigraph-outer-shell"]},
-    {"source_item":"submitted v7.4.1 complete proof and induction reclosure","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.v741-proof-candidate","math.graph-theory.cycle-covers.five-support-goal"]},
-    {"source_item":"scope/callsite audit preserving failed broad component-chain theorem","disposition":"superseded-by","units":["math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier","math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample"]},
-    {"source_item":"full independent audit handoff","disposition":"projection-only","units":["math.graph-theory.cycle-covers.v741-proof-candidate"]},
-    {"source_item":"forbidden-dependency and no-second-call ledger","disposition":"attached-provenance","units":["math.graph-theory.cycle-covers.v741-proof-candidate","math.graph-theory.cycle-covers.connector-prefix-no-reset"]}
+    {
+      "source_item": "FC-EXACT-TWO-TERMINAL-PATH-COMPONENT-CHAIN candidate",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L77-L110"
+      }
+    },
+    {
+      "source_item": "local inactive-singleton and closed-cycle row/dart tables",
+      "disposition": "attached-computation",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-local-tables"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L91-L107"
+      }
+    },
+    {
+      "source_item": "ordered final-matching table under exact two paths",
+      "disposition": "attached-computation",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-local-tables",
+        "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L93-L107"
+      }
+    },
+    {
+      "source_item": "co-root application constructor and exactly-two-arc callsite",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.co-root-terminal-exhaustion",
+        "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L114-L133"
+      }
+    },
+    {
+      "source_item": "zero-parent application constructor and exactly-two-path callsite",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion",
+        "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L160-L203"
+      }
+    },
+    {
+      "source_item": "co-root 6-7 local model and route consumer",
+      "disposition": "attached-example",
+      "units": [
+        "math.graph-theory.cycle-covers.co-root-connector-6-7-model",
+        "math.graph-theory.cycle-covers.terminal-cut-bounded-consumers"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L143-L156"
+      }
+    },
+    {
+      "source_item": "zero-parent H35 model and literal parent move",
+      "disposition": "attached-example",
+      "units": [
+        "math.graph-theory.cycle-covers.zero-parent-h35-model",
+        "math.graph-theory.cycle-covers.conditional-singular-parent-moves"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L160-L203"
+      }
+    },
+    {
+      "source_item": "root/co-root/zero inverse-parent trichotomy",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.inverse-parent-value-trichotomy"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L235-L254"
+      }
+    },
+    {
+      "source_item": "conditional co-root and zero prescribed-parent reclosure",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.conditional-singular-parent-moves"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L114-L203"
+      }
+    },
+    {
+      "source_item": "(L,C) connector/prefix no-reset protocol",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.connector-prefix-no-reset"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L267-L284"
+      }
+    },
+    {
+      "source_item": "complete-state and literal dart/cap/route/parent/prefix contracts",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.complete-post-pop-state"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L235-L264"
+      }
+    },
+    {
+      "source_item": "terminal/cut/bounded consumer inventory",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.terminal-cut-bounded-consumers"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L309-L330"
+      }
+    },
+    {
+      "source_item": "general multigraph outer-shell implication",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.general-multigraph-outer-shell",
+        "math.graph-theory.cycle-covers.cubic-five-support-goal"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L334-L346"
+      }
+    },
+    {
+      "source_item": "submitted v7.4.1 complete proof and induction reclosure",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.v741-proof-candidate",
+        "math.graph-theory.cycle-covers.five-support-goal",
+        "math.graph-theory.cycle-covers.cubic-five-support-goal"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L368-L390"
+      }
+    },
+    {
+      "source_item": "scope/callsite audit preserving failed broad component-chain theorem",
+      "disposition": "superseded-by",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier",
+        "math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L207-L231"
+      }
+    },
+    {
+      "source_item": "full independent audit handoff",
+      "disposition": "projection-only",
+      "units": [
+        "math.graph-theory.cycle-covers.v741-proof-candidate"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L1-L5"
+      }
+    },
+    {
+      "source_item": "forbidden-dependency and no-second-call ledger",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.graph-theory.cycle-covers.v741-proof-candidate",
+        "math.graph-theory.cycle-covers.connector-prefix-no-reset"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+        "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+        "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729",
+        "anchor": "L350-L364"
+      }
+    }
   ],
-  "counts": {"substantive_items":17,"classified":17,"unclassified":0,"remaining_unclassified_source_packets":4},
-  "epistemic_guard":"All PDL reclosure statements remain authorial until the named audits; the handoff itself is not independent assurance."
+  "counts": {
+    "substantive_items": 17,
+    "classified": 17,
+    "unclassified": 0,
+    "remaining_unclassified_source_packets": 4
+  },
+  "epistemic_guard": "All PDL reclosure statements remain authorial until the named audits; the handoff itself is not independent assurance.",
+  "schema_version": "1.1.0"
 }

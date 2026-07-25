@@ -8,21 +8,216 @@
     "CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md"
   ],
   "items": [
-    {"source_item":"inactive-singleton contraction and same-vertex successor-connector inheritance","disposition":"attached-computation","units":["math.graph-theory.cycle-covers.component-chain-local-tables"]},
-    {"source_item":"path-plus-closed-cycle contraction and stable later connectors","disposition":"attached-computation","units":["math.graph-theory.cycle-covers.component-chain-local-tables","math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"]},
-    {"source_item":"omitted third-terminal-path internal-node type","disposition":"attached-counterexample","units":["math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier"]},
-    {"source_item":"h=14 six-terminal Heawood counterexample","disposition":"attached-counterexample","units":["math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample"]},
-    {"source_item":"36 category-safe one-step movies and zero inherited P0-P1 length-one chains","disposition":"attached-computation","units":["math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample","math.graph-theory.cycle-covers.component-chain-local-tables"]},
-    {"source_item":"24 inactive continuation configurations and distinct/equal active rows","disposition":"attached-computation","units":["math.graph-theory.cycle-covers.component-chain-local-tables"]},
-    {"source_item":"84 ordered final-terminal configurations, 42 per crossed matching, zero preserving old matching","disposition":"attached-computation","units":["math.graph-theory.cycle-covers.component-chain-local-tables"]},
-    {"source_item":"exact-two-terminal-path conditional chain scope","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"]},
-    {"source_item":"co-root two-marked-arc geometry and disconnected-carrier consumers","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.co-root-terminal-exhaustion","math.graph-theory.cycle-covers.terminal-cut-bounded-consumers"]},
-    {"source_item":"co-root 6-7 route-changing model","disposition":"attached-example","units":["math.graph-theory.cycle-covers.co-root-connector-6-7-model"]},
-    {"source_item":"inverse-parent value trichotomy","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.inverse-parent-value-trichotomy"]},
-    {"source_item":"zero-parent outside matching trichotomy and H35 alignment/switch model","disposition":"attached-example","units":["math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion","math.graph-theory.cycle-covers.zero-parent-h35-model","math.graph-theory.cycle-covers.conditional-singular-parent-moves"]},
-    {"source_item":"#78 same-arc negative preserved","disposition":"attached-counterexample","units":["math.graph-theory.cycle-covers.xi-same-arc-counterexample","math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality"]},
-    {"source_item":"general theorem material false scope; corollaries not universally promoted at audit stop","disposition":"attached-provenance","units":["math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier","math.graph-theory.cycle-covers.v741-proof-candidate"]}
+    {
+      "source_item": "inactive-singleton contraction and same-vertex successor-connector inheritance",
+      "disposition": "attached-computation",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-local-tables"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L22-L34"
+      }
+    },
+    {
+      "source_item": "path-plus-closed-cycle contraction and stable later connectors",
+      "disposition": "attached-computation",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-local-tables",
+        "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L36-L47"
+      }
+    },
+    {
+      "source_item": "omitted third-terminal-path internal-node type",
+      "disposition": "attached-counterexample",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L49-L57"
+      }
+    },
+    {
+      "source_item": "h=14 six-terminal Heawood counterexample",
+      "disposition": "attached-counterexample",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L61-L172"
+      }
+    },
+    {
+      "source_item": "36 category-safe one-step movies and zero inherited P0-P1 length-one chains",
+      "disposition": "attached-computation",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample",
+        "math.graph-theory.cycle-covers.component-chain-local-tables"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L152-L172"
+      }
+    },
+    {
+      "source_item": "24 inactive continuation configurations and distinct/equal active rows",
+      "disposition": "attached-computation",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-local-tables"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L176-L187"
+      }
+    },
+    {
+      "source_item": "84 ordered final-terminal configurations, 42 per crossed matching, zero preserving old matching",
+      "disposition": "attached-computation",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-local-tables"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L176-L187"
+      }
+    },
+    {
+      "source_item": "exact-two-terminal-path conditional chain scope",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L444-L467"
+      }
+    },
+    {
+      "source_item": "co-root two-marked-arc geometry and disconnected-carrier consumers",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.co-root-terminal-exhaustion",
+        "math.graph-theory.cycle-covers.terminal-cut-bounded-consumers"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L225-L244"
+      }
+    },
+    {
+      "source_item": "co-root 6-7 route-changing model",
+      "disposition": "attached-example",
+      "units": [
+        "math.graph-theory.cycle-covers.co-root-connector-6-7-model"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L246-L276"
+      }
+    },
+    {
+      "source_item": "inverse-parent value trichotomy",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.inverse-parent-value-trichotomy"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L301-L319"
+      }
+    },
+    {
+      "source_item": "zero-parent outside matching trichotomy and H35 alignment/switch model",
+      "disposition": "attached-example",
+      "units": [
+        "math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion",
+        "math.graph-theory.cycle-covers.zero-parent-h35-model",
+        "math.graph-theory.cycle-covers.conditional-singular-parent-moves"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L321-L416"
+      }
+    },
+    {
+      "source_item": "#78 same-arc negative preserved",
+      "disposition": "attached-counterexample",
+      "units": [
+        "math.graph-theory.cycle-covers.xi-same-arc-counterexample",
+        "math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L193-L223"
+      }
+    },
+    {
+      "source_item": "general theorem material false scope; corollaries not universally promoted at audit stop",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier",
+        "math.graph-theory.cycle-covers.v741-proof-candidate"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+        "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+        "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297",
+        "anchor": "L444-L469"
+      }
+    }
   ],
-  "counts": {"substantive_items":14,"classified":14,"unclassified":0,"remaining_unclassified_source_packets":1},
-  "epistemic_guard":"The broad theorem is refuted in its written scope. Local rows, exact-two-path contraction, and explicit models survive separately; the counterexample is not a counterexample to five-CDC."
+  "counts": {
+    "substantive_items": 14,
+    "classified": 14,
+    "unclassified": 0,
+    "remaining_unclassified_source_packets": 1
+  },
+  "epistemic_guard": "The broad theorem is refuted in its written scope. Local rows, exact-two-path contraction, and explicit models survive separately; the counterexample is not a counterexample to five-CDC.",
+  "schema_version": "1.1.0"
 }

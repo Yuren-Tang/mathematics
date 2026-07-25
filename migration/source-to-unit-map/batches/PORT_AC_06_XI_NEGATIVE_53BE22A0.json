@@ -8,18 +8,168 @@
     "SOURCE_MOVIE_AND_SCOPE_LEDGER.md"
   ],
   "items": [
-    {"source_item":"canonical support frame and literal/current support distinction","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.xi-frame-invariant"]},
-    {"source_item":"tau_14 images and whole-component Xi invariance including cap/exterior vertices","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.xi-frame-invariant"]},
-    {"source_item":"six strict distinct-neighbour rows with Delta Xi=-2","disposition":"attached-computation","units":["math.graph-theory.cycle-covers.xi-six-strict-rows"]},
-    {"source_item":"bad-free route contradiction","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.xi-bad-free-route-contradiction"]},
-    {"source_item":"literal source move interfaces and nonlocked terminal consumers","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.terminal-cut-bounded-consumers","math.graph-theory.cycle-covers.conditional-singular-parent-moves"]},
-    {"source_item":"universal equal-neighbour route-or-split theorem","disposition":"attached-counterexample","units":["math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality"]},
-    {"source_item":"same-arc Heawood source movie at equal face 9-14:23","disposition":"attached-counterexample","units":["math.graph-theory.cycle-covers.xi-same-arc-counterexample"]},
-    {"source_item":"conditional N-step Xi descent bound","disposition":"attached-provenance","units":["math.graph-theory.cycle-covers.xi-six-strict-rows","math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality"]},
-    {"source_item":"smallest same-arc repair surface","disposition":"created-new-unit","units":["math.graph-theory.cycle-covers.xi-same-arc-escape-question"]},
-    {"source_item":"zero-parent row explicitly excluded","disposition":"attached-provenance","units":["math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality","math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion"]},
-    {"source_item":"no candidate/source/canonical mutation","disposition":"non-mathematical-control","units":[]}
+    {
+      "source_item": "canonical support frame and literal/current support distinction",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.xi-frame-invariant"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+        "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+        "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e",
+        "anchor": "L26-L35"
+      }
+    },
+    {
+      "source_item": "tau_14 images and whole-component Xi invariance including cap/exterior vertices",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.xi-frame-invariant"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+        "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+        "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e",
+        "anchor": "L37-L47"
+      }
+    },
+    {
+      "source_item": "six strict distinct-neighbour rows with Delta Xi=-2",
+      "disposition": "attached-computation",
+      "units": [
+        "math.graph-theory.cycle-covers.xi-six-strict-rows"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+        "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+        "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e",
+        "anchor": "L49-L57"
+      }
+    },
+    {
+      "source_item": "bad-free route contradiction",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.xi-bad-free-route-contradiction"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+        "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+        "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e",
+        "anchor": "L59-L68"
+      }
+    },
+    {
+      "source_item": "literal source move interfaces and nonlocked terminal consumers",
+      "disposition": "attached-proof",
+      "units": [
+        "math.graph-theory.cycle-covers.terminal-cut-bounded-consumers",
+        "math.graph-theory.cycle-covers.conditional-singular-parent-moves"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+        "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+        "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e",
+        "anchor": "L70-L81"
+      }
+    },
+    {
+      "source_item": "universal equal-neighbour route-or-split theorem",
+      "disposition": "attached-counterexample",
+      "units": [
+        "math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+        "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+        "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e",
+        "anchor": "L85-L98"
+      }
+    },
+    {
+      "source_item": "same-arc Heawood source movie at equal face 9-14:23",
+      "disposition": "attached-counterexample",
+      "units": [
+        "math.graph-theory.cycle-covers.xi-same-arc-counterexample"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+        "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+        "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e",
+        "anchor": "L99-L132"
+      }
+    },
+    {
+      "source_item": "conditional N-step Xi descent bound",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.graph-theory.cycle-covers.xi-six-strict-rows",
+        "math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+        "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+        "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e",
+        "anchor": "L136-L164"
+      }
+    },
+    {
+      "source_item": "smallest same-arc repair surface",
+      "disposition": "created-new-unit",
+      "units": [
+        "math.graph-theory.cycle-covers.xi-same-arc-escape-question"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+        "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+        "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e",
+        "anchor": "L168-L185"
+      }
+    },
+    {
+      "source_item": "zero-parent row explicitly excluded",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality",
+        "math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+        "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+        "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e",
+        "anchor": "L11-L18"
+      }
+    },
+    {
+      "source_item": "no candidate/source/canonical mutation",
+      "disposition": "non-mathematical-control",
+      "units": [],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+        "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+        "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e",
+        "anchor": "L189-L205"
+      }
+    }
   ],
-  "counts": {"substantive_items":11,"classified":11,"unclassified":0,"remaining_unclassified_source_packets":0},
-  "epistemic_guard":"The audit independently establishes the frame, invariant, strict rows, contradiction, and exact same-arc counterexample. It does not establish Xi totality, a repaired universal escape, zero-parent closure, or five-CDC."
+  "counts": {
+    "substantive_items": 11,
+    "classified": 11,
+    "unclassified": 0,
+    "remaining_unclassified_source_packets": 0
+  },
+  "epistemic_guard": "The audit independently establishes the frame, invariant, strict rows, contradiction, and exact same-arc counterexample. It does not establish Xi totality, a repaired universal escape, zero-parent closure, or five-CDC.",
+  "schema_version": "1.1.0"
 }

@@ -1,37 +1,511 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "batch_id": "PORT-AC-CONSOLIDATE-01",
   "item_schema": "registry/schema/typed-relation.schema.json",
   "logical": [
-    {"id":"rel.ac.v741-depends-one-atom-endpoint","source":"math.graph-theory.cycle-covers.v741-proof-candidate","target":"math.graph-theory.cycle-covers.one-atom-complete-endpoint","plane":"logical","type":"depends-on","scope":"load-bearing missing implication identified by full audit","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","anchor":null}]},
-    {"id":"rel.ac.v741-claims-five-support","source":"math.graph-theory.cycle-covers.v741-proof-candidate","target":"math.graph-theory.cycle-covers.five-support-goal","plane":"logical","type":"implies","scope":"authorial candidate claim; independent audit rejects completeness","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","anchor":null}],"notes":["This edge records the candidate's intended implication, not an accepted proof."]},
-    {"id":"rel.ac.double-atom-refutes-scheduler","source":"math.graph-theory.cycle-covers.disjoint-double-atom-obstruction","target":"math.graph-theory.cycle-covers.one-atom-prefix-scheduler","plane":"logical","type":"refutes","scope":"unconditional disjoint-support commuting step and total (L,mu) rank","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","anchor":null}]},
-    {"id":"rel.ac.conditional-disjoint-specializes-scheduler","source":"math.graph-theory.cycle-covers.one-atom-conditional-disjoint-commutation","target":"math.graph-theory.cycle-covers.one-atom-prefix-scheduler","plane":"logical","type":"specializes","scope":"surviving conditional statement requires the predecessor to be root-valued under returned labels","status":"curator-mapped","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","anchor":null}]},
-    {"id":"rel.ac.supplied-coherence-qualifies-endpoint","source":"math.graph-theory.cycle-covers.supplied-comparison-run-seam-coherence","target":"math.graph-theory.cycle-covers.one-atom-complete-endpoint","plane":"logical","type":"qualifies","scope":"coherence applies only after a finite comparison is supplied and does not prove arbitrary continuation","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","anchor":null}]},
-    {"id":"rel.ac.third-terminal-refutes-broad-chain","source":"math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample","target":"math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier","plane":"logical","type":"refutes","scope":"arbitrary rooted carriers with a third terminal path internal node","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","anchor":null}]},
-    {"id":"rel.ac.exact-two-specializes-broad-chain","source":"math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path","target":"math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier","plane":"logical","type":"specializes","scope":"valid theorem after adding exactly two terminal paths and closed remaining channel components","status":"curator-mapped","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","anchor":null},{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","anchor":null}]},
-    {"id":"rel.ac.exact-two-uses-local-tables","source":"math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path","target":"math.graph-theory.cycle-covers.component-chain-local-tables","plane":"logical","type":"uses","scope":"inactive/cycle contractions, connector inheritance and final matching","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","anchor":null}]},
-    {"id":"rel.ac.co-root-implies-exact-two-hypothesis","source":"math.graph-theory.cycle-covers.co-root-terminal-exhaustion","target":"math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path","plane":"logical","type":"implies","scope":"genuine co-root cut creates exactly two marked terminal arcs and closed remaining cycles","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","anchor":null}]},
-    {"id":"rel.ac.zero-implies-exact-two-hypothesis","source":"math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion","target":"math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path","plane":"logical","type":"implies","scope":"genuine active-cell deletion creates exactly two H35 terminal paths and closed remaining cycles","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","anchor":null}]},
-    {"id":"rel.ac.conditional-parent-uses-trichotomy","source":"math.graph-theory.cycle-covers.conditional-singular-parent-moves","target":"math.graph-theory.cycle-covers.inverse-parent-value-trichotomy","plane":"logical","type":"uses","scope":"root/co-root/zero exhaustive parent-value classification","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","anchor":null}]},
-    {"id":"rel.ac.conditional-parent-depends-complete-endpoint","source":"math.graph-theory.cycle-covers.conditional-singular-parent-moves","target":"math.graph-theory.cycle-covers.one-atom-complete-endpoint","plane":"logical","type":"depends-on","scope":"audited singular-fibre returns begin only after a complete root-valued prescribed-parent endpoint exists","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","anchor":null}]},
-    {"id":"rel.ac.conditional-parent-uses-co-root-exhaustion","source":"math.graph-theory.cycle-covers.conditional-singular-parent-moves","target":"math.graph-theory.cycle-covers.co-root-terminal-exhaustion","plane":"logical","type":"uses","scope":"co-root application constructor","status":"curator-mapped","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","anchor":null}]},
-    {"id":"rel.ac.conditional-parent-uses-zero-exhaustion","source":"math.graph-theory.cycle-covers.conditional-singular-parent-moves","target":"math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion","plane":"logical","type":"uses","scope":"zero-parent application constructor","status":"curator-mapped","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","anchor":null}]},
-    {"id":"rel.ac.v741-uses-no-reset","source":"math.graph-theory.cycle-covers.v741-proof-candidate","target":"math.graph-theory.cycle-covers.connector-prefix-no-reset","plane":"logical","type":"uses","scope":"local connector rank C while prefix length L is fixed","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","anchor":null}]},
-    {"id":"rel.ac.v741-uses-singular-parent","source":"math.graph-theory.cycle-covers.v741-proof-candidate","target":"math.graph-theory.cycle-covers.conditional-singular-parent-moves","plane":"logical","type":"uses","scope":"root/co-root/zero table and literal parent return","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"f90a068fbcc81d34850bb53426f4c2efb4cb5388","path":"projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md","anchor":null}]},
-    {"id":"rel.ac.outer-shell-depends-five-support","source":"math.graph-theory.cycle-covers.general-multigraph-outer-shell","target":"math.graph-theory.cycle-covers.five-support-goal","plane":"logical","type":"depends-on","scope":"conditional implication from the cubic five-support theorem; does not prove the upstream theorem","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"1e7ee9d14608bfdd3524d588d96bfc3470654686","path":"audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md","anchor":null}]},
-    {"id":"rel.ac.xi-same-arc-refutes-totality","source":"math.graph-theory.cycle-covers.xi-same-arc-counterexample","target":"math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality","plane":"logical","type":"refutes","scope":"same-arc equal-face Heawood state","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","anchor":null}]},
-    {"id":"rel.ac.xi-rows-use-frame","source":"math.graph-theory.cycle-covers.xi-six-strict-rows","target":"math.graph-theory.cycle-covers.xi-frame-invariant","plane":"logical","type":"uses","scope":"canonical frame and tau transport","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","anchor":null}]},
-    {"id":"rel.ac.xi-contradiction-uses-frame","source":"math.graph-theory.cycle-covers.xi-bad-free-route-contradiction","target":"math.graph-theory.cycle-covers.xi-frame-invariant","plane":"logical","type":"uses","scope":"selected H14 route in canonical frame","status":"asserted-from-source","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"53be22a0f65b85068b11e5f781579618967db9dd","path":"audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md","anchor":null}]},
-    {"id":"rel.ac.application-chain-supersedes-xi-question","source":"math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path","target":"math.graph-theory.cycle-covers.xi-same-arc-escape-question","plane":"logical","type":"supersedes","scope":"current co-root application route bypasses arbitrary-face source selection without validating Xi totality","status":"curator-mapped","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","anchor":null}]}
+    {
+      "id": "rel.ac.v741-depends-one-atom-endpoint",
+      "source": "math.graph-theory.cycle-covers.v741-proof-candidate",
+      "target": "math.graph-theory.cycle-covers.one-atom-complete-endpoint",
+      "plane": "logical",
+      "type": "depends-on",
+      "scope": "load-bearing missing implication identified by full audit",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "1e7ee9d14608bfdd3524d588d96bfc3470654686",
+          "path": "audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md",
+          "anchor": "L9-L21",
+          "blob": "63951c91f65d4c8cb4cf59d07e0aaa93c95255b0"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.double-atom-refutes-scheduler",
+      "source": "math.graph-theory.cycle-covers.disjoint-double-atom-obstruction",
+      "target": "math.graph-theory.cycle-covers.one-atom-prefix-scheduler",
+      "plane": "logical",
+      "type": "refutes",
+      "scope": "unconditional disjoint-support commuting step and total (L,mu) rank",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+          "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md",
+          "anchor": "L31-L96",
+          "blob": "0bbf6992b75e25c613227c882255bbd9456273c5"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.conditional-disjoint-specializes-scheduler",
+      "source": "math.graph-theory.cycle-covers.one-atom-conditional-disjoint-commutation",
+      "target": "math.graph-theory.cycle-covers.one-atom-prefix-scheduler",
+      "plane": "logical",
+      "type": "specializes",
+      "scope": "surviving conditional statement requires the predecessor to be root-valued under returned labels",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+          "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md",
+          "anchor": "L100-L117",
+          "blob": "0bbf6992b75e25c613227c882255bbd9456273c5"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.supplied-coherence-qualifies-endpoint",
+      "source": "math.graph-theory.cycle-covers.supplied-comparison-run-seam-coherence",
+      "target": "math.graph-theory.cycle-covers.one-atom-complete-endpoint",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "coherence applies only after a finite comparison is supplied and does not prove arbitrary continuation",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "1e7ee9d14608bfdd3524d588d96bfc3470654686",
+          "path": "audit/affine-cdc-five-cdc-v7-4-1-full-v1/INDUCTION_PREFIX_TERMINAL_AND_OUTER_SHELL_AUDIT.md",
+          "anchor": "L37-L56",
+          "blob": "70e12d1658fdbe2817b2431c460d24d9bbde745e"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.third-terminal-refutes-broad-chain",
+      "source": "math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample",
+      "target": "math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier",
+      "plane": "logical",
+      "type": "refutes",
+      "scope": "arbitrary rooted carriers with a third terminal path internal node",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+          "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+          "anchor": "L49-L172",
+          "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.exact-two-specializes-broad-chain",
+      "source": "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path",
+      "target": "math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier",
+      "plane": "logical",
+      "type": "specializes",
+      "scope": "valid theorem after adding exactly two terminal paths and closed remaining channel components",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "1e7ee9d14608bfdd3524d588d96bfc3470654686",
+          "path": "audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md",
+          "anchor": "L28-L31",
+          "blob": "63951c91f65d4c8cb4cf59d07e0aaa93c95255b0"
+        },
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+          "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+          "anchor": "L120-L136",
+          "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.exact-two-uses-local-tables",
+      "source": "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path",
+      "target": "math.graph-theory.cycle-covers.component-chain-local-tables",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "inactive/cycle contractions, connector inheritance and final matching",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+          "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+          "anchor": "L9-L47",
+          "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.co-root-qualifies-exact-two-application",
+      "source": "math.graph-theory.cycle-covers.co-root-terminal-exhaustion",
+      "target": "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "establishes the exact-two-terminal-path premise only for the genuine co-root application carrier",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+          "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+          "anchor": "L69-L91",
+          "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.zero-qualifies-exact-two-application",
+      "source": "math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion",
+      "target": "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "establishes the exact-two-terminal-path premise only for the genuine zero-parent application carrier",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+          "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+          "anchor": "L93-L118",
+          "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.conditional-parent-uses-trichotomy",
+      "source": "math.graph-theory.cycle-covers.conditional-singular-parent-moves",
+      "target": "math.graph-theory.cycle-covers.inverse-parent-value-trichotomy",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "root/co-root/zero exhaustive parent-value classification",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+          "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+          "anchor": "L301-L319",
+          "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.conditional-parent-depends-complete-endpoint",
+      "source": "math.graph-theory.cycle-covers.conditional-singular-parent-moves",
+      "target": "math.graph-theory.cycle-covers.one-atom-complete-endpoint",
+      "plane": "logical",
+      "type": "depends-on",
+      "scope": "audited singular-fibre returns begin only after a complete root-valued prescribed-parent endpoint exists",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "1e7ee9d14608bfdd3524d588d96bfc3470654686",
+          "path": "audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md",
+          "anchor": "L9-L21",
+          "blob": "63951c91f65d4c8cb4cf59d07e0aaa93c95255b0"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.conditional-parent-uses-co-root-exhaustion",
+      "source": "math.graph-theory.cycle-covers.conditional-singular-parent-moves",
+      "target": "math.graph-theory.cycle-covers.co-root-terminal-exhaustion",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "co-root application constructor",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+          "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+          "anchor": "L114-L133",
+          "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.conditional-parent-uses-zero-exhaustion",
+      "source": "math.graph-theory.cycle-covers.conditional-singular-parent-moves",
+      "target": "math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "zero-parent application constructor",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+          "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+          "anchor": "L160-L203",
+          "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.v741-uses-no-reset",
+      "source": "math.graph-theory.cycle-covers.v741-proof-candidate",
+      "target": "math.graph-theory.cycle-covers.connector-prefix-no-reset",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "local connector rank C while prefix length L is fixed",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+          "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+          "anchor": "L267-L284",
+          "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.v741-uses-singular-parent",
+      "source": "math.graph-theory.cycle-covers.v741-proof-candidate",
+      "target": "math.graph-theory.cycle-covers.conditional-singular-parent-moves",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "root/co-root/zero table and literal parent return",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+          "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+          "anchor": "L235-L264",
+          "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.cubic-five-support-implies-general-five-support",
+      "source": "math.graph-theory.cycle-covers.cubic-five-support-goal",
+      "target": "math.graph-theory.cycle-covers.five-support-goal",
+      "plane": "logical",
+      "type": "implies",
+      "scope": "independently retained conditional outer shell: cubic five-support theorem implies the finite bridgeless multigraph five-support theorem",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "1e7ee9d14608bfdd3524d588d96bfc3470654686",
+          "path": "audit/affine-cdc-five-cdc-v7-4-1-full-v1/INDUCTION_PREFIX_TERMINAL_AND_OUTER_SHELL_AUDIT.md",
+          "blob": "70e12d1658fdbe2817b2431c460d24d9bbde745e",
+          "anchor": "L136-L154"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.xi-same-arc-refutes-totality",
+      "source": "math.graph-theory.cycle-covers.xi-same-arc-counterexample",
+      "target": "math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality",
+      "plane": "logical",
+      "type": "refutes",
+      "scope": "same-arc equal-face Heawood state",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+          "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+          "anchor": "L85-L132",
+          "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.xi-rows-use-frame",
+      "source": "math.graph-theory.cycle-covers.xi-six-strict-rows",
+      "target": "math.graph-theory.cycle-covers.xi-frame-invariant",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "canonical frame and tau transport",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+          "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+          "anchor": "L26-L57",
+          "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.xi-contradiction-uses-frame",
+      "source": "math.graph-theory.cycle-covers.xi-bad-free-route-contradiction",
+      "target": "math.graph-theory.cycle-covers.xi-frame-invariant",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "selected H14 route in canonical frame",
+      "status": "asserted-from-source",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+          "path": "audit/affine-cdc-xi-co-root-v1/AUDIT_REPORT.md",
+          "anchor": "L26-L68",
+          "blob": "04d7b1dcc91586de9203b82ab09b7ace9209de4e"
+        }
+      ]
+    },
+    {
+      "id": "rel.ac.application-chain-supersedes-xi-question",
+      "source": "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path",
+      "target": "math.graph-theory.cycle-covers.xi-same-arc-escape-question",
+      "plane": "logical",
+      "type": "supersedes",
+      "scope": "current co-root application route bypasses arbitrary-face source selection without validating Xi totality",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+          "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+          "anchor": "L120-L145",
+          "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb"
+        }
+      ]
+    }
   ],
   "discovery": [
-    {"id":"rel.discovery.double-atom-suggests-image-test","source":"math.graph-theory.cycle-covers.disjoint-double-atom-obstruction","target":"math.graph-theory.cycle-covers.single-pop-image-membership","plane":"discovery","type":"suggests","scope":"test whether the countercertificate is reachable with genuine single-pop ancestry","status":"captured-unreviewed","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","anchor":null}]},
-    {"id":"rel.discovery.double-atom-motivates-frontier","source":"math.graph-theory.cycle-covers.disjoint-double-atom-obstruction","target":"math.graph-theory.cycle-covers.disjoint-second-failure-avoidance","plane":"discovery","type":"motivates","scope":"the obstruction isolates the smallest missing continuation/image-exclusion question","status":"captured-unreviewed","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8","path":"projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md","anchor":null}]},
-    {"id":"rel.discovery.third-terminal-motivates-census","source":"math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample","target":"math.graph-theory.cycle-covers.co-root-terminal-exhaustion","plane":"discovery","type":"motivates","scope":"exclude hidden third terminal paths by reconstructing the genuine operation","status":"curator-mapped","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","anchor":null}]},
-    {"id":"rel.discovery.third-terminal-motivates-zero-census","source":"math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample","target":"math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion","plane":"discovery","type":"motivates","scope":"exclude hidden third terminal paths in the active-cell-deleted carrier","status":"curator-mapped","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"c954f2220c082bc3b47821657b7a1164876aeaab","path":"audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md","anchor":null}]},
-    {"id":"rel.discovery.xi-counterexample-motivates-marked-connector","source":"math.graph-theory.cycle-covers.xi-same-arc-counterexample","target":"math.graph-theory.cycle-covers.co-root-connector-6-7-model","plane":"discovery","type":"motivates","scope":"replace arbitrary equal-face selection by a physical connector between the actual marked arcs","status":"curator-mapped","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","anchor":null}]},
-    {"id":"rel.discovery.co-root-analogous-zero-model","source":"math.graph-theory.cycle-covers.co-root-connector-6-7-model","target":"math.graph-theory.cycle-covers.zero-parent-h35-model","plane":"discovery","type":"analogous-to","scope":"both use a physical matching-changing move but have different terminal data and consumers","status":"captured-unreviewed","provenance":[{"repository":"Yuren-Tang/mathematics","commit":"a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57","path":"audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md","anchor":null}]}
+    {
+      "id": "rel.discovery.v741-claimed-five-support-route",
+      "source": "math.graph-theory.cycle-covers.v741-proof-candidate",
+      "target": "math.graph-theory.cycle-covers.five-support-goal",
+      "plane": "discovery",
+      "type": "suggests",
+      "scope": "historical intended route of the rejected v7.4.1 candidate; not a proof implication",
+      "status": "captured-unreviewed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+          "path": "projects/affine-cdc/proof-development/AC_PD_V7_4_1_FULL_INDEPENDENT_AUDIT_HANDOFF.md",
+          "anchor": "L368-L390",
+          "blob": "caa8cfd2ed8dbfb151785088f35e48f0e28f2729"
+        }
+      ],
+      "notes": [
+        "The independent audit rejects candidate completeness.",
+        "Discovery-plane retention is non-traversable as proof evidence."
+      ]
+    },
+    {
+      "id": "rel.discovery.double-atom-suggests-image-test",
+      "source": "math.graph-theory.cycle-covers.disjoint-double-atom-obstruction",
+      "target": "math.graph-theory.cycle-covers.single-pop-image-membership",
+      "plane": "discovery",
+      "type": "suggests",
+      "scope": "test whether the countercertificate is reachable with genuine single-pop ancestry",
+      "status": "captured-unreviewed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+          "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md",
+          "anchor": "L121-L134",
+          "blob": "0bbf6992b75e25c613227c882255bbd9456273c5"
+        }
+      ]
+    },
+    {
+      "id": "rel.discovery.double-atom-motivates-frontier",
+      "source": "math.graph-theory.cycle-covers.disjoint-double-atom-obstruction",
+      "target": "math.graph-theory.cycle-covers.disjoint-second-failure-avoidance",
+      "plane": "discovery",
+      "type": "motivates",
+      "scope": "the obstruction isolates the smallest missing continuation/image-exclusion question",
+      "status": "captured-unreviewed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+          "path": "projects/affine-cdc/research/AC_RL_ONE_ATOM_01_FINAL_RETURN_V2_BLOCKED.md",
+          "anchor": "L121-L134",
+          "blob": "0bbf6992b75e25c613227c882255bbd9456273c5"
+        }
+      ]
+    },
+    {
+      "id": "rel.discovery.third-terminal-motivates-census",
+      "source": "math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample",
+      "target": "math.graph-theory.cycle-covers.co-root-terminal-exhaustion",
+      "plane": "discovery",
+      "type": "motivates",
+      "scope": "exclude hidden third terminal paths by reconstructing the genuine operation",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+          "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+          "anchor": "L138-L169",
+          "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb"
+        }
+      ]
+    },
+    {
+      "id": "rel.discovery.third-terminal-motivates-zero-census",
+      "source": "math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample",
+      "target": "math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion",
+      "plane": "discovery",
+      "type": "motivates",
+      "scope": "exclude hidden third terminal paths in the active-cell-deleted carrier",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+          "path": "audit/affine-cdc-terminal-exhaustion-v1/TERMINAL_EXHAUSTION_REPORT.md",
+          "anchor": "L138-L169",
+          "blob": "efc86b61897b69dc3e539afa5768a471c0948dcb"
+        }
+      ]
+    },
+    {
+      "id": "rel.discovery.xi-counterexample-motivates-marked-connector",
+      "source": "math.graph-theory.cycle-covers.xi-same-arc-counterexample",
+      "target": "math.graph-theory.cycle-covers.co-root-connector-6-7-model",
+      "plane": "discovery",
+      "type": "motivates",
+      "scope": "replace arbitrary equal-face selection by a physical connector between the actual marked arcs",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+          "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+          "anchor": "L193-L276",
+          "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297"
+        }
+      ]
+    },
+    {
+      "id": "rel.discovery.co-root-analogous-zero-model",
+      "source": "math.graph-theory.cycle-covers.co-root-connector-6-7-model",
+      "target": "math.graph-theory.cycle-covers.zero-parent-h35-model",
+      "plane": "discovery",
+      "type": "analogous-to",
+      "scope": "both use a physical matching-changing move but have different terminal data and consumers",
+      "status": "captured-unreviewed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+          "path": "audit/affine-cdc-component-chain-v1/CHAIN_INHERITANCE_AND_COROLLARY_LEDGER.md",
+          "anchor": "L246-L416",
+          "blob": "8ed77110d1a7c31674a6d7bda6706ac9cfcbe297"
+        }
+      ]
+    }
   ],
-  "counts": {"logical":21,"discovery":6,"total":27}
+  "counts": {
+    "logical": 20,
+    "discovery": 7,
+    "total": 27
+  }
 }

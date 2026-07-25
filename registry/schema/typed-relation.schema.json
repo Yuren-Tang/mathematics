@@ -17,12 +17,13 @@
       "minItems": 1,
       "items": {
         "type": "object",
-        "required": ["repository", "commit", "path"],
+        "required": ["repository", "commit", "path", "blob", "anchor"],
         "properties": {
           "repository": {"type": "string"},
           "commit": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
           "path": {"type": "string"},
-          "anchor": {"type": ["string", "null"]}
+          "blob": {"type": "string", "pattern": "^[0-9a-f]{40}$"},
+          "anchor": {"type": "string", "pattern": "^L[1-9][0-9]*-L[1-9][0-9]*$"}
         }
       }
     },

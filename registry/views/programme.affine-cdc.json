@@ -18,10 +18,6 @@
     "independently_established_in_scope": [
       "math.graph-theory.cycle-covers.root-boundary-finite-core",
       "math.graph-theory.cycle-covers.single-pop-algebra",
-      "math.graph-theory.cycle-covers.one-atom-identical-support-endpoint",
-      "math.graph-theory.cycle-covers.one-atom-shared-vertex-macro",
-      "math.graph-theory.cycle-covers.one-atom-conditional-disjoint-commutation",
-      "math.graph-theory.cycle-covers.supplied-comparison-run-seam-coherence",
       "math.graph-theory.cycle-covers.component-chain-local-tables",
       "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path",
       "math.graph-theory.cycle-covers.co-root-terminal-exhaustion",
@@ -41,6 +37,7 @@
       "math.graph-theory.cycle-covers.one-atom-complete-endpoint",
       "math.graph-theory.cycle-covers.disjoint-second-failure-avoidance",
       "math.graph-theory.cycle-covers.single-pop-image-membership",
+      "math.graph-theory.cycle-covers.cubic-five-support-goal",
       "math.graph-theory.cycle-covers.five-support-goal"
     ],
     "failed_or_refuted_in_scope": [
@@ -56,8 +53,14 @@
     ],
     "historical_discovery": [
       "math.graph-theory.cycle-covers.xi-same-arc-escape-question"
+    ],
+    "authorial_pending_independent_review": [
+      "math.graph-theory.cycle-covers.one-atom-identical-support-endpoint",
+      "math.graph-theory.cycle-covers.one-atom-shared-vertex-macro",
+      "math.graph-theory.cycle-covers.one-atom-conditional-disjoint-commutation",
+      "math.graph-theory.cycle-covers.supplied-comparison-run-seam-coherence"
     ]
   },
-  "status_statement": "AffineCDC contains a substantial independently assessed local and conditional corpus. The universal five-support/five-CDC theorem remains open at the one-atom complete-endpoint interface.",
+  "status_statement": "AffineCDC contains a substantial independently assessed local and conditional corpus plus four author-complete one-atom local results pending independent review. The cubic five-support theorem and universal five-support/five-CDC theorem remain open at the one-atom complete-endpoint interface.",
   "nonduplication_rule": "This view references natural units and legacy compatibility paths; it does not own or duplicate mathematical truth."
 }
