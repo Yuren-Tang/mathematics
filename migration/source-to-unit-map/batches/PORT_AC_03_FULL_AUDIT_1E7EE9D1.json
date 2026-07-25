@@ -1,0 +1,23 @@
+{
+  "batch_id": "PORT-AC-CONSOLIDATE-01",
+  "source_id": "ac-full-audit",
+  "source_ref": "Yuren-Tang/mathematics:audit/affine-cdc-five-cdc-v7-4-1-full-v1@1e7ee9d14608bfdd3524d588d96bfc3470654686",
+  "controlling_file": "audit/affine-cdc-five-cdc-v7-4-1-full-v1/FINAL_DISPOSITION.md",
+  "items": [
+    {"source_item":"material gap in arbitrary one-standard-co-root-atom continuation","disposition":"attached-provenance","units":["math.graph-theory.cycle-covers.one-atom-complete-endpoint","math.graph-theory.cycle-covers.v741-proof-candidate"]},
+    {"source_item":"R1 and root/boundary finite arithmetic pass","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.root-boundary-finite-core"]},
+    {"source_item":"single-pop algebra and 180=120+60 partition pass","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.single-pop-algebra"]},
+    {"source_item":"#81 certificate independently reconstructed","disposition":"attached-counterexample","units":["math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample","math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier"]},
+    {"source_item":"exact-two-terminal-path component chain passes","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"]},
+    {"source_item":"co-root and zero constructors supply exact application domain","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.co-root-terminal-exhaustion","math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion"]},
+    {"source_item":"arbitrary-equal-face Xi negative remains controlling","disposition":"attached-counterexample","units":["math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality","math.graph-theory.cycle-covers.xi-same-arc-counterexample"]},
+    {"source_item":"co-root and zero parent moves pass conditionally on complete endpoint","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.conditional-singular-parent-moves"]},
+    {"source_item":"(L,C) no-rank-reset protocol passes in stated domain","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.connector-prefix-no-reset"]},
+    {"source_item":"general-graph outer shell passes conditionally","disposition":"attached-proof","units":["math.graph-theory.cycle-covers.general-multigraph-outer-shell"]},
+    {"source_item":"submitted proof rejected as incomplete","disposition":"attached-provenance","units":["math.graph-theory.cycle-covers.v741-proof-candidate"]},
+    {"source_item":"audit does not refute five-CDC conjecture","disposition":"attached-provenance","units":["math.graph-theory.cycle-covers.five-support-goal"]},
+    {"source_item":"no canonical, Lean, manuscript, release or publication promotion","disposition":"non-mathematical-control","units":[]}
+  ],
+  "counts": {"substantive_items":13,"classified":13,"unclassified":0,"remaining_unclassified_source_packets":3},
+  "epistemic_guard":"Independent review refutes proof completeness only. Positive findings are scoped individually; no five-CDC acceptance or global negative conclusion follows."
+}
