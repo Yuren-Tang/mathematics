@@ -1,0 +1,92 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "PORT-AC-CONSOLIDATE-01",
+  "authority": {
+    "control": "Yuren-Tang/research-workbench#87 comment 5075948677",
+    "writer": "MATH-CUR::chatgpt:6a57882c-55cc-83ed-a9f8-4ce0ed7c4d8d",
+    "lease_generation": "20260725T005438Z-19153",
+    "branch": "curation/affine-cdc-global-rebaseline-v2",
+    "start_tip": "24f777d45693ff7e031dc93137a4aec5b879a7b3",
+    "canonical_comparison": "960c92b7ff231c78b387894149779083060a75eb"
+  },
+  "policy": {
+    "mode": "additive-reversible",
+    "delete_or_move_existing_paths": false,
+    "wholesale_merge": false,
+    "main_movement": false,
+    "new_observation_default": "captured/unreviewed"
+  },
+  "sources": [
+    {
+      "source_id": "ac-rl",
+      "repository": "Yuren-Tang/mathematics",
+      "branch": "research/affine-cdc-five-cdc-v1",
+      "commit": "31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8",
+      "provenance_role": "development",
+      "frozen": true,
+      "itemization_status": "pending",
+      "substantive_item_count": null,
+      "recovery_pointer": "Yuren-Tang/mathematics:research/affine-cdc-five-cdc-v1@31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8"
+    },
+    {
+      "source_id": "ac-pdl",
+      "repository": "Yuren-Tang/mathematics",
+      "branch": "proof-development/affine-cdc-rigour-v1",
+      "commit": "f90a068fbcc81d34850bb53426f4c2efb4cb5388",
+      "provenance_role": "development",
+      "frozen": true,
+      "itemization_status": "pending",
+      "substantive_item_count": null,
+      "recovery_pointer": "Yuren-Tang/mathematics:proof-development/affine-cdc-rigour-v1@f90a068fbcc81d34850bb53426f4c2efb4cb5388"
+    },
+    {
+      "source_id": "ac-full-audit",
+      "repository": "Yuren-Tang/mathematics",
+      "branch": "audit/affine-cdc-five-cdc-v7-4-1-full-v1",
+      "commit": "1e7ee9d14608bfdd3524d588d96bfc3470654686",
+      "provenance_role": "review",
+      "frozen": true,
+      "itemization_status": "pending",
+      "substantive_item_count": null,
+      "recovery_pointer": "Yuren-Tang/mathematics:audit/affine-cdc-five-cdc-v7-4-1-full-v1@1e7ee9d14608bfdd3524d588d96bfc3470654686"
+    },
+    {
+      "source_id": "ac-terminal-audit",
+      "repository": "Yuren-Tang/mathematics",
+      "branch": "audit/affine-cdc-terminal-exhaustion-v1",
+      "commit": "c954f2220c082bc3b47821657b7a1164876aeaab",
+      "provenance_role": "review",
+      "frozen": true,
+      "itemization_status": "pending",
+      "substantive_item_count": null,
+      "recovery_pointer": "Yuren-Tang/mathematics:audit/affine-cdc-terminal-exhaustion-v1@c954f2220c082bc3b47821657b7a1164876aeaab"
+    },
+    {
+      "source_id": "ac-component-chain-negative",
+      "repository": "Yuren-Tang/mathematics",
+      "branch": "audit/affine-cdc-component-chain-v1",
+      "commit": "a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57",
+      "provenance_role": "counterexample",
+      "frozen": true,
+      "itemization_status": "pending",
+      "substantive_item_count": null,
+      "recovery_pointer": "Yuren-Tang/mathematics:audit/affine-cdc-component-chain-v1@a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57"
+    },
+    {
+      "source_id": "ac-xi-negative",
+      "repository": "Yuren-Tang/mathematics",
+      "branch": "audit/affine-cdc-xi-co-root-v1",
+      "commit": "53be22a0f65b85068b11e5f781579618967db9dd",
+      "provenance_role": "counterexample",
+      "frozen": true,
+      "itemization_status": "pending",
+      "substantive_item_count": null,
+      "recovery_pointer": "Yuren-Tang/mathematics:audit/affine-cdc-xi-co-root-v1@53be22a0f65b85068b11e5f781579618967db9dd"
+    }
+  ],
+  "summary": {
+    "source_packets": 6,
+    "itemized_packets": 0,
+    "pending_packets": 6
+  }
+}
