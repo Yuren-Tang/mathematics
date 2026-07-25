@@ -60,7 +60,17 @@ addenda = [
 paths = adjacent + addenda
 assert len(adjacent) == 35 and len(paths) == 38 and len(set(paths)) == 38
 class_path = "research/E306_RL_BOUNDED_CURATION_HANDOFF_2026-07-24.md"
-CLASS_LOC = locator(CLASSIFICATION, class_path, "curation")
+existing_map = (
+    json.loads(MAP_PATH.read_text(encoding="utf-8"))
+    if MAP_PATH.exists() else {}
+)
+existing_by_path = {
+    item["source_item"]: item["source_locator"]
+    for item in existing_map.get("items", [])
+}
+CLASS_LOC = existing_map.get("classification_authority")
+if CLASS_LOC is None:
+    CLASS_LOC = locator(CLASSIFICATION, class_path, "curation")
 
 P = "math.number-theory.arithmetic-derivatives."
 H = "math.harmonic-analysis.finite-fourier."
@@ -150,7 +160,7 @@ assert set(R) == {Path(path).name for path in paths}
 items = []
 locators = {}
 for index, path in enumerate(paths, 1):
-    loc = locator(CONTENT, path)
+    loc = existing_by_path.get(path) or locator(CONTENT, path)
     locators[Path(path).name] = loc
     basename = Path(path).name
     disposition = "mapped-to-natural-units"
@@ -228,6 +238,12 @@ write_json("sources/manifests/E307_ADJACENT_CANONICAL_INTAKE_SOURCE_MANIFEST.jso
 
 def ploc(fragment: str, role: str = "origin") -> dict:
     matches = [item["source_locator"] for item in items if fragment in item["source_item"]]
+    if len(matches) != 1:
+        adjacent_matches = [
+            value for value in matches if value["path"].startswith("research/adjacent-problems/")
+        ]
+        if len(adjacent_matches) == 1:
+            matches = adjacent_matches
     assert len(matches) == 1, (fragment, len(matches))
     value = dict(matches[0])
     value["role"] = role
@@ -242,9 +258,9 @@ def ev(kind: str, effect: str, scope: str, provenance: dict, notes=None) -> dict
 
 
 specs = {
-    "problem": ("Erdős 307 existence problem", "Existence of disjoint finite prime sets whose reciprocal sums multiply to one; equivalently, existence of a coprime squarefree arithmetic-derivative two-cycle.", "problem", "formulated", "open", "dormant", "BILATERAL_DEFECT", "authorial-argument", "inconclusive"),
-    "bado": ("Bado squarefree two-cycle framework", "The exact forcing/two-cycle identity and union-character/discriminant framework are prior art and must be attributed to Bado.", "theorem", "assessed", "established-in-scope", "integrated", "LITERATURE_ATTRIBUTION", "literature-check", "qualify"),
-    "syndrome": ("Mutual reciprocal syndromes and union constraints", "Cross-side reciprocal zero-sum, valuation, parity, union discriminant and union-character conditions necessary for a squarefree two-cycle.", "concept", "assessed", "established-in-scope", "integrated", "LITERATURE_ATTRIBUTION", "literature-check", "qualify"),
+    "problem": ("Erdős 307 existence problem", "Existence of disjoint finite prime sets whose reciprocal sums multiply to one; equivalently, existence of a coprime squarefree arithmetic-derivative two-cycle.", "problem", "formulated", "open", "dormant", "ARITHMETIC_DERIVATIVE_TWO_CYCLE", "authorial-argument", "inconclusive"),
+    "bado": ("Bado squarefree two-cycle framework", "The exact forcing/two-cycle identity and union-character/discriminant framework are prior art and must be attributed to Bado.", "connection", "assessed", "scope-split", "integrated", "LITERATURE_ATTRIBUTION", "literature-check", "qualify"),
+    "syndrome": ("Mutual reciprocal syndromes and union constraints", "Cross-side reciprocal zero-sum, valuation, parity, union discriminant and union-character conditions necessary for a squarefree two-cycle.", "theorem", "author-complete", "supported", "ready-for-review", "LITERATURE_ATTRIBUTION", "authorial-argument", "support"),
     "defect": ("Bilateral defect semigroup", "Coupled arithmetic-derivative defect coordinates, update law and semigroup composition for partial E307 fillers.", "method", "author-complete", "supported", "ready-for-review", "BILATERAL_DEFECT_SEMIGROUP", "authorial-argument", "support"),
     "anti": ("Bilateral anti-inheritance and terminal port", "Closed cycles cannot be enlarged by naïve inheritance; exact terminal formulas expose the coupled completion boundary.", "theorem", "author-complete", "supported", "ready-for-review", "BILATERAL_TERMINAL", "authorial-argument", "support"),
     "coeff": ("Prime-symbol shift divided-power coefficients", "A prime-symbol shift generating series has Hasse-Schmidt-type multiplicative coefficients organizing reciprocal graph and hypergraph sums; it is not an iterated arithmetic derivative.", "method", "author-complete", "scope-split", "ready-for-review", "PRIME_SHIFT_HASSE", "authorial-argument", "qualify"),
@@ -288,17 +304,26 @@ for key, data in specs.items():
     scope = summary
     notes = []
     if key == "direct":
-        notes = ["Exact numeric construction only.", "Proposition 3.1 requires C even or separate l=2 parity admissibility; the core-30 instance is valid."]
+        notes = ["Exact numeric construction only.", "Independent reproduction boundary is authorized by control comment 5080997896; provenance identifies the exact reproduced construction.", "Proposition 3.1 requires C even or separate l=2 parity admissibility; the core-30 instance is valid."]
+    elif key == "relaycounter":
+        notes = ["Exact numeric construction only; no family-level prime-production claim.", "Independent reproduction boundary is authorized by control comment 5080997896; provenance identifies the exact reproduced construction."]
     elif key == "natural66":
-        notes = ["Bounded reproduction: 66 windows / 14,675 integer q values / 0 integral pairs.", "No generalization beyond the enumerated scope."]
+        notes = ["Bounded reproduction: 66 windows / 14,675 integer q values / 0 integral pairs.", "Independent reproduction boundary is authorized by control comment 5080997896; provenance identifies the exact reproduced diagnostic.", "No generalization beyond the enumerated scope."]
     elif key == "jetblocked":
         notes = ["Omitted frequency: k=0, chi_l=1, chi_H nontrivial; coefficient=l-1.", "No logical proof traversal through Theorem 5.1, Theorem 7.1 or criterion 7.4."]
     elif key in {"literature", "bado", "wang"}:
         notes = ["Bounded attribution/terminology facet only; not correctness, comprehensive novelty or publication-priority assurance."]
+    assurance = [ev(kind, effect, scope, provenance, notes or None)]
+    if key == "syndrome":
+        assurance.append(ev(
+            "literature-check", "qualify",
+            "bounded attribution to the Bado union/syndrome framework only; not correctness assurance",
+            provenance,
+        ))
     units.append({
         "id": U[key], "title": title, "summary": summary, "form": form,
         "maturity": maturity,
-        "assurance": [ev(kind, effect, scope, provenance, notes or None)],
+        "assurance": assurance,
         "disposition": disposition, "workflow": workflow,
         "provenance": [provenance], "relations": [], "views": ["frontier.erdos-307"],
         **({"notes": notes} if notes else {}),
@@ -386,6 +411,7 @@ write_json("registry/views/frontier.erdos-307.json", {
     "relation_source": "registry/relations/E307_ADJACENT_CANONICAL_INTAKE_RELATIONS.json",
     "compatibility_entrypoints": [
         "projects/erdos-307/README.md", "projects/erdos-307/FRONTIER_AND_ASSURANCE.md",
+        "registry/assurance/E307_ADJACENT_ASSURANCE_AND_ATTRIBUTION_MAP.json",
         "math/number-theory/arithmetic-derivatives/e307-two-cycles-and-syndromes.md",
         "math/number-theory/arithmetic-derivatives/e307-ports-jets-and-closure.md",
         "math/number-theory/arithmetic-derivatives/e307-negative-knowledge-and-open-frontier.md",
@@ -407,7 +433,7 @@ write_json("registry/views/frontier.erdos-307.json", {
         ],
         "idea_and_chronology": [U["mine"], U["chronology"]],
     },
-    "status_statement": "OPEN / SEPARATE / NOT SOLVED. No E306 proof status transfers to E307.",
+    "status_statement": "OPEN / SEPARATE / NOT SOLVED / RESEARCH NOT LAUNCHED. Legacy separation remains OPEN / SEPARATE / NOT LAUNCHED. No E306 proof status transfers to E307.",
     "forbidden_traversal": [
         "The blocked normalized-jet Theorem 5.1 all-nontrivial flatness, Theorem 7.1 and criterion 7.4 cannot support a proof edge.",
         "Counterexamples refute two-step contraction only; they neither establish nor refute E307 existence.",
@@ -422,6 +448,41 @@ write_json("registry/views/frontier.erdos-307.json", {
         "affine/quadratic prime outputs",
     ],
     "nonduplication_rule": "This frontier view references natural units; it is not a project-owned mathematical ontology.",
+})
+write_json("registry/assurance/E307_ADJACENT_ASSURANCE_AND_ATTRIBUTION_MAP.json", {
+    "schema_version": "1.0.0",
+    "batch_id": BATCH,
+    "registry_source": "registry/units/number-theory/arithmetic-derivatives/E307_ADJACENT_CANONICAL_INTAKE_UNITS.json",
+    "control": "Yuren-Tang/research-workbench#15 comment 5080997896",
+    "attribution": {
+        "prior_art_must_attribute": [U["bado"], U["syndrome"]],
+        "port_framework_antecedent": [U["wang"]],
+        "terminology": {
+            "moving_genus_replacement": "moving quadratic splitting-character obstruction",
+            "hasse_replacement": "prime-symbol shift divided-power / Hasse-Schmidt-type multiplicative coefficients",
+        },
+        "mechanism_novelty": "unresolved",
+        "literature_effect": "bounded attribution/terminology only; no correctness, comprehensive novelty, peer-review or publication-priority assurance",
+    },
+    "independent_reproduction": {
+        "exact_numeric_counterexamples_only": [U["direct"], U["relaycounter"]],
+        "bounded_diagnostic_only": {
+            "unit": U["natural66"], "windows": 66, "integer_q_values": 14675,
+            "integral_pairs": 0, "general_exclusion": False,
+        },
+    },
+    "blocked": {
+        "unit": U["jetblocked"],
+        "omitted_frequency": "k=0, chi_l=1, chi_H nontrivial",
+        "coefficient": "l-1",
+        "not_established": ["Theorem 5.1 all-nontrivial flatness", "Theorem 7.1", "criterion 7.4"],
+        "forbidden_as_logical_provider": True,
+    },
+    "open": {
+        "headline": U["problem"],
+        "prime_inverse_phase_provider": U["phase"],
+        "joint_finite_archimedean_local_limit": U["joint"],
+    },
 })
 
 write("math/number-theory/arithmetic-derivatives/e307-two-cycles-and-syndromes.md", """
@@ -536,9 +597,9 @@ Each observation remains `captured-unreviewed`; no research line is launched her
 write("migration/no-loss-audits/E307_ADJACENT_CANONICAL_INTAKE_FINAL_VALIDATION.md", f"""
 # E307 adjacent canonical intake — final validation packet
 
-**Base:** `b047efd5f43386f71dd9d2af1c9d5d531bd03163`  
-**Source:** `Yuren-Tang/erdos-306@{CONTENT}`  
-**Classification:** `Yuren-Tang/erdos-306@{CLASSIFICATION}`  
+**Base:** `b047efd5f43386f71dd9d2af1c9d5d531bd03163`
+**Source:** `Yuren-Tang/erdos-306@{CONTENT}`
+**Classification:** `Yuren-Tang/erdos-306@{CLASSIFICATION}`
 **Control:** `Yuren-Tang/research-workbench#15` comment `5080997896`
 
 The generated source map classifies all 38 items with `unclassified=0`.  Every item has an

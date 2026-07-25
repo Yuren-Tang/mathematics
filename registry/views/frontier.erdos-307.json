@@ -2,16 +2,82 @@
   "view_id": "frontier.erdos-307",
   "title": "Erd\u0151s 307 adjacent frontier",
   "view_type": "frontier",
-  "registry_source": "registry/units/number-theory/reciprocal-representations/E306_CUR_CANONICAL_INTAKE_UNITS.json",
-  "relation_source": "registry/relations/E306_CUR_CANONICAL_INTAKE_RELATIONS.json",
+  "registry_source": "registry/units/number-theory/arithmetic-derivatives/E307_ADJACENT_CANONICAL_INTAKE_UNITS.json",
+  "relation_source": "registry/relations/E307_ADJACENT_CANONICAL_INTAKE_RELATIONS.json",
+  "compatibility_entrypoints": [
+    "projects/erdos-307/README.md",
+    "projects/erdos-307/FRONTIER_AND_ASSURANCE.md",
+    "registry/assurance/E307_ADJACENT_ASSURANCE_AND_ATTRIBUTION_MAP.json",
+    "math/number-theory/arithmetic-derivatives/e307-two-cycles-and-syndromes.md",
+    "math/number-theory/arithmetic-derivatives/e307-ports-jets-and-closure.md",
+    "math/number-theory/arithmetic-derivatives/e307-negative-knowledge-and-open-frontier.md"
+  ],
   "sections": {
-    "open_separate": [
-      "math.number-theory.arithmetic-derivatives.erdos-307-adjacent-open-programme"
+    "headline_open_problem": [
+      "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
     ],
-    "discovery_only_antecedent": [
-      "math.number-theory.reciprocal-representations.squarefree-semiprime-characterization"
+    "prior_art_must_attribute": [
+      "math.number-theory.arithmetic-derivatives.bado-squarefree-two-cycle-framework",
+      "math.number-theory.arithmetic-derivatives.mutual-reciprocal-syndrome-and-union-constraints"
+    ],
+    "authorial_mechanisms_novelty_unresolved": [
+      "math.number-theory.arithmetic-derivatives.bilateral-defect-semigroup",
+      "math.number-theory.arithmetic-derivatives.bilateral-anti-inheritance-and-terminal-port",
+      "math.number-theory.arithmetic-derivatives.prime-symbol-shift-divided-power-coefficients",
+      "math.number-theory.arithmetic-derivatives.semiprime-jet-transfer-and-port-involution",
+      "math.number-theory.arithmetic-derivatives.real-modular-deficit-determinant",
+      "math.number-theory.arithmetic-derivatives.seeded-divisor-cubic-reduction",
+      "math.number-theory.arithmetic-derivatives.residual-c-port-calculus",
+      "math.number-theory.arithmetic-derivatives.residual-port-pencils-and-block-quadratic",
+      "math.number-theory.arithmetic-derivatives.block-first-two-prime-closure",
+      "math.harmonic-analysis.finite-fourier.divisor-residue-fourier-calculus",
+      "math.number-theory.arithmetic-derivatives.moving-quadratic-splitting-character-obstruction",
+      "math.number-theory.arithmetic-derivatives.primitive-quadratic-norm-split-factor-geometry",
+      "math.number-theory.arithmetic-derivatives.paired-mu-sondow-diagonal"
+    ],
+    "antecedent": [
+      "math.number-theory.arithmetic-derivatives.wang-port-framework-antecedent"
+    ],
+    "independently_reproduced_counterexamples": [
+      "math.number-theory.arithmetic-derivatives.direct-core30-rebound-counterexample",
+      "math.number-theory.arithmetic-derivatives.giuga-relay-rebound-counterexample"
+    ],
+    "bounded_independently_reproduced_diagnostic": [
+      "math.number-theory.arithmetic-derivatives.natural66-bounded-terminal-exclusion"
+    ],
+    "blocked_not_established": [
+      "math.harmonic-analysis.finite-fourier.normalized-prime-jet-flatness-transference-block"
+    ],
+    "open_providers": [
+      "math.harmonic-analysis.finite-fourier.prime-inverse-phase-provider-gap",
+      "math.harmonic-analysis.finite-fourier.joint-finite-archimedean-local-limit-gap"
+    ],
+    "negative_and_finite_knowledge": [
+      "math.number-theory.arithmetic-derivatives.two-step-contraction-claim",
+      "math.combinatorics.finite-configurations.e307-minimal-support-bounds",
+      "math.number-theory.arithmetic-derivatives.positive-defect-minimal-support-relays",
+      "math.combinatorics.finite-configurations.defect-block-code-and-complement-jet",
+      "math.combinatorics.finite-configurations.defect-exchange-low-swap-rigidity",
+      "math.number-theory.arithmetic-derivatives.defect-spectrum-and-intermediate-ladder"
+    ],
+    "idea_and_chronology": [
+      "math.number-theory.reciprocal-representations.adjacent-unit-fraction-neighbourhood-mine",
+      "math.number-theory.arithmetic-derivatives.superseded-chronology-and-failed-routes"
     ]
   },
-  "status_statement": "OPEN / SEPARATE / NOT LAUNCHED. The E306 connection is discovery-plane only.",
-  "nonduplication_rule": "No E306 proof status transfers to E307."
+  "status_statement": "OPEN / SEPARATE / NOT SOLVED / RESEARCH NOT LAUNCHED. Legacy separation remains OPEN / SEPARATE / NOT LAUNCHED. No E306 proof status transfers to E307.",
+  "forbidden_traversal": [
+    "The blocked normalized-jet Theorem 5.1 all-nontrivial flatness, Theorem 7.1 and criterion 7.4 cannot support a proof edge.",
+    "Counterexamples refute two-step contraction only; they neither establish nor refute E307 existence.",
+    "Bounded computation and literature facets do not establish the headline."
+  ],
+  "remaining_gaps": [
+    "existence or nonexistence",
+    "repaired target-graph transference",
+    "moving-modulus prime inverse-phase provider",
+    "joint finite/Archimedean local limit",
+    "exact residual closure",
+    "affine/quadratic prime outputs"
+  ],
+  "nonduplication_rule": "This frontier view references natural units; it is not a project-owned mathematical ontology."
 }

@@ -1,0 +1,1563 @@
+{
+  "schema_version": "1.1.0",
+  "batch_id": "E307-ADJACENT-CANONICAL-INTAKE",
+  "item_schema": "registry/schema/mathematical-unit.schema.json",
+  "units": [
+    {
+      "id": "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem",
+      "title": "Erd\u0151s 307 existence problem",
+      "summary": "Existence of disjoint finite prime sets whose reciprocal sums multiply to one; equivalently, existence of a coprime squarefree arithmetic-derivative two-cycle.",
+      "form": "problem",
+      "maturity": "formulated",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "inconclusive",
+          "scope": "Existence of disjoint finite prime sets whose reciprocal sums multiply to one; equivalently, existence of a coprime squarefree arithmetic-derivative two-cycle.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_ARITHMETIC_DERIVATIVE_TWO_CYCLE_V1.md",
+            "blob": "7b9ce6db5fd1468b1affd768642fe6ece46999f8",
+            "anchor": "L1-L315",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "open",
+      "workflow": "dormant",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_ARITHMETIC_DERIVATIVE_TWO_CYCLE_V1.md",
+          "blob": "7b9ce6db5fd1468b1affd768642fe6ece46999f8",
+          "anchor": "L1-L315",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.bado-qualifies-problem",
+        "rel.e307.sondow-qualifies-problem",
+        "rel.e307.core30-specializes-problem",
+        "rel.e307.e306-suggests-e307",
+        "rel.e307.mine-motivates-problem"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.bado-squarefree-two-cycle-framework",
+      "title": "Bado squarefree two-cycle framework",
+      "summary": "The exact forcing/two-cycle identity and union-character/discriminant framework are prior art and must be attributed to Bado.",
+      "form": "connection",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "The exact forcing/two-cycle identity and union-character/discriminant framework are prior art and must be attributed to Bado.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+            "blob": "99a07db1862cd30a7dd5a4824d59b49cef6a9317",
+            "anchor": "L1-L248",
+            "role": "origin"
+          },
+          "notes": [
+            "Bounded attribution/terminology facet only; not correctness, comprehensive novelty or publication-priority assurance."
+          ]
+        }
+      ],
+      "disposition": "scope-split",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+          "blob": "99a07db1862cd30a7dd5a4824d59b49cef6a9317",
+          "anchor": "L1-L248",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.bado-qualifies-problem",
+        "rel.e307.syndrome-depends-bado",
+        "rel.e307.coeff-qualifies-derivative",
+        "rel.e307.literature-qualifies-bado",
+        "rel.e307.chronology-superseded-bado"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ],
+      "notes": [
+        "Bounded attribution/terminology facet only; not correctness, comprehensive novelty or publication-priority assurance."
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.mutual-reciprocal-syndrome-and-union-constraints",
+      "title": "Mutual reciprocal syndromes and union constraints",
+      "summary": "Cross-side reciprocal zero-sum, valuation, parity, union discriminant and union-character conditions necessary for a squarefree two-cycle.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "Cross-side reciprocal zero-sum, valuation, parity, union discriminant and union-character conditions necessary for a squarefree two-cycle.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+            "blob": "99a07db1862cd30a7dd5a4824d59b49cef6a9317",
+            "anchor": "L1-L248",
+            "role": "origin"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded attribution to the Bado union/syndrome framework only; not correctness assurance",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+            "blob": "99a07db1862cd30a7dd5a4824d59b49cef6a9317",
+            "anchor": "L1-L248",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+          "blob": "99a07db1862cd30a7dd5a4824d59b49cef6a9317",
+          "anchor": "L1-L248",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.syndrome-depends-bado",
+        "rel.e307.defect-uses-syndrome",
+        "rel.e307.fourier-uses-syndrome"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.bilateral-defect-semigroup",
+      "title": "Bilateral defect semigroup",
+      "summary": "Coupled arithmetic-derivative defect coordinates, update law and semigroup composition for partial E307 fillers.",
+      "form": "method",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "Coupled arithmetic-derivative defect coordinates, update law and semigroup composition for partial E307 fillers.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_BILATERAL_DEFECT_SEMIGROUP_V1.md",
+            "blob": "f17144a4ae36ff7f1a25c140032d8c72a68c2f13",
+            "anchor": "L1-L395",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_BILATERAL_DEFECT_SEMIGROUP_V1.md",
+          "blob": "f17144a4ae36ff7f1a25c140032d8c72a68c2f13",
+          "anchor": "L1-L395",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.defect-uses-syndrome",
+        "rel.e307.anti-uses-defect",
+        "rel.e307.jettransfer-uses-defect"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.bilateral-anti-inheritance-and-terminal-port",
+      "title": "Bilateral anti-inheritance and terminal port",
+      "summary": "Closed cycles cannot be enlarged by na\u00efve inheritance; exact terminal formulas expose the coupled completion boundary.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "Closed cycles cannot be enlarged by na\u00efve inheritance; exact terminal formulas expose the coupled completion boundary.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_BILATERAL_TERMINAL_PORT_AND_ANTI_INHERITANCE_V1.md",
+            "blob": "1aba998177b58f4a5c2f1088395e350135065104",
+            "anchor": "L1-L319",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_BILATERAL_TERMINAL_PORT_AND_ANTI_INHERITANCE_V1.md",
+          "blob": "1aba998177b58f4a5c2f1088395e350135065104",
+          "anchor": "L1-L319",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.anti-uses-defect"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.prime-symbol-shift-divided-power-coefficients",
+      "title": "Prime-symbol shift divided-power coefficients",
+      "summary": "A prime-symbol shift generating series has Hasse-Schmidt-type multiplicative coefficients organizing reciprocal graph and hypergraph sums; it is not an iterated arithmetic derivative.",
+      "form": "method",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "qualify",
+          "scope": "A prime-symbol shift generating series has Hasse-Schmidt-type multiplicative coefficients organizing reciprocal graph and hypergraph sums; it is not an iterated arithmetic derivative.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/PRIME_SHIFT_HASSE_RECIPROCAL_HYPERGRAPH_CALCULUS_V1.md",
+            "blob": "6045704ade685ed909e59e8457e166da638c686e",
+            "anchor": "L1-L356",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "scope-split",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/PRIME_SHIFT_HASSE_RECIPROCAL_HYPERGRAPH_CALCULUS_V1.md",
+          "blob": "6045704ade685ed909e59e8457e166da638c686e",
+          "anchor": "L1-L356",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.coeff-qualifies-derivative",
+        "rel.e307.coeff-analogous-jet"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.semiprime-jet-transfer-and-port-involution",
+      "title": "Semiprime jet transfer and port involution",
+      "summary": "Rational jet transfer, its inverse matrix, discriminant test and square-modulus M\u00f6bius port involution reduce local semiprime closure.",
+      "form": "method",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "Rational jet transfer, its inverse matrix, discriminant test and square-modulus M\u00f6bius port involution reduce local semiprime closure.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_SEMIPRIME_JET_TRANSFER_AND_MOBIUS_PORT_INVOLUTION_V1.md",
+            "blob": "e4398246169bb13dde1a6e0a84ff622d15aae5cb",
+            "anchor": "L1-L760",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_SEMIPRIME_JET_TRANSFER_AND_MOBIUS_PORT_INVOLUTION_V1.md",
+          "blob": "e4398246169bb13dde1a6e0a84ff622d15aae5cb",
+          "anchor": "L1-L760",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.jettransfer-uses-defect",
+        "rel.e307.realmod-generalizes-jet",
+        "rel.e307.divisorport-specializes-jet"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.real-modular-deficit-determinant",
+      "title": "Real-modular deficit determinant",
+      "summary": "One determinant controls the real completion threshold, modular partner class and derivative-transfer height.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "One determinant controls the real completion threshold, modular partner class and derivative-transfer height.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_REAL_MODULAR_PORT_GEOMETRY_AND_DEFICIT_DETERMINANT_V1.md",
+            "blob": "01295f6c0aa084fded2601bf09625f77ae48d79b",
+            "anchor": "L1-L365",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_REAL_MODULAR_PORT_GEOMETRY_AND_DEFICIT_DETERMINANT_V1.md",
+          "blob": "01295f6c0aa084fded2601bf09625f77ae48d79b",
+          "anchor": "L1-L365",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.realmod-generalizes-jet"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.seeded-divisor-cubic-reduction",
+      "title": "Seeded divisor cubic reduction",
+      "summary": "A seeded four-prime completion reduces to restricted complementary divisors of one arithmetic-derivative cubic, followed by prime-value tests.",
+      "form": "method",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "A seeded four-prime completion reduces to restricted complementary divisors of one arithmetic-derivative cubic, followed by prime-value tests.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_SEEDED_DIVISOR_PORT_FACTORIZATION_V1.md",
+            "blob": "78db129a95f7615de322ecb8c7e87c9b3abebb4a",
+            "anchor": "L1-L372",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_SEEDED_DIVISOR_PORT_FACTORIZATION_V1.md",
+          "blob": "78db129a95f7615de322ecb8c7e87c9b3abebb4a",
+          "anchor": "L1-L372",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.divisorport-specializes-jet",
+        "rel.e307.norm-uses-divisorport"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.residual-c-port-calculus",
+      "title": "Residual-C port calculus",
+      "summary": "Seeded E307 completion specializes/generalizes one-sided port filling to prescribed residual C, with composition and terminal formulas but unresolved global providers.",
+      "form": "method",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "Seeded E307 completion specializes/generalizes one-sided port filling to prescribed residual C, with composition and terminal formulas but unresolved global providers.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_SEEDED_SCALAR_PORT_COMPOSITION_V1.md",
+            "blob": "3070d7a699ce051f8d0c70776b5de5433c7dc6f7",
+            "anchor": "L1-L356",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_SEEDED_SCALAR_PORT_COMPOSITION_V1.md",
+          "blob": "3070d7a699ce051f8d0c70776b5de5433c7dc6f7",
+          "anchor": "L1-L356",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.residual-generalizes-wang",
+        "rel.e307.residual-specializes-wang",
+        "rel.e307.pencil-uses-residual"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.wang-port-framework-antecedent",
+      "title": "Wang port-framework antecedent",
+      "summary": "Wang's one-sided primary-pseudoperfect port-filling framework is an antecedent; E307 residual-C and bilateral forms must be described as specializations/generalizations.",
+      "form": "connection",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "Wang's one-sided primary-pseudoperfect port-filling framework is an antecedent; E307 residual-C and bilateral forms must be described as specializations/generalizations.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_GENERAL_RESIDUAL_PORT_TRANSFER_AND_AUTOMATIC_OUTPUT_V1.md",
+            "blob": "678b84d0cda0e09717e46bfa56c75baf53158ce7",
+            "anchor": "L1-L420",
+            "role": "origin"
+          },
+          "notes": [
+            "Bounded attribution/terminology facet only; not correctness, comprehensive novelty or publication-priority assurance."
+          ]
+        }
+      ],
+      "disposition": "scope-split",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_GENERAL_RESIDUAL_PORT_TRANSFER_AND_AUTOMATIC_OUTPUT_V1.md",
+          "blob": "678b84d0cda0e09717e46bfa56c75baf53158ce7",
+          "anchor": "L1-L420",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.residual-generalizes-wang",
+        "rel.e307.residual-specializes-wang",
+        "rel.e307.literature-qualifies-wang"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ],
+      "notes": [
+        "Bounded attribution/terminology facet only; not correctness, comprehensive novelty or publication-priority assurance."
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.residual-port-pencils-and-block-quadratic",
+      "title": "Residual-port pencils and block quadratic",
+      "summary": "Residual-one blocks generate residual-C affine pencils, while block-first coordinates give a seed quadratic and exact primitivity law.",
+      "form": "construction",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "Residual-one blocks generate residual-C affine pencils, while block-first coordinates give a seed quadratic and exact primitivity law.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_RESIDUAL_PORT_PENCILS_BLOCK_QUADRATIC_AND_DEFECT_BRIDGE_V1.md",
+            "blob": "eae5d7b8f3643d47f7294b093006b2bd7e78cc94",
+            "anchor": "L1-L377",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_RESIDUAL_PORT_PENCILS_BLOCK_QUADRATIC_AND_DEFECT_BRIDGE_V1.md",
+          "blob": "eae5d7b8f3643d47f7294b093006b2bd7e78cc94",
+          "anchor": "L1-L377",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.pencil-uses-residual",
+        "rel.e307.closure-uses-pencil",
+        "rel.e307.nonambient-qualifies-pencil",
+        "rel.e307.pencil-suggests-nonambient"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.block-first-two-prime-closure",
+      "title": "Block-first two-prime closure",
+      "summary": "Given one full side and a partial opposite product, divisibility gates and one quadratic recover the two missing prime candidates.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "Given one full side and a partial opposite product, divisibility gates and one quadratic recover the two missing prime candidates.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_BLOCK_FIRST_TWO_PRIME_CLOSURE_AND_EXACT_PENCIL_INTERSECTION_V1.md",
+            "blob": "3b59cb283eab4896117dbf6ea23535d974bd2de7",
+            "anchor": "L1-L426",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_BLOCK_FIRST_TWO_PRIME_CLOSURE_AND_EXACT_PENCIL_INTERSECTION_V1.md",
+          "blob": "3b59cb283eab4896117dbf6ea23535d974bd2de7",
+          "anchor": "L1-L426",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.closure-uses-pencil"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.harmonic-analysis.finite-fourier.divisor-residue-fourier-calculus",
+      "title": "Divisor-residue Fourier calculus",
+      "summary": "Finite group algebra and character inversion count complementary divisor orientations and isolate exact support obstructions.",
+      "form": "method",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "Finite group algebra and character inversion count complementary divisor orientations and isolate exact support obstructions.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_DIVISOR_RESIDUE_FOURIER_AND_QUADRATIC_OBSTRUCTION_V1.md",
+            "blob": "0ec68b0842ad415f5ed68883acbff0f4f354277e",
+            "anchor": "L1-L426",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_DIVISOR_RESIDUE_FOURIER_AND_QUADRATIC_OBSTRUCTION_V1.md",
+          "blob": "0ec68b0842ad415f5ed68883acbff0f4f354277e",
+          "anchor": "L1-L426",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.fourier-uses-syndrome",
+        "rel.e307.split-specializes-fourier"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.moving-quadratic-splitting-character-obstruction",
+      "title": "Moving quadratic splitting-character obstruction",
+      "summary": "A moving quadratic character gives a factorization-free necessary splitting certificate for target divisors; the traditional moving-genus label is not used.",
+      "form": "obstruction",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "A moving quadratic character gives a factorization-free necessary splitting certificate for target divisors; the traditional moving-genus label is not used.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_MOVING_GENUS_CHARACTER_OBSTRUCTION_V1.md",
+            "blob": "161202f8a17f496ace6d2d8af04ef351dedd3b30",
+            "anchor": "L1-L235",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_MOVING_GENUS_CHARACTER_OBSTRUCTION_V1.md",
+          "blob": "161202f8a17f496ace6d2d8af04ef351dedd3b30",
+          "anchor": "L1-L235",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.split-specializes-fourier",
+        "rel.e307.split-qualifies-norm",
+        "rel.e307.norm-suggests-split"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.primitive-quadratic-norm-split-factor-geometry",
+      "title": "Primitive quadratic norm and split-factor geometry",
+      "summary": "The seeded cubic value is a primitive quadratic norm whose odd prime factors obey a moving splitting law; target orientation remains open.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "qualify",
+          "scope": "The seeded cubic value is a primitive quadratic norm whose odd prime factors obey a moving splitting law; target orientation remains open.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_PRIMITIVE_NORM_AND_SPLIT_FACTOR_GEOMETRY_V1.md",
+            "blob": "55aa34d03dc79585a9d74341d2e406b32000814a",
+            "anchor": "L1-L265",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "scope-split",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_PRIMITIVE_NORM_AND_SPLIT_FACTOR_GEOMETRY_V1.md",
+          "blob": "55aa34d03dc79585a9d74341d2e406b32000814a",
+          "anchor": "L1-L265",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.norm-uses-divisorport",
+        "rel.e307.split-qualifies-norm",
+        "rel.e307.norm-suggests-split"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.paired-mu-sondow-diagonal",
+      "title": "Paired mu-Sondow diagonal",
+      "summary": "E307 is a primitive paired quotient-one plus/minus-h Sondow diagonal, but existence of a paired diagonal remains open.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "qualify",
+          "scope": "E307 is a primitive paired quotient-one plus/minus-h Sondow diagonal, but existence of a paired diagonal remains open.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_PAIRED_MU_SONDOW_DIAGONAL_V1.md",
+            "blob": "681483e2ec6da40832275b0e10058b3b08c7ac52",
+            "anchor": "L1-L265",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "scope-split",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_PAIRED_MU_SONDOW_DIAGONAL_V1.md",
+          "blob": "681483e2ec6da40832275b0e10058b3b08c7ac52",
+          "anchor": "L1-L265",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.sondow-qualifies-problem"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.direct-core30-rebound-counterexample",
+      "title": "Direct core-30 rebound counterexample",
+      "summary": "An exact 60-prime descending block yields a squarefree rebound and refutes two-step contraction in its stated scope.",
+      "form": "counterexample",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-reproduction",
+          "effect": "refute",
+          "scope": "An exact 60-prime descending block yields a squarefree rebound and refutes two-step contraction in its stated scope.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_DIRECT_GIUGA_CORE_REBOUND_AND_TWO_LINEAR_FORMS_V1.md",
+            "blob": "0b6890479139a388b14699456c3171804ff918ad",
+            "anchor": "L1-L366",
+            "role": "origin"
+          },
+          "notes": [
+            "Exact numeric construction only.",
+            "Independent reproduction boundary is authorized by control comment 5080997896; provenance identifies the exact reproduced construction.",
+            "Proposition 3.1 requires C even or separate l=2 parity admissibility; the core-30 instance is valid."
+          ]
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_DIRECT_GIUGA_CORE_REBOUND_AND_TWO_LINEAR_FORMS_V1.md",
+          "blob": "0b6890479139a388b14699456c3171804ff918ad",
+          "anchor": "L1-L366",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.direct-refutes-contraction",
+        "rel.e307.counter-suggests-core30"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ],
+      "notes": [
+        "Exact numeric construction only.",
+        "Independent reproduction boundary is authorized by control comment 5080997896; provenance identifies the exact reproduced construction.",
+        "Proposition 3.1 requires C even or separate l=2 parity admissibility; the core-30 instance is valid."
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.giuga-relay-rebound-counterexample",
+      "title": "Giuga-relay rebound counterexample",
+      "summary": "A three-arrow squarefree Giuga-core relay returns and overshoots, independently refuting the proposed contraction mechanism.",
+      "form": "counterexample",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-reproduction",
+          "effect": "refute",
+          "scope": "A three-arrow squarefree Giuga-core relay returns and overshoots, independently refuting the proposed contraction mechanism.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_GIUGA_CORE_RELAY_AND_TWO_STEP_CONTRACTION_COUNTEREXAMPLE_V1.md",
+            "blob": "22d8b91014f0db1756954d388f76cc00282a1b20",
+            "anchor": "L1-L448",
+            "role": "origin"
+          },
+          "notes": [
+            "Exact numeric construction only; no family-level prime-production claim.",
+            "Independent reproduction boundary is authorized by control comment 5080997896; provenance identifies the exact reproduced construction."
+          ]
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_GIUGA_CORE_RELAY_AND_TWO_STEP_CONTRACTION_COUNTEREXAMPLE_V1.md",
+          "blob": "22d8b91014f0db1756954d388f76cc00282a1b20",
+          "anchor": "L1-L448",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.relay-refutes-contraction"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ],
+      "notes": [
+        "Exact numeric construction only; no family-level prime-production claim.",
+        "Independent reproduction boundary is authorized by control comment 5080997896; provenance identifies the exact reproduced construction."
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.two-step-contraction-claim",
+      "title": "Two-step contraction claim",
+      "summary": "The proposed weak two-step contraction principle is false; both exact rebound constructions are retained as scoped refutations.",
+      "form": "claim",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "refute",
+          "scope": "The proposed weak two-step contraction principle is false; both exact rebound constructions are retained as scoped refutations.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_RETURN_DEFECT_STRATIFICATION_AND_TWO_STEP_CONTRACTION_FRONTIER_V1.md",
+            "blob": "eeb241cbc0d3356c931e18d38e86997e6fec1bd9",
+            "anchor": "L1-L240",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "refuted-in-scope",
+      "workflow": "closed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_RETURN_DEFECT_STRATIFICATION_AND_TWO_STEP_CONTRACTION_FRONTIER_V1.md",
+          "blob": "eeb241cbc0d3356c931e18d38e86997e6fec1bd9",
+          "anchor": "L1-L240",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.direct-refutes-contraction",
+        "rel.e307.relay-refutes-contraction"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.core30-residual900-port",
+      "title": "Core-30 residual-900 port",
+      "summary": "The core-30 E307 specialization is an exact defect-900/residual-900 filling with an affine prime output; exact filling remains open.",
+      "form": "problem",
+      "maturity": "formulated",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "inconclusive",
+          "scope": "The core-30 E307 specialization is an exact defect-900/residual-900 filling with an affine prime output; exact filling remains open.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_CORE30_RESIDUAL_900_PORT_AND_ZERO_DEFECT_V1.md",
+            "blob": "6427a996a9f13165bc24dc276e5d63f945af34b8",
+            "anchor": "L1-L377",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "open",
+      "workflow": "dormant",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_CORE30_RESIDUAL_900_PORT_AND_ZERO_DEFECT_V1.md",
+          "blob": "6427a996a9f13165bc24dc276e5d63f945af34b8",
+          "anchor": "L1-L377",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.core30-specializes-problem",
+        "rel.e307.giugaport-generalizes-core30",
+        "rel.e307.support-qualifies-core30",
+        "rel.e307.blockcode-uses-core30",
+        "rel.e307.spectrum-generalizes-core30",
+        "rel.e307.counter-suggests-core30"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.giuga-core-residual-square-port",
+      "title": "Giuga-core residual-square port",
+      "summary": "Every quotient-one Giuga core gives a residual-square E307 port and support screen, without providing exact closure.",
+      "form": "method",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "Every quotient-one Giuga core gives a residual-square E307 port and support screen, without providing exact closure.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_GENERAL_GIUGA_CORE_RESIDUAL_SQUARE_PORT_V1.md",
+            "blob": "024146a8c8bd202d867fa57289cd2aa5cc720628",
+            "anchor": "L1-L363",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_GENERAL_GIUGA_CORE_RESIDUAL_SQUARE_PORT_V1.md",
+          "blob": "024146a8c8bd202d867fa57289cd2aa5cc720628",
+          "anchor": "L1-L363",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.giugaport-generalizes-core30"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.combinatorics.finite-configurations.e307-minimal-support-bounds",
+      "title": "E307 minimal-support bounds",
+      "summary": "Exact reciprocal-mass certificates and parity give core-dependent support lower bounds; they do not prove nonexistence.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "Exact reciprocal-mass certificates and parity give core-dependent support lower bounds; they do not prove nonexistence.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_CORE30_SUPPORT_70_AND_MINIMAL_SIGN_CROSSING_V1.md",
+            "blob": "2dd9f1b3334ae5d806f1db3290d1b382736e8f9a",
+            "anchor": "L1-L364",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_CORE30_SUPPORT_70_AND_MINIMAL_SIGN_CROSSING_V1.md",
+          "blob": "2dd9f1b3334ae5d806f1db3290d1b382736e8f9a",
+          "anchor": "L1-L364",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.support-qualifies-core30",
+        "rel.e307.relays-use-support",
+        "rel.e307.natural66-qualifies-support"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.positive-defect-minimal-support-relays",
+      "title": "Positive-defect minimal-support relays",
+      "summary": "Explicit core-30, core-858 and core-1722 prime reservoirs attain minimal support or near-zero positive return, but not exact zero.",
+      "form": "construction",
+      "maturity": "tested",
+      "assurance": [
+        {
+          "kind": "computation",
+          "effect": "support",
+          "scope": "Explicit core-30, core-858 and core-1722 prime reservoirs attain minimal support or near-zero positive return, but not exact zero.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_CORE1722_NEAR_ZERO_MINIMAL_RELAY_REFINEMENT_V1.md",
+            "blob": "504990b09e33c3d862c41840b423f408ca3208e7",
+            "anchor": "L1-L253",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_CORE1722_NEAR_ZERO_MINIMAL_RELAY_REFINEMENT_V1.md",
+          "blob": "504990b09e33c3d862c41840b423f408ca3208e7",
+          "anchor": "L1-L253",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.relays-use-support",
+        "rel.e307.relays-suggest-blockcode"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.combinatorics.finite-configurations.defect-block-code-and-complement-jet",
+      "title": "Defect block code and complement jet",
+      "summary": "Exact product/derivative syndromes permit distant block gluing and balanced meet-in-the-middle search; implementation and exact closure are open.",
+      "form": "method",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "Exact product/derivative syndromes permit distant block gluing and balanced meet-in-the-middle search; implementation and exact closure are open.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_DEFECT_BLOCK_SYNDROME_GLUING_AND_HYBRID_TRANSFERENCE_V1.md",
+            "blob": "72530d13d6a532e6a7a5063982be309e0c258d72",
+            "anchor": "L1-L413",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_DEFECT_BLOCK_SYNDROME_GLUING_AND_HYBRID_TRANSFERENCE_V1.md",
+          "blob": "72530d13d6a532e6a7a5063982be309e0c258d72",
+          "anchor": "L1-L413",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.blockcode-uses-core30",
+        "rel.e307.lowswap-qualifies-blockcode",
+        "rel.e307.jetvalid-uses-blockcode",
+        "rel.e307.relays-suggest-blockcode"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.combinatorics.finite-configurations.defect-exchange-low-swap-rigidity",
+      "title": "Defect exchange and low-swap rigidity",
+      "summary": "An exact exchange determinant and bounded checks show that local low-Hamming repairs cannot close the studied relay families.",
+      "form": "obstruction",
+      "maturity": "tested",
+      "assurance": [
+        {
+          "kind": "computation",
+          "effect": "support",
+          "scope": "An exact exchange determinant and bounded checks show that local low-Hamming repairs cannot close the studied relay families.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_DEFECT_EXCHANGE_DETERMINANT_AND_LOW_SWAP_RIGIDITY_V1.md",
+            "blob": "e1d0727e4a6b31d9efaced5446eb3bf57466fc88",
+            "anchor": "L1-L336",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_DEFECT_EXCHANGE_DETERMINANT_AND_LOW_SWAP_RIGIDITY_V1.md",
+          "blob": "e1d0727e4a6b31d9efaced5446eb3bf57466fc88",
+          "anchor": "L1-L336",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.lowswap-qualifies-blockcode"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.defect-spectrum-and-intermediate-ladder",
+      "title": "Defect spectrum and intermediate Sondow ladder",
+      "summary": "Defect layers and moving Sondow parameters organize a ladder of near-cycles and exact-zero targets.",
+      "form": "concept",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "Defect layers and moving Sondow parameters organize a ladder of near-cycles and exact-zero targets.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_DEFECT_SPECTRUM_AND_INTERMEDIATE_SONDOW_LADDER_V1.md",
+            "blob": "ffb9e3755c2f07018f72bce1ff83703bbfc01048",
+            "anchor": "L1-L447",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_DEFECT_SPECTRUM_AND_INTERMEDIATE_SONDOW_LADDER_V1.md",
+          "blob": "ffb9e3755c2f07018f72bce1ff83703bbfc01048",
+          "anchor": "L1-L447",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.spectrum-generalizes-core30",
+        "rel.e307.spectrum-suggests-joint"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.natural66-bounded-terminal-exclusion",
+      "title": "Natural-66 bounded terminal exclusion",
+      "summary": "Exactly 66 terminal windows and 14,675 integer q values were independently reproduced with zero integral terminal pairs; this is not a general exclusion.",
+      "form": "computation",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-reproduction",
+          "effect": "support",
+          "scope": "Exactly 66 terminal windows and 14,675 integer q values were independently reproduced with zero integral terminal pairs; this is not a general exclusion.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_NATURAL_66_CORE_COMPLETE_ONE_REPLACEMENT_EXCLUSION_V1.md",
+            "blob": "ad63e17fb14746468520cc81e6d6aa4ec788768f",
+            "anchor": "L1-L180",
+            "role": "origin"
+          },
+          "notes": [
+            "Bounded reproduction: 66 windows / 14,675 integer q values / 0 integral pairs.",
+            "Independent reproduction boundary is authorized by control comment 5080997896; provenance identifies the exact reproduced diagnostic.",
+            "No generalization beyond the enumerated scope."
+          ]
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_NATURAL_66_CORE_COMPLETE_ONE_REPLACEMENT_EXCLUSION_V1.md",
+          "blob": "ad63e17fb14746468520cc81e6d6aa4ec788768f",
+          "anchor": "L1-L180",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.natural66-qualifies-support"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ],
+      "notes": [
+        "Bounded reproduction: 66 windows / 14,675 integer q values / 0 integral pairs.",
+        "Independent reproduction boundary is authorized by control comment 5080997896; provenance identifies the exact reproduced diagnostic.",
+        "No generalization beyond the enumerated scope."
+      ]
+    },
+    {
+      "id": "math.harmonic-analysis.finite-fourier.normalized-prime-jet-valid-facets",
+      "title": "Normalized prime-jet valid facets",
+      "summary": "The normalized-jet homomorphism, complement inverse graph and the correctly scoped Gauss-sum cases survive the source defect.",
+      "form": "method",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "qualify",
+          "scope": "The normalized-jet homomorphism, complement inverse graph and the correctly scoped Gauss-sum cases survive the source defect.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+            "blob": "b564c58606ed1a6b5c0eaca21fbad75649c1e57d",
+            "anchor": "L1-L511",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "scope-split",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+          "blob": "b564c58606ed1a6b5c0eaca21fbad75649c1e57d",
+          "anchor": "L1-L511",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.jetvalid-uses-blockcode",
+        "rel.e307.jetblocked-qualifies-jetvalid",
+        "rel.e307.phase-depends-jetvalid",
+        "rel.e307.coeff-analogous-jet"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.harmonic-analysis.finite-fourier.normalized-prime-jet-flatness-transference-block",
+      "title": "Normalized prime-jet flatness/transference block",
+      "summary": "At k=0 with chi_l trivial and chi_H nontrivial the coefficient is l-1, not at most sqrt(l); all-nontrivial flatness, Theorem 7.1 and criterion 7.4 are NOT ESTABLISHED.",
+      "form": "claim",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "refute",
+          "scope": "At k=0 with chi_l trivial and chi_H nontrivial the coefficient is l-1, not at most sqrt(l); all-nontrivial flatness, Theorem 7.1 and criterion 7.4 are NOT ESTABLISHED.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+            "blob": "b564c58606ed1a6b5c0eaca21fbad75649c1e57d",
+            "anchor": "L1-L511",
+            "role": "origin"
+          },
+          "notes": [
+            "Omitted frequency: k=0, chi_l=1, chi_H nontrivial; coefficient=l-1.",
+            "No logical proof traversal through Theorem 5.1, Theorem 7.1 or criterion 7.4."
+          ]
+        }
+      ],
+      "disposition": "refuted-in-scope",
+      "workflow": "blocked",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+          "blob": "b564c58606ed1a6b5c0eaca21fbad75649c1e57d",
+          "anchor": "L1-L511",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.jetblocked-qualifies-jetvalid"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ],
+      "notes": [
+        "Omitted frequency: k=0, chi_l=1, chi_H nontrivial; coefficient=l-1.",
+        "No logical proof traversal through Theorem 5.1, Theorem 7.1 or criterion 7.4."
+      ]
+    },
+    {
+      "id": "math.harmonic-analysis.finite-fourier.prime-inverse-phase-provider-gap",
+      "title": "Prime inverse-phase provider gap",
+      "summary": "No spectral provider currently controls the moving-modulus mixed multiplicative/inverse-additive prime phases needed for target hitting.",
+      "form": "question",
+      "maturity": "formulated",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "inconclusive",
+          "scope": "No spectral provider currently controls the moving-modulus mixed multiplicative/inverse-additive prime phases needed for target hitting.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+            "blob": "b564c58606ed1a6b5c0eaca21fbad75649c1e57d",
+            "anchor": "L1-L511",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "open",
+      "workflow": "blocked",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+          "blob": "b564c58606ed1a6b5c0eaca21fbad75649c1e57d",
+          "anchor": "L1-L511",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.phase-depends-jetvalid",
+        "rel.e307.joint-depends-phase"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.harmonic-analysis.finite-fourier.joint-finite-archimedean-local-limit-gap",
+      "title": "Joint finite/Archimedean local-limit gap",
+      "summary": "A valid provider must hit the finite inverse graph and an exact or terminally closable Archimedean residual window jointly.",
+      "form": "question",
+      "maturity": "formulated",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "inconclusive",
+          "scope": "A valid provider must hit the finite inverse graph and an exact or terminally closable Archimedean residual window jointly.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+            "blob": "b564c58606ed1a6b5c0eaca21fbad75649c1e57d",
+            "anchor": "L1-L511",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "open",
+      "workflow": "blocked",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+          "blob": "b564c58606ed1a6b5c0eaca21fbad75649c1e57d",
+          "anchor": "L1-L511",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.joint-depends-phase",
+        "rel.e307.spectrum-suggests-joint"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.nonambient-e313-transfer-filter",
+      "title": "Nonambient E313 transfer filter",
+      "summary": "Direct ambient reuse collapses to consecutive-cycle structures; an E307 transfer must use nonambient pencil intersection.",
+      "form": "obstruction",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "Direct ambient reuse collapses to consecutive-cycle structures; an E307 transfer must use nonambient pencil intersection.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_AMBIENT_E313_COLLAPSE_AND_NONAMBIENT_TRANSFER_V1.md",
+            "blob": "5e5c4267461b466864c0ba91be5fda9d717d539d",
+            "anchor": "L1-L262",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_AMBIENT_E313_COLLAPSE_AND_NONAMBIENT_TRANSFER_V1.md",
+          "blob": "5e5c4267461b466864c0ba91be5fda9d717d539d",
+          "anchor": "L1-L262",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.nonambient-qualifies-pencil",
+        "rel.e307.pencil-suggests-nonambient"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.bounded-literature-attribution-facet",
+      "title": "Bounded literature attribution facet",
+      "summary": "Bado and Wang antecedents and corrected terminology are recorded; this facet does not establish comprehensive novelty, correctness or publication priority.",
+      "form": "connection",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "Bado and Wang antecedents and corrected terminology are recorded; this facet does not establish comprehensive novelty, correctness or publication priority.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+            "blob": "99a07db1862cd30a7dd5a4824d59b49cef6a9317",
+            "anchor": "L1-L248",
+            "role": "origin"
+          },
+          "notes": [
+            "Bounded attribution/terminology facet only; not correctness, comprehensive novelty or publication-priority assurance."
+          ]
+        }
+      ],
+      "disposition": "scope-split",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+          "blob": "99a07db1862cd30a7dd5a4824d59b49cef6a9317",
+          "anchor": "L1-L248",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.literature-qualifies-bado",
+        "rel.e307.literature-qualifies-wang"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ],
+      "notes": [
+        "Bounded attribution/terminology facet only; not correctness, comprehensive novelty or publication-priority assurance."
+      ]
+    },
+    {
+      "id": "math.number-theory.reciprocal-representations.adjacent-unit-fraction-neighbourhood-mine",
+      "title": "Adjacent unit-fraction neighbourhood mine",
+      "summary": "A strategic map of E304-E313 connections and candidate consumers, retained as IDEA rather than theorem or scheduling authority.",
+      "form": "heuristic",
+      "maturity": "captured",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "inconclusive",
+          "scope": "A strategic map of E304-E313 connections and candidate consumers, retained as IDEA rather than theorem or scheduling authority.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+            "path": "research/adjacent-problems/UNIT_FRACTION_NEIGHBOURHOOD_MINE_MAP_304_313_V1.md",
+            "blob": "c3cf3503f48a89756edaa4f5870980b063630267",
+            "anchor": "L1-L324",
+            "role": "origin"
+          }
+        }
+      ],
+      "disposition": "unassessed",
+      "workflow": "dormant",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/UNIT_FRACTION_NEIGHBOURHOOD_MINE_MAP_304_313_V1.md",
+          "blob": "c3cf3503f48a89756edaa4f5870980b063630267",
+          "anchor": "L1-L324",
+          "role": "origin"
+        }
+      ],
+      "relations": [
+        "rel.e307.mine-motivates-problem"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.superseded-chronology-and-failed-routes",
+      "title": "Superseded chronology and failed routes",
+      "summary": "Three programme addenda and corrected/retracted route summaries preserve development chronology without controlling present truth.",
+      "form": "connection",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "source-fidelity-check",
+          "effect": "qualify",
+          "scope": "Three programme addenda and corrected/retracted route summaries preserve development chronology without controlling present truth.",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "9bbcfae8360bce0871522e295f9aca903f64c780",
+            "path": "research/E306_RL_BOUNDED_CURATION_HANDOFF_2026-07-24.md",
+            "blob": "426ede10a690d0c777ab9fe5718ec6964d74af6b",
+            "anchor": "L1-L309",
+            "role": "curation"
+          }
+        }
+      ],
+      "disposition": "superseded",
+      "workflow": "closed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "9bbcfae8360bce0871522e295f9aca903f64c780",
+          "path": "research/E306_RL_BOUNDED_CURATION_HANDOFF_2026-07-24.md",
+          "blob": "426ede10a690d0c777ab9fe5718ec6964d74af6b",
+          "anchor": "L1-L309",
+          "role": "curation"
+        }
+      ],
+      "relations": [
+        "rel.e307.chronology-superseded-bado"
+      ],
+      "views": [
+        "frontier.erdos-307"
+      ]
+    }
+  ]
+}

@@ -33,6 +33,7 @@ source_map = load("migration/source-to-unit-map/E307_ADJACENT_CANONICAL_INTAKE_M
 unit_doc = load("registry/units/number-theory/arithmetic-derivatives/E307_ADJACENT_CANONICAL_INTAKE_UNITS.json")
 relation_doc = load("registry/relations/E307_ADJACENT_CANONICAL_INTAKE_RELATIONS.json")
 view = load("registry/views/frontier.erdos-307.json")
+assurance_map = load("registry/assurance/E307_ADJACENT_ASSURANCE_AND_ATTRIBUTION_MAP.json")
 units = unit_doc["units"]
 unit_ids = {unit["id"] for unit in units}
 relations = relation_doc["logical"] + relation_doc["discovery"]
@@ -56,11 +57,36 @@ check(len(relation_doc["logical"]) == 35 and len(relation_doc["discovery"]) == 8
       "relation count drift")
 check(len({rel["id"] for rel in relations}) == len(relations), "duplicate relation id")
 
+forms = {"concept", "definition", "problem", "question", "conjecture", "claim", "theorem",
+         "construction", "method", "proof", "example", "counterexample", "obstruction",
+         "heuristic", "experiment", "computation", "connection"}
+maturities = {"captured", "formulated", "tested", "proof-sketch", "author-complete", "assessed"}
+dispositions = {"unassessed", "open", "supported", "established-in-scope", "refuted-in-scope",
+                "scope-split", "conflicted", "superseded"}
+workflows = {"captured", "active", "blocked", "ready-for-review", "ready-for-integration",
+             "integrated", "dormant", "closed"}
+evidence_kinds = {"authorial-argument", "computation", "independent-reproduction",
+                  "independent-mathematical-review", "formal-kernel-check",
+                  "source-fidelity-check", "literature-check", "external-review"}
+evidence_effects = {"support", "refute", "qualify", "inconclusive"}
+for unit in units:
+    check(re.fullmatch(r"math\.[a-z0-9]+(?:[.-][a-z0-9]+)*", unit["id"]) is not None,
+          f"unit id schema violation {unit['id']}")
+    check(unit["form"] in forms and unit["maturity"] in maturities and
+          unit["disposition"] in dispositions and unit["workflow"] in workflows,
+          f"unit enum schema violation {unit['id']}")
+    check(unit["provenance"], f"empty provenance {unit['id']}")
+    for evidence in unit["assurance"]:
+        check(evidence["kind"] in evidence_kinds and evidence["effect"] in evidence_effects
+              and evidence["scope"], f"evidence schema violation {unit['id']}")
+
 logical_types = {"depends-on", "uses", "implies", "equivalent-to", "generalizes",
                  "specializes", "refutes", "qualifies", "supersedes"}
 discovery_types = {"motivates", "suggests", "analogous-to", "arose-from"}
 external = {"math.number-theory.reciprocal-representations.squarefree-semiprime-characterization"}
 for relation in relations:
+    check(re.fullmatch(r"rel\.[a-z0-9]+(?:[.-][a-z0-9]+)*", relation["id"]) is not None,
+          f"relation id schema violation {relation['id']}")
     check(relation["source"] in unit_ids | external and relation["target"] in unit_ids | external,
           f"dangling relation {relation['id']}")
     allowed = logical_types if relation["plane"] == "logical" else discovery_types
@@ -116,6 +142,14 @@ check("does not establish comprehensive novelty, correctness or publication prio
       literature["summary"], "literature facet overreach")
 check(any("prime inverse-phase provider" in gap for gap in view["remaining_gaps"]),
       "prime inverse-phase provider not open")
+check(assurance_map["attribution"]["mechanism_novelty"] == "unresolved",
+      "mechanism novelty upgraded")
+check(assurance_map["independent_reproduction"]["bounded_diagnostic_only"] == {
+    "unit": natural, "windows": 66, "integer_q_values": 14675,
+    "integral_pairs": 0, "general_exclusion": False,
+}, "bounded reproduction map drift")
+check(assurance_map["blocked"]["forbidden_as_logical_provider"] is True,
+      "blocked provider not forbidden")
 
 # Resolve every immutable item locator and all registry/relation provenance.
 locators = [item["source_locator"] for item in source_map["items"]]
@@ -133,19 +167,40 @@ for loc in locators:
     check(re.fullmatch(r"[0-9a-f]{40}", loc["blob"]) is not None, "bad blob")
     match = re.fullmatch(r"L([1-9][0-9]*)-L([1-9][0-9]*)", loc["anchor"])
     check(match is not None, "bad anchor")
-for loc in unique.values():
-    actual = subprocess.run(
-        ["git", f"--git-dir={SOURCE_GIT}", "rev-parse", f"{loc['commit']}:{loc['path']}"],
-        text=True, capture_output=True, check=True,
-    ).stdout.strip()
+ordered = list(unique.values())
+specs = [f"{loc['commit']}:{loc['path']}" for loc in ordered]
+actual_blobs = subprocess.run(
+    ["git", f"--git-dir={SOURCE_GIT}", "cat-file", "--batch-check=%(objectname)"],
+    input="\n".join(specs) + "\n", text=True, capture_output=True, check=True,
+).stdout.splitlines()
+check(len(actual_blobs) == len(ordered), "batch locator count drift")
+
+object_ids = sorted({loc["blob"] for loc in ordered})
+proc = subprocess.Popen(
+    ["git", f"--git-dir={SOURCE_GIT}", "cat-file", "--batch"],
+    stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+)
+assert proc.stdin is not None and proc.stdout is not None
+for object_id in object_ids:
+    proc.stdin.write((object_id + "\n").encode())
+proc.stdin.close()
+line_counts = {}
+for expected in object_ids:
+    header = proc.stdout.readline().decode().rstrip("\n").split()
+    check(len(header) == 3 and header[0] == expected and header[1] == "blob",
+          f"bad batch header {expected}: {header}")
+    payload = proc.stdout.read(int(header[2]))
+    check(proc.stdout.read(1) == b"\n", f"missing batch delimiter {expected}")
+    line_counts[expected] = len(payload.decode(errors="strict").splitlines())
+stderr = proc.stderr.read().decode() if proc.stderr else ""
+check(proc.wait() == 0, f"batch blob read failed: {stderr}")
+
+for loc, actual in zip(ordered, actual_blobs):
     check(actual == loc["blob"], f"blob mismatch {loc['path']}")
-    payload = subprocess.run(
-        ["git", f"--git-dir={SOURCE_GIT}", "cat-file", "-p", loc["blob"]],
-        text=True, capture_output=True, check=True,
-    ).stdout.splitlines()
     start, end = (int(value) for value in re.fullmatch(
         r"L([1-9][0-9]*)-L([1-9][0-9]*)", loc["anchor"]).groups())
-    check(1 <= start <= end <= len(payload), f"anchor out of range {loc['path']}")
+    check(1 <= start <= end <= line_counts[loc["blob"]],
+          f"anchor out of range {loc['path']}")
 
 check(run("git", "merge-base", "HEAD", BASE) == BASE, "wrong ancestry")
 check(run("git", "branch", "--show-current") == "curation/erdos-307-adjacent-v1", "wrong branch")

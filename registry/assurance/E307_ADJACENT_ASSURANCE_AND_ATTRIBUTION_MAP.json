@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "E307-ADJACENT-CANONICAL-INTAKE",
+  "registry_source": "registry/units/number-theory/arithmetic-derivatives/E307_ADJACENT_CANONICAL_INTAKE_UNITS.json",
+  "control": "Yuren-Tang/research-workbench#15 comment 5080997896",
+  "attribution": {
+    "prior_art_must_attribute": [
+      "math.number-theory.arithmetic-derivatives.bado-squarefree-two-cycle-framework",
+      "math.number-theory.arithmetic-derivatives.mutual-reciprocal-syndrome-and-union-constraints"
+    ],
+    "port_framework_antecedent": [
+      "math.number-theory.arithmetic-derivatives.wang-port-framework-antecedent"
+    ],
+    "terminology": {
+      "moving_genus_replacement": "moving quadratic splitting-character obstruction",
+      "hasse_replacement": "prime-symbol shift divided-power / Hasse-Schmidt-type multiplicative coefficients"
+    },
+    "mechanism_novelty": "unresolved",
+    "literature_effect": "bounded attribution/terminology only; no correctness, comprehensive novelty, peer-review or publication-priority assurance"
+  },
+  "independent_reproduction": {
+    "exact_numeric_counterexamples_only": [
+      "math.number-theory.arithmetic-derivatives.direct-core30-rebound-counterexample",
+      "math.number-theory.arithmetic-derivatives.giuga-relay-rebound-counterexample"
+    ],
+    "bounded_diagnostic_only": {
+      "unit": "math.number-theory.arithmetic-derivatives.natural66-bounded-terminal-exclusion",
+      "windows": 66,
+      "integer_q_values": 14675,
+      "integral_pairs": 0,
+      "general_exclusion": false
+    }
+  },
+  "blocked": {
+    "unit": "math.harmonic-analysis.finite-fourier.normalized-prime-jet-flatness-transference-block",
+    "omitted_frequency": "k=0, chi_l=1, chi_H nontrivial",
+    "coefficient": "l-1",
+    "not_established": [
+      "Theorem 5.1 all-nontrivial flatness",
+      "Theorem 7.1",
+      "criterion 7.4"
+    ],
+    "forbidden_as_logical_provider": true
+  },
+  "open": {
+    "headline": "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem",
+    "prime_inverse_phase_provider": "math.harmonic-analysis.finite-fourier.prime-inverse-phase-provider-gap",
+    "joint_finite_archimedean_local_limit": "math.harmonic-analysis.finite-fourier.joint-finite-archimedean-local-limit-gap"
+  }
+}

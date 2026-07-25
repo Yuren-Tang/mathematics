@@ -1,0 +1,783 @@
+{
+  "schema_version": "1.1.0",
+  "batch_id": "E307-ADJACENT-CANONICAL-INTAKE",
+  "item_schema": "registry/schema/typed-relation.schema.json",
+  "logical": [
+    {
+      "id": "rel.e307.bado-qualifies-problem",
+      "source": "math.number-theory.arithmetic-derivatives.bado-squarefree-two-cycle-framework",
+      "target": "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "prior exact reformulation does not solve existence",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+          "blob": "99a07db1862cd30a7dd5a4824d59b49cef6a9317",
+          "anchor": "L1-L248"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.syndrome-depends-bado",
+      "source": "math.number-theory.arithmetic-derivatives.mutual-reciprocal-syndrome-and-union-constraints",
+      "target": "math.number-theory.arithmetic-derivatives.bado-squarefree-two-cycle-framework",
+      "plane": "logical",
+      "type": "depends-on",
+      "scope": "prior union and reciprocal constraints",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+          "blob": "99a07db1862cd30a7dd5a4824d59b49cef6a9317",
+          "anchor": "L1-L248"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.defect-uses-syndrome",
+      "source": "math.number-theory.arithmetic-derivatives.bilateral-defect-semigroup",
+      "target": "math.number-theory.arithmetic-derivatives.mutual-reciprocal-syndrome-and-union-constraints",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "coupled defect coordinates",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_BILATERAL_DEFECT_SEMIGROUP_V1.md",
+          "blob": "f17144a4ae36ff7f1a25c140032d8c72a68c2f13",
+          "anchor": "L1-L395"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.anti-uses-defect",
+      "source": "math.number-theory.arithmetic-derivatives.bilateral-anti-inheritance-and-terminal-port",
+      "target": "math.number-theory.arithmetic-derivatives.bilateral-defect-semigroup",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "terminal and anti-inheritance calculations",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_BILATERAL_TERMINAL_PORT_AND_ANTI_INHERITANCE_V1.md",
+          "blob": "1aba998177b58f4a5c2f1088395e350135065104",
+          "anchor": "L1-L319"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.coeff-qualifies-derivative",
+      "source": "math.number-theory.arithmetic-derivatives.prime-symbol-shift-divided-power-coefficients",
+      "target": "math.number-theory.arithmetic-derivatives.bado-squarefree-two-cycle-framework",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "divided-power coefficients are not iterated arithmetic derivatives",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/PRIME_SHIFT_HASSE_RECIPROCAL_HYPERGRAPH_CALCULUS_V1.md",
+          "blob": "6045704ade685ed909e59e8457e166da638c686e",
+          "anchor": "L1-L356"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.jettransfer-uses-defect",
+      "source": "math.number-theory.arithmetic-derivatives.semiprime-jet-transfer-and-port-involution",
+      "target": "math.number-theory.arithmetic-derivatives.bilateral-defect-semigroup",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "local rational transfer",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_SEMIPRIME_JET_TRANSFER_AND_MOBIUS_PORT_INVOLUTION_V1.md",
+          "blob": "e4398246169bb13dde1a6e0a84ff622d15aae5cb",
+          "anchor": "L1-L760"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.realmod-generalizes-jet",
+      "source": "math.number-theory.arithmetic-derivatives.real-modular-deficit-determinant",
+      "target": "math.number-theory.arithmetic-derivatives.semiprime-jet-transfer-and-port-involution",
+      "plane": "logical",
+      "type": "generalizes",
+      "scope": "real/modular determinant facet",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_REAL_MODULAR_PORT_GEOMETRY_AND_DEFICIT_DETERMINANT_V1.md",
+          "blob": "01295f6c0aa084fded2601bf09625f77ae48d79b",
+          "anchor": "L1-L365"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.divisorport-specializes-jet",
+      "source": "math.number-theory.arithmetic-derivatives.seeded-divisor-cubic-reduction",
+      "target": "math.number-theory.arithmetic-derivatives.semiprime-jet-transfer-and-port-involution",
+      "plane": "logical",
+      "type": "specializes",
+      "scope": "seeded cubic reduction",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_SEEDED_DIVISOR_PORT_FACTORIZATION_V1.md",
+          "blob": "78db129a95f7615de322ecb8c7e87c9b3abebb4a",
+          "anchor": "L1-L372"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.residual-generalizes-wang",
+      "source": "math.number-theory.arithmetic-derivatives.residual-c-port-calculus",
+      "target": "math.number-theory.arithmetic-derivatives.wang-port-framework-antecedent",
+      "plane": "logical",
+      "type": "generalizes",
+      "scope": "prescribed residual-C extension with bilateral output",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_GENERAL_RESIDUAL_PORT_TRANSFER_AND_AUTOMATIC_OUTPUT_V1.md",
+          "blob": "678b84d0cda0e09717e46bfa56c75baf53158ce7",
+          "anchor": "L1-L420"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.residual-specializes-wang",
+      "source": "math.number-theory.arithmetic-derivatives.residual-c-port-calculus",
+      "target": "math.number-theory.arithmetic-derivatives.wang-port-framework-antecedent",
+      "plane": "logical",
+      "type": "specializes",
+      "scope": "one-sided port equation used inside E307",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_GENERAL_RESIDUAL_PORT_TRANSFER_AND_AUTOMATIC_OUTPUT_V1.md",
+          "blob": "678b84d0cda0e09717e46bfa56c75baf53158ce7",
+          "anchor": "L1-L420"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.pencil-uses-residual",
+      "source": "math.number-theory.arithmetic-derivatives.residual-port-pencils-and-block-quadratic",
+      "target": "math.number-theory.arithmetic-derivatives.residual-c-port-calculus",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "affine residual-C pencil",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_RESIDUAL_PORT_PENCILS_BLOCK_QUADRATIC_AND_DEFECT_BRIDGE_V1.md",
+          "blob": "eae5d7b8f3643d47f7294b093006b2bd7e78cc94",
+          "anchor": "L1-L377"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.closure-uses-pencil",
+      "source": "math.number-theory.arithmetic-derivatives.block-first-two-prime-closure",
+      "target": "math.number-theory.arithmetic-derivatives.residual-port-pencils-and-block-quadratic",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "exact seed-curve/pencil intersection",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_BLOCK_FIRST_TWO_PRIME_CLOSURE_AND_EXACT_PENCIL_INTERSECTION_V1.md",
+          "blob": "3b59cb283eab4896117dbf6ea23535d974bd2de7",
+          "anchor": "L1-L426"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.fourier-uses-syndrome",
+      "source": "math.harmonic-analysis.finite-fourier.divisor-residue-fourier-calculus",
+      "target": "math.number-theory.arithmetic-derivatives.mutual-reciprocal-syndrome-and-union-constraints",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "divisor orientation character count",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_DIVISOR_RESIDUE_FOURIER_AND_QUADRATIC_OBSTRUCTION_V1.md",
+          "blob": "0ec68b0842ad415f5ed68883acbff0f4f354277e",
+          "anchor": "L1-L426"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.split-specializes-fourier",
+      "source": "math.number-theory.arithmetic-derivatives.moving-quadratic-splitting-character-obstruction",
+      "target": "math.harmonic-analysis.finite-fourier.divisor-residue-fourier-calculus",
+      "plane": "logical",
+      "type": "specializes",
+      "scope": "quadratic splitting certificate",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_MOVING_GENUS_CHARACTER_OBSTRUCTION_V1.md",
+          "blob": "161202f8a17f496ace6d2d8af04ef351dedd3b30",
+          "anchor": "L1-L235"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.norm-uses-divisorport",
+      "source": "math.number-theory.arithmetic-derivatives.primitive-quadratic-norm-split-factor-geometry",
+      "target": "math.number-theory.arithmetic-derivatives.seeded-divisor-cubic-reduction",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "primitive norm interpretation",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_PRIMITIVE_NORM_AND_SPLIT_FACTOR_GEOMETRY_V1.md",
+          "blob": "55aa34d03dc79585a9d74341d2e406b32000814a",
+          "anchor": "L1-L265"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.split-qualifies-norm",
+      "source": "math.number-theory.arithmetic-derivatives.moving-quadratic-splitting-character-obstruction",
+      "target": "math.number-theory.arithmetic-derivatives.primitive-quadratic-norm-split-factor-geometry",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "necessary factor orientation only",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_MOVING_GENUS_CHARACTER_OBSTRUCTION_V1.md",
+          "blob": "161202f8a17f496ace6d2d8af04ef351dedd3b30",
+          "anchor": "L1-L235"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.sondow-qualifies-problem",
+      "source": "math.number-theory.arithmetic-derivatives.paired-mu-sondow-diagonal",
+      "target": "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "paired diagonal reformulation remains open",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_PAIRED_MU_SONDOW_DIAGONAL_V1.md",
+          "blob": "681483e2ec6da40832275b0e10058b3b08c7ac52",
+          "anchor": "L1-L265"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.direct-refutes-contraction",
+      "source": "math.number-theory.arithmetic-derivatives.direct-core30-rebound-counterexample",
+      "target": "math.number-theory.arithmetic-derivatives.two-step-contraction-claim",
+      "plane": "logical",
+      "type": "refutes",
+      "scope": "exact direct rebound",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_DIRECT_GIUGA_CORE_REBOUND_AND_TWO_LINEAR_FORMS_V1.md",
+          "blob": "0b6890479139a388b14699456c3171804ff918ad",
+          "anchor": "L1-L366"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.relay-refutes-contraction",
+      "source": "math.number-theory.arithmetic-derivatives.giuga-relay-rebound-counterexample",
+      "target": "math.number-theory.arithmetic-derivatives.two-step-contraction-claim",
+      "plane": "logical",
+      "type": "refutes",
+      "scope": "exact three-arrow relay rebound",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_GIUGA_CORE_RELAY_AND_TWO_STEP_CONTRACTION_COUNTEREXAMPLE_V1.md",
+          "blob": "22d8b91014f0db1756954d388f76cc00282a1b20",
+          "anchor": "L1-L448"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.core30-specializes-problem",
+      "source": "math.number-theory.arithmetic-derivatives.core30-residual900-port",
+      "target": "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem",
+      "plane": "logical",
+      "type": "specializes",
+      "scope": "residual-900 existence slice",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_CORE30_RESIDUAL_900_PORT_AND_ZERO_DEFECT_V1.md",
+          "blob": "6427a996a9f13165bc24dc276e5d63f945af34b8",
+          "anchor": "L1-L377"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.giugaport-generalizes-core30",
+      "source": "math.number-theory.arithmetic-derivatives.giuga-core-residual-square-port",
+      "target": "math.number-theory.arithmetic-derivatives.core30-residual900-port",
+      "plane": "logical",
+      "type": "generalizes",
+      "scope": "quotient-one Giuga-core residual-square family",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_GENERAL_GIUGA_CORE_RESIDUAL_SQUARE_PORT_V1.md",
+          "blob": "024146a8c8bd202d867fa57289cd2aa5cc720628",
+          "anchor": "L1-L363"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.support-qualifies-core30",
+      "source": "math.combinatorics.finite-configurations.e307-minimal-support-bounds",
+      "target": "math.number-theory.arithmetic-derivatives.core30-residual900-port",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "support lower bound, not nonexistence",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_CORE30_SUPPORT_70_AND_MINIMAL_SIGN_CROSSING_V1.md",
+          "blob": "2dd9f1b3334ae5d806f1db3290d1b382736e8f9a",
+          "anchor": "L1-L364"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.relays-use-support",
+      "source": "math.number-theory.arithmetic-derivatives.positive-defect-minimal-support-relays",
+      "target": "math.combinatorics.finite-configurations.e307-minimal-support-bounds",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "minimal-support positive-return reservoirs",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_CORE1722_MINIMAL_SUPPORT_RELAY_V1.md",
+          "blob": "ff862c870fbb7016260e79953c92fb2fdb8d41c9",
+          "anchor": "L1-L350"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.blockcode-uses-core30",
+      "source": "math.combinatorics.finite-configurations.defect-block-code-and-complement-jet",
+      "target": "math.number-theory.arithmetic-derivatives.core30-residual900-port",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "defect/product syndrome gluing",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_DEFECT_BLOCK_SYNDROME_GLUING_AND_HYBRID_TRANSFERENCE_V1.md",
+          "blob": "72530d13d6a532e6a7a5063982be309e0c258d72",
+          "anchor": "L1-L413"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.lowswap-qualifies-blockcode",
+      "source": "math.combinatorics.finite-configurations.defect-exchange-low-swap-rigidity",
+      "target": "math.combinatorics.finite-configurations.defect-block-code-and-complement-jet",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "local repairs blocked only in checked families",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_DEFECT_EXCHANGE_DETERMINANT_AND_LOW_SWAP_RIGIDITY_V1.md",
+          "blob": "e1d0727e4a6b31d9efaced5446eb3bf57466fc88",
+          "anchor": "L1-L336"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.spectrum-generalizes-core30",
+      "source": "math.number-theory.arithmetic-derivatives.defect-spectrum-and-intermediate-ladder",
+      "target": "math.number-theory.arithmetic-derivatives.core30-residual900-port",
+      "plane": "logical",
+      "type": "generalizes",
+      "scope": "moving defect layers",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_DEFECT_SPECTRUM_AND_INTERMEDIATE_SONDOW_LADDER_V1.md",
+          "blob": "ffb9e3755c2f07018f72bce1ff83703bbfc01048",
+          "anchor": "L1-L447"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.natural66-qualifies-support",
+      "source": "math.number-theory.arithmetic-derivatives.natural66-bounded-terminal-exclusion",
+      "target": "math.combinatorics.finite-configurations.e307-minimal-support-bounds",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "bounded diagnostic only",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_NATURAL_66_CORE_COMPLETE_ONE_REPLACEMENT_EXCLUSION_V1.md",
+          "blob": "ad63e17fb14746468520cc81e6d6aa4ec788768f",
+          "anchor": "L1-L180"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.jetvalid-uses-blockcode",
+      "source": "math.harmonic-analysis.finite-fourier.normalized-prime-jet-valid-facets",
+      "target": "math.combinatorics.finite-configurations.defect-block-code-and-complement-jet",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "valid normalized homomorphism and inverse target graph",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+          "blob": "b564c58606ed1a6b5c0eaca21fbad75649c1e57d",
+          "anchor": "L1-L511"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.jetblocked-qualifies-jetvalid",
+      "source": "math.harmonic-analysis.finite-fourier.normalized-prime-jet-flatness-transference-block",
+      "target": "math.harmonic-analysis.finite-fourier.normalized-prime-jet-valid-facets",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "flatness/transference is blocked but local facets survive",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+          "blob": "b564c58606ed1a6b5c0eaca21fbad75649c1e57d",
+          "anchor": "L1-L511"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.phase-depends-jetvalid",
+      "source": "math.harmonic-analysis.finite-fourier.prime-inverse-phase-provider-gap",
+      "target": "math.harmonic-analysis.finite-fourier.normalized-prime-jet-valid-facets",
+      "plane": "logical",
+      "type": "depends-on",
+      "scope": "moving prime inverse-phase estimate",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+          "blob": "b564c58606ed1a6b5c0eaca21fbad75649c1e57d",
+          "anchor": "L1-L511"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.joint-depends-phase",
+      "source": "math.harmonic-analysis.finite-fourier.joint-finite-archimedean-local-limit-gap",
+      "target": "math.harmonic-analysis.finite-fourier.prime-inverse-phase-provider-gap",
+      "plane": "logical",
+      "type": "depends-on",
+      "scope": "finite target plus Archimedean closure",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+          "blob": "b564c58606ed1a6b5c0eaca21fbad75649c1e57d",
+          "anchor": "L1-L511"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.nonambient-qualifies-pencil",
+      "source": "math.number-theory.arithmetic-derivatives.nonambient-e313-transfer-filter",
+      "target": "math.number-theory.arithmetic-derivatives.residual-port-pencils-and-block-quadratic",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "ambient reuse collapses",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_AMBIENT_E313_COLLAPSE_AND_NONAMBIENT_TRANSFER_V1.md",
+          "blob": "5e5c4267461b466864c0ba91be5fda9d717d539d",
+          "anchor": "L1-L262"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.literature-qualifies-bado",
+      "source": "math.number-theory.arithmetic-derivatives.bounded-literature-attribution-facet",
+      "target": "math.number-theory.arithmetic-derivatives.bado-squarefree-two-cycle-framework",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "bounded audit facet",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+          "blob": "99a07db1862cd30a7dd5a4824d59b49cef6a9317",
+          "anchor": "L1-L248"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.literature-qualifies-wang",
+      "source": "math.number-theory.arithmetic-derivatives.bounded-literature-attribution-facet",
+      "target": "math.number-theory.arithmetic-derivatives.wang-port-framework-antecedent",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "bounded antecedent facet",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+          "blob": "99a07db1862cd30a7dd5a4824d59b49cef6a9317",
+          "anchor": "L1-L248"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.chronology-superseded-bado",
+      "source": "math.number-theory.arithmetic-derivatives.bado-squarefree-two-cycle-framework",
+      "target": "math.number-theory.arithmetic-derivatives.superseded-chronology-and-failed-routes",
+      "plane": "logical",
+      "type": "supersedes",
+      "scope": "novelty label corrected",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+          "blob": "99a07db1862cd30a7dd5a4824d59b49cef6a9317",
+          "anchor": "L1-L248"
+        }
+      ]
+    }
+  ],
+  "discovery": [
+    {
+      "id": "rel.e307.e306-suggests-e307",
+      "source": "math.number-theory.reciprocal-representations.squarefree-semiprime-characterization",
+      "target": "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem",
+      "plane": "discovery",
+      "type": "suggests",
+      "scope": "adjacent question only; no proof transfer",
+      "status": "captured-unreviewed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/UNIT_FRACTION_NEIGHBOURHOOD_MINE_MAP_304_313_V1.md",
+          "blob": "c3cf3503f48a89756edaa4f5870980b063630267",
+          "anchor": "L1-L324"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.mine-motivates-problem",
+      "source": "math.number-theory.reciprocal-representations.adjacent-unit-fraction-neighbourhood-mine",
+      "target": "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem",
+      "plane": "discovery",
+      "type": "motivates",
+      "scope": "strategic neighbourhood map",
+      "status": "captured-unreviewed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/UNIT_FRACTION_NEIGHBOURHOOD_MINE_MAP_304_313_V1.md",
+          "blob": "c3cf3503f48a89756edaa4f5870980b063630267",
+          "anchor": "L1-L324"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.relays-suggest-blockcode",
+      "source": "math.number-theory.arithmetic-derivatives.positive-defect-minimal-support-relays",
+      "target": "math.combinatorics.finite-configurations.defect-block-code-and-complement-jet",
+      "plane": "discovery",
+      "type": "suggests",
+      "scope": "prime reservoirs for distant collision search",
+      "status": "captured-unreviewed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_CORE1722_NEAR_ZERO_MINIMAL_RELAY_REFINEMENT_V1.md",
+          "blob": "504990b09e33c3d862c41840b423f408ca3208e7",
+          "anchor": "L1-L253"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.spectrum-suggests-joint",
+      "source": "math.number-theory.arithmetic-derivatives.defect-spectrum-and-intermediate-ladder",
+      "target": "math.harmonic-analysis.finite-fourier.joint-finite-archimedean-local-limit-gap",
+      "plane": "discovery",
+      "type": "suggests",
+      "scope": "defect layers as Archimedean coordinate",
+      "status": "captured-unreviewed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_DEFECT_SPECTRUM_AND_INTERMEDIATE_SONDOW_LADDER_V1.md",
+          "blob": "ffb9e3755c2f07018f72bce1ff83703bbfc01048",
+          "anchor": "L1-L447"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.norm-suggests-split",
+      "source": "math.number-theory.arithmetic-derivatives.primitive-quadratic-norm-split-factor-geometry",
+      "target": "math.number-theory.arithmetic-derivatives.moving-quadratic-splitting-character-obstruction",
+      "plane": "discovery",
+      "type": "suggests",
+      "scope": "moving-family factor orientation",
+      "status": "captured-unreviewed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_PRIMITIVE_NORM_AND_SPLIT_FACTOR_GEOMETRY_V1.md",
+          "blob": "55aa34d03dc79585a9d74341d2e406b32000814a",
+          "anchor": "L1-L265"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.counter-suggests-core30",
+      "source": "math.number-theory.arithmetic-derivatives.direct-core30-rebound-counterexample",
+      "target": "math.number-theory.arithmetic-derivatives.core30-residual900-port",
+      "plane": "discovery",
+      "type": "suggests",
+      "scope": "sign flexibility redirects search to exact zero",
+      "status": "captured-unreviewed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_DIRECT_GIUGA_CORE_REBOUND_AND_TWO_LINEAR_FORMS_V1.md",
+          "blob": "0b6890479139a388b14699456c3171804ff918ad",
+          "anchor": "L1-L366"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.pencil-suggests-nonambient",
+      "source": "math.number-theory.arithmetic-derivatives.residual-port-pencils-and-block-quadratic",
+      "target": "math.number-theory.arithmetic-derivatives.nonambient-e313-transfer-filter",
+      "plane": "discovery",
+      "type": "suggests",
+      "scope": "nonambient intersection search",
+      "status": "captured-unreviewed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/ERDOS_307_AMBIENT_E313_COLLAPSE_AND_NONAMBIENT_TRANSFER_V1.md",
+          "blob": "5e5c4267461b466864c0ba91be5fda9d717d539d",
+          "anchor": "L1-L262"
+        }
+      ]
+    },
+    {
+      "id": "rel.e307.coeff-analogous-jet",
+      "source": "math.number-theory.arithmetic-derivatives.prime-symbol-shift-divided-power-coefficients",
+      "target": "math.harmonic-analysis.finite-fourier.normalized-prime-jet-valid-facets",
+      "plane": "discovery",
+      "type": "analogous-to",
+      "scope": "multiplicative coefficient and normalized-jet packages",
+      "status": "captured-unreviewed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+          "path": "research/adjacent-problems/PRIME_SHIFT_HASSE_RECIPROCAL_HYPERGRAPH_CALCULUS_V1.md",
+          "blob": "6045704ade685ed909e59e8457e166da638c686e",
+          "anchor": "L1-L356"
+        }
+      ]
+    }
+  ]
+}
