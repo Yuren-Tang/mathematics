@@ -1,0 +1,63 @@
+{
+  "view_id": "programme.affine-cdc",
+  "title": "AffineCDC programme view",
+  "view_type": "programme",
+  "registry_source": "registry/units/graph-theory/cycle-covers/PORT_AC_CONSOLIDATE_01_UNITS.json",
+  "relation_source": "registry/relations/PORT_AC_CONSOLIDATE_01_RELATIONS.json",
+  "compatibility_entrypoints": [
+    "projects/affine-cdc/README.md",
+    "projects/affine-cdc/CURRENT_BEST.md",
+    "projects/affine-cdc/ACTIVE_MATHEMATICAL_SURFACE.md",
+    "projects/affine-cdc/MATHEMATICAL_ARCHITECTURE.md",
+    "projects/affine-cdc/THEOREM_DEPENDENCY_MAP.md",
+    "projects/affine-cdc/FORMAL_STATUS.md",
+    "projects/affine-cdc/COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md",
+    "projects/affine-cdc/external-review/ENTRYPOINT.md"
+  ],
+  "sections": {
+    "independently_established_in_scope": [
+      "math.graph-theory.cycle-covers.root-boundary-finite-core",
+      "math.graph-theory.cycle-covers.single-pop-algebra",
+      "math.graph-theory.cycle-covers.one-atom-identical-support-endpoint",
+      "math.graph-theory.cycle-covers.one-atom-shared-vertex-macro",
+      "math.graph-theory.cycle-covers.one-atom-conditional-disjoint-commutation",
+      "math.graph-theory.cycle-covers.supplied-comparison-run-seam-coherence",
+      "math.graph-theory.cycle-covers.component-chain-local-tables",
+      "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path",
+      "math.graph-theory.cycle-covers.co-root-terminal-exhaustion",
+      "math.graph-theory.cycle-covers.zero-parent-terminal-exhaustion",
+      "math.graph-theory.cycle-covers.co-root-connector-6-7-model",
+      "math.graph-theory.cycle-covers.zero-parent-h35-model",
+      "math.graph-theory.cycle-covers.inverse-parent-value-trichotomy",
+      "math.graph-theory.cycle-covers.conditional-singular-parent-moves",
+      "math.graph-theory.cycle-covers.connector-prefix-no-reset",
+      "math.graph-theory.cycle-covers.terminal-cut-bounded-consumers",
+      "math.graph-theory.cycle-covers.general-multigraph-outer-shell",
+      "math.graph-theory.cycle-covers.xi-frame-invariant",
+      "math.graph-theory.cycle-covers.xi-six-strict-rows",
+      "math.graph-theory.cycle-covers.xi-bad-free-route-contradiction"
+    ],
+    "open_frontier": [
+      "math.graph-theory.cycle-covers.one-atom-complete-endpoint",
+      "math.graph-theory.cycle-covers.disjoint-second-failure-avoidance",
+      "math.graph-theory.cycle-covers.single-pop-image-membership",
+      "math.graph-theory.cycle-covers.five-support-goal"
+    ],
+    "failed_or_refuted_in_scope": [
+      "math.graph-theory.cycle-covers.one-atom-prefix-scheduler",
+      "math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier",
+      "math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality",
+      "math.graph-theory.cycle-covers.v741-proof-candidate"
+    ],
+    "permanent_negative_evidence": [
+      "math.graph-theory.cycle-covers.disjoint-double-atom-obstruction",
+      "math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample",
+      "math.graph-theory.cycle-covers.xi-same-arc-counterexample"
+    ],
+    "historical_discovery": [
+      "math.graph-theory.cycle-covers.xi-same-arc-escape-question"
+    ]
+  },
+  "status_statement": "AffineCDC contains a substantial independently assessed local and conditional corpus. The universal five-support/five-CDC theorem remains open at the one-atom complete-endpoint interface.",
+  "nonduplication_rule": "This view references natural units and legacy compatibility paths; it does not own or duplicate mathematical truth."
+}
