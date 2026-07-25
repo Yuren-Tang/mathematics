@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "batch_id": "E307-ADJACENT-CANONICAL-INTAKE",
-  "state": "architecture-checkpoint",
+  "state": "fixed-candidate",
   "authority": {
     "control": "Yuren-Tang/research-workbench#15 comment 5080997896",
     "writer": "MATH-CUR::local:/root/e307_curator_intake",
@@ -31,7 +31,7 @@
         "research/PROGRAMME_STATE_ADDENDUM_2026-07-23_E307_PORT_SONDOW_NORM_SYNTHESIS.md",
         "research/PROGRAMME_STATE_ADDENDUM_2026-07-23_E307_REBOUND_BLOCK_CODE_AND_DEFECT_SPECTRUM.md"
       ],
-      "itemization_status": "pending-generator-reconstruction",
+      "itemization_status": "complete",
       "substantive_item_count": 38,
       "classification_file": "migration/source-to-unit-map/E307_ADJACENT_CANONICAL_INTAKE_MAP.json"
     },
@@ -53,7 +53,7 @@
   "summary": {
     "source_packets": 2,
     "substantive_items": 38,
-    "classified_items": 0,
-    "unclassified_items": 38
+    "classified_items": 38,
+    "unclassified_items": 0
   }
 }

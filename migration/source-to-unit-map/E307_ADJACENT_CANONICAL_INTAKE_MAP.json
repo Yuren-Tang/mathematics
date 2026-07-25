@@ -1,0 +1,746 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "E307-ADJACENT-CANONICAL-INTAKE",
+  "classification_authority": {
+    "repository": "Yuren-Tang/erdos-306",
+    "commit": "9bbcfae8360bce0871522e295f9aca903f64c780",
+    "path": "research/E306_RL_BOUNDED_CURATION_HANDOFF_2026-07-24.md",
+    "blob": "426ede10a690d0c777ab9fe5718ec6964d74af6b",
+    "anchor": "L1-L309",
+    "role": "curation"
+  },
+  "counts": {
+    "source_packets_total": 2,
+    "substantive_items_total": 38,
+    "substantive_items_classified": 38,
+    "substantive_items_unclassified": 0,
+    "canonical_units_referenced": 36
+  },
+  "items": [
+    {
+      "item_id": "e307-001",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_AMBIENT_E313_COLLAPSE_AND_NONAMBIENT_TRANSFER_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_AMBIENT_E313_COLLAPSE_AND_NONAMBIENT_TRANSFER_V1.md",
+        "blob": "5e5c4267461b466864c0ba91be5fda9d717d539d",
+        "anchor": "L1-L262",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.nonambient-e313-transfer-filter",
+        "math.number-theory.arithmetic-derivatives.wang-port-framework-antecedent",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-002",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_ARITHMETIC_DERIVATIVE_TWO_CYCLE_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_ARITHMETIC_DERIVATIVE_TWO_CYCLE_V1.md",
+        "blob": "7b9ce6db5fd1468b1affd768642fe6ece46999f8",
+        "anchor": "L1-L315",
+        "role": "development"
+      },
+      "disposition": "retained-superseded-source",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.bado-squarefree-two-cycle-framework",
+        "math.number-theory.arithmetic-derivatives.mutual-reciprocal-syndrome-and-union-constraints",
+        "math.number-theory.arithmetic-derivatives.superseded-chronology-and-failed-routes"
+      ],
+      "supersession": "Two-cycle identity retained; novelty attribution superseded by the Bado interface."
+    },
+    {
+      "item_id": "e307-003",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_BILATERAL_DEFECT_SEMIGROUP_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_BILATERAL_DEFECT_SEMIGROUP_V1.md",
+        "blob": "f17144a4ae36ff7f1a25c140032d8c72a68c2f13",
+        "anchor": "L1-L395",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.bilateral-defect-semigroup",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-004",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_BILATERAL_TERMINAL_PORT_AND_ANTI_INHERITANCE_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_BILATERAL_TERMINAL_PORT_AND_ANTI_INHERITANCE_V1.md",
+        "blob": "1aba998177b58f4a5c2f1088395e350135065104",
+        "anchor": "L1-L319",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.bilateral-anti-inheritance-and-terminal-port",
+        "math.number-theory.arithmetic-derivatives.bilateral-defect-semigroup",
+        "math.number-theory.arithmetic-derivatives.wang-port-framework-antecedent"
+      ]
+    },
+    {
+      "item_id": "e307-005",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_BLOCK_FIRST_TWO_PRIME_CLOSURE_AND_EXACT_PENCIL_INTERSECTION_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_BLOCK_FIRST_TWO_PRIME_CLOSURE_AND_EXACT_PENCIL_INTERSECTION_V1.md",
+        "blob": "3b59cb283eab4896117dbf6ea23535d974bd2de7",
+        "anchor": "L1-L426",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.block-first-two-prime-closure",
+        "math.number-theory.arithmetic-derivatives.residual-port-pencils-and-block-quadratic",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-006",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_COMPLEMENT_JET_CODE_AND_MEET_IN_THE_MIDDLE_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_COMPLEMENT_JET_CODE_AND_MEET_IN_THE_MIDDLE_V1.md",
+        "blob": "ab4a92df82dc2f0f1f303716a0673d358605472b",
+        "anchor": "L1-L335",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.combinatorics.finite-configurations.defect-block-code-and-complement-jet",
+        "math.harmonic-analysis.finite-fourier.prime-inverse-phase-provider-gap",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-007",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_CORE1722_MINIMAL_SUPPORT_RELAY_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_CORE1722_MINIMAL_SUPPORT_RELAY_V1.md",
+        "blob": "ff862c870fbb7016260e79953c92fb2fdb8d41c9",
+        "anchor": "L1-L350",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.combinatorics.finite-configurations.e307-minimal-support-bounds",
+        "math.number-theory.arithmetic-derivatives.positive-defect-minimal-support-relays",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-008",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_CORE1722_NEAR_ZERO_MINIMAL_RELAY_REFINEMENT_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_CORE1722_NEAR_ZERO_MINIMAL_RELAY_REFINEMENT_V1.md",
+        "blob": "504990b09e33c3d862c41840b423f408ca3208e7",
+        "anchor": "L1-L253",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.positive-defect-minimal-support-relays",
+        "math.combinatorics.finite-configurations.e307-minimal-support-bounds",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-009",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_CORE30_RESIDUAL_900_PORT_AND_ZERO_DEFECT_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_CORE30_RESIDUAL_900_PORT_AND_ZERO_DEFECT_V1.md",
+        "blob": "6427a996a9f13165bc24dc276e5d63f945af34b8",
+        "anchor": "L1-L377",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.core30-residual900-port",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-010",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_CORE30_SUPPORT_70_AND_MINIMAL_SIGN_CROSSING_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_CORE30_SUPPORT_70_AND_MINIMAL_SIGN_CROSSING_V1.md",
+        "blob": "2dd9f1b3334ae5d806f1db3290d1b382736e8f9a",
+        "anchor": "L1-L364",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.combinatorics.finite-configurations.e307-minimal-support-bounds",
+        "math.number-theory.arithmetic-derivatives.positive-defect-minimal-support-relays",
+        "math.number-theory.arithmetic-derivatives.core30-residual900-port"
+      ]
+    },
+    {
+      "item_id": "e307-011",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_CORE858_MINIMAL_SUPPORT_RELAY_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_CORE858_MINIMAL_SUPPORT_RELAY_V1.md",
+        "blob": "dd777203633a899fb32dbf517a409eae0c97afca",
+        "anchor": "L1-L380",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.combinatorics.finite-configurations.e307-minimal-support-bounds",
+        "math.number-theory.arithmetic-derivatives.positive-defect-minimal-support-relays",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-012",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_DEFECT900_STANDARDIZATION_AND_NO_ONE_PRIME_INHERITANCE_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_DEFECT900_STANDARDIZATION_AND_NO_ONE_PRIME_INHERITANCE_V1.md",
+        "blob": "5b1efda4aac8d8f1259e1dea65ca318df1e78035",
+        "anchor": "L1-L311",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.core30-residual900-port",
+        "math.number-theory.arithmetic-derivatives.bilateral-anti-inheritance-and-terminal-port",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-013",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_DEFECT_BLOCK_SYNDROME_GLUING_AND_HYBRID_TRANSFERENCE_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_DEFECT_BLOCK_SYNDROME_GLUING_AND_HYBRID_TRANSFERENCE_V1.md",
+        "blob": "72530d13d6a532e6a7a5063982be309e0c258d72",
+        "anchor": "L1-L413",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.combinatorics.finite-configurations.defect-block-code-and-complement-jet",
+        "math.number-theory.arithmetic-derivatives.core30-residual900-port",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-014",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_DEFECT_EXCHANGE_DETERMINANT_AND_LOW_SWAP_RIGIDITY_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_DEFECT_EXCHANGE_DETERMINANT_AND_LOW_SWAP_RIGIDITY_V1.md",
+        "blob": "e1d0727e4a6b31d9efaced5446eb3bf57466fc88",
+        "anchor": "L1-L336",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.combinatorics.finite-configurations.defect-exchange-low-swap-rigidity",
+        "math.combinatorics.finite-configurations.defect-block-code-and-complement-jet"
+      ]
+    },
+    {
+      "item_id": "e307-015",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_DEFECT_SPECTRUM_AND_INTERMEDIATE_SONDOW_LADDER_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_DEFECT_SPECTRUM_AND_INTERMEDIATE_SONDOW_LADDER_V1.md",
+        "blob": "ffb9e3755c2f07018f72bce1ff83703bbfc01048",
+        "anchor": "L1-L447",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.defect-spectrum-and-intermediate-ladder",
+        "math.number-theory.arithmetic-derivatives.paired-mu-sondow-diagonal",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-016",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_DIRECT_GIUGA_CORE_REBOUND_AND_TWO_LINEAR_FORMS_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_DIRECT_GIUGA_CORE_REBOUND_AND_TWO_LINEAR_FORMS_V1.md",
+        "blob": "0b6890479139a388b14699456c3171804ff918ad",
+        "anchor": "L1-L366",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.direct-core30-rebound-counterexample",
+        "math.number-theory.arithmetic-derivatives.two-step-contraction-claim",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-017",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_DIVISOR_RESIDUE_FOURIER_AND_QUADRATIC_OBSTRUCTION_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_DIVISOR_RESIDUE_FOURIER_AND_QUADRATIC_OBSTRUCTION_V1.md",
+        "blob": "0ec68b0842ad415f5ed68883acbff0f4f354277e",
+        "anchor": "L1-L426",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.harmonic-analysis.finite-fourier.divisor-residue-fourier-calculus",
+        "math.number-theory.arithmetic-derivatives.moving-quadratic-splitting-character-obstruction",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-018",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_GENERAL_GIUGA_CORE_RESIDUAL_SQUARE_PORT_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_GENERAL_GIUGA_CORE_RESIDUAL_SQUARE_PORT_V1.md",
+        "blob": "024146a8c8bd202d867fa57289cd2aa5cc720628",
+        "anchor": "L1-L363",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.giuga-core-residual-square-port",
+        "math.combinatorics.finite-configurations.e307-minimal-support-bounds",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-019",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_GENERAL_RESIDUAL_PORT_TRANSFER_AND_AUTOMATIC_OUTPUT_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_GENERAL_RESIDUAL_PORT_TRANSFER_AND_AUTOMATIC_OUTPUT_V1.md",
+        "blob": "678b84d0cda0e09717e46bfa56c75baf53158ce7",
+        "anchor": "L1-L420",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.residual-c-port-calculus",
+        "math.number-theory.arithmetic-derivatives.wang-port-framework-antecedent",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-020",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_GIUGA_CORE_RELAY_AND_TWO_STEP_CONTRACTION_COUNTEREXAMPLE_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_GIUGA_CORE_RELAY_AND_TWO_STEP_CONTRACTION_COUNTEREXAMPLE_V1.md",
+        "blob": "22d8b91014f0db1756954d388f76cc00282a1b20",
+        "anchor": "L1-L448",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.giuga-relay-rebound-counterexample",
+        "math.number-theory.arithmetic-derivatives.two-step-contraction-claim",
+        "math.number-theory.arithmetic-derivatives.positive-defect-minimal-support-relays"
+      ]
+    },
+    {
+      "item_id": "e307-021",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_LITERATURE_ATTRIBUTION_CORRECTION_AND_BADO_INTERFACE_V1.md",
+        "blob": "99a07db1862cd30a7dd5a4824d59b49cef6a9317",
+        "anchor": "L1-L248",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.bounded-literature-attribution-facet",
+        "math.number-theory.arithmetic-derivatives.bado-squarefree-two-cycle-framework",
+        "math.number-theory.arithmetic-derivatives.wang-port-framework-antecedent"
+      ]
+    },
+    {
+      "item_id": "e307-022",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_LOCAL_PORT_ORBITS_AND_CRT_DENSITY_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_LOCAL_PORT_ORBITS_AND_CRT_DENSITY_V1.md",
+        "blob": "829741703b0c7dd41fc033728cd13ffefaada1c9",
+        "anchor": "L1-L260",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.residual-c-port-calculus",
+        "math.harmonic-analysis.finite-fourier.prime-inverse-phase-provider-gap",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-023",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_MOVING_GENUS_CHARACTER_OBSTRUCTION_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_MOVING_GENUS_CHARACTER_OBSTRUCTION_V1.md",
+        "blob": "161202f8a17f496ace6d2d8af04ef351dedd3b30",
+        "anchor": "L1-L235",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.moving-quadratic-splitting-character-obstruction",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-024",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_NATURAL_66_CORE_COMPLETE_ONE_REPLACEMENT_EXCLUSION_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_NATURAL_66_CORE_COMPLETE_ONE_REPLACEMENT_EXCLUSION_V1.md",
+        "blob": "ad63e17fb14746468520cc81e6d6aa4ec788768f",
+        "anchor": "L1-L180",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.natural66-bounded-terminal-exclusion",
+        "math.combinatorics.finite-configurations.e307-minimal-support-bounds",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-025",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_NORMALIZED_JET_GROUP_AND_TARGET_GRAPH_FOURIER_TRANSFERENCE_V1.md",
+        "blob": "b564c58606ed1a6b5c0eaca21fbad75649c1e57d",
+        "anchor": "L1-L511",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.harmonic-analysis.finite-fourier.normalized-prime-jet-valid-facets",
+        "math.harmonic-analysis.finite-fourier.normalized-prime-jet-flatness-transference-block",
+        "math.harmonic-analysis.finite-fourier.prime-inverse-phase-provider-gap",
+        "math.harmonic-analysis.finite-fourier.joint-finite-archimedean-local-limit-gap"
+      ]
+    },
+    {
+      "item_id": "e307-026",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_PAIRED_MU_SONDOW_DIAGONAL_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_PAIRED_MU_SONDOW_DIAGONAL_V1.md",
+        "blob": "681483e2ec6da40832275b0e10058b3b08c7ac52",
+        "anchor": "L1-L265",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.paired-mu-sondow-diagonal",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-027",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_PRIMITIVE_NORM_AND_SPLIT_FACTOR_GEOMETRY_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_PRIMITIVE_NORM_AND_SPLIT_FACTOR_GEOMETRY_V1.md",
+        "blob": "55aa34d03dc79585a9d74341d2e406b32000814a",
+        "anchor": "L1-L265",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.primitive-quadratic-norm-split-factor-geometry",
+        "math.number-theory.arithmetic-derivatives.moving-quadratic-splitting-character-obstruction",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-028",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_REAL_MODULAR_PORT_GEOMETRY_AND_DEFICIT_DETERMINANT_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_REAL_MODULAR_PORT_GEOMETRY_AND_DEFICIT_DETERMINANT_V1.md",
+        "blob": "01295f6c0aa084fded2601bf09625f77ae48d79b",
+        "anchor": "L1-L365",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.real-modular-deficit-determinant",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-029",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_RESIDUAL_PORT_PENCILS_BLOCK_QUADRATIC_AND_DEFECT_BRIDGE_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_RESIDUAL_PORT_PENCILS_BLOCK_QUADRATIC_AND_DEFECT_BRIDGE_V1.md",
+        "blob": "eae5d7b8f3643d47f7294b093006b2bd7e78cc94",
+        "anchor": "L1-L377",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.residual-port-pencils-and-block-quadratic",
+        "math.number-theory.arithmetic-derivatives.residual-c-port-calculus",
+        "math.number-theory.arithmetic-derivatives.wang-port-framework-antecedent"
+      ]
+    },
+    {
+      "item_id": "e307-030",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_RETURN_DEFECT_STRATIFICATION_AND_TWO_STEP_CONTRACTION_FRONTIER_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_RETURN_DEFECT_STRATIFICATION_AND_TWO_STEP_CONTRACTION_FRONTIER_V1.md",
+        "blob": "eeb241cbc0d3356c931e18d38e86997e6fec1bd9",
+        "anchor": "L1-L240",
+        "role": "development"
+      },
+      "disposition": "retained-corrected-source",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.two-step-contraction-claim",
+        "math.number-theory.arithmetic-derivatives.direct-core30-rebound-counterexample",
+        "math.number-theory.arithmetic-derivatives.giuga-relay-rebound-counterexample",
+        "math.number-theory.arithmetic-derivatives.superseded-chronology-and-failed-routes"
+      ],
+      "supersession": "Contraction conjecture retracted; exact defect identity and counterexample boundary retained."
+    },
+    {
+      "item_id": "e307-031",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_SEEDED_DIVISOR_PORT_FACTORIZATION_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_SEEDED_DIVISOR_PORT_FACTORIZATION_V1.md",
+        "blob": "78db129a95f7615de322ecb8c7e87c9b3abebb4a",
+        "anchor": "L1-L372",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.seeded-divisor-cubic-reduction",
+        "math.number-theory.arithmetic-derivatives.primitive-quadratic-norm-split-factor-geometry",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-032",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_SEEDED_SCALAR_PORT_COMPOSITION_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_SEEDED_SCALAR_PORT_COMPOSITION_V1.md",
+        "blob": "3070d7a699ce051f8d0c70776b5de5433c7dc6f7",
+        "anchor": "L1-L356",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.residual-c-port-calculus",
+        "math.number-theory.arithmetic-derivatives.wang-port-framework-antecedent",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-033",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/ERDOS_307_SEMIPRIME_JET_TRANSFER_AND_MOBIUS_PORT_INVOLUTION_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/ERDOS_307_SEMIPRIME_JET_TRANSFER_AND_MOBIUS_PORT_INVOLUTION_V1.md",
+        "blob": "e4398246169bb13dde1a6e0a84ff622d15aae5cb",
+        "anchor": "L1-L760",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.semiprime-jet-transfer-and-port-involution",
+        "math.number-theory.arithmetic-derivatives.real-modular-deficit-determinant",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-034",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/PRIME_SHIFT_HASSE_RECIPROCAL_HYPERGRAPH_CALCULUS_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/PRIME_SHIFT_HASSE_RECIPROCAL_HYPERGRAPH_CALCULUS_V1.md",
+        "blob": "6045704ade685ed909e59e8457e166da638c686e",
+        "anchor": "L1-L356",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.prime-symbol-shift-divided-power-coefficients",
+        "math.number-theory.arithmetic-derivatives.superseded-chronology-and-failed-routes",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-035",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/adjacent-problems/UNIT_FRACTION_NEIGHBOURHOOD_MINE_MAP_304_313_V1.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/adjacent-problems/UNIT_FRACTION_NEIGHBOURHOOD_MINE_MAP_304_313_V1.md",
+        "blob": "c3cf3503f48a89756edaa4f5870980b063630267",
+        "anchor": "L1-L324",
+        "role": "development"
+      },
+      "disposition": "mapped-to-natural-units",
+      "units": [
+        "math.number-theory.reciprocal-representations.adjacent-unit-fraction-neighbourhood-mine",
+        "math.number-theory.arithmetic-derivatives.erdos-307-existence-problem"
+      ]
+    },
+    {
+      "item_id": "e307-036",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/PROGRAMME_STATE_ADDENDUM_2026-07-23_E307_JET_PORT_AND_DIVISOR_REDUCTION.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/PROGRAMME_STATE_ADDENDUM_2026-07-23_E307_JET_PORT_AND_DIVISOR_REDUCTION.md",
+        "blob": "5f311db3c2a0786e6cae690ec5ef61931623c914",
+        "anchor": "L1-L130",
+        "role": "development"
+      },
+      "disposition": "retained-chronology",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.superseded-chronology-and-failed-routes",
+        "math.number-theory.arithmetic-derivatives.semiprime-jet-transfer-and-port-involution",
+        "math.number-theory.arithmetic-derivatives.seeded-divisor-cubic-reduction"
+      ],
+      "supersession": "Chronological summary only; natural units and current frontier view control navigation."
+    },
+    {
+      "item_id": "e307-037",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/PROGRAMME_STATE_ADDENDUM_2026-07-23_E307_PORT_SONDOW_NORM_SYNTHESIS.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/PROGRAMME_STATE_ADDENDUM_2026-07-23_E307_PORT_SONDOW_NORM_SYNTHESIS.md",
+        "blob": "8364c8cbd3e8acb10295023713307e7c91441bea",
+        "anchor": "L1-L323",
+        "role": "development"
+      },
+      "disposition": "retained-chronology",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.superseded-chronology-and-failed-routes",
+        "math.number-theory.arithmetic-derivatives.residual-c-port-calculus",
+        "math.number-theory.arithmetic-derivatives.paired-mu-sondow-diagonal",
+        "math.number-theory.arithmetic-derivatives.primitive-quadratic-norm-split-factor-geometry"
+      ],
+      "supersession": "Chronological summary only; natural units and current frontier view control navigation."
+    },
+    {
+      "item_id": "e307-038",
+      "source_id": "e307-adjacent-content",
+      "source_item": "research/PROGRAMME_STATE_ADDENDUM_2026-07-23_E307_REBOUND_BLOCK_CODE_AND_DEFECT_SPECTRUM.md",
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "6e2352eeccec3686e9c167cf2cd6c47c152e5560",
+        "path": "research/PROGRAMME_STATE_ADDENDUM_2026-07-23_E307_REBOUND_BLOCK_CODE_AND_DEFECT_SPECTRUM.md",
+        "blob": "605860857a3a13d23359e4f129a1230c5b19d97f",
+        "anchor": "L1-L393",
+        "role": "development"
+      },
+      "disposition": "retained-chronology",
+      "units": [
+        "math.number-theory.arithmetic-derivatives.superseded-chronology-and-failed-routes",
+        "math.number-theory.arithmetic-derivatives.direct-core30-rebound-counterexample",
+        "math.number-theory.arithmetic-derivatives.giuga-relay-rebound-counterexample",
+        "math.combinatorics.finite-configurations.defect-block-code-and-complement-jet",
+        "math.number-theory.arithmetic-derivatives.defect-spectrum-and-intermediate-ladder"
+      ],
+      "supersession": "Chronological summary only; natural units and current frontier view control navigation."
+    }
+  ]
+}
