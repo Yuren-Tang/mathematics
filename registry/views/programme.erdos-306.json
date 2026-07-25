@@ -1,0 +1,45 @@
+{
+  "view_id": "programme.erdos-306",
+  "title": "Erd\u0151s 306 programme view",
+  "view_type": "programme",
+  "registry_source": "registry/units/number-theory/reciprocal-representations/E306_CUR_CANONICAL_INTAKE_UNITS.json",
+  "relation_source": "registry/relations/E306_CUR_CANONICAL_INTAKE_RELATIONS.json",
+  "compatibility_entrypoints": [
+    "projects/erdos-306/README.md",
+    "projects/erdos-306/CURRENT_BEST.md",
+    "projects/erdos-306/ASSURANCE_AND_SOURCE_MAP.md",
+    "projects/erdos-306/FRONTIER_AND_E307_SEPARATION.md"
+  ],
+  "sections": {
+    "theorem": [
+      "math.number-theory.reciprocal-representations.squarefree-semiprime-characterization"
+    ],
+    "preferred_human_spine": [
+      "math.number-theory.reciprocal-representations.dense-one-anchor-proof"
+    ],
+    "independently_assured_fallback": [
+      "math.number-theory.reciprocal-representations.multiblock-proof"
+    ],
+    "independently_assured_alternative": [
+      "math.number-theory.reciprocal-representations.sparse-sensor-proof"
+    ],
+    "authorial_generalization_pending_review": [
+      "math.harmonic-analysis.finite-fourier.anchor-fibre-transference",
+      "math.number-theory.reciprocal-representations.aft-e306-conditional-application"
+    ],
+    "orthogonal_formal_axis": [
+      "math.number-theory.reciprocal-representations.e306-formal-release-axis",
+      "math.analytic-number-theory.prime-distribution.e306-formal-trust-boundary"
+    ],
+    "negative_and_method_boundaries": [
+      "math.combinatorics.finite-configurations.sampled-core-method-barriers",
+      "math.combinatorics.finite-configurations.bipartite-plaquette-counterexample"
+    ],
+    "open_unlaunched_frontier": [
+      "math.number-theory.reciprocal-representations.e306-future-frontier",
+      "math.number-theory.arithmetic-derivatives.erdos-307-adjacent-open-programme"
+    ]
+  },
+  "status_statement": "E306 has three independently assured human proof routes with the dense one-anchor route preferred for exposition. AFT is authorial, the Lean release is an orthogonal conditional formal axis, and E307 remains separate/open.",
+  "nonduplication_rule": "This project view references natural units; it does not own or duplicate mathematical truth."
+}

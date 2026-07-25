@@ -1,6 +1,6 @@
 # E306-CUR-CANONICAL-INTAKE — branch-native state
 
-**State:** active bounded intake; first durable checkpoint
+**State:** fixed candidate; bounded validation passed
 
 **Authority:** `Yuren-Tang/research-workbench#15` comment `5077225976`
 
@@ -34,7 +34,7 @@ squarefree-semiprime denominator systems, finite Fourier selection,
 anchor–fibre decoding, and finite-configuration rigidity. `problem.erdos-306`
 will be a consumer view over those units rather than their identity boundary.
 
-The branch-native batch will contain:
+The branch-native batch contains:
 
 1. natural mathematical expositions;
 2. stable unit and typed-relation registries;
@@ -61,7 +61,9 @@ mathematical disposition. Curation does not upgrade assurance.
 
 ## Persistence rule
 
-This file and the source manifest are committed before the full itemization and
-exposition are complete because their reconstruction cost has become
-material. Later commits on this same leased branch will replace `active`/WIP
-counts with the exact final candidate and validation record.
+The initial source architecture was committed before full itemization because
+its reconstruction cost had become material. The fixed candidate now records
+12 source packets, 75 artifact-level source locators, 26 natural units, 22
+logical relations, five discovery relations, and `unclassified = 0`. The
+machine validator independently re-resolves every commit/path/blob/anchor and
+checks all epistemic boundaries.

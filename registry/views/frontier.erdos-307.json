@@ -1,0 +1,17 @@
+{
+  "view_id": "frontier.erdos-307",
+  "title": "Erd\u0151s 307 adjacent frontier",
+  "view_type": "frontier",
+  "registry_source": "registry/units/number-theory/reciprocal-representations/E306_CUR_CANONICAL_INTAKE_UNITS.json",
+  "relation_source": "registry/relations/E306_CUR_CANONICAL_INTAKE_RELATIONS.json",
+  "sections": {
+    "open_separate": [
+      "math.number-theory.arithmetic-derivatives.erdos-307-adjacent-open-programme"
+    ],
+    "discovery_only_antecedent": [
+      "math.number-theory.reciprocal-representations.squarefree-semiprime-characterization"
+    ]
+  },
+  "status_statement": "OPEN / SEPARATE / NOT LAUNCHED. The E306 connection is discovery-plane only.",
+  "nonduplication_rule": "No E306 proof status transfers to E307."
+}

@@ -1,0 +1,1410 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "E306-CUR-CANONICAL-INTAKE",
+  "map_type": "artifact-to-natural-unit",
+  "unit_registry": "registry/units/number-theory/reciprocal-representations/E306_CUR_CANONICAL_INTAKE_UNITS.json",
+  "source_manifest": "sources/manifests/E306_CUR_CANONICAL_INTAKE_SOURCE_MANIFEST.json",
+  "items": [
+    {
+      "item_id": "e306-release-v0.0.3:01",
+      "source_id": "e306-release-v0.0.3",
+      "source_item": "CITATION.cff",
+      "disposition": "projection-only",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-formal-release-axis"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "4582185de1e0e27416e9362e0cc7943c3d2fb4fe",
+        "path": "CITATION.cff",
+        "blob": "f4fab2f5da4863efa8514b2169c12771a449e186",
+        "anchor": "L1-L87"
+      }
+    },
+    {
+      "item_id": "e306-release-v0.0.3:02",
+      "source_id": "e306-release-v0.0.3",
+      "source_item": "README.md",
+      "disposition": "attached-formalization",
+      "units": [
+        "math.number-theory.reciprocal-representations.squarefree-semiprime-characterization",
+        "math.number-theory.reciprocal-representations.e306-formal-release-axis",
+        "math.analytic-number-theory.prime-distribution.e306-formal-trust-boundary"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "4582185de1e0e27416e9362e0cc7943c3d2fb4fe",
+        "path": "README.md",
+        "blob": "d203135df4bfe5e6a19ef3cf03d6f02f0df2d0ac",
+        "anchor": "L1-L151"
+      }
+    },
+    {
+      "item_id": "e306-release-v0.0.3:03",
+      "source_id": "e306-release-v0.0.3",
+      "source_item": "lean/RequestProject/Audit.lean",
+      "disposition": "attached-formalization",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-formal-release-axis",
+        "math.analytic-number-theory.prime-distribution.e306-formal-trust-boundary"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "4582185de1e0e27416e9362e0cc7943c3d2fb4fe",
+        "path": "lean/RequestProject/Audit.lean",
+        "blob": "cf151af601eb7c29f6d107677b3c0e29eb727923",
+        "anchor": "L1-L30"
+      }
+    },
+    {
+      "item_id": "e306-release-v0.0.3:04",
+      "source_id": "e306-release-v0.0.3",
+      "source_item": "lean/RequestProject/Erdos306FormalConjectures.lean",
+      "disposition": "attached-formalization",
+      "units": [
+        "math.number-theory.reciprocal-representations.squarefree-semiprime-characterization",
+        "math.number-theory.reciprocal-representations.e306-formal-release-axis"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "4582185de1e0e27416e9362e0cc7943c3d2fb4fe",
+        "path": "lean/RequestProject/Erdos306FormalConjectures.lean",
+        "blob": "58e158937155ef739309a62c2c52ed1289375f4d",
+        "anchor": "L1-L139"
+      }
+    },
+    {
+      "item_id": "e306-release-v0.0.3:05",
+      "source_id": "e306-release-v0.0.3",
+      "source_item": "lean/RequestProject/RSPrimeSums.lean",
+      "disposition": "attached-formalization",
+      "units": [
+        "math.analytic-number-theory.prime-distribution.e306-formal-trust-boundary",
+        "math.analytic-number-theory.prime-distribution.fixed-ratio-prime-supply"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "4582185de1e0e27416e9362e0cc7943c3d2fb4fe",
+        "path": "lean/RequestProject/RSPrimeSums.lean",
+        "blob": "9cb6dc334607b7da78a371420d820b5476abdf6a",
+        "anchor": "L1-L314"
+      }
+    },
+    {
+      "item_id": "e306-dense-one-anchor:01",
+      "source_id": "e306-dense-one-anchor",
+      "source_item": "proof-development/ONE-ANCHOR-DEPENDENCY-AND-PARAMETER-LEDGER.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.dense-one-anchor-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+        "path": "proof-development/ONE-ANCHOR-DEPENDENCY-AND-PARAMETER-LEDGER.md",
+        "blob": "1a8f46f9dd8bd91beebb85581d861c2f9ca2d68e",
+        "anchor": "L1-L358"
+      }
+    },
+    {
+      "item_id": "e306-dense-one-anchor:02",
+      "source_id": "e306-dense-one-anchor",
+      "source_item": "proof-development/ONE-ANCHOR-FAILURE-MODE-AUDIT.md",
+      "disposition": "attached-negative-boundary",
+      "units": [
+        "math.number-theory.reciprocal-representations.dense-one-anchor-proof",
+        "math.combinatorics.finite-configurations.sampled-core-method-barriers"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+        "path": "proof-development/ONE-ANCHOR-FAILURE-MODE-AUDIT.md",
+        "blob": "53e8e3ea8ea35444888699ad533c58ea0a05e87a",
+        "anchor": "L1-L562"
+      }
+    },
+    {
+      "item_id": "e306-dense-one-anchor:03",
+      "source_id": "e306-dense-one-anchor",
+      "source_item": "proof-development/ONE-ANCHOR-HUMAN-PROOF.md",
+      "disposition": "attached-proof",
+      "units": [
+        "math.number-theory.reciprocal-representations.dense-one-anchor-proof",
+        "math.number-theory.reciprocal-representations.squarefree-semiprime-characterization",
+        "math.number-theory.reciprocal-representations.squarefree-denominator-necessity",
+        "math.number-theory.reciprocal-representations.avoiding-unit-reduction",
+        "math.analytic-number-theory.prime-distribution.fixed-ratio-prime-supply",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.harmonic-analysis.finite-fourier.bernoulli-subset-selector",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+        "path": "proof-development/ONE-ANCHOR-HUMAN-PROOF.md",
+        "blob": "b1587d07fcd13a27250c63fa8e08c5f4acebfe22",
+        "anchor": "L1-L1379"
+      }
+    },
+    {
+      "item_id": "e306-dense-one-anchor:04",
+      "source_id": "e306-dense-one-anchor",
+      "source_item": "proof-development/ONE-ANCHOR-MANUSCRIPT-HANDOFF.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.dense-one-anchor-proof"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+        "path": "proof-development/ONE-ANCHOR-MANUSCRIPT-HANDOFF.md",
+        "blob": "09b845112077e17fa6948b7d36fb7189948ddaef",
+        "anchor": "L1-L254"
+      }
+    },
+    {
+      "item_id": "e306-dense-one-anchor:05",
+      "source_id": "e306-dense-one-anchor",
+      "source_item": "proof-development/ONE-ANCHOR-PROOF-ARCHITECTURE.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.dense-one-anchor-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+        "path": "proof-development/ONE-ANCHOR-PROOF-ARCHITECTURE.md",
+        "blob": "c2037b4ab10a393475a39adb1350060e227057a0",
+        "anchor": "L1-L416"
+      }
+    },
+    {
+      "item_id": "e306-dense-one-anchor:06",
+      "source_id": "e306-dense-one-anchor",
+      "source_item": "proof-development/ONE-ANCHOR-ROUTE-COMPARISON.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.dense-one-anchor-proof"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+        "path": "proof-development/ONE-ANCHOR-ROUTE-COMPARISON.md",
+        "blob": "4a30711129a6cb8765a85c61d9e7c89d93d3cc1c",
+        "anchor": "L1-L243"
+      }
+    },
+    {
+      "item_id": "e306-dense-one-anchor-audit:01",
+      "source_id": "e306-dense-one-anchor-audit",
+      "source_item": "review/E306-OA-AUDIT-01-CLAIM-MATRIX.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.dense-one-anchor-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+        "path": "review/E306-OA-AUDIT-01-CLAIM-MATRIX.md",
+        "blob": "75cdaea8c7587093a57d700bbaef4e7ec5329ac2",
+        "anchor": "L1-L61"
+      }
+    },
+    {
+      "item_id": "e306-dense-one-anchor-audit:02",
+      "source_id": "e306-dense-one-anchor-audit",
+      "source_item": "review/E306-OA-AUDIT-01-CURATOR-GATE.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.dense-one-anchor-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+        "path": "review/E306-OA-AUDIT-01-CURATOR-GATE.md",
+        "blob": "58c5d86489052c275f1084ad83986f353a2adebe",
+        "anchor": "L1-L86"
+      }
+    },
+    {
+      "item_id": "e306-dense-one-anchor-audit:03",
+      "source_id": "e306-dense-one-anchor-audit",
+      "source_item": "review/E306-OA-AUDIT-01-REPORT.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.dense-one-anchor-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+        "path": "review/E306-OA-AUDIT-01-REPORT.md",
+        "blob": "5e46cbc4b7631f88d19291dc71cab48158a9a05a",
+        "anchor": "L1-L395"
+      }
+    },
+    {
+      "item_id": "e306-dense-one-anchor-audit:04",
+      "source_id": "e306-dense-one-anchor-audit",
+      "source_item": "review/E306-OA-AUDIT-01-ROUTE-COMPARISON.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.dense-one-anchor-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+        "path": "review/E306-OA-AUDIT-01-ROUTE-COMPARISON.md",
+        "blob": "c4ff4b7068f6d36873fd49ad9e7a36d749a4181d",
+        "anchor": "L1-L143"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:01",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/ARTICLE_CORE_CHECKPOINT.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/ARTICLE_CORE_CHECKPOINT.md",
+        "blob": "6f27207b4b0a1fbd42990dc3e18e8881cb6dff6c",
+        "anchor": "L1-L275"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:02",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/E306-PD-MECH-01-CONSTANT-PURIFICATION.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/E306-PD-MECH-01-CONSTANT-PURIFICATION.md",
+        "blob": "f0c4bde1892e8c4f4947610f5eb68b8848b9938f",
+        "anchor": "L1-L412"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:03",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/E306-PD-MECH-01-MANUSCRIPT-ARCHITECTURE.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/E306-PD-MECH-01-MANUSCRIPT-ARCHITECTURE.md",
+        "blob": "fa5fd39ec3d615a49e9f9cc221940119ea90156b",
+        "anchor": "L1-L472"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:04",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/FORMAL_INFORMAL_CORRESPONDENCE.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.e306-formal-release-axis",
+        "math.analytic-number-theory.prime-distribution.e306-formal-trust-boundary"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/FORMAL_INFORMAL_CORRESPONDENCE.md",
+        "blob": "082ffd69206019eebd4b238ff09f3f729d85bc05",
+        "anchor": "L1-L123"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:05",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/PAPER-FIRST-DEPENDENCY-AND-PARAMETER-LEDGER.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/PAPER-FIRST-DEPENDENCY-AND-PARAMETER-LEDGER.md",
+        "blob": "c5926ed15c3e071c47138fb5544e11da510e9b95",
+        "anchor": "L1-L360"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:06",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/PAPER-FIRST-HUMAN-PROOF.md",
+      "disposition": "attached-proof",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.squarefree-semiprime-characterization",
+        "math.number-theory.reciprocal-representations.squarefree-denominator-necessity",
+        "math.number-theory.reciprocal-representations.avoiding-unit-reduction",
+        "math.analytic-number-theory.prime-distribution.fixed-ratio-prime-supply",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.harmonic-analysis.finite-fourier.bernoulli-subset-selector",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/PAPER-FIRST-HUMAN-PROOF.md",
+        "blob": "1106c5993314b0a9a9f1fe38374316e359d2ff33",
+        "anchor": "L1-L1386"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:07",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/PAPER-FIRST-MANUSCRIPT-HANDOFF.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/PAPER-FIRST-MANUSCRIPT-HANDOFF.md",
+        "blob": "75014cd2273f6f7088c4c2f32a0e314200e77fac",
+        "anchor": "L1-L265"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:08",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/PAPER-FIRST-PROOF-ARCHITECTURE.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/PAPER-FIRST-PROOF-ARCHITECTURE.md",
+        "blob": "66fa260078b94b5de7d0ebbd5c805f9eff30a34b",
+        "anchor": "L1-L281"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:09",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/PAPER-FIRST-ROUTE-COMPARISON.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/PAPER-FIRST-ROUTE-COMPARISON.md",
+        "blob": "6a16206ebea6e50bcac7c46f9a3f194fb90b44c1",
+        "anchor": "L1-L248"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:10",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/PROGRAMME_STATE.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/PROGRAMME_STATE.md",
+        "blob": "144161a9c35e5ad7e63ffe01e91c27dc88ee68ed",
+        "anchor": "L1-L133"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:11",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/PROOF_OBLIGATION_DAG.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/PROOF_OBLIGATION_DAG.md",
+        "blob": "a5e712f7d7cd3eb7b1283df58641c7ba165ebf32",
+        "anchor": "L1-L228"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:12",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/REVIEW_B_RECONCILIATION.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/REVIEW_B_RECONCILIATION.md",
+        "blob": "f707528ff51bfb552efbbee3b086fcd18f394329",
+        "anchor": "L1-L417"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:13",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/units/E306-PD-A11-A13-ARITHMETIC-CLOSURE.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/units/E306-PD-A11-A13-ARITHMETIC-CLOSURE.md",
+        "blob": "14c7df1594bf14a11299b20e22cdae6d493c1735",
+        "anchor": "L1-L247"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:14",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/units/E306-PD-A6-1-CONTROL-GEOMETRY.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/units/E306-PD-A6-1-CONTROL-GEOMETRY.md",
+        "blob": "403aa45ab766043d4fdb039471350ab58db86f81",
+        "anchor": "L1-L275"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:15",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/units/E306-PD-A6-2-COLD-BLOCK-BOUNDARY.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/units/E306-PD-A6-2-COLD-BLOCK-BOUNDARY.md",
+        "blob": "ddb099bc216dc008396b8d8e1b7877470f58ae03",
+        "anchor": "L1-L402"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:16",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/units/E306-PD-A6-3-GLOBAL-CONTROL.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/units/E306-PD-A6-3-GLOBAL-CONTROL.md",
+        "blob": "d960682ca7e89e2017bfe69527f246a7221cd443",
+        "anchor": "L1-L339"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:17",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/units/E306-PD-A6-4-MASS-WEIGHTS-VARIANCE.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/units/E306-PD-A6-4-MASS-WEIGHTS-VARIANCE.md",
+        "blob": "750e8da7d19a44372eb7019885295b8f69374dba",
+        "anchor": "L1-L347"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:18",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/units/E306-PD-A7-A10-SPECTRAL-ENDGAME.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/units/E306-PD-A7-A10-SPECTRAL-ENDGAME.md",
+        "blob": "d5125f613de044f4060e7130823a942a630cf521",
+        "anchor": "L1-L423"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repaired:19",
+      "source_id": "e306-multiblock-repaired",
+      "source_item": "proof-development/units/E306-PD-B1-B3-ANALYTIC-INTERFACE.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+        "path": "proof-development/units/E306-PD-B1-B3-ANALYTIC-INTERFACE.md",
+        "blob": "cd9611ed055477f6bc7d8d9407a03996c529dd54",
+        "anchor": "L1-L377"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-audit:01",
+      "source_id": "e306-multiblock-audit",
+      "source_item": "review/E306-PAPER-FIRST-AUDIT-BASE.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "3d1451faf66830bbf38e16047b78dd08d7efa803",
+        "path": "review/E306-PAPER-FIRST-AUDIT-BASE.md",
+        "blob": "771c8ac82af92f3b00f1fe141ace644274e473b1",
+        "anchor": "L1-L19"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-audit:02",
+      "source_id": "e306-multiblock-audit",
+      "source_item": "review/E306-PF-AUDIT-01-CLAIM-MATRIX.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "3d1451faf66830bbf38e16047b78dd08d7efa803",
+        "path": "review/E306-PF-AUDIT-01-CLAIM-MATRIX.md",
+        "blob": "6de3126b75ea4ea0819bb6be99a819f1f27320df",
+        "anchor": "L1-L53"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-audit:03",
+      "source_id": "e306-multiblock-audit",
+      "source_item": "review/E306-PF-AUDIT-01-MANUSCRIPT-GATE.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "3d1451faf66830bbf38e16047b78dd08d7efa803",
+        "path": "review/E306-PF-AUDIT-01-MANUSCRIPT-GATE.md",
+        "blob": "9b8eee31cb2c80640137da11460e0d07bebfa0bd",
+        "anchor": "L1-L124"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-audit:04",
+      "source_id": "e306-multiblock-audit",
+      "source_item": "review/E306-PF-AUDIT-01-REPORT.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "3d1451faf66830bbf38e16047b78dd08d7efa803",
+        "path": "review/E306-PF-AUDIT-01-REPORT.md",
+        "blob": "0144c8da97e11bf647dbe4642cecd9a22f95ccee",
+        "anchor": "L1-L213"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repair-verification:01",
+      "source_id": "e306-multiblock-repair-verification",
+      "source_item": "review/E306-PF-REPAIR-VERIFY-01-MANUSCRIPT-GATE.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "5c12240e877fb10730508924d0b90ffa8f3a8973",
+        "path": "review/E306-PF-REPAIR-VERIFY-01-MANUSCRIPT-GATE.md",
+        "blob": "a7b08531f3df8dce3e1baaa2a7031c6c702f9021",
+        "anchor": "L1-L90"
+      }
+    },
+    {
+      "item_id": "e306-multiblock-repair-verification:02",
+      "source_id": "e306-multiblock-repair-verification",
+      "source_item": "review/E306-PF-REPAIR-VERIFY-01-REPORT.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "5c12240e877fb10730508924d0b90ffa8f3a8973",
+        "path": "review/E306-PF-REPAIR-VERIFY-01-REPORT.md",
+        "blob": "3899e5476355d354816e15341ceae1c86d8c2818",
+        "anchor": "L1-L353"
+      }
+    },
+    {
+      "item_id": "e306-sparse-repaired:01",
+      "source_id": "e306-sparse-repaired",
+      "source_item": "proof-development/SPARSE-ANCHOR-DEPENDENCY-AND-PARAMETER-LEDGER.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+        "math.combinatorics.finite-configurations.sparse-actual-prime-sensor-core"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "3074ca46452a6f3528be588033fe414d5a0c0ef9",
+        "path": "proof-development/SPARSE-ANCHOR-DEPENDENCY-AND-PARAMETER-LEDGER.md",
+        "blob": "b46b8e01fea9ea00cd82739db8fff65e9b1e254c",
+        "anchor": "L1-L410"
+      }
+    },
+    {
+      "item_id": "e306-sparse-repaired:02",
+      "source_id": "e306-sparse-repaired",
+      "source_item": "proof-development/SPARSE-ANCHOR-FAILURE-MODE-AUDIT.md",
+      "disposition": "attached-negative-boundary",
+      "units": [
+        "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+        "math.combinatorics.finite-configurations.sampled-core-method-barriers"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "3074ca46452a6f3528be588033fe414d5a0c0ef9",
+        "path": "proof-development/SPARSE-ANCHOR-FAILURE-MODE-AUDIT.md",
+        "blob": "a66d60d438a2bba0931365221e0933f0a4ba2265",
+        "anchor": "L1-L343"
+      }
+    },
+    {
+      "item_id": "e306-sparse-repaired:03",
+      "source_id": "e306-sparse-repaired",
+      "source_item": "proof-development/SPARSE-ANCHOR-HUMAN-PROOF.md",
+      "disposition": "attached-proof",
+      "units": [
+        "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+        "math.combinatorics.finite-configurations.sparse-actual-prime-sensor-core",
+        "math.number-theory.reciprocal-representations.squarefree-semiprime-characterization",
+        "math.number-theory.reciprocal-representations.squarefree-denominator-necessity",
+        "math.number-theory.reciprocal-representations.avoiding-unit-reduction",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.harmonic-analysis.finite-fourier.bernoulli-subset-selector",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "3074ca46452a6f3528be588033fe414d5a0c0ef9",
+        "path": "proof-development/SPARSE-ANCHOR-HUMAN-PROOF.md",
+        "blob": "8071a5d4a07dbd4937e98e86868a52505e01a0d0",
+        "anchor": "L1-L1040"
+      }
+    },
+    {
+      "item_id": "e306-sparse-repaired:04",
+      "source_id": "e306-sparse-repaired",
+      "source_item": "proof-development/SPARSE-ANCHOR-MANUSCRIPT-HANDOFF.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+        "math.combinatorics.finite-configurations.sparse-actual-prime-sensor-core"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "3074ca46452a6f3528be588033fe414d5a0c0ef9",
+        "path": "proof-development/SPARSE-ANCHOR-MANUSCRIPT-HANDOFF.md",
+        "blob": "1060e685ee146c8eb3fec944dc404d4f7385f4a6",
+        "anchor": "L1-L206"
+      }
+    },
+    {
+      "item_id": "e306-sparse-repaired:05",
+      "source_id": "e306-sparse-repaired",
+      "source_item": "proof-development/SPARSE-ANCHOR-PROOF-ARCHITECTURE.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+        "math.combinatorics.finite-configurations.sparse-actual-prime-sensor-core"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "3074ca46452a6f3528be588033fe414d5a0c0ef9",
+        "path": "proof-development/SPARSE-ANCHOR-PROOF-ARCHITECTURE.md",
+        "blob": "2a507ce87dd79f0b6cbd13eaf5d2c75c96716305",
+        "anchor": "L1-L253"
+      }
+    },
+    {
+      "item_id": "e306-sparse-repaired:06",
+      "source_id": "e306-sparse-repaired",
+      "source_item": "proof-development/SPARSE-ANCHOR-ROUTE-COMPARISON.md",
+      "disposition": "attached-provenance",
+      "units": [
+        "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+        "math.combinatorics.finite-configurations.sparse-actual-prime-sensor-core"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "3074ca46452a6f3528be588033fe414d5a0c0ef9",
+        "path": "proof-development/SPARSE-ANCHOR-ROUTE-COMPARISON.md",
+        "blob": "8b126739ce339956e0fc6911394046d0f4dd52a4",
+        "anchor": "L1-L217"
+      }
+    },
+    {
+      "item_id": "e306-sparse-audit:01",
+      "source_id": "e306-sparse-audit",
+      "source_item": "review/E306-SAS-AUDIT-01-CANONICAL-GATE.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+        "math.combinatorics.finite-configurations.sparse-actual-prime-sensor-core",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "e9547c15b5858f5c456a9b3ffb9d30d1a0d15233",
+        "path": "review/E306-SAS-AUDIT-01-CANONICAL-GATE.md",
+        "blob": "7b35410bcfcc632e290f8e69456e98db7f95f3d0",
+        "anchor": "L1-L290"
+      }
+    },
+    {
+      "item_id": "e306-sparse-audit:02",
+      "source_id": "e306-sparse-audit",
+      "source_item": "review/E306-SAS-AUDIT-01-CLAIM-MATRIX.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+        "math.combinatorics.finite-configurations.sparse-actual-prime-sensor-core",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "e9547c15b5858f5c456a9b3ffb9d30d1a0d15233",
+        "path": "review/E306-SAS-AUDIT-01-CLAIM-MATRIX.md",
+        "blob": "c673c41be2f881992cb332f1b0d25928450d338f",
+        "anchor": "L1-L109"
+      }
+    },
+    {
+      "item_id": "e306-sparse-audit:03",
+      "source_id": "e306-sparse-audit",
+      "source_item": "review/E306-SAS-AUDIT-01-REPORT.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+        "math.combinatorics.finite-configurations.sparse-actual-prime-sensor-core",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "e9547c15b5858f5c456a9b3ffb9d30d1a0d15233",
+        "path": "review/E306-SAS-AUDIT-01-REPORT.md",
+        "blob": "fe666cc87201673b6209a54230f8e1c0fc7ccf9b",
+        "anchor": "L1-L313"
+      }
+    },
+    {
+      "item_id": "e306-sparse-audit:04",
+      "source_id": "e306-sparse-audit",
+      "source_item": "review/E306-SAS-AUDIT-01-ROUTE-COMPARISON.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+        "math.combinatorics.finite-configurations.sparse-actual-prime-sensor-core",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "e9547c15b5858f5c456a9b3ffb9d30d1a0d15233",
+        "path": "review/E306-SAS-AUDIT-01-ROUTE-COMPARISON.md",
+        "blob": "b86ef655d65694e0ca8f72ac2652a9228bfd9248",
+        "anchor": "L1-L251"
+      }
+    },
+    {
+      "item_id": "e306-sparse-repair-verification:01",
+      "source_id": "e306-sparse-repair-verification",
+      "source_item": "review/E306-SAS-REPAIR-VERIFY-01-CANONICAL-GATE.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+        "math.combinatorics.finite-configurations.sparse-actual-prime-sensor-core",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "52463e45fe3ce9ac2d271cea0e0f5e93e6cd5b83",
+        "path": "review/E306-SAS-REPAIR-VERIFY-01-CANONICAL-GATE.md",
+        "blob": "32e36b4f8cd8183c26398e89358e55e436dd39c6",
+        "anchor": "L1-L258"
+      }
+    },
+    {
+      "item_id": "e306-sparse-repair-verification:02",
+      "source_id": "e306-sparse-repair-verification",
+      "source_item": "review/E306-SAS-REPAIR-VERIFY-01-REPORT.md",
+      "disposition": "attached-independent-review",
+      "units": [
+        "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+        "math.combinatorics.finite-configurations.sparse-actual-prime-sensor-core",
+        "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "52463e45fe3ce9ac2d271cea0e0f5e93e6cd5b83",
+        "path": "review/E306-SAS-REPAIR-VERIFY-01-REPORT.md",
+        "blob": "8b61f59ef0a007fc522734d390bd29bce8171be8",
+        "anchor": "L1-L397"
+      }
+    },
+    {
+      "item_id": "e306-aft-authorial:01",
+      "source_id": "e306-aft-authorial",
+      "source_item": "research/anchor-fibre-transference/ANCHOR-FIBRE-FOURIER-TRANSFERENCE.md",
+      "disposition": "created-new-unit",
+      "units": [
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-transference"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+        "path": "research/anchor-fibre-transference/ANCHOR-FIBRE-FOURIER-TRANSFERENCE.md",
+        "blob": "a2808233c3997f665093e94135c976d14587caae",
+        "anchor": "L1-L355"
+      }
+    },
+    {
+      "item_id": "e306-aft-authorial:02",
+      "source_id": "e306-aft-authorial",
+      "source_item": "research/anchor-fibre-transference/COMPLETE-FAMILY-MASS-AND-HIGHER-UNIFORMITY.md",
+      "disposition": "created-new-unit",
+      "units": [
+        "math.combinatorics.finite-configurations.complete-family-mass"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+        "path": "research/anchor-fibre-transference/COMPLETE-FAMILY-MASS-AND-HIGHER-UNIFORMITY.md",
+        "blob": "416f6b26dafa01e600feaee8851bf9ae98f8508f",
+        "anchor": "L1-L270"
+      }
+    },
+    {
+      "item_id": "e306-aft-authorial:03",
+      "source_id": "e306-aft-authorial",
+      "source_item": "research/anchor-fibre-transference/E306-COROLLARY-MAP.md",
+      "disposition": "attached-conditional-application",
+      "units": [
+        "math.number-theory.reciprocal-representations.aft-e306-conditional-application",
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-transference",
+        "math.harmonic-analysis.finite-fourier.weighted-decoded-skeleton",
+        "math.harmonic-analysis.finite-fourier.quantitative-target-observability"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+        "path": "research/anchor-fibre-transference/E306-COROLLARY-MAP.md",
+        "blob": "8c7bcd4d58a2f09e381367ca1e54b4d385c16d1c",
+        "anchor": "L1-L348"
+      }
+    },
+    {
+      "item_id": "e306-aft-authorial:04",
+      "source_id": "e306-aft-authorial",
+      "source_item": "research/anchor-fibre-transference/PROVIDER-HYPOTHESES-AND-FAILURE-MODES.md",
+      "disposition": "attached-negative-boundary",
+      "units": [
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-transference",
+        "math.harmonic-analysis.finite-fourier.weighted-decoded-skeleton",
+        "math.harmonic-analysis.finite-fourier.quantitative-target-observability",
+        "math.combinatorics.finite-configurations.sampled-core-method-barriers",
+        "math.combinatorics.finite-configurations.bipartite-plaquette-counterexample"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+        "path": "research/anchor-fibre-transference/PROVIDER-HYPOTHESES-AND-FAILURE-MODES.md",
+        "blob": "9f1d39fc3d061d237b1c72fd8098298bc0c238ce",
+        "anchor": "L1-L339"
+      }
+    },
+    {
+      "item_id": "e306-aft-authorial:05",
+      "source_id": "e306-aft-authorial",
+      "source_item": "research/anchor-fibre-transference/PUBLICATION-LEVEL-DECISION.md",
+      "disposition": "projection-only",
+      "units": [
+        "math.harmonic-analysis.finite-fourier.anchor-fibre-transference",
+        "math.harmonic-analysis.finite-fourier.weighted-decoded-skeleton",
+        "math.harmonic-analysis.finite-fourier.quantitative-target-observability",
+        "math.combinatorics.finite-configurations.complete-family-mass",
+        "math.number-theory.reciprocal-representations.aft-e306-conditional-application"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+        "path": "research/anchor-fibre-transference/PUBLICATION-LEVEL-DECISION.md",
+        "blob": "e5a266f14ea362d2ebd0e1325bf38a35e040e88a",
+        "anchor": "L1-L246"
+      }
+    },
+    {
+      "item_id": "e306-aft-authorial:06",
+      "source_id": "e306-aft-authorial",
+      "source_item": "research/anchor-fibre-transference/TARGET-SENSITIVITY-AS-OBSERVABILITY.md",
+      "disposition": "created-new-unit",
+      "units": [
+        "math.harmonic-analysis.finite-fourier.quantitative-target-observability"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+        "path": "research/anchor-fibre-transference/TARGET-SENSITIVITY-AS-OBSERVABILITY.md",
+        "blob": "30b12af24c10df957b9010e556df474ecee75f51",
+        "anchor": "L1-L291"
+      }
+    },
+    {
+      "item_id": "e306-aft-authorial:07",
+      "source_id": "e306-aft-authorial",
+      "source_item": "research/anchor-fibre-transference/WEIGHTED-DECODED-SKELETON-THEOREM.md",
+      "disposition": "created-new-unit",
+      "units": [
+        "math.harmonic-analysis.finite-fourier.weighted-decoded-skeleton"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+        "path": "research/anchor-fibre-transference/WEIGHTED-DECODED-SKELETON-THEOREM.md",
+        "blob": "ebf3614037142a5817ccc59850ac008ab85cfd51",
+        "anchor": "L1-L299"
+      }
+    },
+    {
+      "item_id": "e306-rl-classification:01",
+      "source_id": "e306-rl-classification",
+      "source_item": "research/E306_RL_BOUNDED_CURATION_HANDOFF_2026-07-24.md",
+      "disposition": "attached-source-classification",
+      "units": [
+        "math.harmonic-analysis.finite-fourier.small-theta-gff-candidate",
+        "math.combinatorics.finite-configurations.sampled-core-method-barriers",
+        "math.combinatorics.finite-configurations.bipartite-plaquette-counterexample",
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy",
+        "math.number-theory.arithmetic-derivatives.erdos-307-adjacent-open-programme",
+        "math.number-theory.reciprocal-representations.e306-future-frontier",
+        "math.number-theory.reciprocal-representations.dense-one-anchor-proof",
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+        "math.number-theory.reciprocal-representations.aft-e306-conditional-application"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/erdos-306",
+        "commit": "9bbcfae8360bce0871522e295f9aca903f64c780",
+        "path": "research/E306_RL_BOUNDED_CURATION_HANDOFF_2026-07-24.md",
+        "blob": "426ede10a690d0c777ab9fe5718ec6964d74af6b",
+        "anchor": "L1-L309"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:01",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/ANALYTIC_INTERFACE_AND_PROVIDERS.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy",
+        "math.analytic-number-theory.prime-distribution.e306-formal-trust-boundary",
+        "math.analytic-number-theory.prime-distribution.fixed-ratio-prime-supply"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/ANALYTIC_INTERFACE_AND_PROVIDERS.md",
+        "blob": "170a7d17cae56516546af472b406930dc4457ee6",
+        "anchor": "L1-L158"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:02",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/CONTROL_AND_GLOBAL_LOCALISATION.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/CONTROL_AND_GLOBAL_LOCALISATION.md",
+        "blob": "6c22b2a6cb93c0444e0280077138263cf6b1388b",
+        "anchor": "L1-L207"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:03",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/CURRENT_BEST.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/CURRENT_BEST.md",
+        "blob": "c228a52a28e619ab9be61c9d9c9cbaf3ecd38b56",
+        "anchor": "L1-L121"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:04",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/E306_CUR_ARCH_FINAL_AUDIT.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/E306_CUR_ARCH_FINAL_AUDIT.md",
+        "blob": "9204e5677ac5867bc5721fff07048e52572f0598",
+        "anchor": "L1-L263"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:05",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/E306_CUR_ARCH_INTEGRATION_MANIFEST.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/E306_CUR_ARCH_INTEGRATION_MANIFEST.md",
+        "blob": "5ea6b075b97f53805d8e777192e2475bcb42ffe3",
+        "anchor": "L1-L117"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:06",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/FINITE_CERTIFICATES_AND_RELIABILITY.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy",
+        "math.number-theory.reciprocal-representations.e306-formal-release-axis",
+        "math.analytic-number-theory.prime-distribution.e306-formal-trust-boundary"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/FINITE_CERTIFICATES_AND_RELIABILITY.md",
+        "blob": "75f36dcece07cb82a16a1b83bf250f37a42d9726",
+        "anchor": "L1-L127"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:07",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/FOURIER_POSITIVITY_AND_ARITHMETIC_CLOSURE.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy",
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.harmonic-analysis.finite-fourier.bernoulli-subset-selector",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/FOURIER_POSITIVITY_AND_ARITHMETIC_CLOSURE.md",
+        "blob": "62ffc4856a6cf9fd0c45b9aa99feb5d43465c007",
+        "anchor": "L1-L243"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:08",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/MANUSCRIPT_CONSUMER_CHECKPOINT.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/MANUSCRIPT_CONSUMER_CHECKPOINT.md",
+        "blob": "41f3aeee9858cfec2c43058e60da875ae35283f0",
+        "anchor": "L1-L111"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:09",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/MASS_VARIANCE_AND_DENOMINATOR_FAMILY.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy",
+        "math.number-theory.reciprocal-representations.multiblock-proof",
+        "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+        "math.harmonic-analysis.finite-fourier.bernoulli-subset-selector",
+        "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/MASS_VARIANCE_AND_DENOMINATOR_FAMILY.md",
+        "blob": "bc6e9b0e9ef63d01a61312b611e7c7ebc3c61169",
+        "anchor": "L1-L163"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:10",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/MATHEMATICAL_ARCHITECTURE.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/MATHEMATICAL_ARCHITECTURE.md",
+        "blob": "de50b6a3d85207baa3a2081b46a96a39a826ac5b",
+        "anchor": "L1-L217"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:11",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/OPEN_OBLIGATIONS_AND_STATUS.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy",
+        "math.number-theory.reciprocal-representations.e306-future-frontier",
+        "math.harmonic-analysis.finite-fourier.small-theta-gff-candidate",
+        "math.number-theory.arithmetic-derivatives.erdos-307-adjacent-open-programme"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/OPEN_OBLIGATIONS_AND_STATUS.md",
+        "blob": "d99b33913057a9e466ade9a5df0244471f1ed5e8",
+        "anchor": "L1-L89"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:12",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/PROOF_FAMILIES_AND_HANDOFFS.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/PROOF_FAMILIES_AND_HANDOFFS.md",
+        "blob": "2492de1900215f7b00c8ff2b3cb3f8f586c460fc",
+        "anchor": "L1-L145"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:13",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/README.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/README.md",
+        "blob": "b0aaa81d97e8383db2df3b6553d1986b611ba302",
+        "anchor": "L1-L96"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:14",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/SOURCE_PROVENANCE_AND_SUPERSESSION.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/SOURCE_PROVENANCE_AND_SUPERSESSION.md",
+        "blob": "c6760eb51f6b7f13ab0a35b3e6584dd9eeb9d99b",
+        "anchor": "L1-L112"
+      }
+    },
+    {
+      "item_id": "e306-old-curation-archival:15",
+      "source_id": "e306-old-curation-archival",
+      "source_item": "projects/erdos-306/THEOREM_DEPENDENCY_MAP.md",
+      "disposition": "retained-archival-source",
+      "units": [
+        "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy"
+      ],
+      "source_locator": {
+        "repository": "Yuren-Tang/mathematics",
+        "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+        "path": "projects/erdos-306/THEOREM_DEPENDENCY_MAP.md",
+        "blob": "e662e52c1c841e5053a899566f00a8b32c5e7d2c",
+        "anchor": "L1-L134"
+      }
+    }
+  ],
+  "counts": {
+    "source_packets_total": 12,
+    "source_packets_classified": 12,
+    "source_packets_unclassified": 0,
+    "substantive_items_total": 75,
+    "substantive_items_classified": 75,
+    "substantive_items_unclassified": 0,
+    "canonical_units_referenced": 26
+  },
+  "invariants": [
+    "Every intake artifact has one immutable commit/path/blob/line locator.",
+    "Every intake artifact maps to at least one stable natural mathematical unit.",
+    "Formal, authorial and independent-review evidence remain orthogonal.",
+    "Negative, failed, frontier, discovery and superseded material remains at source strength.",
+    "The old curation packet is archival source only and is not a merge/base input.",
+    "E307 remains separate, adjacent and open.",
+    "unclassified = 0"
+  ]
+}

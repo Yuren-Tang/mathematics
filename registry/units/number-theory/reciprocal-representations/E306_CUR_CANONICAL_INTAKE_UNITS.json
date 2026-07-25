@@ -1,0 +1,1076 @@
+{
+  "schema_version": "1.1.0",
+  "batch_id": "E306-CUR-CANONICAL-INTAKE",
+  "item_schema": "registry/schema/mathematical-unit.schema.json",
+  "units": [
+    {
+      "id": "math.number-theory.reciprocal-representations.squarefree-semiprime-characterization",
+      "title": "Squarefree-semiprime reciprocal characterization",
+      "summary": "A positive rational in lowest terms is a finite sum of distinct reciprocals of squarefree semiprimes exactly when its denominator is squarefree.",
+      "form": "theorem",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "support",
+          "scope": "the complete dense one-anchor E306 route, subject to the audit gate's exact range, branch, normalization, partition, decoder, error-sector, and parameter-order conditions",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+            "path": "review/E306-OA-AUDIT-01-REPORT.md",
+            "blob": "5e46cbc4b7631f88d19291dc71cab48158a9a05a",
+            "anchor": "L1-L395",
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+          "path": "proof-development/ONE-ANCHOR-HUMAN-PROOF.md",
+          "blob": "b1587d07fcd13a27250c63fa8e08c5f4acebfe22",
+          "anchor": "L1-L1379",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.characterization-uses-necessity",
+        "rel.e306.characterization-uses-avoiding",
+        "rel.e306.dense-implies-characterization",
+        "rel.e306.multiblock-implies-characterization",
+        "rel.e306.sparse-implies-characterization",
+        "rel.e306.formal-specializes-characterization",
+        "rel.e306.e306-suggests-e307"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.number-theory.reciprocal-representations.squarefree-denominator-necessity",
+      "title": "Squarefree denominator necessity",
+      "summary": "Any finite sum of reciprocals of squarefree integers has squarefree reduced denominator; this supplies the necessity direction.",
+      "form": "theorem",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "support",
+          "scope": "the complete dense one-anchor E306 route, subject to the audit gate's exact range, branch, normalization, partition, decoder, error-sector, and parameter-order conditions",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+            "path": "review/E306-OA-AUDIT-01-REPORT.md",
+            "blob": "5e46cbc4b7631f88d19291dc71cab48158a9a05a",
+            "anchor": "L1-L395",
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+          "path": "proof-development/ONE-ANCHOR-HUMAN-PROOF.md",
+          "blob": "b1587d07fcd13a27250c63fa8e08c5f4acebfe22",
+          "anchor": "L1-L1379",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.characterization-uses-necessity"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.number-theory.reciprocal-representations.avoiding-unit-reduction",
+      "title": "Avoiding-unit reduction",
+      "summary": "The sufficiency problem is reduced to constructing a representation that avoids a prescribed finite set while respecting the numerator induction and the b=1,2 base reductions.",
+      "form": "method",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "support",
+          "scope": "the complete dense one-anchor E306 route, subject to the audit gate's exact range, branch, normalization, partition, decoder, error-sector, and parameter-order conditions",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+            "path": "review/E306-OA-AUDIT-01-REPORT.md",
+            "blob": "5e46cbc4b7631f88d19291dc71cab48158a9a05a",
+            "anchor": "L1-L395",
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+          "path": "proof-development/ONE-ANCHOR-HUMAN-PROOF.md",
+          "blob": "b1587d07fcd13a27250c63fa8e08c5f4acebfe22",
+          "anchor": "L1-L1379",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.characterization-uses-avoiding"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.analytic-number-theory.prime-distribution.fixed-ratio-prime-supply",
+      "title": "Fixed-ratio prime supply",
+      "summary": "The E306 routes use primes in fixed-ratio intervals and a target-prime auxiliary denominator supply as their analytic interface.",
+      "form": "method",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "support",
+          "scope": "the complete dense one-anchor E306 route, subject to the audit gate's exact range, branch, normalization, partition, decoder, error-sector, and parameter-order conditions",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+            "path": "review/E306-OA-AUDIT-01-REPORT.md",
+            "blob": "5e46cbc4b7631f88d19291dc71cab48158a9a05a",
+            "anchor": "L1-L395",
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+          "path": "proof-development/ONE-ANCHOR-DEPENDENCY-AND-PARAMETER-LEDGER.md",
+          "blob": "1a8f46f9dd8bd91beebb85581d861c2f9ca2d68e",
+          "anchor": "L1-L358",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.dense-uses-prime-supply"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.number-theory.reciprocal-representations.complete-pair-denominator-family",
+      "title": "Complete-pair denominator family",
+      "summary": "A complete bipartite pair family between a prime block and the top block supplies squarefree-semiprime denominators and a full top partition.",
+      "form": "construction",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "support",
+          "scope": "the complete dense one-anchor E306 route, subject to the audit gate's exact range, branch, normalization, partition, decoder, error-sector, and parameter-order conditions",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+            "path": "review/E306-OA-AUDIT-01-REPORT.md",
+            "blob": "5e46cbc4b7631f88d19291dc71cab48158a9a05a",
+            "anchor": "L1-L395",
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+          "path": "proof-development/ONE-ANCHOR-HUMAN-PROOF.md",
+          "blob": "b1587d07fcd13a27250c63fa8e08c5f4acebfe22",
+          "anchor": "L1-L1379",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.dense-uses-complete-pairs"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.harmonic-analysis.finite-fourier.bernoulli-subset-selector",
+      "title": "Finite-Fourier Bernoulli subset selector",
+      "summary": "A Fourier inversion over independently sampled denominator labels turns modular target selection into a main term plus controlled nontrivial characters.",
+      "form": "method",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "support",
+          "scope": "the complete dense one-anchor E306 route, subject to the audit gate's exact range, branch, normalization, partition, decoder, error-sector, and parameter-order conditions",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+            "path": "review/E306-OA-AUDIT-01-REPORT.md",
+            "blob": "5e46cbc4b7631f88d19291dc71cab48158a9a05a",
+            "anchor": "L1-L395",
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+          "path": "proof-development/ONE-ANCHOR-HUMAN-PROOF.md",
+          "blob": "b1587d07fcd13a27250c63fa8e08c5f4acebfe22",
+          "anchor": "L1-L1379",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.dense-uses-selector"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.combinatorics.finite-configurations.reciprocal-label-rigidity",
+      "title": "Reciprocal-label rigidity",
+      "summary": "The reciprocal labels attached to the complete denominator family obey the exact rigidity and row-code separation needed by the decoder.",
+      "form": "theorem",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "support",
+          "scope": "the complete dense one-anchor E306 route, subject to the audit gate's exact range, branch, normalization, partition, decoder, error-sector, and parameter-order conditions",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+            "path": "review/E306-OA-AUDIT-01-REPORT.md",
+            "blob": "5e46cbc4b7631f88d19291dc71cab48158a9a05a",
+            "anchor": "L1-L395",
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+          "path": "proof-development/ONE-ANCHOR-HUMAN-PROOF.md",
+          "blob": "b1587d07fcd13a27250c63fa8e08c5f4acebfe22",
+          "anchor": "L1-L1379",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.dense-uses-rigidity"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.harmonic-analysis.finite-fourier.anchor-fibre-decoder-observability",
+      "title": "Anchor-fibre decoder observability",
+      "summary": "Nontrivial characters are divided by whether a target-prime fibre is coherent, decoder-visible, or relegated to a separately bounded sector.",
+      "form": "method",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "support",
+          "scope": "the complete dense one-anchor E306 route, subject to the audit gate's exact range, branch, normalization, partition, decoder, error-sector, and parameter-order conditions",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+            "path": "review/E306-OA-AUDIT-01-REPORT.md",
+            "blob": "5e46cbc4b7631f88d19291dc71cab48158a9a05a",
+            "anchor": "L1-L395",
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+          "path": "proof-development/ONE-ANCHOR-HUMAN-PROOF.md",
+          "blob": "b1587d07fcd13a27250c63fa8e08c5f4acebfe22",
+          "anchor": "L1-L1379",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.dense-uses-decoder",
+        "rel.e306.sparse-uses-decoder",
+        "rel.e306.aft-arose-from-decoder"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.harmonic-analysis.finite-fourier.five-sector-positivity-budget",
+      "title": "Five-sector positivity budget",
+      "summary": "The Fourier remainder is exhausted through five explicit character sectors, with no-wrap and positivity obtained after the prescribed constant-then-scale parameter order.",
+      "form": "proof",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "support",
+          "scope": "the complete dense one-anchor E306 route, subject to the audit gate's exact range, branch, normalization, partition, decoder, error-sector, and parameter-order conditions",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+            "path": "review/E306-OA-AUDIT-01-REPORT.md",
+            "blob": "5e46cbc4b7631f88d19291dc71cab48158a9a05a",
+            "anchor": "L1-L395",
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+          "path": "proof-development/ONE-ANCHOR-HUMAN-PROOF.md",
+          "blob": "b1587d07fcd13a27250c63fa8e08c5f4acebfe22",
+          "anchor": "L1-L1379",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.dense-uses-five-sector"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.number-theory.reciprocal-representations.dense-one-anchor-proof",
+      "title": "Dense one-anchor E306 proof",
+      "summary": "The preferred human spine: one dense anchor family, complete top partition, reciprocal rigidity, target decoder, and five-sector Fourier positivity.",
+      "form": "proof",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "support",
+          "scope": "the complete dense one-anchor E306 route, subject to the audit gate's exact range, branch, normalization, partition, decoder, error-sector, and parameter-order conditions",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "1d63273ede93e1b83abf1ab9073d91b76600c23c",
+            "path": "review/E306-OA-AUDIT-01-REPORT.md",
+            "blob": "5e46cbc4b7631f88d19291dc71cab48158a9a05a",
+            "anchor": "L1-L395",
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "07ed8dcaff334ba9da4b9c87337455c2eca25002",
+          "path": "proof-development/ONE-ANCHOR-HUMAN-PROOF.md",
+          "blob": "b1587d07fcd13a27250c63fa8e08c5f4acebfe22",
+          "anchor": "L1-L1379",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.dense-uses-prime-supply",
+        "rel.e306.dense-uses-complete-pairs",
+        "rel.e306.dense-uses-selector",
+        "rel.e306.dense-uses-rigidity",
+        "rel.e306.dense-uses-decoder",
+        "rel.e306.dense-uses-five-sector",
+        "rel.e306.dense-implies-characterization",
+        "rel.e306.dense-supersedes-genealogy",
+        "rel.e306.dense-suggests-frontier"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.number-theory.reciprocal-representations.multiblock-proof",
+      "title": "Repaired multiblock E306 proof",
+      "summary": "An independently assured fallback using multiple control blocks, fingerprint entropy, propagation, global coding, and localization.",
+      "form": "proof",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "support",
+          "scope": "the repaired multiblock E306 route, including the bounded size-range, R=0, class-sum, and empty-set wording repairs",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "5c12240e877fb10730508924d0b90ffa8f3a8973",
+            "path": "review/E306-PF-REPAIR-VERIFY-01-REPORT.md",
+            "blob": "3899e5476355d354816e15341ceae1c86d8c2818",
+            "anchor": "L1-L353",
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "95a2ede1d40dae41a17fe26e4fe4b491bd94e947",
+          "path": "proof-development/PAPER-FIRST-HUMAN-PROOF.md",
+          "blob": "1106c5993314b0a9a9f1fe38374316e359d2ff33",
+          "anchor": "L1-L1386",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.multiblock-implies-characterization"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.combinatorics.finite-configurations.sparse-actual-prime-sensor-core",
+      "title": "Sparse actual-prime sensor core",
+      "summary": "A sparse sample of actual prime labels, with exact cold-label cutoff and target decoder ranges, replaces the complete dense anchor family.",
+      "form": "construction",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "support",
+          "scope": "the repaired sparse actual-prime sensor route, including the exact cold-label range and decoder/error bookkeeping",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "52463e45fe3ce9ac2d271cea0e0f5e93e6cd5b83",
+            "path": "review/E306-SAS-REPAIR-VERIFY-01-REPORT.md",
+            "blob": "8b61f59ef0a007fc522734d390bd29bce8171be8",
+            "anchor": "L1-L397",
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "3074ca46452a6f3528be588033fe414d5a0c0ef9",
+          "path": "proof-development/SPARSE-ANCHOR-HUMAN-PROOF.md",
+          "blob": "8071a5d4a07dbd4937e98e86868a52505e01a0d0",
+          "anchor": "L1-L1040",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.sparse-uses-sensor"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.number-theory.reciprocal-representations.sparse-sensor-proof",
+      "title": "Repaired sparse-sensor E306 proof",
+      "summary": "An independently assured alternative whose hierarchy is cleaner but whose total analytic burden remains comparable to the dense route.",
+      "form": "proof",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "independent-mathematical-review",
+          "effect": "support",
+          "scope": "the repaired sparse actual-prime sensor route, including the exact cold-label range and decoder/error bookkeeping",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "52463e45fe3ce9ac2d271cea0e0f5e93e6cd5b83",
+            "path": "review/E306-SAS-REPAIR-VERIFY-01-REPORT.md",
+            "blob": "8b61f59ef0a007fc522734d390bd29bce8171be8",
+            "anchor": "L1-L397",
+            "role": "review"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "3074ca46452a6f3528be588033fe414d5a0c0ef9",
+          "path": "proof-development/SPARSE-ANCHOR-HUMAN-PROOF.md",
+          "blob": "8071a5d4a07dbd4937e98e86868a52505e01a0d0",
+          "anchor": "L1-L1040",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.sparse-uses-sensor",
+        "rel.e306.sparse-uses-decoder",
+        "rel.e306.sparse-implies-characterization"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.harmonic-analysis.finite-fourier.weighted-decoded-skeleton",
+      "title": "Weighted decoded skeleton",
+      "summary": "An authorial weighted Fourier skeleton separates complete-family mass, decoder visibility, higher uniformity, and positivity closure.",
+      "form": "method",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the stated weighted decoded skeleton only; no independent E306 assurance",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+            "path": "research/anchor-fibre-transference/WEIGHTED-DECODED-SKELETON-THEOREM.md",
+            "blob": "ebf3614037142a5817ccc59850ac008ab85cfd51",
+            "anchor": "L1-L299",
+            "role": "development"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+          "path": "research/anchor-fibre-transference/WEIGHTED-DECODED-SKELETON-THEOREM.md",
+          "blob": "ebf3614037142a5817ccc59850ac008ab85cfd51",
+          "anchor": "L1-L299",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.aft-uses-weighted-skeleton"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.harmonic-analysis.finite-fourier.anchor-fibre-transference",
+      "title": "Anchor-fibre Fourier transference",
+      "summary": "An authorial general mechanism intended to transfer complete-family mass and fibre observability into a decoded Fourier positivity conclusion.",
+      "form": "method",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the general AFT mechanism as written; not independently reviewed",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+            "path": "research/anchor-fibre-transference/ANCHOR-FIBRE-FOURIER-TRANSFERENCE.md",
+            "blob": "a2808233c3997f665093e94135c976d14587caae",
+            "anchor": "L1-L355",
+            "role": "development"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+          "path": "research/anchor-fibre-transference/ANCHOR-FIBRE-FOURIER-TRANSFERENCE.md",
+          "blob": "a2808233c3997f665093e94135c976d14587caae",
+          "anchor": "L1-L355",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.aft-uses-weighted-skeleton",
+        "rel.e306.aft-uses-observability",
+        "rel.e306.aft-uses-complete-mass",
+        "rel.e306.aft-e306-specializes-aft",
+        "rel.e306.barriers-qualify-aft",
+        "rel.e306.aft-arose-from-decoder",
+        "rel.e306.aft-suggests-frontier"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.harmonic-analysis.finite-fourier.quantitative-target-observability",
+      "title": "Quantitative target observability",
+      "summary": "An authorial interface quantifies when the target residue is visible through an anchor fibre and its decoder.",
+      "form": "concept",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the observability interface as formulated",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+            "path": "research/anchor-fibre-transference/TARGET-SENSITIVITY-AS-OBSERVABILITY.md",
+            "blob": "30b12af24c10df957b9010e556df474ecee75f51",
+            "anchor": "L1-L291",
+            "role": "development"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+          "path": "research/anchor-fibre-transference/TARGET-SENSITIVITY-AS-OBSERVABILITY.md",
+          "blob": "30b12af24c10df957b9010e556df474ecee75f51",
+          "anchor": "L1-L291",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.aft-uses-observability"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.combinatorics.finite-configurations.complete-family-mass",
+      "title": "Complete-family mass and higher uniformity",
+      "summary": "An authorial provider package relates complete-family mass, higher-order uniformity, and the error terms consumed by AFT.",
+      "form": "method",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the provider package as formulated",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+            "path": "research/anchor-fibre-transference/COMPLETE-FAMILY-MASS-AND-HIGHER-UNIFORMITY.md",
+            "blob": "416f6b26dafa01e600feaee8851bf9ae98f8508f",
+            "anchor": "L1-L270",
+            "role": "development"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+          "path": "research/anchor-fibre-transference/COMPLETE-FAMILY-MASS-AND-HIGHER-UNIFORMITY.md",
+          "blob": "416f6b26dafa01e600feaee8851bf9ae98f8508f",
+          "anchor": "L1-L270",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.aft-uses-complete-mass",
+        "rel.e306.plaquette-refutes-local-global"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.number-theory.reciprocal-representations.aft-e306-conditional-application",
+      "title": "Conditional AFT application to E306",
+      "summary": "A provider map records how E306 could instantiate AFT, but it is not an independently assured fourth proof and is not the canonical proof route.",
+      "form": "connection",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "qualify",
+          "scope": "conditional provider map only; no proof-status upgrade",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+            "path": "research/anchor-fibre-transference/E306-COROLLARY-MAP.md",
+            "blob": "8c7bcd4d58a2f09e381367ca1e54b4d385c16d1c",
+            "anchor": "L1-L348",
+            "role": "development"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+          "path": "research/anchor-fibre-transference/E306-COROLLARY-MAP.md",
+          "blob": "8c7bcd4d58a2f09e381367ca1e54b4d385c16d1c",
+          "anchor": "L1-L348",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.aft-e306-specializes-aft"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.number-theory.reciprocal-representations.e306-formal-release-axis",
+      "title": "E306 v0.0.3 formal/release axis",
+      "summary": "The tagged Lean release formalizes the exact characterization and its conditional analytic interface; this axis is orthogonal to human proof-route assurance.",
+      "form": "proof",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "formal-kernel-check",
+          "effect": "support",
+          "scope": "Lean theorem statements and proofs at release v0.0.3, under the named analytic inputs",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "4582185de1e0e27416e9362e0cc7943c3d2fb4fe",
+            "path": "lean/RequestProject/Audit.lean",
+            "blob": "cf151af601eb7c29f6d107677b3c0e29eb727923",
+            "anchor": "L1-L30",
+            "role": "formalization"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "4582185de1e0e27416e9362e0cc7943c3d2fb4fe",
+          "path": "lean/RequestProject/Erdos306FormalConjectures.lean",
+          "blob": "58e158937155ef739309a62c2c52ed1289375f4d",
+          "anchor": "L1-L139",
+          "role": "formalization"
+        }
+      ],
+      "relations": [
+        "rel.e306.formal-specializes-characterization",
+        "rel.e306.trust-qualifies-formal"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.analytic-number-theory.prime-distribution.e306-formal-trust-boundary",
+      "title": "E306 formal analytic trust boundary",
+      "summary": "The formal theorem consumes two named prime-sum inputs; kernel checking verifies the reduction but does not independently prove those analytic inputs.",
+      "form": "concept",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "formal-kernel-check",
+          "effect": "qualify",
+          "scope": "formal reduction conditional on the two named Ramar\u00e9\u2013Saias-style prime-sum inputs",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "4582185de1e0e27416e9362e0cc7943c3d2fb4fe",
+            "path": "lean/RequestProject/RSPrimeSums.lean",
+            "blob": "9cb6dc334607b7da78a371420d820b5476abdf6a",
+            "anchor": "L1-L314",
+            "role": "formalization"
+          }
+        }
+      ],
+      "disposition": "scope-split",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "4582185de1e0e27416e9362e0cc7943c3d2fb4fe",
+          "path": "lean/RequestProject/RSPrimeSums.lean",
+          "blob": "9cb6dc334607b7da78a371420d820b5476abdf6a",
+          "anchor": "L1-L314",
+          "role": "formalization"
+        }
+      ],
+      "relations": [
+        "rel.e306.trust-qualifies-formal"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.harmonic-analysis.finite-fourier.small-theta-gff-candidate",
+      "title": "Small-theta GFF candidate",
+      "summary": "A captured authorial candidate for a non-enumerative Gaussian-free-field-style route beyond the present E306 proof families.",
+      "form": "heuristic",
+      "maturity": "captured",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "inconclusive",
+          "scope": "frontier candidate only",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "9bbcfae8360bce0871522e295f9aca903f64c780",
+            "path": "research/E306_RL_BOUNDED_CURATION_HANDOFF_2026-07-24.md",
+            "blob": "426ede10a690d0c777ab9fe5718ec6964d74af6b",
+            "anchor": "L1-L309",
+            "role": "curation"
+          }
+        }
+      ],
+      "disposition": "open",
+      "workflow": "dormant",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "9bbcfae8360bce0871522e295f9aca903f64c780",
+          "path": "research/E306_RL_BOUNDED_CURATION_HANDOFF_2026-07-24.md",
+          "blob": "426ede10a690d0c777ab9fe5718ec6964d74af6b",
+          "anchor": "L1-L309",
+          "role": "curation"
+        }
+      ],
+      "relations": [
+        "rel.e306.gff-motivated-by-barriers"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.combinatorics.finite-configurations.sampled-core-method-barriers",
+      "title": "Sampled-core method barriers",
+      "summary": "The curation handoff records method-level barriers showing why several na\u00efve sampled-core or purely local-control routes cannot by themselves replace global decoding.",
+      "form": "obstruction",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the stated provider failures and method barriers",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+            "path": "research/anchor-fibre-transference/PROVIDER-HYPOTHESES-AND-FAILURE-MODES.md",
+            "blob": "9f1d39fc3d061d237b1c72fd8098298bc0c238ce",
+            "anchor": "L1-L339",
+            "role": "development"
+          }
+        }
+      ],
+      "disposition": "established-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+          "path": "research/anchor-fibre-transference/PROVIDER-HYPOTHESES-AND-FAILURE-MODES.md",
+          "blob": "9f1d39fc3d061d237b1c72fd8098298bc0c238ce",
+          "anchor": "L1-L339",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.barriers-qualify-aft",
+        "rel.e306.gff-motivated-by-barriers"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.combinatorics.finite-configurations.bipartite-plaquette-counterexample",
+      "title": "Bipartite plaquette counterexample",
+      "summary": "A permanent negative example blocks an overstrong inference from local plaquette control to the required global decoded uniformity.",
+      "form": "counterexample",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "refute",
+          "scope": "the overstrong local-to-global inference only",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+            "path": "research/anchor-fibre-transference/PROVIDER-HYPOTHESES-AND-FAILURE-MODES.md",
+            "blob": "9f1d39fc3d061d237b1c72fd8098298bc0c238ce",
+            "anchor": "L1-L339",
+            "role": "development"
+          }
+        }
+      ],
+      "disposition": "refuted-in-scope",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+          "path": "research/anchor-fibre-transference/PROVIDER-HYPOTHESES-AND-FAILURE-MODES.md",
+          "blob": "9f1d39fc3d061d237b1c72fd8098298bc0c238ce",
+          "anchor": "L1-L339",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.plaquette-refutes-local-global"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.number-theory.reciprocal-representations.e306-superseded-route-genealogy",
+      "title": "E306 superseded-route genealogy",
+      "summary": "Historical curation and superseded proof attempts remain auditable as genealogy; none is a base or whole-branch merge source for this intake.",
+      "form": "connection",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "source-fidelity-check",
+          "effect": "qualify",
+          "scope": "archival genealogy and supersession only",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+            "path": "projects/erdos-306/SOURCE_PROVENANCE_AND_SUPERSESSION.md",
+            "blob": "c6760eb51f6b7f13ab0a35b3e6584dd9eeb9d99b",
+            "anchor": "L1-L112",
+            "role": "superseded-source"
+          }
+        }
+      ],
+      "disposition": "superseded",
+      "workflow": "closed",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "6505b51f12de3fdaaf4976379b0ce8b0a665cfc1",
+          "path": "projects/erdos-306/SOURCE_PROVENANCE_AND_SUPERSESSION.md",
+          "blob": "c6760eb51f6b7f13ab0a35b3e6584dd9eeb9d99b",
+          "anchor": "L1-L112",
+          "role": "superseded-source"
+        }
+      ],
+      "relations": [
+        "rel.e306.dense-supersedes-genealogy"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    },
+    {
+      "id": "math.number-theory.arithmetic-derivatives.erdos-307-adjacent-open-programme",
+      "title": "Erd\u0151s 307 adjacent open programme",
+      "summary": "E307 is an adjacent but distinct open programme concerning arithmetic derivatives; E306 developments may suggest questions but do not launch or solve it.",
+      "form": "problem",
+      "maturity": "formulated",
+      "assurance": [
+        {
+          "kind": "source-fidelity-check",
+          "effect": "qualify",
+          "scope": "separate/open status in the bounded curation handoff",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "9bbcfae8360bce0871522e295f9aca903f64c780",
+            "path": "research/E306_RL_BOUNDED_CURATION_HANDOFF_2026-07-24.md",
+            "blob": "426ede10a690d0c777ab9fe5718ec6964d74af6b",
+            "anchor": "L1-L309",
+            "role": "curation"
+          }
+        }
+      ],
+      "disposition": "open",
+      "workflow": "dormant",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "9bbcfae8360bce0871522e295f9aca903f64c780",
+          "path": "research/E306_RL_BOUNDED_CURATION_HANDOFF_2026-07-24.md",
+          "blob": "426ede10a690d0c777ab9fe5718ec6964d74af6b",
+          "anchor": "L1-L309",
+          "role": "curation"
+        }
+      ],
+      "relations": [
+        "rel.e306.e306-suggests-e307"
+      ],
+      "views": [
+        "programme.erdos-306",
+        "frontier.erdos-307"
+      ]
+    },
+    {
+      "id": "math.number-theory.reciprocal-representations.e306-future-frontier",
+      "title": "E306 future mathematical frontier",
+      "summary": "Post-proof questions include simplification, provider abstraction, publication architecture, and genuinely new consequences; they remain open and unlaunched.",
+      "form": "question",
+      "maturity": "formulated",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "inconclusive",
+          "scope": "frontier and publication-level decision only",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+            "path": "research/anchor-fibre-transference/PUBLICATION-LEVEL-DECISION.md",
+            "blob": "e5a266f14ea362d2ebd0e1325bf38a35e040e88a",
+            "anchor": "L1-L246",
+            "role": "development"
+          }
+        }
+      ],
+      "disposition": "open",
+      "workflow": "dormant",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "2f49ab25c36326e9ea39e3fc0ed1d22a22b11693",
+          "path": "research/anchor-fibre-transference/PUBLICATION-LEVEL-DECISION.md",
+          "blob": "e5a266f14ea362d2ebd0e1325bf38a35e040e88a",
+          "anchor": "L1-L246",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.e306.dense-suggests-frontier",
+        "rel.e306.aft-suggests-frontier"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ]
+    }
+  ]
+}
