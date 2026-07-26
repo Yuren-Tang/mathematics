@@ -29,7 +29,8 @@
     ],
     "orthogonal_formal_axis": [
       "math.number-theory.reciprocal-representations.e306-formal-release-axis",
-      "math.analytic-number-theory.prime-distribution.e306-formal-trust-boundary"
+      "math.analytic-number-theory.prime-distribution.e306-formal-trust-boundary",
+      "math.analytic-number-theory.prime-distribution.e306-pushlinter-pnt-mertens-structural-trust-boundary"
     ],
     "negative_and_method_boundaries": [
       "math.combinatorics.finite-configurations.sampled-core-method-barriers",
@@ -40,6 +41,6 @@
       "math.number-theory.arithmetic-derivatives.erdos-307-adjacent-open-programme"
     ]
   },
-  "status_statement": "E306 has three independently assured human proof routes with the dense one-anchor route preferred for exposition. AFT is authorial, the Lean release is an orthogonal conditional formal axis, and E307 remains separate/open.",
+  "status_statement": "E306 has three independently assured human proof routes. The v0.0.3 Lean release is conditional on exact Rosser\u2013Schoenfeld rosser_schoenfeld_cor3 / rosser_schoenfeld_thm5 inputs; the detached pushlinter line is a separate conditional PNT/Mertens structural-axiom variant with provider and finite-small-scale boundaries. Neither formal axis upgrades human-proof assurance, and E307 remains separate/open.",
   "nonduplication_rule": "This project view references natural units; it does not own or duplicate mathematical truth."
 }

@@ -1,0 +1,1326 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "PORT-SOURCE-DISPOSITION-CLOSEOUT",
+  "units": [
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-1-reference-independent-root-flow",
+      "title": "Reference-independent A-root flow",
+      "summary": "Reference-edge reversal changes both incidence and root sign, so the integral A_(q-1) root-flow object is reference-independent.",
+      "form": "definition",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L58-L58",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L58-L58",
+          "role": "development"
+        }
+      ],
+      "relations": [],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-2-directed-support-root-equivalence",
+      "title": "Directed support/root-flow equivalence",
+      "summary": "Directed indexed Eulerian q-support systems and A_(q-1) root flows are mutually inverse at support-word level.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L59-L59",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L59-L59",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl2-uses-rl1"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-3-circuit-decomposition-existence",
+      "title": "Circuit-decomposition existence boundary",
+      "summary": "A finite root flow gives some full oriented q-cycle-double-cover only after noncanonical directed circuit decomposition.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L60-L60",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L60-L60",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl3-uses-rl2"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-4-full-witness-recovery-false",
+      "title": "Canonical full-witness recovery is false",
+      "summary": "The four-parallel-edge example gives distinct circuit pairings with one root flow, refuting canonical recovery of a prescribed full witness.",
+      "form": "counterexample",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "refute",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L61-L61",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "refuted-in-scope",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L61-L61",
+          "role": "development"
+        }
+      ],
+      "relations": [],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-5-support-word-retained-data",
+      "title": "Support-word retained-data boundary",
+      "summary": "Multiplicity two, distinct indices, repeated indexed supports and empty indices survive at support-word level; circuit partitions and occurrence names do not.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L62-L62",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L62-L62",
+          "role": "development"
+        }
+      ],
+      "relations": [],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-6-binary-root-support-equivalence",
+      "title": "Binary root/support equivalence",
+      "summary": "Mod-2 root flows, unordered K_q roots and indexed even supports are equivalent at the unordered support level.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L63-L63",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L63-L63",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl6-uses-rl2"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-7-even-q-fully-deleted-target",
+      "title": "Even-q fully deleted target",
+      "summary": "For even q the nondegenerate binary target is E_I modulo the all-one radical and has dimension q-2.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L64-L64",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L64-L64",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl7-qualifies-rl6"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-8-complementary-root-boundary",
+      "title": "Complementary-root boundary",
+      "summary": "At q=4 the quotient identifies complementary roots; for even q at least 6 it retains the weight-two root labels.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L65-L65",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L65-L65",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl8-qualifies-rl7"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-9-prescribed-witness-cut-criterion",
+      "title": "Prescribed-witness cut criterion",
+      "summary": "A prescribed full unoriented witness has an opposite-direction sign lift exactly when its occurrence twist word is a cut.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L66-L66",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L66-L66",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl9-uses-rl2"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-10-support-only-canonical-obstruction-false",
+      "title": "Support-only canonical obstruction is false",
+      "summary": "Without a prescribed circuit decomposition fixed-support data has no single canonical occurrence obstruction.",
+      "form": "claim",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "refute",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L67-L67",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "refuted-in-scope",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L67-L67",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl10-qualifies-rl9"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-11-occurrence-class-is-omega-false",
+      "title": "Occurrence class is not literally omega",
+      "summary": "The occurrence-graph class and the source-graph omega class use different cochain gauges and are not literally identical objects.",
+      "form": "claim",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "refute",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L68-L68",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "refuted-in-scope",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L68-L68",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl11-qualifies-rl12"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-12-fixed-event-omega-comparison",
+      "title": "Fixed-event omega comparison",
+      "summary": "For retained affine faces, opposite-direction sign lifting and omega(g)=0 describe the same fixed event, inheriting the frozen OR1 authorial assurance.",
+      "form": "connection",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "qualify",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L69-L69",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "scope-split",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L69-L69",
+          "role": "development"
+        }
+      ],
+      "relations": [],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-13-fixed-witness-is-omega-family-false",
+      "title": "Fixed witness is not fixed fibre",
+      "summary": "A generic fixed-witness obstruction is not literally the fixed-fibre Omega_f object because the family quantifier differs.",
+      "form": "claim",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "refute",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L70-L70",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "refuted-in-scope",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L70-L70",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl13-qualifies-rl14"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl-14-frozen-fano-fibre-omega-specialization",
+      "title": "Frozen Fano-fibre Omega specialization",
+      "summary": "Within the frozen Fano package, some compatible integral sign lift exists exactly when Omega_f vanishes; this inherits frozen OR1 assurance.",
+      "form": "connection",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "qualify",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L71-L71",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "scope-split",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L71-L71",
+          "role": "development"
+        }
+      ],
+      "relations": [],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl5-1-a4-five-support-specialization",
+      "title": "A4 five-support specialization",
+      "summary": "An A4 root flow specializes to a directed indexed five-support word.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L72-L72",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L72-L72",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl5-1-specializes-rl2"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl5-2-five-support-binary-hierarchy",
+      "title": "Five-support binary hierarchy",
+      "summary": "Reduction of the A4 object gives R5, K5 and O-(4,2) unordered data, without integral signs.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L73-L73",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L73-L73",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl5-2-specializes-rl6"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl5-3-binary-formulations-retain-signs-false",
+      "title": "Binary formulations do not retain integral signs",
+      "summary": "Quadratic, Schur, cographic and stress formulations do not retain the integral orientation signs.",
+      "form": "claim",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "refute",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L74-L74",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "refuted-in-scope",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L74-L74",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl5-3-qualifies-rl5-2"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl5-4-global-f5-coefficient-projection",
+      "title": "Global F5 coefficient projection",
+      "summary": "A single global identification of support indices with F5 projects every A4 root flow to a nowhere-zero F5 flow.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L75-L75",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L75-L75",
+          "role": "development"
+        }
+      ],
+      "relations": [],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl5-5-f5-converse-lift-open",
+      "title": "Fixed F5 converse lift problem",
+      "summary": "An arbitrary fixed nowhere-zero F5 flow does not canonically reconstruct an oriented five-support witness; the converse is a separate lift and holonomy problem.",
+      "form": "question",
+      "maturity": "formulated",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "inconclusive",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L76-L76",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "open",
+      "workflow": "blocked",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L76-L76",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl5-5-qualifies-rl5-4"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl8-1-a7-binary-orthogonal-fano-hierarchy",
+      "title": "A7/binary/orthogonal/Fano hierarchy",
+      "summary": "The exact safe hierarchy is A7 to E8 to O+(6,2) to F2^3, with no automatic reverse arrows.",
+      "form": "theorem",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "support",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L77-L77",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "supported",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L77-L77",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl8-1-specializes-rl6"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl8-2-fano-torsor-linear-family-search",
+      "title": "Fano torsor linearizes family search",
+      "summary": "The compatible-lift torsor reduces the family sign search to a linear quotient, inheriting the frozen OR1 gauge package.",
+      "form": "connection",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "qualify",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L78-L78",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "scope-split",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L78-L78",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl8-2-uses-rl14"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl8-3-per-lift-orientability-false",
+      "title": "Per-lift Fano orientability is false",
+      "summary": "The exact frozen K4 fibre contains both orientability types, so Fano compatibility does not force each lift to orient.",
+      "form": "counterexample",
+      "maturity": "author-complete",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "refute",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L79-L79",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "refuted-in-scope",
+      "workflow": "ready-for-review",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L79-L79",
+          "role": "development"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.rl8-3-qualifies-rl8-2"
+      ],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    },
+    {
+      "id": "math.graph-theory.flows.indexed-oriented-supports.rl8-4-universal-fixed-fibre-vanishing-open",
+      "title": "Universal fixed-fibre vanishing",
+      "summary": "Universal vanishing of the fixed-Fano-fibre obstruction remains open in the existing research frontier.",
+      "form": "question",
+      "maturity": "formulated",
+      "assurance": [
+        {
+          "kind": "authorial-argument",
+          "effect": "inconclusive",
+          "scope": "the exact bounded scout theorem/scope entry only; OR1-dependent comparisons inherit AUTHORIAL / CURATOR-INTEGRATED / NOT INDEPENDENTLY AUDITED",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+            "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+            "anchor": "L80-L80",
+            "role": "development"
+          }
+        },
+        {
+          "kind": "literature-check",
+          "effect": "qualify",
+          "scope": "bounded terminology and antecedent search only; supports neither novelty nor priority and is not independent mathematical review",
+          "provenance": {
+            "repository": "Yuren-Tang/mathematics",
+            "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+            "path": "projects/affine-cdc/research/root-lift/LITERATURE_AND_NOVELTY_AUDIT.md",
+            "blob": "c12c99627cf464f144f8764435c274e57b6ceabb",
+            "anchor": "L201-L246",
+            "role": "literature"
+          }
+        }
+      ],
+      "disposition": "open",
+      "workflow": "blocked",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L80-L80",
+          "role": "development"
+        }
+      ],
+      "relations": [],
+      "views": [
+        "programme.affine-cdc",
+        "frontier.five-cdc"
+      ],
+      "notes": [
+        "Integrated at bounded authorial scout strength; no assurance upgrade.",
+        "The universal five-support and five-CDC goals remain open."
+      ]
+    }
+  ]
+}

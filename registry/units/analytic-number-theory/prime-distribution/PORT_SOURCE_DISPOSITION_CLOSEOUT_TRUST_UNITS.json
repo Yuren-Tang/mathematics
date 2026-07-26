@@ -1,0 +1,51 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "PORT-SOURCE-DISPOSITION-CLOSEOUT",
+  "units": [
+    {
+      "id": "math.analytic-number-theory.prime-distribution.e306-pushlinter-pnt-mertens-structural-trust-boundary",
+      "title": "E306 pushlinter structural PNT/Mertens trust boundary",
+      "summary": "The detached pushlinter formalization assumes pnt_dyadic_prime_density for k>=5 and an eventual mertens_dyadic_window_mass.  These are a separate conditional PNT/Mertens structural variant, not a formal proof of PNT or Mertens and not the v0.0.3 Rosser\u2013Schoenfeld interface.",
+      "form": "concept",
+      "maturity": "assessed",
+      "assurance": [
+        {
+          "kind": "source-fidelity-check",
+          "effect": "qualify",
+          "scope": "exact names and statements of the two structural axioms; no kernel, provider-theorem or release-status upgrade",
+          "provenance": {
+            "repository": "Yuren-Tang/erdos-306",
+            "commit": "e55ef359a8b98525f0bac6c7a510fcad94469bff",
+            "path": "lean/RequestProject/GlobalControl/AnalyticInputs.lean",
+            "blob": "4ead5e8937a08af85b6aa3e084486b4878bf563a",
+            "anchor": "L23-L51",
+            "role": "formalization"
+          }
+        }
+      ],
+      "disposition": "scope-split",
+      "workflow": "integrated",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/erdos-306",
+          "commit": "e55ef359a8b98525f0bac6c7a510fcad94469bff",
+          "path": "lean/RequestProject/GlobalControl/AnalyticInputs.lean",
+          "blob": "4ead5e8937a08af85b6aa3e084486b4878bf563a",
+          "anchor": "L23-L51",
+          "role": "formalization"
+        }
+      ],
+      "relations": [
+        "rel.port-source-closeout.pushlinter-qualifies-release-trust"
+      ],
+      "views": [
+        "programme.erdos-306"
+      ],
+      "notes": [
+        "Scales k<5 lie outside pnt_dyadic_prime_density and require separate finite treatment if consumed.",
+        "mertens_dyadic_window_mass supplies only an eventual existential threshold; no primitive provider theorem or witness is formalized here.",
+        "The source README contains a stale AnalyticInputs link and stronger final/audited prose; neither controls this disposition."
+      ]
+    }
+  ]
+}

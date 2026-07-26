@@ -59,8 +59,33 @@
       "math.graph-theory.cycle-covers.one-atom-shared-vertex-macro",
       "math.graph-theory.cycle-covers.one-atom-conditional-disjoint-commutation",
       "math.graph-theory.cycle-covers.supplied-comparison-run-seam-coherence"
+    ],
+    "authorial_root_lift_scope_package": [
+      "math.graph-theory.flows.indexed-oriented-supports.rl-1-reference-independent-root-flow",
+      "math.graph-theory.flows.indexed-oriented-supports.rl-2-directed-support-root-equivalence",
+      "math.graph-theory.flows.indexed-oriented-supports.rl-3-circuit-decomposition-existence",
+      "math.graph-theory.flows.indexed-oriented-supports.rl-4-full-witness-recovery-false",
+      "math.graph-theory.flows.indexed-oriented-supports.rl-5-support-word-retained-data",
+      "math.graph-theory.flows.indexed-oriented-supports.rl-6-binary-root-support-equivalence",
+      "math.graph-theory.flows.indexed-oriented-supports.rl-7-even-q-fully-deleted-target",
+      "math.graph-theory.flows.indexed-oriented-supports.rl-8-complementary-root-boundary",
+      "math.graph-theory.flows.indexed-oriented-supports.rl-9-prescribed-witness-cut-criterion",
+      "math.graph-theory.flows.indexed-oriented-supports.rl-10-support-only-canonical-obstruction-false",
+      "math.graph-theory.flows.indexed-oriented-supports.rl-11-occurrence-class-is-omega-false",
+      "math.graph-theory.flows.indexed-oriented-supports.rl-12-fixed-event-omega-comparison",
+      "math.graph-theory.flows.indexed-oriented-supports.rl-13-fixed-witness-is-omega-family-false",
+      "math.graph-theory.flows.indexed-oriented-supports.rl-14-frozen-fano-fibre-omega-specialization",
+      "math.graph-theory.flows.indexed-oriented-supports.rl5-1-a4-five-support-specialization",
+      "math.graph-theory.flows.indexed-oriented-supports.rl5-2-five-support-binary-hierarchy",
+      "math.graph-theory.flows.indexed-oriented-supports.rl5-3-binary-formulations-retain-signs-false",
+      "math.graph-theory.flows.indexed-oriented-supports.rl5-4-global-f5-coefficient-projection",
+      "math.graph-theory.flows.indexed-oriented-supports.rl5-5-f5-converse-lift-open",
+      "math.graph-theory.flows.indexed-oriented-supports.rl8-1-a7-binary-orthogonal-fano-hierarchy",
+      "math.graph-theory.flows.indexed-oriented-supports.rl8-2-fano-torsor-linear-family-search",
+      "math.graph-theory.flows.indexed-oriented-supports.rl8-3-per-lift-orientability-false",
+      "math.graph-theory.flows.indexed-oriented-supports.rl8-4-universal-fixed-fibre-vanishing-open"
     ]
   },
-  "status_statement": "AffineCDC contains a substantial independently assessed local and conditional corpus plus four author-complete one-atom local results pending independent review. The cubic five-support theorem and universal five-support/five-CDC theorem remain open at the one-atom complete-endpoint interface.",
+  "status_statement": "AffineCDC contains a substantial independently assessed local and conditional corpus, four author-complete one-atom local results, and a 23-entry authorial root-lift theorem/scope package pending independent review. The cubic and universal five-support/five-CDC goals remain open.",
   "nonduplication_rule": "This view references natural units and legacy compatibility paths; it does not own or duplicate mathematical truth."
 }

@@ -792,14 +792,14 @@
     {
       "id": "math.analytic-number-theory.prime-distribution.e306-formal-trust-boundary",
       "title": "E306 formal analytic trust boundary",
-      "summary": "The formal theorem consumes two named prime-sum inputs; kernel checking verifies the reduction but does not independently prove those analytic inputs.",
+      "summary": "The v0.0.3 formal theorem consumes the exact Rosser\u2013Schoenfeld inputs rosser_schoenfeld_cor3 and rosser_schoenfeld_thm5; kernel checking verifies the reduction but does not independently prove those analytic inputs.",
       "form": "concept",
       "maturity": "assessed",
       "assurance": [
         {
           "kind": "formal-kernel-check",
           "effect": "qualify",
-          "scope": "formal reduction conditional on the two named Ramar\u00e9\u2013Saias-style prime-sum inputs",
+          "scope": "v0.0.3 formal reduction conditional on Rosser\u2013Schoenfeld (1962) Corollary 3 via rosser_schoenfeld_cor3 and Theorem 5 via rosser_schoenfeld_thm5",
           "provenance": {
             "repository": "Yuren-Tang/erdos-306",
             "commit": "4582185de1e0e27416e9362e0cc7943c3d2fb4fe",

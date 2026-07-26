@@ -177,9 +177,9 @@ unit_defs = [
      ]),
     ("math.analytic-number-theory.prime-distribution.e306-formal-trust-boundary",
      "E306 formal analytic trust boundary",
-     "The formal theorem consumes two named prime-sum inputs; kernel checking verifies the reduction but does not independently prove those analytic inputs.",
+     "The v0.0.3 formal theorem consumes the exact Rosser–Schoenfeld inputs rosser_schoenfeld_cor3 and rosser_schoenfeld_thm5; kernel checking verifies the reduction but does not independently prove those analytic inputs.",
      "concept", "assessed", "scope-split", "integrated", "formal_inputs", [
-         evidence("formal-kernel-check", "qualify", "formal reduction conditional on the two named Ramaré–Saias-style prime-sum inputs", P["formal_inputs"])
+         evidence("formal-kernel-check", "qualify", "v0.0.3 formal reduction conditional on Rosser–Schoenfeld (1962) Corollary 3 via rosser_schoenfeld_cor3 and Theorem 5 via rosser_schoenfeld_thm5", P["formal_inputs"])
      ]),
     ("math.harmonic-analysis.finite-fourier.small-theta-gff-candidate",
      "Small-theta GFF candidate",

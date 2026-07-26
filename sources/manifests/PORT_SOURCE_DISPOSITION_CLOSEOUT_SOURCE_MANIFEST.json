@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0.0",
   "batch_id": "PORT-SOURCE-DISPOSITION-CLOSEOUT",
-  "state": "inventory-checkpoint",
+  "state": "fixed-candidate",
   "authority": "Yuren-Tang/research-workbench#15@5081149903",
   "canonical_base": "ce577e23ea9b2493cd912af8c1335b67e8ddebec",
   "sources": [
@@ -7450,6 +7450,6 @@
     "Every full recursive tree entry records commit, path, blob and whole-blob anchor.",
     "Source scope distinguishes authored intake content from inherited repository files.",
     "All ten refs are retained; none is deletion-safe.",
-    "This inventory checkpoint makes no theorem, assurance, publication or main-movement disposition."
+    "The semantic map never upgrades theorem, assurance, publication or main-movement status."
   ]
 }

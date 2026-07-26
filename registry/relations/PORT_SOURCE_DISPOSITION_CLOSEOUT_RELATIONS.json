@@ -1,0 +1,318 @@
+{
+  "schema_version": "1.0.0",
+  "batch_id": "PORT-SOURCE-DISPOSITION-CLOSEOUT",
+  "logical": [
+    {
+      "id": "rel.port-source-closeout.rl2-uses-rl1",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl-2-directed-support-root-equivalence",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl-1-reference-independent-root-flow",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl3-uses-rl2",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl-3-circuit-decomposition-existence",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl-2-directed-support-root-equivalence",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl6-uses-rl2",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl-6-binary-root-support-equivalence",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl-2-directed-support-root-equivalence",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl7-qualifies-rl6",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl-7-even-q-fully-deleted-target",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl-6-binary-root-support-equivalence",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl8-qualifies-rl7",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl-8-complementary-root-boundary",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl-7-even-q-fully-deleted-target",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl9-uses-rl2",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl-9-prescribed-witness-cut-criterion",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl-2-directed-support-root-equivalence",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl10-qualifies-rl9",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl-10-support-only-canonical-obstruction-false",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl-9-prescribed-witness-cut-criterion",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl11-qualifies-rl12",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl-11-occurrence-class-is-omega-false",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl-12-fixed-event-omega-comparison",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl13-qualifies-rl14",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl-13-fixed-witness-is-omega-family-false",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl-14-frozen-fano-fibre-omega-specialization",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl5-1-specializes-rl2",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl5-1-a4-five-support-specialization",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl-2-directed-support-root-equivalence",
+      "plane": "logical",
+      "type": "specializes",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl5-2-specializes-rl6",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl5-2-five-support-binary-hierarchy",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl-6-binary-root-support-equivalence",
+      "plane": "logical",
+      "type": "specializes",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl5-3-qualifies-rl5-2",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl5-3-binary-formulations-retain-signs-false",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl5-2-five-support-binary-hierarchy",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl5-5-qualifies-rl5-4",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl5-5-f5-converse-lift-open",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl5-4-global-f5-coefficient-projection",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl8-1-specializes-rl6",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl8-1-a7-binary-orthogonal-fano-hierarchy",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl-6-binary-root-support-equivalence",
+      "plane": "logical",
+      "type": "specializes",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl8-2-uses-rl14",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl8-2-fano-torsor-linear-family-search",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl-14-frozen-fano-fibre-omega-specialization",
+      "plane": "logical",
+      "type": "uses",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.rl8-3-qualifies-rl8-2",
+      "source": "math.graph-theory.flows.indexed-oriented-supports.rl8-3-per-lift-orientability-false",
+      "target": "math.graph-theory.flows.indexed-oriented-supports.rl8-2-fano-torsor-linear-family-search",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    },
+    {
+      "id": "rel.port-source-closeout.pushlinter-qualifies-release-trust",
+      "source": "math.analytic-number-theory.prime-distribution.e306-pushlinter-pnt-mertens-structural-trust-boundary",
+      "target": "math.analytic-number-theory.prime-distribution.e306-formal-trust-boundary",
+      "plane": "logical",
+      "type": "qualifies",
+      "scope": "exact source-disposition closeout scope; no assurance implication",
+      "status": "curator-mapped",
+      "provenance": [
+        {
+          "repository": "Yuren-Tang/mathematics",
+          "commit": "81da79782da348fac629b42882e447f95e4c9d3a",
+          "path": "projects/affine-cdc/research/root-lift/ROOT_LIFT_THEORY_RETURN.md",
+          "blob": "dd1618b1f7d0769b4f4b44a4346ac750db8c2131",
+          "anchor": "L54-L80"
+        }
+      ]
+    }
+  ],
+  "discovery": [],
+  "invariants": [
+    "Logical and discovery planes remain separate.",
+    "No relation upgrades authorial source assurance.",
+    "The trust-boundary relation is a scope qualification, not a proof-provider edge."
+  ]
+}
