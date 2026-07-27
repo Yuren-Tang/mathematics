@@ -1,94 +1,43 @@
-# External review entrypoint — AffineCDC five-support frontier
+# External review entrypoint — AffineCDC
 
-## 1. The problem
+## Current specialist packet
 
-The goal is:
+Begin at:
 
-> Every finite bridgeless multigraph has a cycle double cover using at most five indexed even subgraphs.
+`FIVE_CDC_SPECIALIST_HANDOFF.md`.
 
-The theorem is not independently accepted.
+It gives the problem, exact equivalent formulations, retained theorem graph, first missing one-atom endpoint, double-atom certificate, genuine reachable-image question, missing global-invariant test, literature comparison, specialist questions and exact source ledger.
 
-On a loopless cubic graph, five supports are encoded by roots
+## Current frontier
 
-$$
-R_5=\{ij:1\le i<j\le5\}\subset E_5,
-$$
+```text
+one-atom complete endpoint [OPEN FIRST MISSING EDGE]
+  -> disjoint second-failure / double-atom boundary
+  -> genuine single-pop image membership
+  -> bounded or unbounded defect interaction.
+```
 
-with each edge in two supports and the three incident roots forming a support triangle.
+The former terminal-exhaustion frontier is superseded. Application-scoped co-root and zero terminal exhaustion and the exact-two component-chain theorem are independently established downstream results.
 
-## 2. Current mathematical position
+## Assurance warning
 
-Substantial pieces are independently supported:
+- the universal and cubic five-support goals are open;
+- the v7.4.1 candidate is incomplete;
+- the broad one-atom scheduler is refuted in its declared scope;
+- the double-atom certificate is not a counterexample to five-CDC;
+- four retained one-atom local results are authorial pending independent review;
+- no external contact is authorized by this repository page.
 
-- root-flow semantics;
-- one-cross reduction;
-- finite boundary/route and Morse tables;
-- selected seam/genealogy interfaces;
-- general multigraph outer shell, conditional on a cubic theorem;
-- source-fidelity and OR1 packets in their exact scopes;
-- component-channel local arithmetic and explicit positive models.
+## Other corpus surfaces
 
-The former v9 general component-chain theorem is **not** an active proof component. Independent audit
+- ordinary CDC and Paper A: `../complete-cdc/PAPER_A_STRUCTURAL_MANUSCRIPT.md`;
+- deferred higher-rank mathematics: `../rank-hierarchy/PAPER_B_DEFERRED_STATUS.md`;
+- component-chain local theory: `../five-support/COMPONENT_CHAIN_LOCAL_THEORY.md`;
+- root-lift/orientation: `../research/root-lift/ROOT_LIFT_AND_ORIENTATION_THEORY.md`;
+- exact authority: `../CORPUS_AUTHORITY.md` and `REPOSITORY_AND_BRANCH_AUTHORITY_MAP.md`.
 
-`audit/affine-cdc-component-chain-v1@a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`
+These surfaces have separate theorem, assurance and publication statuses. Paper A's reviewed structural mathematics does not solve the five-support endpoint; Paper B's publication deferral does not weaken its higher-rank theorems.
 
-found material false scope: a shortest chain between two distinguished terminal paths can contain a third terminal path internally. The first contraction can split the original distinguished terminal darts, destroying the inherited path.
+## Review discipline
 
-## 3. Exact failed candidate
-
-- RL source: `02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`;
-- PDL reconstruction: `e36ba22f09e3a9fc6358f3b03615f8fde6c00d96`;
-- independent audit: `a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`.
-
-The source and reconstruction remain valuable provenance. Their universal component-chain, co-root/zero totality and end-to-end induction claims are failed candidates.
-
-## 4. What survives independently
-
-Audit `a4f20f05...` independently verified:
-
-- channel parity and the unique inactive triangle;
-- all active/inactive and active/active local root-NNI rows;
-- the equal-endpoint root branch alternatives;
-- all eighty-four final two-terminal matching configurations;
-- the co-root `6-7` route-changing model;
-- the zero-parent Heawood `H_35` model.
-
-These are exact local theorems/models, not a universal chain theorem.
-
-## 5. New central review problem
-
-The controlling open interface is:
-
-`AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION`.
-
-A repair must prove one of:
-
-1. every co-root and zero-parent application has exactly two terminal path components and all other nontrivial channel components are closed;
-2. a generalized contraction theorem handles internal terminal paths while preserving the distinguished terminal darts and paths;
-3. a different source-faithful singular-parent return closes both fibres.
-
-## 6. Permanent witnesses
-
-Reviewers must read `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`, especially:
-
-- fixed-boundary versus literal-parent failure;
-- inherited-flow discontinuity;
-- old SCC/no-sink rank failures;
-- `Omega` exterior-switch defect;
-- `Xi` same-arc equal-face witness;
-- zero-parent omission;
-- third-terminal-path component-chain witness.
-
-## 7. Reading order
-
-1. this file;
-2. `MATHEMATICAL_SPINE.md`;
-3. `COMPONENT_CHAIN_REVIEW_PACKET.md`;
-4. `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`;
-5. `FINITE_CERTIFICATE_MANIFEST.md`;
-6. `QUESTIONS_FOR_EXTERNAL_REVIEWERS.md`;
-7. `REPOSITORY_AND_BRANCH_AUTHORITY_MAP.md`.
-
-## 8. Most valuable external contribution
-
-The priority is a smallest exact proof or counterexample for terminal-component exhaustion or generalized internal-terminal contraction. Broad plausibility, local row verification alone or another positive model does not close the interface.
+Freeze every source and audit by exact SHA; distinguish broad state compatibility from genuine single-pop reachability; preserve all ancestry fields; test counterexamples before extending local macros; and do not infer progress from finite state-space recurrence alone.
