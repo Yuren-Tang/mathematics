@@ -1,72 +1,79 @@
-# AffineCDC formalization and reliability boundary
+# AffineCDC formalization and assurance boundary
 
-## 1. Unit-specific assurance
+## No project-wide trust label
 
-Programme A, source-fidelity repair, OR1 and the old one-cross audit units retain only their exact independent classifications. No project-wide trust label exists.
+Assurance is unit-specific. `established-in-scope`, `authorial`, `refuted-in-scope`, `open`, manuscript review, publication disposition and Lean checking are different axes. Curator integration upgrades none of them.
 
-## 2. Component-chain final status
+## Ordinary CDC mathematics
 
-- RL source: `02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`;
-- PDL reconstruction: `e36ba22f09e3a9fc6358f3b03615f8fde6c00d96`;
-- independent audit: `a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`;
-- classification: `BLOCKED — MATERIAL GAP OR FALSE SCOPE`.
+The three integrated Programme A chapters present the complete finite-active/no-singleton-cut mathematical proof. Their exact source audits and accepted dispositions remain the assurance authority. The natural statement includes loops and an ambient vertex carrier that need not be finite.
 
-The PDL return is a complete proof-development candidate, not a verified repair of the audit finding.
+## Paper A review status
 
-## 3. Independently supported component-channel scope
+The sole reviewed manuscript checkpoint is
 
-Audit `a4f20f05...` supports:
+`Yuren-Tang/affine-cdc-workbench:paper/paper-a-revision-v1@fae5e34a77e09e2adec632d46349340db5413a1b`.
 
-- `0/2` parity and unique inactive triangle;
-- active/inactive and active/active root tables;
-- equal-endpoint root alternatives;
-- final two-terminal matching table;
-- explicit co-root and zero-parent models;
-- the third-terminal-path counterexample.
+Independent fixed-text review plus bounded re-check supports its mathematical coherence. This is manuscript review, not journal acceptance, publication, priority or formal verification.
 
-It does not support:
+## Exact Lean boundary
 
-- the general component-chain theorem;
-- universal co-root or zero-parent totality;
-- complete inverse-table closure;
-- ordinary induction;
-- the global five-support theorem.
+`Yuren-Tang/affine-cdc:main@ebd7098a7a8b824e8c0a511d3c71f61705672aa8`
 
-## 4. Exact material defect
+checks selected local affine classification, quotient/gauge/dual, branching, cross-bit, indexed support extraction, exact multiplicity and a cubic-flow corollary. It does not machine-check:
 
-The theorem does not require the two distinguished terminal paths to be the only terminal path components. An internal third terminal path is not covered by the inactive/closed cases. In the audit witness, one legal NNI splits the distinguished terminal darts and destroys the inherited path.
+- the invariant quadratic/Fano characteristic-torsor presentation;
+- the complete solution-torsor and self-duality package as written in the manuscript;
+- the full graph expansion/collapse and loop shell;
+- the finite-active natural multigraph theorem;
+- higher-rank dual-Fano residue/Pfaffian mathematics;
+- the five-support global theorem or one-atom frontier;
+- the complete root-lift/OR1 package.
 
-## 5. Lean boundary
+Therefore neither Paper A nor the corpus is end-to-end Lean verified.
 
-The exact Lean anchor remains
+## Higher-rank mathematics
 
-`Yuren-Tang/affine-cdc:main@ebd7098a7a8b824e8c0a511d3c71f61705672aa8`.
+The all-rank residue theorem and rank-four Pfaffian layer are theorem-level finite-dimensional arguments with low-rank enumeration as supporting evidence. They are not Lean-formalized. Publication status is independently `DEFERRED / PAYOFF GATE NOT MET`.
 
-It does not machine-check the failed theorem, its local finite audit, a terminal-exhaustion repair, the global five-support proof or the complete OR1 packet. No Lean file is changed.
+## Five-support assurance
 
-## 6. B8 assurance
+Independently supported in exact scope include the finite reduction/core, single-pop algebra, local component-chain tables, application terminal exhaustion, exact-two component-chain theorem, conditional singular-parent suffix, no-reset protocol and conditional general outer shell.
 
-The six B8 classes remain unchanged and dependency-local. The new local tables/models/counterexample are independently audited finite objects; they do not upgrade any universal theorem.
+Authorial pending review include the four retained one-atom local interfaces.
 
-## 7. Reliability rules
+Open:
 
-1. PDL completeness does not override an independent counterexample.
-2. Correct local rows do not imply terminal-component exhaustion.
-3. Two distinguished terminal paths need not be the only terminal paths.
-4. Physical connector labels do not preserve a path whose terminal darts are split.
-5. A positive Heawood model is not universal totality.
-6. All prior source-fidelity, literal-parent, inherited-flow, exit, SCC, `Omega`, `Xi`, zero-parent, track-erasure and connectivity guards remain active.
-7. Curator integration is not theorem acceptance.
-8. Lean, manuscript, publication, release, arXiv, DOI and `main` are separate axes.
+- complete one-atom endpoint;
+- disjoint second-failure avoidance;
+- genuine single-pop image membership;
+- bounded/unbounded defect interaction;
+- cubic and universal five-support goals.
 
-## 8. Active repair status
+Refuted in scope:
 
-A future exact candidate must close `AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION` and receive a new independent audit. The failed RL and PDL snapshots remain provenance, not controlling proof.
+- unconditional one-atom `(L,mu)` scheduler;
+- broad rooted-carrier component-chain totality;
+- arbitrary equal-face Xi totality;
+- end-to-end completeness of v7.4.1.
 
-## 9. Publication boundary
+A counterexample to a scheduler is not a counterexample to five-CDC.
 
-This branch moves no `main`, Lean, manuscript, release, tag, arXiv, DOI or publication surface.
+## Root-lift / orientation assurance
 
-## 10. Strongest reliability statement
+RL-1--RL-14 and q=5/q=8 specializations are `AUTHORIAL / CURATOR-INTEGRATED / READY FOR INDEPENDENT REVIEW`. The comparisons with `ω` and `Ω_f` inherit the frozen OR1 assurance only. The four-parallel-edge and `K_4` examples are scope guards; universal fixed-fibre vanishing and fixed `F_5` converse lifting remain open.
 
-`CURATOR-INTEGRATED MIXED-ASSURANCE CORPUS / SOURCE-FIDELITY AND NAMED LOCAL UNITS INDEPENDENTLY SUPPORTED / GENERAL COMPONENT-CHAIN THEOREM INDEPENDENTLY REFUTED IN WRITTEN SCOPE / GLOBAL FIVE-SUPPORT OPEN`.
+## Reliability rules
+
+1. Exact independent counterevidence overrides a broader unreviewed positive claim.
+2. Correct local tables do not supply a missing global hypothesis.
+3. Application terminal exhaustion is downstream of the one-atom endpoint.
+4. Enumeration supports but does not prove theorem-level identities.
+5. A manuscript checkpoint cannot upgrade Lean status.
+6. A publication deferral cannot delete or weaken correct mathematics.
+7. A mathematical dependency does not create a publication commitment.
+8. Registry summaries do not supersede exact source statements or assurance records.
+
+## Strongest current statement
+
+`MIXED ASSURANCE EXPLICIT / ORDINARY CDC HUMAN PROOF INTEGRATED / PAPER A REVIEWED BUT NOT FORMALLY OR EXTERNALLY ACCEPTED / PAPER B DEFERRED / FIVE-CDC OPEN / ROOT-LIFT AUTHORIAL`.
