@@ -1,112 +1,152 @@
 # AffineCDC theorem and obligation dependency map
 
-Notation: `[I]` independently supported; `[II]` authorial/failed candidate; `[III]` open; `[NEG]` refuted inference.
+Notation: `[I]` independently supported in exact scope; `[A]` authorial pending review; `[O]` open; `[NEG]` refuted in scope; `[D]` publication deferred without mathematical deletion.
 
-## 1. Programme A
+The typed source of truth is `registry/relations/PORT_AC_CONSOLIDATE_01_RELATIONS.json` at blob `6d79b6e165ded818b9c1ce8c70734b654db15b8c`.
 
-```text
-A0 foundations [I]
-→ loop deletion / cubic expansion / six-flow transport [I]
-→ affine compatibility and indexed supports [I]
-→ cut-even collapse and decomposition [I]
-→ complete ordinary CDC [I].
-```
-
-## 2. B1--B8
-
-The formulation, target, motion, interface, holonomy, localisation and assurance DAGs remain as on source-fidelity base `f4d6f801...`. The sharp `q-2` correction is `[I]`; the arbitrary-rank `2r` tower is `[NEG]`.
-
-## 3. Independently supported one-cross prefix
+## 1. Ordinary CDC
 
 ```text
-S0 root-flow semantics [I]
-→ S1 one-cross reduction [I]
-→ S2 boundary/route core [I]
-→ S3 local Morse data [I].
+finite-active/cut/circuit foundations [I]
+  -> loop deletion and cubic expansion [I]
+  -> binary flow transport [I]
+  -> affine compatible families [I]
+  -> indexed even double cover [I]
+  -> cut-even collapse and circuit decomposition [I]
+  -> finite-active no-singleton-cut CDC [I].
 ```
 
-Old R2.3/R2.4, old no-sink rank and old cap assembly remain blocked/negative.
-
-## 4. v9 candidate DAG and break
+## 2. Paper A structural dependencies
 
 ```text
-S3
-→ V1 forward root-NNI history [II]
-→ V2 actual cancellation/target/pop [II]
-→ V3 complete prescribed-parent state [II]
-→ V4 local root/co-root/zero data [mixed]
-→ V5 general component-chain theorem [NEG in written scope]
-╳ V6 universal singular-parent return [III]
-╳ V7 stored-prefix integration [III]
-╳ V8 ordinary induction [III]
-→ L conditional general outer shell [I conditional].
+local affine classification
+  -> pair complex P_f
+  -> [κ] in H^1 and H^0 homogeneous moduli
+  -> quotient/gauge/stress presentations
+  -> rank-three quotient quadratics
+  -> Fano Lagrangians and characteristic torsors
+  -> characteristic intersection
+  -> [κ]=0
+  -> complete solution torsor and perfect self-duality
+  -> compressed ordinary CDC application.
 ```
 
-The cross at V5 is controlled by audit `a4f20f05...`.
+The structural article is reviewed at `fae5e34...`. Manuscript review is not Lean or publication status.
 
-## 5. Component-channel local DAG
+## 3. Higher-rank bridge and publication boundary
 
 ```text
-C0 channel parity / unique inactive triangle [I]
-→ C1 active-inactive local rows [I]
-→ C2 active-active local rows [I]
-→ C3 final two-terminal matching table [I]
-→ C4 explicit co-root and zero-parent models [I as models].
+Paper A obstruction [κ]
+  -> all-rank transgression
+  -> local residues ρ_W
+  -> ψ(κ)=Σ_v ρ_Wv(ψ_v)
+  -> rank-three residue-free coincidence
+  -> rank-four quotient / Pfaffian cubic
+  -> exact examples [theorem-level; publication D].
 ```
 
-The invalid general arrow was:
+The strongest bridge is identity of the obstruction and the exact rank-three/rank-four boundary. No arrow implies an A/B publication series.
+
+## 4. Five-support first missing edge
 
 ```text
-two distinguished terminal paths
-→ every internal chain node inactive or closed
-→ inherited distinguished terminal paths after every contraction.
+root/boundary finite core [I]
+  -> single-pop algebra [I]
+  -> complete post-pop state [supported]
+  -> local one-atom interfaces [A]
+  -> one-atom complete endpoint [O FIRST MISSING EDGE]
+  -> conditional singular-parent moves [I, conditional]
+  -> connector-prefix no-reset [I]
+  -> cubic five-support goal [O]
+  -> general multigraph outer shell [I, conditional]
+  -> universal five-support goal [O].
 ```
 
-A third terminal path refutes this implication.
+Typed relation `rel.ac.v741-depends-one-atom-endpoint` records that the v7.4.1 candidate depends on the missing endpoint. `rel.ac.conditional-parent-depends-complete-endpoint` prevents the audited suffix from being moved before it.
 
-## 6. Exact open replacement DAG
+## 5. One-atom refutation and narrower replacement
 
 ```text
-AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION [III]
-├─ prove application-specific exactly two terminal paths
-├─ or generalize contraction through internal terminal paths
-└─ or replace the return mechanism
-→ universal co-root return [III]
-→ universal zero-parent return [III]
-→ complete inverse table [III]
-→ stored-prefix return in the global proof [III]
-→ ordinary induction [III]
-→ consume conditional outer shell.
+double-atom obstruction [established certificate]
+  --refutes--> unconditional (L,mu) scheduler [NEG]
+conditional disjoint commuting square [A]
+  --specializes--> scheduler only with returned-label root-valued predecessor
+supplied run/seam coherence [A]
+  --qualifies--> endpoint: compilation after a comparison is supplied, not continuation.
 ```
 
-## 7. Permanent guards
+Typed relations:
 
-Forbidden arrows include:
+- `rel.ac.double-atom-refutes-scheduler`;
+- `rel.ac.conditional-disjoint-specializes-scheduler`;
+- `rel.ac.supplied-coherence-qualifies-endpoint`.
+
+The subsequent open fork is:
 
 ```text
-same boundary ⇒ literal parent [NEG]
-terminal existence ⇒ inherited-flow return [NEG]
-finite/SCC relation ⇒ progress [NEG]
-local Omega ⇒ exterior orbit control [NEG]
-arbitrary equal face ⇒ Xi totality [NEG]
-co-root ⇒ zero row [NEG]
-track erasure ⇒ target progress [NEG]
-local switch lift ⇒ global connectivity [NEG]
-two distinguished terminal paths ⇒ no third terminal path [NEG].
+disjoint second-failure avoidance [O]
+  or genuine single-pop image exclusion/characterization [O]
+  -> bounded or unbounded defect interaction [O].
 ```
 
-## 8. OR1
+## 6. Component-chain refutation and scoped salvage
 
-The fixed-lift/fixed-fibre obstruction DAG is independently supported subject to D1--D6. Its two global existence obligations remain `[III]`.
+```text
+third-terminal counterexample [I]
+  --refutes--> broad rooted-carrier chain [NEG]
+exact-two-terminal-path theorem [I]
+  --specializes--> broad claim with exact missing hypothesis
+  --uses--> local contraction/final-matching tables [I]
+co-root terminal exhaustion [I]
+  --qualifies--> exact-two theorem in genuine co-root application
+zero-parent terminal exhaustion [I]
+  --qualifies--> exact-two theorem in genuine zero application
+  -> conditional singular-parent moves [I, after complete endpoint].
+```
 
-## 9. Consumers
+Typed relations:
 
-- a future RL/PDL repair consumes the exact third-terminal witness and local tables;
-- a new independent auditor verifies the repaired scope;
-- an integration auditor reviews this mixed-assurance corpus;
-- AC-DIR/Owner alone dispose canonical status;
-- Lean/manuscript roles consume only a selected fixed checkpoint.
+- `rel.ac.third-terminal-refutes-broad-chain`;
+- `rel.ac.exact-two-specializes-broad-chain`;
+- `rel.ac.exact-two-uses-local-tables`;
+- `rel.ac.co-root-qualifies-exact-two-application`;
+- `rel.ac.zero-qualifies-exact-two-application`.
 
-## 10. Global classification
+## 7. Xi boundary
 
-The dependency line is traceable but broken at universal terminal-component exhaustion. The five-support endpoint is open.
+```text
+same-arc equal-face witness [I]
+  --refutes--> arbitrary equal-face Xi totality [NEG]
+frame/invariance, six strict rows and bad-free contradiction [I]
+  -> only their stated marked-arc scopes.
+```
+
+## 8. Root-lift dependencies
+
+```text
+full witness
+  -> directed support word
+  <-> A_(q-1) root flow [A]
+  -> binary unordered support/root data [A]
+  -> optional fixed-fibre quotient [scope-split].
+```
+
+Guards:
+
+- full witness recovery is noncanonical `[NEG]` by the four-parallel-edge example;
+- occurrence class is not literally `ω` `[NEG]`, though a fixed event may coincide;
+- fixed witness is not fixed fibre `[NEG]`;
+- q=5 `A_4 -> F_5` is one-way; converse lift `[O]`;
+- q=8 per-lift orientability `[NEG]`; universal fixed-fibre vanishing `[O]`.
+
+## 9. Consumers and authority
+
+- human chapters resolve unit IDs and typed arrows;
+- exact source/audit files provide proof and assurance;
+- publication pages consume mathematical status but cannot alter it;
+- external review begins at the one-atom/double-atom frontier;
+- no manuscript, Lean, release or issue label overrides the dependency graph.
+
+## 10. Round-trip rule
+
+Every load-bearing arrow displayed above resolves to a typed relation or a direct dependency stated in a canonical source chapter. Every typed relation defining the current frontier appears above. Expository reading order is not silently promoted to logical implication.
