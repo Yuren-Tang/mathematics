@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0.0",
+  "view_id": "corpus.affine-cdc.reintegration-v1",
+  "title": "AffineCDC human corpus reintegration",
+  "view_type": "human-corpus",
+  "freshness": {
+    "canonical_parent": "5a2fb189fec6f93e26c43a344ac7ab69ac1a074b",
+    "unit_registry": {
+      "path": "registry/units/graph-theory/cycle-covers/PORT_AC_CONSOLIDATE_01_UNITS.json",
+      "blob": "a04ab3c878e500ad3b6fd9f6d0f84127fe26c82f"
+    },
+    "typed_relations": {
+      "path": "registry/relations/PORT_AC_CONSOLIDATE_01_RELATIONS.json",
+      "blob": "6d79b6e165ded818b9c1ce8c70734b654db15b8c"
+    },
+    "programme_view": {
+      "path": "registry/views/programme.affine-cdc.json",
+      "blob": "c14b2d5f0eec301a1bbc39ec7bfeb086150b63f0"
+    },
+    "source_to_unit_map": {
+      "path": "migration/source-to-unit-map/PORT_AC_CONSOLIDATE_01_MAP.json",
+      "blob": "cf856729980e298233580169f65220091fcd88b4"
+    }
+  },
+  "statement_ownership": {
+    "rule": "one normalized statement per active unit id",
+    "owner": "unit_registry",
+    "human_chapters_are": "readable projections with exact unit and source pointers",
+    "audit_reports_own": "assurance evidence, not competing theorem wording"
+  },
+  "surfaces": {
+    "ordinary_cdc": {
+      "status": "accepted ordinary mathematics in integrated scope",
+      "entrypoints": [
+        "projects/affine-cdc/complete-cdc/foundations-expansion-and-flow.md",
+        "projects/affine-cdc/complete-cdc/affine-compatibility-and-extraction.md",
+        "projects/affine-cdc/complete-cdc/collapse-decomposition-and-assembly.md"
+      ]
+    },
+    "paper_a": {
+      "status": "reviewed standalone structural manuscript; no publication action",
+      "checkpoint": "Yuren-Tang/affine-cdc-workbench:paper/paper-a-revision-v1@fae5e34a77e09e2adec632d46349340db5413a1b",
+      "entrypoint": "projects/affine-cdc/complete-cdc/PAPER_A_STRUCTURAL_MANUSCRIPT.md"
+    },
+    "paper_b": {
+      "status": "DEFERRED / PAYOFF GATE NOT MET",
+      "entrypoint": "projects/affine-cdc/rank-hierarchy/PAPER_B_DEFERRED_STATUS.md"
+    },
+    "five_cdc": {
+      "status": "OPEN / EXTERNAL-HELP-FIRST",
+      "first_missing_unit": "math.graph-theory.cycle-covers.one-atom-complete-endpoint",
+      "next_units": [
+        "math.graph-theory.cycle-covers.disjoint-second-failure-avoidance",
+        "math.graph-theory.cycle-covers.single-pop-image-membership"
+      ],
+      "entrypoints": [
+        "projects/affine-cdc/five-support/FIVE_SUPPORT_AND_5CDC.md",
+        "projects/affine-cdc/five-support/COMPONENT_CHAIN_LOCAL_THEORY.md"
+      ]
+    },
+    "root_lift_orientation": {
+      "status": "AUTHORIAL / CURATOR-INTEGRATED / READY FOR INDEPENDENT REVIEW",
+      "entrypoint": "projects/affine-cdc/research/root-lift/ROOT_LIFT_AND_ORIENTATION_THEORY.md"
+    }
+  },
+  "negative_adjacency": [
+    {
+      "false_unit": "math.graph-theory.cycle-covers.one-atom-prefix-scheduler",
+      "counterexample": "math.graph-theory.cycle-covers.disjoint-double-atom-obstruction",
+      "valid_replacement": "math.graph-theory.cycle-covers.one-atom-conditional-disjoint-commutation"
+    },
+    {
+      "false_unit": "math.graph-theory.cycle-covers.component-chain-broad-rooted-carrier",
+      "counterexample": "math.graph-theory.cycle-covers.component-chain-third-terminal-counterexample",
+      "valid_replacement": "math.graph-theory.cycle-covers.component-chain-exact-two-terminal-path"
+    },
+    {
+      "false_unit": "math.graph-theory.cycle-covers.xi-arbitrary-equal-face-totality",
+      "counterexample": "math.graph-theory.cycle-covers.xi-same-arc-counterexample",
+      "valid_replacement": "math.graph-theory.cycle-covers.xi-six-strict-rows"
+    }
+  ],
+  "external_review": {
+    "entrypoint": "projects/affine-cdc/external-review/FIVE_CDC_SPECIALIST_HANDOFF.md",
+    "contact_authorized": false
+  },
+  "publication_boundaries": {
+    "paper_a_contains_substantive_paper_b_theorems": false,
+    "a_b_series_active": false,
+    "paper_b_reopening_gate": "family theorem, classification, simpler criterion avoiding the full stress-space test, or another independently citable consequence"
+  },
+  "nonduplication_rule": "This view records navigation and status; mathematical truth remains in normalized units and their exact sources."
+}
