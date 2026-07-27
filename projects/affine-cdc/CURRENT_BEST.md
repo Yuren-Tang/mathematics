@@ -1,74 +1,44 @@
 # AffineCDC current-best mathematical state
 
-## 1. Exact baseline
+## Exact snapshot
 
-Current candidate:
+Canonical input: `main@5a2fb189fec6f93e26c43a344ac7ab69ac1a074b`.
+Freshness and statement ownership: `CORPUS_AUTHORITY.md`.
 
-`curation/affine-cdc-global-rebaseline-v2`.
+## Ordinary CDC
 
-Exact base:
+The integrated Programme A theorem is established in its recorded mathematical scope:
 
-`curation/affine-cdc-programme-a-b1-b8-source-fidelity-v1@f4d6f801fac69746ca0b2ce9351735a43c79b482`.
+> Every multigraph with finite active edge set and no singleton cut has a circuit double cover.
 
-## 2. Independently assured mathematics
+For nonloop edges, no singleton cut is equivalent to no bridge. Loops are deleted and restored by two singleton circuit occurrences.
 
-- Programme A ordinary CDC theorem in its audited/repaired scope;
-- B2/B8 source fidelity at `ea8ec33d...`;
-- R0 root semantics, R1 reduction, R2.1 finite route core and R2.2 finite Morse data;
-- repaired local seam/genealogy interfaces;
-- conditional general multigraph outer shell;
-- OR1 after D1--D6;
-- `Xi` frame/invariance/six strict rows and same-arc counterexample;
-- channel parity, inactive classification, all local contraction rows and final two-terminal matching table;
-- explicit co-root `6-7` and zero-parent `H_35` models;
-- third-terminal-path component-chain counterexample.
+## Paper A
 
-## 3. Component-chain disposition
+Reviewed checkpoint: `Yuren-Tang/affine-cdc-workbench:paper/paper-a-revision-v1@fae5e34a77e09e2adec632d46349340db5413a1b`.
 
-RL source `02b37476198e9eaa2b4cd8d2a2edd76782bdcd49` and PDL reconstruction `e36ba22f09e3a9fc6358f3b03615f8fde6c00d96` remain complete failed candidates.
+It is one standalone structural manuscript centred on affine obstruction--moduli, characteristic torsors, the complete solution torsor and self-duality. CDC is a compressed application. It is not submitted, posted, DOI-bearing, externally accepted, priority-bearing or end-to-end Lean verified.
 
-Independent audit `a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57` found material false scope. The theorem does not exclude a third terminal path as an internal chain node. In the Heawood witness, the first NNI splits the original $P_0$ terminal darts and destroys inherited-path descent.
+## Deferred higher-rank mathematics
 
-Counterexample digest:
+The dual-Fano residue theorem, all-rank localization, rank-four alternating-form quotient, Pfaffian cubic and triangular-prism/`K_{3,3}` examples remain valid theorem-level internal mathematics.
 
-`d24c63ab56320803b9c795ac08389674b6f67edf89dc5c4ef9a729c5436a3e61`.
+Publication status: `DEFERRED / PAYOFF GATE NOT MET`.
 
-## 4. Exact retained local scope
+Reopening requires a family theorem, classification, a simpler criterion avoiding the complete stress-space test, or another independently citable consequence.
 
-Audit `a4f20f05...` verified:
+## Five-support / 5-CDC
 
-- six active/inactive rows and twenty-four ordered continuations;
-- six distinct and nine equal active/active root rows;
-- eighty-four final two-path configurations, with no matching-preserving root alternative;
-- the co-root route-changing model;
-- the zero-parent literal-parent model.
+The universal and cubic goals remain open. Retained mathematics includes the algebraic equivalences, source-faithful reduction and finite core, complete post-pop interface, four authorial one-atom local results, application-scoped terminal exhaustion, exact-two component-chain theorem and conditional outer shell.
 
-These are local theorems/models. They do not prove terminal-component exhaustion.
+The first missing theorem is the arbitrary complete one-atom endpoint. The unconditional `(L,mu)` scheduler is refuted in its broad declared scope by the double-atom Heawood certificate. Genuine image membership and bounded/unbounded defect interaction remain open.
 
-## 5. Active proof frontier
+Planning disposition: `EXTERNAL-HELP-FIRST`.
 
-`AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION` requires one of:
+## Root-lift / orientation
 
-1. exactly two terminal paths in every application carrier;
-2. a generalized contraction through internal terminal paths preserving distinguished terminal darts;
-3. another source-faithful singular-parent return.
+The exact canonical equivalence is directed indexed Eulerian support words `↔ A_{q-1}` root flows. Full witness recovery is noncanonical. RL-1--RL-14, q=5 and q=8 specializations are authorial and await independent review. Universal fixed-Fano-fibre vanishing and arbitrary fixed `F_5` converse lifting remain open.
 
-Until repaired and independently verified, the universal co-root row, zero row, inverse table and ordinary induction remain open.
+## Strongest current classification
 
-## 6. Old candidate status
-
-The old PDL full draft `1f57422...` remains superseded by its audit results. Its accepted local units and negative findings are retained claim by claim; its complete-theorem label is not.
-
-## 7. Parallel programme frontiers
-
-Unchanged:
-
-- six BBD/localisation obligations;
-- two OR1 global orientation-existence obligations;
-- all B1--B8 source-fidelity distinctions and B8 classes.
-
-## 8. Strongest current classification
-
-`MIXED-ASSURANCE GLOBAL BASELINE / SUBSTANTIAL INDEPENDENTLY ASSURED MATHEMATICS / GENERAL COMPONENT-CHAIN THEOREM FAILED / LOCAL COMPONENT-CHAIN CORE RETAINED / GLOBAL FIVE-SUPPORT THEOREM OPEN`.
-
-No Lean, manuscript, publication, release, arXiv, DOI or `main` movement follows.
+`ORDINARY CDC ESTABLISHED IN INTEGRATED SCOPE / PAPER A REVIEWED STRUCTURAL MANUSCRIPT WITHOUT PUBLICATION ACTION / PAPER B MATHEMATICS RETAINED AND PUBLICATION DEFERRED / FIVE-CDC OPEN AT ONE-ATOM ENDPOINT / ROOT-LIFT AUTHORIAL WITH EXPLICIT INFORMATION-LOSS BOUNDARY`.
