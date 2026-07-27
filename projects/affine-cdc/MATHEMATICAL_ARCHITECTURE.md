@@ -1,82 +1,104 @@
 # AffineCDC mathematical architecture
 
-## 1. Four lines
+## 1. Authority plane
 
-1. Programme A ordinary CDC — independently audited in exact scope.
-2. B1--B8 five-support formulations/compression — source-fidelity repaired; global theorem open.
-3. One-cross proof programme — independently assured prefix/local tables/conditional suffix, with singular-parent return open.
-4. OR1 orientation refinement — independently verified subject to D1--D6; global oriented existence open.
+Normalized unit statements live in `registry/units/**`; logical arrows live in `registry/relations/**`; exact sources and audits own proof and assurance. `CORPUS_AUTHORITY.md` fixes the current snapshot. Human chapters are projections, not independent truth stores.
 
-## 2. Assurance tiers
-
-- Tier I: independently supported theorem units, certificates and negatives.
-- Tier II: exact authorial or failed candidates.
-- Tier III: open implications and falsification surfaces.
-- Tier IV: read-only projections/governance pointers.
-
-## 3. Stable Programme A and B1--B8
-
-Programme A and all source-fidelity invariants remain unchanged. The fixed-dimensional orthogonal packet stays valid; the unreconstructed arbitrary-rank tower remains outside the packet count and superseded by the sharp `q-2` theorem. Packet accounting remains `39+10+18+10+1=78`.
-
-## 4. Independently supported five-support structure
+## 2. Ordinary CDC waist
 
 ```text
-root-flow semantics [I]
-→ one-cross structural reduction [I]
-→ boundary/route finite core [I]
-→ local Morse data [I].
+finite-active multigraph and cut semantics
+  -> loop deletion
+  -> port-cycle cubic expansion
+  -> nowhere-zero F_2^3 flow
+  -> affine compatibility and indexed even supports
+  -> cut-even collapse
+  -> circuit decomposition and loop reinsertion
+  -> ordinary CDC.
 ```
 
-Selected seam/genealogy interfaces and the general multigraph outer shell are independently supported in their exact scopes.
+This is accepted ordinary mathematics in the integrated scope. The no-singleton-cut and no-nonloop-bridge formulations are stated together.
 
-## 5. Failed v9 middle
-
-The proposed line was:
+## 3. Paper A structural waist
 
 ```text
-forward root-NNI history
-→ actual lower target/pop
-→ complete prescribed-parent state
-→ root/co-root/zero table
-→ component-chain return
-→ stored-prefix return
-→ ordinary induction.
+local affine family classification
+  -> pair complex P_f
+  -> obstruction [κ], H^0 moduli, H^1 obstruction
+  -> quotient/gauge/stress equivalence
+  -> rank-three quotient quadratics and Fano Lagrangians
+  -> characteristic-torsor intersection
+  -> [κ]=0 and complete solution torsor
+  -> H^0 ≅ Stress(f) ≅ H^1(P_f)^*
+  -> compressed ordinary CDC application.
 ```
 
-RL source `02b374...` and PDL reconstruction `e36ba22...` are retained as failed candidates. Audit `a4f20f05...` refutes the general chain theorem in written scope: a third terminal path may occur internally and the first contraction can split the original distinguished terminal darts.
+Paper A is the sole current standalone publication-natural unit, reviewed at `fae5e34...`, without publication or complete formal-verification status.
 
-## 6. Retained component-channel local layer
+## 4. Higher-rank mathematical continuation
 
-Independently verified:
+```text
+same obstruction [κ]
+  -> all-rank Fano transgression
+  -> local dual-Fano residue
+  -> ψ(κ)=Σ_v ρ_v(ψ_v)
+  -> rank-three residue-free boundary
+  -> rank-four alternating-form quotient and Pfaffian cubic
+  -> exact prism / K_{3,3} examples.
+```
 
-- channel parity and unique inactive triangle;
-- all active/inactive rows;
-- all distinct/equal active/active root rows;
-- final two-terminal matching table;
-- exact co-root and zero-parent Heawood models.
+This is preserved theorem-level mathematics. Publication status is `DEFERRED / PAYOFF GATE NOT MET`. The dependency on Paper A is mathematical; no sequel commitment follows.
 
-These require a separately proved two-terminal geometry and do not give universal totality.
+## 5. Five-support architecture
 
-## 7. New active interface
+```text
+R_5 / K_5 / O^-(4,2) formulations
+  -> source-faithful finite reduction and inverse pop
+  -> complete post-pop state
+  -> retained local one-atom interfaces
+  -> ONE-ATOM COMPLETE ENDPOINT [OPEN FIRST MISSING EDGE]
+  -> disjoint second-failure / double-atom boundary
+  -> genuine single-pop image and defect interaction [OPEN]
+  -> inverse-parent trichotomy
+  -> application terminal exhaustion
+  -> exact-two component-chain theorem
+  -> conditional singular-parent return and no-reset
+  -> cubic five-support goal [OPEN]
+  -> conditional general shell.
+```
 
-`AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION`.
+The broad one-atom scheduler and broad rooted-carrier chain are refuted in their written scopes. The narrower conditional disjoint and exact-two theorems survive.
 
-A replacement must provide:
+## 6. Root-lift and orientation architecture
 
-- exactly-two-terminal-path application geometry; or
-- generalized contraction through internal terminal paths preserving distinguished darts; or
-- another literal source-faithful singular-parent return.
+```text
+full circuit witness
+  -> directed support word
+  <-> A_(q-1) root flow
+  -> binary unordered root flow
+  -> optional family quotient.
+```
 
-Only then can the inverse table, prefix return and ordinary induction be reconsidered.
+The first arrow loses circuit decomposition and occurrence identity; binary reduction loses signs; the family quotient changes quantifiers. The q=5 `A_4 -> F_5` projection is one-way pending a lift theorem. The q=8 `A_7 -> E_8 -> O^+(6,2) -> F_2^3` chain has no automatic reverse arrows. The package is authorial pending independent review.
 
-## 8. Negative architecture
+## 7. Negative architecture
 
-Permanent guards include literal-parent scope, inherited-flow continuity, exit consumption, SCC/no-sink ranks, `Omega` exterior defect, `Xi` same-arc witness, zero-parent omission, track-erasure, generic connectivity, internal-weld and third-terminal-path failures.
+Every invalid broad arrow has a neighbouring guard:
 
-## 9. OR1 and outer shell
+- canonical full-witness recovery — four-parallel-edge nonuniqueness;
+- per-lift Fano orientability — mixed `K_4` fibre;
+- unconditional disjoint scheduler — double-atom Heawood certificate;
+- broad rooted-carrier chain — third-terminal-path certificate;
+- arbitrary equal-face Xi totality — same-arc certificate;
+- terminal existence or generic connectivity — source-fidelity guards.
 
-OR1 remains independently supported subject to D1--D6. The general multigraph outer shell remains an independently supported conditional suffix; it does not repair the cubic theorem.
+## 8. Publication architecture
 
-## 10. Global endpoint
+- Paper A: standalone reviewed structural manuscript.
+- Higher-rank packet: mathematics retained; publication deferred until an independent payoff gate is met.
+- Five-CDC: open research, not a manuscript status.
+- Root-lift: theory/scope package, not a persistent publication programme.
 
-`MIXED-ASSURANCE ARCHITECTURE / INDEPENDENT PREFIX, LOCAL TABLES AND CONDITIONAL SUFFIX / GENERAL COMPONENT-CHAIN THEOREM FAILED / TERMINAL-EXHAUSTION FRONTIER OPEN / FIVE-SUPPORT THEOREM OPEN`.
+## 9. Global classification
+
+`DEPENDENCY-ORDERED HUMAN CORPUS / EXACT AUTHORITY AND ASSURANCE BOUNDARIES / NO MODULE-TO-PAPER AUTOMATION / CURRENT FIVE-CDC GAP AT ONE-ATOM ENDPOINT`.
