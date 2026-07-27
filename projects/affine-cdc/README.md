@@ -1,86 +1,48 @@
-# AffineCDC global mathematical baseline
+# AffineCDC mathematical corpus
 
-## 1. Current corpus
+## Fixed authority
 
-Branch:
+This active human corpus is tied to
 
-`curation/affine-cdc-global-rebaseline-v2`.
+`Yuren-Tang/mathematics:main@5a2fb189fec6f93e26c43a344ac7ab69ac1a074b`
 
-Exact assured base:
+and the exact registry/relations/source-map blobs recorded in `CORPUS_AUTHORITY.md`. Registry units own normalized statements; exact cited sources and audits own proofs and assurance.
 
-`curation/affine-cdc-programme-a-b1-b8-source-fidelity-v1@f4d6f801fac69746ca0b2ce9351735a43c79b482`.
+## Five non-interchangeable surfaces
 
-This branch separates independently supported mathematics, failed/authorial candidates, active frontiers, permanent counterexamples and projection pointers.
+1. **Ordinary CDC:** the integrated Programme A chapters establish the finite-active no-singleton-cut theorem, equivalently no nonloop bridge.
+2. **Paper A:** reviewed standalone structural manuscript at `affine-cdc-workbench@fae5e34...`; affine obstruction--moduli, characteristic torsors, complete solution torsor and self-duality; CDC is a compressed application. No submission, arXiv, DOI, priority or complete Lean claim.
+3. **Higher-rank residue mathematics:** dual-Fano residue, all-rank localization, rank-four alternating-form quotient, Pfaffian cubic and exact examples are retained. Publication status: `DEFERRED / PAYOFF GATE NOT MET`.
+4. **Five-support / 5-CDC:** open. First missing edge: arbitrary genuine one-atom post-pop state to a complete source-faithful endpoint or exact terminal. Accepted planning disposition: `EXTERNAL-HELP-FIRST`.
+5. **Root-lift / orientation:** RL-1--RL-14 and q=5/q=8 package is authorial, curator-integrated and pending independent review; OR1 comparisons retain their exact frozen assurance.
 
-## 2. Tier I — independently assured
+No assurance or publication status transfers between these surfaces.
 
-- Programme A ordinary CDC theorem with Audit A boundary and closed repairs;
-- B2/B8 source-fidelity repair and packet accounting, audit `ea8ec33d...`;
-- R0/R1/R2.1/R2.2 one-cross prefix;
-- selected repaired seam/genealogy subunits;
-- conditional general multigraph outer shell;
-- OR1 after D1--D6;
-- `Xi` local arithmetic and same-arc counterexample;
-- component-channel parity, all local contraction rows, final two-terminal matching table and explicit co-root/zero models verified by audit `a4f20f05...`;
-- third-terminal-path component-chain counterexample.
+## Reading order
 
-## 3. Failed v9 candidate
+1. `CORPUS_AUTHORITY.md` and `CURRENT_BEST.md`;
+2. `complete-cdc/PAPER_A_STRUCTURAL_MANUSCRIPT.md` and the three `complete-cdc/` chapters;
+3. `rank-hierarchy/PAPER_B_DEFERRED_STATUS.md`;
+4. `five-support/FIVE_SUPPORT_AND_5CDC.md`;
+5. `five-support/COMPONENT_CHAIN_LOCAL_THEORY.md`;
+6. `research/root-lift/ROOT_LIFT_AND_ORIENTATION_THEORY.md`;
+7. `THEOREM_DEPENDENCY_MAP.md`, `FORMAL_STATUS.md`, and `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`;
+8. external specialist packet: `external-review/FIVE_CDC_SPECIALIST_HANDOFF.md`.
 
-RL source:
+## Current 5-CDC frontier
 
-`02b37476198e9eaa2b4cd8d2a2edd76782bdcd49`.
+```text
+complete one-atom endpoint [OPEN FIRST MISSING EDGE]
+  -> disjoint second-failure / double-atom boundary
+  -> genuine single-pop image membership
+  -> bounded or unbounded defect interaction
+  -> only then the audited terminal-exhaustion/component-chain suffix.
+```
 
-PDL reconstruction:
+The earlier terminal-exhaustion frontier is superseded: terminal exhaustion is established in the two genuine downstream application fibres.
 
-`e36ba22f09e3a9fc6358f3b03615f8fde6c00d96`.
+## Status
 
-Independent audit:
+`HUMAN CORPUS REINTEGRATED / MACHINE REGISTRY PRESERVED / ORDINARY CDC SEPARATE FROM PAPER A STATUS / PAPER B DEFERRED WITHOUT MATHEMATICAL LOSS / FIVE-CDC OPEN EXTERNAL-HELP-FIRST / ROOT-LIFT ASSURANCE EXPLICIT`.
 
-`a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`.
-
-The general component-chain theorem has material false scope: two distinguished terminal paths need not be the only terminal paths. A third terminal path can occur internally and the first contraction can split the original distinguished terminal darts.
-
-Therefore the universal co-root return, zero-parent return, complete inverse table and ordinary induction are not active theorems.
-
-## 4. Active frontier
-
-Controlling interface:
-
-`AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION`.
-
-A repair must prove:
-
-- application-specific exactly-two-terminal-path geometry; or
-- contraction through internal terminal paths preserving distinguished darts; or
-- an alternative literal source-faithful singular-parent return.
-
-The six BBD/localisation obligations and two OR1 existence obligations remain separate.
-
-## 5. Source-fidelity invariants
-
-Unchanged:
-
-- valid fixed-dimensional orthogonal packet;
-- separate refuted source-unreconstructed arbitrary-rank tower;
-- sharp `q-2` replacement;
-- packet partition
-  $$39+10+18+10+1=78;$$
-- Programme A/B1/B3--B8 status;
-- dependency-local B8 assurance.
-
-## 6. Reading order
-
-1. `CURRENT_BEST.md`;
-2. `GLOBAL_REBASELINE_V2_ASSURANCE_MATRIX.md`;
-3. `five-support/current-proof-spine.md`;
-4. `five-support/component-chain-candidate.md`;
-5. `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`;
-6. `COMPONENT_CHAIN_ANTECEDENT_MAP.md`.
-
-External reviewers begin at `external-review/ENTRYPOINT.md`.
-
-## 7. Global status
-
-`MIXED-ASSURANCE GLOBAL BASELINE / GENERAL COMPONENT-CHAIN THEOREM FAILED INDEPENDENT AUDIT / LOCAL ROWS AND MODELS RETAINED / SINGULAR-PARENT TOTALITY ACTIVE FRONTIER / FIVE-SUPPORT THEOREM OPEN`.
-
-No `main`, Lean, manuscript, release, tag, arXiv or DOI status is created.
+No merge, PR, `main` movement, release, DOI, arXiv, submission or external contact is implied.
