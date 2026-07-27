@@ -1,65 +1,64 @@
-# Repository and branch authority map for external reviewers
+# Repository and branch authority map
 
-## 1. Current corpus
+## Corpus workspace
 
-`Yuren-Tang/mathematics:curation/affine-cdc-global-rebaseline-v2`
+- exact parent: `Yuren-Tang/mathematics:main@5a2fb189fec6f93e26c43a344ac7ab69ac1a074b`;
+- sole curation workspace: `Yuren-Tang/mathematics:curation/corpus-reintegration-v1`;
+- machine freshness view: `registry/views/corpus.affine-cdc.reintegration-v1.json`.
 
-Exact base:
+The branch is a human corpus projection. It does not accept a theorem or authorize a merge.
 
-`curation/affine-cdc-programme-a-b1-b8-source-fidelity-v1@f4d6f801fac69746ca0b2ce9351735a43c79b482`.
+## Fixed machine authorities
 
-This branch is a mixed-assurance status/provenance corpus, not a proof acceptance.
+| Role | Exact path / blob |
+|---|---|
+| normalized units | `registry/units/graph-theory/cycle-covers/PORT_AC_CONSOLIDATE_01_UNITS.json` / `a04ab3c878e500ad3b6fd9f6d0f84127fe26c82f` |
+| typed relations | `registry/relations/PORT_AC_CONSOLIDATE_01_RELATIONS.json` / `6d79b6e165ded818b9c1ce8c70734b654db15b8c` |
+| programme view | `registry/views/programme.affine-cdc.json` / `c14b2d5f0eec301a1bbc39ec7bfeb086150b63f0` |
+| source-to-unit map | `migration/source-to-unit-map/PORT_AC_CONSOLIDATE_01_MAP.json` / `cf856729980e298233580169f65220091fcd88b4` |
 
-## 2. Exact authorities
+Exact source/audit refs named by these records control over summaries.
 
-| Role | Exact ref | Current use |
+## Paper A
+
+- reviewed manuscript: `Yuren-Tang/affine-cdc-workbench:paper/paper-a-revision-v1@fae5e34a77e09e2adec632d46349340db5413a1b`;
+- fixed-text review and bounded repair records: research-workbench #99 and #102;
+- formal anchor: `Yuren-Tang/affine-cdc:main@ebd7098a7a8b824e8c0a511d3c71f61705672aa8`.
+
+The manuscript and Lean repository have different scopes. Neither is a publication authority.
+
+## Higher-rank / Paper B disposition
+
+- canonical mathematics: `rank-hierarchy/transgression-and-dual-fano-residue.md` and `rank-hierarchy/rank-four-first-obstruction.md` at the fixed parent;
+- publication architecture: research-workbench #103, accepted `[DEFER-B AC-AB-UNITY-AUDIT-01]`;
+- active status page: `../rank-hierarchy/PAPER_B_DEFERRED_STATUS.md`.
+
+Status: `DEFERRED / PAYOFF GATE NOT MET`. No Paper B manuscript or branch is active.
+
+## Five-support authorities
+
+| Role | Exact ref | Use |
 |---|---|---|
-| source-fidelity base | `f4d6f801fac69746ca0b2ce9351735a43c79b482` | stable Programme A/B1--B8 base |
-| source-fidelity audit | `ea8ec33d49294ac31a53f46aed7a62c7b9b81908` | independent B2/B8 assurance |
-| OR1 candidate/audit | `e6af5645107d0f21ac6c262c63a1db5dab8f0fd1` / `6c20cead05bd12b1027c349c4f259b117d8e0861` | verified subject to D1--D6 |
-| old PDL full draft | `1f57422e0e415d8902d56eb294183815c0a0b640` | failed candidate and source of audited local units |
-| old core audit | `00b4b376190500a005bf3c3a4bfd3f6429864175` | accepts R0/R1/R2.1/R2.2 |
-| old return audit | `492eea3ea3d9d4540a706f42524e1b03f06e66bf` | accepts repaired local seams/genealogy; rejects old rank |
-| old shell audit | `a94c4021b0bf8160806c4a64601be492196b472a` | accepts conditional outer shell; rejects cap assembly |
-| v9 RL source | `02b37476198e9eaa2b4cd8d2a2edd76782bdcd49` | failed general-chain candidate provenance |
-| PDL v7.4 reconstruction | `e36ba22f09e3a9fc6358f3b03615f8fde6c00d96` | complete failed reconstruction provenance |
-| `Xi` audit | `53be22a0f65b85068b11e5f781579618967db9dd` | verified local arithmetic and same-arc counterexample |
-| component-chain audit | `a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57` | material false-scope verdict, local row assurance and third-terminal witness |
+| current unit/relation truth | fixed registry blobs above | normalized status and typed dependencies |
+| v7.4.1 authorial candidate | `f90a068fbcc81d34850bb53426f4c2efb4cb5388` | incomplete proof provenance |
+| full independent audit | `1e7ee9d14608bfdd3524d588d96bfc3470654686` | identifies one-atom endpoint as first missing edge |
+| corrected one-atom return and certificate | `31ec4a49caf2dbddf2f5e1e2dd3d8a866f3847c8` | retained local results, scheduler refutation, double atom, open image question |
+| component-chain audit | `a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57` | third-terminal refutation and retained local tables |
+| terminal-exhaustion audit | `c954f2220c082bc3b47821657b7a1164876aeaab` | co-root/zero application exact-two premise |
+| Xi audit | `53be22a0f65b85068b11e5f781579618967db9dd` | strict rows and same-arc counterexample |
 
-## 3. Workbench controls
+The exact next review object is the one-atom endpoint/reachable-image frontier, not terminal exhaustion.
 
-- #62 — current global rebaseline and Curator return;
-- #80 — completed PDL reconstruction, exact return `e36ba22...`;
-- #81 — completed independent chain audit, exact return `a4f20f05...`;
-- #68--#70 — old fixed-candidate audits;
-- #71 — synthesis audit not launched;
-- #78 — `Xi` audit.
+## Root-lift / orientation
 
-Issues assign and record work. Mathematical authority comes from the exact referenced source/audit files.
+- frozen orientation input: `e6af5645107d0f21ac6c262c63a1db5dab8f0fd1`;
+- root-lift theorem/scope source: `81da79782da348fac629b42882e447f95e4c9d3a`;
+- assurance: authorial pending independent review; OR1 comparisons inherit the frozen OR1 boundary.
 
-## 4. Lean
+## Historical and recovery refs
 
-`Yuren-Tang/affine-cdc:main@ebd7098a7a8b824e8c0a511d3c71f61705672aa8`
+Older RL/PDL branches, source-fidelity bases, audit bundles and publication plans remain read-only recovery provenance. Branch names do not control current mathematics; exact commits and normalized units do.
 
-is a partial machine-checked anchor. It does not check the failed general component-chain theorem, a repaired terminal-exhaustion theorem, the global five-support result or the complete OR1 packet.
+## Write boundary
 
-## 5. Manuscript/publication
-
-Manuscript branches, releases, tags, arXiv and DOI records are projections or archival surfaces. They do not upgrade theorem assurance.
-
-## 6. Review discipline
-
-- freeze every source and audit by exact SHA;
-- do not combine moving RL/PDL tips;
-- do not generalize local audit acceptance beyond its scope;
-- retain both the `Xi` and third-terminal-path witnesses in every repair review;
-- do not merge into `main` during review;
-- record source, repair and verifying audit separately.
-
-## 7. Next review object
-
-The next mathematical review should target a future exact repair of
-
-`AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION`,
-
-not re-audit the unchanged failed theorem. A separate independent integration audit may meanwhile review this rebaseline's assurance/provenance fidelity.
+This map authorizes no PR, merge, force-push, `main` movement, release, DOI, arXiv entry, submission, publication action or external contact.
