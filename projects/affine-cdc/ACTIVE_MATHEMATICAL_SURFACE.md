@@ -1,78 +1,52 @@
 # AffineCDC active mathematical surface
 
-## 1. Exact rebaseline
+## Authority
 
-- branch: `curation/affine-cdc-global-rebaseline-v2`;
-- exact base: `f4d6f801fac69746ca0b2ce9351735a43c79b482`;
-- source-fidelity audit: `ea8ec33d49294ac31a53f46aed7a62c7b9b81908`;
-- failed chain source/reconstruction: `02b37476198e9eaa2b4cd8d2a2edd76782bdcd49` / `e36ba22f09e3a9fc6358f3b03615f8fde6c00d96`;
-- controlling chain audit: `a4f20f05532c307a3a8f9d98ac4c5162e7b8ad57`.
+- exact mathematical parent: `5a2fb189fec6f93e26c43a344ac7ab69ac1a074b`;
+- active human corpus contract: `CORPUS_AUTHORITY.md`;
+- machine view: `registry/views/corpus.affine-cdc.reintegration-v1.json`.
 
-## 2. Primary entrypoints
+## Active ordinary mathematics
 
-- `README.md`;
-- `CURRENT_BEST.md`;
-- `GLOBAL_REBASELINE_V2_ASSURANCE_MATRIX.md`;
-- `MATHEMATICAL_ARCHITECTURE.md`;
-- `THEOREM_DEPENDENCY_MAP.md`;
-- `five-support/current-proof-spine.md`;
-- `five-support/component-chain-candidate.md`;
-- `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`.
+- three complete-CDC chapters and their finite-active/no-singleton-cut endpoint;
+- affine incidence obstruction, complete solution torsor, rank-three Fano compatibility and self-duality;
+- higher-rank transgression, dual-Fano residue localization, rank-four quotient/Pfaffian layer and exact examples;
+- retained five-support algebra, finite reduction/core, local one-atom results, terminal-exhaustion/component-chain suffix and negative certificates;
+- root-lift theorem/scope package with explicit information-loss and assurance boundaries.
 
-## 3. Tier-I active surface
+## Publication surfaces
 
-- Programme A ordinary CDC line;
-- source-fidelity-repaired B1--B8 corpus;
-- audited one-cross prefix and finite core;
-- repaired local seams/genealogy;
-- conditional general outer shell;
-- OR1 after D1--D6;
-- permanent `Xi` and old-candidate negatives;
-- independently recomputed component-channel local rows and final two-path matching table;
-- exact co-root/zero models;
-- third-terminal-path counterexample.
+- Paper A: reviewed standalone structural manuscript at `fae5e34...`; no publication action or assurance transfer.
+- Higher-rank Paper B proposal: `DEFERRED / PAYOFF GATE NOT MET`; its mathematics remains active.
+- No A/B series, trilogy or automatic sequel pipeline is active.
 
-## 4. Failed candidate surface
+## Open five-support frontier
 
-The v9 RL theorem and PDL reconstruction remain active only as:
+```text
+one-atom complete endpoint [first missing]
+  -> disjoint second-failure / double atom
+  -> genuine single-pop image membership
+  -> bounded or unbounded defect interaction.
+```
 
-`FAILED CANDIDATE / REPAIR PROVENANCE`.
+The broad scheduler is closed/refuted in scope. The application terminal-exhaustion and exact-two component-chain results are established downstream, not current first gaps. There is no active internal proof epoch; disposition is `EXTERNAL-HELP-FIRST`.
 
-The general chain, universal co-root/zero corollaries and end-to-end induction are not theorem-level current mathematics.
+## Negative adjacency
 
-## 5. Tier-III active frontier
+- double-atom certificate beside the false scheduler and conditional disjoint replacement;
+- third-terminal carrier beside the false broad chain and exact-two replacement;
+- Xi same-arc witness beside false equal-face totality and surviving strict rows;
+- four-parallel-edge witness beside false canonical full-witness recovery;
+- frozen `K_4` mixed fibre beside false per-lift orientability.
 
-Controlling implication:
+## Assurance exclusions
 
-`AC-FRONTIER-COMPONENT-CHAIN-TERMINAL-EXHAUSTION`.
+Neither manuscript prose, a moving branch, a complete-looking proof candidate, low-rank enumeration nor curator integration creates theorem acceptance or Lean verification. Exact unit-level assurance controls.
 
-Required alternatives:
+## External review
 
-- prove exactly-two-terminal-path application geometry;
-- handle internal terminal paths without losing distinguished darts;
-- replace the component-chain return.
+The sole active specialist entrypoint is `external-review/FIVE_CDC_SPECIALIST_HANDOFF.md`. It reaches the one-atom/double-atom frontier directly. No external contact is authorized.
 
-The permanent falsification surface is `COUNTEREXAMPLE_AND_SUPERSESSION_LEDGER.md`.
+## Global status
 
-## 6. Preserved B1--B8 and OR1 frontiers
-
-All B3--B8 theorem/correction boundaries and six named Research Lead obligations remain unchanged. OR1 retains two global existence obligations. The failed one-cross theorem closes none of these.
-
-## 7. Tier-IV pointers
-
-Lean, manuscript, workbench, audit, release, arXiv and DOI surfaces are pointers only. The exact Lean anchor remains `Yuren-Tang/affine-cdc:main@ebd7098...`.
-
-## 8. Assurance exclusions
-
-Not active theorem authority merely by existence:
-
-- old PDL complete draft `1f57422...`;
-- v9 RL source or PDL reconstruction;
-- moving RL/PDL tips;
-- manuscript prose;
-- partial Lean implementations;
-- issue comments without exact source/audit refs.
-
-## 9. Global status
-
-`GLOBAL REBASELINE ACTIVE / MIXED ASSURANCE EXPLICIT / GENERAL COMPONENT-CHAIN SCOPE REFUTED / TERMINAL-EXHAUSTION FRONTIER OPEN / FIVE-SUPPORT THEOREM NOT INDEPENDENTLY ACCEPTED`.
+`ONE HUMAN NAVIGATION SURFACE / NO CONFLICTING FRONTIER LABEL / FIVE MATHEMATICAL AND PUBLICATION AXES SEPARATED / NEGATIVE EVIDENCE ADJACENT TO VALID REPLACEMENT`.
